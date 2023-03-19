@@ -4,16 +4,12 @@ import Text from "./Text";
 function MusicCard(props) {
   const { className, track, swiperParallax, swiperParallaxDuration } = props;
 
-  const swiperParallaxAttr = swiperParallax
-    ? {
-        "data-swiper-parallax": swiperParallax,
-      }
-    : {};
-  const swiperParallaxDurationAttr = swiperParallaxDuration
-    ? {
-        "data-swiper-parallax-duration": swiperParallaxDuration,
-      }
-    : {};
+  const swiperParallaxAttr = swiperParallax && {
+    "data-swiper-parallax": swiperParallax,
+  };
+  const swiperParallaxDurationAttr = swiperParallaxDuration && {
+    "data-swiper-parallax-duration": swiperParallaxDuration,
+  };
 
   return (
     <div
