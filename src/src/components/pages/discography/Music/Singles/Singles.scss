@@ -1,0 +1,61 @@
+.singles {
+  // .singles__container
+
+  &__container {
+    @media (min-width: $pc) {
+      padding: 0;
+    }
+  }
+
+  // .singles__search
+
+  &__search {
+    margin-bottom: rem(30);
+  }
+
+  // .singles__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
+    justify-content: center;
+    gap: rem(30);
+
+    @media (max-width: rem(959.98)) {
+      grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(370)));
+    }
+
+    @media (max-width: rem(799.98)) {
+      grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
+    }
+
+    @media (max-width: rem(639.98)) {
+      grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(370)));
+    }
+
+    @media (max-height: $mobileSmall) {
+      grid-template-columns: repeat(auto-fill, rem(290));
+    }
+  }
+
+  // .singles__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .singles__music-card
+
+  &__music-card {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template: auto 1fr auto auto / 1fr;
+    margin-bottom: rem(15);
+  }
+
+  // .singles__listen-on
+
+  &__listen-on {
+  }
+}

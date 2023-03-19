@@ -1,0 +1,46 @@
+.main-albums {
+  position: relative;
+  background-color: $mainBg;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $darkBg;
+  }
+
+  // .main-albums__container
+
+  &__container {
+    text-align: center;
+  }
+
+  // .main-albums__title
+
+  &__title {
+    margin-bottom: em(30, 40);
+    font-size: rem(40);
+    font-weight: 500;
+    font-family: $fontFamily2;
+  }
+
+  // .main-albums__slider
+
+  &__slider {
+    margin-bottom: rem(30);
+  }
+
+  // .main-albums__music-card
+
+  &__music-card {
+    margin: 0 auto;
+    max-width: rem(370);
+  }
+
+  // .main-albums__main-block
+
+  &__main-block {
+    [class*="__link"] {
+      @media (min-width: $mobile) {
+        font-size: rem(18);
+      }
+    }
+  }
+}

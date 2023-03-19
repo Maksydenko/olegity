@@ -1,0 +1,125 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(200);
+  height: rem(200);
+
+  margin-top: rem(-100);
+  margin-left: rem(-100);
+
+  perspective: rem(100);
+  transform-type: preserve-3d;
+
+  animation: loader 6s cubic-bezier(0, 0, 1, 1) infinite;
+}
+
+/* Loader animation */
+@keyframes loader {
+  0% {
+    transform: rotateX(30deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(30deg) rotateZ(-360deg);
+  }
+}
+
+/* The dot */
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  width: rem(20);
+  height: rem(20);
+
+  margin-top: rem(-90);
+  margin-left: rem(-10);
+
+  border-radius: rem(10);
+
+  background-color: #b4b4b4;
+
+  transform-type: preserve-3d;
+  transform-origin: 50% 90px;
+  transform: rotateZ(30deg);
+
+  animation: dot1 1.5s cubic-bezier(0.6, 0, 0.4, 1) infinite;
+
+  &:nth-child(2) {
+    transform: rotateZ(15deg);
+    animation-name: dot2;
+    animation-delay: 150ms;
+  }
+
+  &:nth-child(3) {
+    transform: rotateZ(0deg);
+    animation-name: dot3;
+    animation-delay: 300ms;
+  }
+
+  &:nth-child(4) {
+    transform: rotateZ(-15deg);
+    animation-name: dot4;
+    animation-delay: 450ms;
+  }
+
+  &:nth-child(5) {
+    transform: rotateZ(-30deg);
+    animation-name: dot5;
+    animation-delay: 600ms;
+  }
+}
+
+/* Dot animations */
+@keyframes dot1 {
+  0% {
+    transform: rotateZ(30deg) rotateX(10deg);
+  }
+  95%,
+  100% {
+    transform: rotateZ(390deg) rotateX(10deg);
+  }
+}
+
+@keyframes dot2 {
+  0% {
+    transform: rotateZ(15deg) rotateX(10deg);
+  }
+  95%,
+  100% {
+    transform: rotateZ(375deg) rotateX(10deg);
+  }
+}
+
+@keyframes dot3 {
+  0% {
+    transform: rotateZ(0deg) rotateX(10deg);
+  }
+  95%,
+  100% {
+    transform: rotateZ(360deg) rotateX(10deg);
+  }
+}
+
+@keyframes dot4 {
+  0% {
+    transform: rotateZ(-15deg) rotateX(10deg);
+  }
+  95%,
+  100% {
+    transform: rotateZ(345deg) rotateX(10deg);
+  }
+}
+
+@keyframes dot5 {
+  0% {
+    transform: rotateZ(-30deg) rotateX(10deg);
+  }
+  95%,
+  100% {
+    transform: rotateZ(330deg) rotateX(10deg);
+  }
+}

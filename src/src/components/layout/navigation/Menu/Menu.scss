@@ -1,0 +1,144 @@
+@import "LanguageChange/LanguageChange.scss";
+
+@import "ScrollTop/ScrollTop.scss";
+
+.menu {
+  // .menu__button
+
+  &__button {
+    display: none;
+
+    @media (max-width: $tablet) {
+      position: relative;
+      z-index: 9;
+      display: block;
+      width: rem(30);
+      height: rem(18);
+
+      &::before,
+      &::after,
+      & span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        border-radius: rem(5);
+        background-color: $darkColor;
+        transition: all 0.3s ease 0s;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      & span {
+        top: 50%;
+        transform: scale(1) translateY(-50%);
+      }
+
+      &._active::before {
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+      }
+
+      &._active::after {
+        bottom: 50%;
+        transform: rotate(-45deg) translateY(50%);
+      }
+
+      &._active span {
+        transform: scale(0);
+      }
+    }
+  }
+
+  // .menu__body
+
+  &__body {
+    font-weight: 500;
+
+    @media (max-width: $tablet) {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      padding: rem(100) rem(30) rem(30) rem(30);
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: right 0.3s ease 0s;
+
+      &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;
+        width: 100%;
+        height: rem(70);
+      }
+
+      &._active {
+        right: 0;
+      }
+    }
+  }
+
+  // .menu__list
+
+  &__list {
+    font-size: rem(24);
+
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: em(20, 18);
+      font-size: rem(18);
+    }
+  }
+
+  // .menu__item
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    text-transform: uppercase;
+
+    @media (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: em(30, 24);
+      }
+    }
+  }
+
+  // .menu__link
+
+  &__link {
+    text-align: right;
+    flex: 0 1 auto;
+    color: $darkColor;
+
+    @media (min-width: $tablet) {
+      padding: em(10, 18) 0;
+    }
+  }
+
+  a,
+  button {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

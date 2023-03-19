@@ -1,0 +1,34 @@
+.listen-on {
+  // .listen-on__list
+
+  &__list {
+    display: grid;
+    gap: em(15, 30);
+    justify-content: center;
+    font-size: rem(30);
+  }
+
+  // .listen-on__item
+
+  &__item {
+  }
+
+  // .listen-on__link
+
+  &__link {
+    display: block;
+    text-align: center;
+    padding: em(10, 30);
+    border: em(2, 30) solid $mainColor;
+    border-radius: em(10, 30);
+    transition: all 0.3s ease 0s;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: $darkColor;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

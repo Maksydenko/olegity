@@ -1,0 +1,89 @@
+.tabs {
+  margin-top: rem(70);
+
+  // .tabs__titles
+
+  &__titles {
+    display: flex;
+    gap: rem(5);
+  }
+
+  &__title {
+    flex: 0 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(50);
+    font-size: rem(16);
+    border-radius: 0 0 em(5) em(5);
+    font-weight: 500;
+    font-family: $fontFamily2;
+    text-transform: uppercase;
+    color: $darkColor;
+    background-color: $darkBg;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+    @media (prefers-color-scheme: dark) {
+      color: $mainColor;
+      background-color: $mainBg;
+    }
+
+    @media (max-width: $pc) {
+      &:first-child {
+        border-bottom-left-radius: 0;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      span {
+        display: block;
+        padding: 0 rem(5);
+        text-align: center;
+        font-size: rem(14);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &._active {
+      color: $mainColor;
+      background-color: $mainBg;
+      cursor: default;
+
+      @media (prefers-color-scheme: dark) {
+        color: $darkColor;
+        background-color: $darkBg;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  // .tabs__active
+
+  &__title._active {
+  }
+
+  // .tabs__contents
+
+  &__contents {
+  }
+
+  // .tabs__content
+
+  &__content {
+    padding: rem(30) 0 rem(50);
+  }
+}

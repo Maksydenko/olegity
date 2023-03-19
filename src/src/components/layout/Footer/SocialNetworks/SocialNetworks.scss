@@ -1,0 +1,23 @@
+.social-networks {
+  // .social-networks__title
+
+  &__title {
+  }
+
+  // .social-networks__list
+
+  &__list {
+  }
+
+  // .social-networks__item
+
+  &__item {
+  }
+
+  // .social-networks__link
+
+  &__link {
+    display: inline-flex;
+    gap: em(10, 18);
+  }
+}

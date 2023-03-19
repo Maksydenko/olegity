@@ -1,0 +1,85 @@
+@import "SocialNetworks/SocialNetworks";
+@import "@layout/navigation/Navigation/Navigation";
+
+.footer {
+  position: relative;
+  padding: rem(50) 0;
+  background-color: #21252b;
+  color: $darkColor;
+
+  // .footer__container
+
+  &__container {
+    display: flex;
+    gap: rem(50);
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: rem(30);
+    }
+  }
+
+  // .footer__main
+
+  &__main {
+    flex: 1 1 40%;
+  }
+
+  // .footer__img
+
+  &__logo {
+    display: block;
+    position: relative;
+    width: rem(95);
+    height: rem(30);
+    margin-bottom: rem(20);
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .footer__description
+
+  &__description {
+    line-height: 1.3;
+  }
+
+  // .footer__social-networks
+
+  &__social-networks {
+    flex: 1 1 35%;
+  }
+
+  &__navigation {
+    flex: 1 1 25%;
+  }
+
+  a {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  h4 {
+    margin-bottom: em(20, 24);
+    font-size: rem(24);
+    font-weight: 500;
+    font-family: $fontFamily2;
+  }
+
+  li {
+    font-size: rem(18);
+  }
+
+  li:not(:last-child) {
+    margin-bottom: em(10, 18);
+  }
+}

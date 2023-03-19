@@ -1,0 +1,46 @@
+.menu {
+  // .menu__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+
+    @media (max-width: $tablet) {
+      align-items: end;
+      flex-direction: column;
+    }
+  }
+
+  // menu__language-change
+
+  &__language-change {
+    font-size: rem(16);
+    text-transform: uppercase;
+    color: $darkColor;
+
+    @media (max-width: $tablet) {
+      order: -1;
+      font-size: rem(20);
+    }
+
+    span:not(:last-child) {
+      padding-right: em(10);
+      border-right: em(1) solid $darkColor;
+    }
+
+    span:not(:first-child) {
+      padding-left: em(10);
+      border-left: em(1) solid $darkColor;
+    }
+
+    span {
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

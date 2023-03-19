@@ -1,0 +1,9 @@
+.track-list {
+  // .track-list__track
+
+  &__track {
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+}

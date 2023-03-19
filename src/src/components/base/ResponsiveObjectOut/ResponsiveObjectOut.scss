@@ -1,0 +1,74 @@
+.responsive-object-out {
+  // The ratio
+  $content: 50%;
+  $object: 50%;
+  // Break point
+  $breakPoint: $mobile;
+
+  &._pc {
+    $breakPoint: $pc;
+  }
+
+  @media (min-width: $breakPoint) {
+    display: flex;
+  }
+
+  // .responsive-object-out__content
+
+  &__content {
+    flex: 0 0 100%;
+    display: flex;
+
+    & + * {
+      img,
+      iframe,
+      video {
+        max-width: 100%;
+      }
+
+      @media (min-width: $breakPoint) {
+        position: relative;
+        flex: 0 0
+          calc(
+            ((100% - rem($containerPadding)) * ($object / 100%)) +
+              rem($containerPadding) / 2
+          );
+        transform: translateX(-100%);
+        padding-bottom: 30%;
+
+        img,
+        iframe,
+        video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (min-width: rem($containerWidth)) {
+        flex: 0 0
+          calc(
+            50vw - ($content / 100% - 0.5) * calc(#{$maxWidthContainer + px})
+          );
+      }
+    }
+  }
+
+  // .responsive-object-out__container
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  // .responsive-object-out__body
+
+  &__body {
+    @media (min-width: $breakPoint) {
+      width: $content;
+    }
+  }
+}

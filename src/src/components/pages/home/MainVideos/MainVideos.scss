@@ -1,0 +1,46 @@
+.main-videos {
+  position: relative;
+  text-align: center;
+  background-color: $mainBg;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $darkBg;
+  }
+
+  @media (min-width: $mobile) {
+    padding-bottom: rem(50);
+  }
+
+  // .main-videos__title
+
+  &__title {
+    margin-bottom: em(30, 40);
+    font-size: rem(40);
+    font-weight: 500;
+    font-family: $fontFamily2;
+  }
+
+  // .main-videos__slider
+
+  &__slider {
+    margin-bottom: rem(20);
+  }
+
+  // .main-videos__video
+
+  &__video {
+    @media (min-width: $mobile) {
+      aspect-ratio: 21/9;
+    }
+  }
+
+  // .main-videos__main-block
+
+  &__main-block {
+    [class*="__link"] {
+      @media (min-width: $mobile) {
+        font-size: rem(18);
+      }
+    }
+  }
+}

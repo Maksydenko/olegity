@@ -1,0 +1,33 @@
+.main-about {
+  position: relative;
+  background-color: $mainBg;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $darkBg;
+  }
+
+  // .main-about__container
+
+  &__container {
+  }
+
+  // .main-about__main-block
+
+  &__main-block {
+    padding: rem(50) rem(20) rem(50) 0;
+
+    @media (max-width: $mobile) {
+      padding: rem(50) 0 rem(30);
+    }
+  }
+
+  // .main-about__img
+
+  &__img {
+    @media (min-width: $mobile) {
+      img {
+        border-bottom-left-radius: rem(10);
+      }
+    }
+  }
+}

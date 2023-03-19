@@ -1,0 +1,21 @@
+.about-concerts {
+  // .about-concerts__main-block
+
+  &__main-block {
+    padding: rem(50) rem(20) rem(50) 0;
+
+    @media (max-width: $mobile) {
+      padding: rem(30) 0;
+    }
+  }
+
+  // .about-concerts__img
+
+  &__img {
+    @media (min-width: $mobile) {
+      img {
+        border-bottom-left-radius: rem(10);
+      }
+    }
+  }
+}

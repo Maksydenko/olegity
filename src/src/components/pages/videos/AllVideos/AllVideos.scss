@@ -1,0 +1,16 @@
+@import "Videos/Videos.scss";
+
+.all-videos {
+  // .all-videos__container
+
+  &__container {
+    @media (max-width: $pc) {
+      padding: 0;
+    }
+  }
+
+  // .all-videos__videos
+
+  &__videos {
+  }
+}

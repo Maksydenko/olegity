@@ -1,0 +1,13 @@
+@import "./Albums/Albums.scss";
+@import "./Singles/Singles.scss";
+@import "./ListenOn/ListenOn.scss";
+
+.music {
+  // .music__container
+
+  &__container {
+    @media (max-width: $pc) {
+      padding: 0;
+    }
+  }
+}

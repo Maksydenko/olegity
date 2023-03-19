@@ -1,0 +1,68 @@
+.music-card {
+  text-align: center;
+
+  // .music-card__img
+
+  &__img {
+    position: relative;
+    margin-bottom: rem(20);
+    padding-bottom: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: rem(10);
+    }
+  }
+
+  // .music-cards__title
+
+  &__title {
+    margin-bottom: em(10, 24);
+    font-size: rem(24);
+    font-family: $fontFamily2;
+    font-weight: 500;
+  }
+
+  // .music-cards__artist
+
+  &__artist {
+    display: block;
+    margin-bottom: em(10, 18);
+    font-size: rem(18);
+    font-weight: 500;
+  }
+
+  // .music-cards__additional-information
+
+  &__additional-information {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .music-cards___genre
+
+  &__genre {
+    padding-right: em(5);
+    border-right: em(1) solid $mainColor;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: $darkColor;
+    }
+  }
+
+  // .music-cards__year
+
+  &__year {
+    padding-left: em(5);
+    border-left: em(1) solid $mainColor;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: $darkColor;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+$iconsPath: "../../fonts/icons";
+
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("#{$iconsPath}/icons.ttf") format("truetype"),
+    url("#{$iconsPath}/icons.woff") format("woff"),
+    url("#{$iconsPath}/icons.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+%icon {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+[class*="_icon-"] {
+  &::before {
+    @extend %icon;
+    display: block;
+  }
+}
+
+._icon-tik-tok:before {
+  content: "\e908";
+}
+._icon-cross:before {
+  content: "\e907";
+}
+._icon-loupe:before {
+  content: "\e906";
+}
+._icon-youtube:before {
+  content: "\e905";
+}
+._icon-spotify:before {
+  content: "\e901";
+}
+._icon-youtube-music:before {
+  content: "\e902";
+}
+._icon-apple-music:before {
+  content: "\e903";
+}
+._icon-deezer:before {
+  content: "\e904";
+}
+._icon-arrow-top:before {
+  content: "\e900";
+}
+._icon-instagram:before {
+  content: "\ea92";
+}
+._icon-telegram:before {
+  content: "\ea95";
+}
+._icon-twitter:before {
+  content: "\ea96";
+}
+._icon-youtube:before {
+  content: "\ea9d";
+}

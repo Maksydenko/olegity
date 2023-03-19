@@ -1,0 +1,170 @@
+@use "sass:math";
+
+// Connection of mixins
+@import "assets/scss/base/mixins.scss";
+
+// Connection of Google fonts
+// &display=swap
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+
+// Connection of local fonts
+// @import "assets/scss/fonts/fonts";
+
+// Connection of icon fonts
+@import "assets/scss/fonts/icons";
+
+// ============================================================================
+
+// Settings template
+
+// Default font
+$fontFamily: "Open Sans", sans-serif;
+$fontFamily2: "Montserrat", sans-serif;
+$fontSize: rem(16);
+
+// Primary colors
+
+// Light scheme
+$mainColor: #333333;
+$mainBg: #ffffff;
+// Dark scheme
+$darkColor: #ffffff;
+$darkBg: #333333;
+
+// ============================================================================
+
+// Adaptive grid settings
+
+// The minimum page width
+$minWidth: 320;
+// The width of the canvas
+$maxWidth: 1440;
+// The width of the limiting container
+$maxWidthContainer: 1170;
+// General indenter
+$containerPadding: 30;
+
+// The width of the first breakpoint
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Breakpoints
+$pc: rem($containerWidth);
+$tablet: rem(991.98);
+$mobile: rem(767.98);
+$mobileSmall: rem(479.98);
+
+// Adaptive type:
+// 1 = responsiveness
+// !1 = according to breakpoints
+$adaptiveType: 1;
+
+// ============================================================================
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: rem(10);
+  background-color: #f1f1f1;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #424242;
+  }
+
+  &-thumb {
+    border-radius: rem(5);
+    background-color: #a3a3a3;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #808080;
+    }
+  }
+}
+
+// Reset
+@import "assets/scss/base/reset.scss";
+
+// Lock scroll
+body._lock {
+  overflow: hidden;
+}
+
+// Shell wrapper
+.app {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  // Press the footer
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+// Limiting container
+@if $adaptiveType == 1 {
+  // Responsive
+  [class*="__container"] {
+    @if $maxWidthContainer > 0 {
+      max-width: rem($containerWidth);
+      margin: 0 auto;
+    }
+
+    @if $containerPadding > 0 {
+      @if $maxWidthContainer > 0 {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    } @else {
+      @include responsiveValue(
+        padding-left,
+        math.div($containerPadding, 2),
+        15
+      );
+      @include responsiveValue(
+        padding-right,
+        math.div($containerPadding, 2),
+        15
+      );
+    }
+  }
+} @else {
+  // According to breakpoints
+  [class*="__container"] {
+    margin: 0 auto;
+
+    @if $maxWidthContainer > 0 {
+      max-width: rem($containerWidth);
+    } @else {
+      @if $containerPadding > 0 {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
+
+    @media (max-width: $pc) {
+      max-width: rem(970);
+    }
+
+    @media (max-width: $tablet) {
+      max-width: rem(750);
+    }
+
+    @media (max-width: $mobile) {
+      max-width: none;
+    }
+
+    @if $containerPadding > 0 and $maxWidthContainer > 0 {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+}
+
+// Connecting basic styles, templates and auxiliary classes
+@import "assets/scss/base.scss";
+
+// Connection of common elements
+@import "assets/scss/common.scss";
+
+// Connecting styles of individual blocks
+@import "@layout/Header/Header.scss";
+@import "@layout/Footer/Footer.scss";
+@import "App.scss";

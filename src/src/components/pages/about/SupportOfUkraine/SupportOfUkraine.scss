@@ -1,0 +1,43 @@
+.support-of-ukraine {
+  // .support-of-ukraine__main-block
+
+  &__main-block {
+    padding: rem(50) rem(20) rem(50) 0;
+
+    @media (max-width: $pc) {
+      padding: 0 0 rem(30);
+    }
+
+    [class*="__title"] {
+      font-size: rem(32);
+      @media (max-width: $mobileSmall) {
+        font-size: rem(24);
+        text-align: left;
+      }
+    }
+
+    [class*="__text"] {
+      @media (max-width: $tablet) {
+        text-align: justify;
+      }
+    }
+  }
+
+  // .support-of-ukraine__video
+
+  &__video {
+    @media (min-width: $pc) {
+      aspect-ratio: unset;
+
+      iframe {
+        border-radius: rem(10) 0 0 rem(10);
+      }
+    }
+  }
+
+  &:first-child {
+    iframe {
+      border-top-left-radius: 0;
+    }
+  }
+}

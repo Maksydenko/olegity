@@ -1,0 +1,80 @@
+@import "TrackList/TrackList.scss";
+
+.albums {
+  // .albums__container
+
+  &__container {
+    @media (min-width: $pc) {
+      padding: 0;
+    }
+  }
+
+  // .albums__album
+
+  &__album {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(20);
+  }
+
+  // .albums__music-card
+
+  &__music-card {
+    flex: 0 1 rem(370);
+  }
+
+  // .albums__track-list
+
+  &__track-list {
+    flex: 0 1 rem(340);
+    padding-left: em(30, 18);
+    font-size: rem(18);
+
+    @media (max-width: rem(1098.98)) {
+      padding-right: em(70, 18);
+    }
+
+    @media (max-width: $mobile) {
+      flex-basis: rem(370);
+      padding-right: 0;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding: 0 em(30, 18) 0 em(60, 18);
+    }
+  }
+
+  // .albums__listen-on
+
+  &__listen-on {
+    ul {
+      @media (max-width: rem(1098.98)) {
+        grid-template-columns: repeat(4, rem(185));
+      }
+      @media (max-width: $tablet) {
+        grid-template-columns: repeat(2, rem(185));
+        grid-columns: 2;
+      }
+
+      @media (max-width: $mobileSmall) {
+        grid-template-columns: repeat(1, rem(185));
+        grid-columns: 1;
+      }
+    }
+  }
+
+  @media (max-width: $mobileSmall) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      background-color: transparent;
+    }
+    .swiper-button-prev::after {
+      left: rem(-23);
+    }
+
+    .swiper-button-next::after {
+      right: rem(-23);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "@components/pages/home/FullScreen/FullScreen.scss";
+@import "@components/pages/home/MainAbout/MainAbout.scss";
+@import "@components/pages/home/MainAlbums/MainAlbums.scss";
+@import "@components/pages/home/MainVideos/MainVideos.scss";
+@import "@components/pages/home/MainConcerts/MainConcerts.scss";
+
+.home-page {
+  section:not(:first-child):not(:last-child) {
+    padding-bottom: rem(50);
+  }
+}

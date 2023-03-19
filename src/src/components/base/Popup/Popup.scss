@@ -1,0 +1,60 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  // .popup__body
+
+  &__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(30) rem(50);
+  }
+
+  // .popup__content
+
+  &__content {
+    position: relative;
+  }
+
+  // .popup__cross
+
+  &__cross {
+    position: absolute;
+    top: rem(-35);
+    right: rem(-35);
+    width: rem(30);
+    height: rem(30);
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: rem(30);
+      height: rem(2);
+      border-radius: rem(5);
+      background-color: $darkColor;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
