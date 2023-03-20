@@ -19,7 +19,7 @@ function SupportOfUkraine() {
   const object = <Video className="support-of-ukraine" video={video} />;
 
   return (
-    <ResponsiveObjectOut className="support-of-ukraine" object={object}>
+    <ResponsiveObjectOut className="support-of-ukraine" pc object={object}>
       <MainBlock
         className="support-of-ukraine"
         title="support-of-ukraine"
