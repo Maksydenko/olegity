@@ -148,7 +148,7 @@ const singles = [
       },
       {
         src: mrak,
-        alt: "Мрак (Darkness)",
+        alt: this.title,
       },
     ],
     links: {
@@ -173,7 +173,7 @@ const singles = [
       },
       {
         src: dorBlyu,
-        alt: "Дор Блю (Dorblue)",
+        alt: this.title,
       },
     ],
     links: {
@@ -198,7 +198,7 @@ const singles = [
       },
       {
         src: kurtochka,
-        alt: "Курточка (Jacket)",
+        alt: this.title,
       },
     ],
     links: {
@@ -223,7 +223,7 @@ const singles = [
       },
       {
         src: sektorPriz,
-        alt: "Сектор Приз (Prize Sector)",
+        alt: this.title,
       },
     ],
     links: {
@@ -248,7 +248,7 @@ const singles = [
       },
       {
         src: khiona,
-        alt: "Хиона (Chiona)",
+        alt: this.title,
       },
     ],
     links: {
@@ -273,7 +273,7 @@ const singles = [
       },
       {
         src: pyatAm,
-        alt: "5:00 AM",
+        alt: this.title,
       },
     ],
     links: {
@@ -298,7 +298,7 @@ const singles = [
       },
       {
         src: skate,
-        alt: "Skate",
+        alt: this.title,
       },
     ],
     links: {
@@ -323,7 +323,7 @@ const singles = [
       },
       {
         src: netTebya,
-        alt: "Нет тебя (No you)",
+        alt: this.title,
       },
     ],
     links: {
@@ -348,7 +348,7 @@ const singles = [
       },
       {
         src: uragany,
-        alt: "Ураганы (Hurricanes)",
+        alt: this.title,
       },
     ],
     links: {
@@ -373,7 +373,7 @@ const singles = [
       },
       {
         src: stakan,
-        alt: "Стакан (Glass)",
+        alt: this.title,
       },
     ],
     links: {
@@ -398,7 +398,7 @@ const singles = [
       },
       {
         src: snegovichok,
-        alt: "Снеговичок (Snowman)",
+        alt: this.title,
       },
     ],
     links: {
@@ -423,7 +423,7 @@ const singles = [
       },
       {
         src: wipeYourFeet,
-        alt: "wipe your feet",
+        alt: this.title,
       },
     ],
     links: {
@@ -448,7 +448,7 @@ const singles = [
       },
       {
         src: flyuorografiya,
-        alt: "ФЛЮОРОГРАФИЯ (FLUROGRAPHY)",
+        alt: this.title,
       },
     ],
     links: {
@@ -473,7 +473,7 @@ const singles = [
       },
       {
         src: neUbezhal,
-        alt: "Не убежал (Didn't run away)",
+        alt: this.title,
       },
     ],
     links: {
@@ -498,7 +498,7 @@ const singles = [
       },
       {
         src: disney,
-        alt: "DISNEY",
+        alt: this.title,
       },
     ],
     links: {
@@ -523,7 +523,7 @@ const singles = [
       },
       {
         src: uvyaz,
-        alt: "Увяз (Binding)",
+        alt: this.title,
       },
     ],
     links: {
@@ -548,7 +548,7 @@ const singles = [
       },
       {
         src: clouny,
-        alt: "Клоуны (Clowns)",
+        alt: this.title,
       },
     ],
     links: {
@@ -573,7 +573,7 @@ const singles = [
       },
       {
         src: spinning,
-        alt: "Спиннинг (Spinning)",
+        alt: this.title,
       },
     ],
     links: {
@@ -598,7 +598,7 @@ const singles = [
       },
       {
         src: solntseZolotoe,
-        alt: "Солнце Золотое (Golden Sun)",
+        alt: this.title,
       },
     ],
     links: {
@@ -623,7 +623,7 @@ const singles = [
       },
       {
         src: korolevaBala,
-        alt: "Королева бала (Queen of the ball)",
+        alt: this.title,
       },
     ],
     links: {
@@ -648,7 +648,7 @@ const singles = [
       },
       {
         src: malenkiyMalchik20,
-        alt: "Малэнкий малчик (Little boy) 2.0",
+        alt: this.title,
       },
     ],
     links: {
@@ -673,7 +673,7 @@ const singles = [
       },
       {
         src: gryaznyeTantsy,
-        alt: "Грязные танцы (Dirty dancing)",
+        alt: this.title,
       },
     ],
     links: {
@@ -698,7 +698,7 @@ const singles = [
       },
       {
         src: estDengiNetChuvstv,
-        alt: "ЕСТЬ ДЕНЬГИ НЕТ ЧУВСТВ (HAVE MONEY NO FEELINGS)",
+        alt: this.title,
       },
     ],
     links: {
@@ -723,7 +723,7 @@ const singles = [
       },
       {
         src: atakaKota,
-        alt: "Атака кота (Cat's attack)",
+        alt: this.title,
       },
     ],
     links: {
@@ -748,7 +748,7 @@ const singles = [
       },
       {
         src: meteorit,
-        alt: "Метеорит (Meteorite)",
+        alt: this.title,
       },
     ],
     links: {
@@ -773,7 +773,7 @@ const singles = [
       },
       {
         src: zvezdnayaKarta,
-        alt: "Звёздная карта (Star map)",
+        alt: this.title,
       },
     ],
     links: {
@@ -798,7 +798,7 @@ const singles = [
       },
       {
         src: houston,
-        alt: "Houston",
+        alt: this.title,
       },
     ],
     links: {
@@ -823,7 +823,7 @@ const singles = [
       },
       {
         src: desyatNegrityat,
-        alt: "10 негритят (10 negroes)",
+        alt: this.title,
       },
     ],
     links: {
@@ -848,7 +848,7 @@ const singles = [
       },
       {
         src: mechtatILyubit,
-        alt: "Мечтать и любить (To dream and to love)",
+        alt: this.title,
       },
     ],
     links: {
@@ -873,7 +873,7 @@ const singles = [
       },
       {
         src: domKhrustalnuy,
-        alt: "Дом хрустальный (Crystal house)",
+        alt: this.title,
       },
     ],
     links: {
@@ -897,7 +897,7 @@ const singles = [
       },
       {
         src: klyukvaRemix,
-        alt: "Клюква (Cranberry) [Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -922,7 +922,7 @@ const singles = [
       },
       {
         src: stress,
-        alt: "Стресс (Stress)",
+        alt: this.title,
       },
     ],
     links: {
@@ -947,7 +947,7 @@ const singles = [
       },
       {
         src: amneziyaRemix,
-        alt: "Амнезия (Amnesia) [Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -972,7 +972,7 @@ const singles = [
       },
       {
         src: zavtra,
-        alt: "Завтра (Tommorow)",
+        alt: this.title,
       },
     ],
     links: {
@@ -997,7 +997,7 @@ const singles = [
       },
       {
         src: amneziya,
-        alt: "Амнезия (Amnesia)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1022,7 +1022,7 @@ const singles = [
       },
       {
         src: zvezdaRe2517,
-        alt: "Звезда (Star) [Re-25/17]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1047,7 +1047,7 @@ const singles = [
       },
       {
         src: parenSBloka,
-        alt: "Парень с блока (Guy from block)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1072,7 +1072,7 @@ const singles = [
       },
       {
         src: svodimSUma,
-        alt: "Сводим с ума (Driving crazy)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1097,7 +1097,7 @@ const singles = [
       },
       {
         src: vesnovkaUshacha,
-        alt: "Весновка-ушача (Vesnovka-ushacha)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1122,7 +1122,7 @@ const singles = [
       },
       {
         src: nikogda,
-        alt: "Никогда (Never)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1147,7 +1147,7 @@ const singles = [
       },
       {
         src: malenkiyPrintsMalkRemix,
-        alt: "Маленький принц (The little prince) [Malk Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1172,7 +1172,7 @@ const singles = [
       },
       {
         src: avtopleyTuncrashersRemix,
-        alt: "Автоплей (Autoplay) [TuneCrashers Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1197,7 +1197,7 @@ const singles = [
       },
       {
         src: obmanula,
-        alt: "Обманула (Cheated)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1222,7 +1222,7 @@ const singles = [
       },
       {
         src: zolotoyMalchik,
-        alt: "Золотой мальчик (Golden boy)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1247,7 +1247,7 @@ const singles = [
       },
       {
         src: avtopley,
-        alt: "Автоплей (Autoplay)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1272,7 +1272,7 @@ const singles = [
       },
       {
         src: patron,
-        alt: "Патрон (Bullet Shell)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1297,7 +1297,7 @@ const singles = [
       },
       {
         src: kholostyakRemix,
-        alt: "Холостяк (Bachelor) [Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1322,7 +1322,7 @@ const singles = [
       },
       {
         src: kholostyak,
-        alt: "Холостяк (Bachelor)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1347,7 +1347,7 @@ const singles = [
       },
       {
         src: kholostyakFedukEgorKrid,
-        alt: "Холостяк (Bachelor)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1372,7 +1372,7 @@ const singles = [
       },
       {
         src: malenkiyPrintsIvanStarzevRemix,
-        alt: "Маленький принц (The little prince) [Ivan Starzev Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1397,7 +1397,7 @@ const singles = [
       },
       {
         src: beybiRemix,
-        alt: "Бэйби (Baby) [Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1422,7 +1422,7 @@ const singles = [
       },
       {
         src: malenkiyPrints,
-        alt: "Маленький принц (The little prince)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1447,7 +1447,7 @@ const singles = [
       },
       {
         src: zelenoglazyyeDeffki,
-        alt: "Зеленоглазые деффки! (Green-eyed girls!)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1472,7 +1472,7 @@ const singles = [
       },
       {
         src: vecherinkaRemix,
-        alt: "Вечеринка (Party) [Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1497,7 +1497,7 @@ const singles = [
       },
       {
         src: promenad,
-        alt: "променад (promenade)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1522,7 +1522,7 @@ const singles = [
       },
       {
         src: pimperial,
-        alt: "Pimperial",
+        alt: this.title,
       },
     ],
     links: {
@@ -1547,7 +1547,7 @@ const singles = [
       },
       {
         src: tiktonik,
-        alt: "Тиктоник (Tecktonik)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1572,7 +1572,7 @@ const singles = [
       },
       {
         src: dengiNeProblema,
-        alt: "Деньги не проблема (Money is not a problem)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1597,7 +1597,7 @@ const singles = [
       },
       {
         src: feniks,
-        alt: "Феникс (Phoenix)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1622,7 +1622,7 @@ const singles = [
       },
       {
         src: dzhentelmenShou,
-        alt: "Джентельмен-шоу (Gentlemen-show)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1647,7 +1647,7 @@ const singles = [
       },
       {
         src: shestnadtsatEzumiye,
-        alt: "16езумие (16adness)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1672,7 +1672,7 @@ const singles = [
       },
       {
         src: imperial,
-        alt: "Imperial",
+        alt: this.title,
       },
     ],
     links: {
@@ -1697,7 +1697,7 @@ const singles = [
       },
       {
         src: naytLayf,
-        alt: "Найт лайф (Night Life)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1722,7 +1722,7 @@ const singles = [
       },
       {
         src: chempionatRemix,
-        alt: "Чемпионат (Championship) [Remix]",
+        alt: this.title,
       },
     ],
     links: {
@@ -1747,7 +1747,7 @@ const singles = [
       },
       {
         src: celebration,
-        alt: "Celebration",
+        alt: this.title,
       },
     ],
     links: {
@@ -1772,7 +1772,7 @@ const singles = [
       },
       {
         src: bezumiye,
-        alt: "Безумие (Madness)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1797,7 +1797,7 @@ const singles = [
       },
       {
         src: mortvyyePrezidenty,
-        alt: "Мёртвые президенты (Dead President)",
+        alt: this.title,
       },
     ],
     links: {
@@ -1822,7 +1822,7 @@ const singles = [
       },
       {
         src: mneSkuchnoZhit,
-        alt: "Мне скучно жить (I'm tired of life)",
+        alt: this.title,
       },
     ],
     links: {
