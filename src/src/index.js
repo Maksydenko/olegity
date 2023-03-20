@@ -12,11 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Suspense>
-      <HashRouter>
+    <HashRouter>
+      <Suspense>
         <App />
-      </HashRouter>
-    </Suspense>
+      </Suspense>
+    </HashRouter>
   </React.StrictMode>
 );
 
