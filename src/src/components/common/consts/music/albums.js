@@ -29,7 +29,7 @@ const albums = [
       },
       {
         src: oneMoreСity,
-        alt: this.title,
+        alt: "One More City",
       },
     ],
     links: {
@@ -70,7 +70,7 @@ const albums = [
       },
       {
         src: svinoeRylo,
-        alt: this.title,
+        alt: "Свиное рыло (Pork snout)",
       },
     ],
     links: {
@@ -108,7 +108,7 @@ const albums = [
       },
       {
         src: tragicCity,
-        alt: this.title,
+        alt: "Tragic City",
       },
     ],
     links: {
@@ -147,7 +147,7 @@ const albums = [
       },
       {
         src: magicCity,
-        alt: this.title,
+        alt: "Magic City",
       },
     ],
     links: {
@@ -185,7 +185,7 @@ const albums = [
       },
       {
         src: viselicza,
-        alt: this.title,
+        alt: "Виселицца (Gallows)",
       },
     ],
     links: {
@@ -220,7 +220,7 @@ const albums = [
       },
       {
         src: yop,
-        alt: this.title,
+        alt: "ЁП (YOP)",
       },
     ],
     links: {

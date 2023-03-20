@@ -47,7 +47,7 @@ const musicVideos = [
       },
       {
         src: labirintOtrazheniy,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Лабиринт отражений (Labyrinth of reflections) [2017 unreleased]",
       },
     ],
   },
@@ -61,7 +61,7 @@ const musicVideos = [
       },
       {
         src: solntseZolotoye,
-        alt: this.title,
+        alt: "ЛСП (LSP) & Dose — Солнце Золотое (Golden Sun)",
       },
     ],
   },
@@ -75,7 +75,7 @@ const musicVideos = [
       },
       {
         src: gryaznyyeTantsy,
-        alt: this.title,
+        alt: "ЛСП (LSP) & Нюша (Nyusha) — Грязные танцы (Dirty dancing)",
       },
     ],
   },
@@ -90,7 +90,7 @@ const musicVideos = [
       },
       {
         src: yestDengiNetChuvstv,
-        alt: this.title,
+        alt: "ЛСП (LSP) — ЕСТЬ ДЕНЬГИ НЕТ ЧУВСТВ (HAVE MONEY NO FEELINGS) [PROD. BY SLAVA MARLOW]",
       },
     ],
   },
@@ -104,7 +104,7 @@ const musicVideos = [
       },
       {
         src: binokl,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Бинокль (Binoculars)",
       },
     ],
   },
@@ -118,7 +118,7 @@ const musicVideos = [
       },
       {
         src: mamontonok,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Мамонтёнок (Baby mammoth)",
       },
     ],
   },
@@ -132,7 +132,7 @@ const musicVideos = [
       },
       {
         src: parenSBloka,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Парень с блока (Guy from block)",
       },
     ],
   },
@@ -146,7 +146,7 @@ const musicVideos = [
       },
       {
         src: nikogda,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Никогда (Never)",
       },
     ],
   },
@@ -160,7 +160,7 @@ const musicVideos = [
       },
       {
         src: kholostyak,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Холостяк (Bachelor) [Single version]",
       },
     ],
   },
@@ -174,7 +174,7 @@ const musicVideos = [
       },
       {
         src: kholostyakFedukEgorKrid,
-        alt: this.title,
+        alt: "ЛСП (LSP) & Feduk & Егор Крид (Egor Krid) — Холостяк (Bachelor)",
       },
     ],
   },
@@ -188,7 +188,7 @@ const musicVideos = [
       },
       {
         src: beybiRemix,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Бэйби (Baby) [Remix]",
       },
     ],
   },
@@ -202,7 +202,7 @@ const musicVideos = [
       },
       {
         src: monetka,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Монетка (Coin)",
       },
     ],
   },
@@ -216,7 +216,7 @@ const musicVideos = [
       },
       {
         src: ok,
-        alt: this.title,
+        alt: "ЛСП (LSP) —  ОК",
       },
     ],
   },
@@ -230,7 +230,7 @@ const musicVideos = [
       },
       {
         src: poteryanINeNayden,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Потерян и не найден (Lost and not found)",
       },
     ],
   },
@@ -244,7 +244,7 @@ const musicVideos = [
       },
       {
         src: vinegret,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Винегрет (Vinaigrette)",
       },
     ],
   },
@@ -258,7 +258,7 @@ const musicVideos = [
       },
       {
         src: zacheMneEtotMir,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Зачем мне этот мир (Why do I need this world)",
       },
     ],
   },
@@ -272,7 +272,7 @@ const musicVideos = [
       },
       {
         src: hippi,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Хиппи (Hippie)",
       },
     ],
   },
@@ -286,7 +286,7 @@ const musicVideos = [
       },
       {
         src: kokteyl,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Коктейль (Cocktail)",
       },
     ],
   },

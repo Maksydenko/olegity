@@ -38,7 +38,7 @@ const animatedVideos = [
       },
       {
         src: ubiytsaSvin,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Убийца Свин (Pig killer)",
       },
     ],
   },
@@ -52,7 +52,7 @@ const animatedVideos = [
       },
       {
         src: tvoyaVina,
-        alt: this.title,
+        alt: "ЛСП (LSP) & Грязный рубль (Gryaznyy rubl) — Твоя вина (Your fault)",
       },
     ],
   },
@@ -66,7 +66,7 @@ const animatedVideos = [
       },
       {
         src: obryad,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Обряд (Rite)",
       },
     ],
   },
@@ -80,7 +80,7 @@ const animatedVideos = [
       },
       {
         src: vYeyoPosteli,
-        title: this.title,
+        title: "ЛСП (LSP) — В её постели (In her bed)",
       },
     ],
   },
@@ -95,7 +95,7 @@ const animatedVideos = [
       },
       {
         src: gryaznyyRubl,
-        alt: this.title,
+        alt: "ЛСП (LSP) & Грязный рубль (Gryaznyy rubl) — Грязный рубль (Dirty ruble)",
       },
     ],
   },
@@ -109,7 +109,7 @@ const animatedVideos = [
       },
       {
         src: vdvoyomInterlyudiya,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Вдвоём - Интерлюдия (Together - Interlude)",
       },
     ],
   },
@@ -123,7 +123,7 @@ const animatedVideos = [
       },
       {
         src: nezhnyyZver,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Нежный зверь (Gentle beast)",
       },
     ],
   },
@@ -137,7 +137,7 @@ const animatedVideos = [
       },
       {
         src: stimorol,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Стиморол (Stimorol)",
       },
     ],
   },
@@ -151,7 +151,7 @@ const animatedVideos = [
       },
       {
         src: spros,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Спрос (Demand)",
       },
     ],
   },
@@ -165,7 +165,7 @@ const animatedVideos = [
       },
       {
         src: podelnik,
-        alt: this.title,
+        alt: "ЛСП (LSP) & Снифф (Sniff) & Снафф (Snaff) — Подельник (Accomplice)",
       },
     ],
   },
@@ -179,7 +179,7 @@ const animatedVideos = [
       },
       {
         src: svinoyeRylo,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Свиное рыло (Pork snout)",
       },
     ],
   },
@@ -193,7 +193,7 @@ const animatedVideos = [
       },
       {
         src: desyatNegrityat,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Автоплей (Autoplay)",
       },
     ],
   },
@@ -207,7 +207,7 @@ const animatedVideos = [
       },
       {
         src: avtopley,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Автоплей (Autoplay)",
       },
     ],
   },
@@ -221,7 +221,7 @@ const animatedVideos = [
       },
       {
         src: malenkiyPrints,
-        alt: this.title,
+        alt: "ЛСП (LSP) — Маленький принц (The little prince)",
       },
     ],
   },

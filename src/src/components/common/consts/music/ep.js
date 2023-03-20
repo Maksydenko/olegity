@@ -20,9 +20,10 @@ const ep = [
       },
       {
         src: konditerskaya,
-        alt: this.title,
+        alt: "Кондитерская (Cake Factory)",
       },
     ],
+    description: "",
     links: {
       spotify:
         "https://open.spotify.com/album/3YMe42ahPZSR1vIglZJUIb?si=wCDsw0YgQ8ustaQpldqT_g",
@@ -53,9 +54,10 @@ const ep = [
       },
       {
         src: romanticСolegtion,
-        alt: this.title,
+        alt: "Romantic Colegtion",
       },
     ],
+    description: "",
     links: {
       spotify:
         "https://open.spotify.com/album/6glUa3Svi3PGcCXluPfGOu?si=kOOQkvipSYyp_lylOFxPaQ",
@@ -83,9 +85,10 @@ const ep = [
       },
       {
         src: videtTsvetnyyeSny,
-        alt: this.title,
+        alt: "Видеть цветные сны (See coloured dreams)",
       },
     ],
+    description: "",
     links: {
       spotify:
         "https://open.spotify.com/album/2i9JKomqOLixXpOhezsDjV?si=afxbsP4RTdGmxqQhnKzMog",
