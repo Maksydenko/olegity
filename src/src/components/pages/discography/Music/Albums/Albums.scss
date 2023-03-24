@@ -65,16 +65,23 @@
   }
 
   @media (max-width: $mobileSmall) {
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-      background-color: transparent;
-    }
-    .swiper-button-prev::after {
-      left: rem(-23);
-    }
+    &__slider {
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        background-color: transparent;
 
-    .swiper-button-next::after {
-      right: rem(-23);
+        @media (prefers-color-scheme: light) {
+          color: $mainColor;
+        }
+      }
+
+      .swiper-button-prev::after {
+        left: rem(-23);
+      }
+
+      .swiper-button-next::after {
+        right: rem(-23);
+      }
     }
   }
 }
