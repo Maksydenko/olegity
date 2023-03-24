@@ -9,6 +9,7 @@
     }
 
     [class*="__title"] {
+      margin-bottom: rem(20);
       font-size: rem(32);
 
       @media (max-width: $mobileSmall) {
