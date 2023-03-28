@@ -10,6 +10,7 @@ function Grids(props) {
 
   const grids = groupedImages.map((groupImages, index) => (
     <div
+      key={index}
       className={`gallery__grid${
         index % 3 === 0
           ? " gallery__grid_tall-start"

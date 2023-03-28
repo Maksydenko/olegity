@@ -31,7 +31,7 @@ function Text(props) {
         {track.title}
       </h5>
       <span
-        class="music-card__artist"
+        className="music-card__artist"
         {...swiperParallaxAttrArtist}
         {...swiperParallaxDurationAttr}
       >

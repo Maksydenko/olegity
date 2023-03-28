@@ -6,7 +6,7 @@ function Videos(props) {
 
   return (
     <div className="all-videos__videos videos">
-      <div class="videos__container">
+      <div className="videos__container">
         <Search
           className="videos"
           filterText={filterText}
