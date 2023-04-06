@@ -12,7 +12,7 @@ function Titles(props) {
       tabsWidth={tabsWidth}
       isActive={isActive}
       setIsActive={setIsActive}
-      onFilterTextClear={onFilterTextClear}
+      {...(onFilterTextClear && { onFilterTextClear: onFilterTextClear })}
     />
   ));
 

@@ -3,7 +3,7 @@ function Title(props) {
 
   function handleTabClick() {
     setIsActive(tab.id);
-    onFilterTextClear();
+    onFilterTextClear && onFilterTextClear();
   }
 
   return (

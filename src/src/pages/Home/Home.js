@@ -1,8 +1,8 @@
-import FullScreen from "@components/pages/home/FullScreen/FullScreen";
-import MainAbout from "@components/pages/home/MainAbout/MainAbout";
-import MainAlbums from "@components/pages/home/MainAlbums/MainAlbums";
-import MainVideos from "@components/pages/home/MainVideos/MainVideos";
-import MainConcerts from "@components/pages/home/MainConcerts/MainConcerts";
+import FullScreen from "@screens/home/FullScreen/FullScreen";
+import MainAbout from "@screens/home/MainAbout/MainAbout";
+import MainAlbums from "@screens/home/MainAlbums/MainAlbums";
+import MainVideos from "@screens/home/MainVideos/MainVideos";
+import MainConcerts from "@screens/home/MainConcerts/MainConcerts";
 
 function Main() {
   return (

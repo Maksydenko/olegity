@@ -2,6 +2,7 @@
 import {
   Navigation,
   Pagination,
+  // Scrollbar,
   // HashNavigation,
   Keyboard,
   // Mousewheel,
@@ -18,6 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+// import "swiper/scss/scrollbar";
 import "swiper/scss/zoom";
 
 function SliderSwiper(props) {
@@ -26,6 +28,7 @@ function SliderSwiper(props) {
     children,
     // Navigation
     navigation,
+
     // Pagination
     pagination,
     // Clickable
@@ -34,6 +37,11 @@ function SliderSwiper(props) {
     paginationDynamicBullets,
     // Types: bullets, fraction, progressbar
     paginationType,
+
+    // Scrollbar
+    scrollbar,
+    // The ability to drag scrollbar
+    scrollbarDraggable,
 
     // Turning/disabling dragging on a PC
     simulateTouch,
@@ -122,6 +130,7 @@ function SliderSwiper(props) {
       modules={[
         Navigation,
         Pagination,
+        // Scrollbar,
         // HashNavigation,
         Keyboard,
         // Mousewheel,
@@ -141,6 +150,11 @@ function SliderSwiper(props) {
           dynamicBullets: paginationDynamicBullets,
           // Types: bullets, fraction, progressbar
           type: paginationType,
+        },
+      })}
+      {...(scrollbar && {
+        scrollbar: {
+          draggable: scrollbarDraggable,
         },
       })}
       // Turning/disabling dragging on a PC
@@ -209,7 +223,7 @@ function SliderSwiper(props) {
       // Horizontal/vertical slider
       direction={direction}
       // Breakpoints (adaptive)
-      breakpoints={breakpoints}
+      {...(breakpoints && { breakpoints })}
       // Update slider when slider items change
       observer={observer}
       // Turn on/off parallax
@@ -224,14 +238,18 @@ function SliderSwiper(props) {
 
 SliderSwiper.defaultProps = {
   navigation: true,
+
   // Pagination
-  pagination: true,
+  pagination: false,
   // Clickable
   paginationClickable: true,
   // Dynamic bullets
   paginationDynamicBullets: false,
   // Types: bullets, fraction, progressbar
-  paginationType: "",
+  paginationType: "progressbar",
+
+  scrollbar: false,
+  scrollbarDraggable: true,
 
   // Turning/disabling dragging on a PC
   simulateTouch: true,
@@ -293,8 +311,6 @@ SliderSwiper.defaultProps = {
   speed: 300,
   // horizontal/vertical slider
   direction: "horizontal",
-  // Breakpoints (adaptive)
-  breakpoints: {},
   // Update slider when slider items change
   observer: true,
   // Turn on/off parallax

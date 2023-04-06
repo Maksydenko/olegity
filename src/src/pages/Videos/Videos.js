@@ -1,4 +1,4 @@
-import AllVideos from "@components/pages/videos/AllVideos/AllVideos";
+import AllVideos from "@screens/videos/AllVideos/AllVideos";
 
 function Videos() {
   return (

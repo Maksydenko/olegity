@@ -1,4 +1,4 @@
-import Music from "@components/pages/discography/Music/Music";
+import Music from "@screens/discography/Music/Music";
 
 function Discography() {
   return (

@@ -12,6 +12,9 @@ module.exports = {
       "@base": resolvePath("./src/components/base"),
       "@common": resolvePath("./src/components/common"),
       "@layout": resolvePath("./src/components/layout"),
+      "@screens": resolvePath("./src/components/screens"),
+
+      "@constants": resolvePath("./src/constants"),
 
       "@pages": resolvePath("./src/pages"),
     },

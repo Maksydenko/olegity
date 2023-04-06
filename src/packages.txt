@@ -1,9 +1,9 @@
-npm i sass
+yarn add craco
 
-npm i craco
+yarn add sass
 
-npm i react-router-dom
+yarn add react-router-dom
 
-npm i i18next i18next-http-backend i18next-browser-languagedetector react-i18next
+yarn add i18next i18next-http-backend i18next-browser-languagedetector react-i18next
 
-npm i swiper
+yarn add swiper

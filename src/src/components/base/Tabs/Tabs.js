@@ -13,7 +13,7 @@ function Tabs(props) {
         tabs={tabs}
         isActive={isActive}
         setIsActive={setIsActive}
-        onFilterTextClear={onFilterTextClear}
+        {...(onFilterTextClear && { onFilterTextClear: onFilterTextClear })}
       />
       <Contents tabs={tabs} isActive={isActive} />
     </div>
