@@ -152,8 +152,10 @@ function SliderSwiper(props) {
           type: paginationType,
         },
       })}
+      // Scrollbar
       {...(scrollbar && {
         scrollbar: {
+          // The ability to drag scrollbar
           draggable: scrollbarDraggable,
         },
       })}
@@ -248,7 +250,9 @@ SliderSwiper.defaultProps = {
   // Types: bullets, fraction, progressbar
   paginationType: "progressbar",
 
+  // Scrollbar
   scrollbar: false,
+  // The ability to drag scrollbar
   scrollbarDraggable: true,
 
   // Turning/disabling dragging on a PC
