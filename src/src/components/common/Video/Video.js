@@ -1,38 +1,19 @@
-import { useState, useEffect } from "react";
+import useLoader from "@hooks/useLoader";
 
 import Loader from "@base/Loader/Loader";
 
 function Item(props) {
-  const [isLoading, setIsLoading] = useState(true);
-
-  function handleVideoLoad() {
-    setIsLoading(false);
-  }
-
-  useEffect(() => {
-    const imgItem = document.querySelector(".video iframe");
-
-    if (imgItem.complete) {
-      handleVideoLoad();
-    } else {
-      imgItem.addEventListener("load", handleVideoLoad);
-
-      return () => {
-        imgItem.removeEventListener("load", handleVideoLoad);
-      };
-    }
-  }, [handleVideoLoad]);
-
   const { className, video } = props;
+  const loading = useLoader("video", "iframe");
 
   return (
     <div className={`${className}__video video`}>
-      {isLoading && <Loader />}
+      {loading && <Loader />}
       <iframe
         src={video.src}
         title={video.title}
         loading="lazy"
-        allow="accelerometer; autoplay; videoboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
     </div>
