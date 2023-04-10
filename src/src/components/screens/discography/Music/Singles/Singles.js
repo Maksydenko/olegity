@@ -1,26 +1,17 @@
-import { useState } from "react";
-
 import Search from "@common/Search/Search";
 import Items from "./Items/Items";
 
+import useInput from "@hooks/useInput";
+
 function Singles(props) {
-  const [filterText, setFilterText] = useState("");
-
-  function handleFilterTextChange(filterText) {
-    setFilterText(filterText);
-  }
-
   const { singles } = props;
+  const filterInput = useInput();
 
   return (
     <div className="music__singles singles">
       <div className="singles__container">
-        <Search
-          className="singles"
-          filterText={filterText}
-          onFilterTextChange={handleFilterTextChange}
-        />
-        <Items singles={singles} filterText={filterText} />
+        <Search className="singles" {...filterInput} />
+        <Items singles={singles} filterText={filterInput.filterText} />
       </div>
     </div>
   );

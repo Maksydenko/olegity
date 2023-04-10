@@ -16,6 +16,8 @@ module.exports = {
 
       "@constants": resolvePath("./src/constants"),
 
+      "@hooks": resolvePath("./src/hooks"),
+
       "@pages": resolvePath("./src/pages"),
     },
   },

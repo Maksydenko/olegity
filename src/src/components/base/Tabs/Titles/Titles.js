@@ -1,7 +1,7 @@
 import Title from "./Title";
 
 function Titles(props) {
-  const { tabs, isActive, setIsActive, onFilterTextClear } = props;
+  const { tabs, isActive, setIsActive } = props;
 
   const tabsWidth = `${100 / tabs.length}%`;
 
@@ -12,7 +12,6 @@ function Titles(props) {
       tabsWidth={tabsWidth}
       isActive={isActive}
       setIsActive={setIsActive}
-      {...(onFilterTextClear && { onFilterTextClear: onFilterTextClear })}
     />
   ));
 

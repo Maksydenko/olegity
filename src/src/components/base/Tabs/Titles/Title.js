@@ -1,9 +1,8 @@
 function Title(props) {
-  const { tab, tabsWidth, isActive, setIsActive, onFilterTextClear } = props;
+  const { tab, tabsWidth, isActive, setIsActive } = props;
 
   function handleTabClick() {
     setIsActive(tab.id);
-    onFilterTextClear && onFilterTextClear();
   }
 
   return (

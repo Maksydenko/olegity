@@ -4,6 +4,10 @@ import { useTranslation } from "react-i18next";
 function Search(props) {
   const [isFocus, setIsFocus] = useState();
 
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   function handleFilterTextChange(event) {
     onFilterTextChange(event.target.value);
   }
@@ -12,16 +16,11 @@ function Search(props) {
     onFilterTextChange("");
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
-
   function handleFocusChange() {
     setIsFocus((prevState) => !prevState);
   }
 
   const { t } = useTranslation();
-
   const { className, filterText, onFilterTextChange } = props;
 
   return (
