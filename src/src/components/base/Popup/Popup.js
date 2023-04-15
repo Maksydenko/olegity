@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Popup(props) {
   const [isActive, setIsActive] = useState(false);
