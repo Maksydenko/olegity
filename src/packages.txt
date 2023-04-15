@@ -1,9 +1,0 @@
-yarn add craco
-
-yarn add sass
-
-yarn add react-router-dom
-
-yarn add i18next i18next-http-backend i18next-browser-languagedetector react-i18next
-
-yarn add swiper
