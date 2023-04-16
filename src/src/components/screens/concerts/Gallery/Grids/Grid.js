@@ -1,6 +1,6 @@
 import Img from "@base/Img/Img";
 
-function Photos(props) {
+function Grid(props) {
   const { groupImages } = props;
 
   return groupImages.map((img, index) => (
@@ -8,4 +8,4 @@ function Photos(props) {
   ));
 }
 
-export default Photos;
+export default Grid;

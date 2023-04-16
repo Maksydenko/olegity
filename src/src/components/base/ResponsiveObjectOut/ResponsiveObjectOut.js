@@ -1,12 +1,12 @@
 function ResponsiveObjectOut(props) {
   const { className, pc, children, object } = props;
-  const responsiveObjectOut = `responsive-object-out${pc ? "_pc" : ""}`;
+  const pcClass = `responsive-object-out${pc ? "_pc" : ""}`;
 
   return (
-    <section className={`${className} ${responsiveObjectOut}`}>
-      <div className={`${responsiveObjectOut}__content`}>
-        <div className={`${responsiveObjectOut}__container`}>
-          <div className={`${responsiveObjectOut}__body`}>{children}</div>
+    <section className={`${className} ${pcClass}`}>
+      <div className={`${pcClass}__content`}>
+        <div className={`${pcClass}__container`}>
+          <div className={`${pcClass}__body`}>{children}</div>
         </div>
       </div>
       {object}

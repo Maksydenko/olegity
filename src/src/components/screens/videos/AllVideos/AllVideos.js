@@ -8,7 +8,7 @@ import animatedVideos from "@constants/videos/animatedVideos";
 
 function AllVideos() {
   const { t } = useTranslation();
-  const allVideos = [
+  const tabs = [
     {
       id: 1,
       title: t("music-videos"),
@@ -24,7 +24,7 @@ function AllVideos() {
   return (
     <div className="all-videos">
       <div className="all-videos__container">
-        <Tabs className="all-videos" tabs={allVideos} />
+        <Tabs className="all-videos" tabs={tabs} />
       </div>
     </div>
   );

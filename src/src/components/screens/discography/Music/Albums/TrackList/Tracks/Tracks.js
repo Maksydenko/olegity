@@ -1,10 +1,10 @@
-import Item from "./Item";
+import Track from "./Track";
 
-function Items(props) {
+function Tracks(props) {
   const { trackList, swiperParallax, swiperParallaxDuration } = props;
 
   return trackList.map((track, index) => (
-    <Item
+    <Track
       key={index}
       track={track}
       swiperParallax={swiperParallax - index * 100}
@@ -13,4 +13,4 @@ function Items(props) {
   ));
 }
 
-export default Items;
+export default Tracks;

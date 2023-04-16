@@ -7,16 +7,20 @@ import links from "@layout/navigation/links";
 function Menu(props) {
   const { isActive, onMenuClick, onMenuClose } = props;
 
+  function activeClass(className) {
+    return `${className}${isActive ? " _active" : ""}`;
+  }
+
   return (
     <div className="header__menu menu">
       <button
         type="button"
-        className={`menu__button${isActive ? " _active" : ""}`}
+        className={activeClass("menu__button")}
         onClick={onMenuClick}
       >
         <span></span>
       </button>
-      <nav className={`menu__body${isActive ? " _active" : ""}`}>
+      <nav className={activeClass("menu__body")}>
         <ul className="menu__list">
           <Items links={links} onMenuClose={onMenuClose} />
         </ul>

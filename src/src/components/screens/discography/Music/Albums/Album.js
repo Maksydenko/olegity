@@ -3,7 +3,7 @@ import ListenOn from "../ListenOn/ListenOn";
 import TrackList from "./TrackList/TrackList";
 
 function Album(props) {
-  const album = props.album;
+  const { album } = props;
 
   return (
     <div className="albums__album">

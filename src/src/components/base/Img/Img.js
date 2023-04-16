@@ -1,7 +1,7 @@
 import useLoader from "@hooks/useLoader";
 
-import ImgPicture from "./ImgPicture";
 import Loader from "@base/Loader/Loader";
+import ImgPicture from "./ImgPicture";
 
 function Img(props) {
   const { className, img } = props;

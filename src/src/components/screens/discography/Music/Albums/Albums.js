@@ -3,7 +3,6 @@ import Album from "./Album";
 
 function Albums(props) {
   const { albums } = props;
-
   const slides = albums.map((album, index) => (
     <Album key={index} album={album} />
   ));

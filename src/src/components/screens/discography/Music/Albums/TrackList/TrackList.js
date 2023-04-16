@@ -1,11 +1,11 @@
-import Items from "./Items/Items";
+import Tracks from "./Tracks/Tracks";
 
 function TrackList(props) {
   const { trackList, swiperParallax, swiperParallaxDuration } = props;
 
   return (
     <ol className="albums__track-list track-list">
-      <Items
+      <Tracks
         trackList={trackList}
         swiperParallax={swiperParallax}
         swiperParallaxDuration={swiperParallaxDuration}

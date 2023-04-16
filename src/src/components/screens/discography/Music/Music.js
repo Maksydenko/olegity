@@ -11,7 +11,7 @@ import singles from "@constants/music/singles";
 function Music() {
   const { t } = useTranslation();
 
-  const music = [
+  const tabs = [
     {
       id: 1,
       title: t("albums"),
@@ -32,7 +32,7 @@ function Music() {
   return (
     <div className="music">
       <div className="music__container">
-        <Tabs className="music" tabs={music} />
+        <Tabs className="music" tabs={tabs} />
       </div>
     </div>
   );

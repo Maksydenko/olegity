@@ -1,10 +1,11 @@
 function Item(props) {
   const { item, swiperParallax, swiperParallaxDuration } = props;
 
-  const swiperParallaxAttr = swiperParallax && {
+  const swiperParallaxAttr = {
     "data-swiper-parallax": swiperParallax,
   };
-  const swiperParallaxDurationAttr = swiperParallaxDuration && {
+
+  const swiperParallaxDurationAttr = {
     "data-swiper-parallax-duration": swiperParallaxDuration,
   };
 

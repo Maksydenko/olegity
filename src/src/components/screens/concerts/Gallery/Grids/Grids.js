@@ -1,4 +1,4 @@
-import Items from "./Items";
+import Grid from "./Grid";
 
 function Grids(props) {
   const { images } = props;
@@ -19,7 +19,7 @@ function Grids(props) {
           : " gallery__grid_tall-end"
       }`}
     >
-      <Items key={index} groupImages={groupImages} />
+      <Grid key={index} groupImages={groupImages} />
     </div>
   ));
 

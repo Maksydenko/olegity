@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
 
 function LanguageChange(props) {
-  const onMenuClose = props.onMenuClose;
+  const { onMenuClose } = props;
   const { i18n } = useTranslation();
+
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
     onMenuClose();

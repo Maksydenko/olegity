@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Body from "./Body";
+
 function Popup(props) {
   const [isActive, setIsActive] = useState(false);
 
@@ -17,36 +19,20 @@ function Popup(props) {
     handleScrollLock();
   }
 
-  function handlePopupClose(event) {
-    if (!event.target.closest(".popup__content")) {
-      handlePopupActive();
-    }
-  }
-
   const { className, button, children } = props;
 
   return (
-    <>
+    <div className={`${className}__popup popup`}>
       <button
-        className={`${className}__button popup__button`}
+        className={`${className}__popup-button popup__button`}
         onClick={handlePopupActive}
       >
         {button}
       </button>
       {isActive && (
-        <div className={`${className}__popup popup`} onClick={handlePopupClose}>
-          <div className="popup__body">
-            <div className="popup__content">
-              <button
-                className="popup__cross"
-                onClick={handlePopupActive}
-              ></button>
-              {children}
-            </div>
-          </div>
-        </div>
+        <Body onPopupActive={handlePopupActive} children={children} />
       )}
-    </>
+    </div>
   );
 }
 

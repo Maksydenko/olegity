@@ -19,11 +19,11 @@ function FullScreenVideo(props) {
     };
   }, [height]);
 
-  const { className, children, poster, videos } = props;
-
   const styleMinHeight = {
     minHeight: height,
   };
+
+  const { className, children, poster, videos } = props;
 
   return (
     <section

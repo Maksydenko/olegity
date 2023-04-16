@@ -1,4 +1,4 @@
-function Item(props) {
+function Track(props) {
   const { track, swiperParallax, swiperParallaxDuration } = props;
 
   const swiperParallaxAttr = swiperParallax && {
@@ -19,4 +19,4 @@ function Item(props) {
   );
 }
 
-export default Item;
+export default Track;

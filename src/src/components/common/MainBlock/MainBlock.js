@@ -10,7 +10,7 @@ function MainBlock(props) {
 
   return (
     <div className={`${className}__main-block main-block`}>
-      {title && <h2 className="main-block__title">{t(title)}</h2>}
+      <h2 className="main-block__title">{t(title)}</h2>
       <div className="main-block__text">{textItems}</div>
       {link && (
         <Link to={link.path} className="main-block__link">

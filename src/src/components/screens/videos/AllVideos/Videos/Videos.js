@@ -1,11 +1,10 @@
+import useInput from "@hooks/useInput";
+
 import Search from "@common/Search/Search";
 import Items from "./Items/Items";
 
-import useInput from "@hooks/useInput";
-
 function Videos(props) {
   const { videos } = props;
-
   const filterInput = useInput();
 
   return (
