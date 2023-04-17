@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import MainBlock from "@common/MainBlock/MainBlock";
+import MainLink from "@common/MainLink/MainLink";
 import SliderVideos from "./SliderVideos";
 
 function MainVideos() {
@@ -15,7 +15,7 @@ function MainVideos() {
     <section className="main-videos">
       <h2 className="main-videos__title">{t("latest-videos")}</h2>
       <SliderVideos />
-      <MainBlock className="main-videos" link={link} />
+      <MainLink className="main-videos" link={link} />
     </section>
   );
 }

@@ -33,14 +33,4 @@
       aspect-ratio: 21/9;
     }
   }
-
-  // .main-videos__main-block
-
-  &__main-block {
-    [class*="__link"] {
-      @media (min-width: $mobile) {
-        font-size: rem(18);
-      }
-    }
-  }
 }

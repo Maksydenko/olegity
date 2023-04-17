@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import MainBlock from "@common/MainBlock/MainBlock";
+import MainLink from "@common/MainLink/MainLink";
 import SliderAlbums from "./SliderAlbums";
 
 function MainAlbums() {
@@ -16,7 +16,7 @@ function MainAlbums() {
       <div className="main-albums__container">
         <h2 className="main-albums__title">{t("albums")}</h2>
         <SliderAlbums />
-        <MainBlock className="main-albums" link={link} />
+        <MainLink className="main-albums" link={link} />
       </div>
     </section>
   );

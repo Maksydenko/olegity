@@ -16,7 +16,7 @@
     }
   }
 
-  // .main-block__paragraph
+  // .main-block__text
 
   &__text {
     line-height: 1.3;
@@ -30,28 +30,9 @@
     }
   }
 
-  // .main-block__link
+  // .main-block__main-link
 
-  &__link {
-    display: inline-block;
-    padding: em(15);
-    font-weight: 500;
-    border: em(2) solid $mainColor;
-    border-radius: em(5);
-    transition: all 0.3s ease 0s;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: $darkColor;
-    }
-
-    &:hover {
-      background-color: $darkBg;
-      color: $darkColor;
-
-      @media (prefers-color-scheme: dark) {
-        background-color: $mainBg;
-        color: $mainColor;
-      }
-    }
+  &__main-link {
+    font-size: rem(16) !important;
   }
 }
