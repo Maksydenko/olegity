@@ -29,9 +29,7 @@ function Popup(props) {
       >
         {button}
       </button>
-      {isActive && (
-        <Body onPopupActive={handlePopupActive} children={children} />
-      )}
+      {isActive && <Body onPopupActive={handlePopupActive}>{children}</Body>}
     </div>
   );
 }
