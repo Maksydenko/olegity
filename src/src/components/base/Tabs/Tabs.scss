@@ -5,7 +5,13 @@
 
   &__titles {
     display: flex;
-    gap: rem(5);
+    gap: em(5);
+    font-weight: 500;
+    font-family: $fontFamily2;
+
+    @media (max-width: $mobile) {
+      font-size: rem(14);
+    }
   }
 
   &__title {
@@ -13,11 +19,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: rem(50);
-    font-size: rem(16);
+    height: em(50);
     border-radius: 0 0 em(5) em(5);
-    font-weight: 500;
-    font-family: $fontFamily2;
     text-transform: uppercase;
     color: $darkColor;
     background-color: $darkBg;
@@ -42,9 +45,8 @@
     @media (max-width: $mobile) {
       span {
         display: block;
-        padding: 0 rem(5);
+        padding: 0 em(5);
         text-align: center;
-        font-size: rem(14);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
