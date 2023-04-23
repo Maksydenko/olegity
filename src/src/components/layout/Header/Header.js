@@ -8,12 +8,12 @@ import logo from "@img/logos/olegity.svg";
 function Header() {
   const [isActive, setIsActive] = useState();
 
-  function handleActiveChange() {
+  function handleChangeActive() {
     setIsActive((prevState) => !prevState);
   }
 
   const body = document.body;
-  function handleScrollLock() {
+  function handleLockScroll() {
     if (isActive) {
       body.classList.remove("_lock");
     } else {
@@ -23,16 +23,16 @@ function Header() {
 
   const documentElement = document.documentElement;
   function handleMenuClick() {
-    handleActiveChange();
+    handleChangeActive();
     if (documentElement.offsetWidth <= 991.98) {
-      handleScrollLock();
+      handleLockScroll();
     }
   }
 
   function handleMenuClose() {
     if (isActive) {
-      handleActiveChange();
-      handleScrollLock();
+      handleChangeActive();
+      handleLockScroll();
     }
   }
 
