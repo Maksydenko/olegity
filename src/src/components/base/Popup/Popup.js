@@ -1,22 +1,12 @@
-import { useState } from "react";
+import { useScrollLock } from "@hooks/useScrollLock";
 
 import Body from "./Body";
 
 function Popup(props) {
-  const [isActive, setIsActive] = useState(false);
+  const { isLockedScroll, setIsLockedScroll } = useScrollLock();
 
-  const body = document.body;
-  function handleScrollLock() {
-    if (isActive) {
-      body.classList.remove("_lock");
-    } else {
-      body.classList.add("_lock");
-    }
-  }
-
-  function handlePopupActive() {
-    setIsActive(!isActive);
-    handleScrollLock();
+  function handleClick() {
+    setIsLockedScroll(!isLockedScroll);
   }
 
   const { className, button, children } = props;
@@ -25,11 +15,11 @@ function Popup(props) {
     <div className={`${className}__popup popup`}>
       <button
         className={`${className}__popup-button popup__button`}
-        onClick={handlePopupActive}
+        onClick={handleClick}
       >
         {button}
       </button>
-      {isActive && <Body onPopupActive={handlePopupActive}>{children}</Body>}
+      {isLockedScroll && <Body onClick={handleClick}>{children}</Body>}
     </div>
   );
 }

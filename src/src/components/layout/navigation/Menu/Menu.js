@@ -5,10 +5,10 @@ import ScrollTop from "./ScrollTop/ScrollTop";
 import links from "@layout/navigation/links";
 
 function Menu(props) {
-  const { isActive, onMenuClick, onMenuClose } = props;
+  const { isLockedScroll, onClick } = props;
 
   function activeClass(className) {
-    return `${className}${isActive ? " _active" : ""}`;
+    return `${className}${isLockedScroll ? " _active" : ""}`;
   }
 
   return (
@@ -16,15 +16,15 @@ function Menu(props) {
       <button
         type="button"
         className={activeClass("menu__button")}
-        onClick={onMenuClick}
+        onClick={onClick}
       >
         <span></span>
       </button>
       <nav className={activeClass("menu__body")}>
         <ul className="menu__list">
-          <Items links={links} onMenuClose={onMenuClose} />
+          <Items links={links} onClick={onClick} />
         </ul>
-        <LanguageChange onMenuClose={onMenuClose} />
+        <LanguageChange onClick={onClick} />
       </nav>
       <ScrollTop />
     </div>

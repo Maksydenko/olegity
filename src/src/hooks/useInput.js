@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function useInput() {
+export function useInput() {
   const [filterText, setFilterText] = useState("");
 
   function onFilterTextChange(filterText) {
@@ -9,5 +9,3 @@ function useInput() {
 
   return { filterText, onFilterTextChange };
 }
-
-export default useInput;

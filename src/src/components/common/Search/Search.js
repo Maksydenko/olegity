@@ -25,24 +25,26 @@ function Search(props) {
 
   return (
     <div className={`${className}__search search`}>
-      <form action="#" onSubmit={handleSubmit}>
-        <div className={`search__filter-text${isFocus ? " _focus" : ""}`}>
-          <span className="search__loupe _icon-loupe"></span>
-          <input
-            type="text"
-            placeholder={t("search")}
-            className="search__input"
-            value={filterText}
-            onChange={handleFilterTextChange}
-            onFocus={handleFocusChange}
-            onBlur={handleFocusChange}
-          />
-          <button
-            type="button"
-            className="search__cross _icon-cross"
-            onClick={handleFilterTextClear}
-          ></button>
-        </div>
+      <form
+        action="#"
+        className={`search__filter-text${isFocus ? " _focus" : ""}`}
+        onSubmit={handleSubmit}
+      >
+        <span className="search__loupe _icon-loupe"></span>
+        <input
+          type="text"
+          placeholder={t("search")}
+          className="search__input"
+          value={filterText}
+          onChange={handleFilterTextChange}
+          onFocus={handleFocusChange}
+          onBlur={handleFocusChange}
+        />
+        <button
+          type="button"
+          className="search__cross _icon-cross"
+          onClick={handleFilterTextClear}
+        ></button>
       </form>
     </div>
   );

@@ -1,37 +1,32 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+
+import { useScrollLock } from "@hooks/useScrollLock";
+import { useWindowSize } from "@hooks/useWindowSize";
 
 import Menu from "@layout/navigation/Menu/Menu";
 
 import logo from "@img/logos/olegity.svg";
 
 function Header() {
-  const [isActive, setIsActive] = useState();
+  const { isLockedScroll, setIsLockedScroll } = useScrollLock();
+  const breakPoint = 991.98;
 
-  function handleChangeActive() {
-    setIsActive((prevState) => !prevState);
-  }
-
-  const body = document.body;
   function handleLockScroll() {
-    if (isActive) {
-      body.classList.remove("_lock");
-    } else {
-      body.classList.add("_lock");
-    }
+    setIsLockedScroll(!isLockedScroll);
   }
 
-  const documentElement = document.documentElement;
-  function handleMenuClick() {
-    handleChangeActive();
-    if (documentElement.offsetWidth <= 991.98) {
+  function handleUnlockScroll() {
+    const windowWidth = window.innerWidth;
+    if (windowWidth >= breakPoint && isLockedScroll) {
       handleLockScroll();
     }
   }
 
-  function handleMenuClose() {
-    if (isActive) {
-      handleChangeActive();
+  useWindowSize(handleUnlockScroll, isLockedScroll);
+
+  function handleClick() {
+    const windowWidth = window.innerWidth;
+    if (windowWidth <= breakPoint) {
       handleLockScroll();
     }
   }
@@ -39,14 +34,10 @@ function Header() {
   return (
     <header className="header">
       <div className="header__container">
-        <Link to="/" className="header__logo" onClick={handleMenuClose}>
+        <Link to="/" className="header__logo" onClick={handleClick}>
           <img src={logo} alt="Olegity" />
         </Link>
-        <Menu
-          isActive={isActive}
-          onMenuClick={handleMenuClick}
-          onMenuClose={handleMenuClose}
-        />
+        <Menu isLockedScroll={isLockedScroll} onClick={handleClick} />
       </div>
     </header>
   );

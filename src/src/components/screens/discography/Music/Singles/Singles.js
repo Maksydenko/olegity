@@ -1,6 +1,6 @@
-import useInput from "@hooks/useInput";
-import Search from "@common/Search/Search";
+import { useInput } from "@hooks/useInput";
 
+import Search from "@common/Search/Search";
 import Items from "./Items/Items";
 
 function Singles(props) {

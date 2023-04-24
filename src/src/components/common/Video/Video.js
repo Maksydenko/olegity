@@ -1,4 +1,4 @@
-import useLoader from "@hooks/useLoader";
+import { useLoader } from "@hooks/useLoader";
 
 import Loader from "@base/Loader/Loader";
 

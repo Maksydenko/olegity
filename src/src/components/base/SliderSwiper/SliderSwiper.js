@@ -27,30 +27,30 @@ function SliderSwiper(props) {
     className,
     children,
     // Navigation
-    navigation,
+    navigation = true,
 
     // Pagination
     pagination,
     // Clickable
-    paginationClickable,
+    paginationClickable = true,
     // Dynamic bullets
     paginationDynamicBullets,
     // Types: bullets, fraction, progressbar
-    paginationType,
+    paginationType = "progressbar",
 
     // Scrollbar
     scrollbar,
     // The ability to drag scrollbar
-    scrollbarDraggable,
+    scrollbarDraggable = true,
 
     // Turning/disabling dragging on a PC
-    simulateTouch,
+    simulateTouch = true,
     // Sweep sensitivity
-    touchRatio,
+    touchRatio = 1,
     // Sweep/dragging angle
-    touchAngle,
+    touchAngle = 45,
     // Grab cursor
-    grabCursor,
+    grabCursor = true,
     // Switching when clicking on a slide
     slideToClickedSlide,
 
@@ -62,29 +62,29 @@ function SliderSwiper(props) {
     // Keyboard management
 
     // Turn on/off
-    keyboardEnabled,
+    keyboardEnabled = true,
     // Turn on/off only when the slider is within the viewport
-    keyboardOnlyInViewport,
+    keyboardOnlyInViewport = true,
     // Turn on/off the control control of PageUp, PageDown
     keyboardPageUpDown,
 
     // Mouse wheel control
     mousewheel,
     // The sensitivity of mouse wheel
-    mousewheelSensitivity,
+    mousewheelSensitivity = 1,
 
     // Auto height
-    autoHeight,
+    autoHeight = true,
     // Number of slides for showing
-    slidesPerView,
+    slidesPerView = 1,
     // The indent between the slides
-    spaceBetween,
+    spaceBetween = 30,
     // The number of flipped slides
-    slidesPerGroup,
+    slidesPerGroup = 1,
     // Active slide in the center
     centeredSlides,
     // Starting slide
-    initialSlide,
+    initialSlide = 0,
     // Loop slider
     loop,
     // Free mode
@@ -93,20 +93,20 @@ function SliderSwiper(props) {
     // Autoplay
     autoplay,
     // Pause between slides
-    autoplayDelay,
+    autoplayDelay = 1000,
     // Stop on last slide
     autoplayStopOnLastSlide,
     // Disable after manual override
     autoplayDisableOnInteraction,
 
     // Speed
-    speed,
-    // Horizontal/vertical slider
-    direction,
+    speed = 300,
+    // horizontal/vertical slider
+    direction = "horizontal",
     // Breakpoints (adaptive)
     breakpoints,
     // Update slider when slider items change
-    observer,
+    observer = true,
     // Turn on/off parallax
     parallax,
     // Virtual slides
@@ -237,90 +237,5 @@ function SliderSwiper(props) {
     </Swiper>
   );
 }
-
-SliderSwiper.defaultProps = {
-  navigation: true,
-
-  // Pagination
-  pagination: false,
-  // Clickable
-  paginationClickable: true,
-  // Dynamic bullets
-  paginationDynamicBullets: false,
-  // Types: bullets, fraction, progressbar
-  paginationType: "progressbar",
-
-  // Scrollbar
-  scrollbar: false,
-  // The ability to drag scrollbar
-  scrollbarDraggable: true,
-
-  // Turning/disabling dragging on a PC
-  simulateTouch: true,
-  // Sweep sensitivity
-  touchRatio: 1,
-  // Sweep/dragging angle
-  touchAngle: 45,
-  // Grab cursor
-  grabCursor: true,
-  // Switching when clicking on a slide
-  slideToClickedSlide: false,
-
-  // Hash navigation
-
-  // Track the condition
-  hashNavigationWatchState: false,
-
-  // Keyboard management
-
-  // Turn on/off
-  keyboardEnabled: true,
-  // Turn on/off only when the slider is within the viewport
-  keyboardOnlyInViewport: true,
-  // Turn on/off the control control of PageUp, PageDown
-  keyboardPageUpDown: false,
-
-  // Mouse wheel control
-  mousewheel: false,
-  // The sensitivity of mouse wheel
-  mousewheelSensitivity: 1,
-
-  // Auto height
-  autoHeight: true,
-  // Number of slides for showing
-  slidesPerView: 1,
-  // The indent between the slides
-  spaceBetween: 30,
-  // The number of flipped slides
-  slidesPerGroup: 1,
-  // Active slide in the center
-  centeredSlides: false,
-  // Starting slide
-  initialSlide: 0,
-  // Loop slider
-  loop: false,
-  // Free mode
-  freeMode: false,
-
-  // Autoplay
-  autoplay: false,
-  // Pause between slides
-  autoplayDelay: 1000,
-  // Stop on last slide
-  autoplayStopOnLastSlide: false,
-  // Disable after manual override
-  autoplayDisableOnInteraction: false,
-
-  // Speed
-  speed: 300,
-  // horizontal/vertical slider
-  direction: "horizontal",
-  // Update slider when slider items change
-  observer: true,
-  // Turn on/off parallax
-  parallax: false,
-  // Virtual slides
-  virtual: false,
-};
 
 export default SliderSwiper;
