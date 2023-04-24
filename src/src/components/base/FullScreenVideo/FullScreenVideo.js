@@ -4,21 +4,19 @@ import { useWindowSize } from "@hooks/useWindowSize";
 
 import Video from "./Video";
 
-function FullScreenVideo(props) {
+const FullScreenVideo = ({ className, children, poster, videos }) => {
   const [height, setHeight] = useState("100vh");
 
-  function handleResizeHeight() {
+  const handleResizeHeight = () => {
     const windowHeight = window.innerHeight;
     setHeight(windowHeight + "px");
-  }
+  };
 
   useWindowSize(handleResizeHeight, height);
 
   const styleMinHeight = {
     minHeight: height,
   };
-
-  const { className, children, poster, videos } = props;
 
   return (
     <section
@@ -29,6 +27,6 @@ function FullScreenVideo(props) {
       <Video poster={poster} videos={videos} />
     </section>
   );
-}
+};
 
 export default FullScreenVideo;

@@ -4,7 +4,7 @@ import poster from "@img/lsp/jpg/clip.jpg";
 import video from "@assets/videos/binokl.mp4";
 import logo from "@img/logos/lsp.svg";
 
-function FullScreen() {
+const FullScreen = () => {
   const videos = [
     {
       src: video,
@@ -19,6 +19,6 @@ function FullScreen() {
       </div>
     </FullScreenVideo>
   );
-}
+};
 
 export default FullScreen;

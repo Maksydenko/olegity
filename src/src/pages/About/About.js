@@ -10,22 +10,20 @@ import From2018ToPresent from "@screens/about/From2018ToPresent/From2018ToPresen
 import Family from "@screens/about/Family/Family";
 import SupportOfUkraine from "@screens/about/SupportOfUkraine/SupportOfUkraine";
 
-function About() {
-  return (
-    <main className="about-page">
-      <Biography />
-      <Childhood />
-      <From2007To2009 />
-      <From2011To2013 />
-      <Year2014 />
-      <Year2015 />
-      <From2016To2017 />
-      <From2017To2018 />
-      <From2018ToPresent />
-      <Family />
-      <SupportOfUkraine />
-    </main>
-  );
-}
+const About = () => (
+  <main className="about-page">
+    <Biography />
+    <Childhood />
+    <From2007To2009 />
+    <From2011To2013 />
+    <Year2014 />
+    <Year2015 />
+    <From2016To2017 />
+    <From2017To2018 />
+    <From2018ToPresent />
+    <Family />
+    <SupportOfUkraine />
+  </main>
+);
 
 export default About;

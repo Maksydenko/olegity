@@ -3,8 +3,7 @@ import { useInput } from "@hooks/useInput";
 import Search from "@common/Search/Search";
 import Items from "./Items/Items";
 
-function Videos(props) {
-  const { videos } = props;
+const Videos = ({ videos }) => {
   const filterInput = useInput();
 
   return (
@@ -15,6 +14,6 @@ function Videos(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Videos;

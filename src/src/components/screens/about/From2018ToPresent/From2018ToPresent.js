@@ -3,7 +3,7 @@ import AboutSection from "../AboutSection/AboutSection";
 import lspNowWebp from "@img/lsp/webp/lsp-now.webp";
 import lspNow from "@img/lsp/jpg/lsp-now.jpg";
 
-function From2018ToPresent() {
+const From2018ToPresent = () => {
   const text = [
     "from-2018-to-present-1",
     "from-2018-to-present-2",
@@ -11,7 +11,6 @@ function From2018ToPresent() {
     "from-2018-to-present-4",
     "from-2018-to-present-5",
   ];
-
   const img = [
     {
       src: lspNowWebp,
@@ -31,6 +30,6 @@ function From2018ToPresent() {
       img={img}
     />
   );
-}
+};
 
 export default From2018ToPresent;

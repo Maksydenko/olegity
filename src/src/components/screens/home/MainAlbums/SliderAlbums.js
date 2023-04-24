@@ -3,7 +3,7 @@ import MusicCard from "@common/MusicCard/MusicCard";
 
 import albums from "@constants/music/albums";
 
-function SliderAlbums() {
+const SliderAlbums = () => {
   const slides = albums.map((album, index) => (
     <MusicCard key={index} className="main-albums" track={album} />
   ));
@@ -20,6 +20,6 @@ function SliderAlbums() {
       {slides}
     </SliderSwiper>
   );
-}
+};
 
 export default SliderAlbums;

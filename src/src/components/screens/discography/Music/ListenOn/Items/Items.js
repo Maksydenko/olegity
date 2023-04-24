@@ -1,8 +1,6 @@
 import Item from "./Item";
 
-function Items(props) {
-  const { links, swiperParallax, swiperParallaxDuration } = props;
-
+const Items = ({ links, swiperParallax, swiperParallaxDuration }) => {
   const items = [
     { link: links.spotify, icon: "spotify" },
     { link: links.appleMusic, icon: "apple-music" },
@@ -18,6 +16,6 @@ function Items(props) {
       swiperParallaxDuration={swiperParallaxDuration}
     />
   ));
-}
+};
 
 export default Items;

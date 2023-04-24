@@ -8,7 +8,7 @@ import albums from "@constants/music/albums";
 import ep from "@constants/music/ep";
 import singles from "@constants/music/singles";
 
-function Music() {
+const Music = () => {
   const { t } = useTranslation();
 
   const tabs = [
@@ -36,6 +36,6 @@ function Music() {
       </div>
     </div>
   );
-}
+};
 
 export default Music;

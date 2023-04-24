@@ -1,6 +1,4 @@
-function ImgPicture(props) {
-  const { img } = props;
-
+const ImgPicture = ({ img }) => {
   if (Array.isArray(img)) {
     const pictures = img
       .slice(0, -1)
@@ -24,6 +22,6 @@ function ImgPicture(props) {
     );
   }
   return <img src={img.src} alt={img.alt} loading="lazy" />;
-}
+};
 
 export default ImgPicture;

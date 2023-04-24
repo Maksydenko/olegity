@@ -1,28 +1,8 @@
-import { useState, useEffect } from "react";
+import { useHideOnScroll } from "./useHideOnScroll";
 
-function ScrollTop() {
-  const [isHidden, setIsHidden] = useState(true);
-
-  const scrollActive = 110;
-  function handleScrollTop() {
-    if (window.scrollY >= scrollActive) {
-      setIsHidden(false);
-    } else {
-      setIsHidden(true);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScrollTop);
-
-    return () => {
-      window.removeEventListener("scroll", handleScrollTop);
-    };
-  }, [isHidden]);
-
-  function handleClick() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+const ScrollTop = () => {
+  const isHidden = useHideOnScroll();
+  const handleClick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <span
@@ -32,6 +12,6 @@ function ScrollTop() {
       <span className="menu__arrow-top _icon-arrow-top"></span>
     </span>
   );
-}
+};
 
 export default ScrollTop;

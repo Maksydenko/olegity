@@ -21,7 +21,7 @@ export function useLoader(className, objectType = className) {
         object.removeEventListener("load", onObjectLoad);
       };
     }
-  }, [isLoading, onObjectLoad]);
+  }, [className, objectType, isLoading]);
 
   return isLoading;
 }

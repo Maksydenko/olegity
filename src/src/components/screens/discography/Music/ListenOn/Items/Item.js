@@ -1,10 +1,7 @@
-function Item(props) {
-  const { item, swiperParallax, swiperParallaxDuration } = props;
-
+const Item = ({ item, swiperParallax, swiperParallaxDuration }) => {
   const swiperParallaxAttr = {
     "data-swiper-parallax": swiperParallax,
   };
-
   const swiperParallaxDurationAttr = {
     "data-swiper-parallax-duration": swiperParallaxDuration,
   };
@@ -23,6 +20,6 @@ function Item(props) {
       ></a>
     </li>
   );
-}
+};
 
 export default Item;

@@ -7,29 +7,27 @@ import Menu from "@layout/navigation/Menu/Menu";
 
 import logo from "@img/logos/olegity.svg";
 
-function Header() {
+const Header = () => {
   const { isLockedScroll, setIsLockedScroll } = useScrollLock();
   const breakPoint = 991.98;
 
-  function handleLockScroll() {
-    setIsLockedScroll(!isLockedScroll);
-  }
+  const handleLockScroll = () => setIsLockedScroll(!isLockedScroll);
 
-  function handleUnlockScroll() {
+  const handleUnlockScroll = () => {
     const windowWidth = window.innerWidth;
     if (windowWidth >= breakPoint && isLockedScroll) {
       handleLockScroll();
     }
-  }
+  };
 
   useWindowSize(handleUnlockScroll, isLockedScroll);
 
-  function handleClick() {
+  const handleClick = () => {
     const windowWidth = window.innerWidth;
     if (windowWidth <= breakPoint) {
       handleLockScroll();
     }
-  }
+  };
 
   return (
     <header className="header">
@@ -41,6 +39,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

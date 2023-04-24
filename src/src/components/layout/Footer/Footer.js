@@ -8,7 +8,7 @@ import links from "@layout/navigation/links";
 
 import logo from "@img/logos/olgt.svg";
 
-function Footer() {
+const Footer = () => {
   const { t } = useTranslation();
 
   return (
@@ -25,6 +25,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -3,9 +3,8 @@ import { useTranslation } from "react-i18next";
 import MainLink from "@common/MainLink/MainLink";
 import SliderAlbums from "./SliderAlbums";
 
-function MainAlbums() {
+const MainAlbums = () => {
   const { t } = useTranslation();
-
   const link = {
     path: "/discography",
     value: "see-discography",
@@ -20,6 +19,6 @@ function MainAlbums() {
       </div>
     </section>
   );
-}
+};
 
 export default MainAlbums;

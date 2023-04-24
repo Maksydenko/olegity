@@ -3,9 +3,8 @@ import AboutSection from "../AboutSection/AboutSection";
 import hipHopBattleWebp from "@img/lsp/webp/hip-hop-battle.webp";
 import hipHopBattle from "@img/lsp/jpg/hip-hop-battle.jpg";
 
-function Year2014() {
+const Year2014 = () => {
   const text = ["year-2014-1", "year-2014-2", "year-2014-3"];
-
   const img = [
     {
       src: hipHopBattleWebp,
@@ -25,6 +24,6 @@ function Year2014() {
       img={img}
     />
   );
-}
+};
 
 export default Year2014;

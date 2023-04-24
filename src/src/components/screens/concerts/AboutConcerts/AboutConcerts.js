@@ -5,9 +5,8 @@ import MainBlock from "@common/MainBlock/MainBlock";
 import concertWebp from "@img/lsp/webp/concert.webp";
 import concert from "@img/lsp/jpg/concert.jpg";
 
-function AboutConcerts() {
+const AboutConcerts = () => {
   const text = ["about-concerts-1", "about-concerts-2"];
-
   const img = [
     {
       src: concertWebp,
@@ -18,7 +17,6 @@ function AboutConcerts() {
       alt: "Oleg LSP",
     },
   ];
-
   const object = <Img className="about-concerts" img={img} />;
 
   return (
@@ -30,6 +28,6 @@ function AboutConcerts() {
       />
     </ResponsiveObjectOut>
   );
-}
+};
 
 export default AboutConcerts;

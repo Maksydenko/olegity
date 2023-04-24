@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-function Item(props) {
+const Item = ({ link, onClick }) => {
   const { t } = useTranslation();
-  const { link, onClick } = props;
 
   return (
     <li className="menu__item">
@@ -12,6 +11,6 @@ function Item(props) {
       </Link>
     </li>
   );
-}
+};
 
 export default Item;

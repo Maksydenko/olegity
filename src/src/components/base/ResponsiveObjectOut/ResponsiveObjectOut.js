@@ -1,5 +1,4 @@
-function ResponsiveObjectOut(props) {
-  const { className, pc, children, object } = props;
+const ResponsiveObjectOut = ({ className, pc, children, object }) => {
   const pcClass = `responsive-object-out${pc ? "_pc" : ""}`;
 
   return (
@@ -12,6 +11,6 @@ function ResponsiveObjectOut(props) {
       {object}
     </section>
   );
-}
+};
 
 export default ResponsiveObjectOut;

@@ -2,9 +2,8 @@ import Img from "@base/Img/Img";
 import Popup from "@base/Popup/Popup";
 import Video from "@common/Video/Video";
 
-function Item(props) {
+const Item = ({ video }) => {
   const button = <span className="_icon-youtube"></span>;
-  const { video } = props;
 
   return (
     <div className="videos__item">
@@ -17,6 +16,6 @@ function Item(props) {
       <h5 className="videos__title">{video.title}</h5>
     </div>
   );
-}
+};
 
 export default Item;

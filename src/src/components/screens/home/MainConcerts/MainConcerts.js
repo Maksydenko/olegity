@@ -5,7 +5,7 @@ import MainBlock from "@common/MainBlock/MainBlock";
 import olegLspWebp from "@img/lsp/webp/main-concert.webp";
 import olegLsp from "@img/lsp/jpg/main-concert.jpg";
 
-function MainConcerts() {
+const MainConcerts = () => {
   const text = ["main-concerts"];
 
   const link = {
@@ -36,6 +36,6 @@ function MainConcerts() {
       />
     </ResponsiveObjectOut>
   );
-}
+};
 
 export default MainConcerts;

@@ -4,7 +4,7 @@ import Items from "./Items/Items";
 
 import links from "./links";
 
-function SocialNetworks() {
+const SocialNetworks = () => {
   const { t } = useTranslation();
 
   return (
@@ -15,6 +15,6 @@ function SocialNetworks() {
       </ul>
     </div>
   );
-}
+};
 
 export default SocialNetworks;

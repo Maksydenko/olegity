@@ -1,27 +1,19 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-function Search(props) {
+const Search = ({ className, filterText, onFilterTextChange }) => {
   const [isFocus, setIsFocus] = useState();
 
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
+  const handleSubmit = (e) => e.preventDefault();
 
-  function handleFilterTextChange(event) {
-    onFilterTextChange(event.target.value);
-  }
+  const handleFilterTextChange = ({ target: { value } }) =>
+    onFilterTextChange(value);
 
-  function handleFilterTextClear() {
-    onFilterTextChange("");
-  }
+  const handleFilterTextClear = () => onFilterTextChange("");
 
-  function handleFocusChange() {
-    setIsFocus((prevState) => !prevState);
-  }
+  const handleFocusChange = () => setIsFocus((prevState) => !prevState);
 
   const { t } = useTranslation();
-  const { className, filterText, onFilterTextChange } = props;
 
   return (
     <div className={`${className}__search search`}>
@@ -48,6 +40,6 @@ function Search(props) {
       </form>
     </div>
   );
-}
+};
 
 export default Search;

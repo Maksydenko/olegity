@@ -3,9 +3,8 @@ import { useTranslation } from "react-i18next";
 import MainLink from "@common/MainLink/MainLink";
 import SliderVideos from "./SliderVideos";
 
-function MainVideos() {
+const MainVideos = () => {
   const { t } = useTranslation();
-
   const link = {
     path: "/videos",
     value: "see-videos",
@@ -18,6 +17,6 @@ function MainVideos() {
       <MainLink className="main-videos" link={link} />
     </section>
   );
-}
+};
 
 export default MainVideos;

@@ -2,10 +2,8 @@ import { useTranslation } from "react-i18next";
 
 import MainLink from "@common/MainLink/MainLink";
 
-function MainBlock(props) {
+const MainBlock = ({ className, title, text, link }) => {
   const { t } = useTranslation();
-  const { className, title, text, link } = props;
-
   const textItems = text.map((textItem, index) => (
     <p key={index}>{t(textItem)}</p>
   ));
@@ -17,6 +15,6 @@ function MainBlock(props) {
       {link && <MainLink className="main-block" link={link} />}
     </div>
   );
-}
+};
 
 export default MainBlock;

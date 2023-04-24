@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
-export function useWindowSize(func, dependency) {
+export function useWindowSize(handler, dependency) {
   useEffect(() => {
-    window.addEventListener("resize", func);
+    window.addEventListener("resize", handler);
 
     return () => {
-      window.removeEventListener("resize", func);
+      window.removeEventListener("resize", handler);
     };
-  }, [dependency]);
+  }, [handler, dependency]);
 }

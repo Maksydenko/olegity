@@ -6,7 +6,7 @@ import Videos from "./Videos/Videos";
 import musicVideos from "@constants/videos/musicVideos";
 import animatedVideos from "@constants/videos/animatedVideos";
 
-function AllVideos() {
+const AllVideos = () => {
   const { t } = useTranslation();
   const tabs = [
     {
@@ -28,6 +28,6 @@ function AllVideos() {
       </div>
     </div>
   );
-}
+};
 
 export default AllVideos;

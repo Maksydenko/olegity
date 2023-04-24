@@ -3,13 +3,12 @@ import AboutSection from "../AboutSection/AboutSection";
 import groupLspWebp from "@img/lsp/webp/group-lsp.webp";
 import groupLsp from "@img/lsp/jpg/group-lsp.jpg";
 
-function From2017To2019() {
+const From2017To2019 = () => {
   const text = [
     "from-2017-to-2018-1",
     "from-2017-to-2018-2",
     "from-2017-to-2018-3",
   ];
-
   const img = [
     {
       src: groupLspWebp,
@@ -29,6 +28,6 @@ function From2017To2019() {
       img={img}
     />
   );
-}
+};
 
 export default From2017To2019;

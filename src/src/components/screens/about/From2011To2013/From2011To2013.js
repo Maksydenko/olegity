@@ -3,13 +3,12 @@ import AboutSection from "../AboutSection/AboutSection";
 import lspAndAnglichaninWebp from "@img/lsp/webp/lsp-and-anglichanin.webp";
 import lspAndAnglichanin from "@img/lsp/jpg/lsp-and-anglichanin.jpg";
 
-function From2011To2013() {
+const From2011To2013 = () => {
   const text = [
     "from-2011-to-2013-1",
     "from-2011-to-2013-2",
     "from-2011-to-2013-3",
   ];
-
   const img = [
     {
       src: lspAndAnglichaninWebp,
@@ -29,6 +28,6 @@ function From2011To2013() {
       img={img}
     />
   );
-}
+};
 
 export default From2011To2013;

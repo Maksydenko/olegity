@@ -3,9 +3,8 @@ import AboutBlock from "../AboutSection/AboutSection";
 import childhoodWebp from "@img/lsp/webp/childhood.webp";
 import childhood from "@img/lsp/jpg/childhood.jpg";
 
-function Childhood() {
+const Childhood = () => {
   const text = ["childhood-1", "childhood-2", "childhood-3"];
-
   const img = [
     {
       src: childhoodWebp,
@@ -26,6 +25,6 @@ function Childhood() {
       img={img}
     />
   );
-}
+};
 
 export default Childhood;

@@ -2,9 +2,8 @@ import { useTranslation } from "react-i18next";
 
 import Items from "./Items/Items";
 
-function Navigation(props) {
+const Navigation = ({ className, links }) => {
   const { t } = useTranslation();
-  const { className, links } = props;
 
   return (
     <nav className={`${className}__navigation navigation`}>
@@ -14,6 +13,6 @@ function Navigation(props) {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navigation;

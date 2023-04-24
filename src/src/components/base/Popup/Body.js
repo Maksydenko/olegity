@@ -1,10 +1,6 @@
-function Body(props) {
-  const { children, onClick } = props;
-  function handleClick(event) {
-    if (!event.target.closest(".popup__box")) {
-      onClick();
-    }
-  }
+const Body = ({ children, onClick }) => {
+  const handleClick = ({ target }) =>
+    !target.closest(".popup__box") && onClick();
 
   return (
     <div className="popup__body" onClick={handleClick}>
@@ -16,6 +12,6 @@ function Body(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Body;

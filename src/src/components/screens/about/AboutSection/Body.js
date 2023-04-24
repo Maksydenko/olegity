@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next";
 
-function Body(props) {
+const Body = ({ title, text }) => {
   const { t } = useTranslation();
-  const { title, text } = props;
-
   const textItems = text.map((textItem, index) => (
     <p key={index}>{t(textItem)}</p>
   ));
@@ -14,6 +12,6 @@ function Body(props) {
       <div className="about-section__text">{textItems}</div>
     </div>
   );
-}
+};
 
 export default Body;

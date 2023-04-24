@@ -1,9 +1,12 @@
 import Img from "@base/Img/Img";
 import Text from "./Text";
 
-function MusicCard(props) {
-  const { className, track, swiperParallax, swiperParallaxDuration } = props;
-
+const MusicCard = ({
+  className,
+  track,
+  swiperParallax,
+  swiperParallaxDuration,
+}) => {
   const swiperParallaxAttr = swiperParallax && {
     "data-swiper-parallax": swiperParallax,
   };
@@ -25,6 +28,6 @@ function MusicCard(props) {
       />
     </div>
   );
-}
+};
 
 export default MusicCard;

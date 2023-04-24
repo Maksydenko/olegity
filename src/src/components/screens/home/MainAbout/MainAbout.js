@@ -5,7 +5,7 @@ import MainBlock from "@common/MainBlock/MainBlock";
 import olegLspWebp from "@img/lsp/webp/main-about.webp";
 import olegLsp from "@img/lsp/jpg/main-about.jpg";
 
-function MainAbout() {
+const MainAbout = () => {
   const text = ["main-about"];
 
   const link = {
@@ -31,6 +31,6 @@ function MainAbout() {
       <MainBlock className="main-about" title="about" text={text} link={link} />
     </ResponsiveObjectOut>
   );
-}
+};
 
 export default MainAbout;

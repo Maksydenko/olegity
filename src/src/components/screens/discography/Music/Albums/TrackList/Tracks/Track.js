@@ -1,6 +1,4 @@
-function Track(props) {
-  const { track, swiperParallax, swiperParallaxDuration } = props;
-
+const Track = ({ track, swiperParallax, swiperParallaxDuration }) => {
   const swiperParallaxAttr = swiperParallax && {
     "data-swiper-parallax": swiperParallax,
   };
@@ -17,6 +15,6 @@ function Track(props) {
       {track}
     </li>
   );
-}
+};
 
 export default Track;

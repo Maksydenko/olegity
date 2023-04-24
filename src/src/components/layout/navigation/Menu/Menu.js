@@ -1,15 +1,12 @@
 import Items from "./Items/Items";
-import LanguageChange from "./LanguageChange/LanguageChange";
+import SwitchLanguage from "./SwitchLanguage/SwitchLanguage";
 import ScrollTop from "./ScrollTop/ScrollTop";
 
 import links from "@layout/navigation/links";
 
-function Menu(props) {
-  const { isLockedScroll, onClick } = props;
-
-  function activeClass(className) {
-    return `${className}${isLockedScroll ? " _active" : ""}`;
-  }
+const Menu = ({ isLockedScroll, onClick }) => {
+  const activeClass = (className) =>
+    `${className}${isLockedScroll ? " _active" : ""}`;
 
   return (
     <div className="header__menu menu">
@@ -24,11 +21,11 @@ function Menu(props) {
         <ul className="menu__list">
           <Items links={links} onClick={onClick} />
         </ul>
-        <LanguageChange onClick={onClick} />
+        <SwitchLanguage onClick={onClick} />
       </nav>
       <ScrollTop />
     </div>
   );
-}
+};
 
 export default Menu;

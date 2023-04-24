@@ -3,9 +3,8 @@ import AboutSection from "../AboutSection/AboutSection";
 import lspAndPharaohWebp from "@img/lsp/webp/lsp-and-pharaoh.webp";
 import lspAndPharaoh from "@img/lsp/jpg/lsp-and-pharaoh.jpg";
 
-function Year2015() {
+const Year2015 = () => {
   const text = ["year-2015-1", "year-2015-2", "year-2015-3", "year-2015-4"];
-
   const img = [
     {
       src: lspAndPharaohWebp,
@@ -25,6 +24,6 @@ function Year2015() {
       img={img}
     />
   );
-}
+};
 
 export default Year2015;

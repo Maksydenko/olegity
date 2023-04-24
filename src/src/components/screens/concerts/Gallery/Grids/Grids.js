@@ -1,8 +1,6 @@
 import Grid from "./Grid";
 
-function Grids(props) {
-  const { images } = props;
-
+const Grids = ({ images }) => {
   const groupedImages = [];
   for (let i = 0; i < images.length; i += 4) {
     groupedImages.push(images.slice(i, i + 4));
@@ -24,6 +22,6 @@ function Grids(props) {
   ));
 
   return <div className="gallery__grids">{grids}</div>;
-}
+};
 
 export default Grids;

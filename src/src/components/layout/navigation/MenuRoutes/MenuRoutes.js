@@ -9,18 +9,16 @@ import Concerts from "@pages/Concerts/Concerts";
 
 import ScrollTop from "./ScrollTop";
 
-function MenuRoutes() {
-  return (
-    <Routes>
-      {ScrollTop()}
-      <Route path="*" element={<Page404 />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/discography" element={<Discography />} />
-      <Route path="/videos" element={<Videos />} />
-      <Route path="/concerts" element={<Concerts />} />
-    </Routes>
-  );
-}
+const MenuRoutes = () => (
+  <Routes>
+    {ScrollTop()}
+    <Route path="*" element={<Page404 />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/discography" element={<Discography />} />
+    <Route path="/videos" element={<Videos />} />
+    <Route path="/concerts" element={<Concerts />} />
+  </Routes>
+);
 
 export default MenuRoutes;

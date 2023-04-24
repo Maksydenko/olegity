@@ -22,97 +22,95 @@ import "swiper/scss/pagination";
 // import "swiper/scss/scrollbar";
 import "swiper/scss/zoom";
 
-function SliderSwiper(props) {
-  const {
-    className,
-    children,
-    // Navigation
-    navigation = true,
+const SliderSwiper = ({
+  className,
+  children,
+  // Navigation
+  navigation = true,
 
-    // Pagination
-    pagination,
-    // Clickable
-    paginationClickable = true,
-    // Dynamic bullets
-    paginationDynamicBullets,
-    // Types: bullets, fraction, progressbar
-    paginationType = "progressbar",
+  // Pagination
+  pagination,
+  // Clickable
+  paginationClickable = true,
+  // Dynamic bullets
+  paginationDynamicBullets,
+  // Types: bullets, fraction, progressbar
+  paginationType = "progressbar",
 
-    // Scrollbar
-    scrollbar,
-    // The ability to drag scrollbar
-    scrollbarDraggable = true,
+  // Scrollbar
+  scrollbar,
+  // The ability to drag scrollbar
+  scrollbarDraggable = true,
 
-    // Turning/disabling dragging on a PC
-    simulateTouch = true,
-    // Sweep sensitivity
-    touchRatio = 1,
-    // Sweep/dragging angle
-    touchAngle = 45,
-    // Grab cursor
-    grabCursor = true,
-    // Switching when clicking on a slide
-    slideToClickedSlide,
+  // Turning/disabling dragging on a PC
+  simulateTouch = true,
+  // Sweep sensitivity
+  touchRatio = 1,
+  // Sweep/dragging angle
+  touchAngle = 45,
+  // Grab cursor
+  grabCursor = true,
+  // Switching when clicking on a slide
+  slideToClickedSlide,
 
-    // Hash navigation
-    hash,
-    // Track the condition
-    hashNavigationWatchState,
+  // Hash navigation
+  hash,
+  // Track the condition
+  hashNavigationWatchState,
 
-    // Keyboard management
+  // Keyboard management
 
-    // Turn on/off
-    keyboardEnabled = true,
-    // Turn on/off only when the slider is within the viewport
-    keyboardOnlyInViewport = true,
-    // Turn on/off the control control of PageUp, PageDown
-    keyboardPageUpDown,
+  // Turn on/off
+  keyboardEnabled = true,
+  // Turn on/off only when the slider is within the viewport
+  keyboardOnlyInViewport = true,
+  // Turn on/off the control control of PageUp, PageDown
+  keyboardPageUpDown,
 
-    // Mouse wheel control
-    mousewheel,
-    // The sensitivity of mouse wheel
-    mousewheelSensitivity = 1,
+  // Mouse wheel control
+  mousewheel,
+  // The sensitivity of mouse wheel
+  mousewheelSensitivity = 1,
 
-    // Auto height
-    autoHeight = true,
-    // Number of slides for showing
-    slidesPerView = 1,
-    // The indent between the slides
-    spaceBetween = 30,
-    // The number of flipped slides
-    slidesPerGroup = 1,
-    // Active slide in the center
-    centeredSlides,
-    // Starting slide
-    initialSlide = 0,
-    // Loop slider
-    loop,
-    // Free mode
-    freeMode,
+  // Auto height
+  autoHeight = true,
+  // Number of slides for showing
+  slidesPerView = 1,
+  // The indent between the slides
+  spaceBetween = 30,
+  // The number of flipped slides
+  slidesPerGroup = 1,
+  // Active slide in the center
+  centeredSlides,
+  // Starting slide
+  initialSlide = 0,
+  // Loop slider
+  loop,
+  // Free mode
+  freeMode,
 
-    // Autoplay
-    autoplay,
-    // Pause between slides
-    autoplayDelay = 1000,
-    // Stop on last slide
-    autoplayStopOnLastSlide,
-    // Disable after manual override
-    autoplayDisableOnInteraction,
+  // Autoplay
+  autoplay,
+  // Pause between slides
+  autoplayDelay = 1000,
+  // Stop on last slide
+  autoplayStopOnLastSlide,
+  // Disable after manual override
+  autoplayDisableOnInteraction,
 
-    // Speed
-    speed = 300,
-    // horizontal/vertical slider
-    direction = "horizontal",
-    // Breakpoints (adaptive)
-    breakpoints,
-    // Update slider when slider items change
-    observer = true,
-    // Turn on/off parallax
-    parallax,
-    // Virtual slides
-    virtual,
-  } = props;
-
+  // Speed
+  speed = 300,
+  // horizontal/vertical slider
+  direction = "horizontal",
+  // Breakpoints (adaptive)
+  breakpoints,
+  // Update slider when slider items change
+  observer = true,
+  // Turn on/off parallax
+  parallax,
+  // Virtual slides
+  virtual,
+}) => {
   const slides = children.map((slide, index) => (
     <SwiperSlide
       key={index}
@@ -236,6 +234,6 @@ function SliderSwiper(props) {
       {slides}
     </Swiper>
   );
-}
+};
 
 export default SliderSwiper;

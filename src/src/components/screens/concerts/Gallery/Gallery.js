@@ -4,7 +4,7 @@ import Grids from "./Grids/Grids";
 
 import images from "./images";
 
-function Gallery() {
+const Gallery = () => {
   const { t } = useTranslation();
 
   return (
@@ -15,6 +15,6 @@ function Gallery() {
       <Grids images={images} />
     </section>
   );
-}
+};
 
 export default Gallery;

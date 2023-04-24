@@ -2,14 +2,9 @@ import { useScrollLock } from "@hooks/useScrollLock";
 
 import Body from "./Body";
 
-function Popup(props) {
+const Popup = ({ className, button, children }) => {
   const { isLockedScroll, setIsLockedScroll } = useScrollLock();
-
-  function handleClick() {
-    setIsLockedScroll(!isLockedScroll);
-  }
-
-  const { className, button, children } = props;
+  const handleClick = () => setIsLockedScroll(!isLockedScroll);
 
   return (
     <div className={`${className}__popup popup`}>
@@ -22,6 +17,6 @@ function Popup(props) {
       {isLockedScroll && <Body onClick={handleClick}>{children}</Body>}
     </div>
   );
-}
+};
 
 export default Popup;

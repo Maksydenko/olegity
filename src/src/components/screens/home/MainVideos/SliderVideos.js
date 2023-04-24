@@ -3,7 +3,7 @@ import Video from "@common/Video/Video";
 
 import musicVideos from "@constants/videos/musicVideos";
 
-function SliderVideos() {
+const SliderVideos = () => {
   const slides = musicVideos
     .slice(0, 5)
     .map((video, index) => (
@@ -15,6 +15,6 @@ function SliderVideos() {
       {slides}
     </SliderSwiper>
   );
-}
+};
 
 export default SliderVideos;

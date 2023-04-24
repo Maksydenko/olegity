@@ -2,8 +2,7 @@ import { useLoader } from "@hooks/useLoader";
 
 import Loader from "@base/Loader/Loader";
 
-function Item(props) {
-  const { className, video } = props;
+const Video = ({ className, video }) => {
   const loading = useLoader("video", "iframe");
 
   return (
@@ -18,6 +17,6 @@ function Item(props) {
       ></iframe>
     </div>
   );
-}
+};
 
-export default Item;
+export default Video;

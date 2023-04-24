@@ -3,7 +3,7 @@ import AboutSection from "../AboutSection/AboutSection";
 import romaAnglichaninWebp from "@img/lsp/webp/roma-anglichanin.webp";
 import romaAnglichanin from "@img/lsp/jpg/roma-anglichanin.jpg";
 
-function From2016To2017() {
+const From2016To2017 = () => {
   const text = [
     "from-2016-to-2017-1",
     "from-2016-to-2017-2",
@@ -11,7 +11,6 @@ function From2016To2017() {
     "from-2016-to-2017-4",
     "from-2016-to-2017-5",
   ];
-
   const img = [
     {
       src: romaAnglichaninWebp,
@@ -31,6 +30,6 @@ function From2016To2017() {
       img={img}
     />
   );
-}
+};
 
 export default From2016To2017;

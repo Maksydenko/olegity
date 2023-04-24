@@ -1,8 +1,7 @@
 import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
 import Album from "./Album";
 
-function Albums(props) {
-  const { albums } = props;
+const Albums = ({ albums }) => {
   const slides = albums.map((album, index) => (
     <Album key={index} album={album} />
   ));
@@ -16,6 +15,6 @@ function Albums(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Albums;

@@ -1,9 +1,7 @@
 import Track from "./Track";
 
-function Tracks(props) {
-  const { trackList, swiperParallax, swiperParallaxDuration } = props;
-
-  return trackList.map((track, index) => (
+const Tracks = ({ trackList, swiperParallax, swiperParallaxDuration }) =>
+  trackList.map((track, index) => (
     <Track
       key={index}
       track={track}
@@ -11,6 +9,5 @@ function Tracks(props) {
       swiperParallaxDuration={swiperParallaxDuration}
     />
   ));
-}
 
 export default Tracks;

@@ -3,9 +3,8 @@ import AboutSection from "../AboutSection/AboutSection";
 import biographyWebp from "@img/lsp/webp/biography.webp";
 import biography from "@img/lsp/jpg/biography.jpg";
 
-function Biography() {
+const Biography = () => {
   const text = ["biography-1"];
-
   const img = [
     {
       src: biographyWebp,
@@ -25,6 +24,6 @@ function Biography() {
       img={img}
     />
   );
-}
+};
 
 export default Biography;
