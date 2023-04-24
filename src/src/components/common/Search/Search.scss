@@ -41,7 +41,6 @@
 
   &__input {
     flex: 1 1 auto;
-    background-color: inherit;
 
     @media (prefers-color-scheme: dark) {
       &::placeholder {

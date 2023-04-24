@@ -32,30 +32,26 @@ button,
 textarea {
   font-family: inherit;
   font-size: inherit;
+  color: inherit;
+  background-color: inherit;
 }
 
 input,
 textarea {
   outline: none;
-  color: inherit;
 }
 
 textarea {
   resize: none;
 }
 
-a,
-button {
-  color: inherit;
-}
-
 button {
   cursor: pointer;
-  background-color: inherit;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul li {
