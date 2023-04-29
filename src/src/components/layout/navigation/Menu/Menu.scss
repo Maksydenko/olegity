@@ -45,6 +45,8 @@
         transform: scale(1) translateY(-50%);
       }
 
+      // .menu__button_active
+
       &_active::before {
         top: 50%;
         transform: rotate(45deg) translateY(-50%);
@@ -86,6 +88,8 @@
         width: 100%;
         height: rem(70);
       }
+
+      // .menu__body_active
 
       &_active {
         right: 0;
