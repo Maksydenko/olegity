@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 
 export function useLoader(className, objectType = className) {
   const [isLoading, setIsLoading] = useState(true);
-
-  function onObjectLoad() {
-    setIsLoading(false);
-  }
+  const onObjectLoad = () => setIsLoading(false);
 
   useEffect(() => {
     const object = document.querySelector(
