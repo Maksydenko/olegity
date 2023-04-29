@@ -45,17 +45,17 @@
         transform: scale(1) translateY(-50%);
       }
 
-      &._active::before {
+      &_active::before {
         top: 50%;
         transform: rotate(45deg) translateY(-50%);
       }
 
-      &._active::after {
+      &_active::after {
         bottom: 50%;
         transform: rotate(-45deg) translateY(50%);
       }
 
-      &._active span {
+      &_active span {
         transform: scale(0);
       }
     }
@@ -87,7 +87,7 @@
         height: rem(70);
       }
 
-      &._active {
+      &_active {
         right: 0;
       }
     }

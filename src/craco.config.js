@@ -19,6 +19,8 @@ module.exports = {
       "@hooks": resolvePath("./src/hooks"),
 
       "@pages": resolvePath("./src/pages"),
+
+      "@utils": resolvePath("./src/utils"),
     },
   },
 };

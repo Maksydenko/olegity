@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { useScrollLock } from "@hooks/useScrollLock";
+import { useLockScroll } from "@hooks/useLockScroll";
 import { useWindowSize } from "@hooks/useWindowSize";
 
 import Menu from "@layout/navigation/Menu/Menu";
@@ -8,7 +8,7 @@ import Menu from "@layout/navigation/Menu/Menu";
 import logo from "@img/logos/olegity.svg";
 
 const Header = () => {
-  const { isLockedScroll, setIsLockedScroll } = useScrollLock();
+  const { isLockedScroll, setIsLockedScroll } = useLockScroll();
   const breakPoint = 991.98;
 
   const handleLockScroll = () => setIsLockedScroll(!isLockedScroll);
