@@ -9,7 +9,7 @@ const FullScreenVideo = ({ className, children, poster, videos }) => {
 
   const handleResizeHeight = () => {
     const windowHeight = window.innerHeight;
-    setHeight(windowHeight + "px");
+    setHeight(`${windowHeight}px`);
   };
 
   useWindowSize(handleResizeHeight, height);

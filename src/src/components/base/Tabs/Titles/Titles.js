@@ -5,6 +5,7 @@ const Titles = ({ tabs, isActive, setIsActive }) => (
     {tabs.map((tab) => (
       <Title
         key={tab.id}
+        tabsLength={tabs.length}
         tab={tab}
         isActive={isActive}
         setIsActive={setIsActive}
