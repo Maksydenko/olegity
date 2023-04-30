@@ -1,5 +1,3 @@
-@use "sass:math";
-
 // Connection of mixins
 @import "assets/scss/base/mixins.scss";
 
@@ -112,19 +110,11 @@ body.lock {
 
     @if $containerPadding > 0 {
       @if $maxWidthContainer > 0 {
-        padding: 0 rem(math.div($containerPadding, 2));
+        padding: 0 rem($containerPadding / 2);
       }
     } @else {
-      @include responsiveValue(
-        padding-left,
-        math.div($containerPadding, 2),
-        15
-      );
-      @include responsiveValue(
-        padding-right,
-        math.div($containerPadding, 2),
-        15
-      );
+      @include responsiveValue(padding-left, $containerPadding / 2, 15);
+      @include responsiveValue(padding-right, $containerPadding / 2, 15);
     }
   }
 } @else {
@@ -136,7 +126,7 @@ body.lock {
       max-width: rem($containerWidth);
     } @else {
       @if $containerPadding > 0 {
-        padding: 0 rem(math.div($containerPadding, 2));
+        padding: 0 rem($containerPadding / 2);
       }
     }
 
@@ -153,7 +143,7 @@ body.lock {
     }
 
     @if $containerPadding > 0 and $maxWidthContainer > 0 {
-      padding: 0 rem(math.div($containerPadding, 2));
+      padding: 0 rem($containerPadding / 2);
     }
   }
 }
