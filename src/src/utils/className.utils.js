@@ -1,2 +1,2 @@
-export const classActive = (className, isActive) =>
+export const getActiveClassName = (className, isActive) =>
   `${className}${isActive ? ` ${className}_active` : ""}`;
