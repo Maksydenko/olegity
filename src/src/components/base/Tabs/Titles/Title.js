@@ -1,15 +1,15 @@
 import { getActiveClassName } from "@utils/className.utils";
 
-const Title = ({ tabsLength, tab, isActive, setIsActive }) => {
+const Title = ({ tabsLength, tab, activeTab, setActiveTab }) => {
   const tabWidth = 100 / tabsLength;
   const styleWidth = {
     width: `${tabWidth}%`,
   };
-  const handleClick = () => setIsActive(tab.id);
+  const handleClick = () => setActiveTab(tab.id);
 
   return (
     <li
-      className={getActiveClassName("tabs__title", isActive === tab.id)}
+      className={getActiveClassName("tabs__title", activeTab === tab.id)}
       style={styleWidth}
       onClick={handleClick}
     >

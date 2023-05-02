@@ -1,9 +1,9 @@
 import Content from "./Content";
 
-const Contents = ({ tabs, isActive }) => (
+const Contents = ({ tabs, activeTab }) => (
   <div className="tabs__contents">
     {tabs.map((tab) => (
-      <Content key={tab.id} tab={tab} isActive={isActive} />
+      <Content key={tab.id} tab={tab} activeTab={activeTab} />
     ))}
   </div>
 );

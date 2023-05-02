@@ -1,14 +1,14 @@
 import Title from "./Title";
 
-const Titles = ({ tabs, isActive, setIsActive }) => (
+const Titles = ({ tabs, activeTab, setActiveTab }) => (
   <ul className="tabs__titles">
     {tabs.map((tab) => (
       <Title
         key={tab.id}
         tabsLength={tabs.length}
         tab={tab}
-        isActive={isActive}
-        setIsActive={setIsActive}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
       />
     ))}
   </ul>
