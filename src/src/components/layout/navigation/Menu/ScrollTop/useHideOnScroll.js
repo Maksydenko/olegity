@@ -4,13 +4,8 @@ export const useHideOnScroll = () => {
   const [isHidden, setIsHidden] = useState(true);
 
   const scrollActive = 110;
-  const handleScroll = () => {
-    if (window.scrollY >= scrollActive) {
-      setIsHidden(false);
-    } else {
-      setIsHidden(true);
-    }
-  };
+  const handleScroll = () =>
+    window.scrollY >= scrollActive ? setIsHidden(false) : setIsHidden(true);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
