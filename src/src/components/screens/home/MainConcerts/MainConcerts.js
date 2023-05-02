@@ -24,7 +24,7 @@ const MainConcerts = () => {
     },
   ];
 
-  const object = <Img className="main-concerts" img={img} />;
+  const object = <Img className="main-concerts" img={img} styles={false} />;
 
   return (
     <ResponsiveObjectOut className="main-concerts" object={object}>

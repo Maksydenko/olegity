@@ -1,48 +1,38 @@
 // Responsive value
-@mixin responsiveValue($property, $startSize, $minSize, $type: 0) {
-  $addSize: $startSize - $minSize;
+@mixin responsiveValue(
+  $property,
+  $startSize,
+  $minSize,
+  $type: 0,
+  $widthFrom: $maxWidth,
+  $widthTo: $minWidth
+) {
+  // For calc();
+  $addSize: ($startSize - $minSize) / 16;
 
+  $calcSize: calc(
+    #{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{$widthFrom /
+      16 - $widthTo / 16}
+  );
+
+  // Always
   @if $type == 1 {
-    // If there is less container
-    #{$property}: $startSize + px;
-
-    @media (max-width: #{$maxWidthContainer + px}) {
-      #{$property}: calc(
-        #{$minSize + px} + (#{$addSize}) * ((100vw - 320px) / #{$maxWidthContainer -
-              320})
-      );
-    }
-  } @else if $type == 2 {
-    //If there is more container
-    #{$property}: $startSize + px;
-
-    @media (min-width: #{$maxWidthContainer + px}) {
-      #{$property}: calc(
-        #{$minSize + px} + (#{$addSize}) * ((100vw - 320px) / #{$maxWidth - 320})
-      );
-    }
-  } @else {
-    // Always
-    #{$property}: calc(
-      #{$minSize + px} + (#{$addSize}) * ((100vw - 320px) / #{$maxWidth - 320})
-    );
+    #{$property}: $calcSize;
   }
-}
+  //If there is more container
+  @else if $type == 2 {
+    #{$property}: rem($startSize);
 
-// px to %
-@function prc($pxOne, $pxTwo: $containerWidth) {
-  $result: $pxOne / $pxTwo * 100%;
-  @return $result;
-}
+    @media (min-width: rem($widthFrom)) {
+      #{$property}: $calcSize;
+    }
+  }
+  // If there is less container
+  @else {
+    #{$property}: rem($startSize);
 
-// px to rem
-@function rem($px, $current: 16) {
-  $result: $px / $current + rem;
-  @return $result;
-}
-
-// px to em
-@function em($px, $current: 16) {
-  $result: $px / $current + em;
-  @return $result;
+    @media (max-width: rem($widthFrom)) {
+      #{$property}: $calcSize;
+    }
+  }
 }

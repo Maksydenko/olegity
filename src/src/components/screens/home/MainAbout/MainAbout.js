@@ -24,7 +24,7 @@ const MainAbout = () => {
     },
   ];
 
-  const object = <Img className="main-about" img={img} />;
+  const object = <Img className="main-about" img={img} styles={false} />;
 
   return (
     <ResponsiveObjectOut className="main-about" object={object}>

@@ -1,11 +1,11 @@
-$iconsPath: "../../fonts/icons";
+$iconsPath: "../../fonts/icons/icons.";
 
 @font-face {
   font-family: icons;
   font-display: swap;
-  src: url("#{$iconsPath}/icons.ttf") format("truetype"),
-    url("#{$iconsPath}/icons.woff") format("woff"),
-    url("#{$iconsPath}/icons.svg") format("svg");
+  src: url("#{$iconsPath}ttf") format("truetype"),
+    url("#{$iconsPath}woff") format("woff"),
+    url("#{$iconsPath}svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }

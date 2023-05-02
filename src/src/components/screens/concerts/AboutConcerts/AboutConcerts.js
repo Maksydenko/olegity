@@ -17,7 +17,7 @@ const AboutConcerts = () => {
       alt: "Oleg LSP",
     },
   ];
-  const object = <Img className="about-concerts" img={img} />;
+  const object = <Img className="about-concerts" img={img} styles={false} />;
 
   return (
     <ResponsiveObjectOut className="about-concerts" object={object}>

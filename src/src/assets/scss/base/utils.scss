@@ -1,0 +1,17 @@
+// px to %
+@function prc($px, $from) {
+  $result: $px / $from * 100%;
+  @return $result;
+}
+
+// px to rem
+@function rem($px, $current: 16) {
+  $result: $px / $current + rem;
+  @return $result;
+}
+
+// px to em
+@function em($px, $current: 16) {
+  $result: $px / $current + em;
+  @return $result;
+}
