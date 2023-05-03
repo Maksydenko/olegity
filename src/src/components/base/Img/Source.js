@@ -1,4 +1,4 @@
-const ImgPicture = ({ img, loading = "lazy" }) => {
+const Source = ({ img, loading = "lazy" }) => {
   const imgAttrs = {
     loading,
   };
@@ -27,4 +27,4 @@ const ImgPicture = ({ img, loading = "lazy" }) => {
   return <img src={img.src} alt={img.alt} {...imgAttrs} />;
 };
 
-export default ImgPicture;
+export default Source;
