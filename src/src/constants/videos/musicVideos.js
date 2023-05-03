@@ -35,7 +35,7 @@ import hippi from "@img/videos/music-videos/jpg/hippi.jpg";
 import kokteylWebp from "@img/videos/music-videos/webp/kokteyl.webp";
 import kokteyl from "@img/videos/music-videos/jpg/kokteyl.jpg";
 
-const musicVideos = [
+export const musicVideos = [
   {
     src: "https://www.youtube.com/embed/z5Vp0e2Xo5I?color=white",
     title:
@@ -291,5 +291,3 @@ const musicVideos = [
     ],
   },
 ];
-
-export default musicVideos;

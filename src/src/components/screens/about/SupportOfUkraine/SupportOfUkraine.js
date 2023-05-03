@@ -1,6 +1,6 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import MainBlock from "@common/MainBlock/MainBlock";
-import Video from "@common/Video/Video";
+import Iframe from "@base/Video/Iframe";
 
 const SupportOfUkraine = () => {
   const text = [
@@ -13,7 +13,7 @@ const SupportOfUkraine = () => {
     src: "https://www.youtube.com/embed/8CqwOVNB4-w?color=white",
     title: "ЛСП (LSP) — Ураганы (Hurricanes) [Live]",
   };
-  const object = <Video className="support-of-ukraine" video={video} />;
+  const object = <Iframe className="support-of-ukraine" video={video} />;
 
   return (
     <ObjectOutsideContainer className="support-of-ukraine" pc object={object}>

@@ -4,9 +4,9 @@ import Tabs from "@base/Tabs/Tabs";
 import Albums from "./Albums/Albums";
 import Singles from "./Singles/Singles";
 
-import albums from "@constants/music/albums";
-import ep from "@constants/music/ep";
-import singles from "@constants/music/singles";
+import { albums } from "@constants/music/albums";
+import { ep } from "@constants/music/ep";
+import { singles } from "@constants/music/singles";
 
 const Music = () => {
   const { t } = useTranslation();

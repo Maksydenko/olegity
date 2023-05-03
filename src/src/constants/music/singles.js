@@ -135,7 +135,7 @@ import mortvyyePrezidenty from "@img/music/singles/jpg/mortvyye-prezidenty.jpg";
 import mneSkuchnoZhitAvif from "@img/music/singles/avif/mne-skuchno-zhit.avif";
 import mneSkuchnoZhit from "@img/music/singles/jpg/mne-skuchno-zhit.jpg";
 
-const singles = [
+export const singles = [
   {
     title: "Мрак (Darkness)",
     artist: "ЛСП (LSP) & DenDerty",
@@ -1836,5 +1836,3 @@ const singles = [
     },
   },
 ];
-
-export default singles;

@@ -1,4 +1,7 @@
-const ImgPicture = ({ img }) => {
+const ImgPicture = ({ img, loading = "lazy" }) => {
+  const imgAttrs = {
+    loading,
+  };
   if (Array.isArray(img)) {
     const pictures = img
       .slice(0, -1)
@@ -16,12 +19,12 @@ const ImgPicture = ({ img }) => {
         <img
           src={img[img.length - 1].src}
           alt={img[img.length - 1].alt}
-          loading="lazy"
+          {...imgAttrs}
         />
       </picture>
     );
   }
-  return <img src={img.src} alt={img.alt} loading="lazy" />;
+  return <img src={img.src} alt={img.alt} {...imgAttrs} />;
 };
 
 export default ImgPicture;

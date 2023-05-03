@@ -2,9 +2,7 @@ import { useState } from "react";
 
 import { useWindowSize } from "@hooks/useWindowSize";
 
-import Video from "./Video";
-
-const FullScreenVideo = ({ className, children, poster, videos }) => {
+const FullScreen = ({ className, children, background }) => {
   const [height, setHeight] = useState("100vh");
 
   const handleResizeHeight = () => {
@@ -18,14 +16,11 @@ const FullScreenVideo = ({ className, children, poster, videos }) => {
   };
 
   return (
-    <section
-      className={`${className} full-screen-video`}
-      style={styleMinHeight}
-    >
-      <div className="full-screen-video__body">{children}</div>
-      <Video poster={poster} videos={videos} />
+    <section className={`${className} full-screen`} style={styleMinHeight}>
+      <div className="full-screen__body">{children}</div>
+      {background}
     </section>
   );
 };
 
-export default FullScreenVideo;
+export default FullScreen;

@@ -1,4 +1,4 @@
-import FullScreen from "@screens/home/FullScreen/FullScreen";
+import FullScreenVideo from "@screens/home/FullScreenVideo/FullScreenVideo";
 import MainAbout from "@screens/home/MainAbout/MainAbout";
 import MainAlbums from "@screens/home/MainAlbums/MainAlbums";
 import MainVideos from "@screens/home/MainVideos/MainVideos";
@@ -6,7 +6,7 @@ import MainConcerts from "@screens/home/MainConcerts/MainConcerts";
 
 const Main = () => (
   <main className="home-page">
-    <FullScreen />
+    <FullScreenVideo />
     <MainAbout />
     <MainAlbums />
     <MainVideos />

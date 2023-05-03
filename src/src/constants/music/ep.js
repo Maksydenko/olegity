@@ -7,7 +7,7 @@ import romanticСolegtion from "@img/music/ep/jpg/romantic-colegtion.jpg";
 import videtTsvetnyyeSnyAvif from "@img/music/ep/avif/videt-tsvetnyye-sny.avif";
 import videtTsvetnyyeSny from "@img/music/ep/jpg/videt-tsvetnyye-sny.jpg";
 
-const ep = [
+export const ep = [
   {
     title: "Кондитерская (Cake Factory)",
     artist: "ЛСП (LSP) & PHARAOH",
@@ -108,5 +108,3 @@ const ep = [
     ],
   },
 ];
-
-export default ep;

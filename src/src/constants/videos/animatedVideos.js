@@ -27,7 +27,7 @@ import avtopley from "@img/videos/animated-videos/jpg/avtopley.jpg";
 import malenkiyPrintsWebp from "@img/videos/animated-videos/webp/malenkiy-prints.webp";
 import malenkiyPrints from "@img/videos/animated-videos/jpg/malenkiy-prints.jpg";
 
-const animatedVideos = [
+export const animatedVideos = [
   {
     src: "https://www.youtube.com/embed/GJIblQOF2Ac?color=white",
     title: "ЛСП (LSP) — Убийца Свин (Pig killer)",
@@ -226,5 +226,3 @@ const animatedVideos = [
     ],
   },
 ];
-
-export default animatedVideos;

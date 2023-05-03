@@ -1,13 +1,13 @@
-import { useLoader } from "@hooks/useLoader";
+import { useLoading } from "@hooks/useLoading";
 
 import Loader from "@base/Loader/Loader";
 
-const Video = ({ className, video }) => {
-  const loading = useLoader("video", "iframe");
+const Iframe = ({ className, video, styles = true }) => {
+  const isLoading = useLoading("video", "iframe");
 
   return (
-    <div className={`${className}__video video`}>
-      {loading && <Loader />}
+    <div className={`${className}__video${styles ? " video" : ""}`}>
+      {isLoading && <Loader />}
       <iframe
         src={video.src}
         title={video.title}
@@ -19,4 +19,4 @@ const Video = ({ className, video }) => {
   );
 };
 
-export default Video;
+export default Iframe;

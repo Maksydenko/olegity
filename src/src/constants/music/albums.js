@@ -16,7 +16,7 @@ import viselicza from "@assets/img/music/albums/jpg/viselicza.jpg";
 import yopAvif from "@assets/img/music/albums/avif/yop.avif";
 import yop from "@assets/img/music/albums/jpg/yop.jpg";
 
-const albums = [
+export const albums = [
   {
     title: "One More City",
     artist: "ЛСП (LSP)",
@@ -244,5 +244,3 @@ const albums = [
     ],
   },
 ];
-
-export default albums;

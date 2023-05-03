@@ -1,7 +1,7 @@
 import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
 import MusicCard from "@common/MusicCard/MusicCard";
 
-import albums from "@constants/music/albums";
+import { albums } from "@constants/music/albums";
 
 const SliderAlbums = () => {
   const slides = albums.map((album, index) => (

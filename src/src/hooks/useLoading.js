@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useLoader(className, objectType = className) {
+export const useLoading = (className, objectType = className) => {
   const [isLoading, setIsLoading] = useState(true);
   const onObjectLoad = () => setIsLoading(false);
 
@@ -21,4 +21,4 @@ export function useLoader(className, objectType = className) {
   }, [className, objectType, isLoading]);
 
   return isLoading;
-}
+};
