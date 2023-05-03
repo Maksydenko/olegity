@@ -1,4 +1,4 @@
-import ResponsiveObjectOut from "@base/ResponsiveObjectOut/ResponsiveObjectOut";
+import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@base/Img/Img";
 import MainBlock from "@common/MainBlock/MainBlock";
 
@@ -27,14 +27,14 @@ const MainConcerts = () => {
   const object = <Img className="main-concerts" img={img} styles={false} />;
 
   return (
-    <ResponsiveObjectOut className="main-concerts" object={object}>
+    <ObjectOutsideContainer className="main-concerts" object={object}>
       <MainBlock
         className="main-concerts"
         title="concerts"
         text={text}
         link={link}
       />
-    </ResponsiveObjectOut>
+    </ObjectOutsideContainer>
   );
 };
 

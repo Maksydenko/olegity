@@ -1,4 +1,4 @@
-import ResponsiveObjectOut from "@base/ResponsiveObjectOut/ResponsiveObjectOut";
+import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import MainBlock from "@common/MainBlock/MainBlock";
 import Video from "@common/Video/Video";
 
@@ -16,13 +16,13 @@ const SupportOfUkraine = () => {
   const object = <Video className="support-of-ukraine" video={video} />;
 
   return (
-    <ResponsiveObjectOut className="support-of-ukraine" pc object={object}>
+    <ObjectOutsideContainer className="support-of-ukraine" pc object={object}>
       <MainBlock
         className="support-of-ukraine"
         title="support-of-ukraine"
         text={text}
       />
-    </ResponsiveObjectOut>
+    </ObjectOutsideContainer>
   );
 };
 

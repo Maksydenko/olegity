@@ -102,8 +102,9 @@ body.lock {
 }
 
 // Limiting container
+
+// Responsive
 @if $adaptiveType == 1 {
-  // Responsive
   [class*="__container"] {
     @if $maxWidthContainer > 0 {
       max-width: rem($containerWidth);
@@ -119,8 +120,9 @@ body.lock {
       @include responsiveValue(padding-right, $containerPadding / 2, 15);
     }
   }
-} @else {
-  // According to breakpoints
+}
+// According to breakpoints
+@else {
   [class*="__container"] {
     margin: 0 auto;
 

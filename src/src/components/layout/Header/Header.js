@@ -9,30 +9,29 @@ import logo from "@img/logos/olegity.svg";
 
 const Header = () => {
   const { isLockedScroll, setIsLockedScroll } = useLockScroll();
-  const breakPoint = 991.98;
+  const breakpoint = 991.98;
 
-  const handleLockScroll = () => setIsLockedScroll(!isLockedScroll);
+  const handleUnlockScroll = () => isLockedScroll && setIsLockedScroll(false);
 
-  const handleUnlockScroll = () => {
+  const handleBreakpointUnlockScroll = () => {
     const windowWidth = window.innerWidth;
-    if (windowWidth >= breakPoint && isLockedScroll) {
-      handleLockScroll();
+    if (windowWidth >= breakpoint) {
+      handleUnlockScroll();
     }
   };
-
-  useWindowSize(handleUnlockScroll, isLockedScroll);
+  useWindowSize(handleBreakpointUnlockScroll, isLockedScroll);
 
   const handleClick = () => {
     const windowWidth = window.innerWidth;
-    if (windowWidth <= breakPoint) {
-      handleLockScroll();
+    if (windowWidth <= breakpoint) {
+      setIsLockedScroll(!isLockedScroll);
     }
   };
 
   return (
     <header className="header">
       <div className="header__container">
-        <Link to="/" className="header__logo" onClick={handleClick}>
+        <Link to="/" className="header__logo" onClick={handleUnlockScroll}>
           <img src={logo} alt="Olegity" />
         </Link>
         <Menu isLockedScroll={isLockedScroll} onClick={handleClick} />

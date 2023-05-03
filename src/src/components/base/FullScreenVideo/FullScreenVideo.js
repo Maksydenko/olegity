@@ -11,7 +11,6 @@ const FullScreenVideo = ({ className, children, poster, videos }) => {
     const windowHeight = window.innerHeight;
     setHeight(`${windowHeight}px`);
   };
-
   useWindowSize(handleResizeHeight, height);
 
   const styleMinHeight = {

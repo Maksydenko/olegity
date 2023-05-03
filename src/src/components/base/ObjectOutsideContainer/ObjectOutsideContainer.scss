@@ -2,12 +2,12 @@
 $content: 50%;
 $object: 50%;
 
-.responsive-object-out {
+.object-outside-container {
   @media (min-width: $mobile) {
     display: flex;
   }
 
-  // .responsive-object-out__content
+  // .object-outside-container__content
 
   &__content {
     flex: 0 0 100%;
@@ -51,14 +51,14 @@ $object: 50%;
     }
   }
 
-  // .responsive-object-out__container
+  // .object-outside-container__container
 
   &__container {
     display: flex;
     align-items: center;
   }
 
-  // .responsive-object-out__body
+  // .object-outside-container__body
 
   &__body {
     @media (min-width: $mobile) {
@@ -71,7 +71,7 @@ $object: 50%;
       display: flex;
     }
 
-    // .responsive-object-out_pc__content
+    // .object-outside-container_pc__content
 
     &__content {
       flex: 0 0 100%;
@@ -115,14 +115,14 @@ $object: 50%;
       }
     }
 
-    // .responsive-object-out_pc__container
+    // .object-outside-container_pc__container
 
     &__container {
       display: flex;
       align-items: center;
     }
 
-    // .responsive-object-out_pc__body
+    // .object-outside-container_pc__body
 
     &__body {
       @media (min-width: $pc) {

@@ -1,4 +1,4 @@
-import ResponsiveObjectOut from "@base/ResponsiveObjectOut/ResponsiveObjectOut";
+import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@base/Img/Img";
 import MainBlock from "@common/MainBlock/MainBlock";
 
@@ -27,9 +27,9 @@ const MainAbout = () => {
   const object = <Img className="main-about" img={img} styles={false} />;
 
   return (
-    <ResponsiveObjectOut className="main-about" object={object}>
+    <ObjectOutsideContainer className="main-about" object={object}>
       <MainBlock className="main-about" title="about" text={text} link={link} />
-    </ResponsiveObjectOut>
+    </ObjectOutsideContainer>
   );
 };
 
