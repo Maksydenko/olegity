@@ -1,7 +1,6 @@
 .main-link {
   display: inline-block;
   padding: em(15);
-  font-size: rem(18);
   font-weight: 500;
   border: em(2) solid $mainColor;
   border-radius: em(5);
@@ -9,6 +8,10 @@
 
   @media (prefers-color-scheme: dark) {
     border-color: $darkColor;
+  }
+
+  @media (min-width: $mobile) {
+    font-size: rem(18);
   }
 
   &:hover {

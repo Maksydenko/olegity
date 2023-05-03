@@ -8,10 +8,7 @@
     gap: em(5);
     font-weight: 500;
     font-family: $fontFamily2;
-
-    @media (max-width: $mobile) {
-      font-size: rem(14);
-    }
+    @include responsiveValue(font-size, 16, 14);
   }
 
   // tabs__title

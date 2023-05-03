@@ -13,17 +13,16 @@
     border: em(2) solid $mainColor;
     border-radius: em(5);
     color: $mainColor;
+    @include responsiveValue(font-size, 16, 14);
 
     @media (prefers-color-scheme: dark) {
       border-color: $darkColor;
       color: $darkColor;
     }
 
-    @media (max-width: $mobile) {
-      font-size: rem(14);
-    }
+    // .search__filter-text_focus
 
-    &._focus {
+    &_focus {
       box-shadow: 0 0 em(2) em(2) $mainColor;
 
       @media (prefers-color-scheme: dark) {

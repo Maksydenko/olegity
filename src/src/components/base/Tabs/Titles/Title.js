@@ -1,4 +1,4 @@
-import { getActiveClassName } from "@utils/className.utils";
+import { getModifierClassName } from "@utils/className.util";
 
 const Title = ({ tabsLength, tab, activeTab, setActiveTab }) => {
   const tabWidth = 100 / tabsLength;
@@ -9,7 +9,7 @@ const Title = ({ tabsLength, tab, activeTab, setActiveTab }) => {
 
   return (
     <li
-      className={getActiveClassName("tabs__title", activeTab === tab.id)}
+      className={getModifierClassName(activeTab === tab.id, "tabs__title")}
       style={styleWidth}
       onClick={handleClick}
     >

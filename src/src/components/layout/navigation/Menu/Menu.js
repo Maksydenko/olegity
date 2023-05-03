@@ -2,7 +2,7 @@ import Items from "./Items/Items";
 import SwitchLanguage from "./SwitchLanguage/SwitchLanguage";
 import ScrollTop from "./ScrollTop/ScrollTop";
 
-import { getActiveClassName } from "@utils/className.utils";
+import { getModifierClassName } from "@utils/className.util";
 
 import links from "@layout/navigation/links";
 
@@ -10,12 +10,12 @@ const Menu = ({ isLockedScroll, onClick }) => (
   <div className="header__menu menu">
     <button
       type="button"
-      className={getActiveClassName("menu__button", isLockedScroll)}
+      className={getModifierClassName(isLockedScroll, "menu__button")}
       onClick={onClick}
     >
       <span></span>
     </button>
-    <nav className={getActiveClassName("menu__body", isLockedScroll)}>
+    <nav className={getModifierClassName(isLockedScroll, "menu__body")}>
       <ul className="menu__list">
         <Items links={links} onClick={onClick} />
       </ul>

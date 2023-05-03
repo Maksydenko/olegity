@@ -1,25 +1,31 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { getModifierClassName } from "@utils/className.util";
+
 const Search = ({ className, filterText, onFilterTextChange }) => {
   const [isFocus, setIsFocus] = useState();
+  const { t } = useTranslation();
 
+  // Handle submit
   const handleSubmit = (e) => e.preventDefault();
-
+  // Handle filter text change
   const handleFilterTextChange = ({ target: { value } }) =>
     onFilterTextChange(value);
-
+  // Handle filter text clear
   const handleFilterTextClear = () => onFilterTextChange("");
-
+  // Handle focus change
   const handleFocusChange = () => setIsFocus((prevState) => !prevState);
-
-  const { t } = useTranslation();
 
   return (
     <div className={`${className}__search search`}>
       <form
         action="#"
-        className={`search__filter-text${isFocus ? " _focus" : ""}`}
+        className={getModifierClassName(
+          isFocus,
+          "search__filter-text",
+          "focus"
+        )}
         onSubmit={handleSubmit}
       >
         <span className="search__loupe _icon-loupe"></span>
