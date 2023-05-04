@@ -1,5 +1,9 @@
 export const getModifierClassName = (
   isActive,
   className,
-  modifier = "active"
-) => `${className}${isActive ? ` ${className}_${modifier}` : ""}`;
+  modifier = "active",
+  noNamespace = true
+) =>
+  `${className}${
+    isActive ? ` ${noNamespace ? className : ""}_${modifier}` : ""
+  }`;

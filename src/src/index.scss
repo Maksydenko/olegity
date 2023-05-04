@@ -84,7 +84,7 @@ $adaptiveType: 1;
 @import "assets/scss/base/reset.scss";
 
 // Lock scroll
-body.lock {
+body._lock {
   overflow: hidden;
 }
 
