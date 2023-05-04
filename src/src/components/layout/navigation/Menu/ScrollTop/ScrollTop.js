@@ -12,7 +12,7 @@ const ScrollTop = () => {
         isHidden,
         "menu__scroll-top",
         "hidden",
-        false
+        true
       )}
       onClick={handleClick}
     >
