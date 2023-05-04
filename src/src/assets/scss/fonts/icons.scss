@@ -3,9 +3,8 @@ $iconsPath: "../../fonts/icons/icons.";
 @font-face {
   font-family: icons;
   font-display: swap;
-  src: url("#{$iconsPath}ttf") format("truetype"),
-    url("#{$iconsPath}woff") format("woff"),
-    url("#{$iconsPath}svg") format("svg");
+  src: url("#{$iconsPath}woff2") format("woff2"),
+    url("#{$iconsPath}woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }

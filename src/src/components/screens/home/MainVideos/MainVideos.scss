@@ -29,7 +29,7 @@
   // .main-videos__video
 
   &__video {
-    @media (min-width: $mobile) {
+    @media (min-width: $pc) {
       aspect-ratio: 25/9;
     }
   }

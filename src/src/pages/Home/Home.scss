@@ -5,7 +5,9 @@
 @import "@screens/home/MainConcerts/MainConcerts.scss";
 
 .home-page {
-  section:not(:first-child):not(:last-child) {
-    padding-bottom: rem(50);
+  section {
+    &:not(:first-child, :last-child) {
+      padding-bottom: rem(50);
+    }
   }
 }
