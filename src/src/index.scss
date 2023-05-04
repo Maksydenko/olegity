@@ -64,8 +64,6 @@ $mobileSmall: rem(479.98);
 // !1 = according to breakpoints
 $adaptiveType: 1;
 
-// ============================================================================
-
 // Custom scrollbar
 ::-webkit-scrollbar {
   width: rem(10);
@@ -84,6 +82,8 @@ $adaptiveType: 1;
     }
   }
 }
+
+// ============================================================================
 
 // Reset
 @import "assets/scss/base/reset.scss";
