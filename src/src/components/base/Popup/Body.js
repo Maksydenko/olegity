@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 const Body = ({ children, onClick }) => {
-  const popupBoxRef = useRef();
+  const popupBoxRef = useRef(null);
   const handleClick = ({ target }) =>
     !popupBoxRef.current.contains(target) && onClick();
 

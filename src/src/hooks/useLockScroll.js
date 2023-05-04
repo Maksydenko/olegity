@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export function useLockScroll() {
-  const [isLockedScroll, setIsLockedScroll] = useState();
+  const [isLockedScroll, setIsLockedScroll] = useState(false);
 
   useEffect(() => {
     const body = document.body;
