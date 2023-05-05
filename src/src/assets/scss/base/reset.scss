@@ -15,10 +15,10 @@ body,
 }
 
 body {
-  color: $mainColor;
-  line-height: 1;
   font-family: $fontFamily;
   font-size: $fontSize;
+  line-height: 1;
+  color: $mainColor;
   background-color: $mainBg;
 
   @media (prefers-color-scheme: dark) {
