@@ -10,7 +10,7 @@ const Videos = ({ videos }) => {
     <div className="all-videos__videos videos">
       <div className="videos__container">
         <Search className="videos" {...filterInput} />
-        <Items videos={videos} filterText={filterInput.filterText} />
+        <Items videos={videos} filterText={filterInput.text} />
       </div>
     </div>
   );

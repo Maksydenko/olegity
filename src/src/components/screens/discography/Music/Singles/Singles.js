@@ -10,7 +10,7 @@ const Singles = ({ singles }) => {
     <div className="music__singles singles">
       <div className="singles__container">
         <Search className="singles" {...filterInput} />
-        <Items singles={singles} filterText={filterInput.filterText} />
+        <Items singles={singles} filterText={filterInput.text} />
       </div>
     </div>
   );

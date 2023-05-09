@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export function useInput() {
-  const [filterText, setFilterText] = useState("");
+  const [text, setText] = useState("");
 
-  function onFilterTextChange(filterText) {
-    setFilterText(filterText);
-  }
+  const onTextChange = (text) => {
+    setText(text);
+  };
 
-  return { filterText, onFilterTextChange };
+  return { text, onTextChange };
 }
