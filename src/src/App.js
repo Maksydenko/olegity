@@ -1,12 +1,11 @@
-import Header from "@layout/Header/Header";
-import Footer from "@layout/Footer/Footer";
+import Layout from "@layout/Layout";
 import MenuRoutes from "@layout/navigation/MenuRoutes/MenuRoutes";
 
 const App = () => (
   <div className="app">
-    <Header />
-    <MenuRoutes />
-    <Footer />
+    <Layout>
+      <MenuRoutes />
+    </Layout>
   </div>
 );
 

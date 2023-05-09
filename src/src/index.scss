@@ -1,17 +1,17 @@
-// Connection of utils
+// Connection utils
 @import "assets/scss/base/utils.scss";
-// Connection of mixins
+// Connection mixins
 @import "assets/scss/base/mixins.scss";
 
-// Connection of Google fonts
+// Connection Google fonts
 // &display=swap
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,500&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
 
-// Connection of local fonts
+// Connection local fonts
 // @import "assets/scss/fonts/fonts";
 
-// Connection of icon fonts
+// Connection icon fonts
 @import "assets/scss/fonts/icons";
 
 // ============================================================================
@@ -65,7 +65,7 @@ $mobileSmall: rem(479.98);
 // !1 = according to breakpoints
 $adaptiveType: 1;
 
-// Custom scrollbar
+// Scrollbar styles
 ::-webkit-scrollbar {
   width: rem(10);
   background-color: #f1f1f1;
@@ -167,13 +167,14 @@ body {
   }
 }
 
-// Connecting basic styles, templates and auxiliary classes
+// Connecting basic component styles
 @import "assets/scss/base.scss";
 
-// Connection of common elements
+// Connecting common component styles
 @import "assets/scss/common.scss";
 
-// Connecting styles of individual blocks
-@import "@layout/Header/Header.scss";
-@import "@layout/Footer/Footer.scss";
+// Connecting layout styles
+@import "@layout/Layout.scss";
+
+// Connecting page styles
 @import "App.scss";
