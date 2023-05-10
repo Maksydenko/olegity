@@ -7,17 +7,12 @@ const ScrollTop = () => {
   const handleClick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <span
-      className={getModifierClassName(
-        isHidden,
-        "menu__scroll-top",
-        "hidden",
-        true
-      )}
+    <div
+      className={getModifierClassName(isHidden, "scroll-top", "hidden", true)}
       onClick={handleClick}
     >
-      <span className="menu__arrow-top _icon-arrow-top"></span>
-    </span>
+      <span className="scroll-top__arrow-top _icon-arrow-top"></span>
+    </div>
   );
 };
 

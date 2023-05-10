@@ -1,6 +1,5 @@
 import Items from "./Items/Items";
 import SwitchLanguage from "./SwitchLanguage/SwitchLanguage";
-import ScrollTop from "./ScrollTop/ScrollTop";
 
 import { getModifierClassName } from "@utils/className.util";
 
@@ -21,7 +20,6 @@ const Menu = ({ isLockedScroll, onClick }) => (
       </ul>
       <SwitchLanguage onClick={onClick} />
     </nav>
-    <ScrollTop />
   </div>
 );
 
