@@ -2,11 +2,13 @@ import { useTranslation } from "react-i18next";
 
 import Items from "./Items/Items";
 
-const Navigation = ({ className, links }) => {
+import { links } from "../links.const";
+
+const Navigation = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className={`${className}__navigation navigation`}>
+    <nav className="footer__navigation navigation">
       <h4 className="navigation__title">{t("navigation")}</h4>
       <ul className="navigation__list">
         <Items links={links} />

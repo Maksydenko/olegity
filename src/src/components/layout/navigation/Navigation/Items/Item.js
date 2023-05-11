@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-function Item(props) {
+function Item({ link }) {
   const { t } = useTranslation();
-  const { link } = props;
 
   return (
     <li className="navigation__item">

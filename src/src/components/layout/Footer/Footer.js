@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import SocialNetworks from "./SocialNetworks/SocialNetworks";
 import Navigation from "@layout/navigation/Navigation/Navigation";
 
-import links from "@layout/navigation/links";
-
 import logo from "@img/logos/olgt.svg";
 
 const Footer = () => {
@@ -21,7 +19,7 @@ const Footer = () => {
           <p className="footer__description">{t("footer-description")}</p>
         </div>
         <SocialNetworks />
-        <Navigation className="footer" links={links} />
+        <Navigation />
       </div>
     </footer>
   );

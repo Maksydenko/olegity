@@ -3,7 +3,7 @@ import SwitchLanguage from "./SwitchLanguage/SwitchLanguage";
 
 import { getModifierClassName } from "@utils/className.util";
 
-import links from "@layout/navigation/links";
+import { links } from "../links.const";
 
 const Menu = ({ isLockedScroll, onClick }) => (
   <div className="header__menu menu">
