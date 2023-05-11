@@ -3,16 +3,16 @@ import { useTranslation } from "react-i18next";
 
 import { getModifierClassName } from "@utils/className.util";
 
-const Search = ({ className, text, onTextChange }) => {
+const Search = ({ className, text, setText }) => {
   const [isFocus, setIsFocus] = useState();
   const { t } = useTranslation();
 
   // Handle submit
   const handleSubmit = (e) => e.preventDefault();
   // Handle filter text change
-  const handleFilterTextChange = ({ target: { value } }) => onTextChange(value);
+  const handleFilterTextChange = ({ target: { value } }) => setText(value);
   // Handle filter text clear
-  const handleFilterTextClear = () => onTextChange("");
+  const handleFilterTextClear = () => setText("");
   // Handle focus change
   const handleFocusChange = () => setIsFocus((prevState) => !prevState);
 
