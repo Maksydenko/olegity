@@ -1,7 +1,7 @@
 import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
 import Iframe from "@base/Video/Iframe";
 
-import { musicVideos } from "@constants/videos/musicVideos";
+import { musicVideos } from "@constants/videos/musicVideos.const";
 
 const SliderMedias = () => {
   const slides = musicVideos
