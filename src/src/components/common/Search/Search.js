@@ -7,8 +7,6 @@ const Search = ({ className, text, setText }) => {
   const [isFocus, setIsFocus] = useState();
   const { t } = useTranslation();
 
-  // Handle submit
-  const handleSubmit = (e) => e.preventDefault();
   // Handle filter text change
   const handleFilterTextChange = ({ target: { value } }) => setText(value);
   // Handle filter text clear
@@ -18,14 +16,12 @@ const Search = ({ className, text, setText }) => {
 
   return (
     <div className={`${className}__search search`}>
-      <form
-        action="#"
+      <div
         className={getModifierClassName(
           isFocus,
           "search__filter-text",
           "focus"
         )}
-        onSubmit={handleSubmit}
       >
         <span className="search__loupe _icon-loupe"></span>
         <input
@@ -42,7 +38,7 @@ const Search = ({ className, text, setText }) => {
           className="search__cross _icon-cross"
           onClick={handleFilterTextClear}
         ></button>
-      </form>
+      </div>
     </div>
   );
 };

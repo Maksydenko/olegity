@@ -1,6 +1,6 @@
 import { useLoading } from "@hooks/useLoading";
 
-import Loader from "@base/Loader/Loader";
+import Loader from "@common/Loader/Loader";
 
 const Iframe = ({ className, video, styles = true }) => {
   const isLoading = useLoading("video", "iframe");

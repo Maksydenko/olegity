@@ -1,6 +1,6 @@
 import { useLoading } from "@hooks/useLoading";
 
-import Loader from "@base/Loader/Loader";
+import Loader from "@common/Loader/Loader";
 import Source from "./Source";
 
 const Img = ({ className, img, styles = true }) => {
