@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/olegity/static/css/main.90da9fa8.css",
-    "main.js": "/olegity/static/js/main.0f5bb3f4.js",
-    "static/js/988.597c7983.chunk.js": "/olegity/static/js/988.597c7983.chunk.js",
+    "main.css": "/olegity/static/css/main.318b1d96.css",
+    "main.js": "/olegity/static/js/main.bfcbdd69.js",
+    "static/js/787.ae6c1f4d.chunk.js": "/olegity/static/js/787.ae6c1f4d.chunk.js",
     "static/media/binokl.mp4": "/olegity/static/media/binokl.1cbff924471bfdf0a520.mp4",
     "static/media/concert-18.jpg": "/olegity/static/media/concert-18.c363883f01f6ce6d0553.jpg",
     "static/media/concert-13.jpg": "/olegity/static/media/concert-13.b1238226fccf6cc6bfbf.jpg",
@@ -273,25 +273,25 @@
     "static/media/kokteyl.webp": "/olegity/static/media/kokteyl.7428c610a52e50994356.webp",
     "static/media/vinegret.jpg": "/olegity/static/media/vinegret.a4f3331d0b7aa2f36b3b.jpg",
     "static/media/beybi-remix.avif": "/olegity/static/media/beybi-remix.85078e4870c6bfcc7003.avif",
-    "static/media/olegity.svg": "/olegity/static/media/olegity.c0e4f51f16243687bf61fabfbbb6523c.svg",
+    "static/media/olegity.svg": "/olegity/static/media/olegity.3bcf2d357f1e1f991028cfe13e055bc6.svg",
     "static/media/stakan.avif": "/olegity/static/media/stakan.31c80506b0107bc2158c.avif",
     "static/media/icons.woff": "/olegity/static/media/icons.a15b058a9505c193bf20.woff",
     "static/media/avtopley.avif": "/olegity/static/media/avtopley.305c7f9aa6f5fea00a44.avif",
     "static/media/vinegret.webp": "/olegity/static/media/vinegret.cd1e1a6bde851fb4a271.webp",
-    "static/media/olgt.svg": "/olegity/static/media/olgt.194eda663134212d0f2a167368a78d3e.svg",
+    "static/media/olgt.svg": "/olegity/static/media/olgt.981884455467ab576557bcec45b982ce.svg",
     "static/media/yop.avif": "/olegity/static/media/yop.067caa7cd7440526ce90.avif",
     "static/media/icons.woff2": "/olegity/static/media/icons.b330f38910e85e0eef69.woff2",
-    "static/media/lsp.svg": "/olegity/static/media/lsp.ad882a7ef1d3046641eeef764ff8a916.svg",
+    "static/media/lsp.svg": "/olegity/static/media/lsp.4c73f4e5c52191ee6a314d81f86362eb.svg",
     "index.html": "/olegity/index.html",
     "static/media/promenad.avif": "/olegity/static/media/promenad.23915d206f808201372b.avif",
     "static/media/getFetch.cjs": "/olegity/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/dor-blyu.avif": "/olegity/static/media/dor-blyu.fa585c555bb79557d4c3.avif",
-    "main.90da9fa8.css.map": "/olegity/static/css/main.90da9fa8.css.map",
-    "main.0f5bb3f4.js.map": "/olegity/static/js/main.0f5bb3f4.js.map",
-    "988.597c7983.chunk.js.map": "/olegity/static/js/988.597c7983.chunk.js.map"
+    "main.318b1d96.css.map": "/olegity/static/css/main.318b1d96.css.map",
+    "main.bfcbdd69.js.map": "/olegity/static/js/main.bfcbdd69.js.map",
+    "787.ae6c1f4d.chunk.js.map": "/olegity/static/js/787.ae6c1f4d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90da9fa8.css",
-    "static/js/main.0f5bb3f4.js"
+    "static/css/main.318b1d96.css",
+    "static/js/main.bfcbdd69.js"
   ]
 }
