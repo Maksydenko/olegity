@@ -138,7 +138,7 @@ const SliderSwiper = ({
         Virtual,
       ]}
       // Arrows
-      {...(navigation && { navigation })}
+      navigation={navigation}
       // Pagination
       {...(pagination && {
         pagination: {
@@ -223,7 +223,7 @@ const SliderSwiper = ({
       // Horizontal/vertical slider
       direction={direction}
       // Breakpoints (adaptive)
-      {...(breakpoints && { breakpoints })}
+      breakpoints={breakpoints}
       // Update slider when slider items change
       observer={observer}
       // Turn on/off parallax
