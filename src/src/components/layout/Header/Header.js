@@ -15,17 +15,13 @@ const Header = () => {
 
   const handleBreakpointUnlockScroll = () => {
     const windowWidth = window.innerWidth;
-    if (windowWidth >= breakpoint) {
-      handleUnlockScroll();
-    }
+    windowWidth >= breakpoint && handleUnlockScroll();
   };
   useWindowSize(handleBreakpointUnlockScroll, isLockedScroll);
 
   const handleClick = () => {
     const windowWidth = window.innerWidth;
-    if (windowWidth <= breakpoint) {
-      setIsLockedScroll(!isLockedScroll);
-    }
+    windowWidth <= breakpoint && setIsLockedScroll(!isLockedScroll);
   };
 
   return (
