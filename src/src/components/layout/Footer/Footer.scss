@@ -3,7 +3,6 @@
 
 .footer {
   position: relative;
-  padding: rem(50) 0;
   background-color: #21252b;
   color: $darkColor;
 
@@ -11,11 +10,12 @@
 
   &__container {
     display: flex;
-    gap: rem(50);
+    gap: rem(30) rem(50);
+    padding-top: rem(50);
+    padding-bottom: rem(50);
 
     @media (max-width: $tablet) {
       flex-direction: column;
-      gap: rem(30);
     }
   }
 
