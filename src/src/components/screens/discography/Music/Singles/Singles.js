@@ -1,16 +1,16 @@
-import { useInput } from "@hooks/useInput";
+import { useState } from "react";
 
 import Search from "@common/Search/Search";
 import Items from "./Items/Items";
 
 const Singles = ({ singles }) => {
-  const filterInput = useInput();
+  const [text, setText] = useState("");
 
   return (
     <div className="music__singles singles">
       <div className="singles__container">
-        <Search className="singles" {...filterInput} />
-        <Items singles={singles} filterText={filterInput.text} />
+        <Search className="singles" text={text} setText={setText} />
+        <Items singles={singles} filterText={text} />
       </div>
     </div>
   );
