@@ -9,8 +9,6 @@ const Search = ({ className, text, setText }) => {
 
   // Handle filter text change
   const handleFilterTextChange = ({ target: { value } }) => setText(value);
-  // Handle filter text clear
-  const handleFilterTextClear = () => setText("");
   // Handle focus change
   const handleFocusChange = () => setIsFocus((prevState) => !prevState);
 
@@ -25,7 +23,7 @@ const Search = ({ className, text, setText }) => {
       >
         <span className="search__loupe _icon-loupe"></span>
         <input
-          type="text"
+          type="search"
           placeholder={t("search")}
           className="search__input"
           value={text}
@@ -33,11 +31,6 @@ const Search = ({ className, text, setText }) => {
           onFocus={handleFocusChange}
           onBlur={handleFocusChange}
         />
-        <button
-          type="button"
-          className="search__cross _icon-cross"
-          onClick={handleFilterTextClear}
-        ></button>
       </div>
     </div>
   );

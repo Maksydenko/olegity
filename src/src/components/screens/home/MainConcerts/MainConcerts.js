@@ -24,7 +24,7 @@ const MainConcerts = () => {
     },
   ];
 
-  const object = <Img className="main-concerts" img={img} styles={false} />;
+  const object = <Img className="main-concerts" img={img} resetStyle />;
 
   return (
     <ObjectOutsideContainer className="main-concerts" object={object}>

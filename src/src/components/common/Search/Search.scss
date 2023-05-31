@@ -41,20 +41,24 @@
   &__input {
     flex: 1 1 auto;
 
+    &::-webkit-search-cancel-button {
+      appearance: none;
+      width: em(16);
+      height: em(16);
+      background-image: url("../../../assets/img/icons/cross.svg");
+      background-size: contain;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
     @media (prefers-color-scheme: dark) {
       &::placeholder {
         color: #d6d6d6;
       }
-    }
-  }
-
-  // .search__cross
-
-  &__cross {
-    transition: all 0.3s ease 0s;
-
-    &:hover {
-      opacity: 0.5;
     }
   }
 }
