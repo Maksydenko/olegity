@@ -1,8 +1,9 @@
 import { useLoading } from "@hooks/useLoading";
 
+import { useRef } from "react";
+
 import Loader from "@shared/Loader/Loader";
 import { Source } from "./Source";
-import { useRef } from "react";
 
 const Img = ({ className, img, style, resetStyle }) => {
   const objectRef = useRef(null);

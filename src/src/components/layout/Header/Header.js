@@ -5,11 +5,13 @@ import { useWindowSize } from "@hooks/useWindowSize";
 
 import Menu from "@layout/navigation/Menu/Menu";
 
+import { breakpoints } from "@constants/breakpoint.const";
+
 import logo from "@img/logos/olegity.svg";
 
 const Header = () => {
   const { isLockedScroll, setIsLockedScroll } = useLockScroll();
-  const breakpoint = 991.98;
+  const breakpoint = breakpoints.tablet;
 
   const handleUnlockScroll = () => isLockedScroll && setIsLockedScroll(false);
 
