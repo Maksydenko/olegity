@@ -170,8 +170,8 @@ body {
 // Connecting basic component styles
 @import "assets/scss/base.scss";
 
-// Connecting common component styles
-@import "assets/scss/common.scss";
+// Connecting shared component styles
+@import "assets/scss/shared.scss";
 
 // Connecting layout styles
 @import "@layout/Layout.scss";

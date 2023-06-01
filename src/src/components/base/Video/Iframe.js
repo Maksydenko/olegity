@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import Loader from "@common/Loader/Loader";
+import Loader from "@shared/Loader/Loader";
 
 import { useLoading } from "@hooks/useLoading";
 

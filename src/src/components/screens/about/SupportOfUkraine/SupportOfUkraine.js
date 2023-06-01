@@ -1,5 +1,5 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
-import MainBlock from "@common/MainBlock/MainBlock";
+import MainBlock from "@shared/MainBlock/MainBlock";
 import Iframe from "@base/Video/Iframe";
 
 const SupportOfUkraine = () => {

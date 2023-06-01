@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import MainLink from "@common/MainLink/MainLink";
+import MainLink from "../MainLink/MainLink";
 
 const MainBlock = ({ className, title, text, link }) => {
   const { t } = useTranslation();

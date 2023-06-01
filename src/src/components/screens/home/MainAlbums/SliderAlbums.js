@@ -1,5 +1,5 @@
 import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
-import MusicCard from "@common/MusicCard/MusicCard";
+import MusicCard from "@shared/MusicCard/MusicCard";
 
 import { albums } from "@constants/music/albums.const";
 

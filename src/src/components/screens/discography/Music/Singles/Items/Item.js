@@ -1,4 +1,4 @@
-import MusicCard from "@common/MusicCard/MusicCard";
+import MusicCard from "@shared/MusicCard/MusicCard";
 import ListenOn from "../../ListenOn/ListenOn";
 
 const Item = ({ single }) => (

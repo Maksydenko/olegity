@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import MainLink from "@common/MainLink/MainLink";
+import MainLink from "@shared/MainLink/MainLink";
 import SliderAlbums from "./SliderAlbums";
 
 const MainAlbums = () => {

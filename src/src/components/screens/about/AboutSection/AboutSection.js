@@ -1,10 +1,10 @@
 import Img from "@base/Img/Img";
-import Body from "./Body";
+import MainBlock from "@shared/MainBlock/MainBlock";
 
 const HistoryBlock = ({ className, title, text, img }) => (
   <section className={`${className} about-section`}>
     <div className="about-section__container">
-      <Body title={title} text={text} />
+      <MainBlock className="about-section" title={title} text={text} />
       <Img className="about-section" img={img} />
     </div>
   </section>

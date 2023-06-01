@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Search from "@common/Search/Search";
+import Search from "@shared/Search/Search";
 import Items from "./Items/Items";
 
 const Singles = ({ singles }) => {

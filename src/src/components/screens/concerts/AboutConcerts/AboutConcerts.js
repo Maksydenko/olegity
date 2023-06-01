@@ -1,6 +1,6 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@base/Img/Img";
-import MainBlock from "@common/MainBlock/MainBlock";
+import MainBlock from "@shared/MainBlock/MainBlock";
 
 import concertWebp from "@img/lsp/webp/concert.webp";
 import concert from "@img/lsp/jpg/concert.jpg";

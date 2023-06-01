@@ -10,7 +10,7 @@ module.exports = {
 
       "@components": resolvePath("./src/components"),
       "@base": resolvePath("./src/components/base"),
-      "@common": resolvePath("./src/components/common"),
+      "@shared": resolvePath("./src/components/shared"),
       "@layout": resolvePath("./src/components/layout"),
       "@screens": resolvePath("./src/components/screens"),
 

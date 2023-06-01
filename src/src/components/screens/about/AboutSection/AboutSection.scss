@@ -9,9 +9,9 @@
     }
   }
 
-  // .about-section__body
+  // .about-section__main-block
 
-  &__body {
+  &__main-block {
     align-self: center;
     flex: 1 1 47.5%;
     padding: rem(50) rem(20) rem(50) 0;
@@ -19,10 +19,32 @@
     @media (max-width: $tablet) {
       padding: 0 0 rem(30);
     }
+
+    h2 {
+      margin-bottom: em(20, 32);
+      font-size: rem(32);
+      font-weight: 500;
+      font-family: $fontFamily2;
+
+      @media (max-width: $mobile) {
+        text-align: left;
+        font-size: rem(24);
+      }
+    }
+
+    p {
+      @media (max-width: $tablet) {
+        text-align: justify;
+      }
+
+      p:not(:last-child) {
+        margin-bottom: em(15);
+      }
+    }
   }
 
   &:nth-child(even) {
-    .about-section__body {
+    .about-section__main-block {
       padding: rem(50) 0 rem(50) rem(20);
 
       @media (min-width: $tablet) {
@@ -32,35 +54,6 @@
       @media (max-width: $tablet) {
         padding: 0 0 rem(30);
       }
-    }
-  }
-
-  // .about-section__title
-
-  &__title {
-    position: relative;
-    margin-bottom: em(20, 32);
-    line-height: 1.15;
-    font-size: rem(32);
-    font-weight: 500;
-    font-family: $fontFamily2;
-
-    @media (max-width: $mobileSmall) {
-      font-size: rem(24);
-    }
-  }
-
-  // .about-section__text
-
-  &__text {
-    line-height: 1.3;
-
-    @media (max-width: $tablet) {
-      text-align: justify;
-    }
-
-    p:not(:last-child) {
-      margin-bottom: em(15);
     }
   }
 
