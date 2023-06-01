@@ -9,7 +9,7 @@ const FullScreen = ({ className, children, background }) => {
     const windowHeight = window.innerHeight;
     setHeight(`${windowHeight}px`);
   };
-  useWindowSize(handleResizeHeight, height);
+  useWindowSize(handleResizeHeight);
 
   const styleMinHeight = {
     minHeight: height,
