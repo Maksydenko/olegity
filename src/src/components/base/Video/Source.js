@@ -43,5 +43,3 @@ export const Source = forwardRef(
     );
   }
 );
-
-// export default Source;

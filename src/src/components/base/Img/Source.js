@@ -31,5 +31,3 @@ export const Source = forwardRef(({ img, loading = "lazy" }, ref) => {
   }
   return <img src={img.src} alt={img.alt} {...imgAttrs} ref={ref} />;
 });
-
-// export default Source;
