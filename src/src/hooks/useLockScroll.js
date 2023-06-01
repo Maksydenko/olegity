@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useLockScroll() {
+export const useLockScroll = () => {
   const [isLockedScroll, setIsLockedScroll] = useState(false);
 
   useEffect(() => {
@@ -18,4 +18,4 @@ export function useLockScroll() {
   }, [isLockedScroll]);
 
   return { isLockedScroll, setIsLockedScroll };
-}
+};

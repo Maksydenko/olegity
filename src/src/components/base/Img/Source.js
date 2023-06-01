@@ -1,7 +1,10 @@
-const Source = ({ img, loading = "lazy" }) => {
+import { forwardRef } from "react";
+
+export const Source = forwardRef(({ img, loading = "lazy" }, ref) => {
   const imgAttrs = {
     loading,
   };
+
   if (Array.isArray(img)) {
     const pictures = img
       .slice(0, -1)
@@ -10,6 +13,7 @@ const Source = ({ img, loading = "lazy" }) => {
           key={index}
           srcSet={picture.src}
           type={`image/${picture.type}`}
+          ref={ref}
         />
       ));
 
@@ -20,11 +24,12 @@ const Source = ({ img, loading = "lazy" }) => {
           src={img[img.length - 1].src}
           alt={img[img.length - 1].alt}
           {...imgAttrs}
+          ref={ref}
         />
       </picture>
     );
   }
-  return <img src={img.src} alt={img.alt} {...imgAttrs} />;
-};
+  return <img src={img.src} alt={img.alt} {...imgAttrs} ref={ref} />;
+});
 
-export default Source;
+// export default Source;

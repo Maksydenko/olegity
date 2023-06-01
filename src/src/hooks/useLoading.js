@@ -1,24 +1,29 @@
 import { useState, useEffect } from "react";
 
-export const useLoading = (className, objectType = className) => {
+export const useLoading = (object) => {
   const [isLoading, setIsLoading] = useState(true);
-  const onObjectLoad = () => setIsLoading(false);
+  const handleObjectLoaded = () => setIsLoading(false);
 
   useEffect(() => {
-    const object = document.querySelector(
-      `[class*="__${className}"] ${objectType}`
-    );
+    const isVideo = object.current.tagName === "VIDEO";
 
-    if (object.complete) {
-      onObjectLoad();
+    if (object.current.complete) {
+      handleObjectLoaded();
     } else {
-      object.addEventListener("load", onObjectLoad);
+      object.current.addEventListener("load", handleObjectLoaded);
+      isVideo &&
+        object.current.addEventListener("loadedmetadata", handleObjectLoaded);
 
       return () => {
-        object.removeEventListener("load", onObjectLoad);
+        object.current?.removeEventListener("load", handleObjectLoaded);
+        isVideo &&
+          object.current?.removeEventListener(
+            "loadedmetadata",
+            handleObjectLoaded
+          );
       };
     }
-  }, [className, objectType, isLoading]);
+  }, [object, isLoading]);
 
   return isLoading;
 };

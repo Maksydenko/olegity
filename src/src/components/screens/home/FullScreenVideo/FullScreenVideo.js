@@ -2,11 +2,16 @@ import FullScreen from "@base/FullScreen/FullScreen";
 import Video from "@base/Video/Video";
 import Img from "@base/Img/Img";
 
-import video from "@assets/videos/binokl.mp4";
+import videoMp4 from "@assets/videos/binokl.mp4";
 import poster from "@img/lsp/jpg/clip.jpg";
 import logo from "@img/logos/lsp.svg";
 
 const FullScreenVideo = () => {
+  const video = {
+    src: videoMp4,
+    type: "mp4",
+  };
+
   const img = {
     src: logo,
     alt: "LSP",
@@ -17,7 +22,7 @@ const FullScreenVideo = () => {
       className="full-screen-video"
       video={video}
       poster={poster}
-      styles={false}
+      resetStyle
     />
   );
 

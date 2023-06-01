@@ -1,15 +1,18 @@
-import { useLoading } from "@hooks/useLoading";
+import { useRef } from "react";
 
 import Loader from "@common/Loader/Loader";
-import Source from "./Source";
+import { Source } from "./Source";
 
-const Video = ({ className, poster, video, styles = true }) => {
-  const isLoading = useLoading("video");
+import { useLoading } from "@hooks/useLoading";
+
+const Video = ({ className, poster, video, resetStyle }) => {
+  const objectRef = useRef(null);
+  const isLoading = useLoading(objectRef);
 
   return (
-    <div className={`${className}__video${styles ? " video" : ""}`}>
+    <div className={`${className}__video${resetStyle ? "" : " video"}`}>
       {isLoading && <Loader />}
-      <Source video={video} poster={poster} />
+      <Source video={video} poster={poster} ref={objectRef} />
     </div>
   );
 };
