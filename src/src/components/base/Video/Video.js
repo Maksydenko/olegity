@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import Loader from "@shared/Loader/Loader";
-import { Source } from "./Source";
+import { Items } from "./Items/Items";
 
 import { useLoading } from "@hooks/useLoading";
 
@@ -12,7 +12,7 @@ const Video = ({ className, poster, video, resetStyle }) => {
   return (
     <div className={`${className}__video${resetStyle ? "" : " video"}`}>
       {isLoading && <Loader />}
-      <Source video={video} poster={poster} ref={objectRef} />
+      <Items video={video} poster={poster} ref={objectRef} />
     </div>
   );
 };
