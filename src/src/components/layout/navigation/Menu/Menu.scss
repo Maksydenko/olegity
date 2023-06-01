@@ -15,7 +15,7 @@
 
       &::before,
       &::after,
-      & span {
+      span {
         position: absolute;
         left: 0;
         width: 100%;
@@ -38,7 +38,7 @@
         bottom: 0;
       }
 
-      & span {
+      span {
         top: 50%;
         transform: scale(1) translateY(-50%);
       }
@@ -47,12 +47,12 @@
 
       &_active::before {
         top: 50%;
-        transform: rotate(45deg) translateY(-50%);
+        transform: rotate(-45deg) translateY(-50%);
       }
 
       &_active::after {
         bottom: 50%;
-        transform: rotate(-45deg) translateY(50%);
+        transform: rotate(45deg) translateY(50%);
       }
 
       &_active span {
