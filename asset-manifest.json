@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/olegity/static/css/main.d2c6c250.css",
-    "main.js": "/olegity/static/js/main.4bfe761d.js",
+    "main.js": "/olegity/static/js/main.70ce65f0.js",
     "static/js/787.ae6c1f4d.chunk.js": "/olegity/static/js/787.ae6c1f4d.chunk.js",
     "static/media/binokl.mp4": "/olegity/static/media/binokl.1cbff924471bfdf0a520.mp4",
     "static/media/concert-18.jpg": "/olegity/static/media/concert-18.c363883f01f6ce6d0553.jpg",
@@ -57,6 +57,7 @@
     "static/media/clouny.jpg": "/olegity/static/media/clouny.0f709fd760d7f54f1618.jpg",
     "static/media/v-yeyo-posteli.jpg": "/olegity/static/media/v-yeyo-posteli.9afce0935670b62cd030.jpg",
     "static/media/flyuorografiya.jpg": "/olegity/static/media/flyuorografiya.0f9255132776a3c53bdb.jpg",
+    "static/media/vechnaya-vesna.jpg": "/olegity/static/media/vechnaya-vesna.e93a0f4cd67e294b220b.jpg",
     "static/media/ataka-kota.jpg": "/olegity/static/media/ataka-kota.10b3983a0b95df16bc7b.jpg",
     "static/media/one-more-city.jpg": "/olegity/static/media/one-more-city.2599d72296d59ddde80d.jpg",
     "static/media/family.jpg": "/olegity/static/media/family.8349f5e1de476d47a3ae.jpg",
@@ -109,8 +110,10 @@
     "static/media/ne-ubezhal.jpg": "/olegity/static/media/ne-ubezhal.4322dae6acbdce52c5f8.jpg",
     "static/media/vecherinka-remix.jpg": "/olegity/static/media/vecherinka-remix.4cb008dff589278d1f98.jpg",
     "static/media/family.webp": "/olegity/static/media/family.c0920a34f200bd811877.webp",
+    "static/media/vechnaya-vesna.webp": "/olegity/static/media/vechnaya-vesna.92e262c02d310dd8bfcd.webp",
     "static/media/concert.jpg": "/olegity/static/media/concert.51119fbb7f3fdf7d3482.jpg",
     "static/media/hip-hop-battle.webp": "/olegity/static/media/hip-hop-battle.860c43e49bd336c38e0d.webp",
+    "static/media/vechnaya-vesna.avif": "/olegity/static/media/vechnaya-vesna.711cabdf2054f98f384c.avif",
     "static/media/zelenoglazyye-deffki.avif": "/olegity/static/media/zelenoglazyye-deffki.5ea9dd1ac16a566c8f6b.avif",
     "static/media/flyuorografiya.avif": "/olegity/static/media/flyuorografiya.0590784e449f8875355e.avif",
     "static/media/vesnovka-ushacha.jpg": "/olegity/static/media/vesnovka-ushacha.665ca1d45bd9660cdf15.jpg",
@@ -288,11 +291,11 @@
     "static/media/dor-blyu.avif": "/olegity/static/media/dor-blyu.fa585c555bb79557d4c3.avif",
     "static/media/cross.svg": "/olegity/static/media/cross.813055e2eab376cc1adc.svg",
     "main.d2c6c250.css.map": "/olegity/static/css/main.d2c6c250.css.map",
-    "main.4bfe761d.js.map": "/olegity/static/js/main.4bfe761d.js.map",
+    "main.70ce65f0.js.map": "/olegity/static/js/main.70ce65f0.js.map",
     "787.ae6c1f4d.chunk.js.map": "/olegity/static/js/787.ae6c1f4d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2c6c250.css",
-    "static/js/main.4bfe761d.js"
+    "static/js/main.70ce65f0.js"
   ]
 }

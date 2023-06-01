@@ -1,3 +1,5 @@
+import vechnayaVesnaWebp from "@img/videos/music-videos/webp/vechnaya-vesna.webp";
+import vechnayaVesna from "@img/videos/music-videos/jpg/vechnaya-vesna.jpg";
 import labirintOtrazheniyWebp from "@img/videos/music-videos/webp/labirint-otrazheniy.webp";
 import labirintOtrazheniy from "@img/videos/music-videos/jpg/labirint-otrazheniy.jpg";
 import solntseZolotoyeWebp from "@img/videos/music-videos/webp/solntse-zolotoye.webp";
@@ -36,6 +38,20 @@ import kokteylWebp from "@img/videos/music-videos/webp/kokteyl.webp";
 import kokteyl from "@img/videos/music-videos/jpg/kokteyl.jpg";
 
 export const musicVideos = [
+  {
+    src: "https://www.youtube.com/embed/YjDyNvP_sEc?color=white",
+    title: "ЛСП (LSP) — Вечная весна (Eternal spring)",
+    img: [
+      {
+        src: vechnayaVesnaWebp,
+        type: "webp",
+      },
+      {
+        src: vechnayaVesna,
+        alt: "ЛСП (LSP) — Вечная весна (Eternal spring)",
+      },
+    ],
+  },
   {
     src: "https://www.youtube.com/embed/z5Vp0e2Xo5I?color=white",
     title:

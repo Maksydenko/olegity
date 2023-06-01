@@ -1,3 +1,5 @@
+import vechnayaVesnaAvif from "@img/music/singles/avif/vechnaya-vesna.avif";
+import vechnayaVesna from "@img/music/singles/jpg/vechnaya-vesna.jpg";
 import mrakAvif from "@img/music/singles/avif/mrak.avif";
 import mrak from "@img/music/singles/jpg/mrak.jpg";
 import dorBlyuAvif from "@img/music/singles/avif/dor-blyu.avif";
@@ -136,6 +138,31 @@ import mneSkuchnoZhitAvif from "@img/music/singles/avif/mne-skuchno-zhit.avif";
 import mneSkuchnoZhit from "@img/music/singles/jpg/mne-skuchno-zhit.jpg";
 
 export const singles = [
+  {
+    title: "Вечная весна (Eternal spring)",
+    artist: "ЛСП (LSP) & DenDerty",
+    genre: "pop",
+    year: 2023,
+    img: [
+      {
+        src: vechnayaVesnaAvif,
+        type: "avif",
+      },
+      {
+        src: vechnayaVesna,
+        alt: "Вечная весна (Eternal spring)",
+      },
+    ],
+    links: {
+      spotify:
+        "https://open.spotify.com/album/6tmofLXJrQNL2wEzTqc3Jg?si=hpJ9EJIuR-CSDpJ4eIvzGA",
+      appleMusic:
+        "https://music.apple.com/us/album/%D0%B2%D0%B5%D1%87%D0%BD%D0%B0%D1%8F-%D0%B2%D0%B5%D1%81%D0%BD%D0%B0-single/1682869514",
+      youtubeMusic:
+        "https://music.youtube.com/playlist?list=OLAK5uy_mf0lN7pIMS3uK_uAVxwok6znmdHMbrCxY",
+      deezer: "https://www.deezer.com/us/album/432424617",
+    },
+  },
   {
     title: "Мрак (Darkness)",
     artist: "ЛСП (LSP) & DenDerty",
