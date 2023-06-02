@@ -45,18 +45,23 @@
 
       // .menu__button_active
 
-      &_active::before {
-        top: 50%;
-        transform: rotate(45deg) translateY(-50%);
-      }
+      &_active {
+        &::before,
+        &::after {
+          top: 50%;
+        }
 
-      &_active::after {
-        bottom: 50%;
-        transform: rotate(-45deg) translateY(50%);
-      }
+        &::before {
+          transform: rotate(45deg);
+        }
 
-      &_active span {
-        transform: scale(0);
+        &::after {
+          transform: rotate(-45deg);
+        }
+
+        span {
+          transform: scale(0);
+        }
       }
     }
   }

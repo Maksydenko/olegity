@@ -1,4 +1,4 @@
-export const getModifierClassName = (
+export const handleClassName = (
   isActive,
   className,
   modifier = "active",

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { getModifierClassName } from "@utils/className.util";
+import { handleClassName } from "@utils/className.util";
 
 const Search = ({ className, text, setText }) => {
   const [isFocus, setIsFocus] = useState();
@@ -14,13 +14,7 @@ const Search = ({ className, text, setText }) => {
 
   return (
     <div className={`${className}__search search`}>
-      <div
-        className={getModifierClassName(
-          isFocus,
-          "search__filter-text",
-          "focus"
-        )}
-      >
+      <div className={handleClassName(isFocus, "search__filter-text", "focus")}>
         <span className="search__loupe _icon-loupe"></span>
         <input
           type="search"
