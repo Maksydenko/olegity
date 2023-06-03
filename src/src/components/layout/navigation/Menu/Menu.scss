@@ -46,9 +46,12 @@
       // .menu__button_active
 
       &_active {
+        height: rem(30);
+
         &::before,
         &::after {
           top: 50%;
+          height: 5%;
         }
 
         &::before {
