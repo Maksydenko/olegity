@@ -12,6 +12,7 @@ export const useRedirectToHomepage = () => {
       const timer = setTimeout(() => {
         setTime(time - 1);
       }, 1000);
+
       return () => clearTimeout(timer);
     }
   }, [time, navigate]);

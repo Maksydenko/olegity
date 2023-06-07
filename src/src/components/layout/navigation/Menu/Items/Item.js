@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-const Item = ({ link, onClick }) => {
+const Item = ({ link: { value, href }, onClick }) => {
   const { t } = useTranslation();
 
   return (
     <li className="menu__item">
-      <Link to={link.path} className="menu__link" onClick={onClick}>
-        {t(link.value)}
+      <Link to={href} className="menu__link" onClick={onClick}>
+        {t(value)}
       </Link>
     </li>
   );

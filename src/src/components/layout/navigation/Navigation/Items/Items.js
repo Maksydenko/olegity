@@ -1,6 +1,6 @@
 import Item from "./Item";
 
-function Items({ links }) {
-  return links.map((link, index) => <Item key={index} link={link} />);
-}
+const Items = ({ links }) =>
+  links.map((link) => <Item key={link.path} link={link} />);
+
 export default Items;
