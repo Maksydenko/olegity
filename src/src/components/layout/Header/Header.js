@@ -24,8 +24,8 @@ const Header = () => {
 
   const handleClick = () => {
     const windowWidth = window.innerWidth;
-    const isMoreBreakpoint = windowWidth < breakpoint;
-    isMoreBreakpoint < breakpoint && setIsScrollLocked(!isScrollLocked);
+    const isLessBreakpoint = windowWidth < breakpoint;
+    isLessBreakpoint < breakpoint && setIsScrollLocked(!isScrollLocked);
   };
 
   return (
