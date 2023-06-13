@@ -128,10 +128,20 @@ body {
 
     @if $containerPadding > 0 {
       @if $maxWidthContainer > 0 {
-        padding: 0 rem($containerPadding / 2);
+        padding: 0 rem(calc($containerPadding / 2));
       } @else {
-        @include responsiveValue(padding-left, $containerPadding / 2, 15, 0);
-        @include responsiveValue(padding-right, $containerPadding / 2, 15, 0);
+        @include responsiveValue(
+          padding-left,
+          calc($containerPadding / 2),
+          15,
+          0
+        );
+        @include responsiveValue(
+          padding-right,
+          calc($containerPadding / 2),
+          15,
+          0
+        );
       }
     }
   }
@@ -145,7 +155,7 @@ body {
       max-width: rem($containerWidth);
     } @else {
       @if $containerPadding > 0 {
-        padding: 0 rem($containerPadding / 2);
+        padding: 0 rem(calc($containerPadding / 2));
       }
     }
 
@@ -162,7 +172,7 @@ body {
     }
 
     @if $containerPadding > 0 and $maxWidthContainer > 0 {
-      padding: 0 rem($containerPadding / 2);
+      padding: 0 rem(calc($containerPadding / 2));
     }
   }
 }

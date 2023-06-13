@@ -8,11 +8,12 @@
   $widthTo: $minWidth
 ) {
   // For calc();
-  $addSize: ($startSize - $minSize) / 16;
+  $addSize: calc(($startSize - $minSize) / 16);
 
   $calcSize: calc(
-    #{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{$widthFrom /
-      16 - $widthTo / 16}
+    #{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{calc(
+        $widthFrom / 16
+      ) - calc($widthTo / 16)}
   );
 
   // If there is less container
