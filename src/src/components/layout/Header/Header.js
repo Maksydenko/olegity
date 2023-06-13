@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import { useLockScroll } from "@hooks/useLockScroll";
-import { useWindowSize } from "@hooks/useWindowSize";
+import { useScrollLock } from "@hooks/useScrollLock";
+import { useWindowResize } from "@hooks/useWindowResize";
 
 import Menu from "@layout/navigation/Menu/Menu";
 
@@ -10,20 +10,20 @@ import { breakpoints } from "@constants/breakpoint.const";
 import logo from "@img/logos/olegity.svg";
 
 const Header = () => {
-  const { isLockedScroll, setIsLockedScroll } = useLockScroll();
+  const { isScrollLocked, setIsScrollLocked } = useScrollLock();
   const breakpoint = breakpoints.tablet;
 
-  const handleUnlockScroll = () => isLockedScroll && setIsLockedScroll(false);
+  const handleUnlockScroll = () => isScrollLocked && setIsScrollLocked(false);
 
   const handleBreakpointUnlockScroll = () => {
     const windowWidth = window.innerWidth;
-    windowWidth > breakpoint && isLockedScroll && handleUnlockScroll();
+    windowWidth > breakpoint && isScrollLocked && handleUnlockScroll();
   };
-  useWindowSize(handleBreakpointUnlockScroll);
+  useWindowResize(handleBreakpointUnlockScroll);
 
   const handleClick = () => {
     const windowWidth = window.innerWidth;
-    windowWidth < breakpoint && setIsLockedScroll(!isLockedScroll);
+    windowWidth < breakpoint && setIsScrollLocked(!isScrollLocked);
   };
 
   return (
@@ -32,7 +32,7 @@ const Header = () => {
         <Link to="/" className="header__logo" onClick={handleUnlockScroll}>
           <img src={logo} alt="Olegity" />
         </Link>
-        <Menu isLockedScroll={isLockedScroll} onClick={handleClick} />
+        <Menu isScrollLocked={isScrollLocked} onClick={handleClick} />
       </div>
     </header>
   );

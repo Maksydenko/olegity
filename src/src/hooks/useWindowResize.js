@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const useWindowSize = (handler) =>
+export const useWindowResize = (handler) =>
   useEffect(() => {
     handler();
     window.addEventListener("resize", handler);

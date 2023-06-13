@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-export const useLockScroll = () => {
-  const [isLockedScroll, setIsLockedScroll] = useState(false);
+export const useScrollLock = () => {
+  const [isScrollLocked, setIsScrollLocked] = useState(false);
 
   useEffect(() => {
     const body = document.body;
 
-    if (isLockedScroll) {
+    if (isScrollLocked) {
       body.classList.add("lock");
     } else {
       body.classList.remove("lock");
@@ -15,7 +15,7 @@ export const useLockScroll = () => {
     return () => {
       body.classList.remove("lock");
     };
-  }, [isLockedScroll]);
+  }, [isScrollLocked]);
 
-  return { isLockedScroll, setIsLockedScroll };
+  return { isScrollLocked, setIsScrollLocked };
 };

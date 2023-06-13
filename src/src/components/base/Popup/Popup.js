@@ -1,10 +1,10 @@
-import { useLockScroll } from "@hooks/useLockScroll";
+import { useScrollLock } from "@hooks/useScrollLock";
 
 import Body from "./Body";
 
 const Popup = ({ className, button, children }) => {
-  const { isLockedScroll, setIsLockedScroll } = useLockScroll();
-  const handleClick = () => setIsLockedScroll(!isLockedScroll);
+  const { isScrollLocked, setIsScrollLocked } = useScrollLock();
+  const handleClick = () => setIsScrollLocked(!isScrollLocked);
 
   return (
     <div className={`${className}__popup popup`}>
@@ -14,7 +14,7 @@ const Popup = ({ className, button, children }) => {
       >
         {button}
       </button>
-      {isLockedScroll && <Body onClick={handleClick}>{children}</Body>}
+      {isScrollLocked && <Body onClick={handleClick}>{children}</Body>}
     </div>
   );
 };
