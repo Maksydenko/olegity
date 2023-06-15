@@ -1,11 +1,18 @@
-const ResponsiveObjectOut = ({ className, pc, children, object }) => {
-  const getClassName = `object-outside-container${pc ? "_pc" : ""}`;
+import { handleClassName } from "@utils/className.util";
+
+const ResponsiveObjectOut = ({ className, modifier, children, object }) => {
+  const modifiedClassName = handleClassName(
+    modifier,
+    "object-outside-container",
+    modifier,
+    modifier
+  );
 
   return (
-    <section className={`${className} ${getClassName}`}>
-      <div className={`${getClassName}__content`}>
-        <div className={`${getClassName}__container`}>
-          <div className={`${getClassName}__body`}>{children}</div>
+    <section className={`${className} ${modifiedClassName}`}>
+      <div className={`${modifiedClassName}__content`}>
+        <div className={`${modifiedClassName}__container`}>
+          <div className={`${modifiedClassName}__body`}>{children}</div>
         </div>
       </div>
       {object}

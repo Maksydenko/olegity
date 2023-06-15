@@ -65,21 +65,18 @@
   // .videos__popup
 
   &__popup {
-  }
+    .popup__button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: rem(80);
+      color: $darkColor;
+      transition: all 0.3s ease 0s;
 
-  // .videos__popup-button
-
-  &__popup-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: rem(80);
-    color: $darkColor;
-    transition: all 0.3s ease 0s;
-
-    &:hover {
-      opacity: 0.5;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 

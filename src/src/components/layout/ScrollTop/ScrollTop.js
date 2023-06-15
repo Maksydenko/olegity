@@ -7,12 +7,12 @@ const ScrollTop = () => {
   const handleClick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <div
-      className={handleClassName(isHidden, "scroll-top", "hidden", true)}
+    <button
+      className={handleClassName(!isHidden, "scroll-top")}
       onClick={handleClick}
     >
       <span className="scroll-top__arrow-top _icon-arrow-top"></span>
-    </div>
+    </button>
   );
 };
 

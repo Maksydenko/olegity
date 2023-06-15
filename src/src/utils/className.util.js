@@ -2,8 +2,8 @@ export const handleClassName = (
   isActive,
   className,
   modifier = "active",
-  noNamespace
+  onlyModifier
 ) =>
-  `${className}${
-    isActive ? ` ${noNamespace ? "" : className}_${modifier}` : ""
-  }`;
+  `${onlyModifier ? "" : className}${
+    isActive ? (onlyModifier ? "" : " ") : ""
+  }${isActive ? `${className}_${modifier}` : ""}`;

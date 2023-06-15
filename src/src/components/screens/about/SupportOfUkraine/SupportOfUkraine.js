@@ -16,7 +16,11 @@ const SupportOfUkraine = () => {
   const object = <Iframe className="support-of-ukraine" video={video} />;
 
   return (
-    <ObjectOutsideContainer className="support-of-ukraine" pc object={object}>
+    <ObjectOutsideContainer
+      className="support-of-ukraine"
+      modifier="pc"
+      object={object}
+    >
       <MainBlock
         className="support-of-ukraine"
         title="support-of-ukraine"
