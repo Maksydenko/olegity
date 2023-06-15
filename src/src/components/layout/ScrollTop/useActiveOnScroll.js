@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-export const useHideOnScroll = () => {
-  const [isHidden, setIsHidden] = useState(true);
+export const useActiveOnScroll = () => {
+  const [isActive, setIsActive] = useState(false);
 
   const scrollActive = 110;
   const handleScroll = () =>
-    window.scrollY >= scrollActive ? setIsHidden(false) : setIsHidden(true);
+    window.scrollY >= scrollActive ? setIsActive(true) : setIsActive(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -13,7 +13,7 @@ export const useHideOnScroll = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isHidden]);
+  }, [isActive]);
 
-  return isHidden;
+  return isActive;
 };
