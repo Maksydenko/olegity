@@ -5,11 +5,11 @@ import { useWindowResize } from "@hooks/useWindowResize";
 export const useFullHeight = () => {
   const [height, setHeight] = useState("100vh");
 
-  const handleResizeHeight = () => {
+  const handleHeightUpdate = () => {
     const windowHeight = window.innerHeight;
     setHeight(`${windowHeight}px`);
   };
-  useWindowResize(handleResizeHeight);
+  useWindowResize(handleHeightUpdate);
 
   return height;
 };

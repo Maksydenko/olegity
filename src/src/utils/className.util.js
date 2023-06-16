@@ -3,7 +3,10 @@ export const handleClassName = (
   className,
   modifier = "active",
   onlyModifier
-) =>
-  `${onlyModifier ? "" : className}${
-    isActive ? (onlyModifier ? "" : " ") : ""
-  }${isActive ? `${className}_${modifier}` : ""}`;
+) => {
+  const defaultClassName = onlyModifier ? "" : className;
+  const splitter = isActive ? (onlyModifier ? "" : " ") : "";
+  const modifiedClassName = isActive ? `${className}_${modifier}` : "";
+
+  return defaultClassName + splitter + modifiedClassName;
+};

@@ -2,24 +2,24 @@ import { useState, useEffect } from "react";
 
 export const useLoading = (object) => {
   const [isLoading, setIsLoading] = useState(true);
-  const handleObjectLoaded = () => setIsLoading(false);
+  const handleLoadedObject = () => setIsLoading(false);
 
   useEffect(() => {
     const isVideo = object.current.tagName === "VIDEO";
 
     if (object.current.complete) {
-      handleObjectLoaded();
+      handleLoadedObject();
     } else {
-      object.current.addEventListener("load", handleObjectLoaded);
+      object.current.addEventListener("load", handleLoadedObject);
       isVideo &&
-        object.current.addEventListener("loadedmetadata", handleObjectLoaded);
+        object.current.addEventListener("loadedmetadata", handleLoadedObject);
 
       return () => {
-        object.current?.removeEventListener("load", handleObjectLoaded);
+        object.current?.removeEventListener("load", handleLoadedObject);
         isVideo &&
           object.current?.removeEventListener(
             "loadedmetadata",
-            handleObjectLoaded
+            handleLoadedObject
           );
       };
     }
