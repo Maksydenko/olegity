@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { useScrollLock } from "@hooks/useScrollLock";
-import { useWindowResize } from "@hooks/useWindowResize";
+import { useWindowListener } from "@hooks/useWindowListener";
 
 import Menu from "@layout/navigation/Menu/Menu";
 
@@ -13,19 +13,29 @@ const Header = () => {
   const { isScrollLocked, setIsScrollLocked } = useScrollLock();
   const breakpoint = breakpoints.tablet;
 
-  const handleUnlockScroll = () => isScrollLocked && setIsScrollLocked(false);
+  const handleUnlockScroll = () => {
+    if (isScrollLocked) {
+      setIsScrollLocked(false);
+    }
+  };
 
   const handleUnlockScrollOnBreakpoint = () => {
     const windowWidth = window.innerWidth;
     const isMoreBreakpoint = windowWidth > breakpoint;
-    isMoreBreakpoint && isScrollLocked && handleUnlockScroll();
+
+    if (isMoreBreakpoint && isScrollLocked) {
+      handleUnlockScroll();
+    }
   };
-  useWindowResize(handleUnlockScrollOnBreakpoint);
+  useWindowListener(handleUnlockScrollOnBreakpoint);
 
   const handleClick = () => {
     const windowWidth = window.innerWidth;
     const isLessBreakpoint = windowWidth < breakpoint;
-    isLessBreakpoint < breakpoint && setIsScrollLocked(!isScrollLocked);
+
+    if (isLessBreakpoint) {
+      setIsScrollLocked(!isScrollLocked);
+    }
   };
 
   return (
