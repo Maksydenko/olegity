@@ -7,7 +7,7 @@ const FullScreen = ({ className, modifier, children, background }) => {
 
   const modifiedClassName = handleClassName(
     !!modifier,
-    `${className}__popup`,
+    `${className}__full-screen`,
     modifier
   );
 
@@ -16,10 +16,10 @@ const FullScreen = ({ className, modifier, children, background }) => {
   };
 
   return (
-    <section className={`${modifiedClassName} full-screen`} style={style}>
+    <div className={`${modifiedClassName} full-screen`} style={style}>
       <div className="full-screen__body">{children}</div>
       {background}
-    </section>
+    </div>
   );
 };
 

@@ -27,9 +27,11 @@ const FullScreenVideo = () => {
   );
 
   return (
-    <FullScreen className="full-screen-video" background={background}>
-      <Img className="full-screen-video" img={img} />
-    </FullScreen>
+    <section className="full-screen-video">
+      <FullScreen className="full-screen-video" background={background}>
+        <Img className="full-screen-video" img={img} />
+      </FullScreen>
+    </section>
   );
 };
 
