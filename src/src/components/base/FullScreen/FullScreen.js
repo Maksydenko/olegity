@@ -1,22 +1,22 @@
-import { useState } from "react";
+import { useFullHeight } from "./useFullHeight";
 
-import { useWindowResize } from "@hooks/useWindowResize";
+import { handleClassName } from "@utils/className.util";
 
-const FullScreen = ({ className, children, background }) => {
-  const [height, setHeight] = useState("100vh");
+const FullScreen = ({ className, modifier, children, background }) => {
+  const height = useFullHeight();
 
-  const handleResizeHeight = () => {
-    const windowHeight = window.innerHeight;
-    setHeight(`${windowHeight}px`);
-  };
-  useWindowResize(handleResizeHeight);
+  const modifiedClassName = handleClassName(
+    !!modifier,
+    `${className}__popup`,
+    modifier
+  );
 
-  const styleMinHeight = {
+  const style = {
     minHeight: height,
   };
 
   return (
-    <section className={`${className} full-screen`} style={styleMinHeight}>
+    <section className={`${modifiedClassName} full-screen`} style={style}>
       <div className="full-screen__body">{children}</div>
       {background}
     </section>

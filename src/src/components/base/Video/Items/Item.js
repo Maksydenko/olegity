@@ -1,5 +1,7 @@
 const Item = ({ video }) => {
-  if (Array.isArray(video)) {
+  const isArray = Array.isArray(video);
+
+  if (isArray) {
     const videos = video.map((videoItem, index) => (
       <source
         key={index}

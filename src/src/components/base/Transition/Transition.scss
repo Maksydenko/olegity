@@ -1,0 +1,28 @@
+.alert {
+  // .alert-enter
+
+  &-enter {
+    opacity: 0;
+
+    // .alert-enter-active
+
+    &-active {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity 300ms, transform 300ms;
+    }
+  }
+
+  // .alert-exit
+
+  &-exit {
+    opacity: 1;
+
+    // .alert-exit-active
+
+    &-active {
+      opacity: 0;
+      transition: opacity 300ms, transform 300ms;
+    }
+  }
+}

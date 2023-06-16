@@ -1,3 +1,5 @@
+import { handleClassName } from "@utils/className.util";
+
 // import Swiper core and required modules
 import {
   Navigation,
@@ -23,6 +25,7 @@ import "swiper/scss/pagination";
 
 const SliderSwiper = ({
   className,
+  modifier,
   children,
   // Navigation
   navigation = true,
@@ -120,9 +123,15 @@ const SliderSwiper = ({
     </SwiperSlide>
   ));
 
+  const modifiedClassName = handleClassName(
+    !!modifier,
+    `${className}__slider`,
+    modifier
+  );
+
   return (
     <Swiper
-      className={`${className}__slider`}
+      className={modifiedClassName}
       // Modules
       modules={[
         Navigation,

@@ -4,16 +4,25 @@ import Loader from "@shared/Loader/Loader";
 
 import { useLoading } from "@hooks/useLoading";
 
-const Iframe = ({ className, video, resetStyle = true }) => {
+import { handleClassName } from "@utils/className.util";
+
+const Iframe = ({ className, modifier, video: { src, title }, resetStyle }) => {
   const objectRef = useRef(null);
   const isLoading = useLoading(objectRef);
 
+  const modifiedClassName = handleClassName(
+    !!modifier,
+    `${className}__video`,
+    modifier
+  );
+  const defaultClassName = resetStyle ? "" : " video";
+
   return (
-    <div className={`${className}__video${resetStyle ? " video" : ""}`}>
+    <div className={modifiedClassName + defaultClassName}>
       {isLoading && <Loader />}
       <iframe
-        src={video.src}
-        title={video.title}
+        src={src}
+        title={title}
         loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen

@@ -1,17 +1,29 @@
 import Body from "./Body";
+import Transition from "@base/Transition/Transition";
 
 import { useScrollLock } from "@hooks/useScrollLock";
 
-const Popup = ({ className, button, children }) => {
+import { handleClassName } from "@utils/className.util";
+
+const Popup = ({ className, modifier, children, button }) => {
   const { isScrollLocked, setIsScrollLocked } = useScrollLock();
   const handleClick = () => setIsScrollLocked(!isScrollLocked);
 
+  const modifiedClassName = handleClassName(
+    !!modifier,
+    `${className}__popup`,
+    modifier
+  );
+  const defaultClassName = handleClassName(isScrollLocked, "popup");
+
   return (
-    <div className={`${className}__popup popup`}>
+    <div className={`${modifiedClassName} ${defaultClassName}`}>
       <button className="popup__button" onClick={handleClick}>
         {button}
       </button>
-      {isScrollLocked && <Body onClick={handleClick}>{children}</Body>}
+      <Transition condition={isScrollLocked} className="popup">
+        <Body onClick={handleClick}>{children}</Body>
+      </Transition>
     </div>
   );
 };

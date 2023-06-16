@@ -15,9 +15,7 @@ const Menu = ({ isScrollLocked, onClick }) => (
       <span></span>
     </button>
     <nav className={handleClassName(isScrollLocked, "menu__body")}>
-      <ul className="menu__list">
-        <Items links={links} onClick={onClick} />
-      </ul>
+      <Items links={links} onClick={onClick} />
       <SwitchLanguage onClick={onClick} />
     </nav>
   </div>

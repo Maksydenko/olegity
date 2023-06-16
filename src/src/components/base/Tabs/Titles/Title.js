@@ -1,19 +1,22 @@
 import { handleClassName } from "@utils/className.util";
 
-const Title = ({ tabsLength, tab, activeTab, setActiveTab }) => {
+const Title = ({ tabsLength, tab: { id, title }, activeTab, setActiveTab }) => {
+  const isActive = activeTab === id;
   const tabWidth = 100 / tabsLength;
+
+  const handleClick = () => setActiveTab(id);
+
   const styleWidth = {
     width: `${tabWidth}%`,
   };
-  const handleClick = () => setActiveTab(tab.id);
 
   return (
     <li
-      className={handleClassName(activeTab === tab.id, "tabs__title")}
+      className={handleClassName(isActive, "tabs__title")}
       style={styleWidth}
       onClick={handleClick}
     >
-      <span>{tab.title}</span>
+      <span>{title}</span>
     </li>
   );
 };

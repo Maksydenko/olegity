@@ -1,6 +1,10 @@
 import Item from "./Item";
 
-const Items = ({ links, onClick }) =>
-  links.map((link) => <Item key={link.href} link={link} onClick={onClick} />);
+const Items = ({ links, onClick }) => {
+  const items = links.map((link) => (
+    <Item key={link.href} link={link} onClick={onClick} />
+  ));
 
+  return <ul className="menu__list">{items}</ul>;
+};
 export default Items;

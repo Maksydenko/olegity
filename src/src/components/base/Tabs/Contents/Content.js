@@ -1,4 +1,6 @@
-const Content = ({ tab, activeTab }) =>
-  activeTab === tab.id && <div className="tabs__content">{tab.content}</div>;
+const Content = ({ tab: { id, content }, activeTab }) => {
+  const isActive = activeTab === id;
 
+  return isActive && <div className="tabs__content">{content}</div>;
+};
 export default Content;
