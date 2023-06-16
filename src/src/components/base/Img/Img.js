@@ -5,15 +5,21 @@ import { useRef } from "react";
 import Loader from "@shared/Loader/Loader";
 import { Source } from "./Source";
 
-const Img = ({ className, img, style, resetStyle }) => {
+import { handleClassName } from "@utils/className.util";
+
+const Img = ({ className, modifier, img, style, resetStyle }) => {
   const objectRef = useRef(null);
   const isLoading = useLoading(objectRef);
 
+  const modifiedClassName = handleClassName(
+    !!modifier,
+    `${className}__img`,
+    modifier
+  );
+  const defaultClassName = resetStyle ? "" : " img";
+
   return (
-    <div
-      className={`${className}__img${resetStyle ? "" : " img"}`}
-      style={style}
-    >
+    <div className={modifiedClassName + defaultClassName} style={style}>
       {isLoading && <Loader />}
       <Source img={img} ref={objectRef} />
     </div>
