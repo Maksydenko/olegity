@@ -55,11 +55,11 @@
         }
 
         &::before {
-          transform: rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
         }
 
         &::after {
-          transform: rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
         }
 
         span {
