@@ -7,7 +7,7 @@ export const useFullHeight = () => {
 
   const handleHeightUpdate = () => {
     const windowHeight = window.innerHeight;
-    setHeight(`${windowHeight}px`);
+    setHeight(`${windowHeight - 0.0001}px`);
   };
   useWindowListener(handleHeightUpdate);
 
