@@ -7,11 +7,11 @@ const Page404 = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="page-not-found">
-      <div className="page-not-found__container">
-        <h1 className="page-not-found__title">404</h1>
-        <h2 className="page-not-found__label">{t("page-not-found")}</h2>
-        <p className="page-not-found__redirect-homepage">
+    <section className="not-found">
+      <div className="not-found__container">
+        <h1 className="not-found__title">404</h1>
+        <h2 className="not-found__label">{t("page-not-found")}</h2>
+        <p className="not-found__redirect-homepage">
           {t("redirect-homepage")} {time}
         </p>
       </div>

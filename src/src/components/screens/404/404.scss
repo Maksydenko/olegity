@@ -1,5 +1,5 @@
-.page-not-found {
-  // .page-not-found__container
+.not-found {
+  // .not-found__container
 
   &__container {
     margin-top: rem(70);
@@ -7,7 +7,7 @@
     padding-bottom: rem(70);
   }
 
-  // .page-not-found__title
+  // .not-found__title
 
   &__title {
     margin-bottom: em(20, 60);
@@ -16,7 +16,7 @@
     font-family: $fontFamily2;
   }
 
-  // .page-not-found__label
+  // .not-found__label
 
   &__label {
     margin-bottom: em(20, 30);
@@ -24,7 +24,7 @@
     font-weight: 500;
   }
 
-  // .page-not-found__redirect-homepage
+  // .not-found__redirect-homepage
 
   &__redirect-homepage {
     font-size: rem(20);
