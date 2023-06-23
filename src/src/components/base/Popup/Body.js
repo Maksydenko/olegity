@@ -2,8 +2,11 @@ import { useRef } from "react";
 
 const Body = ({ children, onClick }) => {
   const popupBoxRef = useRef(null);
+
   const handleClick = ({ target }) => {
-    if (!popupBoxRef.current.contains(target)) {
+    const popupBoxElement = popupBoxRef.current;
+
+    if (!popupBoxElement?.contains(target)) {
       onClick();
     }
   };
