@@ -6,7 +6,7 @@ export const useLoading = (object) => {
 
   useEffect(() => {
     const objectElement = object.current;
-    const isVideo = objectElement.tagName === "VIDEO";
+    const isVideo = objectElement instanceof HTMLVideoElement;
 
     if (objectElement.complete) {
       handleLoadObject();
