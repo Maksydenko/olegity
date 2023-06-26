@@ -7,6 +7,7 @@ On this website you can read the biography of the LSP artist, find all links to 
 📅 **Date:** March 2023
 
 🔗 **Webpage:** [link](https://olegity.vercel.app/)
+
 🔗 **Mirror:** [link](https://maksydenko.github.io/olegity/)
 
 ![HTML](https://skills.thijs.gg/icons?i=html)
