@@ -3,7 +3,7 @@ import { useLoading } from "@hooks/useLoading";
 import { useRef } from "react";
 
 import Loader from "@shared/Loader/Loader";
-import { Source } from "./Source";
+import { Sources } from "./Sources";
 
 import { handleClassName } from "@utils/className.util";
 
@@ -21,7 +21,7 @@ const Img = ({ className, modifier, img, style, resetStyle }) => {
   return (
     <div className={modifiedClassName + defaultClassName} style={style}>
       {isLoading && <Loader />}
-      <Source img={img} ref={objectRef} />
+      <Sources img={img} ref={objectRef} />
     </div>
   );
 };

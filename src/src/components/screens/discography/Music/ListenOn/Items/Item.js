@@ -1,8 +1,8 @@
 const Item = ({ item, swiperParallax, swiperParallaxDuration }) => {
-  const swiperParallaxAttr = {
+  const swiperParallaxAttr = swiperParallax && {
     "data-swiper-parallax": swiperParallax,
   };
-  const swiperParallaxDurationAttr = {
+  const swiperParallaxDurationAttr = swiperParallaxDuration && {
     "data-swiper-parallax-duration": swiperParallaxDuration,
   };
 

@@ -27,7 +27,7 @@ const Iframe = ({ className, modifier, video: { src, title }, resetStyle }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
         ref={objectRef}
-      ></iframe>
+      />
     </div>
   );
 };

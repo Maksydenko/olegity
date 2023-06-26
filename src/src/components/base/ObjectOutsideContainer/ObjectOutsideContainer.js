@@ -2,7 +2,7 @@ import { handleClassName } from "@utils/className.util";
 
 const ResponsiveObjectOut = ({ className, modifier, children, object }) => {
   const modifiedClassName = handleClassName(
-    modifier,
+    !!modifier,
     "object-outside-container",
     modifier,
     modifier

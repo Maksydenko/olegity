@@ -1,5 +1,8 @@
-.video {
+[class*="__video"] {
   position: relative;
+}
+
+.video {
   aspect-ratio: 16/9;
 
   video,

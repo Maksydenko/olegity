@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 
-export const Source = forwardRef(({ img, loading = "lazy" }, ref) => {
+export const Sources = forwardRef(({ img, loading = "lazy" }, ref) => {
   const imgAttrs = {
     loading,
   };

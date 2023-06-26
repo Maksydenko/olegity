@@ -1,16 +1,19 @@
-import { useRef } from "react";
-
-import Loader from "@shared/Loader/Loader";
-import { Items } from "./Items/Items";
-
-import { useLoading } from "@hooks/useLoading";
+import Sources from "./Sources";
 
 import { handleClassName } from "@utils/className.util";
 
-const Video = ({ className, modifier, poster, video, resetStyle }) => {
-  const objectRef = useRef(null);
-  const isLoading = useLoading(objectRef);
-
+const Video = ({
+  className,
+  modifier,
+  poster,
+  video,
+  resetStyle,
+  autoPlay = true,
+  muted = true,
+  controls,
+  loop = true,
+  preload,
+}) => {
   const modifiedClassName = handleClassName(
     !!modifier,
     `${className}__video`,
@@ -18,10 +21,20 @@ const Video = ({ className, modifier, poster, video, resetStyle }) => {
   );
   const defaultClassName = resetStyle ? "" : " video";
 
+  const videoAttrs = {
+    poster,
+    autoPlay,
+    muted,
+    controls,
+    loop,
+    preload,
+  };
+
   return (
     <div className={modifiedClassName + defaultClassName}>
-      {isLoading && <Loader />}
-      <Items video={video} poster={poster} ref={objectRef} />
+      <video {...videoAttrs}>
+        <Sources video={video} />
+      </video>
     </div>
   );
 };

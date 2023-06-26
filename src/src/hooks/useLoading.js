@@ -6,23 +6,15 @@ export const useLoading = (object) => {
 
   useEffect(() => {
     const objectElement = object.current;
-    const isVideo = objectElement instanceof HTMLVideoElement;
+    const isImg = objectElement instanceof HTMLImageElement;
 
-    if (objectElement.complete) {
+    if (isImg && objectElement.complete) {
       handleLoadObject();
     } else {
-      objectElement.addEventListener("load", handleLoadObject);
-
-      if (isVideo) {
-        objectElement.addEventListener("loadeddata", handleLoadObject);
-      }
+      objectElement?.addEventListener("load", handleLoadObject);
 
       return () => {
         objectElement?.removeEventListener("load", handleLoadObject);
-
-        if (isVideo) {
-          objectElement?.removeEventListener("loadeddata", handleLoadObject);
-        }
       };
     }
   }, [object, isLoading]);
