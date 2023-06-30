@@ -6,6 +6,16 @@
 
     @media (max-width: $mobile) {
       padding: rem(30) 0;
+
+      .main-block {
+        &__title {
+          font-size: rem(32);
+        }
+
+        &__text {
+          text-align: justify;
+        }
+      }
     }
   }
 
