@@ -5,7 +5,6 @@
 
   &__titles {
     display: flex;
-    gap: em(5);
     font-weight: 500;
     font-family: $fontFamily2;
     @include responsiveValue(font-size, 16, 14);
@@ -25,6 +24,10 @@
     background-color: $darkBg;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: em(5);
+    }
 
     @media (prefers-color-scheme: dark) {
       color: $mainColor;

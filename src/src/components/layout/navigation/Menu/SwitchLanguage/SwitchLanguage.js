@@ -4,7 +4,7 @@ const SwitchLanguage = ({ onClick }) => {
   const languages = ["en", "ua"];
 
   return (
-    <div className="menu menu__switch-language">
+    <div className="menu__switch-language switch-language">
       <Switches languages={languages} onClick={onClick} />
     </div>
   );
