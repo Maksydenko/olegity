@@ -52,6 +52,7 @@
       @media (max-width: rem(1098.98)) {
         grid-template-columns: repeat(4, rem(185));
       }
+
       @media (max-width: $tablet) {
         grid-template-columns: repeat(2, rem(185));
         grid-columns: 2;
