@@ -7,19 +7,19 @@
     font-size: rem(20);
   }
 
-  span:not(:last-child) {
-    padding-right: em(10);
-    border-right: em(1) solid $darkColor;
-  }
-
-  span:not(:first-child) {
-    padding-left: em(10);
-    border-left: em(1) solid $darkColor;
-  }
-
-  span {
-    transition: all 0.3s ease 0s;
+  > span {
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:not(:last-child) {
+      padding-right: em(10);
+      border-right: em(1) solid $darkColor;
+    }
+
+    &:not(:first-child) {
+      padding-left: em(10);
+      border-left: em(1) solid $darkColor;
+    }
 
     &:hover {
       opacity: 0.5;
