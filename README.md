@@ -1,4 +1,4 @@
-# Olegity | Artist website
+# Artist website
 
 <img src="src/src/assets/img/logos/olegity.svg" height="50" alt="Olegity">
 
