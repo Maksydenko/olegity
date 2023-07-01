@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/olegity/static/css/main.a6a77042.css",
+    "main.css": "/olegity/static/css/main.4ab30e27.css",
     "main.js": "/olegity/static/js/main.a29c5c4e.js",
     "static/js/496.2d71164f.chunk.js": "/olegity/static/js/496.2d71164f.chunk.js",
     "static/media/binokl.mp4": "/olegity/static/media/binokl.1cbff924471bfdf0a520.mp4",
@@ -290,12 +290,12 @@
     "static/media/getFetch.cjs": "/olegity/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/dor-blyu.avif": "/olegity/static/media/dor-blyu.fa585c555bb79557d4c3.avif",
     "static/media/cross.svg": "/olegity/static/media/cross.e50afe72be56edf02a9e.svg",
-    "main.a6a77042.css.map": "/olegity/static/css/main.a6a77042.css.map",
+    "main.4ab30e27.css.map": "/olegity/static/css/main.4ab30e27.css.map",
     "main.a29c5c4e.js.map": "/olegity/static/js/main.a29c5c4e.js.map",
     "496.2d71164f.chunk.js.map": "/olegity/static/js/496.2d71164f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6a77042.css",
+    "static/css/main.4ab30e27.css",
     "static/js/main.a29c5c4e.js"
   ]
 }

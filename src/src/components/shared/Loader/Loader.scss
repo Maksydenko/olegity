@@ -10,7 +10,7 @@
   margin-left: rem(-100);
 
   perspective: rem(100);
-  transform-type: preserve-3d;
+  transform-style: preserve-3d;
 
   animation: loader 6s cubic-bezier(0, 0, 1, 1) infinite;
 }
@@ -42,7 +42,7 @@
 
   background-color: #b4b4b4;
 
-  transform-type: preserve-3d;
+  transform-style: preserve-3d;
   transform-origin: 50% 90px;
   transform: rotateZ(30deg);
 
