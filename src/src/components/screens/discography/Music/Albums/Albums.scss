@@ -15,7 +15,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: rem(20);
+
+    > *:not(:last-child) {
+      margin-right: rem(20);
+    }
   }
 
   // .albums__music-card

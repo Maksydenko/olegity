@@ -10,12 +10,21 @@
 
   &__container {
     display: flex;
-    gap: rem(30) rem(50);
     padding-top: rem(50);
     padding-bottom: rem(50);
 
     @media (max-width: $tablet) {
       flex-direction: column;
+    }
+
+    > *:not(:last-child) {
+      @media (min-width: $tablet) {
+        margin-right: rem(50);
+      }
+
+      @media (max-width: $tablet) {
+        margin-bottom: rem(30);
+      }
     }
   }
 

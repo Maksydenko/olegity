@@ -2,12 +2,11 @@
   // .search__filter-text
 
   &__filter-text {
+    display: flex;
+    align-items: center;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: em(5);
     padding: em(10) em(15);
     max-width: rem(370);
     border: em(2) solid $mainColor;
@@ -18,6 +17,10 @@
     @media (prefers-color-scheme: dark) {
       border-color: $darkColor;
       color: $darkColor;
+    }
+
+    > *:not(:last-child) {
+      margin-right: em(5);
     }
 
     // .search__filter-text_focus
@@ -49,6 +52,10 @@
       background-size: contain;
       cursor: pointer;
       transition: all 0.3s ease 0s;
+
+      @media (prefers-color-scheme: dark) {
+        filter: invert(100%) contrast(200%);
+      }
 
       &:hover {
         opacity: 0.5;
