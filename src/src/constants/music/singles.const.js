@@ -331,8 +331,7 @@ export const singles = [
     links: {
       spotify:
         "https://open.spotify.com/album/6V9SP5kj9mWTGRcx7ohGDk?si=CG1jDkJmS0-eGVS_uyKmIw",
-      appleMusic:
-        "https://music.apple.com/us/album/skate-feat-%D0%BB%D1%81%D0%BF-single/1628981650",
+      appleMusic: "https://music.apple.com/us/album/skate-single/1681292403",
       youtubeMusic:
         "https://music.youtube.com/playlist?list=OLAK5uy_k6ssgM9fCrvn0qdobyLq_UoyUIy-28kI0",
       deezer: "https://www.deezer.com/us/album/327410527",
@@ -557,7 +556,7 @@ export const singles = [
       spotify:
         "https://open.spotify.com/track/2gTZ9krcK8VajqCUSAVp4e?si=d3ba2be5e71940e1",
       appleMusic:
-        "https://music.apple.com/us/album/%D1%83%D0%B2%D1%8F%D0%B7-feat-%D0%BB%D1%81%D0%BF/1591921137?i=1591921348",
+        "https://music.apple.com/us/album/%D1%83%D0%B2%D1%8F%D0%B7-feat-%D0%BB%D1%81%D0%BF/1687294719?i=1687294723",
       youtubeMusic:
         "https://music.youtube.com/watch?v=NgzQLwjsd2g&feature=share",
       deezer: "https://deezer.page.link/HXm9kPHv1c5rTws7A",
@@ -832,7 +831,7 @@ export const singles = [
       spotify:
         "https://open.spotify.com/album/0sjTDtIxvUJARXcsOn85e5?si=x86eR6dWQTygtNo5jGg4zQ",
       appleMusic:
-        "https://music.apple.com/us/album/houston-feat-%D0%BB%D1%81%D0%BF/1535911148?i=1535911170",
+        "https://music.apple.com/us/album/houston-feat-%D0%BB%D1%81%D0%BF-single/1678312931",
       youtubeMusic:
         "https://music.youtube.com/playlist?list=OLAK5uy_nmLWa66UI6TNyGveh1xntA7ZUDQjITgoI",
       deezer: "https://www.deezer.com/us/album/179698392",
@@ -1506,7 +1505,7 @@ export const singles = [
       spotify:
         "https://open.spotify.com/album/5FwLFT4ICgcUi92zcYP3YX?si=fDQ_KThiSrGMvjYas-zTBg",
       appleMusic:
-        "https://music.apple.com/us/album/%D0%B2%D0%B5%D1%87%D0%B5%D1%80%D0%B8%D0%BD%D0%BA%D0%B0-remix-feat-%D0%BB%D1%81%D0%BF-single/1492974733",
+        "https://music.apple.com/us/album/%D0%B2%D0%B5%D1%87%D0%B5%D1%80%D0%B8%D0%BD%D0%BA%D0%B0-remix-feat-%D0%BB%D1%81%D0%BF-single/1678484491",
       youtubeMusic:
         "https://music.youtube.com/playlist?list=OLAK5uy_nnz-4Z3HksrBm3_kMh7L-SZWwGvqiFjCY",
       deezer: "https://www.deezer.com/us/album/124561842",
