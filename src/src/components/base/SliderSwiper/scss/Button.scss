@@ -1,44 +1,62 @@
-.swiper-button-prev,
-.swiper-button-next {
-  transition: all 0.3s ease 0s;
+.swiper {
+  // .swiper-button-prev
+  &-button-prev,
+  // .swiper-button-next
+  &-button-next {
+    transition: all 0.3s ease 0s;
 
-  &:hover {
-    opacity: 0.5 !important;
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: em(60, 44);
+      height: em(60, 44);
+      font-size: rem(44) !important;
+      border-radius: em(5, 44);
+      color: $darkColor;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
   }
 
-  &::after {
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: em(60, 44);
-    height: em(60, 44);
-    font-size: rem(44) !important;
-    border-radius: em(5, 44);
-    color: $darkColor;
-    background-color: rgba(0, 0, 0, 0.8);
+  // .swiper-button-prev
+
+  &-button-prev {
+    &::after {
+      left: rem(15);
+    }
   }
 
-  &.swiper-button-disabled {
+  // .swiper-button-next
+
+  &-button-next {
+    &::after {
+      right: rem(15);
+    }
+  }
+
+  // .swiper-button-disabled
+
+  &-button-disabled {
     pointer-events: auto !important;
   }
 }
 
-.swiper-button-prev::after {
-  left: rem(10);
-}
-
-.swiper-button-next::after {
-  right: rem(10);
-}
-
 [class*="__container"] {
-  .swiper-button-prev::after {
-    left: rem(-5);
+  .swiper-button-prev {
+    &::after {
+      left: rem(-5);
+    }
   }
 
-  .swiper-button-next::after {
-    right: rem(-5);
+  .swiper-button-next {
+    &::after {
+      right: rem(-5);
+    }
   }
 }

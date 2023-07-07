@@ -11,16 +11,17 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: ["en", "ua"],
+    supportedLngs: ["en", "uk"],
+    fallbackLng: ["en", "uk"],
     detection: {
-      order: ["localStorage"],
+      order: ["localStorage", "navigator"],
       caches: ["localStorage"],
     },
     resources: {
       en: {
         translation: en,
       },
-      ua: {
+      uk: {
         translation: ua,
       },
     },

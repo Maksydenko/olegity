@@ -5,7 +5,7 @@ const ResponsiveObjectOut = ({ className, modifier, children, object }) => {
     !!modifier,
     "object-outside-container",
     modifier,
-    modifier
+    !!modifier
   );
 
   return (

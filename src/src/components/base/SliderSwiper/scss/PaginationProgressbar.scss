@@ -1,3 +1,15 @@
-.swiper-pagination-progressbar-fill {
-  background-color: $darkColor !important;
+.swiper {
+  // .swiper-pagination
+
+  &-pagination {
+    // .swiper-pagination-progressbar
+
+    &-progressbar {
+      // .swiper-pagination-progressbar-fill
+
+      &-fill {
+        background-color: #ffffff !important;
+      }
+    }
+  }
 }

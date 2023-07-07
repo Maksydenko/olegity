@@ -2,13 +2,15 @@
   position: fixed;
   z-index: 10;
   bottom: em(40, 44);
-  right: em(20, 44);
+  right: em(25, 44);
   font-size: rem(44);
   border-radius: em(5, 44);
   background-color: rgba(0, 0, 0, 0.8);
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease 0s;
+  width: em(60, 44);
+  height: em(60, 44);
 
   // .scroll-top_active
 

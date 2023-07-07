@@ -49,9 +49,7 @@
         display: block;
         padding: 0 em(5);
         text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include nowrap;
       }
     }
 

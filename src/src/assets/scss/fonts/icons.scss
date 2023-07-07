@@ -1,13 +1,4 @@
-$iconsPath: "../../fonts/icons/icons.";
-
-@font-face {
-  font-family: icons;
-  font-display: swap;
-  src: url("#{$iconsPath}woff2") format("woff2"),
-    url("#{$iconsPath}woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@include font(icons);
 
 %icon {
   font-family: "icons";
