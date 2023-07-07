@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d9ac3755.css",
-    "main.js": "/static/js/main.48dcebfe.js",
+    "main.js": "/static/js/main.8a3e0f0a.js",
     "static/js/496.2d71164f.chunk.js": "/static/js/496.2d71164f.chunk.js",
     "static/media/binokl.mp4": "/static/media/binokl.1cbff924471bfdf0a520.mp4",
     "static/media/concert-18.jpg": "/static/media/concert-18.c363883f01f6ce6d0553.jpg",
@@ -291,11 +291,11 @@
     "static/media/dor-blyu.avif": "/static/media/dor-blyu.fa585c555bb79557d4c3.avif",
     "static/media/cross.svg": "/static/media/cross.e50afe72be56edf02a9e.svg",
     "main.d9ac3755.css.map": "/static/css/main.d9ac3755.css.map",
-    "main.48dcebfe.js.map": "/static/js/main.48dcebfe.js.map",
+    "main.8a3e0f0a.js.map": "/static/js/main.8a3e0f0a.js.map",
     "496.2d71164f.chunk.js.map": "/static/js/496.2d71164f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9ac3755.css",
-    "static/js/main.48dcebfe.js"
+    "static/js/main.8a3e0f0a.js"
   ]
 }
