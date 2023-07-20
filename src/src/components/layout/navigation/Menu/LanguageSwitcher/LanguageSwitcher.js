@@ -1,6 +1,6 @@
 import Item from "./Item";
 
-import { languages } from "@constants/languages.const";
+import { languages } from "./languages.const";
 
 const LanguageSwitcher = ({ onClick }) => {
   const items = languages.map((language) => {
