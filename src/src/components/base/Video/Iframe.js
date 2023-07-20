@@ -2,13 +2,13 @@ import { useRef } from "react";
 
 import Loader from "@shared/Loader/Loader";
 
-import { useLoading } from "@hooks/useLoading";
+import { useLoadingObject } from "@hooks/useLoadingObject";
 
 import { handleClassName } from "@utils/className.util";
 
 const Iframe = ({ className, modifier, video: { src, title }, resetStyle }) => {
   const objectRef = useRef(null);
-  const isLoading = useLoading(objectRef);
+  const { isLoading } = useLoadingObject(objectRef);
 
   const modifiedClassName = handleClassName(
     !!modifier,

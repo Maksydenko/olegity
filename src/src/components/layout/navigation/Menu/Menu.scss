@@ -1,4 +1,4 @@
-@import "SwitchLanguage/SwitchLanguage.scss";
+@import "LanguageSwitcher/LanguageSwitcher.scss";
 
 .menu {
   // .menu__button
@@ -15,7 +15,7 @@
 
       &::before,
       &::after,
-      span {
+      > span {
         position: absolute;
         left: 0;
         width: 100%;
@@ -38,7 +38,7 @@
         bottom: 0;
       }
 
-      span {
+      > span {
         top: 50%;
         transform: scale(1) translateY(-50%);
       }
@@ -62,7 +62,7 @@
           transform: translateY(-50%) rotate(-45deg);
         }
 
-        span {
+        > span {
           transform: scale(0);
         }
       }
@@ -78,8 +78,10 @@
     font-weight: 500;
 
     @media (min-width: $tablet) {
-      > *:not(:last-child) {
-        margin-right: rem(40);
+      > * {
+        &:not(:last-child) {
+          margin-right: rem(40);
+        }
       }
     }
 
@@ -96,8 +98,10 @@
       background-color: rgba(0, 0, 0, 0.8);
       transition: right 0.3s ease 0s;
 
-      > *:not(:first-child) {
-        margin-bottom: em(40, 18);
+      > * {
+        &:not(:first-child) {
+          margin-bottom: em(40, 18);
+        }
       }
 
       &::before {

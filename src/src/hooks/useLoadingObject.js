@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const useLoading = (object) => {
+export const useLoadingObject = (object) => {
   const [isLoading, setIsLoading] = useState(true);
   const handleLoadObject = () => setIsLoading(false);
 
@@ -19,5 +19,5 @@ export const useLoading = (object) => {
     }
   }, [object, isLoading]);
 
-  return isLoading;
+  return { isLoading };
 };

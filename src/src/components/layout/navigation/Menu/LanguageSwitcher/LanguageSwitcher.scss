@@ -1,4 +1,5 @@
-.switch-language {
+.language-switcher {
+  display: flex;
   font-size: rem(16);
   color: $darkColor;
 
@@ -7,7 +8,9 @@
     font-size: rem(20);
   }
 
-  > span {
+  // .language-switcher__item
+
+  .language-switcher__item {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
@@ -24,5 +27,11 @@
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  // .language-switcher__btn
+
+  .language-switcher__btn {
+    text-transform: uppercase;
   }
 }

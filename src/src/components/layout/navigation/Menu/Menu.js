@@ -1,9 +1,9 @@
 import Items from "./Items/Items";
-import SwitchLanguage from "./SwitchLanguage/SwitchLanguage";
+import LanguageSwitcher from "./LanguageSwitcher/LanguageSwitcher";
 
 import { handleClassName } from "@utils/className.util";
 
-import { links } from "../links.const";
+import { links } from "@layout/navigation/links.const";
 
 const Menu = ({ isScrollLocked, onClick }) => (
   <div className="header__menu menu">
@@ -16,7 +16,7 @@ const Menu = ({ isScrollLocked, onClick }) => (
     </button>
     <nav className={handleClassName(isScrollLocked, "menu__body")}>
       <Items links={links} onClick={onClick} />
-      <SwitchLanguage onClick={onClick} />
+      <LanguageSwitcher onClick={onClick} />
     </nav>
   </div>
 );

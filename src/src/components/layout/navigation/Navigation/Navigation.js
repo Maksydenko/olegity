@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import Items from "./Items/Items";
 
-import { links } from "../links.const";
+import { links } from "@layout/navigation/links.const";
 
 const Navigation = () => {
   const { t } = useTranslation();

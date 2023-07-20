@@ -1,4 +1,4 @@
-import { useLoading } from "@hooks/useLoading";
+import { useLoadingObject } from "@hooks/useLoadingObject";
 
 import { useRef } from "react";
 
@@ -9,7 +9,7 @@ import { handleClassName } from "@utils/className.util";
 
 const Img = ({ className, modifier, img, style, resetStyle }) => {
   const objectRef = useRef(null);
-  const isLoading = useLoading(objectRef);
+  const { isLoading } = useLoadingObject(objectRef);
 
   const modifiedClassName = handleClassName(
     !!modifier,

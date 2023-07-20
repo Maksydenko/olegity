@@ -1,9 +1,6 @@
 // Connection utils
 @import "assets/scss/base/utils.scss";
 
-// Connection extends
-@import "assets/scss/base/extends.scss";
-
 // Connection mixins
 @import "assets/scss/base/mixins.scss";
 
@@ -15,168 +12,14 @@
 // Connection local fonts
 // @import "assets/scss/fonts/fonts";
 
+// Connection vars
+@import "assets/scss/vars.scss";
+
 // Connection icon fonts
 @import "assets/scss/fonts/icons";
 
-// ============================================================================
-
-// Settings template
-
-// Default font
-$fontSize: rem(16);
-$fontFamily: "Open Sans";
-
-$fontFamily2: "Montserrat";
-
-// Primary colors
-
-// Light scheme
-$mainColor: #333333;
-$mainBg: #ffffff;
-// Dark scheme
-$darkColor: #ffffff;
-$darkBg: #333333;
-
-// ============================================================================
-
-// Adaptive grid settings
-
-// The minimum page width
-$minWidth: 320;
-// The width of the canvas
-$maxWidth: 1440;
-// The width of the limiting container
-$maxWidthContainer: 1170;
-// General indenter
-$containerPadding: 40;
-
-// The width of the first breakpoint
-$containerWidth: $maxWidthContainer + $containerPadding;
-
-// Breakpoints
-
-// PCs, laptops, some tablets in a horizontal position
-$pc: rem($containerWidth);
-// Tablets, some phones in the horizontal position
-$tablet: rem(991.98);
-// Large phones
-$mobile: rem(767.98);
-// Small phones
-$mobileSmall: rem(479.98);
-
-// Adaptive type:
-// 1 = responsiveness
-// !1 = according to breakpoints
-$adaptiveType: 1;
-
-// Scrollbar styles
-::-webkit-scrollbar {
-  width: rem(10);
-  background-color: #f1f1f1;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #424242;
-  }
-
-  &-thumb {
-    border-radius: rem(5);
-    background-color: #a3a3a3;
-
-    @media (prefers-color-scheme: dark) {
-      background-color: #808080;
-    }
-  }
-}
-
-// ============================================================================
-
 // Reset styles
 @import "assets/scss/base/reset.scss";
-
-// Body tag styles
-body {
-  // Lock scroll
-  &.lock {
-    overflow: hidden;
-    touch-action: none;
-    overscroll-behavior: none;
-  }
-}
-
-// Shell wrapper
-.app {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-
-  @supports (overflow: clip) {
-    overflow: clip;
-  }
-
-  // Press the footer
-  > main {
-    flex: 1 1 auto;
-  }
-}
-
-// Limiting container
-
-// Responsive
-@if $adaptiveType == 1 {
-  [class*="__container"] {
-    @if $maxWidthContainer > 0 {
-      max-width: rem($containerWidth);
-      margin: 0 auto;
-    }
-
-    @if $containerPadding > 0 {
-      @if $maxWidthContainer > 0 {
-        padding-left: rem(calc($containerPadding / 2));
-        padding-right: rem(calc($containerPadding / 2));
-      } @else {
-        @include responsiveValue(padding-left, calc($containerPadding / 2), 15);
-        @include responsiveValue(
-          padding-right,
-          calc($containerPadding / 2),
-          15
-        );
-      }
-    }
-  }
-}
-// According to breakpoints
-@else {
-  [class*="__container"] {
-    margin: 0 auto;
-
-    @if $maxWidthContainer > 0 {
-      max-width: rem($containerWidth);
-    } @else {
-      @if $containerPadding > 0 {
-        padding-left: rem(calc($containerPadding / 2));
-        padding-right: rem(calc($containerPadding / 2));
-      }
-    }
-
-    @media (max-width: $pc) {
-      max-width: rem(970);
-    }
-
-    @media (max-width: $tablet) {
-      max-width: rem(750);
-    }
-
-    @media (max-width: $mobile) {
-      max-width: none;
-    }
-
-    @if $containerPadding > 0 and $maxWidthContainer > 0 {
-      padding-left: rem(calc($containerPadding / 2));
-      padding-right: rem(calc($containerPadding / 2));
-    }
-  }
-}
 
 // Connecting basic component styles
 @import "assets/scss/base.scss";

@@ -11,12 +11,12 @@ const FullScreen = ({ className, modifier, children, background }) => {
     modifier
   );
 
-  const style = {
+  const fullScreenStyle = {
     minHeight: height,
   };
 
   return (
-    <div className={`${modifiedClassName} full-screen`} style={style}>
+    <div className={`${modifiedClassName} full-screen`} style={fullScreenStyle}>
       <div className="full-screen__body">{children}</div>
       {background}
     </div>

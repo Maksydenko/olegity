@@ -19,8 +19,10 @@
       color: $darkColor;
     }
 
-    > *:not(:last-child) {
-      margin-right: em(5);
+    > * {
+      &:not(:last-child) {
+        margin-right: em(5);
+      }
     }
 
     // .search__filter-text_focus

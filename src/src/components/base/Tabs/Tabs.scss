@@ -45,7 +45,7 @@
     }
 
     @media (max-width: $mobile) {
-      span {
+      > span {
         display: block;
         padding: 0 em(5);
         text-align: center;

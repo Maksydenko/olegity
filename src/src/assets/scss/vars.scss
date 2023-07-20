@@ -1,0 +1,47 @@
+// Settings template
+
+// Default font
+$fontSize: rem(16);
+$fontFamily: "Open Sans";
+$fontFamily2: "Montserrat";
+
+// Primary colors
+
+// Light scheme
+$mainColor: #333333;
+$mainBg: #ffffff;
+// Dark scheme
+$darkColor: #ffffff;
+$darkBg: #333333;
+
+// ============================================================================
+
+// Adaptive grid settings
+
+// The minimum page width
+$minWidth: 320;
+// The width of the canvas
+$maxWidth: 1440;
+// The width of the limiting container
+$maxWidthContainer: 1170;
+// General indenter
+$containerPadding: 40;
+
+// The width of the first breakpoint
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Breakpoints
+
+// PCs, laptops, some tablets in a horizontal position
+$pc: rem($containerWidth);
+// Tablets, some phones in the horizontal position
+$tablet: rem(991.98);
+// Large phones
+$mobile: rem(767.98);
+// Small phones
+$mobileSmall: rem(479.98);
+
+// Adaptive type:
+// 1 = responsiveness
+// !1 = according to breakpoints
+$adaptiveType: 1;
