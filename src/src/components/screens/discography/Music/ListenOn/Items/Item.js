@@ -12,6 +12,7 @@ const Item = ({ item, swiperParallax, swiperParallaxDuration }) => {
       {...swiperParallaxAttr}
       {...swiperParallaxDurationAttr}
     >
+      {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
       <a
         href={item.link}
         target="_blank"

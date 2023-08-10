@@ -12,9 +12,15 @@ const SliderAlbums = () => {
     <SliderSwiper
       className="main-albums"
       breakpoints={{
-        320: { slidesPerView: "1" },
-        479.98: { slidesPerView: "2" },
-        767.98: { slidesPerView: "3" },
+        320: {
+          slidesPerView: 1,
+        },
+        479.98: {
+          slidesPerView: 2,
+        },
+        767.98: {
+          slidesPerView: 3,
+        },
       }}
     >
       {slides}

@@ -13,7 +13,7 @@ $object: 50%;
     flex: 0 0 100%;
     display: flex;
 
-    & + * {
+    + * {
       img,
       iframe,
       video {
@@ -65,6 +65,8 @@ $object: 50%;
       width: $content;
     }
   }
+
+  // .object-outside-container_pc
 
   &_pc {
     @media (min-width: $pc) {
