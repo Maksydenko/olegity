@@ -1,5 +1,21 @@
 .swiper {
   // .swiper-button-prev
+
+  &-button-prev {
+    &::after {
+      left: rem(15);
+    }
+  }
+
+  // .swiper-button-next
+
+  &-button-next {
+    &::after {
+      right: rem(15);
+    }
+  }
+
+  // .swiper-button-prev
   &-button-prev,
   // .swiper-button-next
   &-button-next {
@@ -13,30 +29,14 @@
       position: absolute;
       top: 0;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       width: em(60, 44);
       height: em(60, 44);
       font-size: rem(44) !important;
-      border-radius: em(5, 44);
       color: $darkColor;
       background-color: rgba(0, 0, 0, 0.8);
-    }
-  }
-
-  // .swiper-button-prev
-
-  &-button-prev {
-    &::after {
-      left: rem(15);
-    }
-  }
-
-  // .swiper-button-next
-
-  &-button-next {
-    &::after {
-      right: rem(15);
+      border-radius: em(5, 44);
     }
   }
 
