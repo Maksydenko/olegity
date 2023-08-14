@@ -1,6 +1,6 @@
-@import "Header/Header.scss";
-@import "ScrollTop/ScrollTop.scss";
-@import "Footer/Footer.scss";
+@import "Header/Header";
+@import "ScrollTop/ScrollTop";
+@import "Footer/Footer";
 
 // Scrollbar styles
 ::-webkit-scrollbar {
@@ -12,8 +12,8 @@
   }
 
   &-thumb {
-    border-radius: rem(5);
     background-color: #a3a3a3;
+    border-radius: rem(5);
 
     @media (prefers-color-scheme: dark) {
       background-color: #808080;
@@ -26,16 +26,16 @@ body {
   // Lock scroll
   &.lock {
     overflow: hidden;
-    touch-action: none;
     overscroll-behavior: none;
+    touch-action: none;
   }
 }
 
 // Shell wrapper
 .app {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   overflow: hidden;
 
   @supports (overflow: clip) {
@@ -60,15 +60,15 @@ body {
 
     @if $containerPadding > 0 {
       @if $maxWidthContainer > 0 {
-        padding-left: rem(calc($containerPadding / 2));
         padding-right: rem(calc($containerPadding / 2));
+        padding-left: rem(calc($containerPadding / 2));
       } @else {
-        @include responsiveValue(padding-left, calc($containerPadding / 2), 15);
         @include responsiveValue(
           padding-right,
           calc($containerPadding / 2),
           15
         );
+        @include responsiveValue(padding-left, calc($containerPadding / 2), 15);
       }
     }
   }
@@ -82,8 +82,8 @@ body {
       max-width: rem($containerWidth);
     } @else {
       @if $containerPadding > 0 {
-        padding-left: rem(calc($containerPadding / 2));
         padding-right: rem(calc($containerPadding / 2));
+        padding-left: rem(calc($containerPadding / 2));
       }
     }
 
@@ -100,8 +100,8 @@ body {
     }
 
     @if $containerPadding > 0 and $maxWidthContainer > 0 {
-      padding-left: rem(calc($containerPadding / 2));
       padding-right: rem(calc($containerPadding / 2));
+      padding-left: rem(calc($containerPadding / 2));
     }
   }
 }

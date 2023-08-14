@@ -22,10 +22,10 @@
   // .popup__content
 
   &__content {
-    min-height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    min-height: 100%;
     padding: rem(30) rem(50);
   }
 
@@ -51,14 +51,14 @@
 
     &::before,
     &::after {
-      content: "";
       position: absolute;
       top: 50%;
       left: 0;
       width: rem(30);
       height: rem(2);
-      border-radius: rem(5);
+      content: "";
       background-color: $darkColor;
+      border-radius: rem(5);
     }
 
     &::before {

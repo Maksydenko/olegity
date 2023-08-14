@@ -1,16 +1,16 @@
 .scroll-top {
   position: fixed;
-  z-index: 10;
-  bottom: em(40, 44);
   right: em(25, 44);
-  font-size: rem(44);
-  border-radius: em(5, 44);
-  background-color: rgba(0, 0, 0, 0.8);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease 0s;
+  bottom: em(40, 44);
+  z-index: 10;
   width: em(60, 44);
   height: em(60, 44);
+  font-size: rem(44);
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: em(5, 44);
+  opacity: 0;
+  transition: all 0.3s ease 0s;
 
   // .scroll-top_active
 
@@ -28,8 +28,8 @@
 
   &__arrow-top {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: em(60, 44);
     height: em(60, 44);
     color: $darkColor;

@@ -1,8 +1,8 @@
 // Connection utils
-@import "assets/scss/base/utils.scss";
+@import "assets/scss/base/utils";
 
 // Connection mixins
-@import "assets/scss/base/mixins.scss";
+@import "assets/scss/base/mixins";
 
 // Connection Google fonts
 // &display=swap
@@ -13,22 +13,22 @@
 // @import "assets/scss/fonts/fonts";
 
 // Connection vars
-@import "assets/scss/vars.scss";
+@import "assets/scss/vars";
 
 // Connection icon fonts
 @import "assets/scss/fonts/icons";
 
 // Reset styles
-@import "assets/scss/base/reset.scss";
+@import "assets/scss/base/reset";
 
 // Connecting basic component styles
-@import "assets/scss/base.scss";
+@import "assets/scss/base";
 
 // Connecting shared component styles
-@import "assets/scss/shared.scss";
+@import "assets/scss/shared";
 
 // Connecting layout styles
-@import "@layout/Layout.scss";
+@import "@layout/Layout";
 
 // Connecting page styles
-@import "App.scss";
+@import "App";

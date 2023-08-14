@@ -12,8 +12,8 @@
   // .about-section__main-block
 
   &__main-block {
-    align-self: center;
     flex: 1 1 47.5%;
+    align-self: center;
     padding: rem(50) rem(20) rem(50) 0;
 
     @media (max-width: $tablet) {
@@ -22,13 +22,13 @@
 
     h2 {
       margin-bottom: em(20, 32);
+      font-family: $fontFamily2;
       font-size: rem(32);
       font-weight: 500;
-      font-family: $fontFamily2;
 
       @media (max-width: $mobile) {
-        text-align: left;
         font-size: rem(24);
+        text-align: left;
       }
     }
 

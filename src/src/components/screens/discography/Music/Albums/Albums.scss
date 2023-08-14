@@ -1,4 +1,4 @@
-@import "TrackList/TrackList.scss";
+@import "TrackList/TrackList";
 
 .albums {
   // .albums__container
@@ -13,9 +13,9 @@
 
   &__album {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: rem(20);
+    justify-content: center;
   }
 
   // .albums__music-card
@@ -55,18 +55,18 @@
 
       @media (max-width: $tablet) {
         grid-template-columns: repeat(2, rem(185));
-        grid-columns: 2;
       }
 
       @media (max-width: $mobileSmall) {
         grid-template-columns: repeat(1, rem(185));
-        grid-columns: 1;
       }
     }
   }
 
-  @media (max-width: $mobileSmall) {
-    &__slider {
+  // .albums__slider
+
+  &__slider {
+    @media (max-width: $mobileSmall) {
       .swiper-button-next::after,
       .swiper-button-prev::after {
         background-color: transparent;

@@ -5,25 +5,25 @@
 
   &__titles {
     display: flex;
-    font-weight: 500;
     font-family: $fontFamily2;
+    font-weight: 500;
     @include responsiveValue(font-size, 16, 14);
   }
 
   // tabs__title
 
   &__title {
-    flex: 1 1 auto;
     display: flex;
-    justify-content: center;
+    flex: 1 1 auto;
     align-items: center;
+    justify-content: center;
     height: em(50);
-    border-radius: 0 0 em(5) em(5);
-    text-transform: uppercase;
     color: $darkColor;
-    background-color: $darkBg;
-    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
     cursor: pointer;
+    background-color: $darkBg;
+    border-radius: 0 0 em(5) em(5);
+    transition: all 0.3s ease 0s;
 
     &:not(:last-child) {
       margin-right: em(5);
@@ -61,8 +61,8 @@
 
     &_active {
       color: $mainColor;
-      background-color: $mainBg;
       cursor: default;
+      background-color: $mainBg;
 
       @media (prefers-color-scheme: dark) {
         color: $darkColor;

@@ -1,4 +1,4 @@
-@import "LanguageSwitcher/LanguageSwitcher.scss";
+@import "LanguageSwitcher/LanguageSwitcher";
 
 .menu {
   // .menu__button
@@ -7,9 +7,9 @@
     display: none;
 
     @media (max-width: $tablet) {
-      display: block;
       position: relative;
       z-index: 9;
+      display: block;
       width: rem(30);
       height: rem(18);
 
@@ -20,8 +20,8 @@
         left: 0;
         width: 100%;
         height: 9.5%;
-        border-radius: rem(5);
         background-color: $darkColor;
+        border-radius: rem(5);
         transition: all 0.3s ease 0s;
       }
 
@@ -74,8 +74,8 @@
   &__body {
     display: flex;
     align-items: center;
-    text-transform: uppercase;
     font-weight: 500;
+    text-transform: uppercase;
 
     @media (min-width: $tablet) {
       > * {
@@ -86,14 +86,14 @@
     }
 
     @media (max-width: $tablet) {
-      align-items: flex-end;
-      flex-direction: column;
       position: fixed;
       top: 0;
       right: -100%;
-      padding: rem(100) rem(30) rem(30) rem(30);
+      flex-direction: column;
+      align-items: flex-end;
       width: 100%;
       height: 100%;
+      padding: rem(100) rem(30) rem(30) rem(30);
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.8);
       transition: right 0.3s ease 0s;
@@ -105,13 +105,13 @@
       }
 
       &::before {
-        content: "";
         position: fixed;
         top: 0;
         left: 0;
         z-index: 8;
         width: 100%;
         height: rem(70);
+        content: "";
       }
 
       // .menu__body_active
@@ -139,9 +139,9 @@
   // .menu__item
 
   &__item {
+    position: relative;
     display: flex;
     justify-content: flex-end;
-    position: relative;
 
     @media (min-width: $tablet) {
       &:not(:last-child) {
@@ -159,9 +159,9 @@
   // .menu__link
 
   &__link {
-    text-align: right;
     flex: 0 1 auto;
     color: $darkColor;
+    text-align: right;
 
     @media (min-width: $tablet) {
       padding: em(10, 18) 0;

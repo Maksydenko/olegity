@@ -18,8 +18,8 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
-    justify-content: center;
     gap: rem(30);
+    justify-content: center;
 
     @media (max-width: rem(959.98)) {
       grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(370)));
@@ -48,8 +48,8 @@
   // .singles__music-card
 
   &__music-card {
-    flex: 1 1 auto;
     display: grid;
+    flex: 1 1 auto;
     grid-template: auto 1fr auto auto / 1fr;
     margin-bottom: rem(15);
   }

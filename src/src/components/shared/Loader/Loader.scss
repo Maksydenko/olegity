@@ -38,15 +38,15 @@
   margin-top: rem(-90);
   margin-left: rem(-10);
 
-  border-radius: rem(10);
-
   background-color: #b4b4b4;
 
-  transform-style: preserve-3d;
-  transform-origin: 50% 90px;
+  border-radius: rem(10);
   transform: rotateZ(30deg);
+  transform-origin: 50% 90px;
 
   animation: dot1 1.5s cubic-bezier(0.6, 0, 0.4, 1) infinite;
+
+  transform-style: preserve-3d;
 
   &:nth-child(2) {
     transform: rotateZ(15deg);

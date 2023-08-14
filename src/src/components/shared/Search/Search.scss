@@ -2,21 +2,21 @@
   // .search__filter-text
 
   &__filter-text {
-    display: flex;
-    align-items: center;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
-    padding: em(10) em(15);
+    display: flex;
+    align-items: center;
     max-width: rem(370);
+    padding: em(10) em(15);
+    color: $mainColor;
     border: em(2) solid $mainColor;
     border-radius: em(5);
-    color: $mainColor;
+    transform: translateX(-50%);
     @include responsiveValue(font-size, 16, 14);
 
     @media (prefers-color-scheme: dark) {
-      border-color: $darkColor;
       color: $darkColor;
+      border-color: $darkColor;
     }
 
     > * {
@@ -47,12 +47,12 @@
     flex: 1 1 auto;
 
     &::-webkit-search-cancel-button {
-      appearance: none;
       width: em(16);
       height: em(16);
+      appearance: none;
+      cursor: pointer;
       background-image: url("../../../assets/img/icons/cross.svg");
       background-size: contain;
-      cursor: pointer;
       transition: all 0.3s ease 0s;
 
       @media (prefers-color-scheme: dark) {

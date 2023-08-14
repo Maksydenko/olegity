@@ -18,8 +18,8 @@
 
   &__link {
     display: block;
-    text-align: center;
     padding: em(10, 30);
+    text-align: center;
     border: em(2, 30) solid $mainColor;
     border-radius: em(10, 30);
     transition: all 0.3s ease 0s;

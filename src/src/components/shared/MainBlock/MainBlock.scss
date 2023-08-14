@@ -6,10 +6,10 @@
   // .main-block__title
 
   &__title {
-    line-height: 1.15;
+    font-family: $fontFamily2;
     font-size: rem(40);
     font-weight: 500;
-    font-family: $fontFamily2;
+    line-height: 1.15;
 
     &:not(:last-child) {
       margin-bottom: em(20, 40);

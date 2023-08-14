@@ -12,7 +12,7 @@ import {
   // Autoplay,
   Parallax,
   Virtual,
-} from "swiper";
+} from "swiper/modules";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -78,6 +78,8 @@ const SliderSwiper = ({
   autoHeight = true,
   // Number of slides for showing
   slidesPerView = 1,
+  // Disabling functionality if there are more slides than needed
+  watchOverflow = true,
   // The indent between the slides
   spaceBetween = 30,
   // The number of flipped slides
@@ -203,6 +205,8 @@ const SliderSwiper = ({
       autoHeight={autoHeight}
       // Number of slides for showing
       slidesPerView={slidesPerView}
+      // Disabling functionality if there are more slides than needed
+      watchOverflow={watchOverflow}
       // The indent between the slides
       spaceBetween={spaceBetween}
       // The number of flipped slides

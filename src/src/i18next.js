@@ -12,7 +12,7 @@ i18n
   .use(initReactI18next)
   .init({
     supportedLngs: ["en", "uk"],
-    fallbackLng: ["en", "uk"],
+    fallbackLng: "en",
     detection: {
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],

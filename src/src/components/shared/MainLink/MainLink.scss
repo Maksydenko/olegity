@@ -15,12 +15,12 @@
   }
 
   &:hover {
-    background-color: $darkBg;
     color: $darkColor;
+    background-color: $darkBg;
 
     @media (prefers-color-scheme: dark) {
-      background-color: $mainBg;
       color: $mainColor;
+      background-color: $mainBg;
     }
   }
 }

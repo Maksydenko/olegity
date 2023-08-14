@@ -1,12 +1,12 @@
 @include font(icons);
 
 %icon {
-  font-family: "icons";
+  font-family: icons, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
-  text-transform: none;
   line-height: 1;
+  text-transform: none;
 }
 
 [class*="_icon-"] {
@@ -26,7 +26,7 @@
   content: "\e906";
 }
 ._icon-youtube:before {
-  content: "\e905";
+  content: "\ea9d";
 }
 ._icon-spotify:before {
   content: "\e901";
@@ -51,7 +51,4 @@
 }
 ._icon-twitter:before {
   content: "\ea96";
-}
-._icon-youtube:before {
-  content: "\ea9d";
 }

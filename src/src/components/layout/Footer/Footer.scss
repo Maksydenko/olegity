@@ -3,8 +3,8 @@
 
 .footer {
   position: relative;
-  background-color: #21252b;
   color: $darkColor;
+  background-color: #21252b;
 
   // .footer__container
 
@@ -37,8 +37,8 @@
   // .footer__img
 
   &__logo {
-    display: block;
     position: relative;
+    display: block;
     width: rem(95);
     height: rem(30);
     margin-bottom: rem(20);
@@ -79,9 +79,9 @@
 
   h4 {
     margin-bottom: em(20, 24);
+    font-family: $fontFamily2;
     font-size: rem(24);
     font-weight: 500;
-    font-family: $fontFamily2;
   }
 
   li {

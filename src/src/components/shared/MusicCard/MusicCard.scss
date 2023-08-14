@@ -4,8 +4,8 @@
   // .music-card__img
 
   &__img {
-    margin-bottom: rem(20);
     padding-bottom: 100%;
+    margin-bottom: rem(20);
 
     img {
       border-radius: rem(10);
@@ -16,8 +16,8 @@
 
   &__title {
     margin-bottom: em(10, 24);
-    font-size: rem(24);
     font-family: $fontFamily2;
+    font-size: rem(24);
     font-weight: 500;
   }
 
