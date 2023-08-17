@@ -43,7 +43,8 @@
   // .videos__img
 
   &__img {
-    aspect-ratio: 16/9;
+    // aspect-ratio: 16/9;
+    padding-bottom: 56.25%;
     margin-bottom: rem(20);
 
     &::after {
@@ -65,17 +66,21 @@
   // .videos__popup
 
   &__popup {
-    .popup__button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-size: rem(80);
-      color: $darkColor;
-      transition: all 0.3s ease 0s;
-      transform: translate(-50%, -50%);
+    .popup {
+      // .popup__button
 
-      &:hover {
-        opacity: 0.5;
+      &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: rem(80);
+        color: $darkColor;
+        transition: all 0.3s ease 0s;
+        transform: translate(-50%, -50%);
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -83,7 +88,14 @@
   // .videos__video
 
   &__video {
-    height: 60vh;
+    width: 60vw;
+
+    /* stylelint-disable-next-line scss/operator-no-unspaced */
+    @supports (aspect-ratio: 16/9) {
+      width: auto;
+      height: 60vh;
+      aspect-ratio: 16/9;
+    }
 
     @media (max-width: $tablet) {
       width: 60vw;
@@ -92,7 +104,6 @@
 
     @media (max-width: $mobile) {
       width: 75vw;
-      height: auto;
     }
 
     iframe {

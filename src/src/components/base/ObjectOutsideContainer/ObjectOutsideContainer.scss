@@ -13,13 +13,7 @@ $object: 50%;
     display: flex;
     flex: 0 0 100%;
 
-    + * {
-      img,
-      iframe,
-      video {
-        max-width: 100%;
-      }
-
+    + div {
       @media (min-width: $mobile) {
         position: relative;
         flex: 0 0
@@ -47,6 +41,12 @@ $object: 50%;
           calc(
             50vw - ($content / 100% - 0.5) * calc(#{$maxWidthContainer + px})
           );
+      }
+
+      img,
+      iframe,
+      video {
+        max-width: 100%;
       }
     }
   }
@@ -79,13 +79,7 @@ $object: 50%;
       display: flex;
       flex: 0 0 100%;
 
-      & + * {
-        img,
-        iframe,
-        video {
-          max-width: 100%;
-        }
-
+      + div {
         @media (min-width: $pc) {
           position: relative;
           flex: 0 0
@@ -113,6 +107,12 @@ $object: 50%;
             calc(
               50vw - ($content / 100% - 0.5) * calc(#{$maxWidthContainer + px})
             );
+        }
+
+        img,
+        iframe,
+        video {
+          max-width: 100%;
         }
       }
     }

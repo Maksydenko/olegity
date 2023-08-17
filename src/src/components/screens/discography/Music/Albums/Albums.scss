@@ -14,7 +14,7 @@
   &__album {
     display: flex;
     flex-wrap: wrap;
-    gap: rem(20);
+    // gap: rem(20);
     justify-content: center;
   }
 
@@ -22,6 +22,14 @@
 
   &__music-card {
     flex: 0 1 rem(370);
+
+    @media (min-width: $mobile) {
+      margin-right: rem(20);
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: rem(20);
+    }
   }
 
   // .albums__track-list
@@ -31,8 +39,13 @@
     padding-left: em(30, 18);
     font-size: rem(18);
 
+    @media (min-width: rem(1098.98)) {
+      margin-right: rem(20);
+    }
+
     @media (max-width: rem(1098.98)) {
       padding-right: em(70, 18);
+      margin-bottom: rem(20);
     }
 
     @media (max-width: $mobile) {

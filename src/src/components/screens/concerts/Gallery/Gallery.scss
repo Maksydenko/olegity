@@ -36,6 +36,11 @@
   &__grid {
     display: grid;
     grid-template-rows: repeat(2, 45vh);
+
+    @supports (grid-template-rows: repeat(2, 45svh)) {
+      grid-template-rows: repeat(2, 45svh);
+    }
+
     grid-template-columns: repeat(4, 1fr);
     gap: rem(20);
 
@@ -81,6 +86,11 @@
 
     @media (max-width: $tablet) {
       grid-template-rows: repeat(2, 45vh);
+
+      @supports (grid-template-rows: repeat(2, 45svh)) {
+        grid-template-rows: repeat(2, 45svh);
+      }
+
       grid-template-columns: repeat(3, 1fr);
 
       .gallery__img:nth-child(1) {
@@ -122,6 +132,11 @@
 
     @media (max-width: $mobileSmall) {
       grid-template-rows: repeat(6, 45vh);
+
+      @supports (grid-template-rows: repeat(2, 45svh)) {
+        grid-template-rows: repeat(2, 45svh);
+      }
+
       grid-template-columns: 1fr;
 
       .gallery__img img {

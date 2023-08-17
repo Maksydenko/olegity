@@ -30,7 +30,8 @@
 
   &__video {
     @media (min-width: $pc) {
-      aspect-ratio: 25/9;
+      // aspect-ratio: 25/9;
+      padding-bottom: 36%;
     }
   }
 }
