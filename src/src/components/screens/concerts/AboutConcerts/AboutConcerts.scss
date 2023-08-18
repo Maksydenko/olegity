@@ -8,9 +8,13 @@
       padding: rem(30) 0;
 
       .main-block {
+        // .main-block__title
+
         &__title {
           font-size: rem(32);
         }
+
+        // .main-block__text
 
         &__text {
           text-align: justify;
