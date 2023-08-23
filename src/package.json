@@ -1,8 +1,10 @@
 {
+  "homepage": "https://maksydenko.github.io/olegity/",
   "name": "olegity",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
