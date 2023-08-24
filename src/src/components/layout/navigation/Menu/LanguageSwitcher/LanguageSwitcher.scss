@@ -10,10 +10,7 @@
 
   // .language-switcher__item
 
-  .language-switcher__item {
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
+  &__item {
     &:not(:last-child) {
       padding-right: em(10);
       border-right: em(1) solid $darkColor;
@@ -23,15 +20,22 @@
       padding-left: em(10);
       border-left: em(1) solid $darkColor;
     }
-
-    &:hover {
-      opacity: 0.5;
-    }
   }
 
   // .language-switcher__btn
 
-  .language-switcher__btn {
+  &__btn {
     text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

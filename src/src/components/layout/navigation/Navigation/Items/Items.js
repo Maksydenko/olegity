@@ -1,7 +1,7 @@
 import Item from "./Item";
 
 const Items = ({ links }) => {
-  const items = links.map((link, index) => {
+  const items = links.map((link) => {
     const { href } = link;
 
     return <Item key={href} link={link} />;

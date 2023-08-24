@@ -166,6 +166,13 @@
     @media (min-width: $tablet) {
       padding: em(10, 18) 0;
     }
+
+    // .menu__link_active
+
+    &_active {
+      cursor: default;
+      opacity: 0.5;
+    }
   }
 
   a,

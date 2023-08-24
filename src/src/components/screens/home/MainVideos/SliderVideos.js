@@ -12,7 +12,7 @@ const SliderMedias = () => {
   });
 
   return (
-    <SliderSwiper className="main-videos" pagination virtual>
+    <SliderSwiper className="main-videos" pagination virtual spaceBetween={0}>
       {slides}
     </SliderSwiper>
   );
