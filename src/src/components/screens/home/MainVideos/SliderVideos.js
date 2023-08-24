@@ -1,14 +1,15 @@
 import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
-import Iframe from "@base/Video/Iframe";
+import PopupVideo from "@shared/PopupVideo/PopupVideo";
 
 import { musicVideos } from "@constants/videos/musicVideos.const";
 
 const SliderMedias = () => {
-  const slides = musicVideos
-    .slice(0, 5)
-    .map((video, index) => (
-      <Iframe key={index} className="main-videos" video={video} />
-    ));
+  const latestMusicVideos = musicVideos.slice(0, 5);
+  const slides = latestMusicVideos.map((video) => {
+    const { src } = video;
+
+    return <PopupVideo key={src} className="main-videos" video={video} />;
+  });
 
   return (
     <SliderSwiper className="main-videos" pagination virtual>

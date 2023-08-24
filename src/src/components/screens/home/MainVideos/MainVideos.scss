@@ -26,12 +26,18 @@
     margin-bottom: rem(20);
   }
 
-  // .main-videos__video
+  // .main-videos__popup-video
 
-  &__video {
-    @media (min-width: $pc) {
-      // aspect-ratio: 25/9;
-      padding-bottom: 36%;
+  &__popup-video {
+    .popup-video {
+      // .popup-video__img
+
+      &__img {
+        @media (min-width: $pc) {
+          // aspect-ratio: 25/9;
+          padding-bottom: 36%;
+        }
+      }
     }
   }
 }
