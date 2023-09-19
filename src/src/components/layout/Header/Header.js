@@ -20,8 +20,8 @@ const Header = () => {
   };
 
   const handleUnlockScrollOnBreakpoint = () => {
-    const windowWidth = window.innerWidth;
-    const isMoreBreakpoint = windowWidth > breakpoint;
+    const { innerWidth } = window;
+    const isMoreBreakpoint = innerWidth > breakpoint;
 
     if (isMoreBreakpoint && isScrollLocked) {
       handleUnlockScroll();
@@ -30,8 +30,8 @@ const Header = () => {
   useWindowListener(handleUnlockScrollOnBreakpoint);
 
   const handleClick = () => {
-    const windowWidth = window.innerWidth;
-    const isLessBreakpoint = windowWidth < breakpoint;
+    const { innerWidth } = window;
+    const isLessBreakpoint = innerWidth < breakpoint;
 
     if (isLessBreakpoint) {
       setIsScrollLocked(!isScrollLocked);
