@@ -1,4 +1,4 @@
-import { i18n, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Item = ({ language: { value, href }, onClick }) => {
   const { i18n } = useTranslation();

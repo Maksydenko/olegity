@@ -10,8 +10,8 @@ import { breakpoints } from "@constants/breakpoint.const";
 import logo from "@img/logos/olegity.svg";
 
 const Header = () => {
-  const { isScrollLocked, setIsScrollLocked } = useScrollLock();
   const breakpoint = breakpoints.tablet;
+  const { isScrollLocked, setIsScrollLocked } = useScrollLock();
 
   const handleUnlockScroll = () => {
     if (isScrollLocked) {

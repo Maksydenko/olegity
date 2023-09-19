@@ -9,4 +9,5 @@ const Items = ({ links, onClick }) => {
 
   return <ul className="menu__list">{items}</ul>;
 };
+
 export default Items;
