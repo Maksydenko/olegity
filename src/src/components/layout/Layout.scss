@@ -4,7 +4,7 @@
 
 // Scrollbar styles
 ::-webkit-scrollbar {
-  width: rem(10);
+  width: $scrollbarWidth;
   background-color: #f1f1f1;
 
   @media (prefers-color-scheme: dark) {
