@@ -22,6 +22,9 @@
   // .fullScreen__background
 
   &__background {
-    @include fill(fixed);
+    * {
+      @include fill(fixed);
+      object-fit: cover;
+    }
   }
 }
