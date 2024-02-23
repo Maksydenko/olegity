@@ -1,23 +1,29 @@
 import { useState, useEffect } from "react";
 
-export const useLoadingObject = (object) => {
+export const useLoadingObject = (objectRef) => {
   const [isLoading, setIsLoading] = useState(true);
-  const handleLoadObject = () => setIsLoading(false);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
 
   useEffect(() => {
-    const objectElement = object.current;
-    const isImg = objectElement instanceof HTMLImageElement;
+    const { current: objectCurrent } = objectRef;
+    const isComplete = (objectCurrent)?.complete;
 
-    if (isImg && objectElement.complete) {
-      handleLoadObject();
+    const isImg = objectCurrent;
+    const isImgComplete = isImg && isComplete;
+
+    if (isImgComplete) {
+      handleLoadingComplete();
     } else {
-      objectElement?.addEventListener("load", handleLoadObject);
+      objectCurrent?.addEventListener("load", handleLoadingComplete);
 
       return () => {
-        objectElement?.removeEventListener("load", handleLoadObject);
+        objectCurrent?.removeEventListener("load", handleLoadingComplete);
       };
     }
-  }, [object, isLoading]);
+  }, [objectRef, isLoading]);
 
   return { isLoading };
 };
