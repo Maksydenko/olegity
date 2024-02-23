@@ -7,10 +7,10 @@
     display: flex;
     align-items: center;
     max-width: rem(370);
-    padding: em(10) em(15);
+    padding: em(10, 16) em(15, 16);
     color: $mainColor;
-    border: em(2) solid $mainColor;
-    border-radius: em(5);
+    border: em(2, 16) solid $mainColor;
+    border-radius: em(5, 16);
     transform: translateX(-50%);
     @include responsiveValue(font-size, 16, 14);
 
@@ -21,17 +21,17 @@
 
     > * {
       &:not(:last-child) {
-        margin-right: em(5);
+        margin-right: em(5, 16);
       }
     }
 
     // .search__filter-text_focus
 
     &_focus {
-      box-shadow: 0 0 em(2) em(2) $mainColor;
+      box-shadow: 0 0 em(2, 16) em(2, 16) $mainColor;
 
       @media (prefers-color-scheme: dark) {
-        box-shadow: 0 0 em(2) em(2) $darkColor;
+        box-shadow: 0 0 em(2, 16) em(2, 16) $darkColor;
       }
     }
   }
@@ -47,8 +47,8 @@
     flex: 1 1 auto;
 
     &::-webkit-search-cancel-button {
-      width: em(16);
-      height: em(16);
+      width: em(16, 16);
+      height: em(16, 16);
       appearance: none;
       cursor: pointer;
       background-image: url("../../../assets/img/icons/cross.svg");

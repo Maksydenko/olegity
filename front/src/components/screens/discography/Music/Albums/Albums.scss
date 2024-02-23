@@ -26,7 +26,7 @@
       margin-right: rem(20);
     }
 
-    @media (max-width: rem(1098.98)) {
+    @media (max-width: 1098.98px) {
       margin-bottom: rem(20);
     }
   }
@@ -38,11 +38,11 @@
     padding-left: em(30, 18);
     font-size: rem(18);
 
-    @media (min-width: rem(1098.98)) {
+    @media (min-width: 1098.98px) {
       margin-right: rem(20);
     }
 
-    @media (max-width: rem(1098.98)) {
+    @media (max-width: 1098.98px) {
       padding-right: em(70, 18);
       margin-bottom: rem(20);
     }
@@ -61,7 +61,7 @@
 
   &__listen-on {
     ul {
-      @media (max-width: rem(1098.98)) {
+      @media (max-width: 1098.98px) {
         grid-template-columns: repeat(4, rem(185));
       }
 

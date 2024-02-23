@@ -38,7 +38,7 @@
       }
 
       p:not(:last-child) {
-        margin-bottom: em(15);
+        margin-bottom: em(15, 16);
       }
     }
   }

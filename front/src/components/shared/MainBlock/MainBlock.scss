@@ -22,11 +22,11 @@
     line-height: 1.3;
 
     &:not(:last-child) {
-      margin-bottom: em(20);
+      margin-bottom: em(20, 16);
     }
 
     p:not(:last-child) {
-      margin-bottom: em(15);
+      margin-bottom: em(15, 16);
     }
   }
 

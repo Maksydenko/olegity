@@ -20,7 +20,7 @@
   @if $type == 1 {
     #{$property}: rem($startSize);
 
-    @media (max-width: rem($widthFrom)) {
+    @media (max-width: ($widthFrom + px)) {
       #{$property}: $calcSize;
     }
   }
@@ -28,7 +28,7 @@
   @else if $type == 2 {
     #{$property}: rem($startSize);
 
-    @media (min-width: rem($widthFrom)) {
+    @media (min-width: ($widthFrom + px)) {
       #{$property}: $calcSize;
     }
   }

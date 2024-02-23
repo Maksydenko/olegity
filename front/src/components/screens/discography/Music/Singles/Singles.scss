@@ -21,15 +21,15 @@
     gap: rem(30);
     justify-content: center;
 
-    @media (max-width: rem(959.98)) {
+    @media (max-width: 959.98px) {
       grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(370)));
     }
 
-    @media (max-width: rem(799.98)) {
+    @media (max-width: 799.98px) {
       grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
     }
 
-    @media (max-width: rem(639.98)) {
+    @media (max-width: 639.98px) {
       grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(370)));
     }
 

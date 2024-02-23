@@ -40,8 +40,8 @@
   // .music-cards___genre
 
   &__genre {
-    padding-right: em(5);
-    border-right: em(1) solid $mainColor;
+    padding-right: em(5, 16);
+    border-right: em(1, 16) solid $mainColor;
 
     @media (prefers-color-scheme: dark) {
       border-color: $darkColor;
@@ -51,8 +51,8 @@
   // .music-cards__year
 
   &__year {
-    padding-left: em(5);
-    border-left: em(1) solid $mainColor;
+    padding-left: em(5, 16);
+    border-left: em(1, 16) solid $mainColor;
 
     @media (prefers-color-scheme: dark) {
       border-color: $darkColor;

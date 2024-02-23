@@ -12,13 +12,13 @@
 
   &__item {
     &:not(:last-child) {
-      padding-right: em(10);
-      border-right: em(1) solid $darkColor;
+      padding-right: em(10, 16);
+      border-right: em(1, 16) solid $darkColor;
     }
 
     &:not(:first-child) {
-      padding-left: em(10);
-      border-left: em(1) solid $darkColor;
+      padding-left: em(10, 16);
+      border-left: em(1, 16) solid $darkColor;
     }
   }
 
@@ -26,11 +26,9 @@
 
   &__btn {
     text-transform: uppercase;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
 
     &:disabled {
-      cursor: default;
       opacity: 0.5;
     }
 
