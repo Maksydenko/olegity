@@ -1,16 +1,13 @@
-import { handleClassName } from "@utils/className.util";
+import clsx from "clsx";
 
-const FullScreen = ({ className, modifier, children, background }) => {
-  const modifiedClassName = handleClassName(
-    !!modifier,
-    `${className}__full-screen`,
-    modifier
-  );
+const FullScreen = ({ className, children, background }) => {
 
   return (
-    <div className={`${modifiedClassName} full-screen`}>
-      <div className="full-screen__body">{children}</div>
-      {background}
+    <div className={clsx(className, "full-screen")}>
+      {children && <div className="full-screen__body">{children}</div>}
+      {background && (
+        <div className="full-screen__background">{background}</div>
+      )}
     </div>
   );
 };

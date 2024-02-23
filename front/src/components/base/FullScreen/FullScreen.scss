@@ -1,4 +1,5 @@
 .full-screen {
+  position: relative;
   display: flex;
   min-height: 100vh;
 
@@ -9,22 +10,18 @@
   // .full-screen__body
 
   &__body {
+    @include centered(flex);
+
     position: relative;
     z-index: 1;
-    display: flex;
     flex: 1 1 auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: rem(20);
     background-color: rgba(0, 0, 0, 0.8);
+  }
 
-    + div {
-      img,
-      iframe,
-      video {
-        @include responsiveObject(fixed);
-      }
-    }
+  // .fullScreen__background
+
+  &__background {
+    @include fill(fixed);
   }
 }

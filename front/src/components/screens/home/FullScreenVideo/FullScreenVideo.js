@@ -28,7 +28,7 @@ const FullScreenVideo = () => {
 
   return (
     <section className="full-screen-video">
-      <FullScreen className="full-screen-video" background={background}>
+      <FullScreen className="full-screen-video__full-screen" background={background}>
         <Img className="full-screen-video" img={img} />
       </FullScreen>
     </section>
