@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
+import Img from "@base/Img/Img";
+import Menu from "@layout/navigation/Menu/Menu";
+
 import { useScrollLock } from "@hooks/useScrollLock";
 import { useWindowListener } from "@hooks/useWindowListener";
-
-import Menu from "@layout/navigation/Menu/Menu";
 
 import { breakpoints } from "@constants/breakpoint.const";
 
@@ -38,11 +39,16 @@ const Header = () => {
     }
   };
 
+  const img = {
+    src: logo,
+    alt: "Olegity",
+  };
+
   return (
     <header className="header">
       <div className="header__container">
         <Link to="/" className="header__logo" onClick={handleUnlockScroll}>
-          <img src={logo} alt="Olegity" />
+          <Img className="footer__img" img={img} svg />
         </Link>
         <Menu isScrollLocked={isScrollLocked} onClick={handleClick} />
       </div>
