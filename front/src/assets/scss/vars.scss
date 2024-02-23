@@ -1,18 +1,19 @@
 // Settings template
 
-// Default font
 $fontSize: rem(16);
+
+// Fonts
 $fontFamily: "Open Sans";
 $fontFamily2: "Montserrat";
 
 // Primary colors
 
 // Light scheme
-$mainColor: #333333;
-$mainBg: #ffffff;
+$mainColor: #333;
+$mainBg: #fff;
 // Dark scheme
-$darkColor: #ffffff;
-$darkBg: #333333;
+$darkColor: #fff;
+$darkBg: #333;
 
 // ============================================================================
 
@@ -33,13 +34,13 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 // Breakpoints
 
 // PCs, laptops, some tablets in a horizontal position
-$pc: rem($containerWidth);
+$pc: $containerWidth + px;
 // Tablets, some phones in the horizontal position
-$tablet: rem(991.98);
+$tablet: 991.98px;
 // Large phones
-$mobile: rem(767.98);
+$mobile: 767.98px;
 // Small phones
-$mobileSmall: rem(479.98);
+$mobileSmall: 479.98px;
 
 // Scrollbar width
 $scrollbarWidth: rem(10);

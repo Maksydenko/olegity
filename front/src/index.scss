@@ -1,34 +1,20 @@
-// Connection utils
-@import "assets/scss/base/utils";
+// Connection utils, mixins, vars
+@import "assets/scss/module";
 
-// Connection mixins
-@import "assets/scss/base/mixins";
+// Connection fonts
+@import "assets/scss/fonts/fonts";
 
-// Connection Google fonts
-// &display=swap
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,500&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
-
-// Connection local fonts
-// @import "assets/scss/fonts/fonts";
-
-// Connection vars
-@import "assets/scss/vars";
-
-// Connection icon fonts
-@import "assets/scss/fonts/icons";
-
-// Reset styles
+// Connection reset styles
 @import "assets/scss/base/reset";
 
 // Connecting basic component styles
 @import "assets/scss/base";
 
-// Connecting shared component styles
-@import "assets/scss/shared";
-
 // Connecting layout styles
 @import "@layout/Layout";
 
-// Connecting page styles
-@import "App";
+// Connecting shared component styles
+@import "assets/scss/shared";
+
+// Connecting screens styles
+@import "assets/scss/screens";

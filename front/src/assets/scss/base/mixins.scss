@@ -50,6 +50,7 @@
   }
 }
 
+// Responsive object
 @mixin responsiveObject($position: absolute) {
   position: $position;
   top: 0;
@@ -59,14 +60,71 @@
   object-fit: cover;
 }
 
+// Themized property
+@mixin dataTheme($property, $lightValue, $darkValue) {
+  #html[data-theme="light"] {
+    --#{$property}: #{$lightValue};
+  }
+
+  #html[data-theme="dark"] {
+    --#{$property}: #{$darkValue};
+  }
+}
+
+// Centered object
+@mixin centered($method) {
+  @if $method == flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } @else if $method == position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Fill object
+@mixin fill($position: absolute) {
+  position: $position;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Nowrap text
 @mixin nowrap {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+// Vertical text
 @mixin verticalText {
   writing-mode: vertical-lr;
   transform: rotate(-180);
   text-orientation: upright;
+}
+
+// Line camp
+@mixin lineCamp($lines) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+// Text gradient
+@mixin text-gradient($gradient) {
+  background: $gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Text stroke
+@mixin text-stroke($size, $color, $fillColor: transparent) {
+  -webkit-text-stroke: $size $color;
+  -webkit-text-fill-color: $fillColor;
 }
