@@ -17,7 +17,7 @@ const AboutConcerts = () => {
       alt: "Oleg LSP",
     },
   ];
-  const object = <Img className="about-concerts" img={img} resetStyle />;
+  const object = <Img className="about-concerts__img" img={img} />;
 
   return (
     <ObjectOutsideContainer className="about-concerts" object={object}>

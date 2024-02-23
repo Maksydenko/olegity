@@ -1,28 +1,28 @@
-import { useLoadingObject } from "@hooks/useLoadingObject";
-
 import { useRef } from "react";
+import clsx from "clsx";
 
 import Loader from "@shared/Loader/Loader";
 import { Sources } from "./Sources";
 
-import { handleClassName } from "@utils/className.util";
+import { useLoadingObject } from "@hooks/useLoadingObject";
 
-const Img = ({ className, modifier, img, style, resetStyle }) => {
+const Img = ({ className, href, img, svg, loader, style }) => {
   const objectRef = useRef(null);
   const { isLoading } = useLoadingObject(objectRef);
 
-  const modifiedClassName = handleClassName(
-    !!modifier,
-    `${className}__img`,
-    modifier
-  );
-  const defaultClassName = resetStyle ? "" : " img";
+  const Tag = href ? "a" : "div";
 
   return (
-    <div className={modifiedClassName + defaultClassName} style={style}>
-      {isLoading && <Loader />}
+    <Tag
+      className={clsx(className, "img", svg && "img_svg")}
+      style={style}
+      {...(href && {
+        href,
+      })}
+    >
+      {loader && isLoading && <Loader />}
       <Sources img={img} ref={objectRef} />
-    </div>
+    </Tag>
   );
 };
 

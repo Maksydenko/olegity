@@ -14,10 +14,10 @@
   // .main-about__main-block
 
   &__main-block {
-    padding: rem(50) rem(20) rem(50) 0;
+    padding: rem(50) 0 rem(50);
 
     @media (max-width: $mobile) {
-      padding: rem(50) 0 rem(30);
+      padding: rem(50) 0 0;
     }
   }
 

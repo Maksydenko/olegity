@@ -20,7 +20,7 @@ const MusicCard = ({
       {...swiperParallaxAttr}
       {...swiperParallaxDurationAttr}
     >
-      <Img className="music-card" picture={track.picture} img={track.img} />
+      <Img className="music-card__img" picture={track.picture} img={track.img} />
       <Text
         track={track}
         swiperParallax={swiperParallax}

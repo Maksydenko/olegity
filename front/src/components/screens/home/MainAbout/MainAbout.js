@@ -24,7 +24,7 @@ const MainAbout = () => {
     },
   ];
 
-  const object = <Img className="main-about" img={img} resetStyle />;
+  const object = <Img className="main-about__img" img={img} />;
 
   return (
     <ObjectOutsideContainer className="main-about" object={object}>

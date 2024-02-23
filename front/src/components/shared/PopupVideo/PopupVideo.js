@@ -8,7 +8,7 @@ const PopupVideo = ({ className, video }) => {
 
   return (
     <div className={`${className}__popup-video popup-video`}>
-      <Img className="popup-video" img={img} />
+      <Img className="popup-video__img" img={img} />
       <Popup className="popup-video" button={button}>
         <Iframe className="popup-video" video={video} />
       </Popup>

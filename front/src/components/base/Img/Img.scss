@@ -3,7 +3,20 @@
 }
 
 .img {
-  img {
-    @include responsiveObject;
+  // .img_svg
+
+  &_svg {
+    > img {
+      position: relative !important;
+      object-fit: fill;
+    }
+  }
+
+  &,
+  > picture {
+    > img {
+      @include fill;
+      object-fit: cover;
+    }
   }
 }

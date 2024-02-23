@@ -29,7 +29,8 @@
 
   &__video {
     @media (min-width: $pc) {
-      aspect-ratio: unset;
+      // aspect-ratio: unset;
+      padding-bottom: 0;
 
       iframe {
         border-radius: rem(10) 0 0 rem(10);

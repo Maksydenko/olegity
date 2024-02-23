@@ -14,8 +14,8 @@ export const Sources = forwardRef(({ img, loading = "lazy" }, ref) => {
       );
     });
 
-    const { length } = img;
-    const lastImg = img[length - 1];
+    const { length: imgLength } = img;
+    const lastImg = img[imgLength - 1];
     const { src, alt } = lastImg;
 
     return (
@@ -25,5 +25,8 @@ export const Sources = forwardRef(({ img, loading = "lazy" }, ref) => {
       </picture>
     );
   }
-  return <img src={img.src} alt={img.alt} {...imgAttrs} ref={ref} />;
+
+  const { src, alt } = img;
+
+  return <img src={src} alt={alt} {...imgAttrs} ref={ref} />;
 });
