@@ -3,62 +3,6 @@ $content: 50%;
 $object: 50%;
 
 .object-outside-container {
-  @media (min-width: $mobile) {
-    display: flex;
-  }
-
-  // .object-outside-container__content
-
-  &__content {
-    display: flex;
-    flex: 0 0 100%;
-
-    + * {
-      @media (min-width: $mobile) {
-        flex: 0 0
-          calc(
-            ((100vw - rem($containerPadding)) * ($object / 100%)) +
-              rem($containerPadding) / 2
-          );
-        padding-bottom: 30%;
-        transform: translate(-100%, 0);
-      }
-
-      @media (min-width: ($containerWidth + px)) {
-        flex: 0 0
-          calc(50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer)));
-      }
-
-      img,
-      iframe,
-      video {
-        @media (max-width: $mobile) {
-          position: relative !important;
-        }
-      }
-    }
-  }
-
-  // .object-outside-container__container
-
-  &__container {
-    display: flex;
-    align-items: center;
-  }
-
-  // .object-outside-container__body
-
-  &__body {
-    @media (min-width: $mobile) {
-      width: $content;
-      padding-right: rem(20);
-    }
-
-    @media (max-width: $mobile) {
-      padding-bottom: rem(30);
-    }
-  }
-
   // .object-outside-container_pc
 
   &_pc {
@@ -66,52 +10,121 @@ $object: 50%;
       display: flex;
     }
 
-    // .object-outside-container_pc__content
+    .object-outside-container {
+      // .object-outside-container__content
 
-    &__content {
-      display: flex;
-      flex: 0 0 100%;
+      &__content {
+        display: flex;
+        flex: 0 0 100%;
 
-      + * {
-        position: relative;
+        + * {
+          @media (min-width: $pc) {
+            flex: 0 0
+              calc(
+                ((100vw - rem($containerPadding)) * ($object / 100%)) +
+                  rem($containerPadding) / 2
+              );
+            padding-bottom: 30%;
+            transform: translate(-100%, 0);
+          }
 
-        @media (min-width: $pc) {
-          flex: 0 0
-            calc(
-              ((100vw - rem($containerPadding)) * ($object / 100%)) +
-                rem($containerPadding) / 2
-            );
-          padding-bottom: 30%;
-          transform: translateX(-100%);
-        }
+          @media (min-width: ($containerWidth + px)) {
+            flex: 0 0
+              calc(
+                50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer))
+              );
+          }
 
-        @media (min-width: ($containerWidth + px)) {
-          flex: 0 0
-            calc(50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer)));
-        }
-
-        img,
-        iframe,
-        video {
-          @media (max-width: $pc) {
-            position: relative !important;
+          img,
+          iframe,
+          video {
+            @media (max-width: $pc) {
+              position: relative !important;
+            }
           }
         }
       }
+
+      // .object-outside-container__container
+
+      &__container {
+        display: flex;
+        align-items: center;
+      }
+
+      // .object-outside-container__body
+
+      &__body {
+        @media (min-width: $pc) {
+          width: $content;
+          padding-right: rem(20);
+        }
+
+        @media (max-width: $pc) {
+          padding-bottom: rem(30);
+        }
+      }
     }
+  }
 
-    // .object-outside-container_pc__container
-
-    &__container {
+  &:not([class*="object-outside-container_"]) {
+    @media (min-width: $mobile) {
       display: flex;
-      align-items: center;
     }
 
-    // .object-outside-container_pc__body
+    .object-outside-container {
+      // .object-outside-container__content
 
-    &__body {
-      @media (min-width: $pc) {
-        width: $content;
+      &__content {
+        display: flex;
+        flex: 0 0 100%;
+
+        + * {
+          @media (min-width: $mobile) {
+            flex: 0 0
+              calc(
+                ((100vw - rem($containerPadding)) * ($object / 100%)) +
+                  rem($containerPadding) / 2
+              );
+            padding-bottom: 30%;
+            transform: translate(-100%, 0);
+          }
+
+          @media (min-width: ($containerWidth + px)) {
+            flex: 0 0
+              calc(
+                50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer))
+              );
+          }
+
+          img,
+          iframe,
+          video {
+            @media (max-width: $mobile) {
+              position: relative !important;
+            }
+          }
+        }
+      }
+
+      // .object-outside-container__container
+
+      &__container {
+        display: flex;
+        align-items: center;
+      }
+
+      // .object-outside-container__body
+
+      &__body {
+        @media (min-width: $mobile) {
+          width: $content;
+          padding-right: rem(20);
+        }
+
+        @media (max-width: $mobile) {
+          padding-bottom: rem(30);
+        }
       }
     }
   }

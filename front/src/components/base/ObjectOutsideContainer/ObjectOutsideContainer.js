@@ -1,22 +1,15 @@
-import { handleClassName } from "@utils/className.util";
+import clsx from "clsx";
 
-const ResponsiveObjectOut = ({ className, modifier, children, object }) => {
-  const modifiedClassName = handleClassName(
-    !!modifier,
-    "object-outside-container",
-    modifier,
-    !!modifier
-  );
-
+const ResponsiveObjectOut = ({ className, children, object }) => {
   return (
-    <section className={`${className} ${modifiedClassName}`}>
-      <div className={`${modifiedClassName}__content`}>
-        <div className={`${modifiedClassName}__container`}>
-          <div className={`${modifiedClassName}__body`}>{children}</div>
+    <div className={clsx(className, "object-outside-container")}>
+      <div className="object-outside-container__content">
+        <div className="object-outside-container__container">
+          <div className="object-outside-container__body">{children}</div>
         </div>
       </div>
       {object}
-    </section>
+    </div>
   );
 };
 

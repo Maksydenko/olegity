@@ -86,8 +86,12 @@
 }
 
 // Fill object
-@mixin fill($position: absolute) {
-  position: $position;
+@mixin fill($position: absolute, $important: false) {
+  @if ($important == important) {
+    position: $position !important;
+  } @else {
+    position: $position;
+  }
   top: 0;
   left: 0;
   width: 100%;

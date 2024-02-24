@@ -1,5 +1,5 @@
 .full-screen-video {
-  // full-screen-video__img
+  // .full-screen-video__img
 
   &__img {
     @include responsiveValue(width, 300, 200);

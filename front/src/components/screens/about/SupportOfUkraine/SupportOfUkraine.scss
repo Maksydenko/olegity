@@ -2,10 +2,10 @@
   // .support-of-ukraine__main-block
 
   &__main-block {
-    padding: rem(50) rem(20) rem(50) 0;
+    padding: rem(50) 0;
 
     @media (max-width: $pc) {
-      padding: 0 0 rem(30);
+      padding: 0;
     }
 
     [class*="__title"] {
@@ -29,8 +29,11 @@
 
   &__video {
     @media (min-width: $pc) {
-      // aspect-ratio: unset;
-      padding-bottom: 0;
+      aspect-ratio: unset;
+
+      @supports not (aspect-ratio: unset) {
+        padding-bottom: 0;
+      }
 
       iframe {
         border-radius: rem(10) 0 0 rem(10);

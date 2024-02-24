@@ -19,10 +19,9 @@ const FullScreenVideo = () => {
 
   const background = (
     <Video
-      className="full-screen-video"
+      className="full-screen-video__video"
       video={video}
       poster={poster}
-      resetStyle
     />
   );
 

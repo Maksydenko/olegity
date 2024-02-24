@@ -1,6 +1,6 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
-import MainBlock from "@shared/MainBlock/MainBlock";
 import Iframe from "@base/Video/Iframe";
+import MainBlock from "@shared/MainBlock/MainBlock";
 
 const SupportOfUkraine = () => {
   const text = [
@@ -16,17 +16,19 @@ const SupportOfUkraine = () => {
   const object = <Iframe className="support-of-ukraine" video={video} />;
 
   return (
-    <ObjectOutsideContainer
-      className="support-of-ukraine"
-      modifier="pc"
-      object={object}
-    >
-      <MainBlock
-        className="support-of-ukraine"
-        title="support-of-ukraine"
-        text={text}
-      />
-    </ObjectOutsideContainer>
+    <section className="support-of-ukraine">
+      <ObjectOutsideContainer
+        className="support-of-ukraine__object-outside-container object-outside-container_pc"
+        // modifier="pc"
+        object={object}
+      >
+        <MainBlock
+          className="support-of-ukraine"
+          title="support-of-ukraine"
+          text={text}
+        />
+      </ObjectOutsideContainer>
+    </section>
   );
 };
 

@@ -1,26 +1,17 @@
-import Sources from "./Sources";
+import clsx from 'clsx';
 
-import { handleClassName } from "@utils/className.util";
+import Sources from "./Sources";
 
 const Video = ({
   className,
-  modifier,
   poster,
   video,
-  resetStyle,
   autoPlay = true,
   muted = true,
   controls,
   loop = true,
   preload,
 }) => {
-  const modifiedClassName = handleClassName(
-    !!modifier,
-    `${className}__video`,
-    modifier
-  );
-  const defaultClassName = resetStyle ? "" : " video";
-
   const videoAttrs = {
     poster,
     autoPlay,
@@ -31,7 +22,7 @@ const Video = ({
   };
 
   return (
-    <div className={modifiedClassName + defaultClassName}>
+    <div className={clsx(className, "video")}>
       <video {...videoAttrs}>
         <Sources video={video} />
       </video>

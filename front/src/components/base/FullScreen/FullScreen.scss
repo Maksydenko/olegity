@@ -23,7 +23,7 @@
 
   &__background {
     * {
-      @include fill(fixed);
+      @include fill(fixed, important);
       object-fit: cover;
     }
   }

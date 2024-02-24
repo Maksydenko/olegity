@@ -38,10 +38,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
+  overflow: clip;
 
-  @supports (overflow: clip) {
-    overflow: clip;
+  @supports not (overflow: clip) {
+    overflow: hidden;
   }
 
   // Press the footer

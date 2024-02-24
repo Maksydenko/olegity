@@ -27,9 +27,11 @@ const MainAbout = () => {
   const object = <Img className="main-about__img" img={img} />;
 
   return (
-    <ObjectOutsideContainer className="main-about" object={object}>
-      <MainBlock className="main-about" title="about" text={text} link={link} />
-    </ObjectOutsideContainer>
+    <section className="main-about">
+      <ObjectOutsideContainer className="main-about__object-outside-container" object={object}>
+        <MainBlock className="main-about" title="about" text={text} link={link} />
+      </ObjectOutsideContainer>
+    </section>
   );
 };
 

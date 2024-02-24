@@ -1,13 +1,13 @@
-[class*="__video"] {
-  position: relative;
-}
-
 .video {
-  // aspect-ratio: 16/9;
-  padding-bottom: 56.25%;
+  position: relative;
+  aspect-ratio: 16/9;
 
-  video,
-  iframe {
+  @supports not (aspect-ratio: 16 / 9) {
+    padding-top: 56.25%;
+  }
+
+  > video,
+  > iframe {
     @include responsiveObject;
   }
 }

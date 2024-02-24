@@ -27,14 +27,16 @@ const MainConcerts = () => {
   const object = <Img className="main-concerts__img" img={img} />;
 
   return (
-    <ObjectOutsideContainer className="main-concerts" object={object}>
-      <MainBlock
-        className="main-concerts"
-        title="concerts"
-        text={text}
-        link={link}
-      />
-    </ObjectOutsideContainer>
+    <section className="main-concerts">
+      <ObjectOutsideContainer className="main-concerts__object-outside-container" object={object}>
+        <MainBlock
+          className="main-concerts"
+          title="concerts"
+          text={text}
+          link={link}
+        />
+      </ObjectOutsideContainer>
+    </section>
   );
 };
 
