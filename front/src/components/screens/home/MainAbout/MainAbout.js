@@ -6,11 +6,9 @@ import olegLspWebp from "@img/lsp/webp/main-about.webp";
 import olegLsp from "@img/lsp/jpg/main-about.jpg";
 
 const MainAbout = () => {
-  const text = ["main-about"];
-
   const link = {
-    path: "/about",
     value: "more",
+    path: "/about",
   };
 
   const img = [
@@ -34,8 +32,7 @@ const MainAbout = () => {
       >
         <MainBlock
           className="main-about__main-block"
-          title="about"
-          text={text}
+          keyword="about-main"
           link={link}
         />
       </ObjectOutsideContainer>

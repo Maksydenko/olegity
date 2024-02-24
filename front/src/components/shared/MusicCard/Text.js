@@ -34,7 +34,7 @@ function Text({
         })}
         {...swiperParallaxDurationAttr}
       >
-        <span className="music-card__genre">{t(genre)}</span>
+        <span className="music-card__genre">{t(`genres.${genre}`)}</span>
         <span className="music-card__year">{year}</span>
       </div>
     </>

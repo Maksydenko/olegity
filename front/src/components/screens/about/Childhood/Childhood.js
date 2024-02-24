@@ -4,7 +4,6 @@ import childhoodWebp from "@img/lsp/webp/childhood.webp";
 import childhood from "@img/lsp/jpg/childhood.jpg";
 
 const Childhood = () => {
-  const text = ["childhood-1", "childhood-2", "childhood-3"];
   const img = [
     {
       src: childhoodWebp,
@@ -16,15 +15,7 @@ const Childhood = () => {
     },
   ];
 
-  return (
-    <AboutBlock
-      className="childhood"
-      mainTitle="history"
-      title="childhood"
-      text={text}
-      img={img}
-    />
-  );
+  return <AboutBlock className="childhood" keyword="childhood" img={img} />;
 };
 
 export default Childhood;

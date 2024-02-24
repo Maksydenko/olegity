@@ -1,22 +1,22 @@
 export const links = [
   {
-    value: "home",
+    value: "pages.home",
     path: "/",
   },
   {
-    value: "about",
+    value: "pages.about",
     path: "/about",
   },
   {
-    value: "discography",
+    value: "pages.discography",
     path: "/discography",
   },
   {
-    value: "videos",
+    value: "pages.videos",
     path: "/videos",
   },
   {
-    value: "concerts",
+    value: "pages.concerts",
     path: "/concerts",
   },
 ];

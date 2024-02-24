@@ -5,12 +5,10 @@ import MainBlock from "@shared/MainBlock/MainBlock";
 import olegLspWebp from "@img/lsp/webp/main-concert.webp";
 import olegLsp from "@img/lsp/jpg/main-concert.jpg";
 
-const MainConcerts = () => {
-  const text = ["main-concerts"];
-
+const ConcertsMain = () => {
   const link = {
-    path: "/concerts",
     value: "more",
+    path: "/concerts",
   };
 
   const img = [
@@ -24,18 +22,17 @@ const MainConcerts = () => {
     },
   ];
 
-  const object = <Img className="main-concerts__img" img={img} />;
+  const object = <Img className="concerts-main__img" img={img} />;
 
   return (
-    <section className="main-concerts">
+    <section className="concerts-main">
       <ObjectOutsideContainer
-        className="main-concerts__object-outside-container"
+        className="concerts-main__object-outside-container"
         object={object}
       >
         <MainBlock
-          className="main-concerts__main-block"
-          title="concerts"
-          text={text}
+          className="concerts-main__main-block"
+          keyword="concerts-main"
           link={link}
         />
       </ObjectOutsideContainer>
@@ -43,4 +40,4 @@ const MainConcerts = () => {
   );
 };
 
-export default MainConcerts;
+export default ConcertsMain;

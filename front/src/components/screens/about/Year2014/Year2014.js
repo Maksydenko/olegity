@@ -4,7 +4,6 @@ import hipHopBattleWebp from "@img/lsp/webp/hip-hop-battle.webp";
 import hipHopBattle from "@img/lsp/jpg/hip-hop-battle.jpg";
 
 const Year2014 = () => {
-  const text = ["year-2014-1", "year-2014-2", "year-2014-3"];
   const img = [
     {
       src: hipHopBattleWebp,
@@ -16,14 +15,7 @@ const Year2014 = () => {
     },
   ];
 
-  return (
-    <AboutSection
-      className="year-2014"
-      title="year-2014"
-      text={text}
-      img={img}
-    />
-  );
+  return <AboutSection className="year-2014" keyword="year-2014" img={img} />;
 };
 
 export default Year2014;

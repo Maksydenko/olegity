@@ -6,13 +6,6 @@ import uraganyLiveWebp from "@img/videos/music-videos/webp/uragany-live.webp";
 import uraganyLive from "@img/videos/music-videos/jpg/uragany-live.jpg";
 
 const UkraineSupport = () => {
-  const text = [
-    "ukraine-support-1",
-    "ukraine-support-2",
-    "ukraine-support-3",
-    "ukraine-support-4",
-  ];
-
   const img = [
     {
       src: uraganyLiveWebp,
@@ -45,8 +38,7 @@ const UkraineSupport = () => {
       >
         <MainBlock
           className="ukraine-support__main-block"
-          title="ukraine-support"
-          text={text}
+          keyword="ukraine-support"
         />
       </ObjectOutsideContainer>
     </section>

@@ -2,102 +2,167 @@
   "page-not-found": "Page not found",
   "redirect-homepage": "You will be redirected to the homepage in",
 
-  "home": "Home",
-  "about": "About",
-  "discography": "Discography",
-  "videos": "Videos",
-  "concerts": "Concerts",
+  "pages": {
+    "home": "Home",
+    "about": "About",
+    "discography": "Discography",
+    "videos": "Videos",
+    "concerts": "Concerts"
+  },
 
   "footer-description": "On this website, you can read the biography of the LSP artist, find all links to albums and songs, and watch all the videos. The site also contains information about LSP performances, and a gallery of photos from concerts is available.",
   "social-networks": "LSP in social networks",
   "navigation": "Navigation",
 
-  "main-about": "Oleg LSP is the most emotional element of the entire Russian-speaking rap scene, who knows how to have fun and give positive emotions, as well as depression and hopelessness, combining them in one track. The artist who smashes YouTube with monstrous power with his lives, and the main nihilist of hip-hop, has a fascinating background behind him.",
+  "about-main": {
+    "title": "About",
+    "text": [
+      "Oleg LSP is the most emotional element of the entire Russian-speaking rap scene, who knows how to have fun and give positive emotions, as well as depression and hopelessness, combining them in one track. The artist who smashes YouTube with monstrous power with his lives, and the main nihilist of hip-hop, has a fascinating background behind him."
+    ]
+  },
   "more": "More",
+
   "latest-videos": "Latest music videos",
   "see-videos": "See all videos",
-  "main-concerts": "Now the rapper LSP is one of the most famous hip-hop artists from the countries of the former CIS. Every year, he gathers thousands of audiences who sing in unison such hits as «Номера» (Numbers), «Монетка» (Coin), «Коктейль» (Cocktail) and «М.Л.Д.» (B.L.D.). All LSP songs are about love, but they are not devoid of existential sadness and post-irony. Therefore, they are understood by everyone without exception, they constantly hear them and come to concerts in search of emotional gap.",
 
-  "biography": "Biography",
-  "biography-1": "Oleg Vadimovich Savchenko, better known as LSP, is a talented Belarusian singer, rapper and songwriter. His solo career began in 2007 and since then he has released three EP and six studio albums. LSP also worked in tandem with Mogilev producer Roman Sashchenko, better known as Roma the Anglichanin, with whom they formed the LSP duo. Despite the fact that Roma Anglichanin passed away in 2017, LSP continues to delight its fans with new tracks and performances. He remains one of the most interesting and talented musicians in Belarus and beyond.",
-  "history": "From childhood with music in the heart to success in rap",
+  "concerts-main": {
+    "title": "Concerts",
+    "text": [
+      "Now the rapper LSP is one of the most famous hip-hop artists from the countries of the former CIS. Every year, he gathers thousands of audiences who sing in unison such hits as «Номера» (Numbers), «Монетка» (Coin), «Коктейль» (Cocktail) and «М.Л.Д.» (B.L.D.). All LSP songs are about love, but they are not devoid of existential sadness and post-irony. Therefore, they are understood by everyone without exception, they constantly hear them and come to concerts in search of emotional gap."
+    ]
+  },
 
-  "childhood": "Childhood and youth",
-  "childhood-1": "Oleg Savchenko was born on July 10, 1989 in Vitebsk, in a family of journalists. He started playing music as a child when his father hired a piano tutor for him. But later he dropped out and started writing his first poems.",
-  "childhood-2": "The first performer whose songs Oleg liked was Andrii Gubin. At the age of 14, he watched the TV program «Фабрика звёзд 4» (Star Factory 4), in which Timati acted. This impression made him interested in hip-hop culture, and he became a listener of Detzl and Bad Balance. Later, he got acquainted with Russian rock and the work of such musicians as Земфира (Zemfira), Найк Борзов (Naik Borzov), «МультFильмы» (Mul'tFil'my), «Мумий Тролль» (Mumiy Trol') and «Король и Шут» (Korol' i Shut). However, he later returned to hip-hop, starting to listen to American hip-hop, from which he gained experience and concluded that «the sound is as important as the meaning, and sometimes it can be more important».",
-  "childhood-3": "He graduated from the Faculty of Philology of MLU with a specialty of «linguist-teacher». Oleg recalls that at that time he often faced financial difficulties. But his parents always supported both him and his musical endeavors.",
+  "biography": {
+    "title": "Biography",
+    "text": [
+      "Oleg Vadimovich Savchenko, better known as LSP, is a talented Belarusian singer, rapper and songwriter. His solo career began in 2007 and since then he has released three EP and six studio albums. LSP also worked in tandem with Mogilev producer Roman Sashchenko, better known as Roma the Anglichanin, with whom they formed the LSP duo. Despite the fact that Roma Anglichanin passed away in 2017, LSP continues to delight its fans with new tracks and performances. He remains one of the most interesting and talented musicians in Belarus and beyond."
+    ]
+  },
 
-  "from-2007-to-2009": "2007—2009: early recordings and participation in hip-hop battles",
-  "from-2007-to-2009-1": "In 2007, on his 18th birthday, Oleg released several demos, among which were his solo mixtape «Я всё понял!» (I understand everything!) and the «Here We Come Again» compilation. In the same year, he began writing and recording songs that were later included in his EP «Видеть цветные сны» (See colored dreams), including the tracks «Маг» (Mage) and «Улицы» (Streets). Inspired by Kanye West's album «808s & Heartbreak», Oleg recorded the first version of his song «Ламбада» (Lambada), which was later re-recorded and shortened in duration.",
-  "from-2007-to-2009-2": "In the period from 2007 to 2008, LSP participated in several hip-hop battles, including the 6th team battle as part of the ShRec Pro team, which reached the second round, and in the 8th official battle, where Oleg passed up to the 4th round.",
-  "from-2007-to-2009-3": "On July 14, 2009, LSP released the EP «Без апелляций» (No appeals) with Deech and Maxie Flow, which included three songs, three backing tracks of the same songs and a bonus track.",
+  "childhood": {
+    "title": "Childhood and youth",
+    "text": [
+      "Oleg Savchenko was born on July 10, 1989 in Vitebsk, in a family of journalists. He started playing music as a child when his father hired a piano tutor for him. But later he dropped out and started writing his first poems.",
+      "The first performer whose songs Oleg liked was Andrii Gubin. At the age of 14, he watched the TV program «Фабрика звёзд 4» (Star Factory 4), in which Timati acted. This impression made him interested in hip-hop culture, and he became a listener of Detzl and Bad Balance. Later, he got acquainted with Russian rock and the work of such musicians as Земфира (Zemfira), Найк Борзов (Naik Borzov), «МультFильмы» (Mul'tFil'my), «Мумий Тролль» (Mumiy Trol') and «Король и Шут» (Korol' i Shut). However, he later returned to hip-hop, starting to listen to American hip-hop, from which he gained experience and concluded that «the sound is as important as the meaning, and sometimes it can be more important».",
+      "He graduated from the Faculty of Philology of MLU with a specialty of «linguist-teacher». Oleg recalls that at that time he often faced financial difficulties. But his parents always supported both him and his musical endeavors."
+    ]
+  },
 
-  "from-2011-to-2013": "2011-2013: Debut album and collaboration with Roma Anglichanin",
-  "from-2011-to-2013-1": "In 2011-2013, LSP began his career with the release of a video clip for the song «Хиппи» (Hippie) and the release of his debut solo EP «Видеть цветные сны» (See colored dreams), which featured Aes Genius, 614, Paul Pain, and LSP himself. Roma Anglichanin, a well-known producer, was responsible for the overall mixing control of the release.",
-  "from-2011-to-2013-2": "After the release of the single «Номера» (Numbers) in 2012, close cooperation began between LSP and Roman Nikolaevich Sashcheko. In 2012, Oleg also participated in the A-One Hiphop Battle, although the whole year was devoted to self-education and prioritization.",
-  "from-2011-to-2013-3": "In 2013, LSP released several popular tracks, including «Больше денег» (More money), «Лилвэйн» (Lilwayne), and «Коктейль» (Cocktail), which became one of the best songs of the year according to rap.ru and the A-One channel. He also performed cover versions of the songs «Дурак и молния» (Fool and the lightning) by the group «Король и Шут» (Korol i Shut) and «Truth Gonna Hurt You» by American rapper Future, and also released several of his own tracks, including «Сити» (City), «Потерян и не найден» (Lost and not found) and «Пикачу» (Pikachu).",
+  "from-2007-to-2009": {
+    "title": "2007—2009: early recordings and participation in hip-hop battles",
+    "text": [
+      "In 2007, on his 18th birthday, Oleg released several demos, among which were his solo mixtape «Я всё понял!» (I understand everything!) and the «Here We Come Again» compilation. In the same year, he began writing and recording songs that were later included in his EP «Видеть цветные сны» (See colored dreams), including the tracks «Маг» (Mage) and «Улицы» (Streets). Inspired by Kanye West's album «808s & Heartbreak», Oleg recorded the first version of his song «Ламбада» (Lambada), which was later re-recorded and shortened in duration.",
+      "In the period from 2007 to 2008, LSP participated in several hip-hop battles, including the 6th team battle as part of the ShRec Pro team, which reached the second round, and in the 8th official battle, where Oleg passed up to the 4th round.",
+      "On July 14, 2009, LSP released the EP «Без апелляций» (No appeals) with Deech and Maxie Flow, which included three songs, three backing tracks of the same songs and a bonus track."
+    ]
+  },
 
-  "year-2014": "2014: Many releases, participation in Versus Battle and new partnerships",
-  "year-2014-1": "2014 was a year of active musical activity for LSP. In January, the compilation album «ЁП» (YOP) was released, which was collected over 2.5 years and contained 10 songs and 2 bonus tracks (a tribute to Mikhail Gorshenyov and a cover version of the song «Truth Gonna Hurt You» by Future).",
-  "year-2014-2": "In May 2014, the album «Виселицца» (Gallows) was also released, in which the music was mostly produced by Roma Anglichanin. Both albums had their own covers for each song.. Both albums had their own cover art for each song. «Виселицца» (Gallows) was featured in the top three Russian-language albums of 2014 and the top 20 recordings of the 2010s, but critics noted that it was electronic pop, within which there was despair, hopelessness and emptiness.",
-  "year-2014-3": "During the year, LSP also released several remixes and participated in the St. Petersburg hip-hop project Versus Battle, where he won a verbal duel. In August, he started cooperation with Booking Machine booking agency. In October, the Yung Trappa mixtape «Jesse Pinkman 2» was released, in which LSP took part in three songs.",
+  "from-2011-to-2013": {
+    "title": "2011-2013: Debut album and collaboration with Roma Anglichani",
+    "text": [
+      "In 2011-2013, LSP began his career with the release of a video clip for the song «Хиппи» (Hippie) and the release of his debut solo EP «Видеть цветные сны» (See colored dreams), which featured Aes Genius, 614, Paul Pain, and LSP himself. Roma Anglichanin, a well-known producer, was responsible for the overall mixing control of the release.",
+      "After the release of the single «Номера» (Numbers) in 2012, close cooperation began between LSP and Roman Nikolaevich Sashcheko. In 2012, Oleg also participated in the A-One Hiphop Battle, although the whole year was devoted to self-education and prioritization.",
+      "In 2013, LSP released several popular tracks, including «Больше денег» (More money), «Лилвэйн» (Lilwayne), and «Коктейль» (Cocktail), which became one of the best songs of the year according to rap.ru and the A-One channel. He also performed cover versions of the songs «Дурак и молния» (Fool and the lightning) by the group «Король и Шут» (Korol i Shut) and «Truth Gonna Hurt You» by American rapper Future, and also released several of his own tracks, including «Сити» (City), «Потерян и не найден» (Lost and not found) and «Пикачу» (Pikachu)."
+    ]
+  },
 
-  "year-2015": "2015: Romantic Colegtion and Magic City, exit from Booking Machine",
-  "year-2015-1": "In 2015, LSP released the EP Romantic Colegtion and the album Magic City, after which he ended his collaboration with Booking Machine. Romantic Colegtion included two new songs produced by Roma Anglichanin and an updated version of the track «Именно такой» (That way) featuring Deech and Maxie Flow. The song «Силовое поле» (Force field) was noted by The Flow as one of the best Russian-language songs of 2015, and LSP himself called its lyrics one of his best creations.",
-  "year-2015-2": "The Magic City album was released on July 19, 2015. Roma Anglichanin was responsible for the production and post-production of the album, with guest verses provided by PHARAOH, Oxxxymiron and Sil-A. In anticipation of the release of the album, a video was released for a remix of the song «Безумие» (Madness), recorded with Breezey Montana. After a failed joint project, the songs from it were completed by Oleg alone and included in the Magic City album.",
-  "year-2015-3": "At the end of the year, The Flow placed «Bullet» (with PHARAOH) and a remix of «Безумие» (Madness) (featuring Oxxxymiron) in the list of the best songs of 2015. Also in 2015, a music video for the song «OK» was released.",
-  "year-2015-4": "In the summer of 2015, LSP ended its partnership with Booking Machine, explaining that the number of concerts had decreased.",
+  "year-2014": {
+    "title": "2014: Many releases, participation in Versus Battle and new partnerships",
+    "text": [
+      "2014 was a year of active musical activity for LSP. In January, the compilation album «ЁП» (YOP) was released, which was collected over 2.5 years and contained 10 songs and 2 bonus tracks (a tribute to Mikhail Gorshenyov and a cover version of the song «Truth Gonna Hurt You» by Future).",
+      "In May 2014, the album «Виселицца» (Gallows) was also released, in which the music was mostly produced by Roma Anglichanin. Both albums had their own covers for each song.. Both albums had their own cover art for each song. «Виселицца» (Gallows) was featured in the top three Russian-language albums of 2014 and the top 20 recordings of the 2010s, but critics noted that it was electronic pop, within which there was despair, hopelessness and emptiness.",
+      "During the year, LSP also released several remixes and participated in the St. Petersburg hip-hop project Versus Battle, where he won a verbal duel. In August, he started cooperation with Booking Machine booking agency. In October, the Yung Trappa mixtape «Jesse Pinkman 2» was released, in which LSP took part in three songs."
+    ]
+  },
 
-  "from-2016-to-2017": "2016-2017: «Кондитерская» (Cake Factory), Tragic City, departure of the Anglichanin",
-  "from-2016-to-2017-1": "On September 30, 2016, LSP and PHARAOH released a joint EP «Кондитерская» (Cake Factory).",
-  "from-2016-to-2017-2": "In Porchy's song «Imperial», released on April 1, 2016, LSP expressed his opinion about the former booking agency, which was the subject of an argument with Oxxxymiron, who considered it offensive.",
-  "from-2016-to-2017-3": "On April 28, 2017, LSP's third studio album was released called «Tragic City», which is a continuation of «Magic City». The album introduces new images, heroes and quotes from the artist's previous works into history. He initially thought that «Magic City» would be his last work, but later began to think about his future work. He stated: «Recently, I also thought that after «Tragic City» there was not much to say, but literally in the last days of working on it, I already began to imagine what we would do next».",
-  "from-2016-to-2017-4": "On May 20, a video for the song «Монетка» (Coin) was released, which became the most viewed in the entire history of the LSP project. The initial version of this song was planned to be released on a joint EP with PHARAOH called «Кондитерская» (Cake Factory), but work on the track was suspended due to Golubin's dissatisfaction with Savchenko's verse.",
-  "from-2016-to-2017-5": "On July 30, 2017, Roma Anglichanin, a participant in the LSP project, died.",
+  "year-2015": {
+    "title": "2015: Romantic Colegtion and Magic City, exit from Booking Machine",
+    "text": [
+      "In 2015, LSP released the EP Romantic Colegtion and the album Magic City, after which he ended his collaboration with Booking Machine. Romantic Colegtion included two new songs produced by Roma Anglichanin and an updated version of the track «Именно такой» (That way) featuring Deech and Maxie Flow. The song «Силовое поле» (Force field) was noted by The Flow as one of the best Russian-language songs of 2015, and LSP himself called its lyrics one of his best creations.",
+      "The Magic City album was released on July 19, 2015. Roma Anglichanin was responsible for the production and post-production of the album, with guest verses provided by PHARAOH, Oxxxymiron and Sil-A. In anticipation of the release of the album, a video was released for a remix of the song «Безумие» (Madness), recorded with Breezey Montana. After a failed joint project, the songs from it were completed by Oleg alone and included in the Magic City album.",
+      "At the end of the year, The Flow placed «Bullet» (with PHARAOH) and a remix of «Безумие» (Madness) (featuring Oxxxymiron) in the list of the best songs of 2015. Also in 2015, a music video for the song «OK» was released.",
+      "In the summer of 2015, LSP ended its partnership with Booking Machine, explaining that the number of concerts had decreased."
+    ]
+  },
 
-  "from-2017-to-2018": "2017-2018: Tragic City Tour, Hell and Back",
-  "from-2017-to-2018-1": "In 2017-2018, rapper Oleg Savchenko continued his musical tour Tragic City Tour in support of his album Tragic City, despite the tragic death of his friend and producer Roma Anglichanin. He also announced that the LSP project would continue to exist. The new live line-up of LSP includes Den Hawk and Petr Klyuev, known for their collaboration with Oleg in the early stages of his career.",
-  "from-2017-to-2018-2": "On October 2, 2017, LSP released a video clip for the song «Тело» (Body), dedicated to the memory of Roma Anglichanin. On the same day, he became a guest in the «Vecherniy Urgant» program, where he sang the song «Лабиринт отражений» (Labyrinth of reflections). The role of Roman Sashcheko in the video was played by video blogger Dmitry Larin, and the backstage from the filming was published on his channel on October 4. The song «Маленький принц» (The little prince), which was also written in memory of Roma Anglichanin, was released on December 14, 2017, and the Hell and Back tour (2018) was also announced.",
-  "from-2017-to-2018-3": "On February 28, 2018, LSP released a video clip for the Face «Бэйби» (Baby) remix, where the Belarusian video blogger Pleasant Ildar played the main role. The video was filmed in August 2017. The original idea was that LSP and Face would release their videos on the same day, creating a contrast. However, Face abandoned this idea and released a video for the song «Я роняю запад» (I'm dropping the west).",
+  "from-2016-to-2017": {
+    "title": "2016-2017: «Кондитерская» (Cake Factory), Tragic City, departure of the Anglichanin",
+    "text": [
+      "On September 30, 2016, LSP and PHARAOH released a joint EP «Кондитерская» (Cake Factory).",
+      "In Porchy's song «Imperial», released on April 1, 2016, LSP expressed his opinion about the former booking agency, which was the subject of an argument with Oxxxymiron, who considered it offensive.",
+      "On April 28, 2017, LSP's third studio album was released called «Tragic City», which is a continuation of «Magic City». The album introduces new images, heroes and quotes from the artist's previous works into history. He initially thought that «Magic City» would be his last work, but later began to think about his future work. He stated: «Recently, I also thought that after «Tragic City» there was not much to say, but literally in the last days of working on it, I already began to imagine what we would do next».",
+      "On May 20, a video for the song «Монетка» (Coin) was released, which became the most viewed in the entire history of the LSP project. The initial version of this song was planned to be released on a joint EP with PHARAOH called «Кондитерская» (Cake Factory), but work on the track was suspended due to Golubin's dissatisfaction with Savchenko's verse.",
+      "On July 30, 2017, Roma Anglichanin, a participant in the LSP project, died."
+    ]
+  },
 
-  "from-2018-to-present": "2018 - present: films, «Свиное рыло» (Ponk snout), One More City, the tragic story",
-  "from-2018-to-present-1": "On December 15, 2018, a 20-minute feature film «Ирония судьбы, или Tragic City» (The irony of fate, or Tragic City) was published on the official YouTube channel of the LSP. The film tells about Garik, who decides to save his sister, who has fallen into the vicious whirlpool of Tragic City, and is ready to take any measures for this.",
-  "from-2018-to-present-2": "On February 12, 2019, a documentary about the Hell and Back tour, which took place in 2018, was published on the official YouTube channel of LSP.",
-  "from-2018-to-present-3": "On February 20, 2020, in an Instagram broadcast, LSP announced that he was preparing to release a new album called Love City this year. On May 15, LSP announced the postponement of the concert tour due to the COVID-19 pandemic to the end of the year and stated that a new album would be presented there.",
-  "from-2018-to-present-4": "On September 11, 2020, LSP released the rap musical «Свиное рыло» (Ponk snout), which was not liked by everyone, and some began to guess that another, «real» album called One More City would be released. On September 18, this album is released.",
-  "from-2018-to-present-5": "At the beginning of September 2021, there were mass suicides from rooftops associated with the song «Номера» (Numbers), released in 2014. A girl from Zelenograd committed suicide on September 14, and a young man from Krasnodar on September 19, while listening to this song. Because of this, the song was blocked by Roskomnadzor and disappeared from all sites.",
+  "from-2017-to-2018": {
+    "title": "2017-2018: Tragic City Tour, Hell and Back",
+    "text": [
+      "In 2017-2018, rapper Oleg Savchenko continued his musical tour Tragic City Tour in support of his album Tragic City, despite the tragic death of his friend and producer Roma Anglichanin. He also announced that the LSP project would continue to exist. The new live line-up of LSP includes Den Hawk and Petr Klyuev, known for their collaboration with Oleg in the early stages of his career.",
+      "On October 2, 2017, LSP released a video clip for the song «Тело» (Body), dedicated to the memory of Roma Anglichanin. On the same day, he became a guest in the «Vecherniy Urgant» program, where he sang the song «Лабиринт отражений» (Labyrinth of reflections). The role of Roman Sashcheko in the video was played by video blogger Dmitry Larin, and the backstage from the filming was published on his channel on October 4. The song «Маленький принц» (The little prince), which was also written in memory of Roma Anglichanin, was released on December 14, 2017, and the Hell and Back tour (2018) was also announced.",
+      "On February 28, 2018, LSP released a video clip for the Face «Бэйби» (Baby) remix, where the Belarusian video blogger Pleasant Ildar played the main role. The video was filmed in August 2017. The original idea was that LSP and Face would release their videos on the same day, creating a contrast. However, Face abandoned this idea and released a video for the song «Я роняю запад» (I'm dropping the west)."
+    ]
+  },
 
-  "family": "Family",
-  "family-1": "In July 2018, a significant event took place in Oleg's life when he married Vladislava Amelkova, with whom they had been in a romantic relationship for a long time. Preparations for the wedding took about two weeks, as a result of which the ceremony was successful in the circle of relatives and friends. After that, the happy spouses were waiting for replenishment in their family, and on February 16, 2019, daughter Ariana was born.",
+  "from-2018-to-present": {
+    "title": "2018 - present: films, «Свиное рыло» (Ponk snout), One More City, the tragic story",
+    "text": [
+      "On December 15, 2018, a 20-minute feature film «Ирония судьбы, или Tragic City» (The irony of fate, or Tragic City) was published on the official YouTube channel of the LSP. The film tells about Garik, who decides to save his sister, who has fallen into the vicious whirlpool of Tragic City, and is ready to take any measures for this.",
+      "On February 12, 2019, a documentary about the Hell and Back tour, which took place in 2018, was published on the official YouTube channel of LSP.",
+      "On February 20, 2020, in an Instagram broadcast, LSP announced that he was preparing to release a new album called Love City this year. On May 15, LSP announced the postponement of the concert tour due to the COVID-19 pandemic to the end of the year and stated that a new album would be presented there.",
+      "On September 11, 2020, LSP released the rap musical «Свиное рыло» (Ponk snout), which was not liked by everyone, and some began to guess that another, «real» album called One More City would be released. On September 18, this album is released.",
+      "At the beginning of September 2021, there were mass suicides from rooftops associated with the song «Номера» (Numbers), released in 2014. A girl from Zelenograd committed suicide on September 14, and a young man from Krasnodar on September 19, while listening to this song. Because of this, the song was blocked by Roskomnadzor and disappeared from all sites."
+    ]
+  },
 
-  "ukraine-support": "Words of LSP in support of Ukraine",
-  "ukraine-support-1": "Premiere of the song on April 22nd. All money earned from it will be directed to refugee support funds.",
-  "ukraine-support-2": "I wrote this song at the end of 2021, when we were all still living in another world. At that time, tens of thousands of people had already left Belarus. And who would have thought what a trifle it would look like against the backdrop of current events, when in neighboring Ukraine more than ten million people are forced to be away from home, without clear prospects and livelihoods. This number exceeds the entire population of my country today.",
-  "ukraine-support-3": "I do not know a single person who consciously approves of the bombing and rocket attacks, the killing of people and the destruction of cities. I am sure they exist - but I will never be able to share their point of view. I would really like to influence this nightmare - to stop, or better - to reverse it, so that equipment and ammunition return to warehouses, destroyed cities rise from the ashes, and people from the graves. But I'm old enough to understand - my strength for this, alas, is not enough.",
-  "ukraine-support-4": "I greeted February 23rd with a plethora of creative ideas waiting impatiently to come to fruition. And the next day, all of them immediately seemed absolutely unimportant ... except for one, almost ready. This song not only remained relevant, but also played with new, tragic colors. I thought for a long time and decided: if at least someone she will give a little light in such a dark time, then they need to be released. 'Cause I'm young enough to believe that good always wins.",
+  "family": {
+    "title": "Family",
+    "text": [
+      "In July 2018, a significant event took place in Oleg's life when he married Vladislava Amelkova, with whom they had been in a romantic relationship for a long time. Preparations for the wedding took about two weeks, as a result of which the ceremony was successful in the circle of relatives and friends. After that, the happy spouses were waiting for replenishment in their family, and on February 16, 2019, daughter Ariana was born."
+    ]
+  },
+
+  "ukraine-support": {
+    "title": "Words of LSP in support of Ukraine",
+    "text": [
+      "Premiere of the song on April 22nd. All money earned from it will be directed to refugee support funds.",
+      "I wrote this song at the end of 2021, when we were all still living in another world. At that time, tens of thousands of people had already left Belarus. And who would have thought what a trifle it would look like against the backdrop of current events, when in neighboring Ukraine more than ten million people are forced to be away from home, without clear prospects and livelihoods. This number exceeds the entire population of my country today.",
+      "I do not know a single person who consciously approves of the bombing and rocket attacks, the killing of people and the destruction of cities. I am sure they exist - but I will never be able to share their point of view. I would really like to influence this nightmare - to stop, or better - to reverse it, so that equipment and ammunition return to warehouses, destroyed cities rise from the ashes, and people from the graves. But I'm old enough to understand - my strength for this, alas, is not enough.",
+      "I greeted February 23rd with a plethora of creative ideas waiting impatiently to come to fruition. And the next day, all of them immediately seemed absolutely unimportant ... except for one, almost ready. This song not only remained relevant, but also played with new, tragic colors. I thought for a long time and decided: if at least someone she will give a little light in such a dark time, then they need to be released. 'Cause I'm young enough to believe that good always wins."
+    ]
+  },
 
   "albums": "Albums",
-  "hip-hop-rap": "Hip-hop/Rap",
-  "rock": "Rock",
-  "pop": "Pop",
-  "r&b": "R&B/Soul",
-  "indie-pop": "Indie pop",
-  "rap": "Rap",
-  "hip-hop": "Hip-hop",
-  "house": "house",
-  "see-discography": "See discography",
 
-  "search": "Search",
+  "genres": {
+    "hip-hop-rap": "Hip-hop/Rap",
+    "rock": "Rock",
+    "pop": "Pop",
+    "r&b": "R&B/Soul",
+    "indie-pop": "Indie pop",
+    "rap": "Rap",
+    "hip-hop": "Hip-hop",
+    "house": "House"
+  },
+
+  "see-discography": "See discography",
 
   "ep": "EP",
   "singles": "Singles",
 
+  "search": "Search",
+
   "music-videos": "Music videos",
   "animated-videos": "Animated videos",
 
-  "about-concerts": "From small concert venues to stadiums",
-  "about-concerts-1": "With the choice of refrains and mastery of language turns, Oleg LSP's compositions, such as «Тело» (Body), «Убийца Свин» (Pig killer), «Бинокль» (Binoculars), «Холостяк» (Bachelor) and «Не нужна» (Doesn't need), became real hits. Every album, track and lyric made him one of the leaders in the world of rap culture. And although Oleg LSP's music is not always positive, it brings listeners important stories about life's obstacles and makes them think. With their diverse audience appeal and exciting live performances, LSP always leave fans with goosebumps and surprise newcomers.",
-  "about-concerts-2": "LSP concerts are a real test for the audience, as the artists perform with incredible energy and insight, as if they are ready to die on stage. It certainly causes admiration and leaves an unforgettable impression. At the same time, LSP convincingly conveys its ideas and emotions through its texts, which begin to live a life of their own and become part of the listeners' lives.",
+  "about-concerts": {
+    "title": "From small concert venues to stadiums",
+    "text": [
+      "With the choice of refrains and mastery of language turns, Oleg LSP's compositions, such as «Тело» (Body), «Убийца Свин» (Pig killer), «Бинокль» (Binoculars), «Холостяк» (Bachelor) and «Не нужна» (Doesn't need), became real hits. Every album, track and lyric made him one of the leaders in the world of rap culture. And although Oleg LSP's music is not always positive, it brings listeners important stories about life's obstacles and makes them think. With their diverse audience appeal and exciting live performances, LSP always leave fans with goosebumps and surprise newcomers.",
+      "LSP concerts are a real test for the audience, as the artists perform with incredible energy and insight, as if they are ready to die on stage. It certainly causes admiration and leaves an unforgettable impression. At the same time, LSP convincingly conveys its ideas and emotions through its texts, which begin to live a life of their own and become part of the listeners' lives."
+    ]
+  },
 
   "gallery": "Gallery"
 }

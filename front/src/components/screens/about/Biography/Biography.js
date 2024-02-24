@@ -4,7 +4,6 @@ import biographyWebp from "@img/lsp/webp/biography.webp";
 import biography from "@img/lsp/jpg/biography.jpg";
 
 const Biography = () => {
-  const text = ["biography-1"];
   const img = [
     {
       src: biographyWebp,
@@ -16,14 +15,7 @@ const Biography = () => {
     },
   ];
 
-  return (
-    <AboutSection
-      className="biography"
-      title="biography"
-      text={text}
-      img={img}
-    />
-  );
+  return <AboutSection className="biography" keyword="biography" img={img} />;
 };
 
 export default Biography;

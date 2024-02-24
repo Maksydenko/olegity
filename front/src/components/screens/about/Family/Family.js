@@ -4,7 +4,6 @@ import familyWebp from "@img/lsp/webp/family.webp";
 import family from "@img/lsp/jpg/family.jpg";
 
 const Family = () => {
-  const text = ["family-1"];
   const img = [
     {
       src: familyWebp,
@@ -16,9 +15,7 @@ const Family = () => {
     },
   ];
 
-  return (
-    <AboutSection className="family" title="family" text={text} img={img} />
-  );
+  return <AboutSection className="family" keyword="family" img={img} />;
 };
 
 export default Family;

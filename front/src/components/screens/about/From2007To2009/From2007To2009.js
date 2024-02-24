@@ -4,11 +4,6 @@ import youthWebp from "@img/lsp/webp/youth.webp";
 import youth from "@img/lsp/jpg/youth.jpg";
 
 const From2007To2009 = () => {
-  const text = [
-    "from-2007-to-2009-1",
-    "from-2007-to-2009-2",
-    "from-2007-to-2009-3",
-  ];
   const img = [
     {
       src: youthWebp,
@@ -23,8 +18,7 @@ const From2007To2009 = () => {
   return (
     <AboutSection
       className="from-2007-to-2009"
-      title="from-2007-to-2009"
-      text={text}
+      keyword="from-2007-to-2009"
       img={img}
     />
   );

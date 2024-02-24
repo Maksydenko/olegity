@@ -1,4 +1,4 @@
-.main-concerts {
+.concerts-main {
   position: relative;
   background-color: $mainBg;
 
@@ -6,12 +6,12 @@
     background-color: $darkBg;
   }
 
-  // .main-concerts__container
+  // .concerts-main__container
 
   &__container {
   }
 
-  // .main-concerts__main-block
+  // .concerts-main__main-block
 
   &__main-block {
     padding: rem(50) 0;
@@ -21,7 +21,7 @@
     }
   }
 
-  // .main-concerts__img
+  // .concerts-main__img
 
   &__img {
     @media (min-width: $mobile) {

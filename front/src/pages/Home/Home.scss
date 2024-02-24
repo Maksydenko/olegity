@@ -2,10 +2,10 @@
 @import "@screens/home/MainAbout/MainAbout";
 @import "@screens/home/MainAlbums/MainAlbums";
 @import "@screens/home/MainVideos/MainVideos";
-@import "@screens/home/MainConcerts/MainConcerts";
+@import "@screens/home/ConcertsMain/ConcertsMain";
 
 .home-page {
-  section {
+  > section {
     &:not(:first-child, :last-child) {
       padding-bottom: rem(50);
     }
