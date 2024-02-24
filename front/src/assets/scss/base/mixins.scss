@@ -73,11 +73,14 @@
 
 // Centered object
 @mixin centered($method) {
+  // Flex
   @if $method == flex {
     display: flex;
     align-items: center;
     justify-content: center;
-  } @else if $method == position {
+  }
+  // Position
+  @else if $method == position {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,12 +89,14 @@
 }
 
 // Fill object
-@mixin fill($position: absolute, $important: false) {
+@mixin fill($position: absolute, $important: null) {
+  // Important
   @if ($important == important) {
     position: $position !important;
   } @else {
     position: $position;
   }
+
   top: 0;
   left: 0;
   width: 100%;
