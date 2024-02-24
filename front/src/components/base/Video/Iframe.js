@@ -1,32 +1,26 @@
 import { useRef } from "react";
+import clsx from "clsx";
 
 import Loader from "@shared/Loader/Loader";
 
 import { useLoadingObject } from "@hooks/useLoadingObject";
 
-import { handleClassName } from "@utils/className.util";
+const Iframe = ({ className, video: { src, title } }, loader) => {
+  const iframeRef = useRef(null);
+  const { isLoading } = useLoadingObject(iframeRef);
 
-const Iframe = ({ className, modifier, video: { src, title }, resetStyle }) => {
-  const objectRef = useRef(null);
-  const { isLoading } = useLoadingObject(objectRef);
-
-  const modifiedClassName = handleClassName(
-    !!modifier,
-    `${className}__video`,
-    modifier
-  );
-  const defaultClassName = resetStyle ? "" : " video";
+  const isLoader = loader && isLoading;
 
   return (
-    <div className={modifiedClassName + defaultClassName}>
-      {isLoading && <Loader />}
+    <div className={clsx(className, "iframe")}>
+      {isLoader && <Loader />}
       <iframe
         src={src}
         title={title}
         loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-        ref={objectRef}
+        ref={iframeRef}
       />
     </div>
   );

@@ -6,18 +6,19 @@ const Sources = ({ video }) => {
   };
 
   if (isArray) {
-    const sources = video.map((videoItem, index) => {
-      const { src, type } = videoItem;
+    const sources = video.map((videoItem) => {
+      const { src, type: extension } = videoItem;
+      const type = getType(extension);
 
-      return <source key={index} src={src} type={getType(type)} />;
+      return <source key={type} src={src} type={type} />;
     });
 
     return { sources };
-  } else {
-    const { src, type } = video;
-
-    return <source src={src} type={getType(type)} />;
   }
+
+  const { src, type } = video;
+
+  return <source src={src} type={getType(type)} />;
 };
 
 export default Sources;
