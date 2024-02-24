@@ -1,10 +1,10 @@
 export const languages = [
   {
     value: "en",
-    href: "en",
+    path: "en",
   },
   {
     value: "ua",
-    href: "uk",
+    path: "uk",
   },
 ];

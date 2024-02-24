@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 
-const Item = ({ language: { value, href }, onClick }) => {
+const Item = ({ language: { value, path }, onClick }) => {
   const { i18n } = useTranslation();
   const { language } = i18n;
 
   const handleChangeLanguage = () => {
-    i18n.changeLanguage(href);
+    i18n.changeLanguage(path);
     onClick();
   };
 
@@ -14,7 +14,7 @@ const Item = ({ language: { value, href }, onClick }) => {
       <button
         className="language-switcher__btn"
         type="button"
-        disabled={href === language}
+        disabled={path === language}
         onClick={handleChangeLanguage}
       >
         {value}

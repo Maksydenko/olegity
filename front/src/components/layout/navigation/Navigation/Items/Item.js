@@ -2,11 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import clsx from "clsx";
 
-const Item = ({ link: { value, href } }) => {
+const Item = ({ link: { value, path } }) => {
   const { pathname } = useLocation();
   const { t } = useTranslation();
 
-  const isActive = href === pathname;
+  const isActive = path === pathname;
 
   return (
     <li className="navigation__item">
@@ -15,7 +15,7 @@ const Item = ({ link: { value, href } }) => {
           "navigation__link",
           isActive && "navigation__link_active"
         )}
-        to={href}
+        to={path}
       >
         {t(value)}
       </Link>
