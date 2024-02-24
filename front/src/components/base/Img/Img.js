@@ -10,6 +10,7 @@ const Img = ({ className, href, img, svg, loader, style }) => {
   const objectRef = useRef(null);
   const { isLoading } = useLoadingObject(objectRef);
 
+  const isLoader = loader && isLoading;
   const Tag = href ? "a" : "div";
 
   return (
@@ -20,7 +21,7 @@ const Img = ({ className, href, img, svg, loader, style }) => {
         href,
       })}
     >
-      {loader && isLoading && <Loader />}
+      {isLoader && <Loader />}
       <Sources img={img} ref={objectRef} />
     </Tag>
   );
