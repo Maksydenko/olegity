@@ -6,7 +6,7 @@ const Item = ({ single }) => {
 
   return (
     <div className="singles__item">
-      <MusicCard className="singles" track={single} />
+      <MusicCard className="singles__music-card" track={single} />
       <ListenOn className="singles" links={links} />
     </div>
   );

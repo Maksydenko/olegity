@@ -6,7 +6,7 @@ const Item = ({ link: { value, href } }) => {
   const { pathname } = useLocation();
   const { t } = useTranslation();
 
-  const isActive = pathname === href;
+  const isActive = href === pathname;
 
   return (
     <li className="navigation__item">

@@ -2,7 +2,7 @@ import Item from "./Item";
 
 const Items = ({ videos, filterText }) => (
   <div className="videos__items">
-    {videos.map((video, index) => {
+    {videos.map((video) => {
       const { title } = video;
 
       const titleLowerCased = title.toLowerCase();
@@ -11,7 +11,7 @@ const Items = ({ videos, filterText }) => (
       if (!titleLowerCased.includes(filterTextLowerCased)) {
         return null;
       }
-      return <Item key={index} video={video} />;
+      return <Item key={title} video={video} />;
     })}
   </div>
 );

@@ -9,7 +9,7 @@ const Videos = ({ videos }) => {
   return (
     <div className="all-videos__videos videos">
       <div className="videos__container">
-        <Search className="videos" text={text} setText={setText} />
+        <Search className="videos__search" text={text} setText={setText} />
         <Items videos={videos} filterText={text} />
       </div>
     </div>

@@ -2,34 +2,28 @@ import { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
-const Popup = ({
-  className,
-  children,
-  button,
-  isForceOpen,
-  setIsForceOpen,
-}) => {
+const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const isForceOpenIsUndefined = typeof isForceOpen === "undefined";
+  const isForceOpenIsUndefined = typeof forceOpen === "undefined";
+  const isForce = !isForceOpenIsUndefined && setForceOpen;
 
   const handleOpen = () => {
-    if (!isForceOpenIsUndefined && setIsForceOpen) {
-      setIsForceOpen(true);
+    if (isForce) {
+      setForceOpen(true);
     } else {
       setIsOpen(true);
     }
   };
 
   const handleClose = () => {
-    if (!isForceOpenIsUndefined && setIsForceOpen) {
-      setIsForceOpen(false);
+    if (isForce) {
+      setForceOpen(false);
     } else {
       setIsOpen(false);
     }
   };
 
-  const condition =
-    !isForceOpenIsUndefined && setIsForceOpen ? isForceOpen : isOpen;
+  const show = isForce ? forceOpen : isOpen;
 
   return (
     <>
@@ -40,7 +34,7 @@ const Popup = ({
       >
         {button}
       </button>
-      <Transition appear show={condition}>
+      <Transition appear show={show}>
         <Dialog className={clsx(className, "popup")} onClose={handleClose}>
           <div className="popup__body">
             <Transition.Child

@@ -28,8 +28,16 @@ const MainAbout = () => {
 
   return (
     <section className="main-about">
-      <ObjectOutsideContainer className="main-about__object-outside-container" object={object}>
-        <MainBlock className="main-about" title="about" text={text} link={link} />
+      <ObjectOutsideContainer
+        className="main-about__object-outside-container"
+        object={object}
+      >
+        <MainBlock
+          className="main-about__main-block"
+          title="about"
+          text={text}
+          link={link}
+        />
       </ObjectOutsideContainer>
     </section>
   );

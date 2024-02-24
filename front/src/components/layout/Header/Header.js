@@ -28,7 +28,7 @@ const Header = () => {
       handleUnlockScroll();
     }
   };
-  useWindowListener(handleUnlockScrollOnBreakpoint);
+  useWindowListener("resize", handleUnlockScrollOnBreakpoint);
 
   const handleClick = () => {
     const { innerWidth } = window;
@@ -47,8 +47,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <Link to="/" className="header__logo" onClick={handleUnlockScroll}>
-          <Img className="header__img" img={img} svg />
+        <Link to="/" className="header__img" onClick={handleUnlockScroll}>
+          <Img img={img} svg />
         </Link>
         <Menu isScrollLocked={isScrollLocked} onClick={handleClick} />
       </div>

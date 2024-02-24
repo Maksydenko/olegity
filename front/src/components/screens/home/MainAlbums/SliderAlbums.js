@@ -8,7 +8,13 @@ const SliderAlbums = () => {
   const slides = albums.map((album) => {
     const { title } = album;
 
-    return <MusicCard key={title} className="main-albums" track={album} />;
+    return (
+      <MusicCard
+        key={title}
+        className="main-albums__music-card"
+        track={album}
+      />
+    );
   });
 
   return (

@@ -6,17 +6,17 @@ export const useRedirectToHomepage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (time <= 0) {
-      navigate("/");
-    } else {
-      const timer = setTimeout(() => {
+    const timer = setTimeout(() => {
+      if (time > 0) {
         setTime(time - 1);
-      }, 1000);
+      } else {
+        navigate("/");
+      }
+    }, 1000);
 
-      return () => {
-        clearTimeout(timer);
-      };
-    }
+    return () => {
+      clearTimeout(timer);
+    };
   }, [time, navigate]);
 
   return time;

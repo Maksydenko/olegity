@@ -2,13 +2,15 @@ import clsx from "clsx";
 
 import Grid from "./Grid";
 
-const Grids = ({ images }) => {
-  const groupedImages = [];
-  for (let i = 0; i < images.length; i += 4) {
-    groupedImages.push(images.slice(i, i + 4));
+const Grids = ({ imgs }) => {
+  const { length: imgsLength } = imgs;
+
+  const groupedImgs = [];
+  for (let i = 0; i < imgsLength; i += 4) {
+    groupedImgs.push(imgs.slice(i, i + 4));
   }
 
-  const grids = groupedImages.map((groupImages, index) => {
+  const grids = groupedImgs.map((groupImages, index) => {
     return (
       <div
         key={index}

@@ -1,9 +1,24 @@
-import { useActiveOnScroll } from "./useActiveOnScroll";
+import { useState } from "react";
+import clsx from "clsx";
 
-import { handleClassName } from "@utils/className.util";
+import { useWindowListener } from "@hooks/useWindowListener";
 
 const ScrollTop = () => {
-  const isActive = useActiveOnScroll(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const SCROLL_ACTIVE = 110;
+
+  const handleScroll = () => {
+    const { scrollY } = window;
+
+    if (scrollY >= SCROLL_ACTIVE) {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  };
+  useWindowListener("scroll", handleScroll);
+
   const handleClick = () => {
     window.scrollTo({
       top: 0,
@@ -13,7 +28,7 @@ const ScrollTop = () => {
 
   return (
     <button
-      className={handleClassName(isActive, "scroll-top")}
+      className={clsx("scroll-top", isActive && "scroll-top_active")}
       type="button"
       onClick={handleClick}
     >

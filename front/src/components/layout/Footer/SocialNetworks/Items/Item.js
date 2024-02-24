@@ -1,14 +1,18 @@
-const Item = ({ link: { link, icon, value } }) => (
-  <li className="social-networks__item">
-    <a
-      href={link}
-      target="_blank"
-      rel="noreferrer"
-      className={`social-networks__link _icon-${icon}`}
-    >
-      {value}
-    </a>
-  </li>
-);
+import clsx from "clsx";
+
+const Item = ({ link: { link, icon, value } }) => {
+  return (
+    <li className="social-networks__item">
+      <a
+        className={clsx("social-networks__link", `_icon-${icon}`)}
+        href={link}
+        target="_blank"
+        rel="noReferrer"
+      >
+        {value}
+      </a>
+    </li>
+  );
+};
 
 export default Item;

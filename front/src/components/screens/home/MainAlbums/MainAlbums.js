@@ -15,7 +15,7 @@ const MainAlbums = () => {
       <div className="main-albums__container">
         <h2 className="main-albums__title">{t("albums")}</h2>
         <SliderAlbums />
-        <MainLink className="main-albums" link={link} />
+        <MainLink className="main-albums__main-link" link={link} />
       </div>
     </section>
   );

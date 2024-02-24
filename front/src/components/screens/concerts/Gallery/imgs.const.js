@@ -58,7 +58,7 @@ import concert19 from "@img/concerts/jpg/concert-19.jpg";
 import concert20Webp from "@img/concerts/webp/concert-20.webp";
 import concert20 from "@img/concerts/jpg/concert-20.jpg";
 
-const images = [
+export const imgs = [
   [
     {
       src: concert1Webp,
@@ -260,5 +260,3 @@ const images = [
     },
   ],
 ];
-
-export default images;

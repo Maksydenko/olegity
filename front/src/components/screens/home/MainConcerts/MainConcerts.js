@@ -28,9 +28,12 @@ const MainConcerts = () => {
 
   return (
     <section className="main-concerts">
-      <ObjectOutsideContainer className="main-concerts__object-outside-container" object={object}>
+      <ObjectOutsideContainer
+        className="main-concerts__object-outside-container"
+        object={object}
+      >
         <MainBlock
-          className="main-concerts"
+          className="main-concerts__main-block"
           title="concerts"
           text={text}
           link={link}

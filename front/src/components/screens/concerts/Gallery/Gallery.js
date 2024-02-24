@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import Grids from "./Grids/Grids";
 
-import images from "./images";
+import { imgs } from "./imgs.const";
 
 const Gallery = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ const Gallery = () => {
       <div className="gallery__container">
         <h2 className="gallery__title">{t("gallery")}</h2>
       </div>
-      <Grids images={images} />
+      <Grids imgs={imgs} />
     </section>
   );
 };

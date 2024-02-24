@@ -6,13 +6,13 @@ const Item = ({ link: { value, href }, onClick }) => {
   const { pathname } = useLocation();
   const { t } = useTranslation();
 
-  const isActive = pathname === href;
+  const isActive = href === pathname;
 
   return (
     <li className="menu__item">
       <Link
-        to={href}
         className={clsx("menu__link", isActive && "menu__link_active")}
+        to={href}
         onClick={onClick}
       >
         {t(value)}

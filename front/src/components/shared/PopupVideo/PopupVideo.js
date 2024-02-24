@@ -6,7 +6,6 @@ import Iframe from "@base/Video/Iframe";
 
 const PopupVideo = ({ className, img, video, title = true }) => {
   const { title: videoTitle } = video;
-
   const button = <span className="_icon-youtube"></span>;
 
   return (

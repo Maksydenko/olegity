@@ -5,7 +5,9 @@ export const Sources = forwardRef(({ img, loading = "lazy" }, ref) => {
     loading,
   };
 
-  if (Array.isArray(img)) {
+  const isArray = Array.isArray(img);
+
+  if (isArray) {
     const pictures = img.slice(0, -1).map((picture, index) => {
       const { src, type } = picture;
 

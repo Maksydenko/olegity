@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import Img from "@base/Img/Img";
 import Text from "./Text";
 
@@ -7,20 +9,21 @@ const MusicCard = ({
   swiperParallax,
   swiperParallaxDuration,
 }) => {
-  const swiperParallaxAttr = swiperParallax && {
-    "data-swiper-parallax": swiperParallax,
-  };
+  const { img } = track;
+
   const swiperParallaxDurationAttr = swiperParallaxDuration && {
     "data-swiper-parallax-duration": swiperParallaxDuration,
   };
 
   return (
     <div
-      className={`${className}__music-card music-card`}
-      {...swiperParallaxAttr}
+      className={clsx(className, "music-card")}
+      {...(swiperParallax && {
+        "data-swiper-parallax": swiperParallax,
+      })}
       {...swiperParallaxDurationAttr}
     >
-      <Img className="music-card__img" picture={track.picture} img={track.img} />
+      <Img className="music-card__img" img={img} />
       <Text
         track={track}
         swiperParallax={swiperParallax}

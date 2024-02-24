@@ -1,20 +1,27 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
-import { handleClassName } from "@utils/className.util";
+import clsx from "clsx";
 
 const Search = ({ className, text, setText }) => {
   const [isFocus, setIsFocus] = useState();
   const { t } = useTranslation();
 
-  // Handle filter text change
-  const handleFilterTextChange = ({ target: { value } }) => setText(value);
-  // Handle focus change
-  const handleFocusChange = () => setIsFocus((prevState) => !prevState);
+  const handleFilterTextChange = ({ target: { value } }) => {
+    setText(value);
+  };
+
+  const handleFocus = () => {
+    setIsFocus(!isFocus);
+  };
 
   return (
-    <div className={`${className}__search search`}>
-      <div className={handleClassName(isFocus, "search__filter-text", "focus")}>
+    <div className={clsx(className, "search")}>
+      <div
+        className={clsx(
+          "search__filter-text",
+          isFocus && "search__filter-text_focus"
+        )}
+      >
         <span className="search__loupe _icon-loupe"></span>
         <input
           type="search"
@@ -22,8 +29,8 @@ const Search = ({ className, text, setText }) => {
           className="search__input"
           value={text}
           onChange={handleFilterTextChange}
-          onFocus={handleFocusChange}
-          onBlur={handleFocusChange}
+          onFocus={handleFocus}
+          onBlur={handleFocus}
         />
       </div>
     </div>

@@ -9,7 +9,7 @@ export const useLoadingObject = (objectRef) => {
 
   useEffect(() => {
     const { current: objectCurrent } = objectRef;
-    const isComplete = (objectCurrent)?.complete;
+    const isComplete = objectCurrent?.complete;
 
     const isImg = objectCurrent;
     const isImgComplete = isImg && isComplete;

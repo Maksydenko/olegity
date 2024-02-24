@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import Page404 from "@pages/404/404";
+import NotFound from "@pages/NotFound/NotFound";
 import Home from "@pages/Home/Home";
 import About from "@pages/About/About";
 import Discography from "@pages/Discography/Discography";
@@ -12,7 +12,7 @@ import ScrollTop from "./ScrollTop";
 const MenuRoutes = () => (
   <Routes>
     {ScrollTop()}
-    <Route path="*" element={<Page404 />} />
+    <Route path="*" element={<NotFound />} />
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/discography" element={<Discography />} />

@@ -8,7 +8,7 @@ const Album = ({ album }) => {
   return (
     <div className="albums__album">
       <MusicCard
-        className="albums"
+        className="albums__music-card"
         track={album}
         swiperParallax="-300"
         swiperParallaxDuration="500"
@@ -19,7 +19,7 @@ const Album = ({ album }) => {
         swiperParallaxDuration="500"
       />
       <ListenOn
-        className="albums"
+        className="albums__music-card"
         links={links}
         swiperParallax="-800"
         swiperParallaxDuration="500"

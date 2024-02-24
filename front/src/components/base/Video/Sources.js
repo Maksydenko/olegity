@@ -1,9 +1,9 @@
 const Sources = ({ video }) => {
-  const isArray = Array.isArray(video);
-
   const getType = (type) => {
     return `video/${type}`;
   };
+
+  const isArray = Array.isArray(video);
 
   if (isArray) {
     const sources = video.map((videoItem) => {

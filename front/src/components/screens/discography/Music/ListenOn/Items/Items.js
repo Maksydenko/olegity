@@ -21,7 +21,7 @@ const Items = ({ links, swiperParallax, swiperParallaxDuration }) => {
     },
   ];
 
-  return items.map((item, index) => (
+  const itemList = items.map((item, index) => (
     <Item
       key={index}
       item={item}
@@ -29,6 +29,7 @@ const Items = ({ links, swiperParallax, swiperParallaxDuration }) => {
       swiperParallaxDuration={swiperParallaxDuration}
     />
   ));
+  return <ul className="listen-on__list">{itemList}</ul>;
 };
 
 export default Items;

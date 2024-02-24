@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import clsx from "clsx";
 
-const MainLink = ({ className, link }) => {
+const MainLink = ({ className, link: { path, value } }) => {
   const { t } = useTranslation();
 
   return (
-    <Link className={`${className}__main-link main-link`} to={link.path}>
-      {t(link.value)}
+    <Link className={clsx(className, "main-link")} to={path}>
+      {t(value)}
     </Link>
   );
 };

@@ -12,6 +12,7 @@ const UkraineSupport = () => {
     "ukraine-support-3",
     "ukraine-support-4",
   ];
+
   const img = [
     {
       src: uraganyLiveWebp,
@@ -22,10 +23,12 @@ const UkraineSupport = () => {
       alt: "Uragany live",
     },
   ];
+
   const video = {
     src: "https://www.youtube.com/embed/8CqwOVNB4-w?color=white",
     title: "ЛСП (LSP) — Ураганы (Hurricanes) [Live]",
   };
+
   const object = (
     <PopupVideo
       className="ukraine-support__popup-video"
@@ -41,7 +44,7 @@ const UkraineSupport = () => {
         object={object}
       >
         <MainBlock
-          className="ukraine-support"
+          className="ukraine-support__main-block"
           title="ukraine-support"
           text={text}
         />

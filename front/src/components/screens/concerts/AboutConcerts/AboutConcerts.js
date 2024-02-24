@@ -7,6 +7,7 @@ import concert from "@img/lsp/jpg/concert.jpg";
 
 const AboutConcerts = () => {
   const text = ["about-concerts-1", "about-concerts-2"];
+
   const img = [
     {
       src: concertWebp,
@@ -17,13 +18,17 @@ const AboutConcerts = () => {
       alt: "Oleg LSP",
     },
   ];
+
   const object = <Img className="about-concerts__img" img={img} />;
 
   return (
     <section className="about-concerts">
-      <ObjectOutsideContainer className="about-concerts__object-outside-container" object={object}>
+      <ObjectOutsideContainer
+        className="about-concerts__object-outside-container"
+        object={object}
+      >
         <MainBlock
-          className="about-concerts"
+          className="about-concerts__main-block"
           title="about-concerts"
           text={text}
         />

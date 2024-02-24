@@ -14,7 +14,7 @@ const MainVideos = () => {
     <section className="main-videos">
       <h2 className="main-videos__title">{t("latest-videos")}</h2>
       <SliderVideos />
-      <MainLink className="main-videos" link={link} />
+      <MainLink className="main-videos__main-link" link={link} />
     </section>
   );
 };

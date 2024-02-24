@@ -10,13 +10,11 @@ const ListenOn = ({
 }) => {
   return (
     <div className={clsx(className, "listen-on")}>
-      <ul className="listen-on__list">
-        <Items
-          links={links}
-          swiperParallax={swiperParallax}
-          swiperParallaxDuration={swiperParallaxDuration}
-        />
-      </ul>
+      <Items
+        links={links}
+        swiperParallax={swiperParallax}
+        swiperParallaxDuration={swiperParallaxDuration}
+      />
     </div>
   );
 };
