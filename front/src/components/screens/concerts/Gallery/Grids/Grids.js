@@ -17,10 +17,10 @@ const Grids = ({ imgs }) => {
         className={clsx(
           "gallery__grid",
           index % 3 === 0
-            ? " gallery__grid_tall-start"
+            ? "gallery__grid_tall-start"
             : index % 3 === 1
             ? ""
-            : " gallery__grid_tall-end"
+            : "gallery__grid_tall-end"
         )}
       >
         <Grid key={index} groupImgs={groupImgs} />
