@@ -60,6 +60,7 @@
     // tabs__title_active
 
     &_active {
+      font-weight: 500;
       color: $mainColor;
       cursor: default;
       background-color: $mainBg;

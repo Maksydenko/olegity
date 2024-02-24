@@ -60,24 +60,25 @@
     flex: 1 1 25%;
   }
 
+  [class*="__title"] {
+    margin-bottom: em(20, 24);
+    font-size: rem(24);
+    font-weight: 500;
+  }
+
   a,
   button {
     @include hover;
     transition: all 0.3s ease 0s;
   }
 
-  h4 {
-    margin-bottom: em(20, 24);
-    font-family: $fontFamily2;
-    font-size: rem(24);
-    font-weight: 500;
-  }
+  ul {
+    > li {
+      font-size: rem(18);
 
-  li {
-    font-size: rem(18);
-
-    &:not(:last-child) {
-      margin-bottom: em(10, 18);
+      &:not(:last-child) {
+        margin-bottom: em(10, 18);
+      }
     }
   }
 }

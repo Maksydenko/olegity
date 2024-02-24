@@ -10,7 +10,7 @@ const Page404 = () => {
     <section className="not-found">
       <div className="not-found__container">
         <h1 className="not-found__title">404</h1>
-        <h2 className="not-found__label">{t("page-not-found")}</h2>
+        <span className="not-found__label">{t("page-not-found")}</span>
         <p className="not-found__redirect-homepage">
           {t("redirect-homepage")} {time}
         </p>

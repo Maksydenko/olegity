@@ -19,13 +19,13 @@ function Text({
 
   return (
     <>
-      <h5
+      <h4
         className="music-card__title"
         {...swiperParallaxAttrTitle}
         {...swiperParallaxDurationAttr}
       >
         {title}
-      </h5>
+      </h4>
       <span
         className="music-card__artist"
         {...swiperParallaxAttrArtist}

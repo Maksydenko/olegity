@@ -11,7 +11,7 @@ const Item = ({ video }) => {
         video={video}
         title={false}
       />
-      <h5 className="videos__title">{title}</h5>
+      <h4 className="videos__title">{title}</h4>
     </div>
   );
 };
