@@ -17,6 +17,10 @@
   // .navigation__link
 
   &__link {
+    &:not(&_active) {
+      font-weight: 500;
+    }
+
     // .navigation__link_active
     &_active {
       cursor: default;

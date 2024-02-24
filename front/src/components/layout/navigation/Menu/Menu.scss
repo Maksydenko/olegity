@@ -74,7 +74,6 @@
   &__body {
     display: flex;
     align-items: center;
-    font-weight: 500;
     text-transform: uppercase;
 
     @media (min-width: $tablet) {
@@ -165,6 +164,10 @@
 
     @media (min-width: $tablet) {
       padding: em(10, 18) 0;
+    }
+
+    &:not(&_active) {
+      font-weight: 500;
     }
 
     // .menu__link_active
