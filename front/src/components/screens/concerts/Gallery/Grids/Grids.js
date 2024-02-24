@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import Grid from "./Grid";
 
 const Grids = ({ images }) => {
@@ -7,16 +9,18 @@ const Grids = ({ images }) => {
   }
 
   const grids = groupedImages.map((groupImages, index) => {
-    const modifiedClassName = `gallery__grid${
-      index % 3 === 0
-        ? " gallery__grid_tall-start"
-        : index % 3 === 1
-        ? ""
-        : " gallery__grid_tall-end"
-    }`;
-
     return (
-      <div key={index} className={modifiedClassName}>
+      <div
+        key={index}
+        className={clsx(
+          "gallery__grid",
+          index % 3 === 0
+            ? " gallery__grid_tall-start"
+            : index % 3 === 1
+            ? ""
+            : " gallery__grid_tall-end"
+        )}
+      >
         <Grid key={index} groupImages={groupImages} />
       </div>
     );

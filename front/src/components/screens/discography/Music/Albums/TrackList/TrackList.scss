@@ -2,6 +2,8 @@
   // .track-list__track
 
   &__track {
+    line-height: 1.2;
+
     &:not(:last-child) {
       margin-bottom: rem(10);
     }

@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import Items from "./Items/Items";
 
 const ListenOn = ({
@@ -5,16 +7,18 @@ const ListenOn = ({
   links,
   swiperParallax,
   swiperParallaxDuration,
-}) => (
-  <div className={`${className}__listen-on listen-on`}>
-    <ul className="listen-on__list">
-      <Items
-        links={links}
-        swiperParallax={swiperParallax}
-        swiperParallaxDuration={swiperParallaxDuration}
-      />
-    </ul>
-  </div>
-);
+}) => {
+  return (
+    <div className={clsx(className, "listen-on")}>
+      <ul className="listen-on__list">
+        <Items
+          links={links}
+          swiperParallax={swiperParallax}
+          swiperParallaxDuration={swiperParallaxDuration}
+        />
+      </ul>
+    </div>
+  );
+};
 
 export default ListenOn;

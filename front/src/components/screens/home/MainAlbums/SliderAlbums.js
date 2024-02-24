@@ -1,25 +1,25 @@
 import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
 import MusicCard from "@shared/MusicCard/MusicCard";
 
+import { breakpoints } from "@constants/breakpoints.const";
 import { albums } from "@constants/music/albums.const";
 
 const SliderAlbums = () => {
-  const slides = albums.map((album, index) => (
-    <MusicCard key={index} className="main-albums" track={album} />
-  ));
+  const slides = albums.map((album) => {
+    const { title } = album;
+
+    return <MusicCard key={title} className="main-albums" track={album} />;
+  });
 
   return (
     <SliderSwiper
       className="main-albums__swiper"
       breakpoints={{
-        320: {
-          slidesPerView: 1,
-        },
-        479.98: {
-          slidesPerView: 2,
-        },
-        767.98: {
+        [breakpoints.mobile]: {
           slidesPerView: 3,
+        },
+        [breakpoints.mobileSmall]: {
+          slidesPerView: 2,
         },
       }}
     >

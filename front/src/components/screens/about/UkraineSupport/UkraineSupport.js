@@ -1,15 +1,16 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import MainBlock from "@shared/MainBlock/MainBlock";
 import PopupVideo from "@shared/PopupVideo/PopupVideo";
+
 import uraganyLiveWebp from "@img/videos/music-videos/webp/uragany-live.webp";
 import uraganyLive from "@img/videos/music-videos/jpg/uragany-live.jpg";
 
-const SupportOfUkraine = () => {
+const UkraineSupport = () => {
   const text = [
-    "support-of-ukraine-1",
-    "support-of-ukraine-2",
-    "support-of-ukraine-3",
-    "support-of-ukraine-4",
+    "ukraine-support-1",
+    "ukraine-support-2",
+    "ukraine-support-3",
+    "ukraine-support-4",
   ];
   const img = [
     {
@@ -26,18 +27,22 @@ const SupportOfUkraine = () => {
     title: "ЛСП (LSP) — Ураганы (Hurricanes) [Live]",
   };
   const object = (
-    <PopupVideo className="support-of-ukraine__popup-video" img={img} video={video} />
+    <PopupVideo
+      className="ukraine-support__popup-video"
+      img={img}
+      video={video}
+    />
   );
 
   return (
-    <section className="support-of-ukraine">
+    <section className="ukraine-support">
       <ObjectOutsideContainer
-        className="support-of-ukraine__object-outside-container object-outside-container_pc"
+        className="ukraine-support__object-outside-container object-outside-container_pc"
         object={object}
       >
         <MainBlock
-          className="support-of-ukraine"
-          title="support-of-ukraine"
+          className="ukraine-support"
+          title="ukraine-support"
           text={text}
         />
       </ObjectOutsideContainer>
@@ -45,4 +50,4 @@ const SupportOfUkraine = () => {
   );
 };
 
-export default SupportOfUkraine;
+export default UkraineSupport;

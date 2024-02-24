@@ -1,4 +1,10 @@
-const Item = ({ item, swiperParallax, swiperParallaxDuration }) => {
+import clsx from "clsx";
+
+const Item = ({
+  item: { link, icon },
+  swiperParallax,
+  swiperParallaxDuration,
+}) => {
   const swiperParallaxAttr = swiperParallax && {
     "data-swiper-parallax": swiperParallax,
   };
@@ -14,10 +20,10 @@ const Item = ({ item, swiperParallax, swiperParallaxDuration }) => {
     >
       {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
       <a
-        href={item.link}
+        className={clsx("listen-on__link", `_icon-${icon}`)}
+        href={link}
         target="_blank"
         rel="noreferrer"
-        className={`listen-on__link _icon-${item.icon}`}
       ></a>
     </li>
   );

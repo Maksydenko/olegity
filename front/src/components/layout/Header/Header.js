@@ -6,7 +6,7 @@ import Menu from "@layout/navigation/Menu/Menu";
 import { useScrollLock } from "@hooks/useScrollLock";
 import { useWindowListener } from "@hooks/useWindowListener";
 
-import { breakpoints } from "@constants/breakpoint.const";
+import { breakpoints } from "@constants/breakpoints.const";
 
 import logo from "@img/logos/olegity.svg";
 

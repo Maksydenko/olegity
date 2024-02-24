@@ -1,5 +1,5 @@
-.support-of-ukraine {
-  // .support-of-ukraine__main-block
+.ukraine-support {
+  // .ukraine-support__main-block
 
   &__main-block {
     padding: rem(50) 0;
@@ -25,7 +25,7 @@
     }
   }
 
-  // .support-of-ukraine__popup-video
+  // .ukraine-support__popup-video
 
   &__popup-video {
     @media (min-width: $pc) {

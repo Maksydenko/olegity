@@ -1,11 +1,24 @@
 import Item from "./Item";
 
 const Items = ({ links, swiperParallax, swiperParallaxDuration }) => {
+  const { spotify, appleMusic, youtubeMusic, deezer } = links;
   const items = [
-    { link: links.spotify, icon: "spotify" },
-    { link: links.appleMusic, icon: "apple-music" },
-    { link: links.youtubeMusic, icon: "youtube-music" },
-    { link: links.deezer, icon: "deezer" },
+    {
+      link: spotify,
+      icon: "spotify",
+    },
+    {
+      link: appleMusic,
+      icon: "apple-music",
+    },
+    {
+      link: youtubeMusic,
+      icon: "youtube-music",
+    },
+    {
+      link: deezer,
+      icon: "deezer",
+    },
   ];
 
   return items.map((item, index) => (

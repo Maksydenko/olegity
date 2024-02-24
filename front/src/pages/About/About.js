@@ -8,7 +8,7 @@ import From2016To2017 from "@screens/about/From2016To2017/From2016To2017";
 import From2017To2018 from "@screens/about/From2017To2018/From2017To2018";
 import From2018ToPresent from "@screens/about/From2018ToPresent/From2018ToPresent";
 import Family from "@screens/about/Family/Family";
-import SupportOfUkraine from "@screens/about/SupportOfUkraine/SupportOfUkraine";
+import UkraineSupport from "@screens/about/UkraineSupport/UkraineSupport";
 
 const About = () => (
   <main className="about-page">
@@ -22,7 +22,7 @@ const About = () => (
     <From2017To2018 />
     <From2018ToPresent />
     <Family />
-    <SupportOfUkraine />
+    <UkraineSupport />
   </main>
 );
 
