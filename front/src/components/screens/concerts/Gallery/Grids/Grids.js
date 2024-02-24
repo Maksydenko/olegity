@@ -10,7 +10,7 @@ const Grids = ({ imgs }) => {
     groupedImgs.push(imgs.slice(i, i + 4));
   }
 
-  const grids = groupedImgs.map((groupImages, index) => {
+  const grids = groupedImgs.map((groupImgs, index) => {
     return (
       <div
         key={index}
@@ -23,7 +23,7 @@ const Grids = ({ imgs }) => {
             : " gallery__grid_tall-end"
         )}
       >
-        <Grid key={index} groupImages={groupImages} />
+        <Grid key={index} groupImgs={groupImgs} />
       </div>
     );
   });
