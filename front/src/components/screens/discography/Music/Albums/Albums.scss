@@ -63,25 +63,39 @@
     }
   }
 
-  // .albums__slider
+  // .albums__swiper
 
-  &__slider {
-    @media (max-width: $mobileSmall) {
-      .swiper-button-next::after,
-      .swiper-button-prev::after {
-        background-color: transparent;
+  &__swiper {
+    .swiper {
+      @media (max-width: $mobileSmall) {
+        // .swiper-button-next
+        &-button-next,
+        // .swiper-button-prev
+        &-button-prev {
+          &::after {
+            background-color: transparent;
 
-        @media (prefers-color-scheme: light) {
-          color: $mainColor;
+            @media (prefers-color-scheme: light) {
+              color: $mainColor;
+            }
+          }
         }
-      }
 
-      .swiper-button-prev::after {
-        left: rem(-23);
-      }
+        // .swiper-button-next
 
-      .swiper-button-next::after {
-        right: rem(-23);
+        &-button-prev {
+          &::after {
+            left: rem(-23);
+          }
+        }
+
+        // .swiper-button-prev
+
+        &-button-next {
+          &::after {
+            right: rem(-23);
+          }
+        }
       }
     }
   }

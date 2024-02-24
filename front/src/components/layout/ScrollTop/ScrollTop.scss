@@ -17,7 +17,6 @@
   &_active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.3s ease 0s;
     @include hover;
   }
 

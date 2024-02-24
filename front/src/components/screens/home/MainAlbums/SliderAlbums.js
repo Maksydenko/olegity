@@ -10,7 +10,7 @@ const SliderAlbums = () => {
 
   return (
     <SliderSwiper
-      className="main-albums"
+      className="main-albums__swiper"
       breakpoints={{
         320: {
           slidesPerView: 1,

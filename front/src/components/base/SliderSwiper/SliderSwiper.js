@@ -1,5 +1,3 @@
-import { handleClassName } from "@utils/className.util";
-
 // import Swiper core and required modules
 import {
   Navigation,
@@ -23,9 +21,10 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 // import "swiper/scss/scrollbar";
 
+import clsx from "clsx";
+
 const SliderSwiper = ({
   className,
-  modifier,
   children,
   // Navigation
   navigation = true,
@@ -104,7 +103,7 @@ const SliderSwiper = ({
 
   // Speed
   speed = 300,
-  // horizontal/vertical slider
+  // Slider horizontal/vertical
   direction = "horizontal",
   // Breakpoints (adaptive)
   breakpoints,
@@ -118,22 +117,20 @@ const SliderSwiper = ({
   const slides = children.map((slide, index) => (
     <SwiperSlide
       key={index}
-      {...(hash && { "data-hash": `${hash}-${index}` })}
-      {...(virtual && { virtualIndex: index })}
+      {...(hash && {
+        "data-hash": `${hash}-${index}`,
+      })}
+      {...(virtual && {
+        virtualIndex: index,
+      })}
     >
       {slide}
     </SwiperSlide>
   ));
 
-  const modifiedClassName = handleClassName(
-    !!modifier,
-    `${className}__slider`,
-    modifier
-  );
-
   return (
     <Swiper
-      className={modifiedClassName}
+      className={clsx(className)}
       // Modules
       modules={[
         Navigation,

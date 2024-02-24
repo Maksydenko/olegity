@@ -11,8 +11,8 @@ import { breakpoints } from "@constants/breakpoint.const";
 import logo from "@img/logos/olegity.svg";
 
 const Header = () => {
-  const breakpoint = breakpoints.tablet;
   const { isScrollLocked, setIsScrollLocked } = useScrollLock();
+  const breakpoint = breakpoints.tablet;
 
   const handleUnlockScroll = () => {
     if (isScrollLocked) {
@@ -48,7 +48,7 @@ const Header = () => {
     <header className="header">
       <div className="header__container">
         <Link to="/" className="header__logo" onClick={handleUnlockScroll}>
-          <Img className="footer__img" img={img} svg />
+          <Img className="header__img" img={img} svg />
         </Link>
         <Menu isScrollLocked={isScrollLocked} onClick={handleClick} />
       </div>

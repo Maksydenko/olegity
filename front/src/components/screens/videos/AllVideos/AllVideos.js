@@ -24,7 +24,7 @@ const AllVideos = () => {
   return (
     <div className="all-videos">
       <div className="all-videos__container">
-        <Tabs className="all-videos" tabs={tabs} />
+        <Tabs className="all-videos__tabs" tabs={tabs} />
       </div>
     </div>
   );

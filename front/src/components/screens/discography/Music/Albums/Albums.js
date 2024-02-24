@@ -9,7 +9,7 @@ const Albums = ({ albums }) => {
   return (
     <div className="music__albums albums">
       <div className="albums__container">
-        <SliderSwiper className="albums" loop parallax>
+        <SliderSwiper className="albums__swiper" loop parallax>
           {slides}
         </SliderSwiper>
       </div>

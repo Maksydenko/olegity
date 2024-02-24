@@ -22,30 +22,28 @@
   &__title {
     position: absolute;
     top: rem(20);
-    left: rem(calc($containerPadding / 2));
+    left: 0;
     z-index: 1;
+    max-width: 100%;
+    padding: 0 rem(calc($containerPadding / 2));
     font-size: rem(18);
-    font-weight: 500;
+    line-height: 1.15;
+    @include nowrapText;
   }
 
   // .popup-video__popup
 
   &__popup {
-    .popup {
-      // .popup__button
+    &.popup {
+      // .popup_button
 
-      &__button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+      &_btn {
+        @include centered(position);
+        @include hover;
+
         font-size: rem(80);
         color: $darkColor;
-        transition: all 0.3s ease 0s;
-        transform: translate(-50%, -50%);
-
-        &:hover {
-          opacity: 0.5;
-        }
+        transition: opacity 0.3s ease 0s;
       }
     }
   }

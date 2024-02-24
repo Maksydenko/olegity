@@ -5,6 +5,7 @@ import { musicVideos } from "@constants/videos/musicVideos.const";
 
 const SliderMedias = () => {
   const latestMusicVideos = musicVideos.slice(0, 5);
+
   const slides = latestMusicVideos.map((video) => {
     const { title, img } = video;
 
@@ -19,7 +20,12 @@ const SliderMedias = () => {
   });
 
   return (
-    <SliderSwiper className="main-videos" pagination virtual spaceBetween={0}>
+    <SliderSwiper
+      className="main-videos__swiper"
+      pagination
+      virtual
+      spaceBetween={0}
+    >
       {slides}
     </SliderSwiper>
   );

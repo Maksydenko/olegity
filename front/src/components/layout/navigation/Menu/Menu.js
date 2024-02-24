@@ -9,8 +9,8 @@ const Menu = ({ isScrollLocked, onClick }) => {
   return (
     <div className="header__menu menu">
       <button
-        type="button"
         className={handleClassName(isScrollLocked, "menu__button")}
+        type="button"
         onClick={onClick}
       >
         <span></span>

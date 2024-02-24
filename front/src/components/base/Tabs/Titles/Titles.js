@@ -1,14 +1,15 @@
 import Title from "./Title";
 
 const Titles = ({ tabs, activeTab, setActiveTab }) => {
+  const { length: tabsLength } = tabs;
+
   const titleItems = tabs.map((tab) => {
     const { id } = tab;
-    const { length } = tabs;
 
     return (
       <Title
         key={id}
-        tabsLength={length}
+        tabsLength={tabsLength}
         tab={tab}
         activeTab={activeTab}
         setActiveTab={setActiveTab}

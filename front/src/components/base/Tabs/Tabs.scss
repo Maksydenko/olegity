@@ -6,7 +6,6 @@
   &__titles {
     display: flex;
     font-family: $fontFamily2;
-    font-weight: 500;
     @include responsiveValue(font-size, 16, 14);
   }
 
@@ -23,7 +22,7 @@
     cursor: pointer;
     background-color: $darkBg;
     border-radius: 0 0 em(5, 16) em(5, 16);
-    transition: all 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
 
     &:not(:last-child) {
       margin-right: em(5, 16);

@@ -13,14 +13,14 @@ const Footer = () => {
   const img = {
     src: logo,
     alt: "Olgt",
-  }
+  };
 
   return (
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__main">
           <Link to="/" className="footer__logo">
-            <Img className="footer__img" img={img} svg/>
+            <Img className="footer__img" img={img} svg />
           </Link>
           <p className="footer__description">{t("footer-description")}</p>
         </div>

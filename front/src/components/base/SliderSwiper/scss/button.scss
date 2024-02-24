@@ -19,16 +19,13 @@
   &-button-prev,
   // .swiper-button-next
   &-button-next {
-    transition: all 0.3s ease 0s;
-
     @include hover;
+    transition: opacity 0.3s ease 0s;
 
     &::after {
+      @include centered(flex);
       position: absolute;
       top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: em(60, 44);
       height: em(60, 44);
       font-size: rem(44) !important;
@@ -46,15 +43,21 @@
 }
 
 [class*="__container"] {
-  .swiper-button-prev {
-    &::after {
-      left: rem(-5);
-    }
-  }
+  .swiper {
+    // .swiper-button-prev
 
-  .swiper-button-next {
-    &::after {
-      right: rem(-5);
+    &-button-prev {
+      &::after {
+        left: rem(-5);
+      }
+    }
+
+    // .swiper-button-next
+
+    &-button-next {
+      &::after {
+        right: rem(-5);
+      }
     }
   }
 }

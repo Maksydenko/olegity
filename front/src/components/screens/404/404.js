@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import { useRedirectToHomepage } from "./useRedirectToHomepage";
 
 const Page404 = () => {
-  const time = useRedirectToHomepage();
   const { t } = useTranslation();
+  const time = useRedirectToHomepage();
 
   return (
     <section className="not-found">

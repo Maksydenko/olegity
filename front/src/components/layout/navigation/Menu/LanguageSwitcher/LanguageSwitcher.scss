@@ -27,7 +27,7 @@
   &__btn {
     @include hover;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
 
     &:not(:disabled) {
       font-weight: 500;

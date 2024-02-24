@@ -53,13 +53,12 @@
       cursor: pointer;
       background-image: url("../../../assets/img/icons/cross.svg");
       background-size: contain;
-      transition: all 0.3s ease 0s;
+      transition: opacity 0.3s ease 0s;
       @include hover;
 
       @media (prefers-color-scheme: dark) {
         filter: invert(100%) contrast(200%);
       }
-
     }
 
     @media (prefers-color-scheme: dark) {

@@ -22,14 +22,11 @@
     text-align: center;
     border: em(2, 30) solid $mainColor;
     border-radius: em(10, 30);
-    transition: all 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+    @include hover;
 
     @media (prefers-color-scheme: dark) {
       border-color: $darkColor;
-    }
-
-    &:hover {
-      opacity: 0.5;
     }
   }
 }

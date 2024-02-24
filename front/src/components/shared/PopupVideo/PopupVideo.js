@@ -13,7 +13,7 @@ const PopupVideo = ({ className, img, video, title = true }) => {
     <div className={clsx(className, "popup-video")}>
       {title && <h4 className="popup-video__title">{videoTitle}</h4>}
       <Img className="popup-video__img" img={img} />
-      <Popup className="popup-video" button={button}>
+      <Popup className="popup-video__popup" button={button}>
         <Iframe className="popup-video__video" video={video} />
       </Popup>
     </div>

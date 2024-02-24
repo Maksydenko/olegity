@@ -1,37 +1,47 @@
 import { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import clsx from "clsx";
 
-const Popup = ({ className, children, button, isActive, setIsActive }) => {
+const Popup = ({
+  className,
+  children,
+  button,
+  isForceOpen,
+  setIsForceOpen,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const isActiveIsUndefined = typeof isActive === "undefined";
+  const isForceOpenIsUndefined = typeof isForceOpen === "undefined";
 
   const handleOpen = () => {
-    if (!isActiveIsUndefined && setIsActive) {
-      setIsActive(true);
+    if (!isForceOpenIsUndefined && setIsForceOpen) {
+      setIsForceOpen(true);
     } else {
       setIsOpen(true);
     }
   };
 
   const handleClose = () => {
-    if (!isActiveIsUndefined && setIsActive) {
-      setIsActive(false);
+    if (!isForceOpenIsUndefined && setIsForceOpen) {
+      setIsForceOpen(false);
     } else {
       setIsOpen(false);
     }
   };
 
-  const condition = !isActiveIsUndefined && setIsActive ? isActive : isOpen;
+  const condition =
+    !isForceOpenIsUndefined && setIsForceOpen ? isForceOpen : isOpen;
 
   return (
     <>
-      <div className={`${className}__popup popup`}>
-        <button className="popup__button" onClick={handleOpen}>
-          {button}
-        </button>
-      </div>
+      <button
+        className={clsx(className, "popup popup_btn")}
+        type="button"
+        onClick={handleOpen}
+      >
+        {button}
+      </button>
       <Transition appear show={condition}>
-        <Dialog className={`${className}__popup popup`} onClose={handleClose}>
+        <Dialog className={clsx(className, "popup")} onClose={handleClose}>
           <div className="popup__body">
             <Transition.Child
               className="popup__bg"
@@ -53,7 +63,11 @@ const Popup = ({ className, children, button, isActive, setIsActive }) => {
             >
               <Dialog.Panel className="popup__box">
                 <div className="popup__children">{children}</div>
-                <button className="popup__cross" onClick={handleClose}></button>
+                <button
+                  className="popup__cross"
+                  type="button"
+                  onClick={handleClose}
+                ></button>
               </Dialog.Panel>
             </Transition.Child>
           </div>

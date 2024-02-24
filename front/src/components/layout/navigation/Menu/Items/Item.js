@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import clsx from "clsx";
 
 const Item = ({ link: { value, href }, onClick }) => {
   const { pathname } = useLocation();
@@ -11,7 +12,7 @@ const Item = ({ link: { value, href }, onClick }) => {
     <li className="menu__item">
       <Link
         to={href}
-        className={`menu__link${isActive ? " menu__link_active" : ""}`}
+        className={clsx("menu__link", isActive && "menu__link_active")}
         onClick={onClick}
       >
         {t(value)}
