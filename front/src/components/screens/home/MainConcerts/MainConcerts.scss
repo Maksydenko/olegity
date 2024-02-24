@@ -14,10 +14,10 @@
   // .main-concerts__main-block
 
   &__main-block {
-    padding: rem(50) rem(20) rem(50) 0;
+    padding: rem(50) 0;
 
     @media (max-width: $mobile) {
-      padding: 0 0 rem(30);
+      padding: 0;
     }
   }
 

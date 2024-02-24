@@ -24,8 +24,16 @@ $object: 50%;
                 ((100vw - rem($containerPadding)) * ($object / 100%)) +
                   rem($containerPadding) / 2
               );
-            padding-bottom: 30%;
             transform: translate(-100%, 0);
+
+            div, a {
+              @include fill;
+              aspect-ratio: unset;
+
+              @supports not (aspect-ratio: unset) {
+                padding-top: 0;
+              }
+            }
           }
 
           @media (min-width: ($containerWidth + px)) {
@@ -88,6 +96,17 @@ $object: 50%;
               );
             padding-bottom: 30%;
             transform: translate(-100%, 0);
+
+            > * {
+              &:not(img, iframe, video) {
+                @include fill;
+                aspect-ratio: unset;
+
+                @supports not (aspect-ratio: unset) {
+                  padding-top: 0;
+                }
+              }
+            }
           }
 
           @media (min-width: ($containerWidth + px)) {

@@ -25,14 +25,15 @@
   // .language-switcher__btn
 
   &__btn {
+    @include hover;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
 
-    &:disabled {
-      opacity: 0.5;
+    &:not(:disabled) {
+      font-weight: 500;
     }
 
-    &:hover {
+    &:disabled {
       opacity: 0.5;
     }
   }

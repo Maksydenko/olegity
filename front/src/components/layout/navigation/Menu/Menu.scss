@@ -177,10 +177,7 @@
 
   a,
   button {
+    @include hover;
     transition: all 0.3s ease 0s;
-
-    &:hover {
-      opacity: 0.5;
-    }
   }
 }

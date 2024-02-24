@@ -2,12 +2,8 @@
   // .popup__body
 
   &__body {
-    position: fixed;
-    top: 0;
-    left: 0;
+    @include fill(fixed);
     z-index: 100;
-    width: 100%;
-    height: 100%;
 
     .popup {
       // .popup__body
@@ -21,20 +17,14 @@
   // .popup__bg
 
   &__bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    @include fill(fixed);
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   // .popup__content
 
   &__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered(flex);
     min-height: 100%;
     padding: rem(30) rem(50);
   }
@@ -54,10 +44,7 @@
     width: rem(30);
     height: rem(30);
     transition: all 0.3s ease 0s;
-
-    &:hover {
-      opacity: 0.5;
-    }
+    @include hover;
 
     &::before,
     &::after {

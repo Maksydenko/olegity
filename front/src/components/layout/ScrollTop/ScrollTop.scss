@@ -18,18 +18,13 @@
     visibility: visible;
     opacity: 1;
     transition: all 0.3s ease 0s;
-
-    &:hover {
-      opacity: 0.5;
-    }
+    @include hover;
   }
 
   // .menu__arrow-top
 
   &__arrow-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered(flex);
     width: em(60, 44);
     height: em(60, 44);
     color: $darkColor;

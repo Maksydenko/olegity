@@ -29,6 +29,10 @@
       margin-right: em(5, 16);
     }
 
+    &:not(&_active) {
+      @include hover;
+    }
+
     @media (prefers-color-scheme: dark) {
       color: $mainColor;
       background-color: $mainBg;
@@ -49,12 +53,8 @@
         display: block;
         padding: 0 em(5, 16);
         text-align: center;
-        @include nowrap;
+        @include nowrapText;
       }
-    }
-
-    &:hover {
-      opacity: 0.5;
     }
 
     // tabs__title_active
@@ -67,10 +67,6 @@
       @media (prefers-color-scheme: dark) {
         color: $darkColor;
         background-color: $darkBg;
-      }
-
-      &:hover {
-        opacity: 1;
       }
     }
   }

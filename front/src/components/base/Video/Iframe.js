@@ -12,7 +12,7 @@ const Iframe = ({ className, video: { src, title } }, loader) => {
   const isLoader = loader && isLoading;
 
   return (
-    <div className={clsx(className, "iframe")}>
+    <div className={clsx(className, "video")}>
       {isLoader && <Loader />}
       <iframe
         src={src}

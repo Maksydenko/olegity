@@ -4,20 +4,29 @@
   // .popup-video__img
 
   &__img {
-    // aspect-ratio: 16/9;
-    padding-bottom: 56.25%;
-    margin-bottom: rem(20);
+    aspect-ratio: 16/9;
+
+    @supports not (aspect-ratio: 16 / 9) {
+      padding-top: 56.25%;
+    }
 
     &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      @include fill;
       content: "";
       background-color: rgba(0, 0, 0, 0.3);
-      border-radius: rem(10);
     }
+  }
+
+  // .popup-video__title
+
+  &__title {
+    position: absolute;
+    top: rem(20);
+    left: rem(calc($containerPadding / 2));
+    z-index: 1;
+    font-family: $fontFamily2;
+    font-size: rem(18);
+    font-weight: 500;
   }
 
   // .popup-video__popup

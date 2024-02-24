@@ -60,12 +60,10 @@
     flex: 1 1 25%;
   }
 
-  a {
+  a,
+  button {
+    @include hover;
     transition: all 0.3s ease 0s;
-
-    &:hover {
-      opacity: 0.5;
-    }
   }
 
   h4 {
@@ -77,9 +75,9 @@
 
   li {
     font-size: rem(18);
-  }
 
-  li:not(:last-child) {
-    margin-bottom: em(10, 18);
+    &:not(:last-child) {
+      margin-bottom: em(10, 18);
+    }
   }
 }

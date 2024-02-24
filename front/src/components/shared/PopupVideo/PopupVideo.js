@@ -1,13 +1,17 @@
+import clsx from "clsx";
+
 import Img from "@base/Img/Img";
 import Popup from "@base/Popup/Popup";
 import Iframe from "@base/Video/Iframe";
 
-const PopupVideo = ({ className, video }) => {
-  const { img } = video;
+const PopupVideo = ({ className, img, video, title = true }) => {
+  const { title: videoTitle } = video;
+
   const button = <span className="_icon-youtube"></span>;
 
   return (
-    <div className={`${className}__popup-video popup-video`}>
+    <div className={clsx(className, "popup-video")}>
+      {title && <h5 className="popup-video__title">{videoTitle}</h5>}
       <Img className="popup-video__img" img={img} />
       <Popup className="popup-video" button={button}>
         <Iframe className="popup-video__video" video={video} />

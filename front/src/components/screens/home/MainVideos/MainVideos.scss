@@ -23,7 +23,7 @@
   // .main-videos__slider
 
   &__slider {
-    margin-bottom: rem(20);
+    margin-bottom: rem(30);
   }
 
   // .main-videos__popup-video
@@ -34,8 +34,11 @@
 
       &__img {
         @media (min-width: $pc) {
-          // aspect-ratio: 25/9;
-          padding-bottom: 36%;
+          aspect-ratio: 25/9;
+
+          @supports not (aspect-ratio: 25 / 9) {
+            padding-bottom: 36%;
+          }
         }
       }
     }

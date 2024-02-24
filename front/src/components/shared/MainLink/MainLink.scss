@@ -14,13 +14,19 @@
     font-size: rem(18);
   }
 
-  &:hover {
-    color: $darkColor;
-    background-color: $darkBg;
+  @include hover(
+    (
+      color: $darkColor,
+      background-color: $darkBg,
+    )
+  );
 
-    @media (prefers-color-scheme: dark) {
-      color: $mainColor;
-      background-color: $mainBg;
-    }
+  @media (prefers-color-scheme: dark) {
+    @include hover(
+      (
+        color: $mainColor,
+        background-color: $mainBg,
+      )
+    );
   }
 }

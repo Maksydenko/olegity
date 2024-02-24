@@ -25,9 +25,9 @@
     }
   }
 
-  // .support-of-ukraine__video
+  // .support-of-ukraine__popup-video
 
-  &__video {
+  &__popup-video {
     @media (min-width: $pc) {
       aspect-ratio: unset;
 
@@ -35,14 +35,17 @@
         padding-bottom: 0;
       }
 
-      iframe {
-        border-radius: rem(10) 0 0 rem(10);
+      .popup-video__img {
+        &::after,
+        img {
+          border-radius: rem(10) 0 0 rem(10);
+        }
       }
     }
   }
 
   &:first-child {
-    iframe {
+    img {
       border-top-left-radius: 0;
     }
   }

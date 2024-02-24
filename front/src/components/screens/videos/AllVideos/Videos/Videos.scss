@@ -41,6 +41,9 @@
       // .popup-video__img
 
       &__img {
+        margin-bottom: rem(20);
+
+        &::after,
         img {
           border-radius: rem(10);
         }

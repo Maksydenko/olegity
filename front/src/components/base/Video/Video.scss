@@ -8,6 +8,7 @@
 
   > video,
   > iframe {
-    @include responsiveObject;
+    @include fill;
+    object-fit: cover;
   }
 }

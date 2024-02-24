@@ -5,9 +5,9 @@ const MainLink = ({ className, link }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={`${className}__main-link main-link`}>
-      <Link to={link.path}>{t(link.value)}</Link>
-    </div>
+    <Link className={`${className}__main-link main-link`} to={link.path}>
+      {t(link.value)}
+    </Link>
   );
 };
 

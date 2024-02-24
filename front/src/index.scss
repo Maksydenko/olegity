@@ -7,11 +7,14 @@
 // Connection reset styles
 @import "assets/scss/base/reset";
 
-// Connecting basic component styles
-@import "assets/scss/base";
+// Connection typography styles
+@import "assets/scss/typography";
 
 // Connecting layout styles
 @import "@layout/Layout";
+
+// Connecting basic component styles
+@import "assets/scss/base";
 
 // Connecting shared component styles
 @import "assets/scss/shared";

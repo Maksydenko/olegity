@@ -37,7 +37,7 @@
         text-align: justify;
       }
 
-      p:not(:last-child) {
+      P:not(:last-child) {
         margin-bottom: em(15, 16);
       }
     }
