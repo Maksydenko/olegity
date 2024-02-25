@@ -18,8 +18,8 @@ const UkraineSupport = () => {
   ];
 
   const video = {
-    src: "https://www.youtube.com/embed/8CqwOVNB4-w?color=white",
     title: "ЛСП (LSP) — Ураганы (Hurricanes) [Live]",
+    url: "https://www.youtube.com/embed/8CqwOVNB4-w?color=white",
   };
 
   const object = (
