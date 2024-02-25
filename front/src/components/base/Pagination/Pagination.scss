@@ -23,6 +23,9 @@
 
   // .pagination__previous-link
   &__previous-link {
+    &::before {
+      transform: rotate(-90deg);
+    }
   }
 
   // .pagination__next
@@ -31,6 +34,9 @@
 
   // .pagination__next-link
   &__next-link {
+    &::before {
+      transform: rotate(90deg);
+    }
   }
 
   // .pagination__break
