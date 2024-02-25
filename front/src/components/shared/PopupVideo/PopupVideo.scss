@@ -1,6 +1,6 @@
 .popup-video {
   position: relative;
-  color: #fff;
+  color: $light;
 
   // .popup-video__img
 
@@ -43,7 +43,7 @@
         @include hover;
 
         font-size: rem(80);
-        color: #fff;
+        color: $light;
         transition: opacity 0.3s ease 0s;
       }
     }

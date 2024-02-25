@@ -18,7 +18,7 @@
       width: rem(6) !important;
       height: rem(6) !important;
       margin: 0 !important;
-      background-color: #fff !important;
+      background: $light !important;
 
       &:not(:last-child) {
         margin-right: rem(5) !important;
