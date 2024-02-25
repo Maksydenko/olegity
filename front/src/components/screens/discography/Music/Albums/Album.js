@@ -19,7 +19,7 @@ const Album = ({ album }) => {
         swiperParallaxDuration="500"
       />
       <ListenOn
-        className="albums__music-card"
+        className="albums__listen-on"
         links={links}
         swiperParallax="-800"
         swiperParallaxDuration="500"
