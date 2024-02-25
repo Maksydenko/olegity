@@ -6,7 +6,7 @@ import SliderAlbums from "./SliderAlbums";
 const MainAlbums = () => {
   const { t } = useTranslation();
   const link = {
-    path: "/discography",
+    path: "/discography#albums",
     value: "see-discography",
   };
 
