@@ -22,6 +22,8 @@ import "swiper/scss/pagination";
 // import "swiper/scss/scrollbar";
 
 import clsx from "clsx";
+import { useEffect, useRef } from "react";
+import { useBullets } from "./useBullets";
 
 const SliderSwiper = ({
   className,
@@ -66,7 +68,7 @@ const SliderSwiper = ({
   // Turn on/off only when the slider is within the viewport
   keyboardOnlyInViewport = true,
   // Turn on/off the control control of PageUp, PageDown
-  keyboardPageUpDown,
+  keyboardPageUpDown = true,
 
   // Mouse wheel control
   mousewheel,
@@ -114,6 +116,41 @@ const SliderSwiper = ({
   // Virtual slides
   virtual,
 }) => {
+  const { length: childrenLength } = children;
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    const swiperCurrent = swiperRef?.current;
+    const swiper = swiperCurrent?.swiper;
+
+    if (swiper) {
+      swiperCurrent.querySelectorAll("*").forEach((element) => {
+        element.setAttribute("tabIndex", "-1");
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    const swiperCurrent = swiperRef?.current;
+    const swiper = swiperCurrent?.swiper;
+    const swiperAutoplay = swiper?.autoplay;
+
+    if (swiperAutoplay) {
+      if (autoplay) {
+        swiperAutoplay.start();
+      } else {
+        swiperAutoplay.stop();
+      }
+    }
+  }, [autoplay]);
+
+  const isBullets =
+    pagination &&
+    paginationType === "bullets" &&
+    breakpoints &&
+    /* eslint-disable-next-line react-hooks/rules-of-hooks */
+    useBullets(breakpoints, slidesPerView, childrenLength);
+
   const slides = children.map((slide, index) => (
     <SwiperSlide
       key={index}
@@ -130,7 +167,8 @@ const SliderSwiper = ({
 
   return (
     <Swiper
-      className={clsx(className)}
+      className={clsx(className, "swiper", isBullets && "swiper_bullets")}
+      ref={swiperRef}
       // Modules
       modules={[
         Navigation,
@@ -178,7 +216,9 @@ const SliderSwiper = ({
       {...(hash && {
         hashNavigation:
           // Track the condition
-          { watchState: hashNavigationWatchState },
+          {
+            watchState: hashNavigationWatchState,
+          },
       })}
       // Keyboard management
       {...(keyboardEnabled && {
