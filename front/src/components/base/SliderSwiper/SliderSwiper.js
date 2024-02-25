@@ -1,3 +1,7 @@
+import { useEffect, useRef } from "react";
+import clsx from "clsx";
+import { useBullets } from "./useBullets";
+
 // import Swiper core and required modules
 import {
   Navigation,
@@ -20,10 +24,6 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 // import "swiper/scss/scrollbar";
-
-import clsx from "clsx";
-import { useEffect, useRef } from "react";
-import { useBullets } from "./useBullets";
 
 const SliderSwiper = ({
   className,
