@@ -1,17 +1,13 @@
+import { Tab } from "@headlessui/react";
+
 import Content from "./Content";
 
-const Contents = ({ tabs, activeTab }) => {
-  const contentItems = tabs.map((tab) => {
-    const { id, content } = tab;
-    const isActive = activeTab === id;
-
-    if (isActive) {
-      return <Content key={id} content={content} />;
-    }
-    return null;
+const Contents = ({ tabs }) => {
+  const contentItems = tabs.map(({ id, content }) => {
+    return <Content key={id} content={content} />;
   });
 
-  return <div className="tabs__contents">{contentItems}</div>;
+  return <Tab.Panels className="tabs__contents">{contentItems}</Tab.Panels>;
 };
 
 export default Contents;

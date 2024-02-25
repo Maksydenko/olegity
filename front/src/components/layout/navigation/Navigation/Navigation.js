@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <nav className="footer__navigation navigation">
-      <h3 className="navigation__title">{t("navigation")}</h3>
+      <h5 className="navigation__title">{t("navigation")}</h5>
       <Items links={links} />
     </nav>
   );

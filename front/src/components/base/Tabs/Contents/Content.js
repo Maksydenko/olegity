@@ -1,5 +1,10 @@
-const Content = ({ content }) => {
-  return <div className="tabs__content">{content}</div>;
-};
+import { Tab } from "@headlessui/react";
 
+const Content = ({ content }) => {
+  return (
+    <Tab.Panel className="tabs__content" tabIndex={-1}>
+      {content}
+    </Tab.Panel>
+  );
+};
 export default Content;

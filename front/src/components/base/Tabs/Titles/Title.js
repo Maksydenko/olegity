@@ -1,23 +1,23 @@
-import { handleClassName } from "@utils/className.util";
+import { Tab } from "@headlessui/react";
+import clsx from "clsx";
 
-const Title = ({ tabsLength, tab: { id, title }, activeTab, setActiveTab }) => {
-  const isActive = activeTab === id;
+const Title = ({ tabsLength, tab: { title }, vertical }) => {
+  const titleItem = typeof title === "string" ? <h3>{title}</h3> : title;
+
   const tabWidth = 100 / tabsLength;
-
-  const handleClick = () => setActiveTab(id);
-
-  const styleWidth = {
+  const titleStyle = {
     width: `${tabWidth}%`,
   };
 
   return (
-    <li
-      className={handleClassName(isActive, "tabs__title")}
-      style={styleWidth}
-      onClick={handleClick}
+    <Tab
+      className={({ selected }) =>
+        clsx("tabs__title", selected && "tabs__title_active")
+      }
+      style={vertical ? {} : titleStyle}
     >
-      <span>{title}</span>
-    </li>
+      {titleItem}
+    </Tab>
   );
 };
 

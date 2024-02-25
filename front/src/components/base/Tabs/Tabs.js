@@ -1,17 +1,16 @@
-import { useState } from "react";
+import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
 import Titles from "./Titles/Titles";
 import Contents from "./Contents/Contents";
 
-const Tabs = ({ className, tabs, defaultTab = 0 }) => {
-  const idDefaultTab = tabs[defaultTab].id;
-  const [activeTab, setActiveTab] = useState(idDefaultTab);
-
+const Tabs = ({ className, tabs, vertical, defaultTab = 0 }) => {
   return (
-    <div className={clsx(className, "tabs")}>
-      <Titles tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
-      <Contents tabs={tabs} activeTab={activeTab} />
+    <div className={clsx(className, "tabs", vertical && "tabs_vertical")}>
+      <Tab.Group vertical={vertical} defaultIndex={defaultTab}>
+        <Titles tabs={tabs} vertical={vertical} />
+        <Contents tabs={tabs} />
+      </Tab.Group>
     </div>
   );
 };

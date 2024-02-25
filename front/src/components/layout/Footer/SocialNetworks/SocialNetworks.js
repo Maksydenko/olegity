@@ -9,7 +9,7 @@ const SocialNetworks = () => {
 
   return (
     <div className="footer__social-networks social-networks">
-      <h3 className="social-networks__title">{t("social-networks")}</h3>
+      <h5 className="social-networks__title">{t("social-networks")}</h5>
       <Items links={links} />
     </div>
   );

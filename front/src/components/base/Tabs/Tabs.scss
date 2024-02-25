@@ -5,17 +5,14 @@
 
   &__titles {
     display: flex;
-    font-family: $fontFamily2;
     @include responsiveValue(font-size, 16, 14);
   }
 
   // tabs__title
 
   &__title {
-    display: flex;
+    @include centered(flex);
     flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
     height: em(50, 16);
     color: $darkColor;
     text-transform: uppercase;
@@ -30,6 +27,10 @@
 
     &:not(&_active) {
       @include hover;
+    }
+
+    &:focus-visible {
+      outline: none;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -48,7 +49,7 @@
     }
 
     @media (max-width: $mobile) {
-      > span {
+      > * {
         display: block;
         padding: 0 em(5, 16);
         text-align: center;
@@ -59,14 +60,16 @@
     // tabs__title_active
 
     &_active {
-      font-weight: 500;
       color: $mainColor;
-      cursor: default;
-      background-color: $mainBg;
+      cursor: default !important;
 
       @media (prefers-color-scheme: dark) {
         color: $darkColor;
         background-color: $darkBg;
+      }
+
+      > * {
+        font-weight: 400;
       }
     }
   }
