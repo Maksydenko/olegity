@@ -5,7 +5,6 @@
     display: grid;
     gap: em(15, 30);
     justify-content: center;
-    font-size: rem(30);
   }
 
   // .listen-on__item
@@ -16,11 +15,13 @@
   // .listen-on__link
 
   &__link {
+    @extend %btn;
+    @extend %btn_hover;
     display: block;
     padding: em(10, 30);
+    font-size: rem(30);
     text-align: center;
-    border: em(2, 30) solid var(--mainColor);
+    border-width: em(2, 30);
     border-radius: em(10, 30);
-    @extend %btn_hover;
   }
 }
