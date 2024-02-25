@@ -39,21 +39,13 @@
 
   &__genre {
     padding-right: em(5, 16);
-    border-right: em(1, 16) solid $mainColor;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: $darkColor;
-    }
+    border-right: em(1, 16) solid var(--mainColor);
   }
 
   // .music-cards__year
 
   &__year {
     padding-left: em(5, 16);
-    border-left: em(1, 16) solid $mainColor;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: $darkColor;
-    }
+    border-left: em(1, 16) solid var(--mainColor);
   }
 }

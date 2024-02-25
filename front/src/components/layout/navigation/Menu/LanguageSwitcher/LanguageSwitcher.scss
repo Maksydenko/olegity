@@ -1,10 +1,9 @@
 .language-switcher {
   display: flex;
   font-size: rem(16);
-  color: $darkColor;
+  color: #fff;
 
   @media (max-width: $tablet) {
-    order: -1;
     font-size: rem(20);
   }
 
@@ -13,12 +12,12 @@
   &__item {
     &:not(:last-child) {
       padding-right: em(10, 16);
-      border-right: em(1, 16) solid $darkColor;
+      border-right: em(1, 16) solid #fff;
     }
 
     &:not(:first-child) {
       padding-left: em(10, 16);
-      border-left: em(1, 16) solid $darkColor;
+      border-left: em(1, 16) solid #fff;
     }
   }
 

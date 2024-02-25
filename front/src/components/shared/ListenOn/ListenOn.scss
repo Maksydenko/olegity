@@ -19,12 +19,8 @@
     display: block;
     padding: em(10, 30);
     text-align: center;
-    border: em(2, 30) solid $mainColor;
+    border: em(2, 30) solid var(--mainColor);
     border-radius: em(10, 30);
     @extend %btn_hover;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: $darkColor;
-    }
   }
 }

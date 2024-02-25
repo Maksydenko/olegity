@@ -16,10 +16,10 @@
     position: relative;
     flex: 1 1 auto;
     height: em(50, 16);
-    color: $darkColor;
+    color: var(--mainBg);
     text-transform: uppercase;
     cursor: pointer;
-    background-color: $darkBg;
+    background-color: var(--mainColor);
     border-radius: 0 0 em(5, 16) em(5, 16);
     transition: opacity 0.3s ease 0s;
 
@@ -41,14 +41,9 @@
         bottom: em(-2, 16);
         left: em(-2, 16);
         content: "";
-        border: em(1, 16) solid $mainColor;
+        border: em(1, 16) solid var(--mainColor);
         border-radius: 0 0 em(5, 16) em(5, 16);
       }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      color: $mainColor;
-      background-color: $mainBg;
     }
 
     @media (max-width: $pc) {
@@ -73,17 +68,9 @@
     // tabs__title_active
 
     &_active {
-      color: $mainColor;
+      color: var(--mainColor);
       cursor: default !important;
-
-      @media (prefers-color-scheme: dark) {
-        color: $darkColor;
-        background-color: $darkBg;
-      }
-
-      > * {
-        font-weight: 400;
-      }
+      background-color: var(--mainBg);
     }
   }
 
@@ -108,7 +95,7 @@
         bottom: rem(-1);
         left: rem(1);
         content: "";
-        border: rem(1) solid $mainColor;
+        border: rem(1) solid var(--mainColor);
         border-radius: rem(5);
       }
     }

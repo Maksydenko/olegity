@@ -1,11 +1,7 @@
 .main-videos {
   position: relative;
   text-align: center;
-  background-color: $mainBg;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $darkBg;
-  }
+  background-color: var(--mainBg);
 
   @media (min-width: $mobile) {
     padding-bottom: rem(50);

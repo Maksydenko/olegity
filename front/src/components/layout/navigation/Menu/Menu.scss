@@ -1,4 +1,5 @@
 @import "LanguageSwitcher/LanguageSwitcher";
+@import "ThemeSwitcher/ThemeSwitcher";
 
 .menu {
   // .menu__button
@@ -20,7 +21,7 @@
         left: 0;
         width: 100%;
         height: 9.5%;
-        background-color: $darkColor;
+        background-color: #fff;
         border-radius: rem(5);
         transition: all 0.3s ease 0s;
       }
@@ -88,8 +89,9 @@
       position: fixed;
       top: 0;
       right: -100%;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: flex-end;
+      justify-content: flex-end;
       width: 100%;
       height: 100%;
       padding: rem(100) rem(30) rem(30) rem(30);
@@ -159,7 +161,7 @@
 
   &__link {
     flex: 0 1 auto;
-    color: $darkColor;
+    color: #fff;
     text-align: right;
 
     @media (min-width: $tablet) {

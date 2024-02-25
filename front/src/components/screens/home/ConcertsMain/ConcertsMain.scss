@@ -1,10 +1,6 @@
 .concerts-main {
   position: relative;
-  background-color: $mainBg;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $darkBg;
-  }
+  background-color: var(--mainBg);
 
   // .concerts-main__container
 

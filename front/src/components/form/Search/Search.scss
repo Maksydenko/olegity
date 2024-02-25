@@ -1,3 +1,6 @@
+@include dataTheme(placeholderColor, #757575, #d6d6d6);
+@include dataTheme(searchCancelBtn, 0, 100%);
+
 .search {
   // .search__filter-text
 
@@ -8,16 +11,11 @@
     align-items: center;
     max-width: rem(370);
     padding: em(10, 16) em(15, 16);
-    color: $mainColor;
-    border: em(2, 16) solid $mainColor;
+    color: var(--mainColor);
+    border: em(2, 16) solid var(--mainColor);
     border-radius: em(5, 16);
     transform: translateX(-50%);
     @include responsiveValue(font-size, 16, 14);
-
-    @media (prefers-color-scheme: dark) {
-      color: $darkColor;
-      border-color: $darkColor;
-    }
 
     > * {
       &:not(:last-child) {
@@ -28,11 +26,7 @@
     // .search__filter-text_focus
 
     &_focus {
-      box-shadow: 0 0 em(2, 16) em(2, 16) $mainColor;
-
-      @media (prefers-color-scheme: dark) {
-        box-shadow: 0 0 em(2, 16) em(2, 16) $darkColor;
-      }
+      box-shadow: 0 0 em(2, 16) em(2, 16) var(--mainColor);
     }
   }
 
@@ -47,24 +41,17 @@
     flex: 1 1 auto;
 
     &::-webkit-search-cancel-button {
+      @include hover;
       width: em(16, 16);
       height: em(16, 16);
+      color: var(--placeholderColor);
       appearance: none;
       cursor: pointer;
       background-image: url("../../../assets/img/icons/cross.svg");
+      filter: invert(var(--searchCancelBtn))
+        contrast(calc(var(--searchCancelBtn) * 2));
       background-size: contain;
       transition: opacity 0.3s ease 0s;
-      @include hover;
-
-      @media (prefers-color-scheme: dark) {
-        filter: invert(100%) contrast(200%);
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      &::placeholder {
-        color: #d6d6d6;
-      }
     }
   }
 }

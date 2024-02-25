@@ -3,23 +3,19 @@
 @import "Footer/Footer";
 
 // Scrollbar styles
+
+@include dataTheme(scrollColor, #a3a3a3, #808080);
+@include dataTheme(scrollBg, #f1f1f1, #424242);
+
 ::-webkit-scrollbar {
   width: $scrollbarWidth;
-  background-color: #f1f1f1;
+  background-color: var(--scrollBg);
 
-  @media (prefers-color-scheme: dark) {
-    background-color: #424242;
-  }
-
-  // ::-webkit-scrollbar-thumb
+  // ::-webkit-scrollbar-thumbs
 
   &-thumb {
-    background-color: #a3a3a3;
+    background-color: var(--scrollColor);
     border-radius: rem(5);
-
-    @media (prefers-color-scheme: dark) {
-      background-color: #808080;
-    }
   }
 }
 

@@ -4,6 +4,7 @@ import Items from "./Items/Items";
 import LanguageSwitcher from "./LanguageSwitcher/LanguageSwitcher";
 
 import { links } from "@layout/navigation/links.const";
+import ThemeSwitcher from "./ThemeSwitcher/ThemeSwitcher";
 
 const Menu = ({ isScrollLocked, onClick }) => {
   return (
@@ -23,6 +24,7 @@ const Menu = ({ isScrollLocked, onClick }) => {
       >
         <Items links={links} onClick={onClick} />
         <LanguageSwitcher onClick={onClick} />
+        <ThemeSwitcher />
       </nav>
     </div>
   );

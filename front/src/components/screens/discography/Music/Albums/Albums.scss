@@ -76,7 +76,7 @@
             background-color: transparent;
 
             @media (prefers-color-scheme: light) {
-              color: $mainColor;
+              color: var(--mainColor);
             }
           }
         }

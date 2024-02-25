@@ -5,12 +5,8 @@
   padding: em(15, 18);
   font-size: rem(18);
   font-weight: 500;
-  border: em(2, 18) solid $mainColor;
+  border: em(2, 18) solid var(--mainColor);
   border-radius: em(5, 18);
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $darkColor;
-  }
 
   @media (max-width: $mobile) {
     font-size: rem(16);
@@ -19,9 +15,9 @@
   // %btn_active
 
   &_active {
-    color: $mainColor;
+    color: var(--mainColor);
     cursor: default;
-    background-color: $mainBg;
+    background-color: var(--mainBg);
   }
 
   // %btn_hover
@@ -31,18 +27,9 @@
 
     @include hover(
       (
-        color: $darkColor,
-        background-color: $darkBg,
+        color: var(--mainBg),
+        background-color: var(--mainColor),
       )
     );
-
-    @media (prefers-color-scheme: dark) {
-      @include hover(
-        (
-          color: $mainColor,
-          background-color: $mainBg,
-        )
-      );
-    }
   }
 }

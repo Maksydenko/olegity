@@ -8,12 +8,8 @@ $fontFamily2: "Montserrat";
 
 // Primary colors
 
-// Light scheme
-$mainColor: #333;
-$mainBg: #fff;
-// Dark scheme
-$darkColor: #fff;
-$darkBg: #333;
+@include dataTheme(mainColor, #333, #fff);
+@include dataTheme(mainBg, #fff, #333);
 
 // ============================================================================
 
