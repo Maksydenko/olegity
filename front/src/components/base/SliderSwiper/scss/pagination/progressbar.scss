@@ -1,3 +1,5 @@
+@include dataTheme(progressbarFillOpacity, 0.8, 1);
+
 .swiper {
   // .swiper-pagination
 
@@ -9,6 +11,7 @@
 
       &-fill {
         background: $light !important;
+        opacity: var(--progressbarFillOpacity);
       }
     }
   }
