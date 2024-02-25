@@ -9,9 +9,9 @@
     }
   }
 
-  // .about-section__main-block
+  // .about-section__text-block
 
-  &__main-block {
+  &__text-block {
     flex: 1 1 47.5%;
     align-self: center;
     padding: rem(50) rem(20) rem(50) 0;
@@ -20,8 +20,8 @@
       padding: 0 0 rem(30);
     }
 
-    .main-block {
-      // .main-block__title
+    .text-block {
+      // .text-block__title
 
       &__title {
         margin-bottom: em(20, 32);
@@ -33,7 +33,7 @@
         }
       }
 
-      // .main-block__text
+      // .text-block__text
 
       &__text {
         > p {
@@ -55,9 +55,9 @@
 
   &:nth-child(even) {
     .about-section {
-      // .about-section__main-block
+      // .about-section__text-block
 
-      &__main-block {
+      &__text-block {
         padding: rem(50) 0 rem(50) rem(20);
 
         @media (min-width: $tablet) {

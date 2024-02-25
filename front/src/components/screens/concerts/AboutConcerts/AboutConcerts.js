@@ -1,6 +1,6 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@base/Img/Img";
-import MainBlock from "@shared/MainBlock/MainBlock";
+import TextBlock from "@shared/TextBlock/TextBlock";
 
 import concertWebp from "@img/lsp/webp/concert.webp";
 import concert from "@img/lsp/jpg/concert.jpg";
@@ -25,8 +25,8 @@ const AboutConcerts = () => {
         className="about-concerts__object-outside-container"
         object={object}
       >
-        <MainBlock
-          className="about-concerts__main-block"
+        <TextBlock
+          className="about-concerts__text-block"
           keyword="about-concerts"
         />
       </ObjectOutsideContainer>

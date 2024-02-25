@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 import Btn from "@form/Btn/Btn";
 
-const MainBlock = ({ className, keyword, link }) => {
+const TextBlock = ({ className, keyword, link }) => {
   const { t } = useTranslation();
 
   const getTranslation = (key) => {
@@ -20,11 +20,11 @@ const MainBlock = ({ className, keyword, link }) => {
   });
 
   return (
-    <div className={clsx(className, "main-block")}>
-      <h2 className="main-block__title">{translationTitle}</h2>
-      <div className="main-block__text">{textItems}</div>
+    <div className={clsx(className, "text-block")}>
+      <h2 className="text-block__title">{translationTitle}</h2>
+      <div className="text-block__text">{textItems}</div>
       {link && (
-        <Btn className="main-block" path={link.path}>
+        <Btn className="text-block" path={link.path}>
           {t(link.value)}
         </Btn>
       )}
@@ -32,4 +32,4 @@ const MainBlock = ({ className, keyword, link }) => {
   );
 };
 
-export default MainBlock;
+export default TextBlock;

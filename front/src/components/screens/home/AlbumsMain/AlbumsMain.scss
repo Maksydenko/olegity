@@ -32,9 +32,9 @@
     margin: 0 auto;
   }
 
-  // .main-albums__main-block
+  // .main-albums__text-block
 
-  &__main-block {
+  &__text-block {
     [class*="__link"] {
       @media (min-width: $mobile) {
         font-size: rem(18);

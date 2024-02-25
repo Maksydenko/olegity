@@ -11,9 +11,9 @@
   &__container {
   }
 
-  // .main-about__main-block
+  // .main-about__text-block
 
-  &__main-block {
+  &__text-block {
     padding: rem(50) 0 rem(50);
 
     @media (max-width: $mobile) {

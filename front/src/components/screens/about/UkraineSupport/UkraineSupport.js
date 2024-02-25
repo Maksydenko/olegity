@@ -1,5 +1,5 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
-import MainBlock from "@shared/MainBlock/MainBlock";
+import TextBlock from "@shared/TextBlock/TextBlock";
 import PopupVideo from "@shared/PopupVideo/PopupVideo";
 
 import uraganyLiveWebp from "@img/videos/music-videos/webp/uragany-live.webp";
@@ -36,8 +36,8 @@ const UkraineSupport = () => {
         className="ukraine-support__object-outside-container object-outside-container_pc"
         object={object}
       >
-        <MainBlock
-          className="ukraine-support__main-block"
+        <TextBlock
+          className="ukraine-support__text-block"
           keyword="ukraine-support"
         />
       </ObjectOutsideContainer>

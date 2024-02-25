@@ -1,6 +1,6 @@
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@base/Img/Img";
-import MainBlock from "@shared/MainBlock/MainBlock";
+import TextBlock from "@shared/TextBlock/TextBlock";
 
 import olegLspWebp from "@img/lsp/webp/main-about.webp";
 import olegLsp from "@img/lsp/jpg/main-about.jpg";
@@ -30,8 +30,8 @@ const MainAbout = () => {
         className="main-about__object-outside-container"
         object={object}
       >
-        <MainBlock
-          className="main-about__main-block"
+        <TextBlock
+          className="main-about__text-block"
           keyword="about-main"
           link={link}
         />
