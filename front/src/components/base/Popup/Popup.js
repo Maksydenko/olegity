@@ -5,10 +5,10 @@ import clsx from "clsx";
 const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
   const isForceOpenIsUndefined = typeof forceOpen === "undefined";
-  const isForce = !isForceOpenIsUndefined && setForceOpen;
+  const isForceOpen = !isForceOpenIsUndefined && setForceOpen;
 
   const handleOpen = () => {
-    if (isForce) {
+    if (isForceOpen) {
       setForceOpen(true);
     } else {
       setIsOpen(true);
@@ -16,14 +16,14 @@ const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
   };
 
   const handleClose = () => {
-    if (isForce) {
+    if (isForceOpen) {
       setForceOpen(false);
     } else {
       setIsOpen(false);
     }
   };
 
-  const show = isForce ? forceOpen : isOpen;
+  const show = isForceOpen ? forceOpen : isOpen;
 
   return (
     <>
