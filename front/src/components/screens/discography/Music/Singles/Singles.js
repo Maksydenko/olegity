@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 
 import Pagination from "@base/Pagination/Pagination";
 import Search from "@shared/Search/Search";
@@ -10,14 +10,12 @@ const Singles = ({ singles }) => {
 
   const itemsPerPage = 12;
 
-  const filteredSingles = useMemo(() => {
-    return singles.filter(({ title }) => {
-      const titleLowerCased = title.toLowerCase();
-      const filterTextLowerCased = text.toLowerCase();
+  const filteredSingles = singles.filter(({ title }) => {
+    const titleLowerCased = title.toLowerCase();
+    const filterTextLowerCased = text.toLowerCase();
 
-      return titleLowerCased.includes(filterTextLowerCased);
-    });
-  }, [singles, text]);
+    return titleLowerCased.includes(filterTextLowerCased);
+  });
   const { length: filteredSinglesLength } = filteredSingles;
 
   const endOffset = itemOffset + itemsPerPage;
