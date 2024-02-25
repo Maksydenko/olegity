@@ -11,16 +11,16 @@ export const useLoadingObject = (objectRef) => {
     const { current: objectCurrent } = objectRef;
     const isComplete = objectCurrent?.complete;
 
-    const isImg = objectCurrent;
-    const isImgComplete = isImg && isComplete;
-
-    if (isImgComplete) {
+    if (isComplete) {
       handleLoadingComplete();
     } else {
-      objectCurrent?.addEventListener("load", handleLoadingComplete);
+      const iframe = objectCurrent?.querySelector("iframe");
+      let loadingObject = iframe || objectCurrent;
+
+      loadingObject?.addEventListener("load", handleLoadingComplete);
 
       return () => {
-        objectCurrent?.removeEventListener("load", handleLoadingComplete);
+        loadingObject?.removeEventListener("load", handleLoadingComplete);
       };
     }
   }, [objectRef, isLoading]);

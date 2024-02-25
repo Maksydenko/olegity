@@ -1,9 +1,24 @@
+import { useRef } from "react";
 import ReactPlayer from "react-player/lazy";
 import clsx from "clsx";
 
-const ReactVideo = ({ className, url, img }) => {
+import Loader from "@shared/Loader/Loader";
+
+import { useLoadingObject } from "@hooks/useLoadingObject";
+
+const Video = ({ className, url, img, loader = true }) => {
+  const videoRef = useRef(null);
+  const { isLoading } = useLoadingObject(videoRef);
+
+  const isLoader = loader && isLoading;
+
   return (
-    <div className={clsx(className, "video")}>
+    <span
+      style={{ display: "block" }}
+      className={clsx(className, "video")}
+      ref={videoRef}
+    >
+      {isLoader && <Loader />}
       <ReactPlayer
         url={url}
         width="100%"
@@ -12,8 +27,8 @@ const ReactVideo = ({ className, url, img }) => {
           light: img,
         })}
       />
-    </div>
+    </span>
   );
 };
 
-export default ReactVideo;
+export default Video;
