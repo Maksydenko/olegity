@@ -18,6 +18,12 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
     onSwitchTheme(label);
   };
 
+  const handleKeyDown = ({ key }) => {
+    if (key === "Enter") {
+      handleChange();
+    }
+  };
+
   const id = `${label}-theme`;
 
   const img = {
@@ -42,9 +48,10 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
         )}
         role="button"
         tabIndex={isChecked ? -1 : 0}
+        focusVisible={isFocus}
         onFocus={handleFocus}
         onBlur={handleBlur}
-        focusVisible={isFocus}
+        onKeyDown={handleKeyDown}
       >
         <Img className="theme-switcher__img" img={img} svg loader={false} />
       </label>

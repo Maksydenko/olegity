@@ -24,8 +24,7 @@
   // .theme-switcher__input
 
   &__input {
-    @include fill;
-    opacity: 0;
+    display: none;
 
     @for $i from 1 through 3 {
       &:nth-of-type(#{$i}) {
