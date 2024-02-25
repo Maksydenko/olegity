@@ -2,8 +2,8 @@ import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideCo
 import Img from "@base/Img/Img";
 import TextBlock from "@shared/TextBlock/TextBlock";
 
-import olegLspWebp from "@img/lsp/webp/main-about.webp";
-import olegLsp from "@img/lsp/jpg/main-about.jpg";
+import olegLspWebp from "@img/lsp/webp/about-main.webp";
+import olegLsp from "@img/lsp/jpg/about-main.jpg";
 
 const MainAbout = () => {
   const link = {
@@ -22,16 +22,16 @@ const MainAbout = () => {
     },
   ];
 
-  const object = <Img className="main-about__img" img={img} />;
+  const object = <Img className="about-main__img" img={img} />;
 
   return (
-    <section className="main-about">
+    <section className="about-main">
       <ObjectOutsideContainer
-        className="main-about__object-outside-container"
+        className="about-main__object-outside-container"
         object={object}
       >
         <TextBlock
-          className="main-about__text-block"
+          className="about-main__text-block"
           keyword="about-main"
           link={link}
         />

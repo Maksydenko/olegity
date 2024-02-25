@@ -1,4 +1,4 @@
-.main-about {
+.about-main {
   position: relative;
   background-color: $mainBg;
 
@@ -6,12 +6,12 @@
     background-color: $darkBg;
   }
 
-  // .main-about__container
+  // .about-main__container
 
   &__container {
   }
 
-  // .main-about__text-block
+  // .about-main__text-block
 
   &__text-block {
     padding: rem(50) 0 rem(50);
@@ -21,7 +21,7 @@
     }
   }
 
-  // .main-about__img
+  // .about-main__img
 
   &__img {
     @media (min-width: $mobile) {

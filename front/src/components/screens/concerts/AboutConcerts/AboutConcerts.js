@@ -2,8 +2,8 @@ import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideCo
 import Img from "@base/Img/Img";
 import TextBlock from "@shared/TextBlock/TextBlock";
 
-import concertWebp from "@img/lsp/webp/concert.webp";
-import concert from "@img/lsp/jpg/concert.jpg";
+import concertWebp from "@img/lsp/webp/concerts.webp";
+import concert from "@img/lsp/jpg/concerts.jpg";
 
 const AboutConcerts = () => {
   const img = [
