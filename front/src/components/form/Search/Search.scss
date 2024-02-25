@@ -1,4 +1,4 @@
-@include dataTheme(placeholderColor, #757575, #d6d6d6);
+@include dataTheme(searchPlaceholderColor, #757575, #d6d6d6);
 @include dataTheme(searchCancelBtn, 0, 100%);
 
 .search {
@@ -44,7 +44,7 @@
       @include hover;
       width: em(16, 16);
       height: em(16, 16);
-      color: var(--placeholderColor);
+      color: var(--searchPlaceholderColor);
       appearance: none;
       cursor: pointer;
       background-image: url("../../../assets/img/icons/cross.svg");
