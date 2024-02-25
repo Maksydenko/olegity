@@ -1,5 +1,5 @@
 import FullScreen from "@base/FullScreen/FullScreen";
-import Video from "@base/Video/Video";
+import LocalVideo from "@base/Video/LocalVideo";
 import Img from "@base/Img/Img";
 
 import videoMp4 from "@assets/videos/binokl.mp4";
@@ -18,7 +18,7 @@ const FullScreenVideo = () => {
   };
 
   const background = (
-    <Video
+    <LocalVideo
       className="full-screen-video__video"
       video={video}
       poster={poster}
@@ -27,7 +27,10 @@ const FullScreenVideo = () => {
 
   return (
     <section className="full-screen-video">
-      <FullScreen className="full-screen-video__full-screen" background={background}>
+      <FullScreen
+        className="full-screen-video__full-screen"
+        background={background}
+      >
         <Img className="full-screen-video__img" img={img} />
       </FullScreen>
     </section>

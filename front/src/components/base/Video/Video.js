@@ -1,33 +1,19 @@
-import clsx from 'clsx';
+import ReactPlayer from "react-player/lazy";
+import clsx from "clsx";
 
-import Sources from "./Sources";
-
-const Video = ({
-  className,
-  poster,
-  video,
-  autoPlay = true,
-  muted = true,
-  controls,
-  loop = true,
-  preload,
-}) => {
-  const videoAttrs = {
-    poster,
-    autoPlay,
-    muted,
-    controls,
-    loop,
-    preload,
-  };
-
+const ReactVideo = ({ className, url, img }) => {
   return (
     <div className={clsx(className, "video")}>
-      <video {...videoAttrs}>
-        <Sources video={video} />
-      </video>
+      <ReactPlayer
+        url={url}
+        width="100%"
+        height="100%"
+        {...(img && {
+          light: img,
+        })}
+      />
     </div>
   );
 };
 
-export default Video;
+export default ReactVideo;

@@ -39,8 +39,8 @@ import kokteyl from "@img/videos/music-videos/jpg/kokteyl.jpg";
 
 export const musicVideos = [
   {
-    src: "https://www.youtube.com/embed/YjDyNvP_sEc?color=white",
     title: "ЛСП (LSP) — Вечная весна (Eternal spring)",
+    url: "https://www.youtube.com/embed/YjDyNvP_sEc?color=white",
     img: [
       {
         src: vechnayaVesnaWebp,
@@ -53,9 +53,9 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/z5Vp0e2Xo5I?color=white",
     title:
       "ЛСП (LSP) — Лабиринт отражений (Labyrinth of reflections) [2017 unreleased]",
+    url: "https://www.youtube.com/embed/z5Vp0e2Xo5I?color=white",
     img: [
       {
         src: labirintOtrazheniyWebp,
@@ -68,8 +68,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/co1oQKwkw-8?color=white",
     title: "ЛСП (LSP) & Dose — Солнце Золотое (Golden Sun)",
+    url: "https://www.youtube.com/embed/co1oQKwkw-8?color=white",
     img: [
       {
         src: solntseZolotoyeWebp,
@@ -82,8 +82,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/dQDxG9Tedus?color=white",
     title: "ЛСП (LSP) & Нюша (Nyusha) — Грязные танцы (Dirty dancing)",
+    url: "https://www.youtube.com/embed/dQDxG9Tedus?color=white",
     img: [
       {
         src: gryaznyyeTantsyWebp,
@@ -96,9 +96,9 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/fitVaTcv7ag?color=white",
     title:
       "ЛСП (LSP) — ЕСТЬ ДЕНЬГИ НЕТ ЧУВСТВ (HAVE MONEY NO FEELINGS) [PROD. BY SLAVA MARLOW]",
+    url: "https://www.youtube.com/embed/fitVaTcv7ag?color=white",
     img: [
       {
         src: yestDengiNetChuvstvWebp,
@@ -111,8 +111,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/hr92BP9DtK8?color=white",
     title: "ЛСП (LSP) — Бинокль (Binoculars)",
+    url: "https://www.youtube.com/embed/hr92BP9DtK8?color=white",
     img: [
       {
         src: binoklWebp,
@@ -125,8 +125,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/JQXoVfW3z6E?color=white",
     title: "ЛСП (LSP) — Мамонтёнок (Baby mammoth)",
+    url: "https://www.youtube.com/embed/JQXoVfW3z6E?color=white",
     img: [
       {
         src: mamontonokWebp,
@@ -139,8 +139,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/cX2UzAPjgjI?color=white",
     title: "ЛСП (LSP) — Парень с блока (Guy from block)",
+    url: "https://www.youtube.com/embed/cX2UzAPjgjI?color=white",
     img: [
       {
         src: parenSBlokaWebp,
@@ -153,8 +153,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/DtgBS2tq6tU?color=white",
     title: "ЛСП (LSP) — Никогда (Never)",
+    url: "https://www.youtube.com/embed/DtgBS2tq6tU?color=white",
     img: [
       {
         src: nikogdaWebp,
@@ -167,8 +167,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/rwz2nWDrVv0?start=4&color=white",
     title: "ЛСП (LSP) — Холостяк (Bachelor) [Single version]",
+    url: "https://www.youtube.com/embed/rwz2nWDrVv0?start=4&color=white",
     img: [
       {
         src: kholostyakWebp,
@@ -181,8 +181,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/4TyF1nUHDDQ?start=4&color=white",
     title: "ЛСП (LSP) & Feduk & Егор Крид (Egor Krid) — Холостяк (Bachelor)",
+    url: "https://www.youtube.com/embed/4TyF1nUHDDQ?start=4&color=white",
     img: [
       {
         src: kholostyakFedukEgorKridWebp,
@@ -195,8 +195,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/L5DH6azSG-Q?color=white",
     title: "ЛСП (LSP) — Бэйби (Baby) [Remix]",
+    url: "https://www.youtube.com/embed/L5DH6azSG-Q?color=white",
     img: [
       {
         src: beybiRemixWebp,
@@ -209,8 +209,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/unrs1wnz0r4?color=white",
     title: "ЛСП (LSP) — Монетка (Coin)",
+    url: "https://www.youtube.com/embed/unrs1wnz0r4?color=white",
     img: [
       {
         src: monetkaWebp,
@@ -223,8 +223,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/0dkHzLOmdDU?color=white",
     title: "ЛСП (LSP) —  ОК",
+    url: "https://www.youtube.com/embed/0dkHzLOmdDU?color=white",
     img: [
       {
         src: okWebp,
@@ -237,8 +237,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/9StX2O7VpOg?color=white",
     title: "ЛСП (LSP) — Потерян и не найден (Lost and not found)",
+    url: "https://www.youtube.com/embed/9StX2O7VpOg?color=white",
     img: [
       {
         src: poteryanINeNaydenWebp,
@@ -251,8 +251,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/TLAvN7gDw7o?color=white",
     title: "ЛСП (LSP) — Винегрет (Vinaigrette)",
+    url: "https://www.youtube.com/embed/TLAvN7gDw7o?color=white",
     img: [
       {
         src: vinegretWebp,
@@ -265,8 +265,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/1DPInqE_oos?start=5&color=white",
     title: "ЛСП (LSP) — Зачем мне этот мир (Why do I need this world)",
+    url: "https://www.youtube.com/embed/1DPInqE_oos?start=5&color=white",
     img: [
       {
         src: zacheMneEtotMirWebp,
@@ -279,8 +279,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/1eyShjujAGk?color=white",
     title: "ЛСП (LSP) — Хиппи (Hippie)",
+    url: "https://www.youtube.com/embed/1eyShjujAGk?color=white",
     img: [
       {
         src: hippiWebp,
@@ -293,8 +293,8 @@ export const musicVideos = [
     ],
   },
   {
-    src: "https://www.youtube.com/embed/0tdadbpU1Dw?color=white",
     title: "ЛСП (LSP) — Коктейль (Cocktail)",
+    url: "https://www.youtube.com/embed/0tdadbpU1Dw?color=white",
     img: [
       {
         src: kokteylWebp,
