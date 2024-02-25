@@ -11,7 +11,6 @@
   // .listen-on__item
 
   &__item {
-    font-weight: 900;
   }
 
   // .listen-on__link
@@ -22,8 +21,7 @@
     text-align: center;
     border: em(2, 30) solid $mainColor;
     border-radius: em(10, 30);
-    transition: opacity 0.3s ease 0s;
-    @include hover;
+    @extend %btn_hover;
 
     @media (prefers-color-scheme: dark) {
       border-color: $darkColor;

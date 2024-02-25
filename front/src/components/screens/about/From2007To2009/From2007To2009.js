@@ -1,4 +1,4 @@
-import AboutSection from "../AboutSection/AboutSection";
+import AboutSection from "@shared/AboutSection/AboutSection";
 
 import youthWebp from "@img/lsp/webp/youth.webp";
 import youth from "@img/lsp/jpg/youth.jpg";

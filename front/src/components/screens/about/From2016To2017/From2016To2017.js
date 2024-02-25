@@ -1,4 +1,4 @@
-import AboutSection from "../AboutSection/AboutSection";
+import AboutSection from "@shared/AboutSection/AboutSection";
 
 import romaAnglichaninWebp from "@img/lsp/webp/roma-anglichanin.webp";
 import romaAnglichanin from "@img/lsp/jpg/roma-anglichanin.jpg";

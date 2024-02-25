@@ -1,4 +1,4 @@
-import AboutSection from "../AboutSection/AboutSection";
+import AboutSection from "@shared/AboutSection/AboutSection";
 
 import hipHopBattleWebp from "@img/lsp/webp/hip-hop-battle.webp";
 import hipHopBattle from "@img/lsp/jpg/hip-hop-battle.jpg";

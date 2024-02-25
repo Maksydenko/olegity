@@ -1,4 +1,4 @@
-import AboutBlock from "../AboutSection/AboutSection";
+import AboutBlock from "@shared/AboutSection/AboutSection";
 
 import childhoodWebp from "@img/lsp/webp/childhood.webp";
 import childhood from "@img/lsp/jpg/childhood.jpg";

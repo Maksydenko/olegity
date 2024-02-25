@@ -1,5 +1,5 @@
 import MusicCard from "@shared/MusicCard/MusicCard";
-import ListenOn from "../../ListenOn/ListenOn";
+import ListenOn from "@shared/ListenOn/ListenOn";
 
 const Item = ({ single }) => {
   const { links } = single;

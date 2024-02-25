@@ -1,4 +1,4 @@
-import AboutSection from "../AboutSection/AboutSection";
+import AboutSection from "@shared/AboutSection/AboutSection";
 
 import groupLspWebp from "@img/lsp/webp/group-lsp.webp";
 import groupLsp from "@img/lsp/jpg/group-lsp.jpg";

@@ -1,4 +1,4 @@
-import AboutSection from "../AboutSection/AboutSection";
+import AboutSection from "@shared/AboutSection/AboutSection";
 
 import familyWebp from "@img/lsp/webp/family.webp";
 import family from "@img/lsp/jpg/family.jpg";

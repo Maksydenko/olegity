@@ -1,4 +1,4 @@
-import AboutSection from "../AboutSection/AboutSection";
+import AboutSection from "@shared/AboutSection/AboutSection";
 
 import lspAndPharaohWebp from "@img/lsp/webp/lsp-and-pharaoh.webp";
 import lspAndPharaoh from "@img/lsp/jpg/lsp-and-pharaoh.jpg";

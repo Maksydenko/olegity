@@ -7,7 +7,6 @@
   font-weight: 500;
   border: em(2, 18) solid $mainColor;
   border-radius: em(5, 18);
-  transition: color, background-color 0.3s ease 0s;
 
   @media (prefers-color-scheme: dark) {
     border-color: $darkColor;
@@ -28,6 +27,8 @@
   // %btn_hover
 
   &_hover {
+    transition: color, background-color 0.3s ease 0s;
+
     @include hover(
       (
         color: $darkColor,
