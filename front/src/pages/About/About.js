@@ -10,7 +10,7 @@ import From2018ToPresent from "@screens/about/From2018ToPresent/From2018ToPresen
 import Family from "@screens/about/Family/Family";
 import UkraineSupport from "@screens/about/UkraineSupport/UkraineSupport";
 
-const About = () => (
+const AboutPage = () => (
   <main className="about-page">
     <Biography />
     <Childhood />
@@ -26,4 +26,4 @@ const About = () => (
   </main>
 );
 
-export default About;
+export default AboutPage;

@@ -1,9 +1,9 @@
 import AllVideos from "@screens/videos/AllVideos/AllVideos";
 
-const Videos = () => (
+const VideosPage = () => (
   <main className="videos-page">
     <AllVideos />
   </main>
 );
 
-export default Videos;
+export default VideosPage;

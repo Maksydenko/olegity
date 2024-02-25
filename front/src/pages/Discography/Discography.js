@@ -1,9 +1,9 @@
 import Music from "@screens/discography/Music/Music";
 
-const Discography = () => (
+const DiscographyPage = () => (
   <main className="discography-page">
     <Music />
   </main>
 );
 
-export default Discography;
+export default DiscographyPage;

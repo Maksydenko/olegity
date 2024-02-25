@@ -4,7 +4,7 @@ import AlbumsMain from "@screens/home/AlbumsMain/AlbumsMain";
 import VideosMain from "@screens/home/VideosMain/VideosMain";
 import ConcertsMain from "@screens/home/ConcertsMain/ConcertsMain";
 
-const Main = () => (
+const HomePage = () => (
   <main className="home-page">
     <FullScreenVideo />
     <AboutMain />
@@ -14,4 +14,4 @@ const Main = () => (
   </main>
 );
 
-export default Main;
+export default HomePage;

@@ -1,11 +1,11 @@
-import PageNotFound from "@screens/404/404";
+import NotFound from "@screens/NotFound/NotFound";
 
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <main className="not-found-page">
-      <PageNotFound />
+      <NotFound />
     </main>
   );
 };
 
-export default NotFound;
+export default NotFoundPage;

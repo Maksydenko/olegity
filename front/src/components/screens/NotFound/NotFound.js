@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { useRedirectToHomepage } from "./useRedirectToHomepage";
 
-const Page404 = () => {
+const NotFound = () => {
   const { t } = useTranslation();
   const time = useRedirectToHomepage();
 
@@ -19,4 +19,4 @@ const Page404 = () => {
   );
 };
 
-export default Page404;
+export default NotFound;
