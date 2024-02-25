@@ -7,7 +7,7 @@ import Contents from "./Contents/Contents";
 const Tabs = ({ className, tabs, vertical, defaultTab = 0 }) => {
   return (
     <div className={clsx(className, "tabs", vertical && "tabs_vertical")}>
-      <Tab.Group vertical={vertical} defaultIndex={defaultTab}>
+      <Tab.Group vertical={vertical} defaultIndex={defaultTab} manual>
         <Titles tabs={tabs} vertical={vertical} />
         <Contents tabs={tabs} />
       </Tab.Group>

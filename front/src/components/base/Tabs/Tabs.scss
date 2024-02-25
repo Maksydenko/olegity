@@ -6,6 +6,7 @@
   &__titles {
     display: flex;
     @include responsiveValue(font-size, 16, 14);
+    margin-bottom: rem(30);
   }
 
   // tabs__title
@@ -30,6 +31,8 @@
     }
 
     &:focus-visible {
+      border: rem(1) solid #fff;
+      border-radius: 0 0 em(5, 16) em(5, 16);
       outline: none;
     }
 
@@ -82,6 +85,22 @@
   // .tabs__content
 
   &__content {
-    padding: rem(30) 0 rem(50);
+    position: relative;
+    margin-bottom: rem(50);
+
+    &:focus-visible {
+      outline: none;
+
+      &::after {
+        position: absolute;
+        top: rem(-1);
+        right: rem(1);
+        bottom: rem(-1);
+        left: rem(1);
+        content: "";
+        border: rem(1) solid #fff;
+        border-radius: rem(5);
+      }
+    }
   }
 }
