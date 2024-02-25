@@ -27,13 +27,15 @@ const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
 
   return (
     <>
-      <button
-        className={clsx(className, "popup popup_btn")}
-        type="button"
-        onClick={handleOpen}
-      >
-        {button}
-      </button>
+      {button && (
+        <button
+          className={clsx(className, "popup popup_btn")}
+          type="button"
+          onClick={handleOpen}
+        >
+          {button}
+        </button>
+      )}
       <Transition appear show={show}>
         <Dialog className={clsx(className, "popup")} onClose={handleClose}>
           <div className="popup__body">
