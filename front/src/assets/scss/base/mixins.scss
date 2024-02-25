@@ -65,7 +65,8 @@
 @mixin hover(
   $styles: (
     opacity: 0.5,
-  )
+  ),
+  $focus: true
 ) {
   @media (hover: hover) {
     &:hover {
@@ -83,9 +84,11 @@
     }
   }
 
-  &:focus {
-    @each $property, $value in $styles {
-      #{$property}: $value;
+  @if ($focus == true) {
+    &:focus-visible {
+      @each $property, $value in $styles {
+        #{$property}: $value;
+      }
     }
   }
 }
@@ -108,7 +111,7 @@
 }
 
 // Fill
-@mixin fill($position: absolute, $important: null) {
+@mixin fill($position: absolute, $important: false) {
   // Important
   @if ($important == important) {
     position: $position !important;
