@@ -1,21 +1,19 @@
 import { useTranslation } from "react-i18next";
 
-import MainLink from "@shared/MainLink/MainLink";
+import Btn from "@form/Btn/Btn";
 import SliderAlbums from "./SliderAlbums";
 
 const MainAlbums = () => {
   const { t } = useTranslation();
-  const link = {
-    path: "/discography#albums",
-    value: "see-discography",
-  };
 
   return (
     <section className="main-albums">
       <div className="main-albums__container">
         <h2 className="main-albums__title">{t("albums")}</h2>
         <SliderAlbums />
-        <MainLink className="main-albums__main-link" link={link} />
+        <Btn className="main-albums__btn" path="/discography#albums">
+          {t("see-discography")}
+        </Btn>
       </div>
     </section>
   );

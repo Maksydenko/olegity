@@ -13,8 +13,11 @@
 // Connecting layout styles
 @import "@layout/Layout";
 
-// Connecting basic component styles
+// Connecting base component styles
 @import "assets/scss/base";
+
+// Connecting form component styles
+@import "assets/scss/form";
 
 // Connecting shared component styles
 @import "assets/scss/shared";

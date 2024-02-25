@@ -1,13 +1,17 @@
 import { useTranslation } from "react-i18next";
 import clsx from "clsx";
 
-import MainLink from "../MainLink/MainLink";
+import Btn from "@form/Btn/Btn";
 
 const MainBlock = ({ className, keyword, link }) => {
   const { t } = useTranslation();
 
-  const translationTitle = t(`${keyword}.title`);
-  const translationText = t(`${keyword}.text`, {
+  const getTranslation = (key) => {
+    return `${keyword}.${key}`;
+  };
+
+  const translationTitle = t(getTranslation("title"));
+  const translationText = t(getTranslation("text"), {
     returnObjects: true,
   });
 
@@ -19,7 +23,11 @@ const MainBlock = ({ className, keyword, link }) => {
     <div className={clsx(className, "main-block")}>
       <h2 className="main-block__title">{translationTitle}</h2>
       <div className="main-block__text">{textItems}</div>
-      {link && <MainLink className="main-block" link={link} />}
+      {link && (
+        <Btn className="main-block" path={link.path}>
+          {t(link.value)}
+        </Btn>
+      )}
     </div>
   );
 };
