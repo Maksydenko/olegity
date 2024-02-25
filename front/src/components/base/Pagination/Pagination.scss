@@ -1,0 +1,103 @@
+.pagination {
+  // .pagination__pages
+
+  display: flex;
+  gap: rem(10);
+  justify-content: center;
+
+  @media (max-width: $mobile) {
+    gap: rem(5);
+  }
+
+  // .pagination__page
+  &__page {
+  }
+
+  // .pagination__page-link
+  &__page-link {
+  }
+
+  // .pagination__previous
+  &__previous {
+  }
+
+  // .pagination__previous-link
+  &__previous-link {
+  }
+
+  // .pagination__next
+  &__next {
+  }
+
+  // .pagination__next-link
+  &__next-link {
+  }
+
+  // .pagination__break
+
+  &__break {
+  }
+
+  // .pagination__break-link
+
+  &__break-link {
+  }
+
+  // .pagination__page
+  &__page,
+  // .pagination__previous
+  &__previous,
+  // .pagination__next
+  &__next,
+  // .pagination__break
+  &__break {
+  }
+
+  // .pagination__page-link
+  &__page-link,
+  // .pagination__previous-link
+  &__previous-link,
+  // .pagination__next-link
+  &__next-link,
+  // .pagination__break-link
+  &__break-link {
+    @include centered(flex);
+    @extend %btn;
+    width: rem(50);
+    height: rem(50);
+    padding: 0;
+
+    @media (max-width: $mobile) {
+      width: rem(30);
+      height: rem(30);
+    }
+
+    &:not([class*="active"], [class*="disabled"]) {
+      &:hover,
+      &:focus {
+        @extend %btn_hover;
+      }
+    }
+  }
+
+  // .pagination__active
+  &__active {
+  }
+
+  // .pagination__active-link
+  &__active-link {
+    @extend %btn_active;
+  }
+
+  // .pagination__disabled
+
+  &__disabled {
+    display: none;
+  }
+
+  // .pagination__disabled-link
+
+  &__disabled-link {
+    cursor: default;
+  }
+}

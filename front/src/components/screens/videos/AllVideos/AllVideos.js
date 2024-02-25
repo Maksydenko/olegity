@@ -10,12 +10,12 @@ const AllVideos = () => {
   const { t } = useTranslation();
   const tabs = [
     {
-      id: 1,
+      id: "music-videos",
       title: t("music-videos"),
       content: <Videos videos={musicVideos} />,
     },
     {
-      id: 2,
+      id: "animated-videos",
       title: t("animated-videos"),
       content: <Videos videos={animatedVideos} />,
     },

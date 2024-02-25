@@ -13,17 +13,17 @@ const Music = () => {
 
   const tabs = [
     {
-      id: 1,
+      id: "albums",
       title: t("albums"),
       content: <Albums albums={albums} />,
     },
     {
-      id: 2,
+      id: "ep",
       title: t("ep"),
       content: <Albums albums={ep} />,
     },
     {
-      id: 3,
+      id: "singles",
       title: t("singles"),
       content: <Singles singles={singles} />,
     },

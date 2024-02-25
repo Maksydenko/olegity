@@ -1,32 +1,4 @@
 .main-link {
-  display: inline-block;
-  padding: em(15, 16);
-  font-weight: 500;
-  border: em(2, 16) solid $mainColor;
-  border-radius: em(5, 16);
-  transition: color, background-color 0.3s ease 0s;
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $darkColor;
-  }
-
-  @media (min-width: $mobile) {
-    font-size: rem(18);
-  }
-
-  @include hover(
-    (
-      color: $darkColor,
-      background-color: $darkBg,
-    )
-  );
-
-  @media (prefers-color-scheme: dark) {
-    @include hover(
-      (
-        color: $mainColor,
-        background-color: $mainBg,
-      )
-    );
-  }
+  @extend %btn;
+  @extend %btn_hover;
 }

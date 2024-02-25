@@ -56,10 +56,9 @@ textarea {
   resize: none;
 }
 
-button {
-  &:not(:disabled){
-    cursor: pointer;
-  }
+a,
+button:not(:disabled) {
+  cursor: pointer;
 }
 
 a {

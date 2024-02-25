@@ -1,0 +1,47 @@
+// Btn
+
+%btn {
+  display: inline-block;
+  padding: em(15, 18);
+  font-size: rem(18);
+  font-weight: 500;
+  border: em(2, 18) solid $mainColor;
+  border-radius: em(5, 18);
+  transition: color, background-color 0.3s ease 0s;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $darkColor;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: rem(16);
+  }
+
+  // %btn_active
+
+  &_active {
+    color: $mainColor;
+    cursor: default;
+    background-color: $mainBg;
+  }
+
+  // %btn_hover
+
+  &_hover {
+    @include hover(
+      (
+        color: $darkColor,
+        background-color: $darkBg,
+      )
+    );
+
+    @media (prefers-color-scheme: dark) {
+      @include hover(
+        (
+          color: $mainColor,
+          background-color: $mainBg,
+        )
+      );
+    }
+  }
+}

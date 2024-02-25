@@ -20,6 +20,7 @@
     grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
     gap: rem(30);
     justify-content: center;
+    margin-bottom: rem(30);
 
     @media (max-width: 959.98px) {
       grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(370)));
@@ -57,5 +58,10 @@
   // .singles__listen-on
 
   &__listen-on {
+  }
+
+  // .singles__pagination
+
+  &__pagination {
   }
 }
