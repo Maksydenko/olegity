@@ -1,0 +1,31 @@
+.not-found {
+  // .not-found__container
+
+  &__container {
+    padding-top: rem(70);
+    padding-bottom: rem(70);
+    margin-top: rem(70);
+  }
+
+  // .not-found__title
+
+  &__title {
+    margin-bottom: em(20, 60);
+    font-size: rem(60);
+  }
+
+  // .not-found__label
+
+  &__label {
+    display: block;
+    margin-bottom: em(20, 30);
+    font-size: rem(30);
+    font-weight: 500;
+  }
+
+  // .not-found__redirect-homepage
+
+  &__redirect-homepage {
+    font-size: rem(20);
+  }
+}
