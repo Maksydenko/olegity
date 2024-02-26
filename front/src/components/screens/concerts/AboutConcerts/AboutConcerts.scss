@@ -2,10 +2,10 @@
   // .about-concerts__text-block
 
   &__text-block {
-    padding: rem(50) rem(20) rem(50) 0;
+    padding: rem(50) 0;
 
     @media (max-width: $mobile) {
-      padding: rem(30) 0;
+      padding: rem(30) 0 0;
 
       .text-block {
         // .text-block__title

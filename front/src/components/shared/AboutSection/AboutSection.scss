@@ -24,7 +24,6 @@
       // .text-block__title
 
       &__title {
-        margin-bottom: em(20, 32);
         font-size: rem(32);
 
         @media (max-width: $mobile) {

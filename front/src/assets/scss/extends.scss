@@ -15,9 +15,9 @@
   // %btn_active
 
   &_active {
-    color: var(--mainColor);
+    color: var(--mainBg);
     cursor: default;
-    background-color: var(--mainBg);
+    background-color: var(--mainColor);
   }
 
   // %btn_hover

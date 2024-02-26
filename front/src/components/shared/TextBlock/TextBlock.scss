@@ -23,8 +23,10 @@
       margin-bottom: em(20, 16);
     }
 
-    p:not(:last-child) {
-      margin-bottom: em(15, 16);
+    > p {
+      &:not(:last-child) {
+        margin-bottom: em(15, 16);
+      }
     }
   }
 
