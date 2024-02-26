@@ -6,12 +6,9 @@
   // .text-block__title
 
   &__title {
+    margin-bottom: em(20, 40);
     font-size: rem(40);
     line-height: 1.2;
-
-    &:not(:last-child) {
-      margin-bottom: em(20, 40);
-    }
   }
 
   // .text-block__text
