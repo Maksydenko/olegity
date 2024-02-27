@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/olegity/static/css/main.5d63af63.css",
-    "main.js": "/olegity/static/js/main.2aff0d7b.js",
+    "main.css": "/olegity/static/css/main.3c03ee65.css",
+    "main.js": "/olegity/static/js/main.2d9e0300.js",
     "reactPlayerYouTube.js": "/olegity/static/js/reactPlayerYouTube.c04f07d7.chunk.js",
     "reactPlayerSoundCloud.js": "/olegity/static/js/reactPlayerSoundCloud.fbfa8ac0.chunk.js",
     "reactPlayerVimeo.js": "/olegity/static/js/reactPlayerVimeo.566c3f30.chunk.js",
@@ -308,8 +308,8 @@
     "static/media/dor-blyu.avif": "/olegity/static/media/dor-blyu.fa585c555bb79557d4c3.avif",
     "static/media/cross.svg": "/olegity/static/media/cross.8e79f2de5ed87d02ecb5.svg",
     "static/media/system.svg": "/olegity/static/media/system.beeb0bff01a91881ff6b3479c7e37cc2.svg",
-    "main.5d63af63.css.map": "/olegity/static/css/main.5d63af63.css.map",
-    "main.2aff0d7b.js.map": "/olegity/static/js/main.2aff0d7b.js.map",
+    "main.3c03ee65.css.map": "/olegity/static/css/main.3c03ee65.css.map",
+    "main.2d9e0300.js.map": "/olegity/static/js/main.2d9e0300.js.map",
     "reactPlayerYouTube.c04f07d7.chunk.js.map": "/olegity/static/js/reactPlayerYouTube.c04f07d7.chunk.js.map",
     "reactPlayerSoundCloud.fbfa8ac0.chunk.js.map": "/olegity/static/js/reactPlayerSoundCloud.fbfa8ac0.chunk.js.map",
     "reactPlayerVimeo.566c3f30.chunk.js.map": "/olegity/static/js/reactPlayerVimeo.566c3f30.chunk.js.map",
@@ -326,7 +326,7 @@
     "496.6415a1d7.chunk.js.map": "/olegity/static/js/496.6415a1d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d63af63.css",
-    "static/js/main.2aff0d7b.js"
+    "static/css/main.3c03ee65.css",
+    "static/js/main.2d9e0300.js"
   ]
 }
