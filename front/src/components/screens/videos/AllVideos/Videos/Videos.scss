@@ -2,7 +2,7 @@
   // .videos__container
 
   &__container {
-    @media (min-width: $pc) {
+    @media (min-width: $desktop) {
       padding: 0;
     }
   }

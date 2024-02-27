@@ -4,21 +4,20 @@
   &__text-block {
     padding: rem(50) 0;
 
-    @media (max-width: $pc) {
+    @media (max-width: $desktop) {
       padding: 0;
     }
 
-    [class*="__title"] {
+    .text-block__title {
       margin-bottom: rem(20);
       font-size: rem(32);
 
-      @media (max-width: $mobileSmall) {
+      @media (max-width: $mobile) {
         font-size: rem(24);
-        text-align: left;
       }
     }
 
-    [class*="__text"] {
+    .text-block__text {
       @media (max-width: $tablet) {
         text-align: justify;
       }
@@ -28,7 +27,7 @@
   // .ukraine-support__popup-video
 
   &__popup-video {
-    @media (min-width: $pc) {
+    @media (min-width: $tablet) {
       aspect-ratio: unset;
 
       @supports not (aspect-ratio: unset) {

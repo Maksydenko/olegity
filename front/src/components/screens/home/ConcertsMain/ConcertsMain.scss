@@ -14,6 +14,7 @@
 
     @media (max-width: $mobile) {
       padding: 0;
+      text-align: center;
     }
   }
 
@@ -22,6 +23,7 @@
   &__img {
     @media (min-width: $mobile) {
       img {
+        object-position: 40% 50%;
         border-top-left-radius: rem(10);
       }
     }

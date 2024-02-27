@@ -4,7 +4,7 @@
   // .albums__container
 
   &__container {
-    @media (min-width: $pc) {
+    @media (min-width: $desktop) {
       padding: 0;
     }
   }
@@ -66,35 +66,27 @@
   // .albums__swiper
 
   &__swiper {
-    .swiper {
-      @media (max-width: $mobileSmall) {
-        // .swiper-button-next
-        &-button-next,
-        // .swiper-button-prev
-        &-button-prev {
-          &::after {
-            background-color: transparent;
+    @media (max-width: $mobileSmall) {
+      .swiper-button-next,
+      .swiper-button-prev {
+        &::after {
+          background-color: transparent;
 
-            @media (prefers-color-scheme: light) {
-              color: var(--mainColor);
-            }
+          @media (prefers-color-scheme: light) {
+            color: var(--mainColor);
           }
         }
+      }
 
-        // .swiper-button-next
-
-        &-button-prev {
-          &::after {
-            left: rem(-23);
-          }
+      .swiper-button-prev {
+        &::after {
+          left: rem(-23);
         }
+      }
 
-        // .swiper-button-prev
-
-        &-button-next {
-          &::after {
-            right: rem(-23);
-          }
+      .swiper-button-next {
+        &::after {
+          right: rem(-23);
         }
       }
     }

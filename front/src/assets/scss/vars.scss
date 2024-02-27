@@ -31,8 +31,8 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 
 // Breakpoints
 
-// PCs, laptops, some tablets in a horizontal position
-$pc: $containerWidth + px;
+// Desktops, laptops, some tablets in a horizontal position
+$desktop: $containerWidth + 0.98px;
 // Tablets, some phones in the horizontal position
 $tablet: 991.98px;
 // Large phones

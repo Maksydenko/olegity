@@ -5,7 +5,7 @@
   // .popup-video__img
 
   &__img {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
 
     @supports not (aspect-ratio: 16 / 9) {
       padding-top: 56.25%;
@@ -28,8 +28,11 @@
     max-width: 100%;
     padding: 0 rem(calc($containerPadding / 2));
     font-size: rem(18);
-    line-height: 1.2;
     @include nowrapText;
+
+    @media (max-width: $mobile) {
+      font-size: rem(16);
+    }
   }
 
   // .popup-video__popup

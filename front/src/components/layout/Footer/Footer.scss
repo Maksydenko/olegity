@@ -1,5 +1,5 @@
-@import "SocialNetworks/SocialNetworks";
 @import "@layout/navigation/Navigation/Navigation";
+@import "SocialNetworks/SocialNetworks";
 
 .footer {
   position: relative;
@@ -62,6 +62,10 @@
   [class*="__title"] {
     margin-bottom: em(20, 24);
     font-size: rem(24);
+
+    @media (max-width: $mobile) {
+      font-size: rem(20);
+    }
   }
 
   a,
@@ -73,6 +77,10 @@
   ul {
     > li {
       font-size: rem(18);
+
+      @media (max-width: $mobile) {
+        font-size: rem(16);
+      }
 
       &:not(:last-child) {
         margin-bottom: em(10, 18);

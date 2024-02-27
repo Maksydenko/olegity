@@ -46,7 +46,7 @@
       }
     }
 
-    @media (max-width: $pc) {
+    @media (max-width: $desktop) {
       &:first-child {
         border-bottom-left-radius: 0;
       }

@@ -9,7 +9,7 @@ const Track = ({ track, swiperParallax, swiperParallaxDuration }) => {
         "data-swiper-parallax-duration": swiperParallaxDuration,
       })}
     >
-      {track}
+      <h5>{track}</h5>
     </li>
   );
 };

@@ -6,19 +6,14 @@
 
     @media (max-width: $mobile) {
       padding: rem(30) 0 0;
+      text-align: center;
 
-      .text-block {
-        // .text-block__title
+      .text-block__title {
+        font-size: rem(32);
+      }
 
-        &__title {
-          font-size: rem(32);
-        }
-
-        // .text-block__text
-
-        &__text {
-          text-align: justify;
-        }
+      .text-block__text {
+        text-align: justify;
       }
     }
   }

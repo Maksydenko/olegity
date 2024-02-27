@@ -7,40 +7,40 @@
     padding-bottom: rem(50);
   }
 
+  > * {
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+  }
+
   // .main-videos__title
 
   &__title {
-    margin-bottom: em(30, 40);
     font-size: rem(40);
+
+    @media (max-width: $mobile) {
+      font-size: rem(32);
+    }
   }
 
   // .main-videos__swiper
 
   &__swiper {
-    margin-bottom: rem(30);
   }
 
   // .main-videos__popup-video
 
   &__popup-video {
-    .popup-video {
-      // max-width: 90%;
+    .popup-video__title {
+      text-align: left;
+    }
 
-      // .popup-video__title
+    .popup-video__img {
+      @media (min-width: $desktop) {
+        aspect-ratio: 25 / 9;
 
-      &__title {
-        text-align: left;
-      }
-
-      // .popup-video__img
-
-      &__img {
-        @media (min-width: $pc) {
-          aspect-ratio: 25/9;
-
-          @supports not (aspect-ratio: 25 / 9) {
-            padding-bottom: 36%;
-          }
+        @supports not (aspect-ratio: 25 / 9) {
+          padding-bottom: 36%;
         }
       }
     }

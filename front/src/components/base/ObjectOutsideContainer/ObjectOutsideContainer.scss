@@ -3,10 +3,10 @@ $content: 50%;
 $object: 50%;
 
 .object-outside-container {
-  // .object-outside-container_pc
+  // .object-outside-container_tablet
 
-  &_pc {
-    @media (min-width: $pc) {
+  &_tablet {
+    @media (min-width: $tablet) {
       display: flex;
     }
 
@@ -18,7 +18,7 @@ $object: 50%;
         flex: 0 0 100%;
 
         + * {
-          @media (min-width: $pc) {
+          @media (min-width: $tablet) {
             flex: 0 0
               calc(
                 ((100vw - rem($containerPadding)) * ($object / 100%)) +
@@ -26,7 +26,8 @@ $object: 50%;
               );
             transform: translate(-100%, 0);
 
-            div, a {
+            div,
+            a {
               @include fill;
               aspect-ratio: unset;
 
@@ -46,7 +47,7 @@ $object: 50%;
           img,
           iframe,
           video {
-            @media (max-width: $pc) {
+            @media (max-width: $tablet) {
               position: relative !important;
             }
           }
@@ -63,12 +64,12 @@ $object: 50%;
       // .object-outside-container__body
 
       &__body {
-        @media (min-width: $pc) {
+        @media (min-width: $tablet) {
           width: $content;
           padding-right: rem(20);
         }
 
-        @media (max-width: $pc) {
+        @media (max-width: $tablet) {
           padding-bottom: rem(30);
         }
       }

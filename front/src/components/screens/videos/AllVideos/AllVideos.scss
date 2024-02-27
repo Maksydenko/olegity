@@ -4,7 +4,7 @@
   // .all-videos__container
 
   &__container {
-    @media (max-width: $pc) {
+    @media (max-width: $desktop) {
       padding: 0;
     }
   }

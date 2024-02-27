@@ -11,7 +11,7 @@ const SliderAlbums = () => {
     return (
       <MusicCard
         key={title}
-        className="main-albums__music-card"
+        className="albums-main__music-card"
         track={album}
       />
     );
@@ -19,7 +19,7 @@ const SliderAlbums = () => {
 
   return (
     <SliderSwiper
-      className="main-albums__swiper"
+      className="albums-main__swiper"
       breakpoints={{
         [breakpoints.mobile]: {
           slidesPerView: 3,

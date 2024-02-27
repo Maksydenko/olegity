@@ -1,34 +1,43 @@
-.main-albums {
+.albums-main {
   position: relative;
   background-color: var(--mainBg);
 
-  // .main-albums__container
+  // .albums-main__container
 
   &__container {
     text-align: center;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
   }
 
-  // .main-albums__title
+  // .albums-main__title
 
   &__title {
-    margin-bottom: em(30, 40);
     font-size: rem(40);
+
+    @media (max-width: $mobile) {
+      font-size: rem(32);
+    }
+    
   }
 
-  // .main-albums__swiper
+  // .albums-main__swiper
 
   &__swiper {
-    margin-bottom: rem(30);
   }
 
-  // .main-albums__music-card
+  // .albums-main__music-card
 
   &__music-card {
     max-width: rem(370);
     margin: 0 auto;
   }
 
-  // .main-albums__text-block
+  // .albums-main__text-block
 
   &__text-block {
     [class*="__link"] {

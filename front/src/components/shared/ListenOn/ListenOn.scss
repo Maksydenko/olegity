@@ -3,7 +3,7 @@
 
   &__list {
     display: grid;
-    gap: em(15, 30);
+    gap: em(20, 32);
     justify-content: center;
   }
 
@@ -18,10 +18,14 @@
     @extend %btn;
     @extend %btn_hover;
     display: block;
-    padding: em(10, 30);
-    font-size: rem(30);
+    padding: em(10, 32);
+    font-size: rem(32);
     text-align: center;
-    border-width: em(2, 30);
-    border-radius: em(10, 30);
+    border-width: em(2, 32);
+    border-radius: em(10, 32);
+
+    @media (max-width: $mobile) {
+      font-size: rem(24);
+    }
   }
 }

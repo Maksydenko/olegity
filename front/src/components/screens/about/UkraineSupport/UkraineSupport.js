@@ -33,7 +33,7 @@ const UkraineSupport = () => {
   return (
     <section className="ukraine-support">
       <ObjectOutsideContainer
-        className="ukraine-support__object-outside-container object-outside-container_pc"
+        className="ukraine-support__object-outside-container object-outside-container_tablet"
         object={object}
       >
         <TextBlock

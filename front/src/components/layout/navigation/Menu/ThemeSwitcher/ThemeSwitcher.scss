@@ -51,10 +51,6 @@
       @include hover;
     }
 
-    @media (max-width: $mobile) {
-      font-size: rem(24);
-    }
-
     // .theme-switcher__label_checked
 
     &_checked {

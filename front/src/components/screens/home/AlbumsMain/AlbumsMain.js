@@ -7,11 +7,11 @@ const MainAlbums = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="main-albums">
-      <div className="main-albums__container">
-        <h2 className="main-albums__title">{t("albums")}</h2>
+    <section className="albums-main">
+      <div className="albums-main__container">
+        <h2 className="albums-main__title">{t("albums")}</h2>
         <SliderAlbums />
-        <Btn className="main-albums__btn" path="/discography#albums">
+        <Btn className="albums-main__btn" path="/discography#albums">
           {t("see-discography")}
         </Btn>
       </div>

@@ -1,14 +1,16 @@
 .text-block {
-  @media (max-width: $mobile) {
-    text-align: center;
-  }
-
   // .text-block__title
 
   &__title {
-    margin-bottom: em(20, 40);
     font-size: rem(40);
-    line-height: 1.2;
+
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(32);
+    }
   }
 
   // .text-block__text
@@ -17,7 +19,11 @@
     line-height: 1.3;
 
     &:not(:last-child) {
-      margin-bottom: em(20, 16);
+      margin-bottom: rem(25);
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(14);
     }
 
     > p {

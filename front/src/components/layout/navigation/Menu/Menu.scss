@@ -7,7 +7,7 @@
   &__button {
     display: none;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $desktop) {
       position: relative;
       z-index: 9;
       display: block;
@@ -75,9 +75,10 @@
   &__body {
     display: flex;
     align-items: center;
+    font-size: rem(18);
     text-transform: uppercase;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       > * {
         &:not(:last-child) {
           margin-right: rem(40);
@@ -85,7 +86,7 @@
       }
     }
 
-    @media (max-width: $tablet) {
+    @media (max-width: $desktop) {
       position: fixed;
       top: 0;
       right: -100%;
@@ -96,6 +97,7 @@
       height: 100%;
       padding: rem(100) rem(30) rem(30) rem(30);
       overflow: auto;
+      font-size: rem(24);
       background-color: rgba(0, 0, 0, 0.8);
       transition: right 0.3s ease 0s;
 
@@ -126,14 +128,9 @@
   // .menu__list
 
   &__list {
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       display: flex;
       align-items: center;
-      font-size: rem(18);
-    }
-
-    @media (max-width: $tablet) {
-      font-size: rem(24);
     }
   }
 
@@ -144,13 +141,13 @@
     display: flex;
     justify-content: flex-end;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       &:not(:last-child) {
         margin-right: em(20, 18);
       }
     }
 
-    @media (max-width: $tablet) {
+    @media (max-width: $desktop) {
       &:not(:last-child) {
         margin-bottom: em(30, 24);
       }
@@ -164,7 +161,7 @@
     color: $light;
     text-align: right;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       padding: em(10, 18) 0;
     }
 
@@ -175,7 +172,6 @@
     // .menu__link_active
 
     &_active {
-      cursor: default;
       opacity: 0.5;
     }
   }
