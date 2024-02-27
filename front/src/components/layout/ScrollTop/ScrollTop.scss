@@ -20,6 +20,10 @@
     @include hover;
   }
 
+  @media (max-width: $mobile) {
+    font-size: rem(32);
+  }
+
   // .menu__arrow-top
 
   &__arrow-top {

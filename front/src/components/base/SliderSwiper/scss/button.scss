@@ -25,13 +25,16 @@
     &::after {
       @include centered(flex);
       position: absolute;
-      top: 0;
       width: em(60, 44);
       height: em(60, 44);
       font-size: rem(44) !important;
       color: $light;
       background-color: rgba(0, 0, 0, 0.8);
       border-radius: em(5, 44);
+
+      @media (max-width: $mobile) {
+        font-size: rem(32) !important;
+      }
     }
   }
 
