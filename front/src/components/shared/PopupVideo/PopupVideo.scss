@@ -48,6 +48,10 @@
         font-size: rem(80);
         color: $light;
         transition: opacity 0.3s ease 0s;
+
+        @media (max-width: $mobile) {
+          font-size: rem(40);
+        }
       }
     }
   }
