@@ -1,4 +1,10 @@
 .track-list {
+  font-size: rem(18);
+
+  @media (max-width: $mobile) {
+    font-size: rem(16);
+  }
+
   // .track-list__track
 
   &__track {

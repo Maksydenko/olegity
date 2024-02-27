@@ -22,7 +22,6 @@
     @media (max-width: $mobile) {
       font-size: rem(32);
     }
-    
   }
 
   // .albums-main__swiper
@@ -40,7 +39,7 @@
   // .albums-main__text-block
 
   &__text-block {
-    [class*="__link"] {
+    .text-block__link {
       @media (min-width: $mobile) {
         font-size: rem(18);
       }

@@ -29,7 +29,6 @@
   &__track-list {
     flex: 0 1 rem(340);
     padding-left: em(30, 18);
-    font-size: rem(18);
 
     @media (max-width: 1098.98px) {
       padding-right: em(70, 18);
@@ -48,7 +47,7 @@
   // .albums__listen-on
 
   &__listen-on {
-    ul {
+    .albums__listen-on {
       @media (max-width: 1098.98px) {
         grid-template-columns: repeat(4, rem(185));
       }
