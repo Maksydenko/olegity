@@ -1,0 +1,16 @@
+{
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "stylelint.packageManager": "yarn",
+  "stylelint.validate": ["scss"],
+  "eslint.format.enable": true
+}
