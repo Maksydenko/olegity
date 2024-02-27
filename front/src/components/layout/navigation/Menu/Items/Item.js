@@ -12,8 +12,10 @@ const Item = ({ link: { value, path }, onClick }) => {
     <li className="menu__item">
       <Link
         className={clsx("menu__link", isActive && "menu__link_active")}
-        to={path}
         onClick={onClick}
+        {...(!isActive && {
+          to: path,
+        })}
       >
         {t(value)}
       </Link>

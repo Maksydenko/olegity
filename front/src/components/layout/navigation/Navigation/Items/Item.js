@@ -15,7 +15,9 @@ const Item = ({ link: { value, path } }) => {
           "navigation__link",
           isActive && "navigation__link_active"
         )}
-        to={path}
+        {...(!isActive && {
+          to: path,
+        })}
       >
         {t(value)}
       </Link>
