@@ -18,8 +18,7 @@ export const useScrollLock = (inerts = []) => {
   useEffect(() => {
     const { body } = document;
 
-    let inertElements = [];
-    inertElements = inerts.map((inert) => {
+    const inertElements = inerts.map((inert) => {
       return document.querySelector(inert);
     });
 
