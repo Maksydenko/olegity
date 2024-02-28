@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import Items from "./Items/Items";
 
-import links from "./links";
+import links from "./links.const";
 
 const SocialNetworks = () => {
   const { t } = useTranslation();
