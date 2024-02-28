@@ -1,7 +1,11 @@
-@include font(icons);
+// Icon fonts
+
+// ============================================================================
+
+@include font(icon);
 
 %icon {
-  font-family: icons, sans-serif;
+  font-family: icon, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
