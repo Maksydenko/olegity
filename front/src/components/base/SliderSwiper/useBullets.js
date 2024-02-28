@@ -1,6 +1,13 @@
 import { addBreakpointDesktop } from "./addBreakpointDesktop.util";
 
-export const useBullets = (breakpoints, slidesPerView, slidesNumber) => {
+export const useBullets = (slidesPerView, slidesNumber, breakpoints) => {
+  if (!breakpoints) {
+    if (slidesPerView < slidesNumber) {
+      return true;
+    }
+    return false;
+  }
+
   const breakpointsArray = Object.entries(breakpoints).map(
     ([, { slidesPerView: slides, isBreakpoint }]) => ({
       isBreakpoint,
@@ -15,11 +22,12 @@ export const useBullets = (breakpoints, slidesPerView, slidesNumber) => {
 
   const results = breakpointsWithDesktop.map((breakpoint) => {
     const { isBreakpoint, slides } = breakpoint;
-    if (isBreakpoint && Number(slides) < slidesNumber) {
+    if (isBreakpoint && slides < slidesNumber) {
       return true;
     }
     return false;
   });
 
-  return results.includes(true);
+  const isBullets = results.includes(true);
+  return isBullets;
 };

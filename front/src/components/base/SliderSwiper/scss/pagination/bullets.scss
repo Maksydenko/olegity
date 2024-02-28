@@ -15,22 +15,30 @@
     }
 
     .swiper-pagination-bullet {
-      width: rem(6) !important;
-      height: rem(6) !important;
       margin: 0 !important;
       background: $light !important;
 
       &:not(:last-child) {
-        margin-right: rem(5) !important;
+        margin-right: rem(4) !important;
       }
 
       &:not(&-active) {
-        opacity: 0.8 !important;
+        width: rem(8) !important;
+        height: rem(8) !important;
+        opacity: 0.8;
+        transition: opacity 0.3s ease 0s;
+
+        @include hover(
+          (
+            opacity: 0.4,
+          )
+        );
       }
 
       &.swiper-pagination-bullet-active {
-        width: rem(10) !important;
-        height: rem(10) !important;
+        width: rem(12) !important;
+        height: rem(12) !important;
+        cursor: default;
       }
     }
   }

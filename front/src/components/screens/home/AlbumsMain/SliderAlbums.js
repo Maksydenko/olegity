@@ -1,10 +1,15 @@
 import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
 import MusicCard from "@shared/MusicCard/MusicCard";
 
+import { useBreakpointCheck } from "@hooks/useBreakpointCheck";
+
 import { breakpoints } from "@constants/breakpoints.const";
 import { albums } from "@constants/music/albums.const";
 
 const SliderAlbums = () => {
+  const isMobile = useBreakpointCheck(breakpoints.mobile);
+  const isMobileSmall = useBreakpointCheck(breakpoints.mobileSmall);
+
   const slides = albums.map((album) => {
     const { title } = album;
 
@@ -23,9 +28,11 @@ const SliderAlbums = () => {
       breakpoints={{
         [breakpoints.mobile]: {
           slidesPerView: 3,
+          isBreakpoint: isMobile,
         },
         [breakpoints.mobileSmall]: {
           slidesPerView: 2,
+          isBreakpoint: isMobileSmall,
         },
       }}
     >

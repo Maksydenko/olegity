@@ -32,13 +32,13 @@ const SliderSwiper = ({
   navigation = true,
 
   // Pagination
-  pagination,
+  pagination = true,
   // Clickable
   paginationClickable = true,
   // Dynamic bullets
   paginationDynamicBullets,
   // Types: bullets, fraction, progressbar
-  paginationType = "progressbar",
+  paginationType = "bullets",
 
   // Scrollbar
   scrollbar,
@@ -147,23 +147,29 @@ const SliderSwiper = ({
   const isBullets =
     pagination &&
     paginationType === "bullets" &&
-    breakpoints &&
+    // breakpoints &&
     /* eslint-disable-next-line react-hooks/rules-of-hooks */
-    useBullets(breakpoints, slidesPerView, childrenLength);
+    useBullets(slidesPerView, childrenLength, breakpoints);
 
-  const slides = children.map((slide, index) => (
-    <SwiperSlide
-      key={index}
-      {...(hash && {
-        "data-hash": `${hash}-${index}`,
-      })}
-      {...(virtual && {
-        virtualIndex: index,
-      })}
-    >
-      {slide}
-    </SwiperSlide>
-  ));
+  const slides = children.map((slide, index) => {
+    if (slide == null) {
+      return null;
+    }
+
+    return (
+      <SwiperSlide
+        key={index}
+        {...(hash && {
+          "data-hash": `${hash}-${index}`,
+        })}
+        {...(virtual && {
+          virtualIndex: index,
+        })}
+      >
+        {slide}
+      </SwiperSlide>
+    );
+  });
 
   return (
     <Swiper

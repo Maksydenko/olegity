@@ -1,19 +1,8 @@
-import { useState } from "react";
 import clsx from "clsx";
 
 import Img from "@base/Img/Img";
 
 const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
-  const [isFocus, setIsFocus] = useState(false);
-
-  const handleFocus = () => {
-    setIsFocus(true);
-  };
-
-  const handleBlur = () => {
-    setIsFocus(false);
-  };
-
   const handleChange = () => {
     onSwitchTheme(label);
   };
@@ -48,9 +37,6 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
         )}
         role="button"
         tabIndex={isChecked ? -1 : 0}
-        focusVisible={isFocus}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
         onKeyDown={handleKeyDown}
       >
         <Img className="theme-switcher__img" img={img} svg loader={false} />

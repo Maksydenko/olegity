@@ -22,7 +22,7 @@ const SliderMedias = () => {
   return (
     <SliderSwiper
       className="main-videos__swiper"
-      pagination
+      paginationType="progressbar"
       virtual
       spaceBetween={0}
     >
