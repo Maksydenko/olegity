@@ -13,7 +13,7 @@ On this website you can read the biography of the LSP artist, find all links to 
 ![HTML](https://skills.thijs.gg/icons?i=html)
 ![CSS](https://skills.thijs.gg/icons?i=css)
 ![SCSS](https://skills.thijs.gg/icons?i=scss)
-![JavaScript](https://skills.thijs.gg/icons?i=javascript)
+![JavaScript](https://skills.thijs.gg/icons?i=js)
 ![React](https://skills.thijs.gg/icons?i=react)
 ![Webpack](https://skills.thijs.gg/icons?i=webpack)
 ![Git](https://skills.thijs.gg/icons?i=git)
