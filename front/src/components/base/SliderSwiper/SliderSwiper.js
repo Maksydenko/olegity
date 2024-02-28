@@ -144,10 +144,9 @@ const SliderSwiper = ({
     }
   }, [autoplay]);
 
-  const { isBullets } =
+  const isBullets =
     pagination &&
     paginationType === "bullets" &&
-    // breakpoints &&
     /* eslint-disable-next-line react-hooks/rules-of-hooks */
     useBullets(slidesPerView, childrenLength, breakpoints);
 

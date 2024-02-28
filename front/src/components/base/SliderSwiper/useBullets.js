@@ -29,5 +29,5 @@ export const useBullets = (slidesPerView, slidesNumber, breakpoints) => {
   });
 
   const isBullets = results.includes(true);
-  return { isBullets };
+  return isBullets;
 };
