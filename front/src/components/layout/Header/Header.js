@@ -50,7 +50,11 @@ const Header = () => {
         <Link to="/" className="header__img" onClick={handleUnlockScroll}>
           <Img img={img} svg />
         </Link>
-        <Menu isScrollLocked={isScrollLocked} onClick={handleClick} />
+        <Menu
+          breakpoint={breakpoint}
+          isScrollLocked={isScrollLocked}
+          onClick={handleClick}
+        />
       </div>
     </header>
   );
