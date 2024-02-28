@@ -144,7 +144,7 @@ const SliderSwiper = ({
     }
   }, [autoplay]);
 
-  const isBullets =
+  const { isBullets } =
     pagination &&
     paginationType === "bullets" &&
     // breakpoints &&
