@@ -16,7 +16,7 @@
 
     .swiper-pagination-bullet {
       margin: 0 !important;
-      background: $light !important;
+      background: var(--mainColor) !important;
 
       &:not(:last-child) {
         margin-right: rem(4) !important;
