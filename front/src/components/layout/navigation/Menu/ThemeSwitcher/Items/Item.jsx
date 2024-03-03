@@ -35,7 +35,6 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
           "theme-switcher__label",
           isChecked && "theme-switcher__label_checked"
         )}
-        role="button"
         aria-label={`Set ${id.replace(/-/g, " ")}`}
         onKeyDown={handleKeyDown}
         {...(!isChecked && {
