@@ -31,7 +31,7 @@ const FullScreenVideo = () => {
         className="full-screen-video__full-screen"
         background={background}
       >
-        <Img className="full-screen-video__img" img={img} loading="auto" />
+        <Img className="full-screen-video__img" img={img} loading="eager" />
       </FullScreen>
     </section>
   );
