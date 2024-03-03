@@ -13,7 +13,7 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
     }
   };
 
-  const id = `${label}-theme`;
+  const id = `theme-${label}`;
 
   const img = {
     src: icon,
@@ -24,7 +24,7 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
     <>
       <input
         type="radio"
-        id={id}
+        id={label}
         className="theme-switcher__input"
         checked={isChecked}
         onChange={handleChange}
@@ -35,7 +35,7 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
           "theme-switcher__label",
           isChecked && "theme-switcher__label_checked"
         )}
-        aria-label={`Set ${id.replace(/-/g, " ")}`}
+        aria-label={`Set ${label} theme`}
         onKeyDown={handleKeyDown}
         {...(!isChecked && {
           tabIndex: 0,
