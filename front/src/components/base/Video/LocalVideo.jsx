@@ -10,7 +10,7 @@ const Video = ({
   muted = true,
   controls,
   loop = true,
-  preload = "auto",
+  preload,
 }) => {
   const videoAttrs = {
     poster,
