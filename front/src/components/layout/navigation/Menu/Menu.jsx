@@ -20,6 +20,7 @@ const Menu = ({ breakpoint, isScrollLocked, onClick }) => {
             isScrollLocked && "menu__button_active"
           )}
           type="button"
+          aria-label={isScrollLocked ? "Close" : "Open"}
           onClick={onClick}
         >
           <span></span>
