@@ -8,7 +8,7 @@ import { useBreakpointCheck } from "@hooks/useBreakpointCheck";
 
 import { links } from "@layout/navigation/links.const";
 
-const Menu = ({ breakpoint, isScrollLocked, onClick }) => {
+const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
   const isBreakpoint = useBreakpointCheck(breakpoint);
 
   return (
@@ -17,17 +17,17 @@ const Menu = ({ breakpoint, isScrollLocked, onClick }) => {
         <button
           className={clsx(
             "menu__button",
-            isScrollLocked && "menu__button_active"
+            setIsScrollLock && "menu__button_active"
           )}
           type="button"
-          aria-label={isScrollLocked ? "Close" : "Open"}
+          aria-label={setIsScrollLock ? "Close" : "Open"}
           onClick={onClick}
         >
           <span></span>
         </button>
       )}
       <div
-        className={clsx("menu__body", isScrollLocked && "menu__body_active")}
+        className={clsx("menu__body", setIsScrollLock && "menu__body_active")}
       >
         <nav className="menu__content">
           <Items links={links} onClick={onClick} />

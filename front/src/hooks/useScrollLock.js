@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const useScrollLock = (inerts = []) => {
-  const [isScrollLocked, setIsScrollLocked] = useState(false);
+  const [isScrollLock, setIsScrollLock] = useState(false);
 
   const setInerts = (elements) => {
     elements.forEach((element) => {
@@ -22,7 +22,7 @@ export const useScrollLock = (inerts = []) => {
       return document.querySelector(inert);
     });
 
-    if (isScrollLocked) {
+    if (isScrollLock) {
       body.classList.add("lock");
       setInerts(inertElements);
     } else {
@@ -34,10 +34,10 @@ export const useScrollLock = (inerts = []) => {
       body.classList.remove("lock");
       removeInerts(inertElements);
     };
-  }, [inerts, isScrollLocked]);
+  }, [inerts, isScrollLock]);
 
   return {
-    isScrollLocked,
-    setIsScrollLocked,
+    isScrollLock,
+    setIsScrollLock,
   };
 };

@@ -11,15 +11,12 @@ import { breakpoints } from "@constants/breakpoints.const";
 import logo from "@img/logos/olegity.svg";
 
 const Header = () => {
-  const { isScrollLocked, setIsScrollLocked } = useScrollLock([
-    "main",
-    "footer",
-  ]);
+  const { isScrollLock, setIsScrollLock } = useScrollLock(["main", "footer"]);
   const breakpoint = breakpoints.desktop;
 
   const handleUnlockScroll = () => {
-    if (isScrollLocked) {
-      setIsScrollLocked(false);
+    if (isScrollLock) {
+      setIsScrollLock(false);
     }
   };
 
@@ -27,7 +24,7 @@ const Header = () => {
     const { innerWidth } = window;
     const isMoreBreakpoint = innerWidth > breakpoint;
 
-    if (isMoreBreakpoint && isScrollLocked) {
+    if (isMoreBreakpoint && isScrollLock) {
       handleUnlockScroll();
     }
   };
@@ -38,7 +35,7 @@ const Header = () => {
     const isLessBreakpoint = innerWidth < breakpoint;
 
     if (isLessBreakpoint) {
-      setIsScrollLocked(!isScrollLocked);
+      setIsScrollLock(!isScrollLock);
     }
   };
 
@@ -55,7 +52,7 @@ const Header = () => {
         </Link>
         <Menu
           breakpoint={breakpoint}
-          isScrollLocked={isScrollLocked}
+          setIsScrollLock={isScrollLock}
           onClick={handleClick}
         />
       </div>

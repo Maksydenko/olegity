@@ -9,9 +9,9 @@ const Item = ({ link: { value, path }, onClick }) => {
   const isActive = path === pathname;
 
   return (
-    <li className="menu__item">
+    <li className={clsx("menu__item", isActive && "menu__item_active")}>
       <Link
-        className={clsx("menu__link", isActive && "menu__link_active")}
+        className="menu__link"
         {...(!isActive && {
           to: path,
           onClick,

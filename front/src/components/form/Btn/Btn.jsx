@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import clsx from "clsx";
 
 const Btn = ({ className, path, children, type = "button", router = true }) => {
-  if (router) {
+  if (path && router) {
     return (
       <Link className={clsx(className, "btn")} to={path}>
         {children}
