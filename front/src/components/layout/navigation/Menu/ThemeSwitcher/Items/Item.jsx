@@ -36,8 +36,11 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
           isChecked && "theme-switcher__label_checked"
         )}
         role="button"
-        tabIndex={isChecked ? -1 : 0}
+        aria-label={`Set ${id.replace(/-/g, " ")}`}
         onKeyDown={handleKeyDown}
+        {...(!isChecked && {
+          tabIndex: 0,
+        })}
       >
         <Img className="theme-switcher__img" img={img} svg loader={false} />
       </label>
