@@ -5,8 +5,6 @@ const Item = ({ language: { value, path }, onClick }) => {
   const { i18n } = useTranslation();
   const { language } = i18n;
 
-  const isCurrentLanguage = path === language;
-
   const setHTMLLang = useCallback(() => {
     const htmlElement = document.querySelector("html");
     htmlElement.setAttribute("lang", path);
@@ -29,7 +27,7 @@ const Item = ({ language: { value, path }, onClick }) => {
       <button
         className="language-switcher__btn"
         type="button"
-        disabled={isCurrentLanguage}
+        disabled={path === language}
         onClick={handleChangeLanguage}
       >
         {value}

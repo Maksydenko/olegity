@@ -9,15 +9,17 @@ export const useBullets = (slidesPerView, slidesNumber, breakpoints) => {
   }
 
   const breakpointsArray = Object.entries(breakpoints).map(
-    ([, { slidesPerView: slides, isBreakpoint }]) => ({
-      isBreakpoint,
-      slides,
-    })
+    ([, { slidesPerView: slides, isBreakpoint }]) => {
+      return {
+        isBreakpoint,
+        slides,
+      };
+    }
   );
 
   const breakpointsWithDesktop = addBreakpointDesktop(
-    breakpointsArray,
-    slidesPerView
+    slidesPerView,
+    breakpointsArray
   );
 
   const results = breakpointsWithDesktop.map((breakpoint) => {

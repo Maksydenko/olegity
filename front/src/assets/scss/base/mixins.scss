@@ -97,6 +97,21 @@
   }
 }
 
+// Fill
+@mixin fill($position: absolute, $important: false) {
+  // Important
+  @if ($important == important) {
+    position: $position !important;
+  } @else {
+    position: $position;
+  }
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 // Centered
 @mixin centered($method) {
   // Flex
@@ -112,21 +127,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-// Fill
-@mixin fill($position: absolute, $important: false) {
-  // Important
-  @if ($important == important) {
-    position: $position !important;
-  } @else {
-    position: $position;
-  }
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 // Nowrap text

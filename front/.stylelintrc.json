@@ -4,9 +4,9 @@
     "stylelint-config-recommended-scss"
   ],
   "rules": {
-    "color-hex-length": "short",
-    "scss/operator-no-newline-after": null,
     "block-no-empty": null,
-    "no-empty-source": null
+    "color-hex-length": "short",
+    "no-empty-source": null,
+    "scss/operator-no-newline-after": null
   }
 }

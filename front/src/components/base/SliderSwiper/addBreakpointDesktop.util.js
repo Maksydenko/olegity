@@ -1,4 +1,4 @@
-export const addBreakpointDesktop = (breakpoints, slidesPerView) => {
+export const addBreakpointDesktop = (slidesPerView, breakpoints) => {
   const firstBreakpoint = breakpoints[0];
   const newObject = {
     isBreakpoint: true,

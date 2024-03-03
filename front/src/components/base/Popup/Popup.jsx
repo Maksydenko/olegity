@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
+import Box from "./Box";
+
 const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
   const isForceOpenIsUndefined = typeof forceOpen === "undefined";
@@ -58,14 +60,7 @@ const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
               leaveFrom="popup__leave-from popup__leave-from_content"
               leaveTo="popup__leave-to popup__leave-to_content"
             >
-              <Dialog.Panel className="popup__box">
-                <div className="popup__children">{children}</div>
-                <button
-                  className="popup__cross"
-                  type="button"
-                  onClick={handleClose}
-                ></button>
-              </Dialog.Panel>
+              <Box onClose={handleClose}>{children}</Box>
             </Transition.Child>
           </div>
         </Dialog>

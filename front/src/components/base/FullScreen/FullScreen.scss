@@ -1,10 +1,10 @@
 .full-screen {
   position: relative;
   display: flex;
-  min-height: 100vh;
+  min-height: 100svh;
 
-  @supports (min-height: 100svh) {
-    min-height: 100svh;
+  @supports not (min-height: 100svh) {
+    min-height: 100vh;
   }
 
   // .full-screen__body
