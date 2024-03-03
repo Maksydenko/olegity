@@ -3,13 +3,13 @@
   "name": "Olegity",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64",
-      "type": "image/x-icon"
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     },
     {
       "src": "logo.png",
-      "sizes": "512x512",
+      "sizes": "1024x1024",
       "type": "image/png"
     }
   ],
