@@ -86,16 +86,16 @@
       background-color: rgba(0, 0, 0, 0.8);
       transition: right 0.3s ease 0s;
 
-      &::before {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 8;
-        width: 100%;
-        height: rem(70);
-        content: "";
-      }
-
+      // &::before {
+      //   position: fixed;
+      //   top: 0;
+      //   left: 0;
+      //   z-index: 8;
+      //   width: 100%;
+      //   height: rem(70);
+      //   content: "";
+      //   background-color: rgba(0, 0, 0, 0.8);
+      // }
       // .menu__body_active
 
       &_active {
@@ -110,22 +110,20 @@
     font-size: rem(18);
     text-transform: uppercase;
 
-    @media (min-width: $desktop) {
-      > * {
-        &:not(:last-child) {
-          margin-right: rem(40);
-        }
-      }
-    }
-
     @media (max-width: $desktop) {
       flex-direction: column-reverse;
       align-items: flex-end;
       justify-content: flex-end;
       font-size: rem(24);
+    }
 
-      > * {
-        &:not(:first-child) {
+    > * {
+      &:not(:last-child) {
+        @media (min-width: $desktop) {
+          margin-right: rem(40);
+        }
+
+        @media (max-width: $desktop) {
           margin-bottom: em(40, 18);
         }
       }
