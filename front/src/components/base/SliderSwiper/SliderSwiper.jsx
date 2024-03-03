@@ -122,6 +122,17 @@ const SliderSwiper = ({
   useEffect(() => {
     const swiperCurrent = swiperRef?.current;
     const swiper = swiperCurrent?.swiper;
+
+    if (swiper) {
+      swiperCurrent.querySelectorAll("*").forEach((element) => {
+        element.setAttribute("tabIndex", "-1");
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    const swiperCurrent = swiperRef?.current;
+    const swiper = swiperCurrent?.swiper;
     const swiperAutoplay = swiper?.autoplay;
 
     if (swiperAutoplay) {
@@ -162,7 +173,6 @@ const SliderSwiper = ({
   return (
     <Swiper
       className={clsx(className, "swiper", isBullets && "swiper_bullets")}
-      inert=""
       ref={swiperRef}
       // Modules
       modules={[
