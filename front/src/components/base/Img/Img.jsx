@@ -6,7 +6,15 @@ import { Sources } from "./Sources";
 
 import { useLoadingObject } from "@hooks/useLoadingObject";
 
-const Img = ({ className, href, img, svg, loader, style }) => {
+const Img = ({
+  className,
+  href,
+  img,
+  svg,
+  loading = "lazy",
+  loader,
+  style,
+}) => {
   const imgRef = useRef(null);
   const { isLoading } = useLoadingObject(imgRef);
 
@@ -22,7 +30,7 @@ const Img = ({ className, href, img, svg, loader, style }) => {
       })}
     >
       {isLoader && <Loader />}
-      <Sources img={img} ref={imgRef} />
+      <Sources img={img} loading={loading} ref={imgRef} />
     </Tag>
   );
 };
