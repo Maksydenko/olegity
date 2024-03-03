@@ -30,6 +30,7 @@ const ScrollTop = () => {
     <button
       className={clsx("scroll-top", isActive && "scroll-top_active")}
       type="button"
+      aria-label="Scroll top"
       onClick={handleClick}
     >
       <span className="scroll-top__arrow-top _icon-arrow-top"></span>
