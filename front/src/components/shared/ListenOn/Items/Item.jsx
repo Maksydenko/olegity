@@ -19,6 +19,7 @@ const Item = ({
       <a
         className={clsx("listen-on__link", `_icon-${icon}`)}
         href={link}
+        aria-label={icon}
         target="_blank"
         rel="noreferrer"
       ></a>
