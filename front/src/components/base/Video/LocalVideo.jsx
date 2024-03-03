@@ -25,6 +25,7 @@ const Video = ({
     <div className={clsx(className, "video")}>
       <video {...videoAttrs}>
         <Sources video={video} />
+        <track kind="captions" />
       </video>
     </div>
   );
