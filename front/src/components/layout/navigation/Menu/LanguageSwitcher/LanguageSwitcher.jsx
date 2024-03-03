@@ -1,15 +1,11 @@
-import Item from "./Item";
-
-import { languages } from "./languages.const";
+import Items from "./Items/Items";
 
 const LanguageSwitcher = ({ onClick }) => {
-  const items = languages.map((language) => {
-    const { value } = language;
-
-    return <Item key={value} language={language} onClick={onClick} />;
-  });
-
-  return <ul className="menu__language-switcher language-switcher">{items}</ul>;
+  return (
+    <ul className="menu__language-switcher language-switcher">
+      <Items onClick={onClick} />
+    </ul>
+  );
 };
 
 export default LanguageSwitcher;

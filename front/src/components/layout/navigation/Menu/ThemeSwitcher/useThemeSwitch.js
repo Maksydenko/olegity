@@ -10,18 +10,18 @@ export const useThemeSwitch = () => {
 
   const storageTheme = isBrowser ? localStorage.getItem("theme") : null;
 
-  // Set the theme from local storage, the system theme, or the default
-  const [theme, setTheme] = useState(storageTheme || "system");
+  // Set the current theme from local storage, the system theme, or the default
+  const [currentTheme, setCurrentTheme] = useState(storageTheme || "system");
 
   const handleUpdateSystemTheme = (e) => {
     const { matches } = e;
-    setTheme(matches ? "dark" : "light");
+    setCurrentTheme(matches ? "dark" : "light");
   };
 
   useEffect(() => {
     const { documentElement } = document;
 
-    if (theme === "system") {
+    if (currentTheme === "system") {
       localStorage.removeItem("theme");
       documentElement.setAttribute("data-theme", systemTheme);
 
@@ -32,13 +32,13 @@ export const useThemeSwitch = () => {
         systemThemeQuery.removeEventListener("change", handleUpdateSystemTheme);
       };
     } else {
-      localStorage.setItem("theme", theme);
-      documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", currentTheme);
+      documentElement.setAttribute("data-theme", currentTheme);
     }
-  }, [theme, systemTheme]);
+  }, [currentTheme, systemTheme]);
 
   return {
-    theme,
-    setTheme,
+    currentTheme,
+    setCurrentTheme,
   };
 };

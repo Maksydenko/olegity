@@ -2,9 +2,9 @@ import clsx from "clsx";
 
 import Img from "@base/Img/Img";
 
-const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
+const Item = ({ theme: { icon, label }, isChecked, setCurrentTheme }) => {
   const handleChange = () => {
-    onSwitchTheme(label);
+    setCurrentTheme(label);
   };
 
   const handleKeyDown = ({ key }) => {
@@ -23,9 +23,9 @@ const Item = ({ theme: { icon, label }, isChecked, onSwitchTheme }) => {
   return (
     <>
       <input
-        type="radio"
-        id={label}
+        id={id}
         className="theme-switcher__input"
+        type="radio"
         checked={isChecked}
         onChange={handleChange}
       />

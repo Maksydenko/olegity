@@ -1,6 +1,10 @@
 import Item from "./Item";
 
-const Items = ({ themes, currentTheme, onSwitchTheme }) => {
+import { useThemeSwitch } from "../useThemeSwitch";
+
+const Items = ({ themes }) => {
+  const { currentTheme, setCurrentTheme } = useThemeSwitch();
+
   return themes.map((theme) => {
     const { label } = theme;
     const isChecked = currentTheme === label;
@@ -10,7 +14,7 @@ const Items = ({ themes, currentTheme, onSwitchTheme }) => {
         key={label}
         theme={theme}
         isChecked={isChecked}
-        onSwitchTheme={onSwitchTheme}
+        setCurrentTheme={setCurrentTheme}
       />
     );
   });
