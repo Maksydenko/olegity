@@ -10,7 +10,7 @@ const Video = ({
   muted = true,
   controls,
   loop = true,
-  preload = "metadata",
+  preload = "auto",
 }) => {
   const videoAttrs = {
     poster,
@@ -23,7 +23,7 @@ const Video = ({
 
   return (
     <div className={clsx(className, "video")}>
-      <video {...videoAttrs} loading="preload">
+      <video {...videoAttrs}>
         <Sources video={video} />
         <track kind="captions" />
       </video>
