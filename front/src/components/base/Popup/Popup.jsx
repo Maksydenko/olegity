@@ -31,6 +31,7 @@ const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
         <button
           className={clsx(className, "popup popup_btn")}
           type="button"
+          aria-label="Open"
           onClick={handleOpen}
         >
           {button}
