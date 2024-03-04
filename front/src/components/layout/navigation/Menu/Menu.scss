@@ -124,7 +124,9 @@
         @media (min-width: $desktop) {
           margin-right: rem(40);
         }
+      }
 
+      &:not(:first-child) {
         @media (max-width: $desktop) {
           margin-bottom: em(40, 18);
         }
