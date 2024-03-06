@@ -1,23 +1,9 @@
-import { useState } from "react";
 import clsx from "clsx";
 
-import { useWindowListener } from "@hooks/useWindowListener";
+import { useActiveOnScroll } from "@hooks/useActiveOnScroll";
 
 const ScrollTop = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const SCROLL_ACTIVE = 110;
-
-  const handleScroll = () => {
-    const { scrollY } = window;
-
-    if (scrollY >= SCROLL_ACTIVE) {
-      setIsActive(true);
-    } else {
-      setIsActive(false);
-    }
-  };
-  useWindowListener("scroll", handleScroll);
+  const { isActive } = useActiveOnScroll(110);
 
   const handleClick = () => {
     window.scrollTo({
