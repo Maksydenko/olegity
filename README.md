@@ -19,7 +19,3 @@ On this website you can read the biography of the LSP artist, find all links to 
 ![Git](https://skills.thijs.gg/icons?i=git)
 ![GitHub](https://skills.thijs.gg/icons?i=github)
 ![Visual Studio Code](https://skills.thijs.gg/icons?i=vscode)
-
-Add to package.json file for the build on GitHub Pages
-
-    "homepage": "https://maksydenko.github.io/olegity/",

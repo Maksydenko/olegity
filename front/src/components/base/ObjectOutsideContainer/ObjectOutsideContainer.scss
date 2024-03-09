@@ -16,9 +16,6 @@ $object: 50%;
       &__content {
         display: flex;
         flex: 0 0 100%;
-
-        + * {
-        }
       }
 
       // .object-outside-container__container
@@ -125,7 +122,7 @@ $object: 50%;
           padding-bottom: 30%;
           transform: translate(-100%, 0);
 
-          > div {
+          div {
             &:not(.loader) {
               @include fill;
               aspect-ratio: unset;

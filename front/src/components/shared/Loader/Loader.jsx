@@ -2,11 +2,11 @@ import clsx from "clsx";
 
 const Loader = (className) => (
   <div className={clsx(className, "loader")}>
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
+    <span className="dot"></span>
+    <span className="dot"></span>
+    <span className="dot"></span>
+    <span className="dot"></span>
+    <span className="dot"></span>
   </div>
 );
 

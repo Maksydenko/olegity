@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import Layout from "components/layout/Layout";
+import Layout from "./components/layout/Layout";
 
 test("renders learn react link", () => {
   render(<Layout />);

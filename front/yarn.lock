@@ -1801,10 +1801,10 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@remix-run/router@1.15.1":
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.15.1.tgz#221fd31a65186b9bc027b74573485fb3226dff7f"
-  integrity sha512-zcU0gM3z+3iqj8UX45AmWY810l3oUmXM7uH4dt5xtzvMhRtYVhKGOmgOd1877dOPPepfCjUv57w+syamWIYe7w==
+"@remix-run/router@1.15.3":
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.15.3.tgz#d2509048d69dbb72d5389a14945339f1430b2d3c"
+  integrity sha512-Oy8rmScVrVxWZVOpEF57ovlnhpZ8CCPlnIIumVcV9nFdiSIrus99+Lw78ekXyGvVDlIsFJbSfmSovJUhCWYV3w==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -6236,10 +6236,10 @@ i18next-http-backend@^2.5.0:
   dependencies:
     cross-fetch "4.0.0"
 
-i18next@^23.10.0:
-  version "23.10.0"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.10.0.tgz#fb328794ae692e6fdde0564259e421f4203c4a2c"
-  integrity sha512-/TgHOqsa7/9abUKJjdPeydoyDc0oTi/7u9F8lMSj6ufg4cbC1Oj3f/Jja7zj7WRIhEQKB7Q4eN6y68I9RDxxGQ==
+i18next@^23.10.1:
+  version "23.10.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.10.1.tgz#217ce93b75edbe559ac42be00a20566b53937df6"
+  integrity sha512-NDiIzFbcs3O9PXpfhkjyf7WdqFn5Vq6mhzhtkXzj51aOcNuPNcTwuYNuXCpHsanZGHlHKL35G7huoFeVic1hng==
   dependencies:
     "@babel/runtime" "^7.23.2"
 
@@ -9128,7 +9128,7 @@ postcss@^8.3.5, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.4:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@^8.4.33:
+postcss@^8.4.32, postcss@^8.4.33:
   version "8.4.35"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.35.tgz#60997775689ce09011edf083a549cea44aabe2f7"
   integrity sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==
@@ -9409,10 +9409,10 @@ react-fast-compare@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
 
-react-i18next@^14.0.5:
-  version "14.0.5"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-14.0.5.tgz#5df7b88a3ac8afbef8089ed0d0c27e12b9a1acac"
-  integrity sha512-5+bQSeEtgJrMBABBL5lO7jPdSNAbeAZ+MlFWDw//7FnVacuVu3l9EeWFzBQvZsKy+cihkbThWOAThEdH8YjGEw==
+react-i18next@^14.1.0:
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-14.1.0.tgz#44da74fbffd416f5d0c5307ef31735cf10cc91d9"
+  integrity sha512-3KwX6LHpbvGQ+sBEntjV4sYW3Zovjjl3fpoHbUwSgFHf0uRBcbeCBLR5al6ikncI5+W0EFb71QXZmfop+J6NrQ==
   dependencies:
     "@babel/runtime" "^7.23.9"
     html-parse-stringify "^3.0.1"
@@ -9455,20 +9455,20 @@ react-refresh@^0.11.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
-react-router-dom@^6.22.1:
-  version "6.22.1"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.22.1.tgz#cfa109d4b6b0a4d00bac179bc0ad2a6469455282"
-  integrity sha512-iwMyyyrbL7zkKY7MRjOVRy+TMnS/OPusaFVxM2P11x9dzSzGmLsebkCvYirGq0DWB9K9hOspHYYtDz33gE5Duw==
+react-router-dom@^6.22.3:
+  version "6.22.3"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.22.3.tgz#9781415667fd1361a475146c5826d9f16752a691"
+  integrity sha512-7ZILI7HjcE+p31oQvwbokjk6OA/bnFxrhJ19n82Ex9Ph8fNAq+Hm/7KchpMGlTgWhUxRHMMCut+vEtNpWpowKw==
   dependencies:
-    "@remix-run/router" "1.15.1"
-    react-router "6.22.1"
+    "@remix-run/router" "1.15.3"
+    react-router "6.22.3"
 
-react-router@6.22.1:
-  version "6.22.1"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.22.1.tgz#a5ff849bfe709438f7e139421bb28138209662c7"
-  integrity sha512-0pdoRGwLtemnJqn1K0XHUbnKiX0S4X8CgvVVmHGOWmofESj31msHo/1YiqcJWK7Wxfq2a4uvvtS01KAQyWK/CQ==
+react-router@6.22.3:
+  version "6.22.3"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.22.3.tgz#9d9142f35e08be08c736a2082db5f0c9540a885e"
+  integrity sha512-dr2eb3Mj5zK2YISHK++foM9w4eBnO23eKnZEDs7c880P6oKbrjz/Svg9+nxqtHQK+oMW4OtjZca0RqPglXxguQ==
   dependencies:
-    "@remix-run/router" "1.15.1"
+    "@remix-run/router" "1.15.3"
 
 react-scripts@^5.0.1:
   version "5.0.1"
@@ -10532,12 +10532,12 @@ stylehacks@^5.1.1:
     browserslist "^4.21.4"
     postcss-selector-parser "^6.0.4"
 
-stylelint-config-recess-order@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-recess-order/-/stylelint-config-recess-order-4.6.0.tgz#b4c851c490b4e626b14712686b1eab1e4b17e253"
-  integrity sha512-V76fhv3YtcNXh/hyAuAdSzi5FmcrG54Mp2AThJ3D/PTMTSYzUPd7GIhP6z9mTqnRhmkk6YTfcu/JWB8h+Yrcaw==
+stylelint-config-recess-order@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-recess-order/-/stylelint-config-recess-order-5.0.0.tgz#34882a0ec585b22ca4345d1127f087e5be62e8be"
+  integrity sha512-D+/Got844O96No2mj/H2NhLjj555iKAy/Mea+JCerfKB9TBKQW3/IudSVkTCxE4QiRDLldfH15x6FH1D1Anjhw==
   dependencies:
-    stylelint-order "6.x"
+    stylelint-order "^6.0.4"
 
 stylelint-config-recommended-scss@^14.0.0:
   version "14.0.0"
@@ -10553,12 +10553,12 @@ stylelint-config-recommended@^14.0.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-14.0.0.tgz#b395c7014838d2aaca1755eebd914d0bb5274994"
   integrity sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==
 
-stylelint-order@6.x:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-6.0.3.tgz#160b78650bd90463241b992581efee7159baefc2"
-  integrity sha512-1j1lOb4EU/6w49qZeT2SQVJXm0Ht+Qnq9GMfUa3pMwoyojIWfuA+JUDmoR97Bht1RLn4ei0xtLGy87M7d29B1w==
+stylelint-order@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-6.0.4.tgz#3e80d876c61a98d2640de181433686f24284748b"
+  integrity sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==
   dependencies:
-    postcss "^8.4.21"
+    postcss "^8.4.32"
     postcss-sorting "^8.0.2"
 
 stylelint-scss@^6.0.0:
@@ -10713,10 +10713,10 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-swiper@^11.0.6:
-  version "11.0.6"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.0.6.tgz#787187e2711b01301b4c67b86b8e03099e2fc9f2"
-  integrity sha512-W/Me7MQl5rNgdM5x9i3Gll76WsyVpnHn91GhBOyL7RCFUeg62aVnflzlVfIpXzZ/87FtJOfAoDH79ZH2Yq76zA==
+swiper@^11.0.7:
+  version "11.0.7"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.0.7.tgz#fe51bb64546c2c21a1ec6914e7764af953443ded"
+  integrity sha512-cDfglW1B6uSmB6eB6pNmzDTNLmZtu5bWWa1vak0RU7fOI9qHjMzl7gVBvYSl34b0RU2N11HxxETJqQ5LeqI1cA==
 
 symbol-tree@^3.2.4:
   version "3.2.4"
