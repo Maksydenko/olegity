@@ -5,7 +5,7 @@ import { HashRouter } from "react-router-dom";
 
 import Layout from "@components/layout/Layout";
 import reportWebVitals from "./reportWebVitals";
-import "./i18next";
+import "./i18n";
 import "./index.scss";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
