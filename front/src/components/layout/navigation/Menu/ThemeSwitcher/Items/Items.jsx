@@ -2,7 +2,7 @@ import Item from "./Item";
 
 import { useThemeSwitch } from "../useThemeSwitch";
 
-const Items = ({ themes }) => {
+const Items = ({ themes, onClick }) => {
   const { currentTheme, setCurrentTheme } = useThemeSwitch();
 
   return themes.map((theme) => {
@@ -13,6 +13,7 @@ const Items = ({ themes }) => {
       <Item
         key={label}
         theme={theme}
+        onClick={onClick}
         isChecked={isChecked}
         setCurrentTheme={setCurrentTheme}
       />

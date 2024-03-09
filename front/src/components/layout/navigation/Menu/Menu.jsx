@@ -31,7 +31,7 @@ const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
       >
         <nav className="menu__content">
           <Items links={links} onClick={onClick} />
-          <LanguageSwitcher onClick={onClick} />
+          <LanguageSwitcher />
           <ThemeSwitcher />
         </nav>
       </div>

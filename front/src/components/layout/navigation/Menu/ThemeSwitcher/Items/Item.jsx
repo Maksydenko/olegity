@@ -2,9 +2,18 @@ import clsx from "clsx";
 
 import Img from "@base/Img/Img";
 
-const Item = ({ theme: { icon, label }, isChecked, setCurrentTheme }) => {
+const Item = ({
+  theme: { icon, label },
+  onClick,
+  isChecked,
+  setCurrentTheme,
+}) => {
   const handleChange = () => {
     setCurrentTheme(label);
+
+    if (onClick) {
+      onClick();
+    }
   };
 
   const handleKeyDown = ({ key }) => {

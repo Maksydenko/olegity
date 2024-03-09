@@ -13,7 +13,10 @@ const Item = ({ language: { value, path }, onClick }) => {
   const handleChangeLanguage = () => {
     i18n.changeLanguage(path);
     setHTMLLang();
-    onClick();
+
+    if (onClick) {
+      onClick();
+    }
   };
 
   useEffect(() => {

@@ -18,8 +18,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__main">
-          <Link to="/" className="footer__img">
-            <Img img={img} svg />
+          <Link to="/" className="footer__logo">
+            <Img className="footer__img" img={img} svg loader={false} />
           </Link>
           <p className="footer__description">{t("footer-description")}</p>
         </div>

@@ -47,8 +47,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <Link to="/" className="header__img" onClick={handleUnlockScroll}>
-          <Img img={img} svg />
+        <Link className="header__logo" to="/" onClick={handleUnlockScroll}>
+          <Img className="header__img" img={img} svg loader={false} />
         </Link>
         <Menu
           breakpoint={breakpoint}
