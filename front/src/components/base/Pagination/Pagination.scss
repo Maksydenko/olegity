@@ -69,31 +69,32 @@
     }
 
     &:not([class*="active"], [class*="disabled"]) {
-      &:hover,
-      &:focus {
-        @extend %btn_hover;
-      }
+      @extend %btn_hover;
     }
   }
 
   // .pagination__active
+
   &__active {
   }
 
   // .pagination__active-link
+
   &__active-link {
     @extend %btn_active;
+    cursor: not-allowed;
   }
 
   // .pagination__disabled
 
   &__disabled {
-    display: none;
   }
 
   // .pagination__disabled-link
 
   &__disabled-link {
-    cursor: default;
+    @extend %btn_active;
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }

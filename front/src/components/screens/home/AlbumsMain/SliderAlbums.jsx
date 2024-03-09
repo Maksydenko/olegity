@@ -24,7 +24,7 @@ const SliderAlbums = () => {
 
   return (
     <SliderSwiper
-      className="albums-main__swiper"
+      className="albums-main__slider-swiper"
       breakpoints={{
         [breakpoints.mobile]: {
           slidesPerView: 3,
