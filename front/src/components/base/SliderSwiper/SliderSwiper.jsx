@@ -1,10 +1,13 @@
 import { useEffect, useRef } from "react";
 import clsx from "clsx";
+
+import Nav from "./Nav";
+
 import { useBullets } from "./useBullets";
 
 // import Swiper core and required modules
 import {
-  Navigation,
+  // Navigation,
   Pagination,
   // Scrollbar,
   // HashNavigation,
@@ -21,13 +24,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/scss";
-import "swiper/scss/navigation";
+// import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 // import "swiper/scss/scrollbar";
 
 const SliderSwiper = ({
   className,
   children,
+
   // Navigation
   navigation = true,
 
@@ -171,122 +175,131 @@ const SliderSwiper = ({
   });
 
   return (
-    <Swiper
-      className={clsx(className, "swiper", isBullets && "swiper_bullets")}
-      ref={swiperRef}
-      // Modules
-      modules={[
-        Navigation,
-        Pagination,
-        // Scrollbar,
-        // HashNavigation,
-        Keyboard,
-        // Mousewheel,
-        // FreeMode,
-        // Autoplay,
-        Parallax,
-        Virtual,
-      ]}
-      // Arrows
-      navigation={navigation}
-      // Pagination
-      {...(pagination && {
-        pagination: {
-          // Clickable
-          clickable: paginationClickable,
-          // Dynamic bullets
-          dynamicBullets: paginationDynamicBullets,
-          // Types: bullets, fraction, progressbar
-          type: paginationType,
-        },
-      })}
-      // Scrollbar
-      {...(scrollbar && {
-        scrollbar: {
-          // The ability to drag scrollbar
-          draggable: scrollbarDraggable,
-        },
-      })}
-      // Turning/disabling dragging on a PC
-      simulateTouch={simulateTouch}
-      // Sweep sensitivity
-      touchRatio={touchRatio}
-      // Sweep/dragging angle
-      touchAngle={touchAngle}
-      // Grab cursor
-      grabCursor={grabCursor}
-      // Switching when clicking on a slide
-      slideToClickedSlide={slideToClickedSlide}
-      // Hash navigation
-      {...(hash && {
-        hashNavigation:
-          // Track the condition
-          {
-            watchState: hashNavigationWatchState,
-          },
-      })}
-      // Keyboard management
-      {...(keyboardEnabled && {
-        keyboard: {
-          // Turn on/off
-          enabled: keyboardEnabled,
-          // Turn on/off only when the slider is within the viewport
-          onlyInViewport: keyboardOnlyInViewport,
-          // Turn on/off the control control of PageUp, PageDown
-          pageUpDown: keyboardPageUpDown,
-        },
-      })}
-      // Mouse wheel control
-      {...(mousewheel && {
-        mousewheel: {
-          // The sensitivity of mouse wheel
-          sensitivity: mousewheelSensitivity,
-        },
-      })}
-      // Auto height
-      autoHeight={autoHeight}
-      // Number of slides for showing
-      slidesPerView={slidesPerView}
-      // Disabling functionality if there are more slides than needed
-      watchOverflow={watchOverflow}
-      // The indent between the slides
-      spaceBetween={spaceBetween}
-      // The number of flipped slides
-      slidesPerGroup={slidesPerGroup}
-      // Active slide in the center
-      centeredSlides={centeredSlides}
-      // Starting slide
-      initialSlide={initialSlide}
-      // Loop slider
-      loop={loop}
-      // Free mode
-      freeMode={freeMode}
-      // Autoplay
-      {...(autoplay && {
-        autoplay: {
-          // Pause between slides
-          delay: autoplayDelay,
-          // Stop on last slide
-          stopOnLastSlide: autoplayStopOnLastSlide,
-          // Disable after manual override
-          disableOnInteraction: autoplayDisableOnInteraction,
-        },
-      })}
-      // Speed
-      speed={speed}
-      // Horizontal/vertical slider
-      direction={direction}
-      // Breakpoints (adaptive)
-      breakpoints={breakpoints}
-      // Update slider when slider items change
-      observer={observer}
-      // Turn on/off parallax
-      parallax={parallax}
-      // Virtual slides
-      virtual={virtual}
+    <div
+      className={clsx(
+        className,
+        "slider-swiper",
+        isBullets && "slider-swiper_bullets"
+      )}
     >
-      {slides}
-    </Swiper>
+      {navigation && <Nav swiperRef={swiperRef} />}
+      <Swiper
+        className="slider-swiper__swiper"
+        ref={swiperRef}
+        // Modules
+        modules={[
+          // Navigation,
+          Pagination,
+          // Scrollbar,
+          // HashNavigation,
+          Keyboard,
+          // Mousewheel,
+          // FreeMode,
+          // Autoplay,
+          Parallax,
+          Virtual,
+        ]}
+        // Arrows
+        navigation={false}
+        // Pagination
+        {...(pagination && {
+          pagination: {
+            // Clickable
+            clickable: paginationClickable,
+            // Dynamic bullets
+            dynamicBullets: paginationDynamicBullets,
+            // Types: bullets, fraction, progressbar
+            type: paginationType,
+          },
+        })}
+        // Scrollbar
+        {...(scrollbar && {
+          scrollbar: {
+            // The ability to drag scrollbar
+            draggable: scrollbarDraggable,
+          },
+        })}
+        // Turning/disabling dragging on a PC
+        simulateTouch={simulateTouch}
+        // Sweep sensitivity
+        touchRatio={touchRatio}
+        // Sweep/dragging angle
+        touchAngle={touchAngle}
+        // Grab cursor
+        grabCursor={grabCursor}
+        // Switching when clicking on a slide
+        slideToClickedSlide={slideToClickedSlide}
+        // Hash navigation
+        {...(hash && {
+          hashNavigation:
+            // Track the condition
+            {
+              watchState: hashNavigationWatchState,
+            },
+        })}
+        // Keyboard management
+        {...(keyboardEnabled && {
+          keyboard: {
+            // Turn on/off
+            enabled: keyboardEnabled,
+            // Turn on/off only when the slider is within the viewport
+            onlyInViewport: keyboardOnlyInViewport,
+            // Turn on/off the control control of PageUp, PageDown
+            pageUpDown: keyboardPageUpDown,
+          },
+        })}
+        // Mouse wheel control
+        {...(mousewheel && {
+          mousewheel: {
+            // The sensitivity of mouse wheel
+            sensitivity: mousewheelSensitivity,
+          },
+        })}
+        // Auto height
+        autoHeight={autoHeight}
+        // Number of slides for showing
+        slidesPerView={slidesPerView}
+        // Disabling functionality if there are more slides than needed
+        watchOverflow={watchOverflow}
+        // The indent between the slides
+        spaceBetween={spaceBetween}
+        // The number of flipped slides
+        slidesPerGroup={slidesPerGroup}
+        // Active slide in the center
+        centeredSlides={centeredSlides}
+        // Starting slide
+        initialSlide={initialSlide}
+        // Loop slider
+        loop={loop}
+        // Free mode
+        freeMode={freeMode}
+        // Autoplay
+        {...(autoplay && {
+          autoplay: {
+            // Pause between slides
+            delay: autoplayDelay,
+            // Stop on last slide
+            stopOnLastSlide: autoplayStopOnLastSlide,
+            // Disable after manual override
+            disableOnInteraction: autoplayDisableOnInteraction,
+          },
+        })}
+        // Speed
+        speed={speed}
+        // Horizontal/vertical slider
+        direction={direction}
+        // Breakpoints (adaptive)
+        breakpoints={breakpoints}
+        // Update slider when slider items change
+        observer={observer}
+        // Turn on/off parallax
+        parallax={parallax}
+        // Virtual slides
+        virtual={virtual}
+      >
+        {slides}
+      </Swiper>
+    </div>
   );
 };
 

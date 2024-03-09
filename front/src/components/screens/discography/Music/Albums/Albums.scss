@@ -62,31 +62,20 @@
     }
   }
 
-  // .albums__swiper
+  // .albums__slider-swiper
 
-  &__swiper {
-    @media (max-width: $mobileSmall) {
-      .swiper-button-next,
-      .swiper-button-prev {
-        &::after {
-          background-color: transparent;
+  &__slider-swiper {
+    .slider-swiper__btn {
+      // .slider-swiper__btn_prev
 
-          @media (prefers-color-scheme: light) {
-            color: var(--mainColor);
-          }
-        }
+      &_prev {
+        left: rem(calc($containerPadding / -3));
       }
 
-      .swiper-button-prev {
-        &::after {
-          left: rem(-23);
-        }
-      }
+      // .slider-swiper__btn_next
 
-      .swiper-button-next {
-        &::after {
-          right: rem(-23);
-        }
+      &_next {
+        right: rem(calc($containerPadding / -3));
       }
     }
   }

@@ -46,13 +46,17 @@ textarea {
 }
 
 input {
-  &:-webkit-autofill {
-    transition: background-color 5000s ease-in-out 0s;
-  }
+  box-shadow: 0 0 0 rem(100) var(--mainBg) inset;
 }
 
 textarea {
   resize: none;
+}
+
+button {
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
 a,

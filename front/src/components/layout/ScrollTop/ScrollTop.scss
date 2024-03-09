@@ -1,11 +1,12 @@
 .scroll-top {
   position: fixed;
-  right: em(25, 44);
+  right: rem(calc($containerPadding / 2));
   bottom: em(40, 44);
   z-index: 10;
   width: em(60, 44);
   height: em(60, 44);
   font-size: rem(44);
+  color: $light;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: em(5, 44);
@@ -15,21 +16,12 @@
   // .scroll-top_active
 
   &_active {
+    @include hover;
     visibility: visible;
     opacity: 1;
-    @include hover;
   }
 
   @media (max-width: $mobile) {
     font-size: rem(32);
-  }
-
-  // .menu__arrow-top
-
-  &__arrow-top {
-    @include centered(flex);
-    width: em(60, 44);
-    height: em(60, 44);
-    color: $light;
   }
 }

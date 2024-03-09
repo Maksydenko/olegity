@@ -1,5 +1,5 @@
-.swiper {
-  // .swiper_bullets
+.slider-swiper {
+  // .slider-swiper_bullets
 
   &_bullets {
     .swiper-wrapper {
@@ -38,7 +38,7 @@
       &.swiper-pagination-bullet-active {
         width: rem(12) !important;
         height: rem(12) !important;
-        cursor: default;
+        cursor: not-allowed;
       }
     }
   }
