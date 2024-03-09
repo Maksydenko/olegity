@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.0",
     "react-paginate": "^8.2.0",
-    "react-player": "^2.14.1",
+    "react-player": "^2.15.1",
     "react-scripts": "^5.0.1",
     "swiper": "^11.0.7"
   },
