@@ -10,11 +10,8 @@
     }
   }
 
-  &,
-  > picture {
-    > img {
-      @include fill;
-      object-fit: cover;
-    }
+  > img {
+    @include fill;
+    object-fit: cover;
   }
 }

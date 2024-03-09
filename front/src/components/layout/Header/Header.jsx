@@ -10,8 +10,6 @@ import { useWindowListener } from "@/hooks/useWindowListener";
 
 import { breakpoints } from "@/constants/breakpoints.const";
 
-import logo from "@/assets/img/logos/olegity.svg";
-
 const Header = () => {
   const { isScrollLock, setIsScrollLock } = useScrollLock(["main", "footer"]);
   const breakpoint = breakpoints.desktop;
@@ -42,7 +40,7 @@ const Header = () => {
   };
 
   const img = {
-    src: logo,
+    src: "/img/logos/olegity.svg",
     alt: "Olegity",
   };
 

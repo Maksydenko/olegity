@@ -5,12 +5,10 @@ import Img from "@/components/base/Img/Img";
 import Navigation from "@/components/layout/navigation/Navigation/Navigation";
 import SocialNetworks from "./SocialNetworks/SocialNetworks";
 
-import logo from "@/assets/img/logos/olgt.svg";
-
 const Footer = () => {
   // const { t } = useTranslation();
   const img = {
-    src: logo,
+    src: "/img/logos/olgt.svg",
     alt: "Olgt",
   };
 

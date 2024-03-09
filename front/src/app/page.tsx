@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import HomePage from "@/components/screens/Home/Home";
+import Home from "@/components/screens/Home/Home";
 import { metadata } from "./layout";
 
 metadata.title = "Home";
@@ -18,10 +18,10 @@ metadata.openGraph.description = "";
 metadata.openGraph.url = "";
 metadata.openGraph.siteName = "";
 
-const Home: NextPage = () => (
+const HomePage: NextPage = () => (
   <main className="home-page">
-    <HomePage />
+    <Home />
   </main>
 );
 
-export default Home;
+export default HomePage;

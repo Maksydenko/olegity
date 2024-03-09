@@ -18,10 +18,8 @@ metadata.openGraph.description = "";
 metadata.openGraph.url = "";
 metadata.openGraph.siteName = "";
 
-const ConcertsPage: NextPage = () => (
-  <main className="concerts-page">
-    <Concerts />
-  </main>
-);
+const ConcertsPage: NextPage = () => {
+  return <Concerts />;
+};
 
 export default ConcertsPage;

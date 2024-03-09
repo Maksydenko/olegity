@@ -1,18 +1,18 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 
 import Header from "@/components/layout/Header/Header";
 import ScrollTop from "@/components/layout/ScrollTop/ScrollTop";
 import Footer from "@/components/layout/Footer/Footer";
 
 import "./globals.scss";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
-const inter = Inter({
-  subsets: [
-    "latin",
-    //  'cyrillic-ext'
-  ],
-});
+// const inter = Inter({
+//   subsets: [
+//     "latin",
+//     //  'cyrillic-ext'
+//   ],
+// });
 
 export const metadata = {
   title: "",
@@ -48,11 +48,11 @@ export const metadata = {
 };
 
 interface RootLayoutProps {
-  children: JSX.Element;
+  children: ReactNode;
 }
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => (
-  <html lang="en">
+  <html id="html" lang="en">
     <head>
       {/* <meta charset="utf-8" /> */}
       <meta
@@ -76,7 +76,9 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => (
       {/* <meta property="og:image:alt" content="" /> */}
       {/* <link rel="apple-touch-icon" href="" /> */}
     </head>
-    <body className={inter.className}>
+    <body
+    // className={inter.className}
+    >
       <div className="layout">
         <Header />
         {children}

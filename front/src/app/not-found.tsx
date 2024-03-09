@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import NotFoundPage from "@/components/screens/notFound/NotFound";
+import NotFound from "@/components/screens/notFound/NotFound";
 import { metadata } from "./layout";
 
 metadata.title = "Not found";
@@ -18,10 +18,10 @@ metadata.openGraph.description = "";
 metadata.openGraph.url = "";
 metadata.openGraph.siteName = "";
 
-const NotFound: NextPage = () => (
+const NotFoundPage: NextPage = () => (
   <main className="not-found-page">
-    <NotFoundPage />
+    <NotFound />
   </main>
 );
 
-export default NotFound;
+export default NotFoundPage;

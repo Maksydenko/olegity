@@ -21,11 +21,11 @@
   // .header__logo
 
   &__logo {
+    @include hover;
     position: relative;
     z-index: 9;
     width: rem(150);
     height: rem(30);
     transition: opacity 0.3s ease 0s;
-    @include hover;
   }
 }

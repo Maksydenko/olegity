@@ -47,6 +47,7 @@ $object: 50%;
               ((100vw - rem($containerPadding)) * ($object / 100%)) +
                 rem($containerPadding) / 2
             );
+          padding-bottom: 30%;
           transform: translate(-100%, 0);
 
           div {

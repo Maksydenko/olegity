@@ -13,7 +13,6 @@ import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
 import { breakpoints } from "@/constants/breakpoints.const";
 
-import uraganyLiveWebp from "@/assets/img/videos/music-videos/webp/uragany-live.webp";
 import uraganyLive from "@/assets/img/videos/music-videos/jpg/uragany-live.jpg";
 
 const UkraineSupport = () => {
@@ -76,16 +75,10 @@ const UkraineSupport = () => {
     [isTablet]
   );
 
-  const img = [
-    {
-      src: uraganyLiveWebp,
-      type: "webp",
-    },
-    {
-      src: uraganyLive,
-      alt: "Uragany live",
-    },
-  ];
+  const img = {
+    src: uraganyLive,
+    alt: "Uragany (Live)",
+  };
 
   const video = {
     title: "ЛСП (LSP) — Ураганы (Hurricanes) [Live]",

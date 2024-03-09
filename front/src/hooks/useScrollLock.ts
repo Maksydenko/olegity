@@ -1,0 +1,56 @@
+import { useState, useEffect } from "react";
+
+import { TypeSetState } from "@/types/setState.type";
+
+interface IUseScrollLock {
+  (inerts?: string[]): {
+    isScrollLocked: boolean;
+    setIsScrollLocked: TypeSetState<boolean>;
+  };
+}
+
+export const useScrollLock = (inerts = []) => {
+  const [isScrollLock, setIsScrollLock] = useState(false);
+
+  interface IHandleInerts {
+    (elements: (Element | null)[]): void;
+  }
+
+  const setInerts: IHandleInerts = (elements) => {
+    elements.forEach((element) => {
+      element?.setAttribute("inert", "");
+    });
+  };
+
+  const removeInerts: IHandleInerts = (elements) => {
+    elements.forEach((element) => {
+      element?.removeAttribute("inert");
+    });
+  };
+
+  useEffect(() => {
+    const { body } = document;
+
+    const inertElements = inerts.map((inert) => {
+      return document.querySelector(inert);
+    });
+
+    if (isScrollLock) {
+      body.classList.add("lock");
+      setInerts(inertElements);
+    } else {
+      body.classList.remove("lock");
+      removeInerts(inertElements);
+    }
+
+    return () => {
+      body.classList.remove("lock");
+      removeInerts(inertElements);
+    };
+  }, [inerts, isScrollLock]);
+
+  return {
+    isScrollLock,
+    setIsScrollLock,
+  };
+};

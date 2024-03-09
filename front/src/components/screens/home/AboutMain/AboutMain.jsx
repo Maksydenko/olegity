@@ -2,7 +2,6 @@ import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/Obj
 import Img from "@/components/base/Img/Img";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-import olegLspWebp from "@/assets/img/lsp/webp/about-main.webp";
 import olegLsp from "@/assets/img/lsp/jpg/about-main.jpg";
 
 const MainAbout = () => {
@@ -11,16 +10,10 @@ const MainAbout = () => {
     path: "/about",
   };
 
-  const img = [
-    {
-      src: olegLspWebp,
-      type: "webp",
-    },
-    {
-      src: olegLsp,
-      alt: "Oleg LSP",
-    },
-  ];
+  const img = {
+    src: olegLsp,
+    alt: "Oleg LSP",
+  };
 
   const object = <Img className="about-main__img" img={img} />;
 

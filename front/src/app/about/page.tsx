@@ -18,10 +18,8 @@ metadata.openGraph.description = "";
 metadata.openGraph.url = "";
 metadata.openGraph.siteName = "";
 
-const AboutPage: NextPage = () => (
-  <main className="about-page">
-    <About />
-  </main>
-);
+const AboutPage: NextPage = () => {
+  return <About />;
+};
 
 export default AboutPage;
