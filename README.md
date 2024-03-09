@@ -20,4 +20,4 @@ On this website you can read the biography of the LSP artist, find all links to 
 ![Webpack](https://skills.thijs.gg/icons?i=webpack)
 ![Git](https://skills.thijs.gg/icons?i=git)
 ![GitHub](https://skills.thijs.gg/icons?i=github)
-![Visual Studio Code](https://skills.thijs.gg/icons?i=vscode)
+![VS Code](https://skills.thijs.gg/icons?i=vscode)
