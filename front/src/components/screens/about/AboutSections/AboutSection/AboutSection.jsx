@@ -1,15 +1,17 @@
+"use client";
+
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import clsx from "clsx";
 
-import Img from "@base/Img/Img";
-import TextBlock from "@shared/TextBlock/TextBlock";
+import Img from "@/components/base/Img/Img";
+import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-import { useBreakpointCheck } from "@hooks/useBreakpointCheck";
+import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { breakpoints } from "@constants/breakpoints.const";
+import { breakpoints } from "@/constants/breakpoints.const";
 
 const AboutSection = ({ keyword, img, reverseAnimation }) => {
   const aboutSectionRef = useRef(null);

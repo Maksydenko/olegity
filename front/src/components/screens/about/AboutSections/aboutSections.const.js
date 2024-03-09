@@ -1,32 +1,32 @@
-import biographyWebp from "@img/lsp/webp/biography.webp";
-import biography from "@img/lsp/jpg/biography.jpg";
+import biographyWebp from "@/assets/img/lsp/webp/biography.webp";
+import biography from "@/assets/img/lsp/jpg/biography.jpg";
 
-import childhoodWebp from "@img/lsp/webp/childhood.webp";
-import childhood from "@img/lsp/jpg/childhood.jpg";
+import childhoodWebp from "@/assets/img/lsp/webp/childhood.webp";
+import childhood from "@/assets/img/lsp/jpg/childhood.jpg";
 
-import youthWebp from "@img/lsp/webp/youth.webp";
-import youth from "@img/lsp/jpg/youth.jpg";
+import youthWebp from "@/assets/img/lsp/webp/youth.webp";
+import youth from "@/assets/img/lsp/jpg/youth.jpg";
 
-import lspAndAnglichaninWebp from "@img/lsp/webp/lsp-and-anglichanin.webp";
-import lspAndAnglichanin from "@img/lsp/jpg/lsp-and-anglichanin.jpg";
+import lspAndAnglichaninWebp from "@/assets/img/lsp/webp/lsp-and-anglichanin.webp";
+import lspAndAnglichanin from "@/assets/img/lsp/jpg/lsp-and-anglichanin.jpg";
 
-import hipHopBattleWebp from "@img/lsp/jpg/hip-hop-battle.jpeg";
-import hipHopBattle from "@img/lsp/jpg/hip-hop-battle.jpeg";
+import hipHopBattleWebp from "@/assets/img/lsp/jpg/hip-hop-battle.jpeg";
+import hipHopBattle from "@/assets/img/lsp/jpg/hip-hop-battle.jpeg";
 
-import lspAndPharaohWebp from "@img/lsp/webp/lsp-and-pharaoh.webp";
-import lspAndPharaoh from "@img/lsp/jpg/lsp-and-pharaoh.jpg";
+import lspAndPharaohWebp from "@/assets/img/lsp/webp/lsp-and-pharaoh.webp";
+import lspAndPharaoh from "@/assets/img/lsp/jpg/lsp-and-pharaoh.jpg";
 
-import romaAnglichaninWebp from "@img/lsp/webp/roma-anglichanin.webp";
-import romaAnglichanin from "@img/lsp/jpg/roma-anglichanin.jpg";
+import romaAnglichaninWebp from "@/assets/img/lsp/webp/roma-anglichanin.webp";
+import romaAnglichanin from "@/assets/img/lsp/jpg/roma-anglichanin.jpg";
 
-import groupLspWebp from "@img/lsp/webp/group-lsp.webp";
-import groupLsp from "@img/lsp/jpg/group-lsp.jpg";
+import groupLspWebp from "@/assets/img/lsp/webp/group-lsp.webp";
+import groupLsp from "@/assets/img/lsp/jpg/group-lsp.jpg";
 
-import lspNowWebp from "@img/lsp/webp/lsp-now.webp";
-import lspNow from "@img/lsp/jpg/lsp-now.jpg";
+import lspNowWebp from "@/assets/img/lsp/webp/lsp-now.webp";
+import lspNow from "@/assets/img/lsp/jpg/lsp-now.jpg";
 
-import familyWebp from "@img/lsp/webp/family.webp";
-import family from "@img/lsp/jpg/family.jpg";
+import familyWebp from "@/assets/img/lsp/webp/family.webp";
+import family from "@/assets/img/lsp/jpg/family.jpg";
 
 export const aboutSections = [
   {

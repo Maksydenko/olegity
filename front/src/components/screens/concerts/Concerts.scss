@@ -1,0 +1,10 @@
+@import "@/components/screens/concerts/AboutConcerts/AboutConcerts";
+@import "@/components/screens/concerts/Gallery/Gallery";
+
+.concerts-page {
+  margin-top: rem(70);
+
+  > section {
+    margin-bottom: rem(50);
+  }
+}

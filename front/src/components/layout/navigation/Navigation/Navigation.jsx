@@ -1,15 +1,15 @@
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "next-i18next";
 
 import Items from "./Items/Items";
 
-import { links } from "@layout/navigation/links.const";
+import { links } from "@/components/layout/navigation/links.const";
 
 const Navigation = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <nav className="footer__navigation navigation">
-      <h6 className="navigation__title">{t("navigation")}</h6>
+      <h6 className="navigation__title">{"navigation"}</h6>
       <Items links={links} />
     </nav>
   );

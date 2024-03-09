@@ -1,4 +1,4 @@
-import Img from "@base/Img/Img";
+import Img from "@/components/base/Img/Img";
 
 const Grid = ({ groupImgs }) => {
   return groupImgs.map((img, index) => (

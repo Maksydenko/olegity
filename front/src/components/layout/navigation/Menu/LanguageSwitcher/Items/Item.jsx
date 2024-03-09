@@ -1,5 +1,7 @@
+"use client";
+
 import { useCallback, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const Item = ({ language: { value, path }, onClick }) => {
   const { i18n } = useTranslation();

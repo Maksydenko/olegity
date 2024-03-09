@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import Img from "@base/Img/Img";
+import Img from "@/components/base/Img/Img";
 import Text from "./Text";
 
 const MusicCard = ({

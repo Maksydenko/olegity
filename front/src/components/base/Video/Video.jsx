@@ -1,10 +1,12 @@
+"use client";
+
 import { useRef } from "react";
 import ReactPlayer from "react-player/lazy";
 import clsx from "clsx";
 
-import Loader from "@shared/Loader/Loader";
+import Loader from "@/components/shared/Loader/Loader";
 
-import { useLoadingObject } from "@hooks/useLoadingObject";
+import { useLoadingObject } from "@/hooks/useLoadingObject";
 
 const Video = ({ className, url, img, loader = true }) => {
   const videoRef = useRef(null);

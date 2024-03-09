@@ -1,4 +1,4 @@
-import PopupVideo from "@shared/PopupVideo/PopupVideo";
+import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
 const Item = ({ video }) => {
   const { title, img } = video;

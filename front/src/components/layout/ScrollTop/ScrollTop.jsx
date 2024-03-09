@@ -1,6 +1,8 @@
+"use client";
+
 import clsx from "clsx";
 
-import { useActiveOnScroll } from "@hooks/useActiveOnScroll";
+import { useActiveOnScroll } from "@/hooks/useActiveOnScroll";
 
 const ScrollTop = () => {
   const { isActive } = useActiveOnScroll(110);

@@ -4,9 +4,9 @@ import Items from "./Items/Items";
 import LanguageSwitcher from "./LanguageSwitcher/LanguageSwitcher";
 import ThemeSwitcher from "./ThemeSwitcher/ThemeSwitcher";
 
-import { useBreakpointCheck } from "@hooks/useBreakpointCheck";
+import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { links } from "@layout/navigation/links.const";
+import { links } from "@/components/layout/navigation/links.const";
 
 const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
   const isBreakpoint = useBreakpointCheck(breakpoint);

@@ -1,10 +1,12 @@
+"use client";
+
 import { useRef } from "react";
 import clsx from "clsx";
 
-import Loader from "@shared/Loader/Loader";
+import Loader from "@/components/shared/Loader/Loader";
 import { Sources } from "./Sources";
 
-import { useLoadingObject } from "@hooks/useLoadingObject";
+import { useLoadingObject } from "@/hooks/useLoadingObject";
 
 const Img = ({
   className,

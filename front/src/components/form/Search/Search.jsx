@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 const Search = ({ className, text, setText }) => {
   const [isFocus, setIsFocus] = useState();
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const handleFilterTextChange = ({ target: { value } }) => {
     setText(value);
@@ -25,7 +25,7 @@ const Search = ({ className, text, setText }) => {
         <span className="search__loupe _icon-loupe"></span>
         <input
           type="search"
-          placeholder={t("search")}
+          placeholder={"search"}
           className="search__input"
           value={text}
           onChange={handleFilterTextChange}

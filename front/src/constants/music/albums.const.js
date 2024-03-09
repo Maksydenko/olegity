@@ -1,20 +1,20 @@
-import oneMoreСityAvif from "@assets/img/music/albums/avif/one-more-city.avif";
-import oneMoreСity from "@assets/img/music/albums/jpg/one-more-city.jpg";
+import oneMoreСityAvif from "@/assets/img/music/albums/avif/one-more-city.avif";
+import oneMoreСity from "@/assets/img/music/albums/jpg/one-more-city.jpg";
 
-import svinoeRyloAvif from "@assets/img/music/albums/avif/svinoe-rylo.avif";
-import svinoeRylo from "@assets/img/music/albums/jpg/svinoe-rylo.jpg";
+import svinoeRyloAvif from "@/assets/img/music/albums/avif/svinoe-rylo.avif";
+import svinoeRylo from "@/assets/img/music/albums/jpg/svinoe-rylo.jpg";
 
-import tragicCityAvif from "@assets/img/music/albums/avif/tragic-city.avif";
-import tragicCity from "@assets/img/music/albums/jpg/tragic-city.jpg";
+import tragicCityAvif from "@/assets/img/music/albums/avif/tragic-city.avif";
+import tragicCity from "@/assets/img/music/albums/jpg/tragic-city.jpg";
 
-import magicCityAvif from "@assets/img/music/albums/avif/magic-city.avif";
-import magicCity from "@assets/img/music/albums/jpg/magic-city.jpg";
+import magicCityAvif from "@/assets/img/music/albums/avif/magic-city.avif";
+import magicCity from "@/assets/img/music/albums/jpg/magic-city.jpg";
 
-import viseliczaAvif from "@assets/img/music/albums/avif/viselicza.avif";
-import viselicza from "@assets/img/music/albums/jpg/viselicza.jpg";
+import viseliczaAvif from "@/assets/img/music/albums/avif/viselicza.avif";
+import viselicza from "@/assets/img/music/albums/jpg/viselicza.jpg";
 
-import yopAvif from "@assets/img/music/albums/avif/yop.avif";
-import yop from "@assets/img/music/albums/jpg/yop.jpg";
+import yopAvif from "@/assets/img/music/albums/avif/yop.avif";
+import yop from "@/assets/img/music/albums/jpg/yop.jpg";
 
 export const albums = [
   {

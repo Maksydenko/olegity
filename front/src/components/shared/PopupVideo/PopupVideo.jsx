@@ -1,8 +1,8 @@
 import clsx from "clsx";
 
-import Img from "@base/Img/Img";
-import Popup from "@base/Popup/Popup";
-import Video from "@base/Video/Video";
+import Img from "@/components/base/Img/Img";
+import Popup from "@/components/base/Popup/Popup";
+import Video from "@/components/base/Video/Video";
 
 const PopupVideo = ({ className, img, video, title = true }) => {
   const { title: videoTitle, url } = video;

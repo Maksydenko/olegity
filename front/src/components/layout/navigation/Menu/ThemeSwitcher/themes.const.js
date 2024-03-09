@@ -1,6 +1,6 @@
-import light from "@img/icons/themes/light.svg";
-import system from "@img/icons/themes/system.svg";
-import dark from "@img/icons/themes/dark.svg";
+import light from "@/assets/img/icons/themes/light.svg";
+import system from "@/assets/img/icons/themes/system.svg";
+import dark from "@/assets/img/icons/themes/dark.svg";
 
 export const themes = [
   {

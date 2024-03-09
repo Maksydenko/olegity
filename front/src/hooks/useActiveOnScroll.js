@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 
-import { useWindowListener } from "@hooks/useWindowListener";
+import { useWindowListener } from "@/hooks/useWindowListener";
 
 export const useActiveOnScroll = (breakpoint) => {
   const [isActive, setIsActive] = useState(false);

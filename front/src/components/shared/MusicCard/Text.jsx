@@ -1,11 +1,11 @@
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "next-i18next";
 
 function Text({
   track: { title, artist, genre, year },
   swiperParallax,
   swiperParallaxDurationAttr,
 }) {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <>
@@ -34,7 +34,7 @@ function Text({
         })}
         {...swiperParallaxDurationAttr}
       >
-        <span className="music-card__genre">{t(`genres.${genre}`)}</span>
+        <span className="music-card__genre">{`genres.${genre}`}</span>
         <span className="music-card__year">{year}</span>
       </div>
     </>

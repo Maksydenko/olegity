@@ -1,14 +1,16 @@
-import { Link } from "react-router-dom";
+"use client";
 
-import Img from "@base/Img/Img";
-import Menu from "@layout/navigation/Menu/Menu";
+import Link from "next/link";
 
-import { useScrollLock } from "@hooks/useScrollLock";
-import { useWindowListener } from "@hooks/useWindowListener";
+import Img from "@/components/base/Img/Img";
+import Menu from "@/components/layout/navigation/Menu/Menu";
 
-import { breakpoints } from "@constants/breakpoints.const";
+import { useScrollLock } from "@/hooks/useScrollLock";
+import { useWindowListener } from "@/hooks/useWindowListener";
 
-import logo from "@img/logos/olegity.svg";
+import { breakpoints } from "@/constants/breakpoints.const";
+
+import logo from "@/assets/img/logos/olegity.svg";
 
 const Header = () => {
   const { isScrollLock, setIsScrollLock } = useScrollLock(["main", "footer"]);
@@ -47,7 +49,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <Link className="header__logo" to="/" onClick={handleUnlockScroll}>
+        <Link className="header__logo" href="/" onClick={handleUnlockScroll}>
           <Img className="header__img" img={img} svg loader={false} />
         </Link>
         <Menu

@@ -1,4 +1,4 @@
-import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
+import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import Album from "./Album";
 
 const Albums = ({ albums }) => {

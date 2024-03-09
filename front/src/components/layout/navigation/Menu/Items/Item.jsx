@@ -1,23 +1,32 @@
-import { Link, useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+"use client";
+
+import Link from "next/link";
+// import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 const Item = ({ link: { value, path }, onClick }) => {
-  const { pathname } = useLocation();
-  const { t } = useTranslation();
+  // const { pathname } = useLocation();
+  // const { t } = useTranslation();
 
-  const isActive = path === pathname;
+  // const isActive = path === pathname;
 
   return (
-    <li className={clsx("menu__item", isActive && "menu__item_active")}>
+    <li
+      className={clsx(
+        "menu__item"
+        // isActive && "menu__item_active"
+      )}
+    >
       <Link
         className="menu__link"
-        {...(!isActive && {
-          to: path,
-          onClick,
-        })}
+        href={path}
+        onClick={onClick}
+        // {...(!isActive && {
+        //   to: path,
+        //   onClick,
+        // })}
       >
-        {t(value)}
+        {value}
       </Link>
     </li>
   );

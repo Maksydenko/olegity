@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";

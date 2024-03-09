@@ -1,30 +1,30 @@
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "next-i18next";
 
-import Tabs from "@base/Tabs/Tabs";
+import Tabs from "@/components/base/Tabs/Tabs";
 import Albums from "./Albums/Albums";
 import Singles from "./Singles/Singles";
 
-import { albums } from "@constants/music/albums.const";
-import { ep } from "@constants/music/ep.const";
-import { singles } from "@constants/music/singles.const";
+import { albums } from "@/constants/music/albums.const";
+import { ep } from "@/constants/music/ep.const";
+import { singles } from "@/constants/music/singles.const";
 
 const Music = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const tabs = [
     {
       id: "albums",
-      title: t("albums"),
+      title: "albums",
       content: <Albums albums={albums} />,
     },
     {
       id: "ep",
-      title: t("ep"),
+      title: "ep",
       content: <Albums albums={ep} />,
     },
     {
       id: "singles",
-      title: t("singles"),
+      title: "singles",
       content: <Singles singles={singles} />,
     },
   ];

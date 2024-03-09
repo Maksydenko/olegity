@@ -1,0 +1,13 @@
+@import "@/components/screens/home/FullScreenVideo/FullScreenVideo";
+@import "@/components/screens/home/AboutMain/AboutMain";
+@import "@/components/screens/home/AlbumsMain/AlbumsMain";
+@import "@/components/screens/home/VideosMain/VideosMain";
+@import "@/components/screens/home/ConcertsMain/ConcertsMain";
+
+.home-page {
+  > section {
+    &:not(:first-child, :last-child) {
+      padding-bottom: rem(50);
+    }
+  }
+}

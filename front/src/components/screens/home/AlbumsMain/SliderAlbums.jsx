@@ -1,10 +1,12 @@
-import SliderSwiper from "@base/SliderSwiper/SliderSwiper";
-import MusicCard from "@shared/MusicCard/MusicCard";
+"use client";
 
-import { useBreakpointCheck } from "@hooks/useBreakpointCheck";
+import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
+import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
-import { breakpoints } from "@constants/breakpoints.const";
-import { albums } from "@constants/music/albums.const";
+import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
+
+import { breakpoints } from "@/constants/breakpoints.const";
+import { albums } from "@/constants/music/albums.const";
 
 const SliderAlbums = () => {
   const isMobile = useBreakpointCheck(breakpoints.mobile);

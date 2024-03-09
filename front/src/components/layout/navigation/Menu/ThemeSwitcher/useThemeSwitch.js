@@ -1,6 +1,8 @@
+"use client";
+
 import { useState, useEffect } from "react";
 
-import { isBrowser } from "@constants/isBrowser.const";
+import { isBrowser } from "@/constants/isBrowser.const";
 
 export const useThemeSwitch = () => {
   const prefersDark = "(prefers-color-scheme: dark)";

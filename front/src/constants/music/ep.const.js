@@ -1,11 +1,11 @@
-import konditerskayaAvif from "@img/music/ep/avif/konditerskaya.avif";
-import konditerskaya from "@img/music/ep/jpg/konditerskaya.jpg";
+import konditerskayaAvif from "@/assets/img/music/ep/avif/konditerskaya.avif";
+import konditerskaya from "@/assets/img/music/ep/jpg/konditerskaya.jpg";
 
-import romanticСolegtionAvif from "@img/music/ep/avif/romantic-colegtion.avif";
-import romanticСolegtion from "@img/music/ep/jpg/romantic-colegtion.jpg";
+import romanticСolegtionAvif from "@/assets/img/music/ep/avif/romantic-colegtion.avif";
+import romanticСolegtion from "@/assets/img/music/ep/jpg/romantic-colegtion.jpg";
 
-import videtTsvetnyyeSnyAvif from "@img/music/ep/avif/videt-tsvetnyye-sny.avif";
-import videtTsvetnyyeSny from "@img/music/ep/jpg/videt-tsvetnyye-sny.jpg";
+import videtTsvetnyyeSnyAvif from "@/assets/img/music/ep/avif/videt-tsvetnyye-sny.avif";
+import videtTsvetnyyeSny from "@/assets/img/music/ep/jpg/videt-tsvetnyye-sny.jpg";
 
 export const ep = [
   {

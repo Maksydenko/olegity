@@ -1,18 +1,20 @@
+"use client";
+
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
-import TextBlock from "@shared/TextBlock/TextBlock";
-import PopupVideo from "@shared/PopupVideo/PopupVideo";
+import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
+import TextBlock from "@/components/shared/TextBlock/TextBlock";
+import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
-import { useBreakpointCheck } from "@hooks/useBreakpointCheck";
+import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { breakpoints } from "@constants/breakpoints.const";
+import { breakpoints } from "@/constants/breakpoints.const";
 
-import uraganyLiveWebp from "@img/videos/music-videos/webp/uragany-live.webp";
-import uraganyLive from "@img/videos/music-videos/jpg/uragany-live.jpg";
+import uraganyLiveWebp from "@/assets/img/videos/music-videos/webp/uragany-live.webp";
+import uraganyLive from "@/assets/img/videos/music-videos/jpg/uragany-live.jpg";
 
 const UkraineSupport = () => {
   const ukraineSupportRef = useRef(null);

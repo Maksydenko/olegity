@@ -1,4 +1,4 @@
-import MenuRoutes from "@layout/navigation/MenuRoutes/MenuRoutes";
+import MenuRoutes from "@/components/layout/navigation/MenuRoutes/MenuRoutes";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import ScrollTop from "./ScrollTop/ScrollTop";

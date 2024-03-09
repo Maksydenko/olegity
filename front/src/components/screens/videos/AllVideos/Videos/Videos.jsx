@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Search from "@form/Search/Search";
+import Search from "@/components/form/Search/Search";
 import Items from "./Items/Items";
 
 const Videos = ({ videos }) => {
