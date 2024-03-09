@@ -1,23 +1,16 @@
-@import "@screens/about/Biography/Biography";
-@import "@screens/about/Childhood/Childhood";
-@import "@screens/about/From2007To2009/From2007To2009";
-@import "@screens/about/From2011To2013/From2011To2013";
-@import "@screens/about/Year2014/Year2014";
-@import "@screens/about/Year2015/Year2015";
-@import "@screens/about/From2016To2017/From2016To2017";
-@import "@screens/about/From2017To2018/From2017To2018";
-@import "@screens/about/From2018ToPresent/From2018ToPresent";
-@import "@screens/about/Family/Family";
+@import "@screens/about/AboutSections/AboutSections";
 @import "@screens/about/UkraineSupport/UkraineSupport";
 
 .about-page {
+  padding: rem(30) 0;
   margin-top: rem(70);
 
-  @media (max-width: $tablet) {
-    margin-top: rem(100);
-  }
-
-  > section {
-    margin-bottom: rem(50);
+  > * {
+    &,
+    > section {
+      &:not(:last-child) {
+        margin-bottom: rem(50);
+      }
+    }
   }
 }

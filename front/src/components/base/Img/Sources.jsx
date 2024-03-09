@@ -9,9 +9,7 @@ export const Sources = forwardRef(({ img, loading }, ref) => {
     const pictures = img.slice(0, -1).map((picture, index) => {
       const { src, type } = picture;
 
-      return (
-        <source key={index} srcSet={src} type={`image/${type}`} ref={ref} />
-      );
+      return <source key={index} srcSet={src} type={`image/${type}`} />;
     });
 
     const { length: imgLength } = img;

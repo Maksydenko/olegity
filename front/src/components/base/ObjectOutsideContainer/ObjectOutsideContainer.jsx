@@ -8,7 +8,7 @@ const ResponsiveObjectOut = ({ className, children, object }) => {
           <div className="object-outside-container__body">{children}</div>
         </div>
       </div>
-      {object}
+      <div className="object-outside-container__object">{object}</div>
     </div>
   );
 };

@@ -2,6 +2,7 @@
   // .ukraine-support__text-block
 
   &__text-block {
+    position: relative;
     padding: rem(50) 0;
 
     @media (max-width: $desktop) {

@@ -1,11 +1,79 @@
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
 import ObjectOutsideContainer from "@base/ObjectOutsideContainer/ObjectOutsideContainer";
 import TextBlock from "@shared/TextBlock/TextBlock";
 import PopupVideo from "@shared/PopupVideo/PopupVideo";
+
+import { useBreakpointCheck } from "@hooks/useBreakpointCheck";
+
+import { breakpoints } from "@constants/breakpoints.const";
 
 import uraganyLiveWebp from "@img/videos/music-videos/webp/uragany-live.webp";
 import uraganyLive from "@img/videos/music-videos/jpg/uragany-live.jpg";
 
 const UkraineSupport = () => {
+  const ukraineSupportRef = useRef(null);
+  const isTablet = useBreakpointCheck(breakpoints.tablet);
+
+  useGSAP(
+    () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".ukraine-support__text-block", {
+        scrollTrigger: {
+          trigger: ".ukraine-support__text-block",
+          scrub: false,
+          markers: false,
+          toggleActions: "play none none none",
+        },
+        duration: 0.8,
+        x: isTablet ? 100 : -100,
+      });
+      gsap.from(".ukraine-support__popup-video", {
+        scrollTrigger: {
+          trigger: ".ukraine-support__popup-video",
+          scrub: false,
+          markers: false,
+          toggleActions: "play none none none",
+        },
+        duration: 0.8,
+        x: 100,
+      });
+
+      if (isTablet) {
+        return;
+      }
+      gsap.from(".ukraine-support__text-block", {
+        scrollTrigger: {
+          trigger: ".ukraine-support__text-block",
+          scrub: true,
+          markers: false,
+          toggleActions: "restart pause reverse pause",
+        },
+        duration: 0.8,
+        y: 50,
+      });
+      gsap.from(".ukraine-support__popup-video", {
+        scrollTrigger: {
+          trigger: ".ukraine-support__popup-video",
+          scrub: true,
+          markers: false,
+          toggleActions: "restart pause reverse pause",
+        },
+        duration: 0.8,
+        y: -50,
+      });
+    },
+    {
+      dependencies: [isTablet],
+      scope: ukraineSupportRef,
+    },
+    [isTablet]
+  );
+
   const img = [
     {
       src: uraganyLiveWebp,
@@ -31,7 +99,7 @@ const UkraineSupport = () => {
   );
 
   return (
-    <section className="ukraine-support">
+    <section className="ukraine-support" ref={ukraineSupportRef}>
       <ObjectOutsideContainer
         className="ukraine-support__object-outside-container object-outside-container_tablet"
         object={object}

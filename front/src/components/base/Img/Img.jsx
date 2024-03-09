@@ -12,7 +12,7 @@ const Img = ({
   img,
   svg,
   loading = "lazy",
-  loader,
+  loader = true,
   style,
 }) => {
   const imgRef = useRef(null);

@@ -18,39 +18,6 @@ $object: 50%;
         flex: 0 0 100%;
 
         + * {
-          @media (min-width: $tablet) {
-            flex: 0 0
-              calc(
-                ((100vw - rem($containerPadding)) * ($object / 100%)) +
-                  rem($containerPadding) / 2
-              );
-            transform: translate(-100%, 0);
-
-            div,
-            a {
-              @include fill;
-              aspect-ratio: unset;
-
-              @supports not (aspect-ratio: unset) {
-                padding-top: 0;
-              }
-            }
-          }
-
-          @media (min-width: ($containerWidth + px)) {
-            flex: 0 0
-              calc(
-                50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer))
-              );
-          }
-
-          img,
-          iframe,
-          video {
-            @media (max-width: $tablet) {
-              position: relative !important;
-            }
-          }
         }
       }
 
@@ -73,6 +40,43 @@ $object: 50%;
           padding-bottom: rem(30);
         }
       }
+
+      // .object-outside-container__object
+
+      &__object {
+        @media (min-width: $tablet) {
+          flex: 0 0
+            calc(
+              ((100vw - rem($containerPadding)) * ($object / 100%)) +
+                rem($containerPadding) / 2
+            );
+          transform: translate(-100%, 0);
+
+          div {
+            &:not(.loader) {
+              @include fill;
+              aspect-ratio: unset;
+
+              @supports not (aspect-ratio: unset) {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+
+        @media (min-width: ($containerWidth + px)) {
+          flex: 0 0
+            calc(50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer)));
+        }
+
+        img,
+        iframe,
+        video {
+          @media (max-width: $tablet) {
+            position: relative !important;
+          }
+        }
+      }
     }
   }
 
@@ -87,44 +91,6 @@ $object: 50%;
       &__content {
         display: flex;
         flex: 0 0 100%;
-
-        + * {
-          @media (min-width: $mobile) {
-            flex: 0 0
-              calc(
-                ((100vw - rem($containerPadding)) * ($object / 100%)) +
-                  rem($containerPadding) / 2
-              );
-            padding-bottom: 30%;
-            transform: translate(-100%, 0);
-
-            > * {
-              &:not(img, iframe, video) {
-                @include fill;
-                aspect-ratio: unset;
-
-                @supports not (aspect-ratio: unset) {
-                  padding-top: 0;
-                }
-              }
-            }
-          }
-
-          @media (min-width: ($containerWidth + px)) {
-            flex: 0 0
-              calc(
-                50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer))
-              );
-          }
-
-          img,
-          iframe,
-          video {
-            @media (max-width: $mobile) {
-              position: relative !important;
-            }
-          }
-        }
       }
 
       // .object-outside-container__container
@@ -144,6 +110,44 @@ $object: 50%;
 
         @media (max-width: $mobile) {
           padding-bottom: rem(30);
+        }
+      }
+
+      // .object-outside-container__object
+
+      &__object {
+        @media (min-width: $mobile) {
+          flex: 0 0
+            calc(
+              ((100vw - rem($containerPadding)) * ($object / 100%)) +
+                rem($containerPadding) / 2
+            );
+          padding-bottom: 30%;
+          transform: translate(-100%, 0);
+
+          > div {
+            &:not(.loader) {
+              @include fill;
+              aspect-ratio: unset;
+
+              @supports not (aspect-ratio: unset) {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+
+        @media (min-width: ($containerWidth + px)) {
+          flex: 0 0
+            calc(50vw - ($content / 100% - 0.5) * calc(rem($maxWidthContainer)));
+        }
+
+        img,
+        iframe,
+        video {
+          @media (max-width: $mobile) {
+            position: relative !important;
+          }
         }
       }
     }
