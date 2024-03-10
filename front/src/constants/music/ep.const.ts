@@ -1,7 +1,3 @@
-import konditerskaya from "@/assets/img/music/ep/jpg/konditerskaya.jpg";
-import romanticСolegtion from "@/assets/img/music/ep/jpg/romantic-colegtion.jpg";
-import videtTsvetnyyeSny from "@/assets/img/music/ep/jpg/videt-tsvetnyye-sny.jpg";
-
 export const ep = [
   {
     title: "Кондитерская (Cake Factory)",
@@ -9,7 +5,7 @@ export const ep = [
     genre: "hip-hop-rap",
     year: 2016,
     img: {
-      src: konditerskaya,
+      src: "/img/music/ep/konditerskaya.jpg",
       alt: "Кондитерская (Cake Factory)",
     },
     description: "",
@@ -37,7 +33,7 @@ export const ep = [
     genre: "hip-hop-rap",
     year: 2015,
     img: {
-      src: romanticСolegtion,
+      src: "/img/music/ep/romantic-colegtion.jpg",
       alt: "Romantic Colegtion",
     },
     description: "",
@@ -62,7 +58,7 @@ export const ep = [
     genre: "hip-hop-rap",
     year: 2011,
     img: {
-      src: videtTsvetnyyeSny,
+      src: "/img/music/ep/videt-tsvetnyye-sny.jpg",
       alt: "Видеть цветные сны (See coloured dreams)",
     },
     description: "",

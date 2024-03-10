@@ -1,73 +1,3 @@
-import vechnayaVesna from "@/assets/img/music/singles/jpg/vechnaya-vesna.jpg";
-import mrak from "@/assets/img/music/singles/jpg/mrak.jpg";
-import dorBlyu from "@/assets/img/music/singles/jpg/dor-blyu.jpg";
-import kurtochka from "@/assets/img/music/singles/jpg/kurtochka.jpg";
-import sektorPriz from "@/assets/img/music/singles/jpg/sektor-priz.jpg";
-import khiona from "@/assets/img/music/singles/jpg/khiona.jpg";
-import pyatAm from "@/assets/img/music/singles/jpg/5-am.jpg";
-import skate from "@/assets/img/music/singles/jpg/skate.jpg";
-import netTebya from "@/assets/img/music/singles/jpg/net-tebya.jpg";
-import uragany from "@/assets/img/music/singles/jpg/uragany.jpg";
-import stakan from "@/assets/img/music/singles/jpg/stakan.jpg";
-import snegovichok from "@/assets/img/music/singles/jpg/snegovichok.jpg";
-import wipeYourFeet from "@/assets/img/music/singles/jpg/wipe-your-feet.jpg";
-import flyuorografiya from "@/assets/img/music/singles/jpg/flyuorografiya.jpg";
-import neUbezhal from "@/assets/img/music/singles/jpg/ne-ubezhal.jpg";
-import disney from "@/assets/img/music/singles/jpg/disney.jpg";
-import uvyaz from "@/assets/img/music/singles/jpg/uvyaz.jpg";
-import clouny from "@/assets/img/music/singles/jpg/clouny.jpg";
-import spinning from "@/assets/img/music/singles/jpg/spinning.jpg";
-import solntseZolotoe from "@/assets/img/music/singles/jpg/solntse-zolotoe.jpg";
-import korolevaBala from "@/assets/img/music/singles/jpg/koroleva-bala.jpg";
-import malenkiyMalchik20 from "@/assets/img/music/singles/jpg/malenkiy-malchik-2-0.jpg";
-import gryaznyeTantsy from "@/assets/img/music/singles/jpg/gryaznye-tantsy.jpg";
-import estDengiNetChuvstv from "@/assets/img/music/singles/jpg/est-dengi-net-chuvstv.jpg";
-import atakaKota from "@/assets/img/music/singles/jpg/ataka-kota.jpg";
-import meteorit from "@/assets/img/music/singles/jpg/meteorit.jpg";
-import zvezdnayaKarta from "@/assets/img/music/singles/jpg/zvezdnaya-karta.jpg";
-import houston from "@/assets/img/music/singles/jpg/houston.jpg";
-import desyatNegrityat from "@/assets/img/music/singles/jpg/10-negrityat.jpg";
-import mechtatILyubit from "@/assets/img/music/singles/jpg/mechtat-i-lyubit.jpg";
-import domKhrustalnuy from "@/assets/img/music/singles/jpg/dom-khrustalnuy.jpg";
-import klyukvaRemix from "@/assets/img/music/singles/jpg/klyukva-remix.jpg";
-import stress from "@/assets/img/music/singles/jpg/stress.jpg";
-import amneziyaRemix from "@/assets/img/music/singles/jpg/amneziya-remix.jpg";
-import amneziya from "@/assets/img/music/singles/jpg/amneziya.jpg";
-import zavtra from "@/assets/img/music/singles/jpg/zavtra.jpg";
-import zvezdaRe2517 from "@/assets/img/music/singles/jpg/zvezda-re-25-17.jpg";
-import parenSBloka from "@/assets/img/music/singles/jpg/paren-s-bloka.jpg";
-import svodimSUma from "@/assets/img/music/singles/jpg/svodim-s-uma.jpg";
-import vesnovkaUshacha from "@/assets/img/music/singles/jpg/vesnovka-ushacha.jpg";
-import nikogda from "@/assets/img/music/singles/jpg/nikogda.jpg";
-import malenkiyPrintsMalkRemix from "@/assets/img/music/singles/jpg/malenkiy-prints-malk-remix.jpg";
-import avtopleyTuncrashersRemix from "@/assets/img/music/singles/jpg/avtopley-tuncrashers-remix.jpg";
-import obmanula from "@/assets/img/music/singles/jpg/obmanula.jpg";
-import zolotoyMalchik from "@/assets/img/music/singles/jpg/zolotoy-malchik.jpg";
-import avtopley from "@/assets/img/music/singles/jpg/avtopley.jpg";
-import patron from "@/assets/img/music/singles/jpg/patron.jpg";
-import kholostyakRemix from "@/assets/img/music/singles/jpg/kholostyak-remix.jpg";
-import kholostyakFedukEgorKrid from "@/assets/img/music/singles/jpg/kholostyak-feduk-egor-krid.jpg";
-import kholostyak from "@/assets/img/music/singles/jpg/kholostyak.jpg";
-import malenkiyPrintsIvanStarzevRemix from "@/assets/img/music/singles/jpg/malenkiy-prints-ivan-starzev-remix.jpg";
-import beybiRemix from "@/assets/img/music/singles/jpg/beybi-remix.jpg";
-import malenkiyPrints from "@/assets/img/music/singles/jpg/malenkiy-prints.jpg";
-import zelenoglazyyeDeffki from "@/assets/img/music/singles/jpg/zelenoglazyye-deffki.jpg";
-import vecherinkaRemix from "@/assets/img/music/singles/jpg/vecherinka-remix.jpg";
-import promenad from "@/assets/img/music/singles/jpg/promenad.jpg";
-import pimperial from "@/assets/img/music/singles/jpg/pimperial.jpg";
-import tiktonik from "@/assets/img/music/singles/jpg/tiktonik.jpg";
-import dengiNeProblema from "@/assets/img/music/singles/jpg/dengi-ne-problema.jpg";
-import feniks from "@/assets/img/music/singles/jpg/feniks.jpg";
-import dzhentelmenShou from "@/assets/img/music/singles/jpg/dzhentelmen-shou.jpg";
-import shestnadtsatEzumiye from "@/assets/img/music/singles/jpg/16ezumiye.jpg";
-import imperial from "@/assets/img/music/singles/jpg/imperial.jpg";
-import naytLayf from "@/assets/img/music/singles/jpg/nayt-layf.jpg";
-import chempionatRemix from "@/assets/img/music/singles/jpg/chempionat-remix.jpg";
-import celebration from "@/assets/img/music/singles/jpg/celebration.jpg";
-import bezumiye from "@/assets/img/music/singles/jpg/bezumiye.jpg";
-import mortvyyePrezidenty from "@/assets/img/music/singles/jpg/mortvyye-prezidenty.jpg";
-import mneSkuchnoZhit from "@/assets/img/music/singles/jpg/mne-skuchno-zhit.jpg";
-
 export const singles = [
   {
     title: "Вечная весна (Eternal spring)",
@@ -75,7 +5,7 @@ export const singles = [
     genre: "pop",
     year: 2023,
     img: {
-      src: vechnayaVesna,
+      src: "/img/music/singles/vechnaya-vesna.jpg",
       alt: "Вечная весна (Eternal spring)",
     },
     links: {
@@ -94,7 +24,7 @@ export const singles = [
     genre: "rock",
     year: 2022,
     img: {
-      src: mrak,
+      src: "/img/music/singles/mrak.jpg",
       alt: "Мрак (Darkness)",
     },
     links: {
@@ -113,7 +43,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: dorBlyu,
+      src: "/img/music/singles/dor-blyu.jpg",
       alt: "Дор Блю (Dorblue)",
     },
     links: {
@@ -132,7 +62,7 @@ export const singles = [
     genre: "pop",
     year: 2022,
     img: {
-      src: kurtochka,
+      src: "/img/music/singles/kurtochka.jpg",
       alt: "Курточка (Jacket)",
     },
     links: {
@@ -151,7 +81,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: sektorPriz,
+      src: "/img/music/singles/sektor-priz.jpg",
       alt: "Сектор Приз (Prize Sector)",
     },
     links: {
@@ -170,7 +100,7 @@ export const singles = [
     genre: "r&b",
     year: 2022,
     img: {
-      src: khiona,
+      src: "/img/music/singles/khiona.jpg",
       alt: "Хиона (Chiona)",
     },
     links: {
@@ -189,7 +119,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: pyatAm,
+      src: "/img/music/singles/5-am.jpg",
       alt: "5:00 AM",
     },
     links: {
@@ -208,7 +138,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: skate,
+      src: "/img/music/singles/skate.jpg",
       alt: "Skate",
     },
     links: {
@@ -226,7 +156,7 @@ export const singles = [
     genre: "pop",
     year: 2022,
     img: {
-      src: netTebya,
+      src: "/img/music/singles/net-tebya.jpg",
       alt: "Нет тебя (No you)",
     },
     links: {
@@ -245,7 +175,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: uragany,
+      src: "/img/music/singles/uragany.jpg",
       alt: "Ураганы (Hurricanes)",
     },
     links: {
@@ -264,7 +194,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: stakan,
+      src: "/img/music/singles/stakan.jpg",
       alt: "Стакан (Glass)",
     },
     links: {
@@ -283,7 +213,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: snegovichok,
+      src: "/img/music/singles/snegovichok.jpg",
       alt: "Снеговичок (Snowman)",
     },
     links: {
@@ -302,7 +232,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2022,
     img: {
-      src: wipeYourFeet,
+      src: "/img/music/singles/wipe-your-feet.jpg",
       alt: "wipe your feet",
     },
     links: {
@@ -321,7 +251,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2021,
     img: {
-      src: flyuorografiya,
+      src: "/img/music/singles/flyuorografiya.jpg",
       alt: "ФЛЮОРОГРАФИЯ (FLUROGRAPHY)",
     },
     links: {
@@ -340,7 +270,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2021,
     img: {
-      src: neUbezhal,
+      src: "/img/music/singles/ne-ubezhal.jpg",
       alt: "Не убежал (Didn't run away)",
     },
     links: {
@@ -359,7 +289,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2021,
     img: {
-      src: disney,
+      src: "/img/music/singles/disney.jpg",
       alt: "DISNEY",
     },
     links: {
@@ -378,7 +308,7 @@ export const singles = [
     genre: "hip-hop",
     year: 2021,
     img: {
-      src: uvyaz,
+      src: "/img/music/singles/uvyaz.jpg",
       alt: "Увяз (Binding)",
     },
     links: {
@@ -397,7 +327,7 @@ export const singles = [
     genre: "pop",
     year: 2021,
     img: {
-      src: clouny,
+      src: "/img/music/singles/clouny.jpg",
       alt: "Клоуны (Clowns)",
     },
     links: {
@@ -416,7 +346,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2021,
     img: {
-      src: spinning,
+      src: "/img/music/singles/spinning.jpg",
       alt: "Спиннинг (Spinning)",
     },
     links: {
@@ -435,7 +365,7 @@ export const singles = [
     genre: "pop",
     year: 2021,
     img: {
-      src: solntseZolotoe,
+      src: "/img/music/singles/solntse-zolotoe.jpg",
       alt: "Солнце Золотое (Golden Sun)",
     },
     links: {
@@ -454,7 +384,7 @@ export const singles = [
     genre: "pop",
     year: 2021,
     img: {
-      src: korolevaBala,
+      src: "/img/music/singles/koroleva-bala.jpg",
       alt: "Королева бала (Queen of the ball)",
     },
     links: {
@@ -473,7 +403,7 @@ export const singles = [
     genre: "pop",
     year: 2021,
     img: {
-      src: malenkiyMalchik20,
+      src: "/img/music/singles/malenkiy-malchik-2-0.jpg",
       alt: "Малэнкий малчик (Little boy) 2.0",
     },
     links: {
@@ -492,7 +422,7 @@ export const singles = [
     genre: "pop",
     year: 2021,
     img: {
-      src: gryaznyeTantsy,
+      src: "/img/music/singles/gryaznye-tantsy.jpg",
       alt: "Грязные танцы (Dirty dancing)",
     },
     links: {
@@ -511,7 +441,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2021,
     img: {
-      src: estDengiNetChuvstv,
+      src: "/img/music/singles/est-dengi-net-chuvstv.jpg",
       alt: "ЕСТЬ ДЕНЬГИ НЕТ ЧУВСТВ (HAVE MONEY NO FEELINGS)",
     },
     links: {
@@ -530,7 +460,7 @@ export const singles = [
     genre: "indie-pop",
     year: 2020,
     img: {
-      src: atakaKota,
+      src: "/img/music/singles/ataka-kota.jpg",
       alt: "Атака кота (Cat's attack)",
     },
     links: {
@@ -549,7 +479,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: meteorit,
+      src: "/img/music/singles/meteorit.jpg",
       alt: "Метеорит (Meteorite)",
     },
     links: {
@@ -568,7 +498,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: zvezdnayaKarta,
+      src: "/img/music/singles/zvezdnaya-karta.jpg",
       alt: "Звёздная карта (Star map)",
     },
     links: {
@@ -587,7 +517,7 @@ export const singles = [
     genre: "pop",
     year: 2020,
     img: {
-      src: houston,
+      src: "/img/music/singles/houston.jpg",
       alt: "Houston",
     },
     links: {
@@ -606,7 +536,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: desyatNegrityat,
+      src: "/img/music/singles/10-negrityat.jpg",
       alt: "10 негритят (10 negroes)",
     },
     links: {
@@ -625,7 +555,7 @@ export const singles = [
     genre: "hip-hop",
     year: 2020,
     img: {
-      src: mechtatILyubit,
+      src: "/img/music/singles/mechtat-i-lyubit.jpg",
       alt: "Мечтать и любить (To dream and to love)",
     },
     links: {
@@ -644,7 +574,7 @@ export const singles = [
     genre: "rock",
     year: 2020,
     img: {
-      src: domKhrustalnuy,
+      src: "/img/music/singles/dom-khrustalnuy.jpg",
       alt: "Дом хрустальный (Crystal house)",
     },
     links: {
@@ -662,7 +592,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: klyukvaRemix,
+      src: "/img/music/singles/klyukva-remix.jpg",
       alt: "Клюква (Cranberry) [Remix]",
     },
     links: {
@@ -681,7 +611,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: stress,
+      src: "/img/music/singles/stress.jpg",
       alt: "Стресс (Stress)",
     },
     links: {
@@ -700,7 +630,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: amneziyaRemix,
+      src: "/img/music/singles/amneziya-remix.jpg",
       alt: "Амнезия (Amnesia) [Remix]",
     },
     links: {
@@ -719,7 +649,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2019,
     img: {
-      src: zavtra,
+      src: "/img/music/singles/amneziya.jpg",
       alt: "Завтра (Tommorow)",
     },
     links: {
@@ -738,7 +668,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2019,
     img: {
-      src: amneziya,
+      src: "/img/music/singles/zavtra.jpg",
       alt: "Амнезия (Amnesia)",
     },
     links: {
@@ -757,7 +687,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2019,
     img: {
-      src: zvezdaRe2517,
+      src: "/img/music/singles/zvezda-re-25-17.jpg",
       alt: "Звезда (Star) [Re-25/17]",
     },
     links: {
@@ -776,7 +706,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2019,
     img: {
-      src: parenSBloka,
+      src: "/img/music/singles/paren-s-bloka.jpg",
       alt: "Парень с блока (Guy from block)",
     },
     links: {
@@ -795,7 +725,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2019,
     img: {
-      src: svodimSUma,
+      src: "/img/music/singles/svodim-s-uma.jpg",
       alt: "Сводим с ума (Driving crazy)",
     },
     links: {
@@ -814,7 +744,7 @@ export const singles = [
     genre: "pop",
     year: 2019,
     img: {
-      src: vesnovkaUshacha,
+      src: "/img/music/singles/vesnovka-ushacha.jpg",
       alt: "Весновка-ушача (Vesnovka-ushacha)",
     },
     links: {
@@ -833,7 +763,7 @@ export const singles = [
     genre: "pop",
     year: 2019,
     img: {
-      src: nikogda,
+      src: "/img/music/singles/nikogda.jpg",
       alt: "Никогда (Never)",
     },
     links: {
@@ -852,7 +782,7 @@ export const singles = [
     genre: "r&b",
     year: 2019,
     img: {
-      src: malenkiyPrintsMalkRemix,
+      src: "/img/music/singles/malenkiy-prints-malk-remix.jpg",
       alt: "Маленький принц (The little prince) [Malk Remix]",
     },
     links: {
@@ -871,7 +801,7 @@ export const singles = [
     genre: "pop",
     year: 2019,
     img: {
-      src: avtopleyTuncrashersRemix,
+      src: "/img/music/singles/avtopley-tuncrashers-remix.jpg",
       alt: "Автоплей (Autoplay) [TuneCrashers Remix]",
     },
     links: {
@@ -890,7 +820,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2019,
     img: {
-      src: obmanula,
+      src: "/img/music/singles/obmanula.jpg",
       alt: "Обманула (Cheated)",
     },
     links: {
@@ -909,7 +839,7 @@ export const singles = [
     genre: "r&b",
     year: 2019,
     img: {
-      src: zolotoyMalchik,
+      src: "/img/music/singles/zolotoy-malchik.jpg",
       alt: "Золотой мальчик (Golden boy)",
     },
     links: {
@@ -928,7 +858,7 @@ export const singles = [
     genre: "pop",
     year: 2019,
     img: {
-      src: avtopley,
+      src: "/img/music/singles/avtopley.jpg",
       alt: "Автоплей (Autoplay)",
     },
     links: {
@@ -947,7 +877,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2019,
     img: {
-      src: patron,
+      src: "/img/music/singles/patron.jpg",
       alt: "Патрон (Bullet Shell)",
     },
     links: {
@@ -966,7 +896,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2018,
     img: {
-      src: kholostyakRemix,
+      src: "/img/music/singles/kholostyak-remix.jpg",
       alt: "Холостяк (Bachelor) [Remix]",
     },
     links: {
@@ -985,7 +915,7 @@ export const singles = [
     genre: "pop",
     year: 2018,
     img: {
-      src: kholostyak,
+      src: "/img/music/singles/kholostyak-feduk-egor-krid.jpg",
       alt: "Холостяк (Bachelor)",
     },
     links: {
@@ -1004,7 +934,7 @@ export const singles = [
     genre: "pop",
     year: 2018,
     img: {
-      src: kholostyakFedukEgorKrid,
+      src: "/img/music/singles/kholostyak.jpg",
       alt: "Холостяк (Bachelor)",
     },
     links: {
@@ -1023,7 +953,7 @@ export const singles = [
     genre: "house",
     year: 2018,
     img: {
-      src: malenkiyPrintsIvanStarzevRemix,
+      src: "/img/music/singles/malenkiy-prints-ivan-starzev-remix.jpg",
       alt: "Маленький принц (The little prince) [Ivan Starzev Remix]",
     },
     links: {
@@ -1042,7 +972,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2018,
     img: {
-      src: beybiRemix,
+      src: "/img/music/singles/beybi-remix.jpg",
       alt: "Бэйби (Baby) [Remix]",
     },
     links: {
@@ -1061,7 +991,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2017,
     img: {
-      src: malenkiyPrints,
+      src: "/img/music/singles/malenkiy-prints.jpg",
       alt: "Маленький принц (The little prince)",
     },
     links: {
@@ -1080,7 +1010,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2018,
     img: {
-      src: zelenoglazyyeDeffki,
+      src: "/img/music/singles/zelenoglazyye-deffki.jpg",
       alt: "Зеленоглазые деффки! (Green-eyed girls!)",
     },
     links: {
@@ -1099,7 +1029,7 @@ export const singles = [
     genre: "rap",
     year: 2017,
     img: {
-      src: vecherinkaRemix,
+      src: "/img/music/singles/vecherinka-remix.jpg",
       alt: "Вечеринка (Party) [Remix]",
     },
     links: {
@@ -1118,7 +1048,7 @@ export const singles = [
     genre: "rap",
     year: 2017,
     img: {
-      src: promenad,
+      src: "/img/music/singles/promenad.jpg",
       alt: "променад (promenade)",
     },
     links: {
@@ -1137,7 +1067,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2017,
     img: {
-      src: pimperial,
+      src: "/img/music/singles/pimperial.jpg",
       alt: "Pimperial",
     },
     links: {
@@ -1156,7 +1086,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2017,
     img: {
-      src: tiktonik,
+      src: "/img/music/singles/tiktonik.jpg",
       alt: "Тиктоник (Tecktonik)",
     },
     links: {
@@ -1175,7 +1105,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2017,
     img: {
-      src: dengiNeProblema,
+      src: "/img/music/singles/dengi-ne-problema.jpg",
       alt: "Деньги не проблема (Money is not a problem)",
     },
     links: {
@@ -1194,7 +1124,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2017,
     img: {
-      src: feniks,
+      src: "/img/music/singles/feniks.jpg",
       alt: "Феникс (Phoenix)",
     },
     links: {
@@ -1213,7 +1143,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2016,
     img: {
-      src: dzhentelmenShou,
+      src: "/img/music/singles/dzhentelmen-shou.jpg",
       alt: "Джентельмен-шоу (Gentlemen-show)",
     },
     links: {
@@ -1232,7 +1162,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2016,
     img: {
-      src: shestnadtsatEzumiye,
+      src: "/img/music/singles/16ezumiye.jpg",
       alt: "16езумие (16adness)",
     },
     links: {
@@ -1251,7 +1181,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2016,
     img: {
-      src: imperial,
+      src: "/img/music/singles/imperial.jpg",
       alt: "Imperial",
     },
     links: {
@@ -1270,7 +1200,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2016,
     img: {
-      src: naytLayf,
+      src: "/img/music/singles/nayt-layf.jpg",
       alt: "Найт лайф (Night Life)",
     },
     links: {
@@ -1289,7 +1219,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2016,
     img: {
-      src: chempionatRemix,
+      src: "/img/music/singles/chempionat-remix.jpg",
       alt: "Чемпионат (Championship) [Remix]",
     },
     links: {
@@ -1308,7 +1238,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2015,
     img: {
-      src: celebration,
+      src: "/img/music/singles/celebration.jpg",
       alt: "Celebration",
     },
     links: {
@@ -1327,7 +1257,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2015,
     img: {
-      src: bezumiye,
+      src: "/img/music/singles/bezumiye.jpg",
       alt: "Безумие (Madness)",
     },
     links: {
@@ -1346,7 +1276,7 @@ export const singles = [
     genre: "hip-hop-rap",
     year: 2015,
     img: {
-      src: mortvyyePrezidenty,
+      src: "/img/music/singles/mortvyye-prezidenty.jpg",
       alt: "Мёртвые президенты (Dead President)",
     },
     links: {
@@ -1365,7 +1295,7 @@ export const singles = [
     genre: "hip-hop",
     year: 2014,
     img: {
-      src: mneSkuchnoZhit,
+      src: "/img/music/singles/mne-skuchno-zhit.jpg",
       alt: "Мне скучно жить (I'm tired of life)",
     },
     links: {

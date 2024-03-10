@@ -2,8 +2,6 @@ import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/Obj
 import Img from "@/components/base/Img/Img";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-import olegLsp from "@/assets/img/lsp/jpg/about-main.jpg";
-
 const MainAbout = () => {
   const link = {
     value: "more",
@@ -11,7 +9,7 @@ const MainAbout = () => {
   };
 
   const img = {
-    src: olegLsp,
+    src: "/img/lsp/about-main.jpg",
     alt: "Oleg LSP",
   };
 

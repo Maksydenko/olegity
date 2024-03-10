@@ -1,10 +1,3 @@
-import oneMoreСity from "@/assets/img/music/albums/jpg/one-more-city.jpg";
-import svinoeRylo from "@/assets/img/music/albums/jpg/svinoe-rylo.jpg";
-import tragicCity from "@/assets/img/music/albums/jpg/tragic-city.jpg";
-import magicCity from "@/assets/img/music/albums/jpg/magic-city.jpg";
-import viselicza from "@/assets/img/music/albums/jpg/viselicza.jpg";
-import yop from "@/assets/img/music/albums/jpg/yop.jpg";
-
 export const albums = [
   {
     title: "One More City",
@@ -12,7 +5,7 @@ export const albums = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: oneMoreСity,
+      src: "/img/music/albums/one-more-city.jpg",
       alt: "One More City",
     },
     links: {
@@ -47,7 +40,7 @@ export const albums = [
     genre: "hip-hop-rap",
     year: 2020,
     img: {
-      src: svinoeRylo,
+      src: "/img/music/albums/svinoe-rylo.jpg",
       alt: "Свиное рыло (Pork snout)",
     },
     links: {
@@ -79,7 +72,7 @@ export const albums = [
     genre: "hip-hop-rap",
     year: 2017,
     img: {
-      src: tragicCity,
+      src: "/img/music/albums/tragic-city.jpg",
       alt: "Tragic City",
     },
     links: {
@@ -112,7 +105,7 @@ export const albums = [
     genre: "hip-hop-rap",
     year: 2015,
     img: {
-      src: magicCity,
+      src: "/img/music/albums/magic-city.jpg",
       alt: "Magic City",
     },
     links: {
@@ -144,7 +137,7 @@ export const albums = [
     genre: "hip-hop-rap",
     year: 2014,
     img: {
-      src: viselicza,
+      src: "/img/music/albums/viselicza.jpg",
       alt: "Виселицца (Gallows)",
     },
     links: {
@@ -173,7 +166,7 @@ export const albums = [
     genre: "hip-hop-rap",
     year: 2014,
     img: {
-      src: yop,
+      src: "/img/music/albums/yop.jpg",
       alt: "ЁП (YOP)",
     },
     links: {

@@ -2,11 +2,11 @@
 
 // import { useTranslation } from "next-i18next";
 
-// import { useRedirectToHomepage } from "./useRedirectToHomepage";
+import { useRedirectToHomepage } from "./useRedirectToHomepage";
 
 const NotFound = () => {
   // const { t } = useTranslation();
-  // const time = useRedirectToHomepage();
+  const time = useRedirectToHomepage();
 
   return (
     <section className="not-found">
@@ -15,7 +15,7 @@ const NotFound = () => {
         <span className="not-found__label">{"page-not-found"}</span>
         <p className="not-found__redirect-homepage">
           {"redirect-homepage"}
-          {/* {time} */}
+          {time}
         </p>
       </div>
     </section>

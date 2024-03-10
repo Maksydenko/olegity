@@ -2,11 +2,9 @@ import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/Obj
 import Img from "@/components/base/Img/Img";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-import concert from "@/assets/img/lsp/jpg/concerts.jpg";
-
 const AboutConcerts = () => {
   const img = {
-    src: concert,
+    src: "/img/lsp/concerts.jpg",
     alt: "Oleg LSP",
   };
 

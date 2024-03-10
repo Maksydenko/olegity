@@ -13,8 +13,6 @@ import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
 import { breakpoints } from "@/constants/breakpoints.const";
 
-import uraganyLive from "@/assets/img/videos/music-videos/jpg/uragany-live.jpg";
-
 const UkraineSupport = () => {
   const ukraineSupportRef = useRef(null);
   const isTablet = useBreakpointCheck(breakpoints.tablet);
@@ -76,7 +74,7 @@ const UkraineSupport = () => {
   );
 
   const img = {
-    src: uraganyLive,
+    src: "/img/videos/music-videos/uragany-live.jpg",
     alt: "Uragany (Live)",
   };
 
