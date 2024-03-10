@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { FC, useRef } from "react";
 import ReactPlayer from "react-player/lazy";
 import clsx from "clsx";
 
@@ -8,7 +8,14 @@ import Loader from "@/components/shared/Loader/Loader";
 
 import { useLoadingObject } from "@/hooks/useLoadingObject";
 
-const Video = ({ className, url, img, loader = true }) => {
+interface VideoProps {
+  className?: string;
+  url: string;
+  img?: string;
+  loader?: boolean;
+}
+
+const Video: FC<VideoProps> = ({ className, url, img, loader = true }) => {
   const videoRef = useRef(null);
   const { isLoading } = useLoadingObject(videoRef);
 

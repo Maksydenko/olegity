@@ -3,11 +3,6 @@ import LocalVideo from "@/components/base/Video/LocalVideo";
 import Img from "@/components/base/Img/Img";
 
 const FullScreenVideo = () => {
-  const video = {
-    src: "/videos/binokl.mp4",
-    type: "mp4",
-  };
-
   const img = {
     src: "/img/logos/lsp.svg",
     alt: "LSP",
@@ -16,7 +11,7 @@ const FullScreenVideo = () => {
   const background = (
     <LocalVideo
       className="full-screen-video__video"
-      video={video}
+      src="/videos/binokl.mp4"
       poster="/img/lsp/jpg/clip.jpg"
     />
   );

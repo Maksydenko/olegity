@@ -1,12 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { FC, ReactNode, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
 import Box from "./Box";
+import { TypeSetState } from "@/types/setState.type";
 
-const Popup = ({ className, children, button, forceOpen, setForceOpen }) => {
+interface PopupProps {
+  className?: string;
+  children: ReactNode;
+  button: ReactNode;
+  forceOpen?: boolean;
+  setForceOpen?: TypeSetState<boolean>;
+}
+
+const Popup: FC<PopupProps> = ({
+  className,
+  children,
+  button,
+  forceOpen,
+  setForceOpen,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const isForceOpenIsUndefined = typeof forceOpen === "undefined";
   const isForceOpen = !isForceOpenIsUndefined && setForceOpen;

@@ -1,17 +1,34 @@
+import { FC } from "react";
 import ReactPaginate from "react-paginate";
 import clsx from "clsx";
 
-const Pagination = ({
+interface PaginationProps {
+  className?: string;
+  itemsPerTotal: number[];
+  pageCount: number;
+  pageRangeDisplayed: number;
+  marginPagesDisplayed?: number;
+  breakLabel?: string;
+  previousLabel?: string;
+  nextLabel?: string;
+  onPageChange: (e: any) => void;
+}
+
+const Pagination: FC<PaginationProps> = ({
   className,
   itemsPerTotal: { length: itemsPerTotalLength },
   pageCount,
   pageRangeDisplayed = 3,
   marginPagesDisplayed = 1,
+  breakLabel = "...",
+  previousLabel = "",
+  nextLabel = "",
   onPageChange,
 }) => {
   if (!itemsPerTotalLength) {
     return null;
   }
+
   return (
     <ReactPaginate
       className={clsx(className, "pagination")}
@@ -27,9 +44,9 @@ const Pagination = ({
       disabledLinkClassName="pagination__disabled-link"
       breakClassName="pagination__break"
       breakLinkClassName="pagination__break-link"
-      breakLabel="..."
-      previousLabel=""
-      nextLabel=""
+      breakLabel={breakLabel}
+      previousLabel={previousLabel}
+      nextLabel={nextLabel}
       pageCount={pageCount}
       pageRangeDisplayed={pageRangeDisplayed}
       marginPagesDisplayed={marginPagesDisplayed}

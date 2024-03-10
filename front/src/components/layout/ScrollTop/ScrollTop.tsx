@@ -1,10 +1,13 @@
 "use client";
 
+import { FC } from "react";
 import clsx from "clsx";
 
 import { useActiveOnScroll } from "@/hooks/useActiveOnScroll";
 
-const ScrollTop = () => {
+interface ScrollTopProps {}
+
+const ScrollTop: FC<ScrollTopProps> = () => {
   const { isActive } = useActiveOnScroll(110);
 
   const handleClick = () => {

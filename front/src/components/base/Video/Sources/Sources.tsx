@@ -1,0 +1,20 @@
+import { FC } from "react";
+
+import { getType } from "./getType.util";
+
+import { TypeLocalVideo } from "../localVideo.type";
+
+interface SourcesProps {
+  src: TypeLocalVideo;
+}
+
+const Sources: FC<SourcesProps> = ({ src }) => {
+  if (Array.isArray(src)) {
+    return src.map((item) => (
+      <source key={item} src={item} type={getType(item)} />
+    ));
+  }
+  return <source src={src} type={getType(src)} />;
+};
+
+export default Sources;

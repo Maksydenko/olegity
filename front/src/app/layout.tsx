@@ -1,18 +1,21 @@
 import { FC, ReactNode } from "react";
+// import { dir } from "i18next";
 
 import Header from "@/components/layout/Header/Header";
 import ScrollTop from "@/components/layout/ScrollTop/ScrollTop";
 import Footer from "@/components/layout/Footer/Footer";
 
+// import { languages } from "@/app/i18n/settings";
 import "./globals.scss";
-// import { Inter } from "next/font/google";
 
-// const inter = Inter({
-//   subsets: [
-//     "latin",
-//     //  'cyrillic-ext'
-//   ],
-// });
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: [
+    "latin",
+    //  'cyrillic-ext'
+  ],
+});
 
 export const metadata = {
   title: "",
@@ -49,10 +52,20 @@ export const metadata = {
 
 interface RootLayoutProps {
   children: ReactNode;
+  // params: {
+  //   lng: string;
+  // };
 }
 
-const RootLayout: FC<RootLayoutProps> = ({ children }) => (
-  <html id="html" lang="en">
+const RootLayout: FC<RootLayoutProps> = ({
+  children,
+  //  params: { lng }
+}) => (
+  <html
+    id="html"
+    // lang={lng}
+    // dir={dir(lng)}
+  >
     <head>
       {/* <meta charset="utf-8" /> */}
       <meta
@@ -90,3 +103,9 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => (
 );
 
 export default RootLayout;
+
+// export const generateStaticParams = () => {
+//   return languages.map((lng) => {
+//     return { lng };
+//   });
+// };

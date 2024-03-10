@@ -1,8 +1,14 @@
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
-import ScrollTop from "./ScrollTop/ScrollTop";
+import { FC, ReactNode } from "react";
 
-const Layout = ({ children }) => (
+import Header from "./Header/Header";
+import ScrollTop from "./ScrollTop/ScrollTop";
+import Footer from "./Footer/Footer";
+
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout: FC<LayoutProps> = ({ children }) => (
   <>
     <Header />
     {children}
