@@ -10,6 +10,7 @@
     width: em(60, 44);
     height: em(60, 44);
     font-size: rem(44);
+    color: $light;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: em(5, 44);
     transition: all 0.3s ease 0s;
@@ -45,50 +46,6 @@
           transform: rotate(90deg) translate(0, -5%);
         }
       }
-    }
-  }
-
-  .swiper {
-    // .swiper-button-prev
-
-    &-button-prev {
-      left: rem(calc($containerPadding / 2));
-    }
-
-    // .swiper-button-next
-
-    &-button-next {
-      right: rem(calc($containerPadding / 2));
-    }
-
-    // .swiper-button-prev
-    &-button-prev,
-  // .swiper-button-next
-  &-button-next {
-      @include hover;
-      transition: opacity 0.3s ease 0s;
-
-      &::after {
-        @include centered(flex);
-        position: absolute;
-        width: em(60, 44);
-        height: em(60, 44);
-        font-size: rem(44) !important;
-        color: $light;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: em(5, 44);
-
-        @media (max-width: $mobile) {
-          font-size: rem(32) !important;
-        }
-      }
-    }
-
-    // .swiper-button-disabled
-
-    &-button-disabled {
-      pointer-events: auto !important;
-      opacity: 0.5 !important;
     }
   }
 }
