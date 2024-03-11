@@ -143,19 +143,19 @@
 
     &:not(&_active) {
       font-weight: 500;
-
-      a,
-      button {
-        @include hover;
-        transition: opacity 0.3s ease 0s;
-      }
     }
 
     // .menu__link_active
 
     &_active {
       cursor: not-allowed;
-      opacity: 0.5;
+
+      /* stylelint-disable-next-line no-descending-specificity */
+      > a,
+      &:not(&_link) > button,
+      &_link > button > * {
+        opacity: 0.5;
+      }
     }
 
     @media (min-width: $desktop) {
@@ -171,12 +171,21 @@
     }
 
     /* stylelint-disable-next-line no-descending-specificity */
-    > * {
-      &:first-child {
-        @media (min-width: $desktop) {
-          padding: em(10, 18) 0;
-        }
+    > a,
+    &:not(&_link) > button,
+    &_link > button > * {
+      @include hover;
+      transition: opacity 0.3s ease 0s;
+
+      @media (min-width: $desktop) {
+        padding: em(10, 18) 0;
       }
+    }
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    > * {
+      flex: 0 1 auto;
+      text-align: right;
     }
   }
 
@@ -192,7 +201,11 @@
   // .menu__link
 
   &__link {
-    flex: 0 1 auto;
-    text-align: right;
+  }
+
+  &__arrow {
+    &::before {
+      transform: scale(1, -1);
+    }
   }
 }

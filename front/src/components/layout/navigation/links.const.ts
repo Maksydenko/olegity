@@ -10,6 +10,16 @@ export const links = [
   {
     value: "pages.discography",
     path: "/discography",
+    subLinks: [
+      {
+        value: "pages.1",
+        path: "/discography",
+      },
+      {
+        value: "pages.2",
+        path: "/discography",
+      },
+    ],
   },
   {
     value: "pages.videos",

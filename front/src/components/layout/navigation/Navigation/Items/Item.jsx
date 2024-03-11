@@ -11,17 +11,21 @@ const Item = ({ link: { value, path } }) => {
 
   const isActive = path === pathname;
 
+  const Tag = path ? "a" : "span";
+
   return (
     <li className="navigation__item">
-      <Link
+      <Tag
         className={clsx(
           "navigation__link",
           isActive && "navigation__link_active"
         )}
-        href={path}
+        {...(path && {
+          href: path,
+        })}
       >
         {value}
-      </Link>
+      </Tag>
     </li>
   );
 };
