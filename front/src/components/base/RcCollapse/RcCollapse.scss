@@ -1,0 +1,125 @@
+.rc-collapse {
+  background: $light !important;
+  border-width: rem(1) !important;
+
+  &-expand-icon,
+  &-header-text > * {
+    display: block;
+    padding: rem(10) 0;
+  }
+
+  // .rc-collapse-expand-icon
+
+  &-expand-icon {
+    display: flex;
+    align-items: center;
+    padding-right: rem(8);
+    padding-left: rem(15);
+
+    > * {
+      transition: transform 0.3s ease 0s;
+    }
+  }
+
+  // .rc-collapse-header
+
+  &-header {
+    align-items: stretch !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    color: $dark !important;
+
+    // .rc-collapse-header-text
+
+    &-text {
+      > * {
+        padding-right: rem(15);
+      }
+    }
+  }
+
+  // .rc-collapse-content
+
+  &-content {
+    padding: 0 rem(15) !important;
+    color: $dark !important;
+    background: $light !important;
+    border-radius: 0 0 rem(3) rem(3) !important;
+
+    // .rc-collapse-content-active
+
+    &-active {
+    }
+
+    // .rc-collapse-content-box
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      margin: rem(15) 0 rem(15) !important;
+
+      > * {
+        &:not(:last-child) {
+          margin-bottom: rem(10);
+        }
+      }
+    }
+  }
+
+  // .rc-collapse-item
+
+  &-item {
+    // .rc-collapse-header-active
+
+    &-active {
+      .rc-collapse-expand-icon {
+        > * {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  // .rc-collapse__arrow
+
+  &__arrow {
+    display: block;
+    border-top: rem(10) solid $dark;
+    border-right: rem(5) solid transparent;
+    border-left: rem(5) solid transparent;
+  }
+
+  // .rc-collapse_reverse
+
+  &_reverse {
+    .rc-collapse-expand-icon {
+      padding-right: rem(15);
+      padding-left: rem(8);
+    }
+
+    .rc-collapse-header {
+      // .rc-collapse-header-text
+
+      &-text {
+        order: -1;
+
+        > * {
+          padding-right: 0;
+          padding-left: rem(15);
+        }
+      }
+    }
+
+    .rc-collapse-item {
+      // .rc-collapse-header-active
+
+      &-active {
+        .rc-collapse-expand-icon {
+          > * {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+}

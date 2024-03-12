@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 // import { useTranslation } from "next-i18next";
 import clsx from "clsx";

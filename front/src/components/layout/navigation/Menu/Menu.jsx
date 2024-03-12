@@ -30,7 +30,7 @@ const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
         className={clsx("menu__body", setIsScrollLock && "menu__body_active")}
       >
         <nav className="menu__content">
-          <Items links={links} onClick={onClick} />
+          <Items links={links} breakpoint={isBreakpoint} onClick={onClick} />
           <LanguageSwitcher />
           <ThemeSwitcher />
         </nav>

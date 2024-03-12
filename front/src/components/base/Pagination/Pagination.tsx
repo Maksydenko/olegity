@@ -51,6 +51,7 @@ const Pagination: FC<PaginationProps> = ({
       pageRangeDisplayed={pageRangeDisplayed}
       marginPagesDisplayed={marginPagesDisplayed}
       onPageChange={onPageChange}
+      hrefBuilder={() => "/about"}
     />
   );
 };

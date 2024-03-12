@@ -4,7 +4,7 @@ import Item from "./Item";
 
 const Items = ({ children, onClick }) => {
   const menuItems = children.map((item) => {
-    const { id, value } = item;
+    const { value } = item;
     const path = item?.path;
     const target = item?.target;
 
@@ -14,7 +14,7 @@ const Items = ({ children, onClick }) => {
 
     return (
       <Item
-        key={id}
+        key={value}
         onClick={onClick}
         {...(isValueIsString && {
           path,

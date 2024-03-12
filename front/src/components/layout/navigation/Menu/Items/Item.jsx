@@ -3,8 +3,9 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
 import Dropdown from "@/components/base/Dropdown/Dropdown";
+import SubList from "./SubList";
 
-const Item = ({ link, onClick }) => {
+const Item = ({ link, breakpoint, onClick }) => {
   const { value } = link;
   const path = link?.path;
   const subLinks = link?.subLinks;
@@ -15,22 +16,12 @@ const Item = ({ link, onClick }) => {
 
   if (subLinks) {
     return (
-      <Dropdown
-        as="li"
-        className={clsx(
-          "menu__item",
-          path && "menu__item_link",
-          isActive && "menu__item_active",
-          "menu__dropdown"
-        )}
-        items={subLinks}
-        path={path}
-        disabled={isActive}
-        icon={<span className={clsx("menu__arrow", "_icon-arrow-top")}></span>}
+      <SubList
+        link={link}
+        active={isActive}
+        breakpoint={breakpoint}
         onClick={onClick}
-      >
-        {value}
-      </Dropdown>
+      />
     );
   }
 

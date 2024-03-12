@@ -34,6 +34,7 @@ const Nav = ({ swiperRef }) => {
       <button
         className="slider-swiper__btn slider-swiper__btn_prev"
         type="button"
+        aria-label="Previous slide"
         disabled={isFirstSlide}
         onClick={() => {
           slide(false);
@@ -44,6 +45,7 @@ const Nav = ({ swiperRef }) => {
       <button
         className="slider-swiper__btn slider-swiper__btn_next"
         type="button"
+        aria-label="Next slide"
         disabled={isLastSlide}
         onClick={() => {
           slide(true);

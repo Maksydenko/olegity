@@ -145,7 +145,7 @@
       font-weight: 500;
     }
 
-    // .menu__link_active
+    // .menu__item_active
 
     &_active {
       cursor: not-allowed;
@@ -155,6 +155,10 @@
       &:not(&_link) > button,
       &_link > button > * {
         opacity: 0.5;
+      }
+
+      a {
+        cursor: inherit;
       }
     }
 
@@ -201,6 +205,31 @@
   // .menu__link
 
   &__link {
+    // .menu__link_sub-list
+
+    &_sub-list {
+    }
+  }
+
+  &__rc-collapse.rc-collapse {
+    background: transparent !important;
+    border: none !important;
+
+    .rc-collapse-header {
+      color: $light !important;
+
+      .menu__link {
+        padding-left: 0;
+      }
+    }
+
+    .rc-collapse-expand-icon {
+      padding-right: 0;
+    }
+
+    .rc-collapse-content {
+      border-radius: rem(3) !important;
+    }
   }
 
   &__arrow {
