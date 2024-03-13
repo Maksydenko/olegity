@@ -22,7 +22,6 @@ const SubList: FC<SubListProps> = ({ link, active, breakpoint, onClick }) => {
 
     const header = (
       <Tag
-        className="menu__link"
         {...(path && {
           href: path,
         })}
@@ -37,7 +36,6 @@ const SubList: FC<SubListProps> = ({ link, active, breakpoint, onClick }) => {
       return (
         <Tag
           key={subLinkValue}
-          className="menu__link menu__link_sub-list"
           {...(path && {
             href: path,
             onClick,
@@ -60,6 +58,7 @@ const SubList: FC<SubListProps> = ({ link, active, breakpoint, onClick }) => {
       <li
         className={clsx(
           "menu__item menu__item_sub-list",
+          path && "menu__item_link",
           active && "menu__item_active"
         )}
       >

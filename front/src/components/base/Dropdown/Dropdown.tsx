@@ -26,7 +26,7 @@ const Dropdown: FC<DropdownProps> = ({
   path,
   hover,
   disabled,
-  icon,
+  icon = <span className="dropdown__arrow"></span>,
   onClick,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,8 +76,8 @@ const Dropdown: FC<DropdownProps> = ({
             {icon && (
               <div
                 className={clsx(
-                  "dropdown__arrow",
-                  open && "dropdown__arrow_active"
+                  "dropdown__icon",
+                  (open || isOpen) && "dropdown__icon_active"
                 )}
               >
                 {icon}

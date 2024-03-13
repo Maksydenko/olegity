@@ -2,7 +2,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
-import Dropdown from "@/components/base/Dropdown/Dropdown";
 import SubList from "./SubList";
 
 const Item = ({ link, breakpoint, onClick }) => {
@@ -25,17 +24,21 @@ const Item = ({ link, breakpoint, onClick }) => {
     );
   }
 
+  const Tag = path ? "a" : "span";
+
   return (
     <li className={clsx("menu__item", isActive && "menu__item_active")}>
-      <Link
-        className="menu__link"
+      <Tag
+        {...(path && {
+          href: path,
+        })}
         href={path}
         {...(!isActive && {
           onClick,
         })}
       >
         {value}
-      </Link>
+      </Tag>
     </li>
   );
 };

@@ -1,6 +1,8 @@
-@import "Header/Header";
-@import "ScrollTop/ScrollTop";
-@import "Footer/Footer";
+@import "./Header/Header";
+@import "./navigation/LanguageSwitcher/LanguageSwitcher";
+@import "./navigation/ThemeSwitcher/ThemeSwitcher";
+@import "./navigation/ScrollTop/ScrollTop";
+@import "./Footer/Footer";
 
 // Scrollbar styles
 

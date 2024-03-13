@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
 
 import Header from "./Header/Header";
-import ScrollTop from "./ScrollTop/ScrollTop";
+import ScrollTop from "./navigation/ScrollTop/ScrollTop";
 import Footer from "./Footer/Footer";
 
 interface LayoutProps {

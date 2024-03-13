@@ -2,7 +2,7 @@
 
 import Items from "./Items/Items";
 
-import { links } from "@/components/layout/navigation/links.const";
+import { links } from "@/constants/links.const";
 
 const Navigation = () => {
   // const { t } = useTranslation();

@@ -1,12 +1,12 @@
 import clsx from "clsx";
 
 import Items from "./Items/Items";
-import LanguageSwitcher from "./LanguageSwitcher/LanguageSwitcher";
-import ThemeSwitcher from "./ThemeSwitcher/ThemeSwitcher";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { links } from "@/components/layout/navigation/links.const";
+import { links } from "@/constants/links.const";
 
 const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
   const isBreakpoint = useBreakpointCheck(breakpoint);
@@ -20,7 +20,7 @@ const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
             setIsScrollLock && "menu__button_active"
           )}
           type="button"
-          aria-label={setIsScrollLock ? "Close" : "Open"}
+          aria-label={setIsScrollLock ? "Close menu" : "Open menu"}
           onClick={onClick}
         >
           <span></span>
@@ -31,8 +31,8 @@ const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
       >
         <nav className="menu__content">
           <Items links={links} breakpoint={isBreakpoint} onClick={onClick} />
-          <LanguageSwitcher />
-          <ThemeSwitcher />
+          <LanguageSwitcher className="menu__language-switcher" />
+          <ThemeSwitcher className="menu__theme-switcher" />
         </nav>
       </div>
     </div>

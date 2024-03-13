@@ -5,9 +5,11 @@ import clsx from "clsx";
 
 import { useActiveOnScroll } from "@/hooks/useActiveOnScroll";
 
-interface ScrollTopProps {}
+interface ScrollTopProps {
+  className?: string;
+}
 
-const ScrollTop: FC<ScrollTopProps> = () => {
+const ScrollTop: FC<ScrollTopProps> = ({ className }) => {
   const { isActive } = useActiveOnScroll(110);
 
   const handleClick = () => {
@@ -19,7 +21,7 @@ const ScrollTop: FC<ScrollTopProps> = () => {
 
   return (
     <button
-      className={clsx("scroll-top", isActive && "scroll-top_active")}
+      className={clsx(className, "scroll-top", isActive && "scroll-top_active")}
       type="button"
       aria-label="Scroll top"
       onClick={handleClick}

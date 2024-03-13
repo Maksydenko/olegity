@@ -2,7 +2,7 @@ import { FC, ReactNode } from "react";
 // import { dir } from "i18next";
 
 import Header from "@/components/layout/Header/Header";
-import ScrollTop from "@/components/layout/ScrollTop/ScrollTop";
+import ScrollTop from "@/components/layout/navigation/ScrollTop/ScrollTop";
 import Footer from "@/components/layout/Footer/Footer";
 
 // import { languages } from "@/app/i18n/settings";
