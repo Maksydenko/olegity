@@ -6,11 +6,17 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
+  "eslint.format.enable": true,
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
-  "eslint.validate": ["javascript", "javascriptreact"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "stylelint.packageManager": "yarn",
   "stylelint.validate": ["scss"],
-  "eslint.format.enable": true
+  "typescript.preferences.importModuleSpecifier": "shortest"
 }
