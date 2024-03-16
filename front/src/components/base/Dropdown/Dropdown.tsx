@@ -1,4 +1,4 @@
-import { ElementType, FC, ReactNode, useEffect, useState } from "react";
+import { ElementType, FC, MouseEvent, ReactNode, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
@@ -36,11 +36,13 @@ const Dropdown: FC<DropdownProps> = ({
     setIsOpen(false);
   };
 
-  useEffect(() => {
-    if (disabled) {
-      handleClose();
-    }
-  }, [disabled]);
+  // Handle click
+  interface IHandleClick {
+    (e: MouseEvent<HTMLAnchorElement>): void;
+  }
+  const handleClick: IHandleClick = (e) => {
+    e.stopPropagation();
+  };
 
   const Tag = value ? "a" : "span";
 
@@ -59,7 +61,8 @@ const Dropdown: FC<DropdownProps> = ({
             <Tag
               {...(value && {
                 href: value,
-                onClick: () => {
+                onClick: (e) => {
+                  handleClick(e);
                   close();
                 },
               })}
@@ -70,7 +73,7 @@ const Dropdown: FC<DropdownProps> = ({
               <div
                 className={clsx(
                   "dropdown__icon",
-                  (open || isOpen) && "dropdown__icon_active"
+                  (open || isOpen) && !disabled && "dropdown__icon_active"
                 )}
               >
                 {icon}
@@ -81,7 +84,7 @@ const Dropdown: FC<DropdownProps> = ({
             appear
             show={open}
             {...(hover && {
-              show: isOpen,
+              show: isOpen && !disabled,
             })}
             enter="dropdown__enter"
             enterFrom="dropdown__enter-from"
