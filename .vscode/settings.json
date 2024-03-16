@@ -16,6 +16,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "eslint.workingDirectories": ["./front"],
   "stylelint.packageManager": "yarn",
   "stylelint.validate": ["scss"],
   "typescript.preferences.importModuleSpecifier": "shortest"
