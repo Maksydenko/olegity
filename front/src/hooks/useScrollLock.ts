@@ -4,12 +4,12 @@ import { TypeSetState } from "@/types/setState.type";
 
 interface IUseScrollLock {
   (inerts?: string[]): {
-    isScrollLocked: boolean;
-    setIsScrollLocked: TypeSetState<boolean>;
+    isScrollLock: boolean;
+    setIsScrollLock: TypeSetState<boolean>;
   };
 }
 
-export const useScrollLock = (inerts = []) => {
+export const useScrollLock: IUseScrollLock = (inerts = []) => {
   const [isScrollLock, setIsScrollLock] = useState(false);
 
   interface IHandleInerts {

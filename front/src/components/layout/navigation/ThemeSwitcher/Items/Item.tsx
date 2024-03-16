@@ -1,11 +1,18 @@
+import { FC } from "react";
 import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
 
-const Item = ({
+interface ItemProps {
+  onClick?: () => void;
+  checked: boolean;
+  setCurrentTheme: (theme: string) => void;
+}
+
+const Item: FC<ItemProps> = ({
   theme: { icon, label },
   onClick,
-  isChecked,
+  checked,
   setCurrentTheme,
 }) => {
   const handleChange = () => {
@@ -35,18 +42,18 @@ const Item = ({
         id={id}
         className="theme-switcher__input"
         type="radio"
-        checked={isChecked}
+        checked={checked}
         onChange={handleChange}
       />
       <label
         htmlFor={id}
         className={clsx(
           "theme-switcher__label",
-          isChecked && "theme-switcher__label_checked"
+          checked && "theme-switcher__label_checked"
         )}
         aria-label={`Set ${label} theme`}
         onKeyDown={handleKeyDown}
-        {...(!isChecked && {
+        {...(!checked && {
           tabIndex: 0,
         })}
       >

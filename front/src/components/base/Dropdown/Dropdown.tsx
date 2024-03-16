@@ -4,14 +4,12 @@ import clsx from "clsx";
 
 import Items from "./Items/Items";
 
-import { IDropdown } from "./dropdown.interface";
-
 interface DropdownProps {
   as?: ElementType;
   className?: string;
   children: ReactNode;
-  items: IDropdown[];
-  path?: string;
+  items: ReactNode[];
+  value?: string;
   hover?: boolean;
   disabled?: boolean;
   icon?: ReactNode;
@@ -23,11 +21,10 @@ const Dropdown: FC<DropdownProps> = ({
   className,
   children,
   items,
-  path,
+  value,
   hover,
   disabled,
   icon = <span className="dropdown__arrow"></span>,
-  onClick,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -45,7 +42,7 @@ const Dropdown: FC<DropdownProps> = ({
     }
   }, [disabled]);
 
-  const Tag = path ? "a" : "span";
+  const Tag = value ? "a" : "span";
 
   return (
     <Menu
@@ -60,14 +57,10 @@ const Dropdown: FC<DropdownProps> = ({
         <>
           <Menu.Button className="dropdown__button" disabled={disabled}>
             <Tag
-              {...(path && {
-                href: path,
+              {...(value && {
+                href: value,
                 onClick: () => {
                   close();
-
-                  if (onClick) {
-                    onClick();
-                  }
                 },
               })}
             >
@@ -97,7 +90,7 @@ const Dropdown: FC<DropdownProps> = ({
             leaveFrom="dropdown__leave-from"
             leaveTo="dropdown__leave-to"
           >
-            <Items onClick={onClick}>{items}</Items>
+            <Items>{items}</Items>
           </Transition>
         </>
       )}

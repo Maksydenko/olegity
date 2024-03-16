@@ -1,10 +1,17 @@
-"use client";
-
 import { useState, useEffect } from "react";
 
 import { isBrowser } from "@/constants/isBrowser.const";
 
-export const useThemeSwitch = () => {
+import { TypeSetState } from "@/types/setState.type";
+
+interface IUseSwitchTheme {
+  (): {
+    currentTheme: string;
+    setCurrentTheme: TypeSetState<string>;
+  };
+}
+
+export const useThemeSwitch: IUseSwitchTheme = () => {
   const prefersDark = "(prefers-color-scheme: dark)";
 
   const isDarkTheme = isBrowser && window.matchMedia(prefersDark).matches;
@@ -15,7 +22,11 @@ export const useThemeSwitch = () => {
   // Set the current theme from local storage, the system theme, or the default
   const [currentTheme, setCurrentTheme] = useState(storageTheme || "system");
 
-  const handleUpdateSystemTheme = (e) => {
+  // Handle update system theme
+  interface IHandleUpdateSystemTheme {
+    (e: MediaQueryListEvent): void;
+  }
+  const handleUpdateSystemTheme: IHandleUpdateSystemTheme = (e) => {
     const { matches } = e;
     setCurrentTheme(matches ? "dark" : "light");
   };

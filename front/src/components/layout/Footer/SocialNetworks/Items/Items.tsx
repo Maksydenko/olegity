@@ -2,9 +2,9 @@ import Item from "./Item";
 
 const Items = ({ links }) => {
   const items = links.map((link) => {
-    const { value } = link;
+    const { label } = link;
 
-    return <Item key={value} link={link} />;
+    return <Item key={label} link={link} />;
   });
 
   return <ul className="social-networks__list">{items}</ul>;

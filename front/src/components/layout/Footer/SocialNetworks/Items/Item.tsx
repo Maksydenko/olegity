@@ -1,15 +1,15 @@
 import clsx from "clsx";
 
-const Item = ({ link: { path, icon, value } }) => {
+const Item = ({ link: { icon, label, value } }) => {
   return (
     <li className="social-networks__item">
       <a
         className={clsx("social-networks__link", `_icon-${icon}`)}
-        href={path}
+        href={value}
         target="_blank"
         rel="noReferrer"
       >
-        {value}
+        {label}
       </a>
     </li>
   );

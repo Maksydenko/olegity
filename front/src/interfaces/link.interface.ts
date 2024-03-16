@@ -1,6 +1,6 @@
 export interface ILink {
-  value: string;
-  path?: string;
+  label: string;
+  value?: string;
   subLinks?: Omit<ILink[], "subLinks">;
 }
 

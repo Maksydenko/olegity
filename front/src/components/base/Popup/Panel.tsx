@@ -6,13 +6,13 @@ interface BoxProps {
   onClose: () => void;
 }
 
-const Box: FC<BoxProps> = ({ children, onClose }) => {
+const Panel: FC<BoxProps> = ({ children, onClose }) => {
   return (
-    <Dialog.Panel className="popup__box">
-      <div className="popup__children">{children}</div>
+    <Dialog.Panel className="popup__panel">
+      <div className="popup__box">{children}</div>
       <button className="popup__cross" type="button" onClick={onClose}></button>
     </Dialog.Panel>
   );
 };
 
-export default Box;
+export default Panel;

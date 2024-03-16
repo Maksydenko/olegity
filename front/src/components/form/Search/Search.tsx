@@ -1,12 +1,24 @@
-import { useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
 // import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
-const Search = ({ className, text, setText }) => {
-  const [isFocus, setIsFocus] = useState();
+import { TypeSetState } from "@/types/setState.type";
+
+interface SearchProps {
+  className?: string;
+  text: string;
+  setText: TypeSetState<string>;
+}
+
+const Search: FC<SearchProps> = ({ className, text, setText }) => {
+  const [isFocus, setIsFocus] = useState(false);
   // const { t } = useTranslation();
 
-  const handleFilterTextChange = ({ target: { value } }) => {
+  // Handle change
+  interface IHandleChange {
+    ({ target: { value } }: ChangeEvent<HTMLInputElement>): void;
+  }
+  const handleChange: IHandleChange = ({ target: { value } }) => {
     setText(value);
   };
 
@@ -28,7 +40,7 @@ const Search = ({ className, text, setText }) => {
           placeholder={"search"}
           className="search__input"
           value={text}
-          onChange={handleFilterTextChange}
+          onChange={handleChange}
           onFocus={handleFocus}
           onBlur={handleFocus}
         />

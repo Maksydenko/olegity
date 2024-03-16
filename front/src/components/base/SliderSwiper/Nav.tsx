@@ -1,17 +1,26 @@
-import { useEffect, useState } from "react";
+import { FC, MutableRefObject, useEffect, useState } from "react";
+import { SwiperRef } from "swiper/react";
 
-const Nav = ({ swiperRef }) => {
+interface NavProps {
+  swiperRef: MutableRefObject<SwiperRef>;
+}
+
+const Nav: FC<NavProps> = ({ swiperRef }) => {
   const [isFirstSlide, setIsFirstSlide] = useState(true);
   const [isLastSlide, setIsLastSlide] = useState(false);
 
-  const slide = (next) => {
+  // Slide
+  interface ISlide {
+    (direction: "prev" | "next"): void;
+  }
+  const slide: ISlide = (direction) => {
     const swiperCurrent = swiperRef.current;
     const swiper = swiperCurrent?.swiper;
 
-    if (next) {
-      swiper?.slideNext();
-    } else {
+    if (direction) {
       swiper?.slidePrev();
+    } else {
+      swiper?.slideNext();
     }
   };
 
@@ -37,7 +46,7 @@ const Nav = ({ swiperRef }) => {
         aria-label="Previous slide"
         disabled={isFirstSlide}
         onClick={() => {
-          slide(false);
+          slide("prev");
         }}
       >
         {arrow}
@@ -48,7 +57,7 @@ const Nav = ({ swiperRef }) => {
         aria-label="Next slide"
         disabled={isLastSlide}
         onClick={() => {
-          slide(true);
+          slide("next");
         }}
       >
         {arrow}

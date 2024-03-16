@@ -11,11 +11,11 @@ import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { breakpoints } from "@/constants/breakpoints.const";
+import { Breakpoint } from "@/enums/breakpoint.enum";
 
 const AboutSection = ({ keyword, img, reverseAnimation }) => {
   const aboutSectionRef = useRef(null);
-  const isTablet = useBreakpointCheck(breakpoints.tablet);
+  const isTablet = useBreakpointCheck(Breakpoint.Tablet);
 
   useGSAP(
     () => {

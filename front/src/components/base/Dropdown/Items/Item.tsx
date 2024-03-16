@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { FC, ReactNode, useState } from "react";
 import { Menu } from "@headlessui/react";
 import clsx from "clsx";
 
-const Item = ({ children, path, target = "_self", onClick }) => {
+interface ItemProps {
+  children: ReactNode;
+}
+
+const Item: FC<ItemProps> = ({ children }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleActivate = () => {
@@ -15,13 +19,8 @@ const Item = ({ children, path, target = "_self", onClick }) => {
 
   return (
     <Menu.Item
-      as={path ? "a" : "span"}
+      as="div"
       className={clsx("dropdown__item", isActive && "dropdown__item_active")}
-      onClick={onClick}
-      {...(path && {
-        href: path,
-        target,
-      })}
     >
       {({ active }) => {
         active && handleActivate();

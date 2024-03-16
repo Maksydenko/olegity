@@ -1,17 +1,9 @@
 import { FC } from "react";
-import ReactPaginate from "react-paginate";
+import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 import clsx from "clsx";
 
-interface PaginationProps {
-  className?: string;
+interface PaginationProps extends ReactPaginateProps {
   itemsPerTotal: number[];
-  pageCount: number;
-  pageRangeDisplayed: number;
-  marginPagesDisplayed?: number;
-  breakLabel?: string;
-  previousLabel?: string;
-  nextLabel?: string;
-  onPageChange: (e: any) => void;
 }
 
 const Pagination: FC<PaginationProps> = ({

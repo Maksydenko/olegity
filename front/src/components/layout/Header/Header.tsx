@@ -8,11 +8,11 @@ import Menu from "@/components/layout/navigation/Menu/Menu";
 import { useScrollLock } from "@/hooks/useScrollLock";
 import { useWindowListener } from "@/hooks/useWindowListener";
 
-import { breakpoints } from "@/constants/breakpoints.const";
+import { Breakpoint } from "@/enums/breakpoint.enum";
 
 const Header = () => {
   const { isScrollLock, setIsScrollLock } = useScrollLock(["main", "footer"]);
-  const breakpoint = breakpoints.desktop;
+  const breakpoint = Breakpoint.Desktop;
 
   const handleUnlockScroll = () => {
     if (isScrollLock) {
@@ -52,7 +52,7 @@ const Header = () => {
         </Link>
         <Menu
           breakpoint={breakpoint}
-          setIsScrollLock={isScrollLock}
+          isScrollLock={isScrollLock}
           onClick={handleClick}
         />
       </div>

@@ -1,10 +1,13 @@
 // import { useTranslation } from "next-i18next";
 
+import { FC } from "react";
 import Items from "./Items/Items";
 
 import { links } from "@/constants/links.const";
 
-const Navigation = () => {
+interface NavigationProps {}
+
+const Navigation: FC<NavigationProps> = () => {
   // const { t } = useTranslation();
 
   return (

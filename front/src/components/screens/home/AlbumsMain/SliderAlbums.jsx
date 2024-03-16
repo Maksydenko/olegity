@@ -5,12 +5,12 @@ import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { breakpoints } from "@/constants/breakpoints.const";
 import { albums } from "@/constants/music/albums.const";
+import { Breakpoint } from "@/enums/breakpoint.enum";
 
 const SliderAlbums = () => {
-  const isMobile = useBreakpointCheck(breakpoints.mobile);
-  const isMobileSmall = useBreakpointCheck(breakpoints.mobileSmall);
+  const isMobile = useBreakpointCheck(Breakpoint.Mobile);
+  const isMobileSmall = useBreakpointCheck(Breakpoint.MobileSmall);
 
   const slides = albums.map((album) => {
     const { title } = album;
@@ -28,11 +28,11 @@ const SliderAlbums = () => {
     <SliderSwiper
       className="albums-main__slider-swiper"
       breakpoints={{
-        [breakpoints.mobile]: {
+        [Breakpoint.Mobile]: {
           slidesPerView: 3,
           isBreakpoint: isMobile,
         },
-        [breakpoints.mobileSmall]: {
+        [Breakpoint.MobileSmall]: {
           slidesPerView: 2,
           isBreakpoint: isMobileSmall,
         },

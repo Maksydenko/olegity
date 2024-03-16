@@ -11,11 +11,11 @@ import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { breakpoints } from "@/constants/breakpoints.const";
+import { Breakpoint } from "@/enums/breakpoint.enum";
 
 const UkraineSupport = () => {
   const ukraineSupportRef = useRef(null);
-  const isTablet = useBreakpointCheck(breakpoints.tablet);
+  const isTablet = useBreakpointCheck(Breakpoint.Tablet);
 
   useGSAP(
     () => {

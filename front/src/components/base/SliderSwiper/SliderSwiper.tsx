@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { FC, ReactNode, useEffect, useRef } from "react";
 import clsx from "clsx";
 
 import Nav from "./Nav";
@@ -12,7 +12,7 @@ import {
   // Navigation,
   Pagination,
   // Scrollbar,
-  // HashNavigation,
+  HashNavigation,
   Keyboard,
   // Mousewheel,
   // FreeMode,
@@ -28,9 +28,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 // import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+import { SwiperOptions } from "swiper/types";
+import { IBreakpoints } from "./breakpoints.interface";
 // import "swiper/scss/scrollbar";
 
-const SliderSwiper = ({
+export interface SliderSwiperProps extends SwiperOptions {
+  className?: string;
+  children: ReactNode[];
+  paginationClickable?: boolean;
+  paginationDynamicBullets?: boolean;
+  paginationType?: "bullets" | "fraction" | "progressbar";
+  scrollbarDraggable?: boolean;
+  hash?: string;
+  hashNavigationWatchState?: boolean;
+  keyboardEnabled?: boolean;
+  keyboardOnlyInViewport?: boolean;
+  keyboardPageUpDown?: boolean;
+  mousewheelSensitivity?: number;
+  autoplayDelay?: number;
+  autoplayStopOnLastSlide?: boolean;
+  autoplayDisableOnInteraction?: boolean;
+  breakpoints?: IBreakpoints;
+}
+
+const SliderSwiper: FC<SliderSwiperProps> = ({
   className,
   children,
 
@@ -123,14 +144,14 @@ const SliderSwiper = ({
   virtual,
 }) => {
   const { length: childrenLength } = children;
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<any>(null);
 
   useEffect(() => {
     const swiperCurrent = swiperRef?.current;
     const swiper = swiperCurrent?.swiper;
 
     if (swiper) {
-      swiperCurrent.querySelectorAll("*").forEach((element) => {
+      swiperCurrent.querySelectorAll("*").forEach((element: any) => {
         element.setAttribute("tabIndex", "-1");
       });
     }
@@ -193,7 +214,7 @@ const SliderSwiper = ({
           // Navigation,
           Pagination,
           // Scrollbar,
-          // HashNavigation,
+          HashNavigation,
           Keyboard,
           // Mousewheel,
           // FreeMode,

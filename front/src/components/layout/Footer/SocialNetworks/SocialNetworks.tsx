@@ -1,10 +1,13 @@
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
 import Items from "./Items/Items";
 
 import links from "./links.const";
 
-const SocialNetworks = () => {
+interface SocialNetworksProps {}
+
+const SocialNetworks: FC<SocialNetworksProps> = () => {
   // const { t } = useTranslation();
 
   return (

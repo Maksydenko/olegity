@@ -1,32 +1,32 @@
 export const links = [
   {
-    value: "pages.home",
-    path: "/",
+    label: "pages.home",
+    value: "/",
   },
   {
-    value: "pages.about",
-    path: "/about",
+    label: "pages.about",
+    value: "/about",
   },
   {
-    value: "pages.discography",
-    path: "/discography",
+    label: "pages.discography",
+    value: "/discography",
     subLinks: [
       {
-        value: "pages.1",
-        path: "/discography",
+        label: "pages.1",
+        value: "/discography",
       },
       {
-        value: "pages.2",
-        path: "/discography",
+        label: "pages.2",
+        value: "/discography",
       },
     ],
   },
   {
-    value: "pages.videos",
-    path: "/videos",
+    label: "pages.videos",
+    value: "/videos",
   },
   {
-    value: "pages.concerts",
-    path: "/concerts",
+    label: "pages.concerts",
+    value: "/concerts",
   },
 ];

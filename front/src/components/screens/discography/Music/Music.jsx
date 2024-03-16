@@ -20,7 +20,7 @@ const Music = () => {
     {
       id: "ep",
       title: "ep",
-      content: <Albums albums={ep} />,
+      content: <Albums albums={ep} type="ep" />,
     },
     {
       id: "singles",

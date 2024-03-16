@@ -1,25 +1,23 @@
 "use client";
 
 import { FC, useRef } from "react";
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer, { ReactPlayerProps } from "react-player/lazy";
 import clsx from "clsx";
 
 import Loader from "@/components/shared/Loader/Loader";
 
 import { useLoadingObject } from "@/hooks/useLoadingObject";
 
-interface VideoProps {
+interface VideoProps extends ReactPlayerProps {
   className?: string;
-  url: string;
-  img?: string;
   loader?: boolean;
 }
 
-const Video: FC<VideoProps> = ({ className, url, img, loader = true }) => {
+const Video: FC<VideoProps> = ({ className, url, light, loader = true }) => {
   const videoRef = useRef(null);
   const { isLoading } = useLoadingObject(videoRef);
 
-  const isLoader = loader && isLoading;
+  const showLoader = loader && isLoading;
 
   return (
     <span
@@ -27,15 +25,8 @@ const Video: FC<VideoProps> = ({ className, url, img, loader = true }) => {
       className={clsx(className, "video")}
       ref={videoRef}
     >
-      {isLoader && <Loader />}
-      <ReactPlayer
-        url={url}
-        width="100%"
-        height="100%"
-        {...(img && {
-          light: img,
-        })}
-      />
+      {showLoader && <Loader />}
+      <ReactPlayer url={url} width="100%" height="100%" light={light} />
     </span>
   );
 };

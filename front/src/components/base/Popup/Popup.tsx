@@ -4,7 +4,8 @@ import { FC, ReactNode, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
-import Box from "./Box";
+import Panel from "./Panel";
+
 import { TypeSetState } from "@/types/setState.type";
 
 interface PopupProps {
@@ -77,7 +78,7 @@ const Popup: FC<PopupProps> = ({
               leaveFrom="popup__leave-from popup__leave-from_content"
               leaveTo="popup__leave-to popup__leave-to_content"
             >
-              <Box onClose={handleClose}>{children}</Box>
+              <Panel onClose={handleClose}>{children}</Panel>
             </Transition.Child>
           </div>
         </Dialog>

@@ -1,8 +1,14 @@
+import { FC } from "react";
+
 import Item from "./Item";
 
 import { useThemeSwitch } from "../useThemeSwitch";
 
-const Items = ({ themes, onClick }) => {
+interface ItemsProps {
+  onClick?: () => void;
+}
+
+const Items: FC<ItemsProps> = ({ themes, onClick }) => {
   const { currentTheme, setCurrentTheme } = useThemeSwitch();
 
   return themes.map((theme) => {
@@ -14,7 +20,7 @@ const Items = ({ themes, onClick }) => {
         key={label}
         theme={theme}
         onClick={onClick}
-        isChecked={isChecked}
+        checked={isChecked}
         setCurrentTheme={setCurrentTheme}
       />
     );

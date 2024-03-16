@@ -1,3 +1,4 @@
+import { FC } from "react";
 import clsx from "clsx";
 
 import Items from "./Items/Items";
@@ -8,7 +9,13 @@ import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
 import { links } from "@/constants/links.const";
 
-const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
+interface MenuProps {
+  breakpoint: number;
+  isScrollLock: boolean;
+  onClick: () => void;
+}
+
+const Menu: FC<MenuProps> = ({ breakpoint, isScrollLock, onClick }) => {
   const isBreakpoint = useBreakpointCheck(breakpoint);
 
   return (
@@ -17,18 +24,16 @@ const Menu = ({ breakpoint, setIsScrollLock, onClick }) => {
         <button
           className={clsx(
             "menu__button",
-            setIsScrollLock && "menu__button_active"
+            isScrollLock && "menu__button_active"
           )}
           type="button"
-          aria-label={setIsScrollLock ? "Close menu" : "Open menu"}
+          aria-label={isScrollLock ? "Close menu" : "Open menu"}
           onClick={onClick}
         >
           <span></span>
         </button>
       )}
-      <div
-        className={clsx("menu__body", setIsScrollLock && "menu__body_active")}
-      >
+      <div className={clsx("menu__body", isScrollLock && "menu__body_active")}>
         <nav className="menu__content">
           <Items links={links} breakpoint={isBreakpoint} onClick={onClick} />
           <LanguageSwitcher className="menu__language-switcher" />

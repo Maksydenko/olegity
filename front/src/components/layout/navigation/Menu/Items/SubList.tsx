@@ -14,43 +14,44 @@ interface SubListProps {
 }
 
 const SubList: FC<SubListProps> = ({ link, active, breakpoint, onClick }) => {
-  const { value, subLinks } = link;
-  const path = link?.path;
+  const { label, subLinks } = link;
+  const value = link?.value;
 
-  if (breakpoint) {
-    const Tag = path ? "a" : "span";
+  const subLinkItems = subLinks.map((subLink) => {
+    const { label: subLinkLabel } = subLink;
+    const Tag = value ? "a" : "span";
 
-    const header = (
+    return (
       <Tag
-        {...(path && {
-          href: path,
+        key={subLinkLabel}
+        {...(value && {
+          href: value,
+          onClick,
         })}
       >
-        {value}
+        {subLinkLabel}
       </Tag>
     );
+  });
 
-    const content = subLinks.map((subLink) => {
-      const { value: subLinkValue } = subLink;
+  if (breakpoint) {
+    const HeaderTag = value ? "a" : "span";
 
-      return (
-        <Tag
-          key={subLinkValue}
-          {...(path && {
-            href: path,
-            onClick,
-          })}
-        >
-          {subLinkValue}
-        </Tag>
-      );
-    });
+    const header = (
+      <HeaderTag
+        {...(value && {
+          href: value,
+        })}
+      >
+        {label}
+      </HeaderTag>
+    );
 
     const panels = [
       {
-        key: value,
+        key: label,
         header,
-        content,
+        content: subLinkItems,
       },
     ];
 
@@ -58,7 +59,7 @@ const SubList: FC<SubListProps> = ({ link, active, breakpoint, onClick }) => {
       <li
         className={clsx(
           "menu__item menu__item_sub-list",
-          path && "menu__item_link",
+          value && "menu__item_link",
           active && "menu__item_active"
         )}
       >
@@ -69,7 +70,7 @@ const SubList: FC<SubListProps> = ({ link, active, breakpoint, onClick }) => {
           expandIcon={() => (
             <span className="menu__arrow _icon-arrow-top"></span>
           )}
-          collapsible={active ? "disabled" : path ? "icon" : "header"}
+          collapsible={value ? "icon" : "header"}
         />
       </li>
     );
@@ -80,17 +81,15 @@ const SubList: FC<SubListProps> = ({ link, active, breakpoint, onClick }) => {
       as="li"
       className={clsx(
         "menu__item",
-        path && "menu__item_link",
+        value && "menu__item_link",
         active && "menu__item_active",
         "menu__dropdown"
       )}
-      items={subLinks}
-      path={path}
-      disabled={active}
+      items={subLinkItems}
+      value={value}
       icon={<span className="menu__arrow _icon-arrow-top"></span>}
-      onClick={onClick}
     >
-      {value}
+      {label}
     </Dropdown>
   );
 };

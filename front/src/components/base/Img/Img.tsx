@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useRef, useState } from "react";
+import { CSSProperties, FC, useRef, useState } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 
@@ -21,9 +21,7 @@ interface ImgProps {
   width?: number;
   height?: number;
   loader?: boolean;
-  style?: {
-    [property: string]: string;
-  };
+  style?: CSSProperties;
 }
 
 const Img: FC<ImgProps> = ({
@@ -48,9 +46,11 @@ const Img: FC<ImgProps> = ({
     setIsLoading(false);
   };
 
+  const showLoader = loader && isLoading;
+
   return (
     <div className={clsx(className, "img", svg && "img_svg")} style={style}>
-      {loader && isLoading && <Loader className="img__loader" />}
+      {showLoader && <Loader className="img__loader" />}
       <Image
         src={Array.isArray(img) ? img?.[0]?.src : img.src}
         alt={(Array.isArray(img) ? img?.[0]?.alt : img.alt) || ""}

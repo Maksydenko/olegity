@@ -3,8 +3,14 @@ import clsx from "clsx";
 import Items from "./Items/Items";
 
 import { themes } from "./themes.const";
+import { FC } from "react";
 
-const ThemeSwitcher = ({ className, onClick }) => {
+interface ThemeSwitcherProps {
+  className?: string;
+  onClick?: () => void;
+}
+
+const ThemeSwitcher: FC<ThemeSwitcherProps> = ({ className, onClick }) => {
   return (
     <div className={clsx(className, "theme-switcher")}>
       <Items themes={themes} onClick={onClick} />
