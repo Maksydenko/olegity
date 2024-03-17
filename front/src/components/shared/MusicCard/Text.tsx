@@ -1,10 +1,24 @@
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
-function Text({
+interface TextProps {
+  track: {
+    title: string;
+    artist: string;
+    genre: string;
+    year: number;
+  };
+  swiperParallax?: number;
+  swiperParallaxDurationAttr?: {
+    "data-swiper-parallax-duration": number;
+  };
+}
+
+const Text: FC<TextProps> = ({
   track: { title, artist, genre, year },
   swiperParallax,
   swiperParallaxDurationAttr,
-}) {
+}) => {
   // const { t } = useTranslation();
 
   return (
@@ -39,6 +53,6 @@ function Text({
       </div>
     </>
   );
-}
+};
 
 export default Text;

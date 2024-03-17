@@ -1,7 +1,16 @@
+import { FC } from "react";
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
-const Title = ({ tabsLength, tab: { title }, vertical }) => {
+import { ITab } from "../tab.interface";
+
+interface TitleProps {
+  tabsLength: number;
+  title: ITab["title"];
+  vertical?: boolean;
+}
+
+const Title: FC<TitleProps> = ({ tabsLength, title, vertical }) => {
   const titleItem = typeof title === "string" ? <h3>{title}</h3> : title;
 
   const tabWidth = 100 / tabsLength;
@@ -14,7 +23,9 @@ const Title = ({ tabsLength, tab: { title }, vertical }) => {
       className={({ selected }) =>
         clsx("tabs__title", selected && "tabs__title_active")
       }
-      style={vertical ? {} : titleStyle}
+      {...(!vertical && {
+        style: titleStyle,
+      })}
     >
       {titleItem}
     </Tab>

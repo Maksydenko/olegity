@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { FC, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -13,7 +13,19 @@ import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
 import { Breakpoint } from "@/enums/breakpoint.enum";
 
-const AboutSection = ({ keyword, img, reverseAnimation }) => {
+import { IImg } from "@/components/base/Img/img.interface";
+
+interface AboutSectionProps {
+  keyword: string;
+  img: IImg;
+  reverseAnimation?: boolean;
+}
+
+const AboutSection: FC<AboutSectionProps> = ({
+  keyword,
+  img,
+  reverseAnimation,
+}) => {
   const aboutSectionRef = useRef(null);
   const isTablet = useBreakpointCheck(Breakpoint.Tablet);
 

@@ -3,10 +3,23 @@ import clsx from "clsx";
 
 import Btn from "@/components/form/Btn/Btn";
 
-const TextBlock = ({ className, keyword, link }) => {
+import { ILink } from "@/interfaces/link.interface";
+import { FC } from "react";
+
+interface TextBlockProps {
+  className?: string;
+  keyword: string;
+  link?: ILink;
+}
+
+const TextBlock: FC<TextBlockProps> = ({ className, keyword, link }) => {
   // const { t } = useTranslation();
 
-  const getTranslation = (key) => {
+  // Get translation
+  interface IGetTranslation {
+    (key: string): string;
+  }
+  const getTranslation: IGetTranslation = (key) => {
     return `${keyword}.${key}`;
   };
 
@@ -24,8 +37,8 @@ const TextBlock = ({ className, keyword, link }) => {
       <h2 className="text-block__title">{"title"}</h2>
       <div className="text-block__text">{"text"}</div>
       {link && (
-        <Btn className="text-block" path={link.path}>
-          {"(link.value)"}
+        <Btn className="text-block" path={link.value}>
+          {"(link.label)"}
         </Btn>
       )}
     </div>

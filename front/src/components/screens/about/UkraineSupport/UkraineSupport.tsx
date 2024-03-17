@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import { FC, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import clsx from "clsx";
 
 import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
@@ -13,7 +14,11 @@ import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
 import { Breakpoint } from "@/enums/breakpoint.enum";
 
-const UkraineSupport = () => {
+interface UkraineSupportProps {
+  className?: string;
+}
+
+const UkraineSupport: FC<UkraineSupportProps> = ({ className }) => {
   const ukraineSupportRef = useRef(null);
   const isTablet = useBreakpointCheck(Breakpoint.Tablet);
 
@@ -69,8 +74,7 @@ const UkraineSupport = () => {
     {
       dependencies: [isTablet],
       scope: ukraineSupportRef,
-    },
-    [isTablet]
+    }
   );
 
   const img = {
@@ -92,7 +96,10 @@ const UkraineSupport = () => {
   );
 
   return (
-    <section className="ukraine-support" ref={ukraineSupportRef}>
+    <section
+      className={clsx(className, "ukraine-support")}
+      ref={ukraineSupportRef}
+    >
       <ObjectOutsideContainer
         className="ukraine-support__object-outside-container object-outside-container_tablet"
         object={object}

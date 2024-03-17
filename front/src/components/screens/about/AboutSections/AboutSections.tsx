@@ -1,8 +1,15 @@
+import { FC } from "react";
+import clsx from "clsx";
+
 import AboutSection from "./AboutSection/AboutSection";
 
 import { aboutSections } from "./aboutSections.const";
 
-const AboutSections = () => {
+interface AboutSectionsProps {
+  className?: string;
+}
+
+const AboutSections: FC<AboutSectionsProps> = ({ className }) => {
   const aboutSectionItems = aboutSections.map((section, index) => {
     const { keyword, img } = section;
     const isEven = index % 2 !== 0;
@@ -17,7 +24,11 @@ const AboutSections = () => {
     );
   });
 
-  return <div className="about__sections">{aboutSectionItems}</div>;
+  return (
+    <div className={clsx(className, "about__sections")}>
+      {aboutSectionItems}
+    </div>
+  );
 };
 
 export default AboutSections;

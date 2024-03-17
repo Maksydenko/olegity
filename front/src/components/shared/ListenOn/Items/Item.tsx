@@ -1,7 +1,17 @@
 import clsx from "clsx";
+import { FC } from "react";
 
-const Item = ({
-  item: { link, icon },
+interface ItemProps {
+  item: {
+    icon: string;
+    link: string;
+  };
+  swiperParallax?: number;
+  swiperParallaxDuration?: number;
+}
+
+const Item: FC<ItemProps> = ({
+  item: { icon, link },
   swiperParallax,
   swiperParallaxDuration,
 }) => {
@@ -15,7 +25,6 @@ const Item = ({
         "data-swiper-parallax-duration": swiperParallaxDuration,
       })}
     >
-      {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
       <a
         className={clsx("listen-on__link", `_icon-${icon}`)}
         href={link}

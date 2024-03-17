@@ -1,8 +1,15 @@
+import { FC } from "react";
 import { Tab } from "@headlessui/react";
 
 import Content from "./Content";
 
-const Contents = ({ tabs }) => {
+import { ITab } from "../tab.interface";
+
+interface ContentsProps {
+  tabs: ITab[];
+}
+
+const Contents: FC<ContentsProps> = ({ tabs }) => {
   const contentItems = tabs.map(({ id, content }) => {
     return <Content key={id} content={content} />;
   });
