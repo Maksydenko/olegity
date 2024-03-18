@@ -1,19 +1,26 @@
 "use client";
 
-import { useCallback, useEffect } from "react";
+import { FC, useCallback, useEffect } from "react";
 import { useTranslation } from "next-i18next";
 
-const Item = ({ language: { value, path }, onClick }) => {
+import { ILinkWithoutIcon } from "@/interfaces/link.interface";
+
+interface ItemProps {
+  language: ILinkWithoutIcon;
+  onClick?: () => void;
+}
+
+const Item: FC<ItemProps> = ({ language: { label, value }, onClick }) => {
   const { i18n } = useTranslation();
   const { language } = i18n;
 
   const setHTMLLang = useCallback(() => {
     const htmlElement = document.querySelector("html");
-    htmlElement.setAttribute("lang", path);
-  }, [path]);
+    htmlElement?.setAttribute("lang", value);
+  }, [value]);
 
   const handleChangeLanguage = () => {
-    i18n.changeLanguage(path);
+    i18n.changeLanguage(value);
     setHTMLLang();
 
     if (onClick) {
@@ -32,10 +39,10 @@ const Item = ({ language: { value, path }, onClick }) => {
       <button
         className="language-switcher__btn"
         type="button"
-        disabled={path === language}
+        disabled={value === language}
         onClick={handleChangeLanguage}
       >
-        {value}
+        {label}
       </button>
     </li>
   );

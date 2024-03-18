@@ -4,10 +4,10 @@ import clsx from "clsx";
 import Dropdown from "@/components/base/Dropdown/Dropdown";
 import RcCollapse from "@/components/base/RcCollapse/RcCollapse";
 
-import { ILinkWithSubLinks } from "@/interfaces/link.interface";
+import { INavLinkWithSubLinks } from "@/interfaces/link.interface";
 
 interface SubListProps {
-  link: ILinkWithSubLinks;
+  link: INavLinkWithSubLinks;
   active?: boolean;
   breakpoint: boolean;
   onClick?: () => void;

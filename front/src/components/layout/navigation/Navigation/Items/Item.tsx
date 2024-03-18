@@ -1,14 +1,14 @@
 "use client";
 
+import { FC } from "react";
 import { usePathname } from "next/navigation";
 // import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
-import { ILink } from "@/interfaces/link.interface";
-import { FC } from "react";
+import { INavLink } from "@/interfaces/link.interface";
 
 interface ItemProps {
-  link: ILink;
+  link: INavLink;
 }
 
 const Item: FC<ItemProps> = ({ link }) => {

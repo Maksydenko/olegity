@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 import AboutSection from "./AboutSection/AboutSection";
 
-import { aboutSections } from "./aboutSections.const";
+import { aboutSections } from "./aboutSections.data";
 
 interface AboutSectionsProps {
   className?: string;

@@ -1,7 +1,7 @@
 import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
-import { musicVideos } from "@/constants/videos/musicVideos.const";
+import { musicVideos } from "@/data/videos/musicVideos.data";
 
 const SliderMedias = () => {
   const latestMusicVideos = musicVideos.slice(0, 5);

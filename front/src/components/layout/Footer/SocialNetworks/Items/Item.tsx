@@ -1,6 +1,12 @@
+import { ILink } from "@/interfaces/link.interface";
 import clsx from "clsx";
+import { FC } from "react";
 
-const Item = ({ link: { icon, label, value } }) => {
+interface ItemProps {
+  link: ILink;
+}
+
+const Item: FC<ItemProps> = ({ link: { icon, label, value } }) => {
   return (
     <li className="social-networks__item">
       <a

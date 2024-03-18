@@ -2,15 +2,11 @@ import { FC } from "react";
 import clsx from "clsx";
 
 import Items from "./Items/Items";
+import { IMusicPlatforms } from "@/components/shared/ListenOn/musicPlatforms.interface";
 
 interface ListenOnProps {
   className?: string;
-  links: {
-    spotify: string;
-    appleMusic: string;
-    youtubeMusic: string;
-    deezer: string;
-  };
+  links: IMusicPlatforms;
   swiperParallax?: number;
   swiperParallaxDuration?: number;
 }

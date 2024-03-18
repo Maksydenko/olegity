@@ -7,19 +7,25 @@ import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { links } from "@/constants/links.const";
+import { links } from "@/data/links.data";
 
 interface MenuProps {
+  className?: string;
   breakpoint: number;
   isScrollLock: boolean;
   onClick: () => void;
 }
 
-const Menu: FC<MenuProps> = ({ breakpoint, isScrollLock, onClick }) => {
+const Menu: FC<MenuProps> = ({
+  className,
+  breakpoint,
+  isScrollLock,
+  onClick,
+}) => {
   const isBreakpoint = useBreakpointCheck(breakpoint);
 
   return (
-    <div className="header__menu menu">
+    <div className={clsx(className, "menu")}>
       {isBreakpoint && (
         <button
           className={clsx(

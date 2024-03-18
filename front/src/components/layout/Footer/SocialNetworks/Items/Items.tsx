@@ -1,6 +1,13 @@
+import { FC } from "react";
 import Item from "./Item";
 
-const Items = ({ links }) => {
+import { ILink } from "@/interfaces/link.interface";
+
+interface ItemsProps {
+  links: ILink[];
+}
+
+const Items: FC<ItemsProps> = ({ links }) => {
   const items = links.map((link) => {
     const { label } = link;
 

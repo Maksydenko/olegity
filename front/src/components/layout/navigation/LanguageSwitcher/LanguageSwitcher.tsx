@@ -3,6 +3,8 @@ import clsx from "clsx";
 
 import Items from "./Items/Items";
 
+import { languages } from "./languages.data";
+
 interface LanguageSwitcherProps {
   className?: string;
   onClick?: () => void;
@@ -14,7 +16,7 @@ const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
 }) => {
   return (
     <ul className={clsx(className, "language-switcher")}>
-      <Items onClick={onClick} />
+      <Items languages={languages} onClick={onClick} />
     </ul>
   );
 };

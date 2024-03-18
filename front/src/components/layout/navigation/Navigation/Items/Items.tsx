@@ -2,10 +2,10 @@ import { FC } from "react";
 
 import Item from "./Item";
 
-import { ILink } from "@/interfaces/link.interface";
+import { INavLink } from "@/interfaces/link.interface";
 
 interface ItemsProps {
-  links: ILink[];
+  links: INavLink[];
 }
 
 const Items: FC<ItemsProps> = ({ links }) => {

@@ -4,10 +4,10 @@ import clsx from "clsx";
 
 import SubList from "./SubList";
 
-import { ILink, ILinkWithSubLinks } from "@/interfaces/link.interface";
+import { INavLink, INavLinkWithSubLinks } from "@/interfaces/link.interface";
 
 interface ItemProps {
-  link: ILink;
+  link: INavLink;
   breakpoint: boolean;
   onClick?: () => void;
 }
@@ -25,7 +25,7 @@ const Item: FC<ItemProps> = ({ link, breakpoint, onClick }) => {
   if (subLinks) {
     return (
       <SubList
-        link={link as ILinkWithSubLinks}
+        link={link as INavLinkWithSubLinks}
         active={isActive}
         breakpoint={breakpoint}
         onClick={onClick}

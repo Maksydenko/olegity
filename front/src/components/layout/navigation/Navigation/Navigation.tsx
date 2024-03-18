@@ -3,15 +3,18 @@
 import { FC } from "react";
 import Items from "./Items/Items";
 
-import { links } from "@/constants/links.const";
+import { links } from "@/data/links.data";
+import clsx from "clsx";
 
-interface NavigationProps {}
+interface NavigationProps {
+  className?: string;
+}
 
-const Navigation: FC<NavigationProps> = () => {
+const Navigation: FC<NavigationProps> = ({ className }) => {
   // const { t } = useTranslation();
 
   return (
-    <nav className="footer__navigation navigation">
+    <nav className={clsx(className, "navigation")}>
       <h6 className="navigation__title">{"navigation"}</h6>
       <Items links={links} />
     </nav>

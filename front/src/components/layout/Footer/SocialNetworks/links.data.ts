@@ -1,4 +1,6 @@
-const links = [
+import { ILink } from "@/interfaces/link.interface";
+
+const links: ILink[] = [
   {
     icon: "instagram",
     label: "Instagram",

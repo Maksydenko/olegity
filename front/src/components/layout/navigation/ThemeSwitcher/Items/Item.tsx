@@ -1,12 +1,15 @@
-import { FC } from "react";
+import { FC, KeyboardEvent } from "react";
 import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
 
+import { ILink } from "@/interfaces/link.interface";
+
 interface ItemProps {
-  onClick?: () => void;
+  theme: ILink;
   checked: boolean;
   setCurrentTheme: (theme: string) => void;
+  onClick?: () => void;
 }
 
 const Item: FC<ItemProps> = ({
@@ -23,7 +26,10 @@ const Item: FC<ItemProps> = ({
     }
   };
 
-  const handleKeyDown = ({ key }) => {
+  interface IHandleKeyDown {
+    ({ key }: KeyboardEvent): void;
+  }
+  const handleKeyDown: IHandleKeyDown = ({ key }) => {
     if (key === "Enter") {
       handleChange();
     }

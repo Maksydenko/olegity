@@ -1,17 +1,17 @@
-import clsx from "clsx";
+import Link from "next/link";
 import { FC } from "react";
+import clsx from "clsx";
+
+import { ILinkWithoutLabel } from "@/interfaces/link.interface";
 
 interface ItemProps {
-  item: {
-    icon: string;
-    link: string;
-  };
+  item: ILinkWithoutLabel;
   swiperParallax?: number;
   swiperParallaxDuration?: number;
 }
 
 const Item: FC<ItemProps> = ({
-  item: { icon, link },
+  item: { icon, value },
   swiperParallax,
   swiperParallaxDuration,
 }) => {
@@ -25,13 +25,13 @@ const Item: FC<ItemProps> = ({
         "data-swiper-parallax-duration": swiperParallaxDuration,
       })}
     >
-      <a
+      <Link
         className={clsx("listen-on__link", `_icon-${icon}`)}
-        href={link}
+        href={value}
         aria-label={icon}
         target="_blank"
         rel="noreferrer"
-      ></a>
+      ></Link>
     </li>
   );
 };

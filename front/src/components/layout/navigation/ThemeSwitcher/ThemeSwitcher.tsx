@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 import Items from "./Items/Items";
 
-import { themes } from "./themes.const";
+import { themes } from "./themes.data";
 import { FC } from "react";
 
 interface ThemeSwitcherProps {

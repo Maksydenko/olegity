@@ -4,7 +4,10 @@ import Item from "./Item";
 
 import { useThemeSwitch } from "../useThemeSwitch";
 
+import { ILink } from "@/interfaces/link.interface";
+
 interface ItemsProps {
+  themes: ILink[];
   onClick?: () => void;
 }
 

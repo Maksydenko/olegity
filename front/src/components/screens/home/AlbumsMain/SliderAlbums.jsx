@@ -5,7 +5,7 @@ import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { albums } from "@/constants/music/albums.const";
+import { albums } from "@/data/music/albums.data";
 import { Breakpoint } from "@/enums/breakpoint.enum";
 
 const SliderAlbums = () => {
