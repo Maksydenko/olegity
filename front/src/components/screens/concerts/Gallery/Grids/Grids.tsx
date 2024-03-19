@@ -1,16 +1,23 @@
+import { FC } from "react";
 import clsx from "clsx";
 
 import Grid from "./Grid";
 
-const Grids = ({ imgs }) => {
+import { IImg } from "@/components/base/Img/img.interface";
+
+interface GridsProps {
+  imgs: IImg[];
+}
+
+const Grids: FC<GridsProps> = ({ imgs }) => {
   const { length: imgsLength } = imgs;
 
-  const groupedImgs = [];
+  const imgGroups = [];
   for (let i = 0; i < imgsLength; i += 4) {
-    groupedImgs.push(imgs.slice(i, i + 4));
+    imgGroups.push(imgs.slice(i, i + 4));
   }
 
-  const grids = groupedImgs.map((groupImgs, index) => {
+  const grids = imgGroups.map((imgGroup, index) => {
     return (
       <div
         key={index}
@@ -23,7 +30,7 @@ const Grids = ({ imgs }) => {
             : "gallery__grid_tall-end"
         )}
       >
-        <Grid key={index} groupImgs={groupImgs} />
+        <Grid key={index} groupImgs={imgGroup} />
       </div>
     );
   });

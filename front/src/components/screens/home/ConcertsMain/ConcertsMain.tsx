@@ -1,11 +1,15 @@
+import { FC } from "react";
+
 import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@/components/base/Img/Img";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-const ConcertsMain = () => {
+interface ConcertsMainProps {}
+
+const ConcertsMain: FC = () => {
   const link = {
-    value: "more",
-    path: "/concerts",
+    label: "more",
+    value: "/concerts",
   };
 
   const img = {

@@ -1,9 +1,12 @@
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
 import Btn from "@/components/form/Btn/Btn";
 import SliderAlbums from "./SliderAlbums";
 
-const MainAlbums = () => {
+interface AlbumsMainProps {}
+
+const AlbumsMain: FC<AlbumsMainProps> = () => {
   // const { t } = useTranslation();
 
   return (
@@ -19,4 +22,4 @@ const MainAlbums = () => {
   );
 };
 
-export default MainAlbums;
+export default AlbumsMain;

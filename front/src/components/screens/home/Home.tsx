@@ -4,6 +4,8 @@ import AlbumsMain from "@/components/screens/home/AlbumsMain/AlbumsMain";
 import VideosMain from "@/components/screens/home/VideosMain/VideosMain";
 import ConcertsMain from "@/components/screens/home/ConcertsMain/ConcertsMain";
 
+interface HomeProps {}
+
 const HomePage = () => (
   <main className="home-page">
     <FullScreenVideo />

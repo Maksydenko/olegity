@@ -1,7 +1,16 @@
+import { FC } from "react";
+
 import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import Album from "./Album";
 
-const Albums = ({ albums, type = "album" }) => {
+import { IAlbum } from "@/interfaces/music.interface";
+
+interface AlbumsProps {
+  albums: IAlbum[];
+  type: "album" | "ep";
+}
+
+const Albums: FC<AlbumsProps> = ({ albums, type = "album" }) => {
   const slides = albums.map((album) => {
     const { title } = album;
 

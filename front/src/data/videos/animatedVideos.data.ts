@@ -28,7 +28,7 @@ export const animatedVideos = [
     url: "https://www.youtube.com/embed/ZtEB64zNAlY?color=white",
     img: {
       src: "/img/videos/animated-videos/v-yeyo-posteli.jpg",
-      title: "ЛСП (LSP) — В её постели (In her bed)",
+      alt: "ЛСП (LSP) — В её постели (In her bed)",
     },
   },
   {

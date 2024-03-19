@@ -1,3 +1,4 @@
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
 import Tabs from "@/components/base/Tabs/Tabs";
@@ -8,14 +9,16 @@ import { albums } from "@/data/music/albums.data";
 import { ep } from "@/data/music/ep.data";
 import { singles } from "@/data/music/singles.data";
 
-const Music = () => {
+interface MusicProps {}
+
+const Music: FC = () => {
   // const { t } = useTranslation();
 
   const tabs = [
     {
       id: "albums",
       title: "albums",
-      content: <Albums albums={albums} />,
+      content: <Albums albums={albums} type="album" />,
     },
     {
       id: "ep",

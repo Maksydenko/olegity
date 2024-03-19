@@ -1,8 +1,12 @@
+import { FC } from "react";
+
 import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@/components/base/Img/Img";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-const AboutConcerts = () => {
+interface AboutConcertsProps {}
+
+const AboutConcerts: FC<AboutConcertsProps> = () => {
   const img = {
     src: "/img/lsp/concerts.jpg",
     alt: "Oleg LSP",

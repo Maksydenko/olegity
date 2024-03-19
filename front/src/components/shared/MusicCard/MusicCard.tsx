@@ -3,26 +3,11 @@ import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
 import Text from "./Text";
+import { IAlbum, ISingle } from "@/interfaces/music.interface";
 
 interface MusicCardProps {
   className?: string;
-  track: {
-    title: string;
-    artist: string;
-    genre: string;
-    year: number;
-    img: {
-      src: string;
-      alt: string;
-    };
-    links: {
-      spotify: string;
-      appleMusic: string;
-      youtubeMusic: string;
-      deezer: string;
-    };
-    trackList: string[];
-  };
+  track: ISingle | IAlbum;
   swiperParallax?: number;
   swiperParallaxDuration?: number;
 }

@@ -1,6 +1,13 @@
+import { IVideo } from "@/interfaces/video.interface";
 import Item from "./Item";
+import { FC } from "react";
 
-const Items = ({ videos, filterText }) => (
+interface ItemsProps {
+  videos: IVideo[];
+  filterText: string;
+}
+
+const Items: FC<ItemsProps> = ({ videos, filterText }) => (
   <div className="videos__items">
     {videos.map((video) => {
       const { title } = video;

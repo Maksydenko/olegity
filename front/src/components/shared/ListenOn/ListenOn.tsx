@@ -2,7 +2,8 @@ import { FC } from "react";
 import clsx from "clsx";
 
 import Items from "./Items/Items";
-import { IMusicPlatforms } from "@/components/shared/ListenOn/musicPlatforms.interface";
+
+import { IMusicPlatforms } from "@/interfaces/music.interface";
 
 interface ListenOnProps {
   className?: string;

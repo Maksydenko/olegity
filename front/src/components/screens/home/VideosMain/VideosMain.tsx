@@ -1,9 +1,12 @@
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
 import Btn from "@/components/form/Btn/Btn";
 import SliderVideos from "./SliderVideos";
 
-const MainVideos = () => {
+interface VideosMainProps {}
+
+const VideosMain: FC<VideosMainProps> = () => {
   // const { t } = useTranslation();
 
   return (
@@ -17,4 +20,4 @@ const MainVideos = () => {
   );
 };
 
-export default MainVideos;
+export default VideosMain;

@@ -1,14 +1,18 @@
 "use client";
 
+import { FC } from "react";
+
 import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { albums } from "@/data/music/albums.data";
 import { Breakpoint } from "@/enums/breakpoint.enum";
+import { albums } from "@/data/music/albums.data";
 
-const SliderAlbums = () => {
+interface SliderAlbumsProps {}
+
+const SliderAlbums: FC<SliderAlbumsProps> = () => {
   const isMobile = useBreakpointCheck(Breakpoint.Mobile);
   const isMobileSmall = useBreakpointCheck(Breakpoint.MobileSmall);
 

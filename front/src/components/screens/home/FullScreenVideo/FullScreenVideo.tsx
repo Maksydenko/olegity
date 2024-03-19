@@ -1,8 +1,12 @@
+import { FC } from "react";
+
 import FullScreen from "@/components/base/FullScreen/FullScreen";
 import LocalVideo from "@/components/base/Video/LocalVideo";
 import Img from "@/components/base/Img/Img";
 
-const FullScreenVideo = () => {
+interface FullScreenVideoProps {}
+
+const FullScreenVideo: FC<FullScreenVideoProps> = () => {
   const img = {
     src: "/img/logos/lsp.svg",
     alt: "LSP",
@@ -22,7 +26,7 @@ const FullScreenVideo = () => {
         className="full-screen-video__full-screen"
         background={background}
       >
-        <Img className="full-screen-video__img" img={img} loading="preload" />
+        <Img className="full-screen-video__img" img={img} priority />
       </FullScreen>
     </section>
   );

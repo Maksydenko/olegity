@@ -1,6 +1,9 @@
 {
-  "page-not-found": "Page not found",
-  "redirect-homepage": "You will be redirected to the homepage in",
+  "not-found-page": {
+    "title": "404",
+    "label": "Page not found",
+    "text": "You will be redirected to the homepage in"
+  },
 
   "pages": {
     "home": "Home",

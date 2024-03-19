@@ -1,11 +1,15 @@
+import { FC } from "react";
+
 import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@/components/base/Img/Img";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-const MainAbout = () => {
+interface AboutMainProps {}
+
+const AboutMain: FC<AboutMainProps> = () => {
   const link = {
-    value: "more",
-    path: "/about",
+    label: "more",
+    value: "/about",
   };
 
   const img = {
@@ -31,4 +35,4 @@ const MainAbout = () => {
   );
 };
 
-export default MainAbout;
+export default AboutMain;

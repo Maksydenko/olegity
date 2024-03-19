@@ -1,6 +1,14 @@
+import { FC } from "react";
+
 import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
-const Item = ({ video }) => {
+import { IVideo } from "@/interfaces/video.interface";
+
+interface ItemProps {
+  video: IVideo;
+}
+
+const Item: FC<ItemProps> = ({ video }) => {
   const { title, img } = video;
 
   return (

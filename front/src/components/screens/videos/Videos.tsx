@@ -1,9 +1,13 @@
+import { FC } from "react";
+
 import AllVideos from "@/components/screens/videos/AllVideos/AllVideos";
 
-const VideosPage = () => (
+interface VideosProps {}
+
+const Videos: FC<VideosProps> = () => (
   <main className="videos-page">
     <AllVideos />
   </main>
 );
 
-export default VideosPage;
+export default Videos;

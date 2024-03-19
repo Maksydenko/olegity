@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 
 import Search from "@/components/form/Search/Search";
 import Items from "./Items/Items";
 
-const Videos = ({ videos }) => {
+import { IVideo } from "@/interfaces/video.interface";
+
+interface VideosProps {
+  videos: IVideo[];
+}
+
+const Videos: FC<VideosProps> = ({ videos }) => {
   const [text, setText] = useState("");
 
   return (

@@ -1,10 +1,13 @@
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
 import Grids from "./Grids/Grids";
 
-import { imgs } from "./imgs.const";
+import { imgs } from "./imgs.data";
 
-const Gallery = () => {
+interface GalleryProps {}
+
+const Gallery: FC<GalleryProps> = () => {
   // const { t } = useTranslation();
 
   return (

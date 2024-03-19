@@ -1,9 +1,13 @@
+import { FC } from "react";
+
 import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
 import { musicVideos } from "@/data/videos/musicVideos.data";
 
-const SliderMedias = () => {
+interface SliderVideosProps {}
+
+const SliderVideos: FC<SliderVideosProps> = () => {
   const latestMusicVideos = musicVideos.slice(0, 5);
 
   const slides = latestMusicVideos.map((video) => {
@@ -31,4 +35,4 @@ const SliderMedias = () => {
   );
 };
 
-export default SliderMedias;
+export default SliderVideos;

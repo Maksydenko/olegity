@@ -3,13 +3,13 @@ import clsx from "clsx";
 
 import Btn from "@/components/form/Btn/Btn";
 
-import { ILink } from "@/interfaces/link.interface";
+import { ILinkWithoutIcon } from "@/interfaces/link.interface";
 import { FC } from "react";
 
 interface TextBlockProps {
   className?: string;
   keyword: string;
-  link?: ILink;
+  link?: ILinkWithoutIcon;
 }
 
 const TextBlock: FC<TextBlockProps> = ({ className, keyword, link }) => {

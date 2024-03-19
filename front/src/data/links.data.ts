@@ -12,12 +12,16 @@ export const links = [
     value: "/discography",
     subLinks: [
       {
-        label: "pages.1",
-        value: "/discography",
+        label: "pages.discography.albums",
+        value: "/discography?tab=albums",
       },
       {
-        label: "pages.2",
-        value: "/discography",
+        label: "pages.discography.ep",
+        value: "/discography?tab=ep",
+      },
+      {
+        label: "pages.discography.singles",
+        value: "/discography?tab=singles",
       },
     ],
   },

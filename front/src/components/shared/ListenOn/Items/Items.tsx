@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import Item from "./Item";
 
-import { IMusicPlatforms } from "@/components/shared/ListenOn/musicPlatforms.interface";
+import { IMusicPlatforms } from "@/interfaces/music.interface";
 import { ILinkWithoutLabel } from "@/interfaces/link.interface";
 
 interface ItemsProps {

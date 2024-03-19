@@ -7,8 +7,11 @@ import Videos from "./Videos/Videos";
 
 import { musicVideos } from "@/data/videos/musicVideos.data";
 import { animatedVideos } from "@/data/videos/animatedVideos.data";
+import { FC } from "react";
 
-const AllVideos = () => {
+interface AllVideosProps {}
+
+const AllVideos: FC<AllVideosProps> = () => {
   // const { t } = useTranslation();
   const tabs = [
     {
