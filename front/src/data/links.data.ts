@@ -28,6 +28,16 @@ export const links = [
   {
     label: "pages.videos",
     value: "/videos",
+    subLinks: [
+      {
+        label: "pages.discography.albums",
+        value: "/discography?tab=music-videos",
+      },
+      {
+        label: "pages.discography.ep",
+        value: "/discography?tab=animated-videos",
+      },
+    ],
   },
   {
     label: "pages.concerts",
