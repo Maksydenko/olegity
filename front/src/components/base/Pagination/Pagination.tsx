@@ -3,7 +3,7 @@ import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 import clsx from "clsx";
 
 interface PaginationProps extends ReactPaginateProps {
-  itemsPerTotal: number[];
+  itemsPerTotal: unknown[];
 }
 
 const Pagination: FC<PaginationProps> = ({

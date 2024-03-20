@@ -1,7 +1,15 @@
+import { FC } from "react";
+
 import MusicCard from "@/components/shared/MusicCard/MusicCard";
 import ListenOn from "@/components/shared/ListenOn/ListenOn";
 
-const Item = ({ single }) => {
+import { ISingle } from "@/interfaces/music.interface";
+
+interface ItemProps {
+  single: ISingle;
+}
+
+const Item: FC<ItemProps> = ({ single }) => {
   const { links } = single;
 
   return (

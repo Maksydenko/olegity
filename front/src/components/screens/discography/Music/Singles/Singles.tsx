@@ -1,12 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { FC, useState } from "react";
 
 import Pagination from "@/components/base/Pagination/Pagination";
 import Search from "@/components/form/Search/Search";
 import Items from "./Items/Items";
 
-const Singles = ({ singles }) => {
+import { ISingle } from "@/interfaces/music.interface";
+
+interface SinglesProps {
+  singles: ISingle[];
+}
+
+const Singles: FC<SinglesProps> = ({ singles }) => {
   const [text, setText] = useState("");
   const [itemOffset, setItemOffset] = useState(0);
 
@@ -24,8 +30,8 @@ const Singles = ({ singles }) => {
   const currentItems = filteredSingles.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(filteredSinglesLength / ITEMS_PER_PAGE);
 
-  const handlePageChange = (e) => {
-    const newOffset = (e.selected * ITEMS_PER_PAGE) % filteredSinglesLength;
+  const handlePageChange = ({ selected }: any) => {
+    const newOffset = (selected * ITEMS_PER_PAGE) % filteredSinglesLength;
     setItemOffset(newOffset);
 
     window.scrollTo({
@@ -37,7 +43,7 @@ const Singles = ({ singles }) => {
     <div className="music__singles singles">
       <div className="singles__container">
         <Search className="singles__search" text={text} setText={setText} />
-        <Items singles={currentItems} filterText={text} />
+        <Items singles={currentItems} />
         <Pagination
           className="singles__pagination"
           itemsPerTotal={currentItems}
