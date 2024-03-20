@@ -15,8 +15,7 @@ const NotFound = () => {
         <span className="not-found__label">{"not-found-page.label"}</span>
         <div className="not-found__redirect-homepage">
           <p>
-            {"not-found-page.text"}
-            {time}
+            {"not-found-page.text"} {time}
           </p>
         </div>
       </div>
