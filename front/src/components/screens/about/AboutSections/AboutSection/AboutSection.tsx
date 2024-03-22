@@ -13,7 +13,7 @@ import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
 import { Breakpoint } from "@/enums/breakpoint.enum";
 
-import { IImg } from "@/components/base/Img/img.interface";
+import { IImg } from "@/interfaces/img.interface";
 
 interface AboutSectionProps {
   keyword: string;

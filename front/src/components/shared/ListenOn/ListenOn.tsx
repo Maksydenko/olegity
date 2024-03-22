@@ -1,7 +1,7 @@
 import { FC } from "react";
 import clsx from "clsx";
 
-import Items from "./Items/Items";
+import ListenOnList from "./ListenOnItems/ListenOnList";
 
 import { IMusicPlatforms } from "@/interfaces/music.interface";
 
@@ -20,7 +20,7 @@ const ListenOn: FC<ListenOnProps> = ({
 }) => {
   return (
     <div className={clsx(className, "listen-on")}>
-      <Items
+      <ListenOnList
         links={links}
         swiperParallax={swiperParallax}
         swiperParallaxDuration={swiperParallaxDuration}

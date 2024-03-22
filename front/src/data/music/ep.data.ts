@@ -1,4 +1,6 @@
-export const ep = [
+import { IAlbum } from "@/interfaces/music.interface";
+
+export const ep: IAlbum[] = [
   {
     title: "Кондитерская (Cake Factory)",
     artist: "ЛСП (LSP) & PHARAOH",
@@ -8,7 +10,6 @@ export const ep = [
       src: "/img/music/ep/konditerskaya.jpg",
       alt: "Кондитерская (Cake Factory)",
     },
-    description: "",
     links: {
       spotify:
         "https://open.spotify.com/album/3YMe42ahPZSR1vIglZJUIb?si=wCDsw0YgQ8ustaQpldqT_g",
@@ -36,7 +37,6 @@ export const ep = [
       src: "/img/music/ep/romantic-colegtion.jpg",
       alt: "Romantic Colegtion",
     },
-    description: "",
     links: {
       spotify:
         "https://open.spotify.com/album/6glUa3Svi3PGcCXluPfGOu?si=kOOQkvipSYyp_lylOFxPaQ",
@@ -61,7 +61,6 @@ export const ep = [
       src: "/img/music/ep/videt-tsvetnyye-sny.jpg",
       alt: "Видеть цветные сны (See coloured dreams)",
     },
-    description: "",
     links: {
       spotify:
         "https://open.spotify.com/album/2i9JKomqOLixXpOhezsDjV?si=afxbsP4RTdGmxqQhnKzMog",

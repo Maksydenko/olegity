@@ -6,12 +6,12 @@ import clsx from "clsx";
 
 import Loader from "@/components/shared/Loader/Loader";
 
-import { IImg } from "./img.interface";
+import { IImg } from "@/interfaces/img.interface";
 
 interface ImgProps {
   className?: string;
-  // src: IImg["src"];
-  // alt?: IImg["alt"];
+  // src: StaticImageData | string;
+  // alt?: string;
   img: IImg | IImg[];
   svg?: boolean;
   priority?: boolean;

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import clsx from "clsx";
 
-import Sources from "./Sources/Sources";
+import Sources from "./VideoSources/VideoSources";
 
 import { TypeLocalVideo } from "./localVideo.type";
 

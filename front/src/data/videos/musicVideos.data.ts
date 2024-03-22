@@ -1,4 +1,6 @@
-export const musicVideos = [
+import { IVideo } from "@/interfaces/video.interface";
+
+export const musicVideos: IVideo[] = [
   {
     title: "ЛСП (LSP) — Вечная весна (Eternal spring)",
     url: "https://www.youtube.com/embed/YjDyNvP_sEc?color=white",

@@ -2,7 +2,7 @@ import { FC } from "react";
 import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
-import Text from "./Text";
+import MusicCardText from "./MusicCardText";
 import { IAlbum, ISingle } from "@/interfaces/music.interface";
 
 interface MusicCardProps {
@@ -33,7 +33,7 @@ const MusicCard: FC<MusicCardProps> = ({
       {...swiperParallaxDurationAttr}
     >
       <Img className="music-card__img" img={img} />
-      <Text
+      <MusicCardText
         track={track}
         swiperParallax={swiperParallax}
         {...swiperParallaxDurationAttr}

@@ -2,7 +2,7 @@ import { ElementType, FC, MouseEvent, ReactNode, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
-import Items from "./Items/Items";
+import DropdownList from "./DropdownItems/DropdownList";
 
 interface DropdownProps {
   as?: ElementType;
@@ -93,7 +93,7 @@ const Dropdown: FC<DropdownProps> = ({
             leaveFrom="dropdown__leave-from"
             leaveTo="dropdown__leave-to"
           >
-            <Items>{items}</Items>
+            <DropdownList>{items}</DropdownList>
           </Transition>
         </>
       )}

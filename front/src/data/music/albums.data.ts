@@ -1,4 +1,6 @@
-export const albums = [
+import { IAlbum } from "@/interfaces/music.interface";
+
+export const albums: IAlbum[] = [
   {
     title: "One More City",
     artist: "ЛСП (LSP)",

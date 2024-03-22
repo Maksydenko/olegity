@@ -1,13 +1,13 @@
 import { FC } from "react";
 import clsx from "clsx";
 
-import Items from "./Items/Items";
+import MenuList from "./MenuItems/MenuList";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { links } from "@/data/links.data";
+import { navLinks } from "@/data/navLinks.data";
 
 interface MenuProps {
   className?: string;
@@ -41,7 +41,11 @@ const Menu: FC<MenuProps> = ({
       )}
       <div className={clsx("menu__body", isScrollLock && "menu__body_active")}>
         <nav className="menu__content">
-          <Items links={links} breakpoint={isBreakpoint} onClick={onClick} />
+          <MenuList
+            links={navLinks}
+            breakpoint={isBreakpoint}
+            onClick={onClick}
+          />
           <LanguageSwitcher className="menu__language-switcher" />
           <ThemeSwitcher className="menu__theme-switcher" />
         </nav>

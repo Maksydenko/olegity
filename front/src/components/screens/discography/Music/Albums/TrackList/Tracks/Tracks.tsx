@@ -14,7 +14,7 @@ const Tracks: FC<TracksProps> = ({
   swiperParallax,
   swiperParallaxDuration,
 }) => {
-  return trackList.map((track, index) => {
+  const tracks = trackList.map((track, index) => {
     return (
       <Track
         key={track}
@@ -24,6 +24,8 @@ const Tracks: FC<TracksProps> = ({
       />
     );
   });
+
+  return tracks;
 };
 
 export default Tracks;

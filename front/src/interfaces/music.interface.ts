@@ -1,4 +1,4 @@
-import { IImg } from "@/components/base/Img/img.interface";
+import { IImg } from "@/interfaces/img.interface";
 
 export interface IMusicPlatforms {
   spotify: string;

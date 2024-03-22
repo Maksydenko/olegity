@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 
 import { isBrowser } from "@/constants/isBrowser.const";
 
@@ -31,7 +31,7 @@ export const useThemeSwitch: IUseSwitchTheme = () => {
     setCurrentTheme(matches ? "dark" : "light");
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const { documentElement } = document;
 
     if (currentTheme === "system") {

@@ -4,7 +4,7 @@ import { FC, useState } from "react";
 
 import Pagination from "@/components/base/Pagination/Pagination";
 import Search from "@/components/form/Search/Search";
-import Items from "./Items/Items";
+import SinglesList from "./SinglesItems/SinglesList";
 
 import { ISingle } from "@/interfaces/music.interface";
 
@@ -43,7 +43,7 @@ const Singles: FC<SinglesProps> = ({ singles }) => {
     <div className="music__singles singles">
       <div className="singles__container">
         <Search className="singles__search" text={text} setText={setText} />
-        <Items singles={currentItems} />
+        <SinglesList singles={currentItems} />
         <Pagination
           className="singles__pagination"
           itemsPerTotal={currentItems}

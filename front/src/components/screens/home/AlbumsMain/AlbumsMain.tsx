@@ -2,7 +2,7 @@ import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
 import Btn from "@/components/form/Btn/Btn";
-import SliderAlbums from "./SliderAlbums";
+import AlbumsMainSlider from "./AlbumsMainSlider";
 
 interface AlbumsMainProps {}
 
@@ -13,7 +13,7 @@ const AlbumsMain: FC<AlbumsMainProps> = () => {
     <section className="albums-main">
       <div className="albums-main__container">
         <h2 className="albums-main__title">{"albums"}</h2>
-        <SliderAlbums />
+        <AlbumsMainSlider />
         <Btn className="albums-main__btn" path="/discography#albums">
           {"see-discography"}
         </Btn>

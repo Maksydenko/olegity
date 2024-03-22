@@ -1,9 +1,9 @@
 import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
-import Grids from "./Grids/Grids";
+import GalleryGrids from "./GalleryGrids/GalleryGrids";
 
-import { imgs } from "./imgs.data";
+import { galleryImgs } from "./galleryImgs.data";
 
 interface GalleryProps {}
 
@@ -15,7 +15,7 @@ const Gallery: FC<GalleryProps> = () => {
       <div className="gallery__container">
         <h2 className="gallery__title">{"gallery"}</h2>
       </div>
-      <Grids imgs={imgs} />
+      <GalleryGrids imgs={galleryImgs} />
     </section>
   );
 };

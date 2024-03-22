@@ -2,9 +2,9 @@ import { FC } from "react";
 import clsx from "clsx";
 // import { useTranslation } from "next-i18next";
 
-import Items from "./Items/Items";
+import SocialNetworksList from "./SocialNetworksItems/SocialNetworksList";
 
-import links from "./links.data";
+import socialNetworksLinks from "./socialNetworksLinks.data";
 
 interface SocialNetworksProps {
   className?: string;
@@ -16,7 +16,7 @@ const SocialNetworks: FC<SocialNetworksProps> = ({ className }) => {
   return (
     <div className={clsx(className, "footer__social-networks social-networks")}>
       <h6 className="social-networks__title">{"social-networks"}</h6>
-      <Items links={links} />
+      <SocialNetworksList links={socialNetworksLinks} />
     </div>
   );
 };

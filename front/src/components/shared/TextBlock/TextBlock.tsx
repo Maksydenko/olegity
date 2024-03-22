@@ -1,10 +1,10 @@
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import Btn from "@/components/form/Btn/Btn";
 
 import { ILinkWithoutIcon } from "@/interfaces/link.interface";
-import { FC } from "react";
 
 interface TextBlockProps {
   className?: string;

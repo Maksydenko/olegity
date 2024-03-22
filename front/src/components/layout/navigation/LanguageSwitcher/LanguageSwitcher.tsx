@@ -1,7 +1,7 @@
 import { FC } from "react";
 import clsx from "clsx";
 
-import Items from "./Items/Items";
+import LanguageSwitcherList from "./LanguageSwitcherItems/LanguageSwitcherList";
 
 import { languages } from "./languages.data";
 
@@ -16,7 +16,7 @@ const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
 }) => {
   return (
     <ul className={clsx(className, "language-switcher")}>
-      <Items languages={languages} onClick={onClick} />
+      <LanguageSwitcherList languages={languages} onClick={onClick} />
     </ul>
   );
 };

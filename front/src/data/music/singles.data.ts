@@ -1,4 +1,6 @@
-export const singles = [
+import { ISingle } from "@/interfaces/music.interface";
+
+export const singles: ISingle[] = [
   {
     title: "Вечная весна (Eternal spring)",
     artist: "ЛСП (LSP) & DenDerty",

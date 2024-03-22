@@ -1,4 +1,6 @@
-export const animatedVideos = [
+import { IVideo } from "@/interfaces/video.interface";
+
+export const animatedVideos: IVideo[] = [
   {
     title: "ЛСП (LSP) — Убийца Свин (Pig killer)",
     url: "https://www.youtube.com/embed/GJIblQOF2Ac?color=white",

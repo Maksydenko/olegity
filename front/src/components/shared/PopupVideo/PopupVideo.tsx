@@ -1,10 +1,11 @@
+import { FC } from "react";
 import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
 import Popup from "@/components/base/Popup/Popup";
 import Video from "@/components/base/Video/Video";
-import { IImg } from "@/components/base/Img/img.interface";
-import { FC } from "react";
+
+import { IImg } from "@/interfaces/img.interface";
 
 interface PopupVideoProps {
   className?: string;
