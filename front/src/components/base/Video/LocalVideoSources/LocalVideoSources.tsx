@@ -4,11 +4,11 @@ import { getType } from "./getType.util";
 
 import { TypeLocalVideo } from "../localVideo.type";
 
-interface SourcesProps {
+interface LocalVideoSourcesProps {
   src: TypeLocalVideo;
 }
 
-const Sources: FC<SourcesProps> = ({ src }) => {
+const LocalVideoSources: FC<LocalVideoSourcesProps> = ({ src }) => {
   if (Array.isArray(src)) {
     return src.map((item) => (
       <source key={item} src={item} type={getType(item)} />
@@ -17,4 +17,4 @@ const Sources: FC<SourcesProps> = ({ src }) => {
   return <source src={src} type={getType(src)} />;
 };
 
-export default Sources;
+export default LocalVideoSources;

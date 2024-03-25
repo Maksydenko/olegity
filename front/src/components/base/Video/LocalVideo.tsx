@@ -1,7 +1,7 @@
-import { FC } from "react";
+import { FC, MediaHTMLAttributes } from "react";
 import clsx from "clsx";
 
-import Sources from "./VideoSources/VideoSources";
+import LocalVideoSources from "./LocalVideoSources/LocalVideoSources";
 
 import { TypeLocalVideo } from "./localVideo.type";
 
@@ -14,7 +14,7 @@ interface LocalVideoProps {
   muted?: boolean;
   controls?: boolean;
   loop?: boolean;
-  preload?: "none" | "metadata" | "auto";
+  preload?: MediaHTMLAttributes<HTMLVideoElement>["preload"];
 }
 
 const LocalVideo: FC<LocalVideoProps> = ({
@@ -39,7 +39,7 @@ const LocalVideo: FC<LocalVideoProps> = ({
   return (
     <div className={clsx(className, "video")}>
       <video {...videoAttrs}>
-        <Sources src={src} />
+        <LocalVideoSources src={src} />
         <track kind="captions" />
       </video>
     </div>

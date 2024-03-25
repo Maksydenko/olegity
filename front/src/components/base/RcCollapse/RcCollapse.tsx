@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import Collapse, { Panel } from "rc-collapse";
 import clsx from "clsx";
 import { CollapseProps } from "rc-collapse/es/interface";
@@ -9,9 +9,14 @@ import { IPanels } from "./panels.interface";
 
 import "rc-collapse/assets/index.css";
 
-interface RcCollapseProps extends CollapseProps {
+interface RcCollapseProps {
+  className?: string;
   reverse?: boolean;
   panels: IPanels | IPanels[];
+  defaultActiveKey?: CollapseProps["defaultActiveKey"];
+  accordion?: CollapseProps["accordion"];
+  expandIcon?: CollapseProps["expandIcon"];
+  collapsible?: CollapseProps["collapsible"];
 }
 
 const RcCollapse: FC<RcCollapseProps> = ({

@@ -28,26 +28,34 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 // import "swiper/scss/navigation";
 import "swiper/scss/pagination";
-import { SwiperOptions } from "swiper/types";
+import {
+  AutoplayOptions,
+  HashNavigationOptions,
+  KeyboardOptions,
+  MousewheelOptions,
+  PaginationOptions,
+  ScrollbarOptions,
+  SwiperOptions,
+} from "swiper/types";
 import { IBreakpoints } from "./breakpoints.interface";
 // import "swiper/scss/scrollbar";
 
 export interface SliderSwiperProps extends SwiperOptions {
   className?: string;
   children: ReactNode[];
-  paginationClickable?: boolean;
-  paginationDynamicBullets?: boolean;
-  paginationType?: "bullets" | "fraction" | "progressbar";
-  scrollbarDraggable?: boolean;
+  paginationClickable?: PaginationOptions["clickable"];
+  paginationDynamicBullets?: PaginationOptions["dynamicBullets"];
+  paginationType?: PaginationOptions["type"];
+  scrollbarDraggable?: ScrollbarOptions["draggable"];
   hash?: string;
-  hashNavigationWatchState?: boolean;
-  keyboardEnabled?: boolean;
-  keyboardOnlyInViewport?: boolean;
-  keyboardPageUpDown?: boolean;
-  mousewheelSensitivity?: number;
-  autoplayDelay?: number;
-  autoplayStopOnLastSlide?: boolean;
-  autoplayDisableOnInteraction?: boolean;
+  hashNavigationWatchState?: HashNavigationOptions["watchState"];
+  keyboardEnabled?: KeyboardOptions["enabled"];
+  keyboardOnlyInViewport?: KeyboardOptions["onlyInViewport"];
+  keyboardPageUpDown?: KeyboardOptions["pageUpDown"];
+  mousewheelSensitivity?: MousewheelOptions["sensitivity"];
+  autoplayDelay?: AutoplayOptions["delay"];
+  autoplayStopOnLastSlide?: AutoplayOptions["stopOnLastSlide"];
+  autoplayDisableOnInteraction?: AutoplayOptions["disableOnInteraction"];
   breakpoints?: IBreakpoints;
 }
 
