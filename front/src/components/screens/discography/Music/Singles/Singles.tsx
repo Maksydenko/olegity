@@ -1,6 +1,7 @@
 "use client";
 
 import { FC, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 import Pagination from "@/components/base/Pagination/Pagination";
 import Search from "@/components/form/Search/Search";
@@ -13,42 +14,42 @@ interface SinglesProps {
 }
 
 const Singles: FC<SinglesProps> = ({ singles }) => {
-  const [text, setText] = useState("");
-  const [itemOffset, setItemOffset] = useState(0);
-
+  // Items per page
   const ITEMS_PER_PAGE = 12;
 
-  const filteredSingles = singles.filter(({ title }) => {
+  // Query
+  const query = useSearchParams();
+  const queryArray = [...query];
+  const queryObject = Object.fromEntries(queryArray);
+  const queryPage = queryObject?.page;
+  const querySearch = queryObject?.search;
+  const currentSearchText = querySearch || "";
+
+  // Search
+  const searchedSingles = singles.filter(({ title }) => {
     const titleLowerCased = title.toLowerCase();
-    const filterTextLowerCased = text.toLowerCase();
+    const searchTextLowerCased = currentSearchText.toLowerCase();
 
-    return titleLowerCased.includes(filterTextLowerCased);
+    return titleLowerCased.includes(searchTextLowerCased);
   });
-  const { length: filteredSinglesLength } = filteredSingles;
+  const { length: filteredSinglesLength } = searchedSingles;
 
-  const endOffset = itemOffset + ITEMS_PER_PAGE;
-  const currentItems = filteredSingles.slice(itemOffset, endOffset);
+  // Pagination
+  const currentPage = +queryPage - 1 || 0;
+  const startOffset = (currentPage * ITEMS_PER_PAGE) % filteredSinglesLength;
+  const endOffset = startOffset + ITEMS_PER_PAGE;
+  const currentItems = searchedSingles.slice(startOffset, endOffset);
   const pageCount = Math.ceil(filteredSinglesLength / ITEMS_PER_PAGE);
-
-  const handlePageChange = ({ selected }: any) => {
-    const newOffset = (selected * ITEMS_PER_PAGE) % filteredSinglesLength;
-    setItemOffset(newOffset);
-
-    window.scrollTo({
-      top: 0,
-    });
-  };
 
   return (
     <div className="music__singles singles">
       <div className="singles__container">
-        <Search className="singles__search" text={text} setText={setText} />
+        <Search className="singles__search" />
         <SinglesList singles={currentItems} />
         <Pagination
           className="singles__pagination"
           itemsPerTotal={currentItems}
           pageCount={pageCount}
-          onPageChange={handlePageChange}
         />
       </div>
     </div>

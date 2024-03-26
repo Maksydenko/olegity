@@ -1,9 +1,20 @@
 import { FC } from "react";
+import { useSearchParams } from "next/navigation";
 import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 import clsx from "clsx";
 
-interface PaginationProps extends ReactPaginateProps {
+import { getNewQuery } from "@/utils/getNewQuery.util";
+
+interface PaginationProps {
+  className?: string;
   itemsPerTotal: unknown[];
+  pageCount: ReactPaginateProps["pageCount"];
+  pageRangeDisplayed?: ReactPaginateProps["pageRangeDisplayed"];
+  marginPagesDisplayed?: ReactPaginateProps["marginPagesDisplayed"];
+  breakLabel?: ReactPaginateProps["breakLabel"];
+  previousLabel?: ReactPaginateProps["previousLabel"];
+  nextLabel?: ReactPaginateProps["nextLabel"];
+  onPageChange?: ReactPaginateProps["onPageChange"];
 }
 
 const Pagination: FC<PaginationProps> = ({
@@ -17,9 +28,26 @@ const Pagination: FC<PaginationProps> = ({
   nextLabel = "",
   onPageChange,
 }) => {
+  const query = useSearchParams();
+
   if (!itemsPerTotalLength) {
     return null;
   }
+
+  const queryArray = [...query];
+  const queryObject = Object.fromEntries(queryArray);
+  const queryPage = queryObject?.page;
+  const currentPage = +queryPage - 1 || 0;
+
+  // Handle page change
+  interface IHandlePageChange {
+    (page: number): string;
+  }
+  const handlePageChange: IHandlePageChange = (page) => {
+    const newQuery = getNewQuery(queryObject, "page", page.toString());
+
+    return newQuery;
+  };
 
   return (
     <ReactPaginate
@@ -43,7 +71,9 @@ const Pagination: FC<PaginationProps> = ({
       pageRangeDisplayed={pageRangeDisplayed}
       marginPagesDisplayed={marginPagesDisplayed}
       onPageChange={onPageChange}
-      hrefBuilder={() => "/about"}
+      forcePage={currentPage}
+      eventListener=""
+      hrefBuilder={(page) => handlePageChange(page)}
     />
   );
 };

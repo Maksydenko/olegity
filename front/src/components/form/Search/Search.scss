@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     max-width: rem(370);
-    padding: em(10, 16) em(15, 16);
+    padding: 0 em(15, 16);
     color: var(--mainColor);
     border: em(2, 16) solid var(--mainColor);
     border-radius: em(5, 16);
@@ -30,15 +30,18 @@
     }
   }
 
-  // .search__loupe
+  // .search__submit
 
-  &__loupe {
+  &__submit {
+    @include hover;
+    transition: opacity 0.3s ease 0s;
   }
 
   // .search__input
 
   &__input {
     flex: 1 1 auto;
+    padding: em(10, 16) 0;
 
     &::-webkit-search-cancel-button {
       @include hover;

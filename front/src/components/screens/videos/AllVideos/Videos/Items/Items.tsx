@@ -4,18 +4,18 @@ import { FC } from "react";
 
 interface ItemsProps {
   videos: IVideo[];
-  filterText: string;
+  searchText: string;
 }
 
-const Items: FC<ItemsProps> = ({ videos, filterText }) => (
+const Items: FC<ItemsProps> = ({ videos, searchText }) => (
   <div className="videos__items">
     {videos.map((video) => {
       const { title } = video;
 
       const titleLowerCased = title.toLowerCase();
-      const filterTextLowerCased = filterText.toLowerCase();
+      const searchTextLowerCased = searchText.toLowerCase();
 
-      if (!titleLowerCased.includes(filterTextLowerCased)) {
+      if (!titleLowerCased.includes(searchTextLowerCased)) {
         return null;
       }
       return <Item key={title} video={video} />;
