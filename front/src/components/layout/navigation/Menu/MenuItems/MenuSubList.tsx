@@ -23,14 +23,14 @@ const MenuSubList: FC<MenuSubListProps> = ({
   const value = link?.value;
 
   const subLinkItems = subLinks.map((subLink) => {
-    const { label: subLinkLabel } = subLink;
+    const { label: subLinkLabel, value: subLinkValue } = subLink;
     const Tag = value ? "a" : "span";
 
     return (
       <Tag
         key={subLinkLabel}
         {...(value && {
-          href: value,
+          href: subLinkValue,
           onClick,
         })}
       >
