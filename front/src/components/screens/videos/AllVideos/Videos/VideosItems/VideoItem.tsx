@@ -4,24 +4,17 @@ import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
 import { IVideo } from "@/interfaces/video.interface";
 
-interface ItemProps {
+interface VideosItemProps {
   video: IVideo;
 }
 
-const Item: FC<ItemProps> = ({ video }) => {
-  const { title, img } = video;
-
+const VideosItem: FC<VideosItemProps> = ({ video: { title, url, img } }) => {
   return (
     <div className="videos__item">
-      <PopupVideo
-        className="videos__popup-video"
-        img={img}
-        video={video}
-        title={false}
-      />
+      <PopupVideo className="videos__popup-video" img={img} video={url} />
       <h4 className="videos__title">{title}</h4>
     </div>
   );
 };
 
-export default Item;
+export default VideosItem;

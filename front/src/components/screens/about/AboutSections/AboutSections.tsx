@@ -16,6 +16,7 @@ const AboutSections: FC<AboutSectionsProps> = ({ className }) => {
 
     return (
       <AboutSection
+        className="about-sections__about-section"
         key={keyword}
         keyword={keyword}
         img={img}

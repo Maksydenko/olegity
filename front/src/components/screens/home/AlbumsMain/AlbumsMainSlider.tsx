@@ -20,18 +20,18 @@ const AlbumsMainSlider: FC<AlbumsMainSliderProps> = () => {
   const slides = albums.map((album) => {
     const { title } = album;
 
-    return (
-      <MusicCard
-        key={title}
-        className="albums-main__music-card"
-        track={album}
-      />
-    );
+    const slide = {
+      id: title,
+      slide: <MusicCard className="albums-main__music-card" track={album} />,
+    };
+
+    return slide;
   });
 
   return (
     <SliderSwiper
       className="albums-main__slider-swiper"
+      slides={slides}
       breakpoints={{
         [Breakpoint.Mobile]: {
           slidesPerView: 3,
@@ -42,9 +42,7 @@ const AlbumsMainSlider: FC<AlbumsMainSliderProps> = () => {
           isBreakpoint: isMobileSmall,
         },
       }}
-    >
-      {slides}
-    </SliderSwiper>
+    />
   );
 };
 

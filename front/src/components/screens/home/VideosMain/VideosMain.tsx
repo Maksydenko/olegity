@@ -4,6 +4,8 @@ import { FC } from "react";
 import Btn from "@/components/form/Btn/Btn";
 import VideosMainSlider from "./VideosMainSlider";
 
+import { musicVideos } from "@/data/videos/musicVideos.data";
+
 interface VideosMainProps {}
 
 const VideosMain: FC<VideosMainProps> = () => {
@@ -12,7 +14,7 @@ const VideosMain: FC<VideosMainProps> = () => {
   return (
     <section className="main-videos">
       <h2 className="main-videos__title">{"latest-videos"}</h2>
-      <VideosMainSlider />
+      <VideosMainSlider video={musicVideos} />
       <Btn className="main-videos__btn" path="/videos">
         {"see-videos"}
       </Btn>

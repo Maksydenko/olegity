@@ -1,19 +1,23 @@
 import { FC } from "react";
+
 import Tracks from "./Tracks/Tracks";
+import clsx from "clsx";
 
 interface TrackListProps {
+  className?: string;
   trackList: string[];
   swiperParallax: number;
   swiperParallaxDuration: number;
 }
 
 const TrackList: FC<TrackListProps> = ({
+  className,
   trackList,
   swiperParallax,
   swiperParallaxDuration,
 }) => {
   return (
-    <ol className="albums__track-list track-list">
+    <ol className={clsx(className, "track-list")}>
       <Tracks
         trackList={trackList}
         swiperParallax={swiperParallax}

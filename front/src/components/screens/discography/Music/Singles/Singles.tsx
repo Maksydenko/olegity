@@ -1,7 +1,8 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC } from "react";
 import { useSearchParams } from "next/navigation";
+import clsx from "clsx";
 
 import Pagination from "@/components/base/Pagination/Pagination";
 import Search from "@/components/form/Search/Search";
@@ -10,10 +11,11 @@ import SinglesList from "./SinglesItems/SinglesList";
 import { ISingle } from "@/interfaces/music.interface";
 
 interface SinglesProps {
+  className?: string;
   singles: ISingle[];
 }
 
-const Singles: FC<SinglesProps> = ({ singles }) => {
+const Singles: FC<SinglesProps> = ({ className, singles }) => {
   // Items per page
   const ITEMS_PER_PAGE = 12;
 
@@ -42,7 +44,7 @@ const Singles: FC<SinglesProps> = ({ singles }) => {
   const pageCount = Math.ceil(filteredSinglesLength / ITEMS_PER_PAGE);
 
   return (
-    <div className="music__singles singles">
+    <div className={clsx(className, "singles")}>
       <div className="singles__container">
         <Search className="singles__search" />
         <SinglesList singles={currentItems} />

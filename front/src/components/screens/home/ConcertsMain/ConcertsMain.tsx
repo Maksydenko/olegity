@@ -6,7 +6,7 @@ import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
 interface ConcertsMainProps {}
 
-const ConcertsMain: FC = () => {
+const ConcertsMain: FC<ConcertsMainProps> = () => {
   const link = {
     label: "more",
     value: "/concerts",

@@ -1,4 +1,5 @@
 import { FC } from "react";
+import clsx from "clsx";
 
 import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import Album from "./Album";
@@ -6,28 +7,32 @@ import Album from "./Album";
 import { IAlbum } from "@/interfaces/music.interface";
 
 interface AlbumsProps {
+  className?: string;
   albums: IAlbum[];
-  type: "album" | "ep";
 }
 
-const Albums: FC<AlbumsProps> = ({ albums, type = "album" }) => {
+const Albums: FC<AlbumsProps> = ({ className, albums }) => {
   const slides = albums.map((album) => {
     const { title } = album;
 
-    return <Album key={title} album={album} />;
+    const slide = {
+      id: title,
+      slide: <Album album={album} />,
+    };
+
+    return slide;
   });
 
   return (
-    <div className="music__albums albums">
+    <div className={clsx(className, "albums")}>
       <div className="albums__container">
         <SliderSwiper
           className="albums__slider-swiper"
+          slides={slides}
           loop
           parallax
-          hash={type}
-        >
-          {slides}
-        </SliderSwiper>
+          hash
+        />
       </div>
     </div>
   );

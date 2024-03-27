@@ -13,9 +13,9 @@
     margin-bottom: rem(30);
   }
 
-  // .videos__items
+  // .videos__list
 
-  &__items {
+  &__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(rem(380), 1fr));
     gap: rem(30);

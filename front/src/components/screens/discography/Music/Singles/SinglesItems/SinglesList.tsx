@@ -13,7 +13,7 @@ const SinglesList: FC<SinglesProps> = ({ singles }) => {
     return <SinglesItem key={index} single={single} />;
   });
 
-  return <div className="singles__items">{singleItems}</div>;
+  return <div className="singles__list">{singleItems}</div>;
 };
 
 export default SinglesList;

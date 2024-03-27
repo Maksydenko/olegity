@@ -7,8 +7,8 @@ interface AboutProps {}
 
 const About: FC<AboutProps> = () => (
   <main className="about-page">
-    <AboutSections />
-    <UkraineSupport />
+    <AboutSections className="about-page__about-sections" />
+    <UkraineSupport className="about-page__ukraine-support" />
   </main>
 );
 

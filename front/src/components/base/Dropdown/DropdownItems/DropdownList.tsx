@@ -15,7 +15,7 @@ const DropdownList: FC<DropdownListProps> = ({ children }) => {
     return <DropdownItem key={index}>{menuItem}</DropdownItem>;
   });
 
-  return <Menu.Items className="dropdown__items">{menuItems}</Menu.Items>;
+  return <Menu.Items className="dropdown__list">{menuItems}</Menu.Items>;
 };
 
 export default DropdownList;

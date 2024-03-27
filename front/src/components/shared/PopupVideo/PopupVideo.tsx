@@ -10,28 +10,19 @@ import { IImg } from "@/interfaces/img.interface";
 interface PopupVideoProps {
   className?: string;
   img: IImg;
-  video: {
-    title?: string;
-    url: string;
-  };
-  title?: boolean;
+  video: string;
+  title?: string;
 }
 
-const PopupVideo: FC<PopupVideoProps> = ({
-  className,
-  img,
-  video,
-  title = true,
-}) => {
-  const { title: videoTitle, url: videoUrl } = video;
+const PopupVideo: FC<PopupVideoProps> = ({ className, img, video, title }) => {
   const button = <span className="_icon-youtube"></span>;
 
   return (
     <div className={clsx(className, "popup-video")}>
-      {title && <h4 className="popup-video__title">{videoTitle}</h4>}
+      {title && <h4 className="popup-video__title">{title}</h4>}
       <Img className="popup-video__img" img={img} />
       <Popup className="popup-video__popup" button={button}>
-        <Video className="popup-video__video" url={videoUrl} />
+        <Video className="popup-video__video" url={video} />
       </Popup>
     </div>
   );

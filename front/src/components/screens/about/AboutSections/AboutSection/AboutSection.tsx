@@ -16,12 +16,14 @@ import { Breakpoint } from "@/enums/breakpoint.enum";
 import { IImg } from "@/interfaces/img.interface";
 
 interface AboutSectionProps {
+  className?: string;
   keyword: string;
   img: IImg;
   reverseAnimation?: boolean;
 }
 
 const AboutSection: FC<AboutSectionProps> = ({
+  className,
   keyword,
   img,
   reverseAnimation,
@@ -93,7 +95,7 @@ const AboutSection: FC<AboutSectionProps> = ({
   return (
     <section
       className={clsx(
-        "about-sections__about-section",
+        className,
         "about-section",
         reverseAnimation && "about-section_even"
       )}

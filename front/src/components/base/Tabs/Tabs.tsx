@@ -14,14 +14,22 @@ interface TabsProps {
   tabs: ITab[];
   vertical?: boolean;
   defaultTabId?: number;
+  searchParam?: string;
 }
 
-const Tabs: FC<TabsProps> = ({ className, tabs, vertical, defaultTabId }) => {
+const Tabs: FC<TabsProps> = ({
+  className,
+  tabs,
+  vertical,
+  defaultTabId,
+  searchParam = "tab",
+}) => {
   const [firstTab] = tabs;
   const { id: firstTabId } = firstTab;
 
   const { push } = useRouter();
   const query = useSearchParams();
+
   const queryArray = [...query];
   const queryObject = Object.fromEntries(queryArray);
   const queryTab = queryObject?.tab;
@@ -32,7 +40,7 @@ const Tabs: FC<TabsProps> = ({ className, tabs, vertical, defaultTabId }) => {
   });
 
   if (!queryTab) {
-    push(`?tab=${currentTabId}`);
+    push(`?${searchParam}=${currentTabId}`);
   }
 
   return (

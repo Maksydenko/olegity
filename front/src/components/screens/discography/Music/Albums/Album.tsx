@@ -22,6 +22,7 @@ const Album: FC<AlbumProps> = ({ album }) => {
         swiperParallaxDuration={500}
       />
       <TrackList
+        className="albums__track-list"
         trackList={trackList}
         swiperParallax={-700}
         swiperParallaxDuration={500}

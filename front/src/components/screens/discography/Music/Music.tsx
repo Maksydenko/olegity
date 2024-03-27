@@ -11,24 +11,24 @@ import { singles } from "@/data/music/singles.data";
 
 interface MusicProps {}
 
-const Music: FC = () => {
+const Music: FC<MusicProps> = () => {
   // const { t } = useTranslation();
 
   const tabs = [
     {
       id: "albums",
       title: "albums",
-      content: <Albums albums={albums} type="album" />,
+      content: <Albums className="music__albums" albums={albums} />,
     },
     {
       id: "ep",
       title: "ep",
-      content: <Albums albums={ep} type="ep" />,
+      content: <Albums className="music__albums" albums={ep} />,
     },
     {
       id: "singles",
       title: "singles",
-      content: <Singles singles={singles} />,
+      content: <Singles className="music__singles" singles={singles} />,
     },
   ];
 

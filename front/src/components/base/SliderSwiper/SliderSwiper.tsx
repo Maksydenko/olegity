@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, ReactNode, useEffect, useRef } from "react";
+import { FC, Key, ReactNode, useEffect, useRef } from "react";
 import clsx from "clsx";
 
 import Nav from "./Nav";
@@ -42,12 +42,15 @@ import { IBreakpoints } from "./breakpoints.interface";
 
 export interface SliderSwiperProps extends SwiperOptions {
   className?: string;
-  children: ReactNode[];
+  slides: {
+    id: Key;
+    slide: ReactNode;
+  }[];
   paginationClickable?: PaginationOptions["clickable"];
   paginationDynamicBullets?: PaginationOptions["dynamicBullets"];
   paginationType?: PaginationOptions["type"];
   scrollbarDraggable?: ScrollbarOptions["draggable"];
-  hash?: string;
+  hash?: string | boolean;
   hashNavigationWatchState?: HashNavigationOptions["watchState"];
   keyboardEnabled?: KeyboardOptions["enabled"];
   keyboardOnlyInViewport?: KeyboardOptions["onlyInViewport"];
@@ -61,7 +64,7 @@ export interface SliderSwiperProps extends SwiperOptions {
 
 const SliderSwiper: FC<SliderSwiperProps> = ({
   className,
-  children,
+  slides,
 
   // Navigation
   navigation = true,
@@ -151,7 +154,7 @@ const SliderSwiper: FC<SliderSwiperProps> = ({
   // Virtual slides
   virtual,
 }) => {
-  const { length: childrenLength } = children;
+  const { length: slidesLength } = slides;
   const swiperRef = useRef<any>(null);
 
   useEffect(() => {
@@ -183,18 +186,14 @@ const SliderSwiper: FC<SliderSwiperProps> = ({
     pagination &&
     paginationType === "bullets" &&
     /* eslint-disable-next-line react-hooks/rules-of-hooks */
-    useBullets(slidesPerView, childrenLength, breakpoints);
+    useBullets(slidesPerView, slidesLength, breakpoints);
 
-  const slides = children.map((slide, index) => {
-    if (slide == null) {
-      return null;
-    }
-
+  const slideItems = slides.map(({ id, slide }, index) => {
     return (
       <SwiperSlide
-        key={index}
+        key={id}
         {...(hash && {
-          "data-hash": `${hash}-${index}`,
+          "data-hash": `${typeof hash === "string" ? hash : ""}${id}`,
         })}
         {...(virtual && {
           virtualIndex: index,
@@ -328,7 +327,7 @@ const SliderSwiper: FC<SliderSwiperProps> = ({
         // Virtual slides
         virtual={virtual}
       >
-        {slides}
+        {slideItems}
       </Swiper>
     </div>
   );

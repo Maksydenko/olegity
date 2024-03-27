@@ -13,9 +13,9 @@
     margin-bottom: rem(30);
   }
 
-  // .singles__items
+  // .singles__list
 
-  &__items {
+  &__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
     gap: rem(30);

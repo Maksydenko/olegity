@@ -1,5 +1,6 @@
 "use client";
 
+import { FC } from "react";
 // import { useTranslation } from "next-i18next";
 
 import Tabs from "@/components/base/Tabs/Tabs";
@@ -7,7 +8,6 @@ import Videos from "./Videos/Videos";
 
 import { musicVideos } from "@/data/videos/musicVideos.data";
 import { animatedVideos } from "@/data/videos/animatedVideos.data";
-import { FC } from "react";
 
 interface AllVideosProps {}
 
@@ -17,12 +17,14 @@ const AllVideos: FC<AllVideosProps> = () => {
     {
       id: "music-videos",
       title: "music-videos",
-      content: <Videos videos={musicVideos} />,
+      content: <Videos className="all-videos__videos" videos={musicVideos} />,
     },
     {
       id: "animated-videos",
       title: "animated-videos",
-      content: <Videos videos={animatedVideos} />,
+      content: (
+        <Videos className="all-videos__videos" videos={animatedVideos} />
+      ),
     },
   ];
 

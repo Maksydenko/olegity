@@ -82,16 +82,12 @@ const UkraineSupport: FC<UkraineSupportProps> = ({ className }) => {
     alt: "Uragany (Live)",
   };
 
-  const video = {
-    title: "ЛСП (LSP) — Ураганы (Hurricanes) [Live]",
-    url: "https://www.youtube.com/embed/8CqwOVNB4-w?color=white",
-  };
-
   const object = (
     <PopupVideo
       className="ukraine-support__popup-video"
       img={img}
-      video={video}
+      video="https://www.youtube.com/embed/8CqwOVNB4-w?color=white"
+      title="ЛСП (LSP) — Ураганы (Hurricanes) [Live]"
     />
   );
 
