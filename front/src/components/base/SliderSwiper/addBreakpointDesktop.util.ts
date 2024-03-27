@@ -1,32 +1,30 @@
 import { SwiperOptions } from "swiper/types";
-import { IBreakpoint } from "./breakpoints.interface";
+import { ICustomBreakpoint } from "./breakpoints.interface";
 
 interface IAddBreakpointDesktop {
   (
-    slidesPerView: SwiperOptions["slidesPerView"],
-    breakpoints: IBreakpoint[]
-  ): IBreakpoint[];
+    defaultSlidesPerView: SwiperOptions["slidesPerView"],
+    breakpoints: ICustomBreakpoint[]
+  ): ICustomBreakpoint[];
 }
 
 export const addBreakpointDesktop: IAddBreakpointDesktop = (
-  slidesPerView,
+  defaultSlidesPerView,
   breakpoints
 ) => {
-  const firstBreakpoint = breakpoints[0];
+  const [firstBreakpoint] = breakpoints;
+  const { slidesPerView: firstBreakpointSlidesPerView } = firstBreakpoint;
+
   const newObject = {
     isBreakpoint: true,
-    slides: firstBreakpoint.slides,
+    slidesPerView: firstBreakpointSlidesPerView,
   };
   breakpoints.unshift(newObject);
 
-  for (
-    let i = 1;
-    i < breakpoints.length;
-    i++
-  ) {
-    breakpoints[i].slides = breakpoints[i + 1]
-      ? breakpoints[i + 1].slides
-      : slidesPerView;
+  for (let i = 1; i < breakpoints.length; i++) {
+    breakpoints[i].slidesPerView = breakpoints[i + 1]
+      ? breakpoints[i + 1].slidesPerView
+      : defaultSlidesPerView;
   }
 
   return breakpoints;

@@ -1,15 +1,15 @@
 import { SwiperOptions } from "swiper/types";
 
-export interface IBreakpoint {
+export interface ICustomBreakpoint {
+  slidesPerView: SwiperOptions["slidesPerView"];
   isBreakpoint: boolean | undefined;
-  slides: SwiperOptions["slidesPerView"];
 }
 
-interface IBreakpointsValue extends SwiperOptions {
+interface IPropBreakpointsValue extends SwiperOptions {
   isBreakpoint?: boolean;
 }
 
-export interface IBreakpoints {
-  [width: number]: IBreakpointsValue;
-  [ratio: string]: IBreakpointsValue;
+export interface IPropBreakpoints {
+  [width: number]: IPropBreakpointsValue;
+  [ratio: string]: IPropBreakpointsValue;
 }

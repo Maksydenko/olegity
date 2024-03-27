@@ -37,15 +37,17 @@ import {
   ScrollbarOptions,
   SwiperOptions,
 } from "swiper/types";
-import { IBreakpoints } from "./breakpoints.interface";
+import { IPropBreakpoints } from "./breakpoints.interface";
 // import "swiper/scss/scrollbar";
+
+interface ISlide {
+  id: Key;
+  slide: ReactNode;
+}
 
 export interface SliderSwiperProps extends SwiperOptions {
   className?: string;
-  slides: {
-    id: Key;
-    slide: ReactNode;
-  }[];
+  slides: ISlide[];
   paginationClickable?: PaginationOptions["clickable"];
   paginationDynamicBullets?: PaginationOptions["dynamicBullets"];
   paginationType?: PaginationOptions["type"];
@@ -59,7 +61,7 @@ export interface SliderSwiperProps extends SwiperOptions {
   autoplayDelay?: AutoplayOptions["delay"];
   autoplayStopOnLastSlide?: AutoplayOptions["stopOnLastSlide"];
   autoplayDisableOnInteraction?: AutoplayOptions["disableOnInteraction"];
-  breakpoints?: IBreakpoints;
+  breakpoints?: IPropBreakpoints;
 }
 
 const SliderSwiper: FC<SliderSwiperProps> = ({
@@ -182,11 +184,13 @@ const SliderSwiper: FC<SliderSwiperProps> = ({
     }
   }, [autoplay]);
 
-  const isBullets =
-    pagination &&
-    paginationType === "bullets" &&
-    /* eslint-disable-next-line react-hooks/rules-of-hooks */
-    useBullets(slidesPerView, slidesLength, breakpoints);
+  const isPaginationBullets = pagination && paginationType === "bullets";
+  const isBullets = useBullets(
+    slidesPerView,
+    slidesLength,
+    breakpoints,
+    isPaginationBullets
+  );
 
   const slideItems = slides.map(({ id, slide }, index) => {
     return (

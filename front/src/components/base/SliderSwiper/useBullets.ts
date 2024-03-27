@@ -1,49 +1,58 @@
 import { SwiperOptions } from "swiper/types";
+
 import { addBreakpointDesktop } from "./addBreakpointDesktop.util";
-import { IBreakpoint, IBreakpoints } from "./breakpoints.interface";
+
+import { IPropBreakpoints } from "./breakpoints.interface";
 
 interface IUseBullets {
   (
-    slidesPerView: SwiperOptions["slidesPerView"],
-    slidesNumber: number,
-    breakpoints?: IBreakpoints
+    defaultSlidesPerView: SwiperOptions["slidesPerView"],
+    slidesLength: number,
+    breakpoints?: IPropBreakpoints,
+    paginationBullets?: boolean
   ): boolean;
 }
 
 export const useBullets: IUseBullets = (
-  slidesPerView = 1,
-  slidesNumber,
-  breakpoints
+  defaultSlidesPerView = 1,
+  slidesLength,
+  breakpoints,
+  paginationBullets
 ) => {
+  if (!paginationBullets) {
+    return false;
+  }
+
   if (!breakpoints) {
-    if (+slidesPerView < slidesNumber) {
+    if (+defaultSlidesPerView < slidesLength) {
       return true;
     }
     return false;
   }
 
-  const breakpointsArray: IBreakpoint[] = Object.entries(breakpoints).map(
-    ([, { slidesPerView: slides, isBreakpoint }]) => {
+  const customBreakpoints = Object.entries(breakpoints).map(
+    ([, { slidesPerView, isBreakpoint }]) => {
       return {
+        slidesPerView,
         isBreakpoint,
-        slides,
       };
     }
   );
 
   const breakpointsWithDesktop = addBreakpointDesktop(
-    slidesPerView,
-    breakpointsArray
+    defaultSlidesPerView,
+    customBreakpoints
   );
 
-  const results = breakpointsWithDesktop.map((breakpoint) => {
-    const { isBreakpoint, slides } = breakpoint;
-    if (isBreakpoint && Number(slides) < slidesNumber) {
+  const allBreakpoints = breakpointsWithDesktop.map((breakpoint) => {
+    const { isBreakpoint, slidesPerView: slides } = breakpoint;
+
+    if (isBreakpoint && Number(slides) < slidesLength) {
       return true;
     }
     return false;
   });
 
-  const isBullets = results.includes(true);
+  const isBullets = allBreakpoints.includes(true);
   return isBullets;
 };
