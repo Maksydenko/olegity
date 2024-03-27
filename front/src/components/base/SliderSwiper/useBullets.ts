@@ -19,14 +19,7 @@ export const useBullets: IUseBullets = (
   breakpoints,
   paginationBullets
 ) => {
-  if (!paginationBullets) {
-    return false;
-  }
-
-  if (!breakpoints) {
-    if (+defaultSlidesPerView < slidesLength) {
-      return true;
-    }
+  if (!breakpoints || !paginationBullets) {
     return false;
   }
 
@@ -45,9 +38,9 @@ export const useBullets: IUseBullets = (
   );
 
   const allBreakpoints = breakpointsWithDesktop.map((breakpoint) => {
-    const { isBreakpoint, slidesPerView: slides } = breakpoint;
+    const { isBreakpoint, slidesPerView } = breakpoint;
 
-    if (isBreakpoint && Number(slides) < slidesLength) {
+    if (isBreakpoint && Number(slidesPerView) < slidesLength) {
       return true;
     }
     return false;
