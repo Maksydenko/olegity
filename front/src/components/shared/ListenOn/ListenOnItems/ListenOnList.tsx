@@ -37,13 +37,13 @@ const ListenOnList: FC<ListenOnListProps> = ({
     },
   ];
 
-  const musicPlatformItems = musicPlatforms.map((item, index) => {
-    const { icon } = item;
+  const musicPlatformItems = musicPlatforms.map((musicPlatform, index) => {
+    const { icon } = musicPlatform;
 
     return (
       <ListenOnItem
         key={icon}
-        item={item}
+        musicPlatform={musicPlatform}
         {...(swiperParallax && {
           swiperParallax: swiperParallax - index * 100,
         })}

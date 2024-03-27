@@ -6,7 +6,7 @@ interface VideosProps {}
 
 const Videos: FC<VideosProps> = () => (
   <main className="videos-page">
-    <AllVideos />
+    <AllVideos className="videos__all-videos" />
   </main>
 );
 

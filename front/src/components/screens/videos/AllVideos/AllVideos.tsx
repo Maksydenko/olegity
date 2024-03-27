@@ -2,6 +2,7 @@
 
 import { FC } from "react";
 // import { useTranslation } from "next-i18next";
+import clsx from "clsx";
 
 import Tabs from "@/components/base/Tabs/Tabs";
 import Videos from "./Videos/Videos";
@@ -9,9 +10,11 @@ import Videos from "./Videos/Videos";
 import { musicVideos } from "@/data/videos/musicVideos.data";
 import { animatedVideos } from "@/data/videos/animatedVideos.data";
 
-interface AllVideosProps {}
+interface AllVideosProps {
+  className?: string;
+}
 
-const AllVideos: FC<AllVideosProps> = () => {
+const AllVideos: FC<AllVideosProps> = ({ className }) => {
   // const { t } = useTranslation();
   const tabs = [
     {
@@ -29,7 +32,7 @@ const AllVideos: FC<AllVideosProps> = () => {
   ];
 
   return (
-    <div className="all-videos">
+    <div className={clsx(className, "all-videos")}>
       <div className="all-videos__container">
         <Tabs className="all-videos__tabs" tabs={tabs} />
       </div>

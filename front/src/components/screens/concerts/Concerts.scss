@@ -1,5 +1,5 @@
-@import "@/components/screens/concerts/AboutConcerts/AboutConcerts";
-@import "@/components/screens/concerts/Gallery/Gallery";
+@import "./AboutConcerts/AboutConcerts";
+@import "./Gallery/Gallery";
 
 .concerts-page {
   margin-top: rem(70);

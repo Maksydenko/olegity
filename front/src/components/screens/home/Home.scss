@@ -1,8 +1,8 @@
-@import "@/components/screens/home/FullScreenVideo/FullScreenVideo";
-@import "@/components/screens/home/AboutMain/AboutMain";
-@import "@/components/screens/home/AlbumsMain/AlbumsMain";
-@import "@/components/screens/home/VideosMain/VideosMain";
-@import "@/components/screens/home/ConcertsMain/ConcertsMain";
+@import "./FullScreenVideo/FullScreenVideo";
+@import "./AboutMain/AboutMain";
+@import "./AlbumsMain/AlbumsMain";
+@import "./VideosMain/VideosMain";
+@import "./ConcertsMain/ConcertsMain";
 
 .home-page {
   > section {

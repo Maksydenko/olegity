@@ -1,5 +1,5 @@
-@import "@/components/screens/about/AboutSections/AboutSections";
-@import "@/components/screens/about/UkraineSupport/UkraineSupport";
+@import "./AboutSections/AboutSections";
+@import "./UkraineSupport/UkraineSupport";
 
 .about-page {
   padding: rem(30) 0;

@@ -5,13 +5,13 @@ import clsx from "clsx";
 import { ILinkWithoutLabel } from "@/interfaces/link.interface";
 
 interface ListenOnItemProps {
-  item: ILinkWithoutLabel;
+  musicPlatform: ILinkWithoutLabel;
   swiperParallax?: number;
   swiperParallaxDuration?: number;
 }
 
 const ListenOnItem: FC<ListenOnItemProps> = ({
-  item: { icon, value },
+  musicPlatform: { icon, value },
   swiperParallax,
   swiperParallaxDuration,
 }) => {

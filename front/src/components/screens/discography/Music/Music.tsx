@@ -1,5 +1,6 @@
 import { FC } from "react";
 // import { useTranslation } from "next-i18next";
+import clsx from "clsx";
 
 import Tabs from "@/components/base/Tabs/Tabs";
 import Albums from "./Albums/Albums";
@@ -9,9 +10,11 @@ import { albums } from "@/data/music/albums.data";
 import { ep } from "@/data/music/ep.data";
 import { singles } from "@/data/music/singles.data";
 
-interface MusicProps {}
+interface MusicProps {
+  className?: string;
+}
 
-const Music: FC<MusicProps> = () => {
+const Music: FC<MusicProps> = ({ className }) => {
   // const { t } = useTranslation();
 
   const tabs = [
@@ -33,7 +36,7 @@ const Music: FC<MusicProps> = () => {
   ];
 
   return (
-    <div className="music">
+    <div className={clsx(className, "music")}>
       <div className="music__container">
         <Tabs className="music__tabs" tabs={tabs} />
       </div>
