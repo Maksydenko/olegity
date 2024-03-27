@@ -25,7 +25,7 @@ interface AboutSectionProps {
 const AboutSection: FC<AboutSectionProps> = ({
   className,
   keyword,
-  img,
+  img: { src, alt },
   reverseAnimation,
 }) => {
   const aboutSectionRef = useRef(null);
@@ -103,7 +103,7 @@ const AboutSection: FC<AboutSectionProps> = ({
     >
       <div className="about-section__container">
         <TextBlock className="about-section__text-block" keyword={keyword} />
-        <Img className="about-section__img" img={img} />
+        <Img className="about-section__img" src={src} alt={alt} />
       </div>
     </section>
   );

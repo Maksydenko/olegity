@@ -9,8 +9,8 @@ interface GalleryGridProps {
 }
 
 const GalleryGrid: FC<GalleryGridProps> = ({ groupImgs }) => {
-  const imgGrid = groupImgs.map((img, index) => (
-    <Img key={index} className="gallery__img" img={img} />
+  const imgGrid = groupImgs.map(({ src, alt }, index) => (
+    <Img key={index} className="gallery__img" src={src} alt={alt} />
   ));
 
   return imgGrid;

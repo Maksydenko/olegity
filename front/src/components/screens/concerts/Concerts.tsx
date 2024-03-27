@@ -7,8 +7,8 @@ interface ConcertsProps {}
 
 const Concerts: FC<ConcertsProps> = () => (
   <main className="concerts-page">
-    <AboutConcerts />
-    <Gallery />
+    <AboutConcerts className="concerts-page__about-concerts" />
+    <Gallery className="concerts-page__gallery" />
   </main>
 );
 

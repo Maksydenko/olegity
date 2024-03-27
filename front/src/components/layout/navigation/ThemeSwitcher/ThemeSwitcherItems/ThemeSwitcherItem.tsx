@@ -38,11 +38,6 @@ const ThemeSwitcherItem: FC<ThemeSwitcherItemProps> = ({
 
   const id = `theme-${label}`;
 
-  const img = {
-    src: icon,
-    alt: label,
-  };
-
   return (
     <>
       <input
@@ -64,7 +59,13 @@ const ThemeSwitcherItem: FC<ThemeSwitcherItemProps> = ({
           tabIndex: 0,
         })}
       >
-        <Img className="theme-switcher__img" img={img} svg loader={false} />
+        <Img
+          className="theme-switcher__img"
+          src={icon}
+          alt={label}
+          svg
+          loader={false}
+        />
       </label>
     </>
   );

@@ -1,26 +1,30 @@
 import { FC } from "react";
+import clsx from "clsx";
 
 import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@/components/base/Img/Img";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-interface ConcertsMainProps {}
+interface ConcertsMainProps {
+  className?: string;
+}
 
-const ConcertsMain: FC<ConcertsMainProps> = () => {
+const ConcertsMain: FC<ConcertsMainProps> = ({ className }) => {
   const link = {
     label: "more",
     value: "/concerts",
   };
 
-  const img = {
-    src: "/img/lsp/concerts-main.jpg",
-    alt: "Oleg LSP",
-  };
-
-  const object = <Img className="concerts-main__img" img={img} />;
+  const object = (
+    <Img
+      className="concerts-main__img"
+      src="/img/lsp/concerts-main.jpg"
+      alt="Oleg LSP"
+    />
+  );
 
   return (
-    <section className="concerts-main">
+    <section className={clsx(className, "concerts-main")}>
       <ObjectOutsideContainer
         className="concerts-main__object-outside-container"
         object={object}

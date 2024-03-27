@@ -13,17 +13,19 @@ interface FooterProps {
 
 const Footer: FC<FooterProps> = ({ className }) => {
   // const { t } = useTranslation();
-  const img = {
-    src: "/img/logos/olgt.svg",
-    alt: "Olgt",
-  };
 
   return (
     <footer className={clsx(className, "footer")}>
       <div className="footer__container">
         <div className="footer__main">
           <Link href="/" className="footer__logo">
-            <Img className="footer__img" img={img} svg loader={false} />
+            <Img
+              className="footer__img"
+              src="/img/logos/olgt.svg"
+              alt="Olgt"
+              svg
+              loader={false}
+            />
           </Link>
           <p className="footer__description">{"footer-description"}</p>
         </div>

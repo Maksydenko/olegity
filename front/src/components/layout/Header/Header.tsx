@@ -45,16 +45,17 @@ const Header: FC<HeaderProps> = ({ className }) => {
     }
   };
 
-  const img = {
-    src: "/img/logos/olegity.svg",
-    alt: "Olegity",
-  };
-
   return (
     <header className={clsx(className, "header")}>
       <div className="header__container">
         <Link className="header__logo" href="/" onClick={handleUnlockScroll}>
-          <Img className="header__img" img={img} svg loader={false} />
+          <Img
+            className="header__img"
+            src="/img/logos/olegity.svg"
+            alt="Olegity"
+            svg
+            loader={false}
+          />
         </Link>
         <Menu
           className="header__menu"

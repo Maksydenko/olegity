@@ -1,18 +1,15 @@
 "use client";
 
 import { CSSProperties, FC, useRef, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 
 import Loader from "@/components/shared/Loader/Loader";
 
-import { IImg } from "@/interfaces/img.interface";
-
 interface ImgProps {
   className?: string;
-  // src: StaticImageData | string;
-  // alt?: string;
-  img: IImg | IImg[];
+  src: StaticImageData | string;
+  alt?: string;
   svg?: boolean;
   priority?: boolean;
   quality?: number;
@@ -26,9 +23,8 @@ interface ImgProps {
 
 const Img: FC<ImgProps> = ({
   className,
-  img,
-  // src,
-  // alt = "",
+  src,
+  alt = "",
   svg,
   priority,
   quality = 75,
@@ -52,8 +48,8 @@ const Img: FC<ImgProps> = ({
     <div className={clsx(className, "img", svg && "img_svg")} style={style}>
       {showLoader && <Loader className="img__loader" />}
       <Image
-        src={Array.isArray(img) ? img?.[0]?.src : img.src}
-        alt={(Array.isArray(img) ? img?.[0]?.alt : img.alt) || ""}
+        src={src}
+        alt={alt}
         priority={priority}
         quality={quality}
         {...(width && height

@@ -18,7 +18,9 @@ const MusicCard: FC<MusicCardProps> = ({
   swiperParallax,
   swiperParallaxDuration,
 }) => {
-  const { img } = track;
+  const {
+    img: { src, alt },
+  } = track;
 
   const swiperParallaxDurationAttr = swiperParallaxDuration && {
     "data-swiper-parallax-duration": swiperParallaxDuration,
@@ -32,7 +34,7 @@ const MusicCard: FC<MusicCardProps> = ({
       })}
       {...swiperParallaxDurationAttr}
     >
-      <Img className="music-card__img" img={img} />
+      <Img className="music-card__img" src={src} alt={alt} />
       <MusicCardText
         track={track}
         swiperParallax={swiperParallax}
