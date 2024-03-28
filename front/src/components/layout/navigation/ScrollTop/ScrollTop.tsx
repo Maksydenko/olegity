@@ -1,6 +1,9 @@
 "use client";
 
 import { FC } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import clsx from "clsx";
 
 import { useActiveOnScroll } from "@/hooks/useActiveOnScroll";
@@ -12,10 +15,16 @@ interface ScrollTopProps {
 const ScrollTop: FC<ScrollTopProps> = ({ className }) => {
   const { isActive } = useActiveOnScroll(110);
 
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollToPlugin);
+  }, {});
+
   const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+    gsap.to(window, {
+      duration: 0.8,
+      scrollTo: {
+        y: 0,
+      },
     });
   };
 
