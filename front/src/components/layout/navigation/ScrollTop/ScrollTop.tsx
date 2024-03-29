@@ -7,6 +7,7 @@ import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import clsx from "clsx";
 
 import { useActiveOnScroll } from "@/hooks/useActiveOnScroll";
+import Transition from "@/components/base/Transition/Transition";
 
 interface ScrollTopProps {
   className?: string;
@@ -29,14 +30,20 @@ const ScrollTop: FC<ScrollTopProps> = ({ className }) => {
   };
 
   return (
-    <button
-      className={clsx(className, "scroll-top", isActive && "scroll-top_active")}
-      type="button"
-      aria-label="Scroll top"
-      onClick={handleClick}
-    >
-      <span className="scroll-top__arrow-top _icon-arrow-top"></span>
-    </button>
+    <Transition show={isActive}>
+      <button
+        className={clsx(
+          className,
+          "scroll-top",
+          isActive && "scroll-top_active"
+        )}
+        type="button"
+        aria-label="Scroll top"
+        onClick={handleClick}
+      >
+        <span className="scroll-top__arrow-top _icon-arrow-top"></span>
+      </button>
+    </Transition>
   );
 };
 
