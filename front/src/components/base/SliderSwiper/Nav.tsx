@@ -1,13 +1,19 @@
 import { FC, MutableRefObject, useEffect, useState } from "react";
 import { SwiperRef } from "swiper/react";
+import { SwiperOptions } from "swiper/types";
 
 interface NavProps {
   swiperRef: MutableRefObject<SwiperRef>;
+  slidesLength: number;
+  initialSlide: SwiperOptions["initialSlide"];
+  loop: SwiperOptions["loop"];
 }
 
-const Nav: FC<NavProps> = ({ swiperRef }) => {
-  const [isFirstSlide, setIsFirstSlide] = useState(true);
-  const [isLastSlide, setIsLastSlide] = useState(false);
+const Nav: FC<NavProps> = ({ swiperRef, slidesLength, initialSlide, loop }) => {
+  const [isFirstSlide, setIsFirstSlide] = useState(!loop && initialSlide === 0);
+  const [isLastSlide, setIsLastSlide] = useState(
+    !loop && initialSlide === slidesLength - 1
+  );
 
   // Slide
   interface ISlide {
@@ -25,6 +31,10 @@ const Nav: FC<NavProps> = ({ swiperRef }) => {
   };
 
   useEffect(() => {
+    if (loop) {
+      return;
+    }
+
     const swiperCurrent = swiperRef.current;
     const swiper = swiperCurrent?.swiper;
 
@@ -34,7 +44,7 @@ const Nav: FC<NavProps> = ({ swiperRef }) => {
       setIsFirstSlide(isBeginning);
       setIsLastSlide(isEnd);
     });
-  }, [swiperRef]);
+  }, [loop, swiperRef]);
 
   const arrow = <span className="slider-swiper__arrow _icon-arrow-top"></span>;
 

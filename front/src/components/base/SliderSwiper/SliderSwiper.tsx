@@ -216,7 +216,14 @@ const SliderSwiper: FC<SliderSwiperProps> = ({
         isBullets && "slider-swiper_bullets"
       )}
     >
-      {navigation && <Nav swiperRef={swiperRef} />}
+      {navigation && (
+        <Nav
+          swiperRef={swiperRef}
+          slidesLength={slidesLength}
+          initialSlide={initialSlide}
+          loop={loop}
+        />
+      )}
       <Swiper
         className="slider-swiper__swiper"
         ref={swiperRef}
