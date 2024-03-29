@@ -32,11 +32,7 @@ const ScrollTop: FC<ScrollTopProps> = ({ className }) => {
   return (
     <Transition show={isActive}>
       <button
-        className={clsx(
-          className,
-          "scroll-top",
-          isActive && "scroll-top_active"
-        )}
+        className={clsx(className, "scroll-top")}
         type="button"
         aria-label="Scroll top"
         onClick={handleClick}

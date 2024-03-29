@@ -1,6 +1,6 @@
 import { ILink } from "@/interfaces/link.interface";
 
-const socialNetworksLinks: ILink[] = [
+const socialLinks: ILink[] = [
   {
     icon: "instagram",
     label: "Instagram",
@@ -28,4 +28,4 @@ const socialNetworksLinks: ILink[] = [
   },
 ];
 
-export default socialNetworksLinks;
+export default socialLinks;

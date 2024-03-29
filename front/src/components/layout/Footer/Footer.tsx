@@ -4,8 +4,12 @@ import Link from "next/link";
 import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
-import Navigation from "@/components/layout/navigation/Navigation/Navigation";
-import SocialNetworks from "./SocialNetworks/SocialNetworks";
+import FooterList from "./Items/FooterList";
+
+import { navLinks } from "@/data/navLinks.data";
+import socialLinks from "./socialLinks.data";
+
+import { ILinkWithoutIcon } from "@/interfaces/link.interface";
 
 interface FooterProps {
   className?: string;
@@ -29,8 +33,12 @@ const Footer: FC<FooterProps> = ({ className }) => {
           </Link>
           <p className="footer__description">{"footer-description"}</p>
         </div>
-        <SocialNetworks className="footer__social-networks" />
-        <Navigation className="footer__navigation" />
+        <FooterList
+          className="_big"
+          title="(social-networks)"
+          links={socialLinks}
+        />
+        <FooterList className="_small" title="(navigation)" links={navLinks} />
       </div>
     </footer>
   );

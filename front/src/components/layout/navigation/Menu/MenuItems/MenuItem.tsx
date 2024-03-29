@@ -5,6 +5,7 @@ import clsx from "clsx";
 import MenuSubList from "./MenuSubList";
 
 import { INavLink, INavLinkWithSubLinks } from "@/interfaces/link.interface";
+import { compareLinksValueWithPathname } from "@/interfaces/compareLinksValueWithPathname.util";
 
 interface MenuItemProps {
   link: INavLink;
@@ -20,15 +21,10 @@ const MenuItem: FC<MenuItemProps> = ({ link, breakpoint, onClick }) => {
   const pathname = usePathname();
   // const { t } = useTranslation();
 
-  const isSubLinkActive = subLinks?.some(({ value: subLinkValue }) => {
-    const queryIndex = subLinkValue.indexOf("?");
-    const subLinkValueWithoutQuery =
-      queryIndex !== -1 ? subLinkValue.substring(0, queryIndex) : subLinkValue;
+  const isActiveSubLink =
+    subLinks && compareLinksValueWithPathname(subLinks, pathname);
+  const isActive = value === pathname || isActiveSubLink;
 
-    return subLinkValueWithoutQuery === pathname;
-  });
-
-  const isActive = value === pathname || isSubLinkActive;
   if (subLinks) {
     return (
       <MenuSubList

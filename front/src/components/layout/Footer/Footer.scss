@@ -1,6 +1,3 @@
-@import "@/components/layout/navigation/Navigation/Navigation";
-@import "./SocialNetworks/SocialNetworks";
-
 .footer {
   position: relative;
   color: $lightColor;
@@ -50,17 +47,9 @@
     line-height: 1.3;
   }
 
-  // .footer__social-networks
+  // .footer__title
 
-  &__social-networks {
-    flex: 1 1 35%;
-  }
-
-  &__navigation {
-    flex: 1 1 25%;
-  }
-
-  [class*="__title"] {
+  &__title {
     margin-bottom: em(20, 24);
     font-size: rem(24);
 
@@ -69,23 +58,47 @@
     }
   }
 
-  a,
-  button {
-    @include hover;
-    transition: opacity 0.3s ease 0s;
+  // .footer__list
+
+  &__list {
+    &._big {
+      flex: 1 1 35%;
+    }
+
+    &._small {
+      flex: 1 1 25%;
+    }
   }
 
-  ul {
-    > li {
-      font-size: rem(18);
+  // .footer__item
 
-      @media (max-width: $mobile) {
-        font-size: rem(16);
-      }
+  &__item {
+    font-size: rem(18);
 
-      &:not(:last-child) {
-        margin-bottom: em(10, 18);
-      }
+    @media (max-width: $mobile) {
+      font-size: rem(16);
     }
+
+    &:not(:last-child) {
+      margin-bottom: em(10, 18);
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    display: inline-flex;
+    gap: em(10, 18);
+
+    // .footer__link_active
+
+    &_active {
+      opacity: 0.5;
+    }
+  }
+
+  a {
+    @include hover;
+    transition: opacity 0.3s ease 0s;
   }
 }
