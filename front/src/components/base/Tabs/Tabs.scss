@@ -19,7 +19,7 @@
     color: var(--mainBg);
     text-transform: uppercase;
     cursor: pointer;
-    background-color: var(--mainColor);
+    background: var(--mainColor);
     border-radius: 0 0 em(5, 16) em(5, 16);
     transition: opacity 0.3s ease 0s;
 
@@ -70,7 +70,7 @@
     &_active {
       color: var(--mainColor);
       cursor: not-allowed !important;
-      background-color: var(--mainBg);
+      background: var(--mainBg);
     }
   }
 

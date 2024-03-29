@@ -33,11 +33,11 @@ export const navLinks: INavLink[] = [
     subLinks: [
       {
         label: "pages.discography.albums",
-        value: "/discography?tab=music-videos",
+        value: "/videos?tab=music-videos",
       },
       {
         label: "pages.discography.ep",
-        value: "/discography?tab=animated-videos",
+        value: "/videos?tab=animated-videos",
       },
     ],
   },

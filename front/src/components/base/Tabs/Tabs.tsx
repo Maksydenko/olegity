@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useEffect, useMemo } from "react";
+import { FC } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";

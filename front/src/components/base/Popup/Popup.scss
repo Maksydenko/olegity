@@ -9,7 +9,7 @@
       // .popup__body
 
       &__body {
-        background-color: transparent;
+        background: transparent;
       }
     }
   }
@@ -18,7 +18,7 @@
 
   &__bg {
     @include fill(fixed);
-    background-color: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
   }
 
   // .popup__content
@@ -54,7 +54,7 @@
       width: rem(30);
       height: rem(2);
       content: "";
-      background-color: $light;
+      background: $light;
       border-radius: rem(5);
     }
 

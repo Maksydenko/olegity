@@ -20,18 +20,18 @@
   &_active {
     color: var(--mainBg);
     cursor: not-allowed;
-    background-color: var(--mainColor);
+    background: var(--mainColor);
   }
 
   // %btn_hover
 
   &_hover {
-    transition: color, background-color 0.3s ease 0s;
+    transition: color, background 0.3s ease 0s;
 
     @include hover(
       (
         color: var(--mainBg),
-        background-color: var(--mainColor),
+        background: var(--mainColor),
       )
     );
   }

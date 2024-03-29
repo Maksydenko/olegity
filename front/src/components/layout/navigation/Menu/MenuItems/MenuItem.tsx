@@ -20,8 +20,15 @@ const MenuItem: FC<MenuItemProps> = ({ link, breakpoint, onClick }) => {
   const pathname = usePathname();
   // const { t } = useTranslation();
 
-  const isActive = value === pathname;
+  const isSubLinkActive = subLinks?.some(({ value: subLinkValue }) => {
+    const queryIndex = subLinkValue.indexOf("?");
+    const subLinkValueWithoutQuery =
+      queryIndex !== -1 ? subLinkValue.substring(0, queryIndex) : subLinkValue;
 
+    return subLinkValueWithoutQuery === pathname;
+  });
+
+  const isActive = value === pathname || isSubLinkActive;
   if (subLinks) {
     return (
       <MenuSubList

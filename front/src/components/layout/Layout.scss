@@ -11,12 +11,12 @@
 
 ::-webkit-scrollbar {
   width: rem(8);
-  background-color: var(--scrollBg);
+  background: var(--scrollBg);
 
   // ::-webkit-scrollbar-thumbs
 
   &-thumb {
-    background-color: var(--scrollColor);
+    background: var(--scrollColor);
     border-radius: rem(5);
   }
 }

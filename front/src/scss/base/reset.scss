@@ -28,7 +28,7 @@ body {
   font-size: $fontSize;
   line-height: 1;
   color: var(--mainColor);
-  background-color: var(--mainBg);
+  background: var(--mainBg);
 }
 
 input,
@@ -37,7 +37,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  background-color: inherit;
+  background: inherit;
 }
 
 input,

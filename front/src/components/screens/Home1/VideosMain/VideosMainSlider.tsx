@@ -20,6 +20,7 @@ const VideosMainSlider: FC<VideosMainSliderProps> = ({ video }) => {
           className="main-videos__popup-video"
           img={img}
           video={url}
+          title={title}
         />
       ),
     };

@@ -1,5 +1,6 @@
 "use client";
 
+import { FC, useCallback } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 
@@ -10,7 +11,6 @@ import { useScrollLock } from "@/hooks/useScrollLock";
 import { useWindowListener } from "@/hooks/useWindowListener";
 
 import { Breakpoint } from "@/enums/breakpoint.enum";
-import { FC } from "react";
 
 interface HeaderProps {
   className?: string;
@@ -20,20 +20,20 @@ const Header: FC<HeaderProps> = ({ className }) => {
   const { isScrollLock, setIsScrollLock } = useScrollLock(["main", "footer"]);
   const breakpoint = Breakpoint.Desktop;
 
-  const handleUnlockScroll = () => {
+  const handleUnlockScroll = useCallback(() => {
     if (isScrollLock) {
       setIsScrollLock(false);
     }
-  };
+  }, [isScrollLock, setIsScrollLock]);
 
-  const handleUnlockScrollOnBreakpoint = () => {
+  const handleUnlockScrollOnBreakpoint = useCallback(() => {
     const { innerWidth } = window;
     const isMoreBreakpoint = innerWidth > breakpoint;
 
     if (isMoreBreakpoint && isScrollLock) {
       handleUnlockScroll();
     }
-  };
+  }, [breakpoint, handleUnlockScroll, isScrollLock]);
   useWindowListener("resize", handleUnlockScrollOnBreakpoint);
 
   const handleClick = () => {
