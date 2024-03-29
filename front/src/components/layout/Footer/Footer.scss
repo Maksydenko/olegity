@@ -3,7 +3,7 @@
 
 .footer {
   position: relative;
-  color: $light;
+  color: $lightColor;
   background: #21252b;
 
   // .footer__container
@@ -37,7 +37,8 @@
   // .footer__logo
 
   &__logo {
-    display: block;
+    display: flex;
+    align-items: center;
     width: rem(95);
     height: rem(30);
     margin-bottom: rem(20);

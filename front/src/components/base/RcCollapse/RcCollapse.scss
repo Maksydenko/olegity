@@ -1,5 +1,5 @@
 .rc-collapse {
-  background: $light !important;
+  background: $lightColor !important;
   background-color: transparent !important;
   border-width: rem(1) !important;
 
@@ -28,7 +28,7 @@
     align-items: stretch !important;
     padding: 0 !important;
     line-height: 1 !important;
-    color: $dark !important;
+    color: $darkColor !important;
 
     // .rc-collapse-header-text
 
@@ -43,8 +43,8 @@
 
   &-content {
     padding: 0 rem(15) !important;
-    color: $dark !important;
-    background: $light !important;
+    color: $darkColor !important;
+    background: $lightColor !important;
     border-radius: 0 0 rem(3) rem(3) !important;
 
     // .rc-collapse-content-active
@@ -85,7 +85,7 @@
 
   &__arrow {
     display: block;
-    border-top: rem(10) solid $dark;
+    border-top: rem(10) solid $darkColor;
     border-right: rem(5) solid transparent;
     border-left: rem(5) solid transparent;
   }

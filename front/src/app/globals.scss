@@ -1,26 +1,26 @@
 // Connection utils, mixins, vars, extends
 @import "@/scss/module";
 
-// Connection fonts
-@import "@/scss/fonts/fonts";
+// Connection icons
+@import "@/scss/icons";
 
-// Connection reset styles
+// Connection reset
 @import "@/scss/base/reset";
 
-// Connection typography styles
+// Connection typography
 @import "@/scss/typography";
 
-// Connecting layout styles
-@import "@/components/layout/Layout";
+// Connecting layout
+@import "./layout";
 
-// Connecting base component styles
+// Connecting base
 @import "@/scss/base";
 
-// Connecting form component styles
+// Connecting form
 @import "@/scss/form";
 
-// Connecting shared component styles
+// Connecting shared
 @import "@/scss/shared";
 
-// Connecting screens styles
+// Connecting screens
 @import "@/scss/screens";

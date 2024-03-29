@@ -55,13 +55,13 @@
 }
 
 // Data theme
-@mixin dataTheme($property, $lightValue, $darkValue) {
+@mixin dataTheme($property, $lightColorValue, $darkColorValue) {
   #html[data-theme="light"] {
-    --#{$property}: #{$lightValue};
+    --#{$property}: #{$lightColorValue};
   }
 
   #html[data-theme="dark"] {
-    --#{$property}: #{$darkValue};
+    --#{$property}: #{$darkColorValue};
   }
 }
 

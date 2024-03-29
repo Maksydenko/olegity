@@ -1,5 +1,7 @@
 import { NextPage } from "next";
-import Home from "@/components/screens/home/Home";
+
+import Home from "@/components/screens/Home/Home";
+
 import { metadata } from "./layout";
 
 metadata.title = "Home";

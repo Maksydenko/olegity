@@ -7,15 +7,16 @@
 $fontSize: rem(16);
 
 // Fonts
-$fontFamily: "Open Sans";
-$fontFamily2: "Montserrat";
+$primaryFont: var(--open-sans-font);
+$secondaryFont: var(--montserrat-font);
+$iconsFont: var(--icons-font);
 
 // Primary colors
 
-$light: #fff;
-$dark: #333;
-@include dataTheme(mainColor, $dark, $light);
-@include dataTheme(mainBg, $light, $dark);
+$lightColor: #fff;
+$darkColor: #333;
+@include dataTheme(mainColor, $darkColor, $lightColor);
+@include dataTheme(mainBg, $lightColor, $darkColor);
 
 // ============================================================================
 

@@ -1,6 +1,6 @@
 .popup-video {
   position: relative;
-  color: $light;
+  color: $lightColor;
 
   // .popup-video__img
 
@@ -46,7 +46,7 @@
         @include hover;
 
         font-size: rem(80);
-        color: $light;
+        color: $lightColor;
         transition: opacity 0.3s ease 0s;
 
         @media (max-width: $mobile) {

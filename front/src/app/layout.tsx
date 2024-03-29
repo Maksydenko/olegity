@@ -1,21 +1,16 @@
 import { FC, ReactNode } from "react";
 // import { dir } from "i18next";
+import clsx from "clsx";
 
 import Header from "@/components/layout/Header/Header";
 import ScrollTop from "@/components/layout/navigation/ScrollTop/ScrollTop";
 import Footer from "@/components/layout/Footer/Footer";
 
 // import { languages } from "@/app/i18n/settings";
+import { fontMontserrat, fontOpenSans } from "@/constants/fonts/google.const";
+
 import "./globals.scss";
-
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: [
-    "latin",
-    //  'cyrillic-ext'
-  ],
-});
+import { fontIcons } from "@/constants/fonts/icons.const";
 
 export const metadata = {
   title: "",
@@ -90,7 +85,12 @@ const RootLayout: FC<RootLayoutProps> = ({
       {/* <link rel="apple-touch-icon" href="" /> */}
     </head>
     <body
-    // className={inter.className}
+      id="body"
+      className={clsx(
+        fontMontserrat.variable,
+        fontOpenSans.variable,
+        fontIcons.variable
+      )}
     >
       <div className="layout">
         <Header />
