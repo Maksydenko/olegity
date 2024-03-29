@@ -4,22 +4,30 @@ import { addBreakpointDesktop } from "./addBreakpointDesktop.util";
 
 import { IPropBreakpoints } from "./breakpoints.interface";
 
-interface IUseBullets {
-  (
-    defaultSlidesPerView: SwiperOptions["slidesPerView"],
-    slidesLength: number,
-    breakpoints?: IPropBreakpoints,
-    paginationBullets?: boolean
-  ): boolean;
+interface IBulletsProps {
+  defaultSlidesPerView: SwiperOptions["slidesPerView"];
+  slidesLength: number;
+  breakpoints?: IPropBreakpoints;
+  paginationBullets?: boolean;
 }
 
-export const useBullets: IUseBullets = (
+interface IUseBullets {
+  (props: IBulletsProps): boolean;
+}
+export const useBullets: IUseBullets = ({
   defaultSlidesPerView = 1,
   slidesLength,
   breakpoints,
-  paginationBullets
-) => {
-  if (!breakpoints || !paginationBullets) {
+  paginationBullets,
+}) => {
+  if (!paginationBullets) {
+    return false;
+  }
+
+  if (!breakpoints) {
+    if (+defaultSlidesPerView < slidesLength) {
+      return true;
+    }
     return false;
   }
 

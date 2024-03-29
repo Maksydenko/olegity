@@ -185,12 +185,12 @@ const SliderSwiper: FC<SliderSwiperProps> = ({
   }, [autoplay]);
 
   const isPaginationBullets = pagination && paginationType === "bullets";
-  const isBullets = useBullets(
-    slidesPerView,
+  const isBullets = useBullets({
+    defaultSlidesPerView: slidesPerView,
     slidesLength,
     breakpoints,
-    isPaginationBullets
-  );
+    paginationBullets: isPaginationBullets,
+  });
 
   const slideItems = slides.map(({ id, slide }, index) => {
     return (
