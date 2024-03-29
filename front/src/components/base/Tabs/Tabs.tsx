@@ -7,6 +7,7 @@ import clsx from "clsx";
 
 import Titles from "./Titles/Titles";
 import Contents from "./Contents/Contents";
+
 import { ITab } from "./tab.interface";
 
 interface TabsProps {
