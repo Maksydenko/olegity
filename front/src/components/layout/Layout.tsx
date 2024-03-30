@@ -31,7 +31,7 @@ const Layout: FC<LayoutProps> = ({ className, children }) => {
         fontIcons.variable
       )}
     >
-      {/* <Seo
+      <Seo
         description="See about LSP, links to all his albums and songs, videos, information performs, gallery of photos from concerts on this site"
         additionalMetaTags={[
           "lsp",
@@ -69,7 +69,7 @@ const Layout: FC<LayoutProps> = ({ className, children }) => {
           site: "@Maksydenko",
           cardType: "summary",
         }}
-      /> */}
+      />
       <Header />
       <main>{children}</main>
       <ScrollTop />
