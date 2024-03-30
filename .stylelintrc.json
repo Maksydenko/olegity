@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-recess-order",
+    "stylelint-config-recommended-scss"
+  ],
+  "rules": {
+    "block-no-empty": null,
+    "color-hex-length": "short",
+    "no-empty-source": null,
+    "scss/operator-no-newline-after": null
+  }
+}

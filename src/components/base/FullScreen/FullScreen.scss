@@ -1,0 +1,30 @@
+.full-screen {
+  position: relative;
+  display: flex;
+  min-height: 100svh;
+
+  @supports not (min-height: 100svh) {
+    min-height: 100vh;
+  }
+
+  // .full-screen__body
+
+  &__body {
+    @include centered(flex);
+
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    padding: rem(20);
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  // .fullScreen__background
+
+  &__background {
+    * {
+      @include fill(fixed, important);
+      object-fit: cover;
+    }
+  }
+}

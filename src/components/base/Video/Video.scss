@@ -1,0 +1,14 @@
+.video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+
+  @supports not (aspect-ratio: 16 / 9) {
+    padding-top: 56.25%;
+  }
+
+  video,
+  iframe {
+    @include fill;
+    object-fit: cover;
+  }
+}

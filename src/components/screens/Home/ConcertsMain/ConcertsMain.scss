@@ -1,0 +1,31 @@
+.concerts-main {
+  position: relative;
+  background: var(--mainBg);
+
+  // .concerts-main__container
+
+  &__container {
+  }
+
+  // .concerts-main__text-block
+
+  &__text-block {
+    padding: rem(50) 0;
+
+    @media (max-width: $mobile) {
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  // .concerts-main__img
+
+  &__img {
+    @media (min-width: $mobile) {
+      img {
+        object-position: 40% 50%;
+        border-top-left-radius: rem(10);
+      }
+    }
+  }
+}

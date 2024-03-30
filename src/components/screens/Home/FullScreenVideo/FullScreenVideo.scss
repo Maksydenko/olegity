@@ -1,0 +1,8 @@
+.full-screen-video {
+  // .full-screen-video__img
+
+  &__img {
+    @include responsiveValue(width, 300, 200);
+    @include responsiveValue(padding-bottom, 300, 200);
+  }
+}

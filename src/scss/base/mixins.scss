@@ -1,0 +1,165 @@
+// Mixins
+
+// ============================================================================
+
+// Responsive value
+@mixin responsiveValue(
+  $property,
+  $startSize,
+  $minSize,
+  $type: 1,
+  $widthFrom: $maxWidth,
+  $widthTo: $minWidth
+) {
+  // For calc();
+  $addSize: calc(($startSize - $minSize) / 16);
+
+  $calcSize: calc(
+    #{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{calc(
+        $widthFrom / 16
+      ) - calc($widthTo / 16)}
+  );
+
+  // If there is less container
+  @if $type == 1 {
+    #{$property}: rem($startSize);
+
+    @media (max-width: ($widthFrom + px)) {
+      #{$property}: $calcSize;
+    }
+  }
+  // If there is more container
+  @else if $type == 2 {
+    #{$property}: rem($startSize);
+
+    @media (min-width: ($widthFrom + px)) {
+      #{$property}: $calcSize;
+    }
+  }
+  // Always
+  @else {
+    #{$property}: $calcSize;
+  }
+}
+
+// Font
+@mixin font($fontName, $fileName: $fontName, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $fontName;
+    font-style: $style;
+    font-weight: $weight;
+    src: url("/fonts/#{$fontName}/#{$fontName}.woff2") format("woff2"),
+      url("/fonts/#{$fontName}/#{$fontName}.woff") format("woff");
+    font-display: swap;
+  }
+}
+
+// Data theme
+@mixin dataTheme($property, $lightColorValue, $darkColorValue) {
+  #html[data-theme="light"] {
+    --#{$property}: #{$lightColorValue};
+  }
+
+  #html[data-theme="dark"] {
+    --#{$property}: #{$darkColorValue};
+  }
+}
+
+// Hover
+@mixin hover(
+  $styles: (
+    opacity: 0.5,
+  ),
+  $focus: true
+) {
+  @media (hover: hover) {
+    &:hover {
+      @each $property, $value in $styles {
+        #{$property}: $value;
+      }
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @each $property, $value in $styles {
+        #{$property}: $value;
+      }
+    }
+  }
+
+  @if ($focus == true) {
+    &:focus-visible {
+      @each $property, $value in $styles {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+// Fill
+@mixin fill($position: absolute, $important: false) {
+  // Important
+  @if ($important == important) {
+    position: $position !important;
+  } @else {
+    position: $position;
+  }
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Centered
+@mixin centered($method) {
+  // Flex
+  @if $method == flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // Position
+  @else if $method == position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Nowrap text
+@mixin nowrapText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Vertical text
+@mixin verticalText {
+  writing-mode: vertical-lr;
+  transform: rotate(-180);
+  text-orientation: upright;
+}
+
+// Line camp
+@mixin lineCamp($lines) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+// Gradient text
+@mixin gradientText($gradient) {
+  background: $gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Stroke text
+@mixin strokeText($size, $color, $fillColor: transparent) {
+  -webkit-text-stroke: $size $color;
+  -webkit-text-fill-color: $fillColor;
+}

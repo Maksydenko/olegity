@@ -1,0 +1,47 @@
+import { FC } from "react";
+import { useTranslation } from "next-i18next";
+import clsx from "clsx";
+
+import Tabs from "@/components/base/Tabs/Tabs";
+import Albums from "./Albums/Albums";
+import Singles from "./Singles/Singles";
+
+import { albums } from "@/data/music/albums.data";
+import { ep } from "@/data/music/ep.data";
+import { singles } from "@/data/music/singles.data";
+
+interface MusicProps {
+  className?: string;
+}
+
+const Music: FC<MusicProps> = ({ className }) => {
+  const { t } = useTranslation("common");
+
+  const tabs = [
+    {
+      id: "albums",
+      title: t("albums"),
+      content: <Albums className="music__albums" albums={albums} />,
+    },
+    {
+      id: "ep",
+      title: t("ep"),
+      content: <Albums className="music__albums" albums={ep} />,
+    },
+    {
+      id: "singles",
+      title: t("singles"),
+      content: <Singles className="music__singles" singles={singles} />,
+    },
+  ];
+
+  return (
+    <div className={clsx(className, "music")}>
+      <div className="music__container">
+        <Tabs className="music__tabs" tabs={tabs} />
+      </div>
+    </div>
+  );
+};
+
+export default Music;

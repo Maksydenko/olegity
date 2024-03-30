@@ -1,0 +1,31 @@
+.listen-on {
+  // .listen-on__list
+
+  &__list {
+    display: grid;
+    gap: em(20, 32);
+    justify-content: center;
+  }
+
+  // .listen-on__item
+
+  &__item {
+  }
+
+  // .listen-on__link
+
+  &__link {
+    @extend %btn;
+    @extend %btn_hover;
+    display: block;
+    padding: em(10, 32);
+    font-size: rem(32);
+    text-align: center;
+    border-width: em(2, 32);
+    border-radius: em(10, 32);
+
+    @media (max-width: $mobile) {
+      font-size: rem(24);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.scroll-top {
+  @include hover;
+  position: fixed;
+  right: rem(calc($containerPadding / 2));
+  bottom: em(40, 44);
+  z-index: 10;
+  width: em(60, 44);
+  height: em(60, 44);
+  font-size: rem(44);
+  color: $lightColor;
+  // visibility: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: em(5, 44);
+  // opacity: 0;
+  transition: opacity 0.3s ease 0s;
+
+  // // .scroll-top_active
+
+  // &_active {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
+
+  @media (max-width: $mobile) {
+    font-size: rem(32);
+  }
+}

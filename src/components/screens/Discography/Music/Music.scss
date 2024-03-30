@@ -1,0 +1,12 @@
+@import "./Albums/Albums";
+@import "./Singles/Singles";
+
+.music {
+  // .music__container
+
+  &__container {
+    @media (max-width: $desktop) {
+      padding: 0;
+    }
+  }
+}

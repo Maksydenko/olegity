@@ -1,0 +1,17 @@
+.img {
+  position: relative;
+
+  // .img_svg
+
+  &_svg {
+    > img {
+      position: relative !important;
+      object-fit: fill !important;
+    }
+  }
+
+  > img {
+    @include fill;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,15 @@
+@import "./FullScreenVideo/FullScreenVideo";
+@import "./AboutMain/AboutMain";
+@import "./AlbumsMain/AlbumsMain";
+@import "./VideosMain/VideosMain";
+@import "./ConcertsMain/ConcertsMain";
+
+.home-page {
+  > main {
+    > section {
+      &:not(:first-child, :last-child) {
+        padding-bottom: rem(50);
+      }
+    }
+  }
+}

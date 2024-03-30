@@ -1,0 +1,30 @@
+.about-concerts {
+  // .about-concerts__text-block
+
+  &__text-block {
+    padding: rem(50) 0;
+
+    @media (max-width: $mobile) {
+      padding: rem(30) 0 0;
+      text-align: center;
+
+      .text-block__title {
+        font-size: rem(32);
+      }
+
+      .text-block__text {
+        text-align: justify;
+      }
+    }
+  }
+
+  // .about-concerts__img
+
+  &__img {
+    @media (min-width: $mobile) {
+      img {
+        border-bottom-left-radius: rem(10);
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@import "./Header/Header";
+@import "./navigation/LanguageSwitcher/LanguageSwitcher";
+@import "./navigation/ThemeSwitcher/ThemeSwitcher";
+@import "./navigation/ScrollTop/ScrollTop";
+@import "./Footer/Footer";
+
+// Scrollbar styles
+
+@include dataTheme(scrollColor, #a3a3a3, #808080);
+@include dataTheme(scrollBg, #f1f1f1, #424242);
+
+::-webkit-scrollbar {
+  width: rem(8);
+  background: var(--scrollBg);
+
+  // ::-webkit-scrollbar-thumbs
+
+  &-thumb {
+    background: var(--scrollColor);
+    border-radius: rem(5);
+  }
+}
+
+// Body tag styles
+#body {
+  // Lock scroll
+  &.lock {
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
+}
+
+// Shell layout
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+  font-family: $primaryFont;
+
+  @supports not (overflow: clip) {
+    overflow: hidden;
+  }
+
+  // Press the footer
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+// Limiting container
+
+// Responsive
+@if $adaptiveType == 1 {
+  [class*="__container"] {
+    @if $maxWidthContainer > 0 {
+      max-width: rem($containerWidth);
+      margin: 0 auto;
+    }
+
+    @if $containerPadding > 0 {
+      @if $maxWidthContainer > 0 {
+        padding-right: rem(calc($containerPadding / 2));
+        padding-left: rem(calc($containerPadding / 2));
+      } @else {
+        @include responsiveValue(
+          padding-right,
+          calc($containerPadding / 2),
+          15
+        );
+        @include responsiveValue(padding-left, calc($containerPadding / 2), 15);
+      }
+    }
+  }
+}
+// According to breakpoints
+@else {
+  [class*="__container"] {
+    margin: 0 auto;
+
+    @if $maxWidthContainer > 0 {
+      max-width: rem($containerWidth);
+    } @else {
+      @if $containerPadding > 0 {
+        padding-right: rem(calc($containerPadding / 2));
+        padding-left: rem(calc($containerPadding / 2));
+      }
+    }
+
+    @media (max-width: $desktop) {
+      max-width: rem(970);
+    }
+
+    @media (max-width: $tablet) {
+      max-width: rem(750);
+    }
+
+    @media (max-width: $mobile) {
+      max-width: none;
+    }
+
+    @if $containerPadding > 0 and $maxWidthContainer > 0 {
+      padding-right: rem(calc($containerPadding / 2));
+      padding-left: rem(calc($containerPadding / 2));
+    }
+  }
+}

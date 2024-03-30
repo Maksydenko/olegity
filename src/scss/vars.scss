@@ -1,0 +1,51 @@
+// Vars
+
+// ============================================================================
+
+// Settings template
+
+$fontSize: rem(16);
+
+// Fonts
+$primaryFont: var(--open-sans-font);
+$secondaryFont: var(--montserrat-font);
+$iconsFont: var(--icons-font);
+
+// Primary colors
+
+$lightColor: #fff;
+$darkColor: #333;
+@include dataTheme(mainColor, $darkColor, $lightColor);
+@include dataTheme(mainBg, $lightColor, $darkColor);
+
+// ============================================================================
+
+// Adaptive grid settings
+
+// The minimum page width
+$minWidth: 320;
+// The width of the canvas
+$maxWidth: 1440;
+// The width of the limiting container
+$maxWidthContainer: 1170;
+// General indenter
+$containerPadding: 40;
+
+// The width of the first breakpoint
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Breakpoints
+
+// Desktops, laptops, some tablets in a horizontal position
+$desktop: $containerWidth + 0.98px;
+// Tablets, some phones in the horizontal position
+$tablet: 991.98px;
+// Large phones
+$mobile: 767.98px;
+// Small phones
+$mobileSmall: 479.98px;
+
+// Adaptive type:
+// 1 = responsiveness
+// !1 = according to breakpoints
+$adaptiveType: 1;

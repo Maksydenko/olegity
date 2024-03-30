@@ -1,0 +1,48 @@
+.albums-main {
+  position: relative;
+  background: var(--mainBg);
+
+  // .albums-main__container
+
+  &__container {
+    text-align: center;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+
+  // .albums-main__title
+
+  &__title {
+    font-size: rem(40);
+
+    @media (max-width: $mobile) {
+      font-size: rem(32);
+    }
+  }
+
+  // .albums-main__slider-swiper
+
+  &__slider-swiper {
+  }
+
+  // .albums-main__music-card
+
+  &__music-card {
+    max-width: rem(370);
+    margin: 0 auto;
+  }
+
+  // .albums-main__text-block
+
+  &__text-block {
+    .text-block__link {
+      @media (min-width: $mobile) {
+        font-size: rem(18);
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.slider-swiper {
+  // .slider-swiper_bullets
+
+  &_bullets {
+    .swiper-wrapper {
+      padding-bottom: rem(20 + 10);
+    }
+  }
+
+  .swiper-pagination {
+    @include centered(flex);
+
+    &.swiper-pagination-bullets {
+      bottom: 0 !important;
+    }
+
+    .swiper-pagination-bullet {
+      margin: 0 !important;
+      background: var(--mainColor) !important;
+
+      &:not(:last-child) {
+        margin-right: rem(4) !important;
+      }
+
+      &:not(&-active) {
+        width: rem(8) !important;
+        height: rem(8) !important;
+        opacity: 0.8;
+        transition: opacity 0.3s ease 0s;
+
+        @include hover(
+          (
+            opacity: 0.4,
+          )
+        );
+      }
+
+      &.swiper-pagination-bullet-active {
+        width: rem(12) !important;
+        height: rem(12) !important;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

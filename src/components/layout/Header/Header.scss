@@ -1,0 +1,33 @@
+@import "@/components/layout/navigation/Menu/Menu";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+
+  // .header__container
+
+  &__container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: rem(70);
+  }
+
+  // .header__logo
+
+  &__logo {
+    @include hover;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: rem(150);
+    height: rem(30);
+    transition: opacity 0.3s ease 0s;
+  }
+}

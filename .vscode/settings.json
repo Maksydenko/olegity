@@ -1,0 +1,23 @@
+{
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": ["./front"],
+  "stylelint.packageManager": "yarn",
+  "stylelint.validate": ["scss"],
+  "typescript.preferences.importModuleSpecifier": "shortest"
+}

@@ -1,0 +1,11 @@
+@import "./scss/nav";
+@import "./scss/pagination/bullets";
+@import "./scss/pagination/progressbar";
+
+.slider-swiper {
+  position: relative;
+
+  .swiper {
+    user-select: none;
+  }
+}
