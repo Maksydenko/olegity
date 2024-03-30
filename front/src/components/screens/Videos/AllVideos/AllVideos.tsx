@@ -1,11 +1,9 @@
-"use client";
-
 import { FC } from "react";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import Tabs from "@/components/base/Tabs/Tabs";
-import Videos from "./Videos/Videos";
+import Video from "./Video/Video";
 
 import { musicVideos } from "@/data/videos/musicVideos.data";
 import { animatedVideos } from "@/data/videos/animatedVideos.data";
@@ -15,19 +13,18 @@ interface AllVideosProps {
 }
 
 const AllVideos: FC<AllVideosProps> = ({ className }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation("common");
+
   const tabs = [
     {
       id: "music-videos",
-      title: "music-videos",
-      content: <Videos className="all-videos__videos" videos={musicVideos} />,
+      title: t("music-videos"),
+      content: <Video className="all-videos__videos" videos={musicVideos} />,
     },
     {
       id: "animated-videos",
-      title: "animated-videos",
-      content: (
-        <Videos className="all-videos__videos" videos={animatedVideos} />
-      ),
+      title: t("animated-videos"),
+      content: <Video className="all-videos__videos" videos={animatedVideos} />,
     },
   ];
 

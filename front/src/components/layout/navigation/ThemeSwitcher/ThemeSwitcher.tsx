@@ -1,9 +1,9 @@
+import { FC } from "react";
 import clsx from "clsx";
 
 import ThemeSwitcherList from "./ThemeSwitcherItems/ThemeSwitcherList";
 
 import { themes } from "./themes.data";
-import { FC } from "react";
 
 interface ThemeSwitcherProps {
   className?: string;

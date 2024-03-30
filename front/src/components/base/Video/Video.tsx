@@ -1,5 +1,3 @@
-"use client";
-
 import { FC, useRef } from "react";
 import ReactPlayer, { ReactPlayerProps } from "react-player/lazy";
 import clsx from "clsx";
@@ -14,20 +12,20 @@ interface VideoProps extends ReactPlayerProps {
 }
 
 const Video: FC<VideoProps> = ({ className, url, light, loader = true }) => {
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLDivElement>(null);
   const { isLoading } = useLoadingObject(videoRef);
 
   const showLoader = loader && isLoading;
 
   return (
-    <span
+    <div
       style={{ display: "block" }}
       className={clsx(className, "video")}
       ref={videoRef}
     >
       {showLoader && <Loader />}
       <ReactPlayer url={url} width="100%" height="100%" light={light} />
-    </span>
+    </div>
   );
 };
 

@@ -1,12 +1,12 @@
-"use client";
-
 import { FC } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/router";
 import clsx from "clsx";
 
 import Pagination from "@/components/base/Pagination/Pagination";
 import Search from "@/components/form/Search/Search";
 import SinglesList from "./SinglesItems/SinglesList";
+
+import { getSearchParam } from "@/utils/getSearchParam.util";
 
 import { ISingle } from "@/interfaces/music.interface";
 
@@ -20,11 +20,9 @@ const Singles: FC<SinglesProps> = ({ className, singles }) => {
   const ITEMS_PER_PAGE = 12;
 
   // Query
-  const query = useSearchParams();
-  const queryArray = [...query];
-  const queryObject = Object.fromEntries(queryArray);
-  const queryPage = queryObject?.page;
-  const querySearch = queryObject?.search;
+  const { asPath } = useRouter();
+  const queryPage = getSearchParam(asPath, "page");
+  const querySearch = getSearchParam(asPath, "search");
   const currentSearchText = querySearch || "";
 
   // Search
@@ -37,7 +35,7 @@ const Singles: FC<SinglesProps> = ({ className, singles }) => {
   const { length: filteredSinglesLength } = searchedSingles;
 
   // Pagination
-  const currentPage = +queryPage - 1 || 0;
+  const currentPage = queryPage ? +queryPage - 1 : 0;
   const startOffset = (currentPage * ITEMS_PER_PAGE) % filteredSinglesLength;
   const endOffset = startOffset + ITEMS_PER_PAGE;
   const currentItems = searchedSingles.slice(startOffset, endOffset);

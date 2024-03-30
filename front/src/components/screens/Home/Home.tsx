@@ -1,21 +1,29 @@
 import { FC } from "react";
+import { useTranslation } from "next-i18next";
 
-import FullScreenVideo from "@/components/screens/home/FullScreenVideo/FullScreenVideo";
-import AboutMain from "@/components/screens/home/AboutMain/AboutMain";
-import AlbumsMain from "@/components/screens/home/AlbumsMain/AlbumsMain";
-import VideosMain from "@/components/screens/home/VideosMain/VideosMain";
-import ConcertsMain from "@/components/screens/home/ConcertsMain/ConcertsMain";
+import Layout from "@/components/layout/Layout";
+import Seo from "@/components/layout/Seo/Seo";
+import FullScreenVideo from "./FullScreenVideo/FullScreenVideo";
+import AboutMain from "./AboutMain/AboutMain";
+import AlbumsMain from "./AlbumsMain/AlbumsMain";
+import VideosMain from "./VideosMain/VideosMain";
+import ConcertsMain from "./ConcertsMain/ConcertsMain";
 
 interface HomeProps {}
 
-const HomePage: FC<HomeProps> = () => (
-  <main className="home-page">
-    <FullScreenVideo className="home-page__full-screen-video" />
-    <AboutMain className="home-page__about-main" />
-    <AlbumsMain className="home-page__albums-main" />
-    <VideosMain className="home-page__videos-main" />
-    <ConcertsMain className="home-page__concerts-main" />
-  </main>
-);
+const HomePage: FC<HomeProps> = () => {
+  const { t } = useTranslation("common");
+
+  return (
+    <Layout className="home-page">
+      <Seo title={t("pages.home")} />
+      <FullScreenVideo className="home-page__full-screen-video" />
+      <AboutMain className="home-page__about-main" />
+      <AlbumsMain className="home-page__albums-main" />
+      <VideosMain className="home-page__videos-main" />
+      <ConcertsMain className="home-page__concerts-main" />
+    </Layout>
+  );
+};
 
 export default HomePage;

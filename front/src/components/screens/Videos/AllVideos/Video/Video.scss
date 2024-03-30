@@ -1,0 +1,59 @@
+.video {
+  // .video__container
+
+  &__container {
+    @media (min-width: $desktop) {
+      padding: 0;
+    }
+  }
+
+  // .video__search
+
+  &__search {
+    margin-bottom: rem(30);
+  }
+
+  // .video__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(rem(380), 1fr));
+    gap: rem(30);
+
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(auto-fill, minmax(rem(310), 1fr));
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
+    }
+  }
+
+  // .video__item
+
+  &__item {
+  }
+
+  // .video__popup-video
+
+  &__popup-video {
+    .popup-video {
+      // .popup-video__img
+
+      &__img {
+        margin-bottom: rem(20);
+
+        &::after,
+        img {
+          border-radius: rem(10);
+        }
+      }
+    }
+  }
+
+  // .video__title
+
+  &__title {
+    text-align: center;
+  }
+}

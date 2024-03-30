@@ -1,5 +1,5 @@
 .rc-collapse {
-  background: $lightColor !important;
+  background: transparent !important;
   background-color: transparent !important;
   border-width: rem(1) !important;
 
@@ -43,8 +43,8 @@
 
   &-content {
     padding: 0 rem(15) !important;
-    color: $darkColor !important;
-    background: $lightColor !important;
+    color: inherit !important;
+    background: transparent !important;
     border-radius: 0 0 rem(3) rem(3) !important;
 
     // .rc-collapse-content-active

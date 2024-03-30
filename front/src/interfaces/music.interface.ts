@@ -17,5 +17,6 @@ export interface ISingle {
 }
 
 export interface IAlbum extends ISingle {
+  slug: string;
   trackList: string[];
 }

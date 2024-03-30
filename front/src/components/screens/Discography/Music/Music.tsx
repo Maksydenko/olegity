@@ -1,5 +1,5 @@
 import { FC } from "react";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import Tabs from "@/components/base/Tabs/Tabs";
@@ -15,22 +15,22 @@ interface MusicProps {
 }
 
 const Music: FC<MusicProps> = ({ className }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   const tabs = [
     {
       id: "albums",
-      title: "albums",
+      title: t("albums"),
       content: <Albums className="music__albums" albums={albums} />,
     },
     {
       id: "ep",
-      title: "ep",
+      title: t("ep"),
       content: <Albums className="music__albums" albums={ep} />,
     },
     {
       id: "singles",
-      title: "singles",
+      title: t("singles"),
       content: <Singles className="music__singles" singles={singles} />,
     },
   ];

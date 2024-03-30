@@ -1,5 +1,3 @@
-"use client";
-
 import { FC, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -19,7 +17,7 @@ interface UkraineSupportProps {
 }
 
 const UkraineSupport: FC<UkraineSupportProps> = ({ className }) => {
-  const ukraineSupportRef = useRef(null);
+  const ukraineSupportRef = useRef<HTMLElement>(null);
   const isTablet = useBreakpointCheck(Breakpoint.Tablet);
 
   useGSAP(

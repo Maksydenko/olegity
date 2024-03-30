@@ -21,7 +21,7 @@
       transition: transform 0.3s ease 0s !important;
     }
 
-    // .dropdown__arrow_active
+    // .dropdown__icon_active
 
     &_active {
       > * {
@@ -45,7 +45,6 @@
     top: 100%;
     right: 0;
     z-index: 9;
-    width: rem(320);
     padding: rem(5);
     color: $darkColor;
     background: $lightColor;
@@ -61,19 +60,19 @@
   // .dropdown__item
 
   &__item {
-    border-radius: rem(5);
-    transition: color, background 0.3s ease 0s;
+    > div {
+      border-radius: rem(5);
+      transition: color, background 0.3s ease 0s;
 
-    > * {
-      display: block;
-      padding: rem(10);
-    }
+      &._active {
+        color: $lightColor;
+        background: $darkColor;
+      }
 
-    // .dropdown__item_active
-
-    &_active {
-      color: $lightColor;
-      background: $darkColor;
+      > * {
+        display: block;
+        padding: rem(10);
+      }
     }
   }
 

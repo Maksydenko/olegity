@@ -12,11 +12,11 @@ interface AlbumsProps {
 }
 
 const Albums: FC<AlbumsProps> = ({ className, albums }) => {
-  const slides = albums.map((album) => {
-    const { title } = album;
+  const slides = albums.map((album, index) => {
+    const { slug } = album;
 
     const slide = {
-      id: title,
+      id: slug,
       slide: <Album album={album} />,
     };
 

@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
 import { isBrowser } from "@/constants/isBrowser.const";
 
@@ -22,16 +22,16 @@ export const useThemeSwitch: IUseSwitchTheme = () => {
   // Set the current theme from local storage, the system theme, or the default
   const [currentTheme, setCurrentTheme] = useState(storageTheme || "system");
 
-  // Handle update system theme
-  interface IHandleUpdateSystemTheme {
+  // Update system theme
+  interface updateSystemTheme {
     (e: MediaQueryListEvent): void;
   }
-  const handleUpdateSystemTheme: IHandleUpdateSystemTheme = (e) => {
+  const updateSystemTheme: updateSystemTheme = (e) => {
     const { matches } = e;
     setCurrentTheme(matches ? "dark" : "light");
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const { documentElement } = document;
 
     if (currentTheme === "system") {
@@ -39,10 +39,10 @@ export const useThemeSwitch: IUseSwitchTheme = () => {
       documentElement.setAttribute("data-theme", systemTheme);
 
       const systemThemeQuery = window.matchMedia(prefersDark);
-      systemThemeQuery.addEventListener("change", handleUpdateSystemTheme);
+      systemThemeQuery.addEventListener("change", updateSystemTheme);
 
       return () => {
-        systemThemeQuery.removeEventListener("change", handleUpdateSystemTheme);
+        systemThemeQuery.removeEventListener("change", updateSystemTheme);
       };
     } else {
       localStorage.setItem("theme", currentTheme);

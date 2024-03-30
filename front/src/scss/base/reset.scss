@@ -13,18 +13,19 @@
   }
 }
 
-html {
-  scrollbar-gutter: stable;
-}
-
 html,
-body {
+body,
+#__next {
   min-width: $minWidth + px;
   height: 100%;
 }
 
+html {
+  background: $darkColor;
+  scrollbar-gutter: stable;
+}
+
 body {
-  font-family: $primaryFont;
   font-size: $fontSize;
   line-height: 1;
   color: var(--mainColor);

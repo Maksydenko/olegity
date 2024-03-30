@@ -14,15 +14,15 @@ export const navLinks: INavLink[] = [
     value: "/discography",
     subLinks: [
       {
-        label: "pages.discography.albums",
+        label: "albums",
         value: "/discography?tab=albums",
       },
       {
-        label: "pages.discography.ep",
+        label: "ep",
         value: "/discography?tab=ep",
       },
       {
-        label: "pages.discography.singles",
+        label: "singles",
         value: "/discography?tab=singles",
       },
     ],
@@ -32,11 +32,11 @@ export const navLinks: INavLink[] = [
     value: "/videos",
     subLinks: [
       {
-        label: "pages.discography.albums",
+        label: "music-videos",
         value: "/videos?tab=music-videos",
       },
       {
-        label: "pages.discography.ep",
+        label: "animated-videos",
         value: "/videos?tab=animated-videos",
       },
     ],

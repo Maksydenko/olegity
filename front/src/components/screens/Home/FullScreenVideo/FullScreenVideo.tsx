@@ -14,7 +14,7 @@ const FullScreenVideo: FC<FullScreenVideoProps> = ({ className }) => {
     <LocalVideo
       className="full-screen-video__video"
       src="/videos/binokl.mp4"
-      poster="/img/lsp/jpg/clip.jpg"
+      poster="/img/lsp/clip.jpg"
     />
   );
 

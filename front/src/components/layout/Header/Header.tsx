@@ -1,5 +1,3 @@
-"use client";
-
 import { FC, useCallback } from "react";
 import Link from "next/link";
 import clsx from "clsx";

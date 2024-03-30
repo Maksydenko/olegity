@@ -2,6 +2,7 @@ import { IAlbum } from "@/interfaces/music.interface";
 
 export const ep: IAlbum[] = [
   {
+    slug: "konditerskaya",
     title: "Кондитерская (Cake Factory)",
     artist: "ЛСП (LSP) & PHARAOH",
     genre: "hip-hop-rap",
@@ -29,6 +30,7 @@ export const ep: IAlbum[] = [
     ],
   },
   {
+    slug: "romantic-colegtion",
     title: "Romantic Colegtion",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",
@@ -53,6 +55,7 @@ export const ep: IAlbum[] = [
     ],
   },
   {
+    slug: "videt-tsvetnyye-sny",
     title: "Видеть цветные сны (See coloured dreams)",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",

@@ -5,9 +5,11 @@
 @import "./ConcertsMain/ConcertsMain";
 
 .home-page {
-  > section {
-    &:not(:first-child, :last-child) {
-      padding-bottom: rem(50);
+  > main {
+    > section {
+      &:not(:first-child, :last-child) {
+        padding-bottom: rem(50);
+      }
     }
   }
 }

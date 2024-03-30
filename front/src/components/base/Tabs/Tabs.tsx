@@ -1,7 +1,5 @@
-"use client";
-
-import { FC } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { FC, useEffect } from "react";
+import { useRouter } from "next/router";
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
@@ -9,6 +7,7 @@ import Titles from "./Titles/Titles";
 import Contents from "./Contents/Contents";
 
 import { ITab } from "./tab.interface";
+import { getSearchParam } from "@/utils/getSearchParam.util";
 
 interface TabsProps {
   className?: string;
@@ -28,21 +27,23 @@ const Tabs: FC<TabsProps> = ({
   const [firstTab] = tabs;
   const { id: firstTabId } = firstTab;
 
-  const { push } = useRouter();
-  const query = useSearchParams();
+  const { push, asPath } = useRouter();
 
-  const queryArray = [...query];
-  const queryObject = Object.fromEntries(queryArray);
-  const queryTab = queryObject?.tab;
+  // const queryTab = query?.tab;
+  const queryTab = getSearchParam(asPath, "tab");
 
   const currentTabId = queryTab || defaultTabId || firstTabId;
-  const currentTabIndex = tabs?.findIndex(({ id }) => {
-    return id == currentTabId;
+  const currentTabIndex = tabs?.findIndex(({ id: tabId }) => {
+    return tabId == currentTabId;
   });
 
-  if (!queryTab) {
-    push(`?${searchParam}=${currentTabId}`);
-  }
+  useEffect(() => {
+    if (!queryTab) {
+      push({
+        query: `${searchParam}=${currentTabId}`,
+      });
+    }
+  }, [currentTabId, push, queryTab, searchParam]);
 
   return (
     <div className={clsx(className, "tabs", vertical && "tabs_vertical")}>
@@ -51,7 +52,10 @@ const Tabs: FC<TabsProps> = ({
         defaultIndex={currentTabIndex}
         manual
         onChange={(index) => {
-          push(`?tab=${tabs[index].id}`);
+          const { id: newTabId } = tabs[index];
+          push({
+            query: `${searchParam}=${newTabId}`,
+          });
         }}
       >
         <Titles tabs={tabs} vertical={vertical} />

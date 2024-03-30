@@ -1,7 +1,7 @@
 import { useState, useEffect, RefObject } from "react";
 
 interface IUseLoadingObject {
-  (objectRef: RefObject<HTMLImageElement | HTMLIFrameElement>): {
+  (objectRef: RefObject<any>): {
     isLoading: boolean;
   };
 }

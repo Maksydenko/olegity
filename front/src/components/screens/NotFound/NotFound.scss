@@ -1,10 +1,15 @@
+.not-found-page {
+  > main {
+    margin-top: rem(70);
+  }
+}
+
 .not-found {
   // .not-found__container
 
   &__container {
     padding-top: rem(70);
     padding-bottom: rem(70);
-    margin-top: rem(70);
   }
 
   // .not-found__title

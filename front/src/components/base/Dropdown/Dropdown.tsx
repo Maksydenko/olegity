@@ -1,4 +1,5 @@
 import { ElementType, FC, MouseEvent, ReactNode, useState } from "react";
+import Link from "next/link";
 import { Menu, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
@@ -44,7 +45,7 @@ const Dropdown: FC<DropdownProps> = ({
     e.stopPropagation();
   };
 
-  const Tag = value ? "a" : "span";
+  const Tag = value ? Link : "span";
 
   return (
     <Menu
@@ -59,8 +60,8 @@ const Dropdown: FC<DropdownProps> = ({
         <>
           <Menu.Button className="dropdown__button" disabled={disabled}>
             <Tag
+              href={value || ""}
               {...(value && {
-                href: value,
                 onClick: (e) => {
                   handleClick(e);
                   close();

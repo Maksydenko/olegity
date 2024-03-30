@@ -37,6 +37,7 @@
   flex-direction: column;
   min-height: 100%;
   overflow: clip;
+  font-family: $primaryFont;
 
   @supports not (overflow: clip) {
     overflow: hidden;

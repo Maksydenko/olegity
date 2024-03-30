@@ -1,8 +1,11 @@
 import { FC } from "react";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
-import Btn from "@/components/form/Btn/Btn";
+import Btn from "@/components/shared/Btn/Btn";
+import TextBlockList from "./TextBlockItems/TextBlockList";
+
+import { getTranslationValueByKey } from "./getTranslationValueByKey.util";
 
 import { ILinkWithoutIcon } from "@/interfaces/link.interface";
 
@@ -13,32 +16,23 @@ interface TextBlockProps {
 }
 
 const TextBlock: FC<TextBlockProps> = ({ className, keyword, link }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
-  // Get translation
-  interface IGetTranslation {
-    (key: string): string;
-  }
-  const getTranslation: IGetTranslation = (key) => {
-    return `${keyword}.${key}`;
-  };
-
-  // const translationTitle = t(getTranslation("title"));
-  // const translationText = t(getTranslation("text"), {
-  //   returnObjects: true,
-  // });
-
-  // const textItems = translationText.map((textItem) => {
-  //   return <p key={textItem}>{t(textItem)}</p>;
-  // });
+  const translatedTitle = t(getTranslationValueByKey(keyword, "title"));
+  const translatedTexts: string[] = t(
+    getTranslationValueByKey(keyword, "text"),
+    {
+      returnObjects: true,
+    }
+  );
 
   return (
     <div className={clsx(className, "text-block")}>
-      <h2 className="text-block__title">{"title"}</h2>
-      <div className="text-block__text">{"text"}</div>
+      <h2 className="text-block__title">{translatedTitle}</h2>
+      <TextBlockList texts={translatedTexts} />
       {link && (
         <Btn className="text-block" path={link.value}>
-          {"(link.label)"}
+          {t(link.label)}
         </Btn>
       )}
     </div>

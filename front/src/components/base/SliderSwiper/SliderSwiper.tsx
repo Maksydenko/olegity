@@ -1,11 +1,14 @@
-"use client";
-
 import { FC, Key, ReactNode, useEffect, useRef } from "react";
 import clsx from "clsx";
 
 import Nav from "./Nav";
 
 import { useBullets } from "./useBullets";
+
+import { IPropBreakpoints } from "./breakpoints.interface";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // import Swiper core and required modules
 import {
@@ -21,13 +24,7 @@ import {
   Virtual,
 } from "swiper/modules";
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/scss";
-// import "swiper/scss/navigation";
-import "swiper/scss/pagination";
+// Import Swiper types
 import {
   AutoplayOptions,
   HashNavigationOptions,
@@ -37,7 +34,12 @@ import {
   ScrollbarOptions,
   SwiperOptions,
 } from "swiper/types";
-import { IPropBreakpoints } from "./breakpoints.interface";
+
+// Import Swiper styles
+import "swiper/scss";
+// import "swiper/scss/navigation";
+import "swiper/scss/pagination";
+import "swiper/scss/hash-navigation";
 // import "swiper/scss/scrollbar";
 
 interface ISlide {

@@ -1,5 +1,4 @@
-import { FC, KeyboardEvent } from "react";
-import clsx from "clsx";
+import { FC } from "react";
 
 import Img from "@/components/base/Img/Img";
 
@@ -13,30 +12,20 @@ interface ThemeSwitcherItemProps {
 }
 
 const ThemeSwitcherItem: FC<ThemeSwitcherItemProps> = ({
-  theme: { icon, label },
+  theme: { icon, label, value },
   onClick,
   checked,
   setCurrentTheme,
 }) => {
   const handleChange = () => {
-    setCurrentTheme(label);
+    setCurrentTheme(value);
 
     if (onClick) {
       onClick();
     }
   };
 
-  // Handle key down
-  interface IHandleKeyDown {
-    ({ key }: KeyboardEvent): void;
-  }
-  const handleKeyDown: IHandleKeyDown = ({ key }) => {
-    if (key === "Enter") {
-      handleChange();
-    }
-  };
-
-  const id = `theme-${label}`;
+  const id = `theme-${value}`;
 
   return (
     <>
@@ -49,15 +38,8 @@ const ThemeSwitcherItem: FC<ThemeSwitcherItemProps> = ({
       />
       <label
         htmlFor={id}
-        className={clsx(
-          "theme-switcher__label",
-          checked && "theme-switcher__label_checked"
-        )}
+        className="theme-switcher__label"
         aria-label={`Set ${label} theme`}
-        onKeyDown={handleKeyDown}
-        {...(!checked && {
-          tabIndex: 0,
-        })}
       >
         <Img
           className="theme-switcher__img"

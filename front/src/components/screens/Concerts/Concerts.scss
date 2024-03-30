@@ -2,9 +2,11 @@
 @import "./Gallery/Gallery";
 
 .concerts-page {
-  margin-top: rem(70);
+  > main {
+    margin-top: rem(70);
 
-  > section {
-    margin-bottom: rem(50);
+    > section {
+      margin-bottom: rem(50);
+    }
   }
 }

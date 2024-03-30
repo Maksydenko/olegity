@@ -1,7 +1,6 @@
-"use client";
-
-import { FC, useCallback, useEffect } from "react";
-import { useTranslation } from "next-i18next";
+import { FC } from "react";
+import { useRouter } from "next/router";
+import { i18n } from "next-i18next";
 
 import { ILinkWithoutIcon } from "@/interfaces/link.interface";
 
@@ -14,35 +13,26 @@ const LanguageSwitcherItem: FC<LanguageSwitcherItemProps> = ({
   language: { label, value },
   onClick,
 }) => {
-  const { i18n } = useTranslation();
-  const { language } = i18n;
+  const { push, pathname, asPath } = useRouter();
 
-  const setHTMLLang = useCallback(() => {
-    const htmlElement = document.querySelector("html");
-    htmlElement?.setAttribute("lang", value);
-  }, [value]);
+  const currentLanguage = i18n?.language;
 
   const handleChangeLanguage = () => {
-    i18n.changeLanguage(value);
-    setHTMLLang();
+    push(pathname, asPath, {
+      locale: value,
+    });
 
     if (onClick) {
       onClick();
     }
   };
 
-  useEffect(() => {
-    if (language !== "en") {
-      setHTMLLang();
-    }
-  }, [language, setHTMLLang]);
-
   return (
     <li className="language-switcher__item">
       <button
         className="language-switcher__btn"
         type="button"
-        disabled={value === language}
+        disabled={value === currentLanguage}
         onClick={handleChangeLanguage}
       >
         {label}

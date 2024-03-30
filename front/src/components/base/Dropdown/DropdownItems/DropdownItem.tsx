@@ -1,4 +1,4 @@
-import { FC, ReactNode, useState } from "react";
+import { FC, ReactNode } from "react";
 import { Menu } from "@headlessui/react";
 import clsx from "clsx";
 
@@ -7,26 +7,10 @@ interface DropdownItemProps {
 }
 
 const DropdownItem: FC<DropdownItemProps> = ({ children }) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleActivate = () => {
-    setIsActive(true);
-  };
-
-  const handleDeactivate = () => {
-    setIsActive(false);
-  };
-
   return (
-    <Menu.Item
-      as="div"
-      className={clsx("dropdown__item", isActive && "dropdown__item_active")}
-    >
+    <Menu.Item as="div" className="dropdown__item">
       {({ active }) => {
-        active && handleActivate();
-        !active && handleDeactivate();
-
-        return <>{children}</>;
+        return <div className={clsx(active && "_active")}>{children}</div>;
       }}
     </Menu.Item>
   );

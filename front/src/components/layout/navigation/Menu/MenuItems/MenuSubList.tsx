@@ -1,10 +1,12 @@
 import { FC } from "react";
+import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import Dropdown from "@/components/base/Dropdown/Dropdown";
 import RcCollapse from "@/components/base/RcCollapse/RcCollapse";
 
 import { INavLinkWithSubLinks } from "@/interfaces/link.interface";
+import Link from "next/link";
 
 interface MenuSubListProps {
   link: INavLinkWithSubLinks;
@@ -22,19 +24,21 @@ const MenuSubList: FC<MenuSubListProps> = ({
   const { label, subLinks } = link;
   const value = link?.value;
 
+  const { t } = useTranslation("common");
+
   const subLinkItems = subLinks.map((subLink) => {
     const { label: subLinkLabel, value: subLinkValue } = subLink;
-    const Tag = value ? "a" : "span";
+    const Tag = value ? Link : "span";
 
     return (
       <Tag
         key={subLinkLabel}
+        href={subLinkValue}
         {...(value && {
-          href: subLinkValue,
           onClick,
         })}
       >
-        {subLinkLabel}
+        {t(subLinkLabel)}
       </Tag>
     );
   });
@@ -48,7 +52,7 @@ const MenuSubList: FC<MenuSubListProps> = ({
           href: value,
         })}
       >
-        {label}
+        {t(label)}
       </HeaderTag>
     );
 
@@ -72,9 +76,9 @@ const MenuSubList: FC<MenuSubListProps> = ({
           className="menu__rc-collapse"
           reverse
           panels={panels}
-          expandIcon={() => (
-            <span className="menu__arrow _icon-arrow-top"></span>
-          )}
+          expandIcon={() => {
+            return <span className="menu__arrow _icon-arrow-top"></span>;
+          }}
           collapsible={value ? "icon" : "header"}
         />
       </li>
@@ -94,7 +98,7 @@ const MenuSubList: FC<MenuSubListProps> = ({
       value={value}
       icon={<span className="menu__arrow _icon-arrow-top"></span>}
     >
-      {label}
+      {t(label)}
     </Dropdown>
   );
 };

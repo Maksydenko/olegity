@@ -1,5 +1,5 @@
 import { FC } from "react";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 
 import { ISingle } from "@/interfaces/music.interface";
 
@@ -16,7 +16,7 @@ const MusicCardText: FC<MusicCardTextProps> = ({
   swiperParallax,
   swiperParallaxDurationAttr,
 }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   return (
     <>
@@ -45,7 +45,7 @@ const MusicCardText: FC<MusicCardTextProps> = ({
         })}
         {...swiperParallaxDurationAttr}
       >
-        <span className="music-card__genre">{`genres.${genre}`}</span>
+        <span className="music-card__genre">{t(`genres.${genre}`)}</span>
         <span className="music-card__year">{year}</span>
       </div>
     </>

@@ -2,6 +2,7 @@ import { IAlbum } from "@/interfaces/music.interface";
 
 export const albums: IAlbum[] = [
   {
+    slug: "one-more-city",
     title: "One More City",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",
@@ -37,6 +38,7 @@ export const albums: IAlbum[] = [
     ],
   },
   {
+    slug: "svinoe-rylo",
     title: "Свиное рыло (Pork snout)",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",
@@ -69,6 +71,7 @@ export const albums: IAlbum[] = [
     ],
   },
   {
+    slug: "tragic-city",
     title: "Tragic City",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",
@@ -102,6 +105,7 @@ export const albums: IAlbum[] = [
     ],
   },
   {
+    slug: "magic-city",
     title: "Magic City",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",
@@ -134,6 +138,7 @@ export const albums: IAlbum[] = [
     ],
   },
   {
+    slug: "viselicza",
     title: "Виселицца (Gallows)",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",
@@ -163,6 +168,7 @@ export const albums: IAlbum[] = [
     ],
   },
   {
+    slug: "yop",
     title: "ЁП (YOP)",
     artist: "ЛСП (LSP)",
     genre: "hip-hop-rap",

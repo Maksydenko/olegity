@@ -6,10 +6,6 @@
     padding-top: 56.25%;
   }
 
-  .img {
-    position: static;
-  }
-
   video,
   iframe {
     @include fill;

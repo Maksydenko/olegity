@@ -1,9 +1,10 @@
-import { FC } from "react";
-import { useSearchParams } from "next/navigation";
+import { FC, useEffect } from "react";
 import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 import clsx from "clsx";
 
-import { getNewQuery } from "@/utils/getNewQuery.util";
+import { useRouter } from "next/router";
+import { getSearchParam } from "@/utils/getSearchParam.util";
+import { addSearchParam } from "@/utils/addSearchParam.util";
 
 interface PaginationProps {
   className?: string;
@@ -28,25 +29,36 @@ const Pagination: FC<PaginationProps> = ({
   nextLabel = "",
   onPageChange,
 }) => {
-  const query = useSearchParams();
+  const { push, asPath } = useRouter();
+
+  const queryPage = getSearchParam(asPath, "page");
+  const currentPage = queryPage ? +queryPage - 1 : 0;
+
+  useEffect(() => {
+    const numberQueryPage = Number(queryPage);
+
+    if (!(numberQueryPage <= pageCount && numberQueryPage > 0)) {
+      const newPath = addSearchParam(asPath, "page");
+      push(newPath);
+    }
+  }, []);
 
   if (!itemsPerTotalLength) {
     return null;
   }
-
-  const queryArray = [...query];
-  const queryObject = Object.fromEntries(queryArray);
-  const queryPage = queryObject?.page;
-  const currentPage = +queryPage - 1 || 0;
 
   // Handle page change
   interface IHandlePageChange {
     (page: number): string;
   }
   const handlePageChange: IHandlePageChange = (page) => {
-    const newQuery = getNewQuery(queryObject, "page", page.toString());
+    const newPath = addSearchParam(
+      asPath,
+      "page",
+      page === 1 ? "" : page.toString()
+    );
 
-    return newQuery;
+    return newPath;
   };
 
   return (
@@ -72,7 +84,7 @@ const Pagination: FC<PaginationProps> = ({
       marginPagesDisplayed={marginPagesDisplayed}
       onPageChange={onPageChange}
       forcePage={currentPage}
-      eventListener=""
+      eventListener="onChange"
       hrefBuilder={(page) => handlePageChange(page)}
     />
   );

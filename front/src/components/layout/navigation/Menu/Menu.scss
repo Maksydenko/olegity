@@ -130,6 +130,11 @@
   // .menu__dropdown
 
   &__dropdown {
+    > div {
+      > div {
+        width: rem(200);
+      }
+    }
   }
 
   // .menu__rc-collapse
@@ -161,8 +166,19 @@
     }
 
     .rc-collapse-content {
+      padding: 0 rem(15) !important;
+      color: $darkColor !important;
+      background: $lightColor !important;
       border-radius: rem(3) !important;
       transform: translate(0, rem(10));
+    }
+
+    .rc-collapse-content-box {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: rem(15);
+        }
+      }
     }
   }
 
@@ -175,8 +191,7 @@
 
   &__item {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
 
     @media (min-width: $desktop) {
       &:not(:last-child) {
@@ -230,9 +245,12 @@
   // .menu__list
 
   &__list {
-    @media (min-width: $desktop) {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $desktop) {
+      flex-direction: column;
+      align-items: stretch;
     }
   }
 

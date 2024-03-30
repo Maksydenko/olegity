@@ -1,11 +1,14 @@
 import { FC } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import MenuSubList from "./MenuSubList";
 
+import { compareLinksValueWithPathname } from "@/utils/compareLinksValueWithPathname.util";
+
 import { INavLink, INavLinkWithSubLinks } from "@/interfaces/link.interface";
-import { compareLinksValueWithPathname } from "@/interfaces/compareLinksValueWithPathname.util";
 
 interface MenuItemProps {
   link: INavLink;
@@ -19,7 +22,7 @@ const MenuItem: FC<MenuItemProps> = ({ link, breakpoint, onClick }) => {
   const subLinks = link?.subLinks;
 
   const pathname = usePathname();
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const isActiveSubLink =
     subLinks && compareLinksValueWithPathname(subLinks, pathname);
@@ -36,18 +39,12 @@ const MenuItem: FC<MenuItemProps> = ({ link, breakpoint, onClick }) => {
     );
   }
 
-  const Tag = value ? "a" : "span";
+  const Tag = value ? Link : "span";
 
   return (
     <li className={clsx("menu__item", isActive && "menu__item_active")}>
-      <Tag
-        className="menu__link"
-        {...(value && {
-          href: value,
-        })}
-        onClick={onClick}
-      >
-        {label}
+      <Tag className="menu__link" href={value || ""} onClick={onClick}>
+        {t(label)}
       </Tag>
     </li>
   );

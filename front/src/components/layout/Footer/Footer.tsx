@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Link from "next/link";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
@@ -9,14 +9,12 @@ import FooterList from "./Items/FooterList";
 import { navLinks } from "@/data/navLinks.data";
 import socialLinks from "./socialLinks.data";
 
-import { ILinkWithoutIcon } from "@/interfaces/link.interface";
-
 interface FooterProps {
   className?: string;
 }
 
 const Footer: FC<FooterProps> = ({ className }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation(["common"]);
 
   return (
     <footer className={clsx(className, "footer")}>
@@ -31,14 +29,19 @@ const Footer: FC<FooterProps> = ({ className }) => {
               loader={false}
             />
           </Link>
-          <p className="footer__description">{"footer-description"}</p>
+          <p className="footer__description">{t("footer-description")}</p>
         </div>
         <FooterList
           className="_big"
-          title="(social-networks)"
+          title={t("social-networks")}
           links={socialLinks}
+          target="_blank"
         />
-        <FooterList className="_small" title="(navigation)" links={navLinks} />
+        <FooterList
+          className="_small"
+          title={t("navigation")}
+          links={navLinks}
+        />
       </div>
     </footer>
   );
