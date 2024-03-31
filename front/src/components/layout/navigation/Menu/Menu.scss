@@ -79,6 +79,12 @@
       background: rgba(0, 0, 0, 0.8);
       transition: right 0.3s ease 0s;
 
+      // .menu__body_active
+
+      &_active {
+        right: 0;
+      }
+
       // &::before {
       //   position: fixed;
       //   top: 0;
@@ -89,12 +95,6 @@
       //   content: "";
       //   background: rgba(0, 0, 0, 0.8);
       // }
-
-      // .menu__body_active
-
-      &_active {
-        right: 0;
-      }
     }
   }
 

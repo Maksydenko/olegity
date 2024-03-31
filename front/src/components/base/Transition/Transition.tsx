@@ -1,6 +1,5 @@
 import { FC, ReactNode } from "react";
 import { Transition as RootTransition } from "@headlessui/react";
-import clsx from "clsx";
 
 interface TransitionProps {
   className?: string;
@@ -10,7 +9,7 @@ interface TransitionProps {
 }
 
 const Transition: FC<TransitionProps> = ({
-  className,
+  className = "transition",
   children,
   appear = true,
   show,
@@ -18,13 +17,13 @@ const Transition: FC<TransitionProps> = ({
   return (
     <RootTransition appear={appear} show={show}>
       <RootTransition.Child
-        className={clsx(className, "transition")}
-        enter="transition__enter"
-        enterFrom="transition__enter-from"
-        enterTo="transition__enter-to"
-        leave="transition__leave"
-        leaveFrom="transition__leave-from"
-        leaveTo="transition__leave-to"
+        className={className}
+        enter={`${className}__enter`}
+        enterFrom={`${className}__enter-from`}
+        enterTo={`${className}__enter-to`}
+        leave={`${className}__leave`}
+        leaveFrom={`${className}__leave-from`}
+        leaveTo={`${className}__leave-to`}
       >
         {children}
       </RootTransition.Child>
