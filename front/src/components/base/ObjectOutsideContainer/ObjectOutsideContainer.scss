@@ -56,7 +56,7 @@ $object: 50%;
               aspect-ratio: unset;
 
               @supports not (aspect-ratio: unset) {
-                padding-top: 0;
+                padding-bottom: 0;
               }
             }
           }
@@ -129,7 +129,7 @@ $object: 50%;
               aspect-ratio: unset;
 
               @supports not (aspect-ratio: unset) {
-                padding-top: 0;
+                padding-bottom: 0;
               }
             }
           }
