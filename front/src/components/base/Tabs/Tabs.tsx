@@ -6,13 +6,15 @@ import clsx from "clsx";
 import Titles from "./Titles/Titles";
 import Contents from "./Contents/Contents";
 
-import { ITab } from "./tab.interface";
 import { getSearchParam } from "@/utils/getSearchParam.util";
+
+import { ITab } from "./tab.interface";
 
 interface TabsProps {
   className?: string;
   tabs: ITab[];
   vertical?: boolean;
+  manual?: boolean;
   defaultTabId?: number;
   searchParam?: string;
 }
@@ -21,6 +23,7 @@ const Tabs: FC<TabsProps> = ({
   className,
   tabs,
   vertical,
+  manual,
   defaultTabId,
   searchParam = "tab",
 }) => {
@@ -29,7 +32,6 @@ const Tabs: FC<TabsProps> = ({
 
   const { push, asPath } = useRouter();
 
-  // const queryTab = query?.tab;
   const queryTab = getSearchParam(asPath, "tab");
 
   const currentTabId = queryTab || defaultTabId || firstTabId;
@@ -48,9 +50,9 @@ const Tabs: FC<TabsProps> = ({
   return (
     <div className={clsx(className, "tabs", vertical && "tabs_vertical")}>
       <Tab.Group
+        selectedIndex={currentTabIndex}
         vertical={vertical}
-        defaultIndex={currentTabIndex}
-        manual
+        manual={manual}
         onChange={(index) => {
           const { id: newTabId } = tabs[index];
           push({
