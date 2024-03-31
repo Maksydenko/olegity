@@ -1,6 +1,7 @@
 import { FC } from "react";
 import clsx from "clsx";
 
+import Transition from "@/components/base/Transition/Transition";
 import MenuList from "./MenuItems/MenuList";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
@@ -41,11 +42,13 @@ const Menu: FC<MenuProps> = ({
       )}
       <div className={clsx("menu__body", isScrollLock && "menu__body_active")}>
         <nav className="menu__content">
-          <MenuList
-            links={navLinks}
-            breakpoint={isBreakpoint}
-            onClick={onClick}
-          />
+          <Transition appear={false} show={isBreakpoint ? isScrollLock : true}>
+            <MenuList
+              breakpoint={isBreakpoint}
+              links={navLinks}
+              onClick={onClick}
+            />
+          </Transition>
           <LanguageSwitcher className="menu__language-switcher" />
           <ThemeSwitcher className="menu__theme-switcher" />
         </nav>
