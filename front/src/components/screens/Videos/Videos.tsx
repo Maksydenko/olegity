@@ -13,7 +13,7 @@ const Videos: FC<VideosProps> = () => {
   return (
     <Layout className="videos-page">
       <Seo title={t("pages.videos")} />
-      <AllVideos className="videos__all-videos" />
+      <AllVideos className="videos-page__all-videos" />
     </Layout>
   );
 };

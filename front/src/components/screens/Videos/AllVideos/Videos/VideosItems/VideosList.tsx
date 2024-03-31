@@ -1,15 +1,15 @@
 import { FC } from "react";
 
-import VideoItem from "./VideoItem";
+import VideosItem from "./VideosItem";
 
 import { IVideo } from "@/interfaces/video.interface";
 
-interface VideoListProps {
+interface VideosListProps {
   videos: IVideo[];
   searchText: string;
 }
 
-const VideoList: FC<VideoListProps> = ({ videos, searchText }) => {
+const VideosList: FC<VideosListProps> = ({ videos, searchText }) => {
   const videoItems = videos.map((video) => {
     const { title } = video;
 
@@ -19,10 +19,10 @@ const VideoList: FC<VideoListProps> = ({ videos, searchText }) => {
     if (!titleLowerCased.includes(searchTextLowerCased)) {
       return null;
     }
-    return <VideoItem key={title} video={video} />;
+    return <VideosItem key={title} video={video} />;
   });
 
-  return <div className="video__list">{videoItems}</div>;
+  return <div className="videos__list">{videoItems}</div>;
 };
 
-export default VideoList;
+export default VideosList;
