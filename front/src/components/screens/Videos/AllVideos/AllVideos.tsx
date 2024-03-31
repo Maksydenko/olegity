@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import Tabs from "@/components/base/Tabs/Tabs";
-import Video from "./Video/Video";
+import Videos from "./Videos/Videos";
 
 import { musicVideos } from "@/data/videos/musicVideos.data";
 import { animatedVideos } from "@/data/videos/animatedVideos.data";
@@ -19,12 +19,14 @@ const AllVideos: FC<AllVideosProps> = ({ className }) => {
     {
       id: "music-videos",
       title: t("music-videos"),
-      content: <Video className="all-videos__videos" videos={musicVideos} />,
+      content: <Videos className="all-videos__videos" videos={musicVideos} />,
     },
     {
       id: "animated-videos",
       title: t("animated-videos"),
-      content: <Video className="all-videos__videos" videos={animatedVideos} />,
+      content: (
+        <Videos className="all-videos__videos" videos={animatedVideos} />
+      ),
     },
   ];
 

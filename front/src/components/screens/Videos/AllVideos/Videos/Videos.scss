@@ -1,5 +1,5 @@
-.video {
-  // .video__container
+.videos {
+  // .videos__container
 
   &__container {
     @media (min-width: $desktop) {
@@ -7,13 +7,13 @@
     }
   }
 
-  // .video__search
+  // .videos__search
 
   &__search {
     margin-bottom: rem(30);
   }
 
-  // .video__list
+  // .videos__list
 
   &__list {
     display: grid;
@@ -29,14 +29,14 @@
     }
   }
 
-  // .video__item
+  // .videos__item
 
   &__item {
   }
 
-  // .video__popup-video
+  // .videos__popup-videos
 
-  &__popup-video {
+  &__popup-videos {
     .popup-video {
       // .popup-video__img
 
@@ -51,7 +51,7 @@
     }
   }
 
-  // .video__title
+  // .videos__title
 
   &__title {
     text-align: center;
