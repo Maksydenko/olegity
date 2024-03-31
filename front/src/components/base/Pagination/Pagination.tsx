@@ -34,14 +34,18 @@ const Pagination: FC<PaginationProps> = ({
   const queryPage = getSearchParam(asPath, "page");
   const currentPage = queryPage ? +queryPage - 1 : 0;
 
-  useEffect(() => {
-    const numberQueryPage = Number(queryPage);
+  useEffect(
+    () => {
+      const numberQueryPage = Number(queryPage);
 
-    if (!(numberQueryPage <= pageCount && numberQueryPage > 0)) {
-      const newPath = addSearchParam(asPath, "page");
-      push(newPath);
-    }
-  }, []);
+      if (!(numberQueryPage <= pageCount && numberQueryPage > 0)) {
+        const newPath = addSearchParam(asPath, "page");
+        push(newPath);
+      }
+    },
+    /* eslint-disable-next-line  */
+    [asPath, pageCount, queryPage]
+  );
 
   if (!itemsPerTotalLength) {
     return null;

@@ -49,30 +49,6 @@
   &__break-link {
   }
 
-  // .pagination__page-link
-  &__page-link,
-  // .pagination__previous-link
-  &__previous-link,
-  // .pagination__next-link
-  &__next-link,
-  // .pagination__break-link
-  &__break-link {
-    @include centered(flex);
-    @extend %btn;
-    width: rem(50);
-    height: rem(50);
-    padding: 0;
-
-    @media (max-width: $mobile) {
-      width: rem(30);
-      height: rem(30);
-    }
-
-    &:not([class*="active"], [class*="disabled"]) {
-      @extend %btn_hover;
-    }
-  }
-
   // .pagination__active
 
   &__active {
@@ -91,7 +67,43 @@
   }
 
   // .pagination__disabled-link
+  &__disabled-link {
+  }
 
+  // .pagination__page-link
+  &__page-link,
+  // .pagination__previous-link
+  &__previous-link,
+  // .pagination__next-link
+  &__next-link,
+  // .pagination__break-link
+  &__break-link {
+    @include centered(flex);
+    @extend %btn;
+    width: rem(50);
+    height: rem(50);
+    padding: 0;
+
+    @media (max-width: $mobile) {
+      width: rem(30);
+      height: rem(30);
+    }
+  }
+
+  // .pagination__page-link
+  &__page-link,
+  // .pagination__previous-link
+  &__previous-link,
+  // .pagination__next-link
+  &__next-link {
+    &:not(.pagination__active-link, .pagination__disabled-link) {
+      @extend %btn_hover;
+    }
+  }
+
+  // .pagination__break-link
+  &__break-link,
+  // .pagination__disabled-link
   &__disabled-link {
     @extend %btn_active;
     cursor: not-allowed;
