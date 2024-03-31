@@ -48,7 +48,7 @@ export const useThemeSwitch: IUseSwitchTheme = () => {
       localStorage.setItem("theme", currentTheme);
       documentElement.setAttribute("data-theme", currentTheme);
     }
-  }, [currentTheme, systemTheme]);
+  }, [currentTheme, systemTheme, updateSystemTheme]);
 
   return {
     currentTheme,
