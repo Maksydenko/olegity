@@ -53,7 +53,7 @@ const Document = () => {
         <meta name="msapplication-TileColor" content="#fff" />
         <meta name="theme-color" content="#fff" />
       </Head>
-      <body>
+      <body id="body">
         <Main />
         <NextScript />
       </body>
