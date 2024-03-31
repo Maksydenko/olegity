@@ -1,7 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { appWithTranslation } from "next-i18next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "@/scss/globals.scss";
 
@@ -15,7 +14,6 @@ const App = ({ Component, pageProps }: AppProps) => {
         />
       </Head>
       <Component {...pageProps} />
-      <SpeedInsights />
     </>
   );
 };
