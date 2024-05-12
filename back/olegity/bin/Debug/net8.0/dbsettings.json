@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Single.mdf;Initial Catalog=Single;Integrated Security=True;MultipleActiveResultSets=true"
+  }
+}
