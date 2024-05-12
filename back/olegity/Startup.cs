@@ -30,7 +30,16 @@ namespace olegity
 
             services.AddTransient<IAllSingles, SingleRepository>();
             services.AddTransient<ISinglesPages, PageRepository>();
+
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.WithOrigins("http://localhost:3000")
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
         }
+
 
 
         public void configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IHostingEnvironment env)
@@ -47,6 +56,8 @@ namespace olegity
                 DBObjects.initial(content);
             }
 
+            app.UseCors("MyPolicy");
+            app.UseMvc();
 
         }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kosen\\source\\repos\\olegity\\back\\olegity\\olegity.csproj": {}
+    "D:\\LSP\\olegity\\olegity\\olegity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kosen\\source\\repos\\olegity\\back\\olegity\\olegity.csproj": {
+    "D:\\LSP\\olegity\\olegity\\olegity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kosen\\source\\repos\\olegity\\back\\olegity\\olegity.csproj",
+        "projectUniqueName": "D:\\LSP\\olegity\\olegity\\olegity.csproj",
         "projectName": "olegity",
-        "projectPath": "C:\\Users\\kosen\\source\\repos\\olegity\\back\\olegity\\olegity.csproj",
+        "projectPath": "D:\\LSP\\olegity\\olegity\\olegity.csproj",
         "packagesPath": "C:\\Users\\kosen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kosen\\source\\repos\\olegity\\back\\olegity\\obj\\",
+        "outputPath": "D:\\LSP\\olegity\\olegity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kosen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,6 +50,14 @@
               "version": "[3.0.0, )"
             },
             "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
               "target": "Package",
               "version": "[5.3.0, )"
             },
@@ -94,6 +102,10 @@
             "NuGet.Frameworks": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
             },
             "System.Text.Json": {
               "target": "Package",

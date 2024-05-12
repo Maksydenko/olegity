@@ -1,5 +1,6 @@
+
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Single.mdf;Initial Catalog=Single;Integrated Security=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Single.mdf;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }

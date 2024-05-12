@@ -16,7 +16,7 @@ namespace olegity
 
         public static IWebHostBuilder CreateHostBuilder(string[] args)
         {
-            string envFilePath = Path.Combine(Directory.GetCurrentDirectory(), "BACK_PORT.env");
+            string envFilePath = Path.Combine(Directory.GetCurrentDirectory(), "BACK_PORT.env.example");
             DotNetEnv.Env.Load(envFilePath);
             return CreateWebHostBuilder(args);
         }
