@@ -31,14 +31,12 @@ namespace olegity
             services.AddTransient<IAllSingles, SingleRepository>();
             services.AddTransient<ISinglesPages, PageRepository>();
 
-            services.AddCors(options =>
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
-                options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("http://localhost:3000")
-                                      .AllowAnyMethod()
-                                      .AllowAnyHeader()
-                                      .AllowCredentials());
-            });
+                builder.WithOrigins("http://localhost:3000")
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
 
@@ -56,6 +54,8 @@ namespace olegity
                 DBObjects.initial(content);
             }
 
+            app.UseCors("MyPolicy");
+            app.UseMvc();
 
         }
 

@@ -5,6 +5,7 @@ using olegity.ViewPages;
 
 namespace olegity.Contollers
 {
+    [EnableCors("MyPolicy")]
     public class SinglesController:Controller
     {
         private readonly IAllSingles _allSingles;
