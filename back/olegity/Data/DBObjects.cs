@@ -8,7 +8,7 @@ namespace olegity.Data
         public static void initial(AppDBContent content)
         {
 
-            if (content.Page.Any())
+            if (content.Page.Any()) 
                 content.Page.AddRange(Pages.Select(c => c.Value));
 
             if (content.Single_Songs.Any())

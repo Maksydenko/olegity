@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\back",
-    "\\back\\olegity",
-    "\\back\\olegity\\Contollers",
-    "\\front\\src",
-    "\\front\\src\\components",
-    "\\front\\src\\components\\layout"
+    "\\back\\olegity"
   ],
-  "SelectedNode": "\\back\\olegity.sln",
+  "SelectedNode": "\\back\\olegity",
   "PreviewInSolutionExplorer": false
 }

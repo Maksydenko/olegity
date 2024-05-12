@@ -1,0 +1,345 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\albums\\magic-city.jpg",
+      "PackagePath": "staticwebassets\\img\\albums\\magic-city.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\albums\\one-more-city.jpg",
+      "PackagePath": "staticwebassets\\img\\albums\\one-more-city.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\albums\\svinoe-rylo.jpg",
+      "PackagePath": "staticwebassets\\img\\albums\\svinoe-rylo.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\albums\\tragic-city.jpg",
+      "PackagePath": "staticwebassets\\img\\albums\\tragic-city.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\albums\\viselicza.jpg",
+      "PackagePath": "staticwebassets\\img\\albums\\viselicza.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\albums\\yop.jpg",
+      "PackagePath": "staticwebassets\\img\\albums\\yop.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\ep\\konditerskaya.jpg",
+      "PackagePath": "staticwebassets\\img\\ep\\konditerskaya.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\ep\\romantic-colegtion.jpg",
+      "PackagePath": "staticwebassets\\img\\ep\\romantic-colegtion.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\ep\\videt-tsvetnyye-sny.jpg",
+      "PackagePath": "staticwebassets\\img\\ep\\videt-tsvetnyye-sny.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\10-negrityat.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\10-negrityat.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\16ezumiye.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\16ezumiye.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\5-am.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\5-am.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\amneziya-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\amneziya-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\amneziya.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\amneziya.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\ataka-kota.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\ataka-kota.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\avtopley-tuncrashers-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\avtopley-tuncrashers-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\avtopley.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\avtopley.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\beybi-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\beybi-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\bezumiye.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\bezumiye.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\celebration.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\celebration.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\chempionat-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\chempionat-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\clouny.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\clouny.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\dengi-ne-problema.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\dengi-ne-problema.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\disney.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\disney.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\dom-khrustalnuy.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\dom-khrustalnuy.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\dor-blyu.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\dor-blyu.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\dzhentelmen-shou.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\dzhentelmen-shou.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\est-dengi-net-chuvstv.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\est-dengi-net-chuvstv.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\feniks.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\feniks.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\flyuorografiya.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\flyuorografiya.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\gryaznye-tantsy.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\gryaznye-tantsy.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\houston.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\houston.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\imperial.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\imperial.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\khiona.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\khiona.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\kholostyak-feduk-egor-krid.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\kholostyak-feduk-egor-krid.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\kholostyak-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\kholostyak-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\kholostyak.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\kholostyak.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\klyukva-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\klyukva-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\koroleva-bala.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\koroleva-bala.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\kurtochka.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\kurtochka.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\malenkiy-malchik-2-0.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\malenkiy-malchik-2-0.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\malenkiy-prints-ivan-starzev-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\malenkiy-prints-ivan-starzev-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\malenkiy-prints-malk-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\malenkiy-prints-malk-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\malenkiy-prints.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\malenkiy-prints.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\mechtat-i-lyubit.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\mechtat-i-lyubit.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\meteorit.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\meteorit.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\mne-skuchno-zhit.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\mne-skuchno-zhit.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\mortvyye-prezidenty.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\mortvyye-prezidenty.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\mrak.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\mrak.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\nayt-layf.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\nayt-layf.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\ne-ubezhal.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\ne-ubezhal.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\net-tebya.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\net-tebya.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\nikogda.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\nikogda.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\obmanula.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\obmanula.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\paren-s-bloka.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\paren-s-bloka.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\patron.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\patron.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\pimperial.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\pimperial.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\promenad.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\promenad.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\sektor-priz.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\sektor-priz.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\skate.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\skate.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\snegovichok.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\snegovichok.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\solntse-zolotoe.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\solntse-zolotoe.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\spinning.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\spinning.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\stakan.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\stakan.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\stress.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\stress.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\svodim-s-uma.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\svodim-s-uma.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\tiktonik.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\tiktonik.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\uragany.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\uragany.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\uvyaz.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\uvyaz.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\vecherinka-remix.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\vecherinka-remix.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\vechnaya-vesna.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\vechnaya-vesna.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\vesnovka-ushacha.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\vesnovka-ushacha.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\wipe-your-feet.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\wipe-your-feet.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\zavtra.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\zavtra.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\zelenoglazyye-deffki.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\zelenoglazyye-deffki.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\zolotoy-malchik.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\zolotoy-malchik.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\zvezda-re-25-17.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\zvezda-re-25-17.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\img\\singles\\zvezdnaya-karta.jpg",
+      "PackagePath": "staticwebassets\\img\\singles\\zvezdnaya-karta.jpg"
+    },
+    {
+      "Id": "D:\\LSP\\olegity\\olegity\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.olegity.props",
+      "PackagePath": "build\\olegity.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.olegity.props",
+      "PackagePath": "buildMultiTargeting\\olegity.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.olegity.props",
+      "PackagePath": "buildTransitive\\olegity.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.olegity.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

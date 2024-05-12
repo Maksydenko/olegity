@@ -9,27 +9,27 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = olegity
 build_property.RootNamespace = olegity
-build_property.ProjectDir = C:\Users\kosen\source\repos\olegity\back\olegity\
+build_property.ProjectDir = C:\Users\kosen\Source\Repos\olegity\back\olegity\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kosen\source\repos\olegity\back\olegity
+build_property.MSBuildProjectDirectory = C:\Users\kosen\Source\Repos\olegity\back\olegity
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kosen/source/repos/olegity/back/olegity/Views/Shared/_Layout.cshtml]
+[C:/Users/kosen/Source/Repos/olegity/back/olegity/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kosen/source/repos/olegity/back/olegity/Views/Singles/List.cshtml]
+[C:/Users/kosen/Source/Repos/olegity/back/olegity/Views/Singles/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luZ2xlc1xMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kosen/source/repos/olegity/back/olegity/Views/_ViewImports.cshtml]
+[C:/Users/kosen/Source/Repos/olegity/back/olegity/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kosen/source/repos/olegity/back/olegity/Views/_ViewStart.cshtml]
+[C:/Users/kosen/Source/Repos/olegity/back/olegity/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
