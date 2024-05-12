@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabbed Content</title>
+    <style>
+        .tabcontent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div id="tab1" class="tabcontent">
+        <div class="row mt-5 mb-2">
+            @foreach (var single in Model.AllSingles)
+            {
+                @if (single.pageID == 1)
+                {
+                    <div class="col-lg-4">
+                        <img class="img-thumbnail" src="@single.img" alt="@single.name" />
+                        <h2>@single.name</h2>
+                        <p>@single.singer</p>
+                        <p>@single.genre</p>
+
+                        <form action="@single.spotifyLink" method="get" target="_blank">
+                            <button class="btn-danger">Spotify</button>
+                        </form>
+
+                        <form action="@single.appleMusicLink" method="get" target="_blank">
+                            <button class="btn-danger">Apple</button>
+                        </form>
+
+                        <form action="@single.youtubeLink" method="get" target="_blank">
+                            <button class="btn-danger">Youtube</button>
+                        </form>
+
+                        <form action="@single.deezerLink" method="get" target="_blank">
+                            <button class="btn-danger">Dezzer</button>
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+        <div class="row mt-5 mb-2">
+            @foreach (var single in Model.AllSingles)
+            {
+                @if (single.pageID == 2)
+                {
+                    <div class="col-lg-4">
+                        <img class="img-thumbnail" src="@single.img" alt="@single.name" />
+                        <h2>@single.name</h2>
+                        <p>@single.singer</p>
+                        <p>@single.genre</p>
+
+                        <form action="@single.spotifyLink" method="get" target="_blank">
+                            <button class="btn-danger">Spotify</button>
+                        </form>
+
+                        <form action="@single.appleMusicLink" method="get" target="_blank">
+                            <button class="btn-danger">Apple</button>
+                        </form>
+
+                        <form action="@single.youtubeLink" method="get" target="_blank">
+                            <button class="btn-danger">Youtube</button>
+                        </form>
+
+                        <form action="@single.deezerLink" method="get" target="_blank">
+                            <button class="btn-danger">Dezzer</button>
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div id="tab3" class="tabcontent">
+        <div class="row mt-5 mb-2">
+            @foreach (var single in Model.AllSingles)
+            {
+                @if (single.pageID == 3)
+                {
+                    <div class="col-lg-4">
+                        <img class="img-thumbnail" src="@single.img" alt="@single.name" />
+                        <h2>@single.name</h2>
+                        <p>@single.singer</p>
+                        <p>@single.genre</p>
+
+                        <form action="@single.spotifyLink" method="get" target="_blank">
+                            <button class="btn-danger">Spotify</button>
+                        </form>
+
+                        <form action="@single.appleMusicLink" method="get" target="_blank">
+                            <button class="btn-danger">Apple</button>
+                        </form>
+
+                        <form action="@single.youtubeLink" method="get" target="_blank">
+                            <button class="btn-danger">Youtube</button>
+                        </form>
+
+                        <form action="@single.deezerLink" method="get" target="_blank">
+                            <button class="btn-danger">Dezzer</button>
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div id="tab4" class="tabcontent">
+        <div class="row mt-5 mb-2">
+            @foreach (var single in Model.AllSingles)
+            {
+                @if (single.pageID == 4)
+                {
+                    <div class="col-lg-4">
+                        <img class="img-thumbnail" src="@single.img" alt="@single.name" />
+                        <h2>@single.name</h2>
+                        <p>@single.singer</p>
+                        <p>@single.genre</p>
+
+                        <form action="@single.spotifyLink" method="get" target="_blank">
+                            <button class="btn-danger">Spotify</button>
+                        </form>
+
+                        <form action="@single.appleMusicLink" method="get" target="_blank">
+                            <button class="btn-danger">Apple</button>
+                        </form>
+
+                        <form action="@single.youtubeLink" method="get" target="_blank">
+                            <button class="btn-danger">Youtube</button>
+                        </form>
+
+                        <form action="@single.deezerLink" method="get" target="_blank">
+                            <button class="btn-danger">Dezzer</button>
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div id="tab5" class="tabcontent">
+        <div class="row mt-5 mb-2">
+            @foreach (var single in Model.AllSingles)
+            {
+                @if (single.pageID == 5)
+                {
+                    <div class="col-lg-4">
+                        <img class="img-thumbnail" src="@single.img" alt="@single.name" />
+                        <h2>@single.name</h2>
+                        <p>@single.singer</p>
+                        <p>@single.genre</p>
+
+                        <form action="@single.spotifyLink" method="get" target="_blank">
+                            <button class="btn-danger">Spotify</button>
+                        </form>
+
+                        <form action="@single.appleMusicLink" method="get" target="_blank">
+                            <button class="btn-danger">Apple</button>
+                        </form>
+
+                        <form action="@single.youtubeLink" method="get" target="_blank">
+                            <button class="btn-danger">Youtube</button>
+                        </form>
+
+                        <form action="@single.deezerLink" method="get" target="_blank">
+                            <button class="btn-danger">Dezzer</button>
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div id="tab6" class="tabcontent">
+        <div class="row mt-5 mb-2">
+            @foreach (var single in Model.AllSingles)
+            {
+                @if (single.pageID == 6)
+                {
+                    <div class="col-lg-4">
+                        <img class="img-thumbnail" src="@single.img" alt="@single.name" />
+                        <h2>@single.name</h2>
+                        <p>@single.singer</p>
+                        <p>@single.genre</p>
+
+                        <form action="@single.spotifyLink" method="get" target="_blank">
+                            <button class="btn-danger">Spotify</button>
+                        </form>
+
+                        <form action="@single.appleMusicLink" method="get" target="_blank">
+                            <button class="btn-danger">Apple</button>
+                        </form>
+
+                        <form action="@single.youtubeLink" method="get" target="_blank">
+                            <button class="btn-danger">Youtube</button>
+                        </form>
+
+                        <form action="@single.deezerLink" method="get" target="_blank">
+                            <button class="btn-danger">Dezzer</button>
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div id="tabs">
+        <button class="tablink" onclick="openTab(event, 'tab1')">Tab 1</button>
+        <button class="tablink" onclick="openTab(event, 'tab2')">Tab 2</button>
+        <button class="tablink" onclick="openTab(event, 'tab3')">Tab 3</button>
+        <button class="tablink" onclick="openTab(event, 'tab4')">Tab 4</button>
+        <button class="tablink" onclick="openTab(event, 'tab5')">Tab 5</button>
+        <button class="tablink" onclick="openTab(event, 'tab6')">Tab 6</button>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+            window.scrollTo(0, 0);
+        }
+
+        window.onload = function () {
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablink")[0].classList.add("active");
+        };
+    </script>
+
+</body>
+</html>
