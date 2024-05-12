@@ -23,10 +23,14 @@ const Nav: FC<NavProps> = ({ swiperRef, slidesLength, initialSlide, loop }) => {
     const swiperCurrent = swiperRef.current;
     const swiper = swiperCurrent?.swiper;
 
-    if (direction) {
-      swiper?.slidePrev();
-    } else {
-      swiper?.slideNext();
+    switch (direction) {
+      case "prev":
+        swiper?.slidePrev();
+        break;
+      case "next":
+        swiper?.slideNext();
+      default:
+        break;
     }
   };
 
