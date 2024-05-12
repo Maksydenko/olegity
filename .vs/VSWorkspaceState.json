@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\back",
-    "\\back\\olegity"
+    "\\back\\olegity",
+    "\\back\\olegity\\Contollers",
+    "\\front\\src",
+    "\\front\\src\\components",
+    "\\front\\src\\components\\layout"
   ],
-  "SelectedNode": "\\back\\olegity\\dbsettings.json",
+  "SelectedNode": "\\back\\olegity.sln",
   "PreviewInSolutionExplorer": false
 }

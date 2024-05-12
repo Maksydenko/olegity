@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using olegity.Data.Interfaces;
 using olegity.Data.Models;
 using olegity.ViewPages;
+using System.Web.Http;
 
 namespace olegity.Contollers
 {
     [EnableCors("MyPolicy")]
     public class SinglesController:Controller
     {
+
         private readonly IAllSingles _allSingles;
         private readonly ISinglesPages _allPages;
 
@@ -33,6 +36,7 @@ namespace olegity.Contollers
             obj.SinggPage = "Singles";
             return View(obj);
         }
+
 
 
     }

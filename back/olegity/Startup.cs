@@ -37,7 +37,9 @@ namespace olegity
                        .AllowAnyMethod()
                        .AllowAnyHeader();
             }));
+
         }
+
 
 
         public void configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IHostingEnvironment env)

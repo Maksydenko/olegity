@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cr2/c+MH7mKC7c+vFSRW+EwIFOYdL1f86HFOjbCwTgciDX1rTZU9/HJtwuzkSVCWFIpCeACCCXPnk7kSic6UaA==",
+  "dgSpecHash": "drlu66tmngJbRJFdbJRcrB5KVZ4JkKNN0LWXTVDsLZOPFh8rLKONqE3PA2UlQt7hGMfwQNZl030h47NxxuHkug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kosen\\source\\repos\\olegity\\back\\olegity\\olegity.csproj",
+  "projectFilePath": "C:\\Users\\kosen\\Source\\Repos\\olegity\\back\\olegity\\olegity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kosen\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\kosen\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
