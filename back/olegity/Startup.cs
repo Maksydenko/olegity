@@ -30,6 +30,15 @@ namespace olegity
 
             services.AddTransient<IAllSingles, SingleRepository>();
             services.AddTransient<ISinglesPages, PageRepository>();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://localhost:3000")
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader()
+                                      .AllowCredentials());
+            });
         }
 
 
