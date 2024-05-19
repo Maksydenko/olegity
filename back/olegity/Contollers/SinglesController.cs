@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using olegity.Data.Interfaces;
 using olegity.Data.Models;
 using olegity.ViewPages;
+using System;
 using System.Linq;
 
 namespace olegity.Controllers
@@ -24,14 +25,30 @@ namespace olegity.Controllers
         [HttpGet("list/{pageID}")]
         public IActionResult List(int pageID)
         {
-            var singles = _allSingles.Singles.Where(s => s.pageID == pageID).ToList();
-            var response = new SingelsListViewPages
+            if (pageID!=0)
             {
-                AllSingles = singles,
-                SinggPage = "Singles"
-            };
+                var singles = _allSingles.Singles.Where(s => s.pageID == pageID).ToList();
+                var response = new SingelsListViewPages
+                {
+                    AllSingles = singles,
+                    SinggPage = "Singles"
+                };
+                return Ok(response);
+            }
 
-            return Ok(response);
+            else 
+            {
+                var singles = _allSingles.Singles.ToList();
+                var response = new SingelsListViewPages
+                {
+
+                    AllSingles = singles,
+                    SinggPage = "Singles"
+                };
+                return Ok(response);
+            }
+            
+
         }
     }
 }
