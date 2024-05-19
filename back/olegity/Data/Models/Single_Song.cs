@@ -1,4 +1,6 @@
-﻿namespace olegity.Data.Models
+﻿using System.Text.Json.Serialization;
+
+namespace olegity.Data.Models
 {
     public class Single_Song
     {
@@ -22,6 +24,9 @@
 
         public int pageID { set; get; }
 
+        [JsonIgnore]
         public virtual Page Page { set; get; }
     }
+
+
 }
