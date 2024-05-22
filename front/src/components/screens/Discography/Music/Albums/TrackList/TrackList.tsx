@@ -1,7 +1,7 @@
 import { FC } from "react";
+import clsx from "clsx";
 
 import Tracks from "./Tracks/Tracks";
-import clsx from "clsx";
 
 interface TrackListProps {
   className?: string;

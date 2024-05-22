@@ -1,6 +1,7 @@
 import { FC } from "react";
-import { Tab } from "@headlessui/react";
 import clsx from "clsx";
+
+import { Tab } from "@headlessui/react";
 
 import { ITab } from "../tab.interface";
 

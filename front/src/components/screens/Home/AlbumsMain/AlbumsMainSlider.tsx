@@ -5,9 +5,9 @@ import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
-import { Breakpoint } from "@/enums/breakpoint.enum";
-
 import { albums } from "@/data/music/albums.data";
+
+import { Breakpoint } from "@/enums/breakpoint.enum";
 
 interface AlbumsMainSliderProps {}
 

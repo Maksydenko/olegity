@@ -1,11 +1,13 @@
 import { FC } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import clsx from "clsx";
 
-import { useActiveOnScroll } from "@/hooks/useActiveOnScroll";
+import { useGSAP } from "@gsap/react";
+
 import Transition from "@/components/base/Transition/Transition";
+
+import { useActiveOnScroll } from "@/hooks/useActiveOnScroll";
 
 interface ScrollTopProps {
   className?: string;

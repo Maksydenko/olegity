@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Collapse, { Panel } from "rc-collapse";
-import clsx from "clsx";
 import { CollapseProps } from "rc-collapse/es/interface";
+import clsx from "clsx";
 
 import motion from "./motion.util";
 

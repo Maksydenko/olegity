@@ -1,6 +1,7 @@
 import { FC, ReactNode, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";
+
+import { Dialog, Transition } from "@headlessui/react";
 
 import Panel from "./Panel";
 

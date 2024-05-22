@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
-import { getSearchParam } from "@/utils/getSearchParam.util";
 import { addSearchParam } from "@/utils/addSearchParam.util";
+import { getSearchParam } from "@/utils/getSearchParam.util";
 
 interface SearchProps {
   className?: string;

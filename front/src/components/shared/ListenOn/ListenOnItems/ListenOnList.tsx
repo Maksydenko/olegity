@@ -2,8 +2,8 @@ import { FC } from "react";
 
 import ListenOnItem from "./ListenOnItem";
 
-import { IMusicPlatforms } from "@/interfaces/music.interface";
 import { ILinkWithoutLabel } from "@/interfaces/link.interface";
+import { IMusicPlatforms } from "@/interfaces/music.interface";
 
 interface ListenOnListProps {
   links: IMusicPlatforms;

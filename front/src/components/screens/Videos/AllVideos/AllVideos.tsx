@@ -5,8 +5,8 @@ import clsx from "clsx";
 import Tabs from "@/components/base/Tabs/Tabs";
 import Videos from "./Videos/Videos";
 
-import { musicVideos } from "@/data/videos/musicVideos.data";
 import { animatedVideos } from "@/data/videos/animatedVideos.data";
+import { musicVideos } from "@/data/videos/musicVideos.data";
 
 interface AllVideosProps {
   className?: string;

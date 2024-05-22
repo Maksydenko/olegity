@@ -1,14 +1,14 @@
 import { FC, ReactNode } from "react";
+import { i18n } from "next-i18next";
 import clsx from "clsx";
 
+import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import ScrollTop from "./navigation/ScrollTop/ScrollTop";
-import Footer from "./Footer/Footer";
+import Seo from "./Seo/Seo";
 
 import { fontMontserrat, fontOpenSans } from "@/constants/fonts/google.const";
 import { fontIcons } from "@/constants/fonts/icons.const";
-import Seo from "./Seo/Seo";
-import { i18n } from "next-i18next";
 
 interface LayoutProps {
   className?: string;
