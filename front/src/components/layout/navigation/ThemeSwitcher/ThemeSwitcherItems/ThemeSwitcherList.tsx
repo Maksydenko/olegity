@@ -1,8 +1,7 @@
 import { FC } from "react";
 
-import ThemeSwitcherItem from "./ThemeSwitcherItem";
-
 import { useThemeSwitch } from "../useThemeSwitch";
+import ThemeSwitcherItem from "./ThemeSwitcherItem";
 
 import { ILink } from "@/interfaces/link.interface";
 

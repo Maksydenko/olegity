@@ -18,6 +18,6 @@
   ],
   "eslint.workingDirectories": ["./front"],
   "stylelint.packageManager": "yarn",
-  "stylelint.validate": ["scss"],
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
   "typescript.preferences.importModuleSpecifier": "shortest"
 }

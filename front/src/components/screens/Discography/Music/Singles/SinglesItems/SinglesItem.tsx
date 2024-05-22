@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import MusicCard from "@/components/shared/MusicCard/MusicCard";
 import ListenOn from "@/components/shared/ListenOn/ListenOn";
+import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
 import { ISingle } from "@/interfaces/music.interface";
 

@@ -3,6 +3,7 @@ import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
 import MusicCardText from "./MusicCardText";
+
 import { IAlbum, ISingle } from "@/interfaces/music.interface";
 
 interface MusicCardProps {

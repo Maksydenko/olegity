@@ -1,8 +1,8 @@
 import { FC } from "react";
 import clsx from "clsx";
 
-import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
 import Img from "@/components/base/Img/Img";
+import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
 interface AboutConcertsProps {

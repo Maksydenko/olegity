@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import Track from "./Track";
 
 import { IAlbum } from "@/interfaces/music.interface";

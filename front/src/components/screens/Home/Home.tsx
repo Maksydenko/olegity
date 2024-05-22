@@ -3,11 +3,11 @@ import { useTranslation } from "next-i18next";
 
 import Layout from "@/components/layout/Layout";
 import Seo from "@/components/layout/Seo/Seo";
-import FullScreenVideo from "./FullScreenVideo/FullScreenVideo";
 import AboutMain from "./AboutMain/AboutMain";
 import AlbumsMain from "./AlbumsMain/AlbumsMain";
-import VideosMain from "./VideosMain/VideosMain";
 import ConcertsMain from "./ConcertsMain/ConcertsMain";
+import FullScreenVideo from "./FullScreenVideo/FullScreenVideo";
+import VideosMain from "./VideosMain/VideosMain";
 
 interface HomeProps {}
 

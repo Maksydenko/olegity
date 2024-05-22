@@ -10,6 +10,16 @@ On this website you can read the biography of the LSP artist, find all links to 
 
 🔗 **Mirror:** [link](https://maksydenko.github.io/olegity/)
 
+## Launch
+
+### Front
+
+```bash
+cd front
+yarn # first launch
+yarn dev
+```
+
 ![HTML](https://skills.thijs.gg/icons?i=html)
 ![CSS](https://skills.thijs.gg/icons?i=css)
 ![SCSS](https://skills.thijs.gg/icons?i=scss)

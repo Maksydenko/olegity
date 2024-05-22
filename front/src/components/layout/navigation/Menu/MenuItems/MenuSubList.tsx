@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
@@ -6,7 +7,6 @@ import Dropdown from "@/components/base/Dropdown/Dropdown";
 import RcCollapse from "@/components/base/RcCollapse/RcCollapse";
 
 import { INavLinkWithSubLinks } from "@/interfaces/link.interface";
-import Link from "next/link";
 
 interface MenuSubListProps {
   link: INavLinkWithSubLinks;

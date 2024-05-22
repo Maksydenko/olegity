@@ -1,4 +1,5 @@
 import { SwiperOptions } from "swiper/types";
+
 import { ICustomBreakpoint } from "./breakpoints.interface";
 
 interface IAddBreakpointDesktop {

@@ -1,5 +1,5 @@
-import { CollapsePanelProps } from "rc-collapse";
 import { Key, ReactNode } from "react";
+import { CollapsePanelProps } from "rc-collapse";
 
 export interface IPanels {
   key: Key;
