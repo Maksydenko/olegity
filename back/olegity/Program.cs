@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-
-
 namespace olegity
 {
     public class Program

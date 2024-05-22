@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\back",
-    "\\back\\olegity"
+    "\\back\\olegity",
+    "\\back\\olegity\\Contollers",
+    "\\back\\olegity\\Data",
+    "\\back\\olegity\\Data\\Interfaces",
+    "\\back\\olegity\\Data\\Models",
+    "\\back\\olegity\\Views",
+    "\\back\\olegity\\Views\\Shared",
+    "\\back\\olegity\\Views\\Singles"
   ],
-  "SelectedNode": "\\back\\olegity",
+  "SelectedNode": "\\back\\olegity\\Contollers\\SinglesController.cs",
   "PreviewInSolutionExplorer": false
 }
