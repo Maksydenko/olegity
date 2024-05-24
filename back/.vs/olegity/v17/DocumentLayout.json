@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\LSP\\olegity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\dbsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\dbsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\contollers\\singlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\contollers\\singlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\LSP\\olegity\\olegity\\Migrations\\EpDBContentMigrations\\20240524204311_InitialCreateForEp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:olegity\\Migrations\\EpDBContentMigrations\\20240524204311_InitialCreateForEp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\contollers\\epcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\contollers\\epcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,23 +23,119 @@
       "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\dbobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\dbobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kosen\\AppData\\Local\\Temp\\.vsdbgsrc\\664138d22aba817540c87a02662fed8cbe0482f9e639514ade7ce473e99b3891\\SqlInternalConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\appdbcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\appdbcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\back_port.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\back_port.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\contollers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\contollers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\web.config||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\web.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\migrations\\albums\\20240522205838_initialcreateforalbums.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\migrations\\albums\\20240522205838_initialcreateforalbums.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\olegity.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\olegity.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_OLEGITY_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.Albums.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\migrations\\albums\\albumscontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\migrations\\albums\\albumscontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\viewpages\\albumlistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\viewpages\\albumlistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\mocks\\mocksingles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\mocks\\mocksingles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\interfaces\\iallsingles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\interfaces\\iallsingles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\interfaces\\isinglespages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\interfaces\\isinglespages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\models\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\models\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\repository\\singlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\repository\\singlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\repository\\pagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\repository\\pagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\models\\page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\models\\page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\data\\models\\single_song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\models\\single_song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\viewpages\\singelslistviewpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\viewpages\\singelslistviewpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\migrations\\appdbcontentmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\migrations\\appdbcontentmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Single/True/SqlTable/dbo.Single_Songs.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\migrations\\20240407103623_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\migrations\\20240407103623_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/C__USERS_KOSEN_SOURCE_REPOS_MAKSYDENKO_OLEGITY_BACK_OLEGITY_BIN_DEBUG_NET8.0_SINGLE.MDF/True/SqlTable/dbo.Single_Songs.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_OLEGITY_OLEGITY_DATA_SINGLE.MDF/True/SqlTable/dbo.Single_Songs.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_OLEGITY_OLEGITY_DATA_SINGLE.MDF/True/SqlTable/dbo.Page.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\dbsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\dbsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\views\\singles\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\views\\singles\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\migrations\\20240407103623_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\migrations\\20240407103623_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\olegity\\olegity\\migrations\\albums\\20240522205838_initialcreateforalbums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\migrations\\albums\\20240522205838_initialcreateforalbums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,68 +145,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SqlInternalConnection.cs",
-              "DocumentMoniker": "C:\\Users\\kosen\\AppData\\Local\\Temp\\.vsdbgsrc\\664138d22aba817540c87a02662fed8cbe0482f9e639514ade7ce473e99b3891\\SqlInternalConnection.cs",
-              "ToolTip": "C:\\Users\\kosen\\AppData\\Local\\Temp\\.vsdbgsrc\\664138d22aba817540c87a02662fed8cbe0482f9e639514ade7ce473e99b3891\\SqlInternalConnection.cs",
-              "ViewState": "AQIAAHkBAAAAAAAAAAAUwIIBAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T12:21:21.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SinglesController.cs",
               "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Contollers\\SinglesController.cs",
               "RelativeDocumentMoniker": "olegity\\Contollers\\SinglesController.cs",
               "ToolTip": "D:\\LSP\\olegity\\olegity\\Contollers\\SinglesController.cs",
               "RelativeToolTip": "olegity\\Contollers\\SinglesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T11:19:38.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BACK_PORT.env.example",
-              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\BACK_PORT.env.example",
-              "RelativeDocumentMoniker": "olegity\\BACK_PORT.env.example",
-              "ToolTip": "D:\\LSP\\olegity\\olegity\\BACK_PORT.env.example",
-              "RelativeToolTip": "olegity\\BACK_PORT.env.example",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-15T13:28:45.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Program.cs",
-              "RelativeDocumentMoniker": "olegity\\Program.cs",
-              "ToolTip": "D:\\LSP\\olegity\\olegity\\Program.cs",
-              "RelativeToolTip": "olegity\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:28:44.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbsettings.json",
-              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\dbsettings.json",
-              "RelativeDocumentMoniker": "olegity\\dbsettings.json",
-              "ToolTip": "D:\\LSP\\olegity\\olegity\\dbsettings.json",
-              "RelativeToolTip": "olegity\\dbsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-15T13:28:41.922Z",
+              "WhenOpened": "2024-05-19T08:45:38.101Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -121,59 +169,398 @@
               "RelativeDocumentMoniker": "olegity\\Startup.cs",
               "ToolTip": "D:\\LSP\\olegity\\olegity\\Startup.cs",
               "RelativeToolTip": "olegity\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAwwGkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:18:40.464Z",
+              "WhenOpened": "2024-05-19T08:45:39.096Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240524204311_InitialCreateForEp.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Migrations\\EpDBContentMigrations\\20240524204311_InitialCreateForEp.cs",
+              "RelativeDocumentMoniker": "olegity\\Migrations\\EpDBContentMigrations\\20240524204311_InitialCreateForEp.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Migrations\\EpDBContentMigrations\\20240524204311_InitialCreateForEp.cs",
+              "RelativeToolTip": "olegity\\Migrations\\EpDBContentMigrations\\20240524204311_InitialCreateForEp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T20:43:11.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EpController.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Contollers\\EpController.cs",
+              "RelativeDocumentMoniker": "olegity\\Contollers\\EpController.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Contollers\\EpController.cs",
+              "RelativeToolTip": "olegity\\Contollers\\EpController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T20:37:56.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlbumController.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Contollers\\AlbumController.cs",
+              "RelativeDocumentMoniker": "olegity\\Contollers\\AlbumController.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Contollers\\AlbumController.cs",
+              "RelativeToolTip": "olegity\\Contollers\\AlbumController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:30:06.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "olegity",
-              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\olegity.csproj",
-              "RelativeDocumentMoniker": "olegity\\olegity.csproj",
-              "ToolTip": "D:\\LSP\\olegity\\olegity\\olegity.csproj",
-              "RelativeToolTip": "olegity\\olegity.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-15T13:31:35.115Z"
+              "Title": "dbo.Albums [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_OLEGITY_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.Albums.sql",
+              "ToolTip": "dbo.Albums [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-22T21:16:07.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\appsettings.json",
-              "RelativeDocumentMoniker": "olegity\\appsettings.json",
-              "ToolTip": "D:\\LSP\\olegity\\olegity\\appsettings.json",
-              "RelativeToolTip": "olegity\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-15T13:24:09.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "olegity\\appsettings.Development.json",
-              "ToolTip": "D:\\LSP\\olegity\\olegity\\appsettings.Development.json",
-              "RelativeToolTip": "olegity\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-12T12:41:54.215Z",
+              "DocumentIndex": 6,
+              "Title": "AppDBContent.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\AppDBContent.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\AppDBContent.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\AppDBContent.cs",
+              "RelativeToolTip": "olegity\\Data\\AppDBContent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:52:21.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "web.config",
-              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\web.config",
-              "RelativeDocumentMoniker": "olegity\\web.config",
-              "ToolTip": "D:\\LSP\\olegity\\olegity\\web.config",
-              "RelativeToolTip": "olegity\\web.config",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-12T12:14:14.654Z"
+              "Title": "20240522205838_InitialCreateForAlbums.Designer.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.Designer.cs",
+              "RelativeDocumentMoniker": "olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.Designer.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.Designer.cs",
+              "RelativeToolTip": "olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:47:34.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Program.cs",
+              "RelativeDocumentMoniker": "olegity\\Program.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Program.cs",
+              "RelativeToolTip": "olegity\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:13:42.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DBObjects.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\DBObjects.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\DBObjects.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\DBObjects.cs",
+              "RelativeToolTip": "olegity\\Data\\DBObjects.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:39:48.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PageRepository.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\Repository\\PageRepository.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Repository\\PageRepository.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\Repository\\PageRepository.cs",
+              "RelativeToolTip": "olegity\\Data\\Repository\\PageRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:38:24.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAllSingles.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\Interfaces\\IAllSingles.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Interfaces\\IAllSingles.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\Interfaces\\IAllSingles.cs",
+              "RelativeToolTip": "olegity\\Data\\Interfaces\\IAllSingles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T08:56:00.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AlbumsContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Migrations\\Albums\\AlbumsContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "olegity\\Migrations\\Albums\\AlbumsContextModelSnapshot.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Migrations\\Albums\\AlbumsContextModelSnapshot.cs",
+              "RelativeToolTip": "olegity\\Migrations\\Albums\\AlbumsContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:46:58.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ISinglesPages.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\Interfaces\\ISinglesPages.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Interfaces\\ISinglesPages.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\Interfaces\\ISinglesPages.cs",
+              "RelativeToolTip": "olegity\\Data\\Interfaces\\ISinglesPages.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:52:18.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AlbumListView.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\ViewPages\\AlbumListView.cs",
+              "RelativeDocumentMoniker": "olegity\\ViewPages\\AlbumListView.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\ViewPages\\AlbumListView.cs",
+              "RelativeToolTip": "olegity\\ViewPages\\AlbumListView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:37:17.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Album.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\Models\\Album.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Models\\Album.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\Models\\Album.cs",
+              "RelativeToolTip": "olegity\\Data\\Models\\Album.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:52:17.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Page.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\Models\\Page.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Models\\Page.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\Models\\Page.cs",
+              "RelativeToolTip": "olegity\\Data\\Models\\Page.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T08:57:27.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Single_Song.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\Models\\Single_Song.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Models\\Single_Song.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\Models\\Single_Song.cs",
+              "RelativeToolTip": "olegity\\Data\\Models\\Single_Song.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T08:48:02.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MockSingles.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\mocks\\MockSingles.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\mocks\\MockSingles.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\mocks\\MockSingles.cs",
+              "RelativeToolTip": "olegity\\Data\\mocks\\MockSingles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:42:57.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SingleRepository.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Data\\Repository\\SingleRepository.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Repository\\SingleRepository.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Data\\Repository\\SingleRepository.cs",
+              "RelativeToolTip": "olegity\\Data\\Repository\\SingleRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:40:57.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SingelsListViewPages.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\ViewPages\\SingelsListViewPages.cs",
+              "RelativeDocumentMoniker": "olegity\\ViewPages\\SingelsListViewPages.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\ViewPages\\SingelsListViewPages.cs",
+              "RelativeToolTip": "olegity\\ViewPages\\SingelsListViewPages.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:41:08.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppDBContentModelSnapshot.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Migrations\\AppDBContentModelSnapshot.cs",
+              "RelativeDocumentMoniker": "olegity\\Migrations\\AppDBContentModelSnapshot.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Migrations\\AppDBContentModelSnapshot.cs",
+              "RelativeToolTip": "olegity\\Migrations\\AppDBContentModelSnapshot.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAmwCgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:48:38.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "dbo.Single_Songs [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Single/True/SqlTable/dbo.Single_Songs.sql",
+              "ToolTip": "dbo.Single_Songs [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-22T21:53:25.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20240407103623_initial.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Migrations\\20240407103623_initial.cs",
+              "RelativeDocumentMoniker": "olegity\\Migrations\\20240407103623_initial.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Migrations\\20240407103623_initial.cs",
+              "RelativeToolTip": "olegity\\Migrations\\20240407103623_initial.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAD4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:08:25.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "dbo.Page [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_OLEGITY_OLEGITY_DATA_SINGLE.MDF/True/SqlTable/dbo.Page.sql",
+              "ToolTip": "dbo.Page [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-22T21:31:30.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "dbo.Single_Songs [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_OLEGITY_OLEGITY_DATA_SINGLE.MDF/True/SqlTable/dbo.Single_Songs.sql",
+              "ToolTip": "dbo.Single_Songs [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-22T21:31:33.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "dbo.Single_Songs [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/C__USERS_KOSEN_SOURCE_REPOS_MAKSYDENKO_OLEGITY_BACK_OLEGITY_BIN_DEBUG_NET8.0_SINGLE.MDF/True/SqlTable/dbo.Single_Songs.sql",
+              "ToolTip": "dbo.Single_Songs [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-22T21:31:51.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "dbsettings.json",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\dbsettings.json",
+              "RelativeDocumentMoniker": "olegity\\dbsettings.json",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\dbsettings.json",
+              "RelativeToolTip": "olegity\\dbsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T20:48:42.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\appsettings.json",
+              "RelativeDocumentMoniker": "olegity\\appsettings.json",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\appsettings.json",
+              "RelativeToolTip": "olegity\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T20:50:16.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240522205838_InitialCreateForAlbums.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.cs",
+              "RelativeDocumentMoniker": "olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.cs",
+              "RelativeToolTip": "olegity\\Migrations\\Albums\\20240522205838_InitialCreateForAlbums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:58:38.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "olegity\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "olegity\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T13:33:54.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20240407103623_initial.Designer.cs",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Migrations\\20240407103623_initial.Designer.cs",
+              "RelativeDocumentMoniker": "olegity\\Migrations\\20240407103623_initial.Designer.cs",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Migrations\\20240407103623_initial.Designer.cs",
+              "RelativeToolTip": "olegity\\Migrations\\20240407103623_initial.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:58:35.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Views\\Singles\\List.cshtml",
+              "RelativeDocumentMoniker": "olegity\\Views\\Singles\\List.cshtml",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Views\\Singles\\List.cshtml",
+              "RelativeToolTip": "olegity\\Views\\Singles\\List.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T09:00:31.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "olegity\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "olegity\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T09:02:33.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\LSP\\olegity\\olegity\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "olegity\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\LSP\\olegity\\olegity\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "olegity\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T09:02:33.301Z"
             }
           ]
         }

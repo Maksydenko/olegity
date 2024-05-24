@@ -25,7 +25,7 @@ namespace olegity.Controllers
         [HttpGet("list/{pageID}")]
         public IActionResult List(int pageID)
         {
-            if (pageID!=0)
+            if (pageID!=0) // Если id указано
             {
                 var singles = _allSingles.Singles.Where(s => s.pageID == pageID).ToList();
                 var response = new SingelsListViewPages
@@ -36,7 +36,7 @@ namespace olegity.Controllers
                 return Ok(response);
             }
 
-            else 
+            else // Если id не указано
             {
                 var singles = _allSingles.Singles.ToList();
                 var response = new SingelsListViewPages
