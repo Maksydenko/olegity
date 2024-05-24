@@ -1,10 +1,11 @@
 import { FC, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
-import Titles from "./Titles/Titles";
+import { Tab } from "@headlessui/react";
+
 import Contents from "./Contents/Contents";
+import Titles from "./Titles/Titles";
 
 import { getSearchParam } from "@/utils/getSearchParam.util";
 

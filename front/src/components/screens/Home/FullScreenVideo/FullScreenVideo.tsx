@@ -2,8 +2,8 @@ import { FC } from "react";
 import clsx from "clsx";
 
 import FullScreen from "@/components/base/FullScreen/FullScreen";
-import LocalVideo from "@/components/base/Video/LocalVideo";
 import Img from "@/components/base/Img/Img";
+import LocalVideo from "@/components/base/Video/LocalVideo";
 
 interface FullScreenVideoProps {
   className?: string;

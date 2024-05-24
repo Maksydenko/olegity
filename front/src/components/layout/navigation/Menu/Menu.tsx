@@ -2,9 +2,9 @@ import { FC } from "react";
 import clsx from "clsx";
 
 import Transition from "@/components/base/Transition/Transition";
-import MenuList from "./MenuItems/MenuList";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import MenuList from "./MenuItems/MenuList";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 

@@ -1,7 +1,8 @@
 import { ElementType, FC, MouseEvent, ReactNode, useState } from "react";
 import Link from "next/link";
-import { Menu, Transition } from "@headlessui/react";
 import clsx from "clsx";
+
+import { Menu, Transition } from "@headlessui/react";
 
 import DropdownList from "./DropdownItems/DropdownList";
 

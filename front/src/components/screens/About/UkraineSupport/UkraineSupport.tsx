@@ -1,12 +1,13 @@
 import { FC, useRef } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import clsx from "clsx";
 
+import { useGSAP } from "@gsap/react";
+
 import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
-import TextBlock from "@/components/shared/TextBlock/TextBlock";
 import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
+import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 

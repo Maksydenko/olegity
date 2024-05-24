@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react";
-import { Menu } from "@headlessui/react";
 import clsx from "clsx";
+
+import { Menu } from "@headlessui/react";
 
 interface DropdownItemProps {
   children: ReactNode;

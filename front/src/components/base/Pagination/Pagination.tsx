@@ -1,10 +1,10 @@
 import { FC, useEffect } from "react";
+import { useRouter } from "next/router";
 import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 import clsx from "clsx";
 
-import { useRouter } from "next/router";
-import { getSearchParam } from "@/utils/getSearchParam.util";
 import { addSearchParam } from "@/utils/addSearchParam.util";
+import { getSearchParam } from "@/utils/getSearchParam.util";
 
 interface PaginationProps {
   className?: string;
