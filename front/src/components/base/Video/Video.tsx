@@ -1,10 +1,8 @@
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import ReactPlayer, { ReactPlayerProps } from "react-player/lazy";
 import clsx from "clsx";
 
 import Loader from "@/components/shared/Loader/Loader";
-
-import { useLoadingObject } from "@/hooks/useLoadingObject";
 
 interface VideoProps extends ReactPlayerProps {
   className?: string;
@@ -12,19 +10,23 @@ interface VideoProps extends ReactPlayerProps {
 }
 
 const Video: FC<VideoProps> = ({ className, url, light, loader = true }) => {
-  const videoRef = useRef<HTMLDivElement>(null);
-  const { isLoading } = useLoadingObject(videoRef);
+  const [showLoader, setShowLoader] = useState(true);
 
-  const showLoader = loader && isLoading;
+  const handleReady = () => {
+    setShowLoader(false);
+  };
 
   return (
-    <div
-      style={{ display: "block" }}
-      className={clsx(className, "video")}
-      ref={videoRef}
-    >
+    <div className={clsx(className, "video")}>
       {showLoader && <Loader />}
-      <ReactPlayer url={url} width="100%" height="100%" light={light} />
+      <ReactPlayer
+        url={url}
+        width="100%"
+        height="100%"
+        light={light}
+        controls
+        onReady={handleReady}
+      />
     </div>
   );
 };
