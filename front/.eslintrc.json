@@ -6,7 +6,7 @@
       1,
       {
         "groups": [
-          // External packages including React, Next.js, and other npm packages.
+          // External packages including React, Next.js, and other packages.
           ["^react$", "^next", "^[a-z]", "^clsx$"],
           // Packages starting with '@' (including type imports from these packages).
           ["^@"],
@@ -29,7 +29,7 @@
           ["^@/data", "\\.data$"],
           ["^@/enums", "\\.enum$"],
           ["^@/interfaces", "\\.interface$"],
-          ["^~/types", "\\.type$"],
+          ["^@/types", "\\.type$"],
           // External library style imports typically from 'dist' directories.
           ["^.*\\/dist\\/.*\\.s?css$"],
           // Internal and local style imports.
