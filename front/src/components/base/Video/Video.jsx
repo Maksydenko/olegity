@@ -12,7 +12,7 @@ const Video = ({ className, url, light, loader = true }) => {
   };
 
   return (
-    <div className={clsx(className, "video")} ref={videoRef}>
+    <div className={clsx(className, "video")}>
       {showLoader && <Loader />}
       <ReactPlayer
         url={url}
@@ -20,7 +20,7 @@ const Video = ({ className, url, light, loader = true }) => {
         height="100%"
         light={light}
         {...(loader && {
-          handleReady,
+          onReady: handleReady,
         })}
       />
     </div>
