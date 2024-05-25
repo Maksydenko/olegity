@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/olegity/static/css/main.54b9bcd9.css",
-    "main.js": "/olegity/static/js/main.82e14c85.js",
+    "main.js": "/olegity/static/js/main.ee1e53eb.js",
     "reactPlayerYouTube.js": "/olegity/static/js/reactPlayerYouTube.c04f07d7.chunk.js",
     "reactPlayerSoundCloud.js": "/olegity/static/js/reactPlayerSoundCloud.fbfa8ac0.chunk.js",
     "reactPlayerVimeo.js": "/olegity/static/js/reactPlayerVimeo.566c3f30.chunk.js",
+    "reactPlayerMux.js": "/olegity/static/js/reactPlayerMux.93db8612.chunk.js",
     "reactPlayerFacebook.js": "/olegity/static/js/reactPlayerFacebook.7772b4ad.chunk.js",
     "reactPlayerStreamable.js": "/olegity/static/js/reactPlayerStreamable.7b59193c.chunk.js",
     "reactPlayerWistia.js": "/olegity/static/js/reactPlayerWistia.07015af2.chunk.js",
@@ -14,7 +15,7 @@
     "reactPlayerVidyard.js": "/olegity/static/js/reactPlayerVidyard.bef2f919.chunk.js",
     "reactPlayerKaltura.js": "/olegity/static/js/reactPlayerKaltura.7106066e.chunk.js",
     "reactPlayerFilePlayer.js": "/olegity/static/js/reactPlayerFilePlayer.e2acd714.chunk.js",
-    "reactPlayerPreview.js": "/olegity/static/js/reactPlayerPreview.732c90b0.chunk.js",
+    "reactPlayerPreview.js": "/olegity/static/js/reactPlayerPreview.01e58e74.chunk.js",
     "static/js/496.6415a1d7.chunk.js": "/olegity/static/js/496.6415a1d7.chunk.js",
     "static/media/binokl.mp4": "/olegity/static/media/binokl.1cbff924471bfdf0a520.mp4",
     "static/media/hip-hop-battle.jpeg": "/olegity/static/media/hip-hop-battle.fc4daac3a2461437a72f.jpeg",
@@ -308,10 +309,11 @@
     "static/media/cross.svg": "/olegity/static/media/cross.8e79f2de5ed87d02ecb5.svg",
     "static/media/system.svg": "/olegity/static/media/system.beeb0bff01a91881ff6b3479c7e37cc2.svg",
     "main.54b9bcd9.css.map": "/olegity/static/css/main.54b9bcd9.css.map",
-    "main.82e14c85.js.map": "/olegity/static/js/main.82e14c85.js.map",
+    "main.ee1e53eb.js.map": "/olegity/static/js/main.ee1e53eb.js.map",
     "reactPlayerYouTube.c04f07d7.chunk.js.map": "/olegity/static/js/reactPlayerYouTube.c04f07d7.chunk.js.map",
     "reactPlayerSoundCloud.fbfa8ac0.chunk.js.map": "/olegity/static/js/reactPlayerSoundCloud.fbfa8ac0.chunk.js.map",
     "reactPlayerVimeo.566c3f30.chunk.js.map": "/olegity/static/js/reactPlayerVimeo.566c3f30.chunk.js.map",
+    "reactPlayerMux.93db8612.chunk.js.map": "/olegity/static/js/reactPlayerMux.93db8612.chunk.js.map",
     "reactPlayerFacebook.7772b4ad.chunk.js.map": "/olegity/static/js/reactPlayerFacebook.7772b4ad.chunk.js.map",
     "reactPlayerStreamable.7b59193c.chunk.js.map": "/olegity/static/js/reactPlayerStreamable.7b59193c.chunk.js.map",
     "reactPlayerWistia.07015af2.chunk.js.map": "/olegity/static/js/reactPlayerWistia.07015af2.chunk.js.map",
@@ -321,11 +323,11 @@
     "reactPlayerVidyard.bef2f919.chunk.js.map": "/olegity/static/js/reactPlayerVidyard.bef2f919.chunk.js.map",
     "reactPlayerKaltura.7106066e.chunk.js.map": "/olegity/static/js/reactPlayerKaltura.7106066e.chunk.js.map",
     "reactPlayerFilePlayer.e2acd714.chunk.js.map": "/olegity/static/js/reactPlayerFilePlayer.e2acd714.chunk.js.map",
-    "reactPlayerPreview.732c90b0.chunk.js.map": "/olegity/static/js/reactPlayerPreview.732c90b0.chunk.js.map",
+    "reactPlayerPreview.01e58e74.chunk.js.map": "/olegity/static/js/reactPlayerPreview.01e58e74.chunk.js.map",
     "496.6415a1d7.chunk.js.map": "/olegity/static/js/496.6415a1d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54b9bcd9.css",
-    "static/js/main.82e14c85.js"
+    "static/js/main.ee1e53eb.js"
   ]
 }
