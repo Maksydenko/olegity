@@ -1,4 +1,4 @@
-import { FC, useRef, useState } from "react";
+import { FC, useState } from "react";
 import ReactPlayer, { ReactPlayerProps } from "react-player/lazy";
 import clsx from "clsx";
 
@@ -10,7 +10,7 @@ interface VideoProps extends ReactPlayerProps {
 }
 
 const Video: FC<VideoProps> = ({ className, url, light, loader = true }) => {
-  const [showLoader, setShowLoader] = useState(true);
+  const [showLoader, setShowLoader] = useState(loader);
 
   const handleReady = () => {
     setShowLoader(false);
@@ -25,7 +25,9 @@ const Video: FC<VideoProps> = ({ className, url, light, loader = true }) => {
         height="100%"
         light={light}
         controls
-        onReady={handleReady}
+        {...(loader && {
+          onReady: handleReady,
+        })}
       />
     </div>
   );
