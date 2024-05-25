@@ -4,7 +4,7 @@ import clsx from "clsx";
 import Loader from "@shared/Loader/Loader";
 import { Sources } from "./Sources";
 
-import { useLoadingObject } from "@hooks/useLoadingObject";
+import { useImgLoading } from "./useImgLoading";
 
 const Img = ({
   className,
@@ -16,7 +16,7 @@ const Img = ({
   style,
 }) => {
   const imgRef = useRef(null);
-  const { isLoading } = useLoadingObject(imgRef);
+  const { isLoading } = useImgLoading(imgRef);
 
   const isLoader = loader && isLoading;
   const Tag = href ? "a" : "div";
