@@ -60,6 +60,11 @@
 
   &__video {
     width: 50vw;
+    aspect-ratio: 16 / 9;
+
+    @supports not (aspect-ratio: 16 / 9) {
+      padding-bottom: 56.25%;
+    }
 
     @media (max-width: $tablet) {
       width: 75vw;
