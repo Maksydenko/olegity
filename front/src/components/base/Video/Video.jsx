@@ -1,33 +1,29 @@
-import { useRef } from "react";
+import { useState } from "react";
 import ReactPlayer from "react-player/lazy";
 import clsx from "clsx";
 
 import Loader from "@shared/Loader/Loader";
 
-import { useLoadingObject } from "@hooks/useLoadingObject";
+const Video = ({ className, url, light, loader = true }) => {
+  const [showLoader, setShowLoader] = useState(loader);
 
-const Video = ({ className, url, img, loader = true }) => {
-  const videoRef = useRef(null);
-  const { isLoading } = useLoadingObject(videoRef);
-
-  const isLoader = loader && isLoading;
+  const handleReady = () => {
+    setShowLoader(false);
+  };
 
   return (
-    <span
-      style={{ display: "block" }}
-      className={clsx(className, "video")}
-      ref={videoRef}
-    >
-      {isLoader && <Loader />}
+    <div className={clsx(className, "video")} ref={videoRef}>
+      {showLoader && <Loader />}
       <ReactPlayer
         url={url}
         width="100%"
         height="100%"
-        {...(img && {
-          light: img,
+        light={light}
+        {...(loader && {
+          handleReady,
         })}
       />
-    </span>
+    </div>
   );
 };
 
