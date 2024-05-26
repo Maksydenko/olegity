@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Contollers\\SinglesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:back\\olegity\\Contollers\\SinglesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:back\\olegity\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Data\\Models\\Single_Song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:back\\olegity\\Data\\Models\\Single_Song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Contollers\\SinglesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:back\\olegity\\Contollers\\SinglesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "README.txt",
               "DocumentMoniker": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\README.txt",
               "RelativeDocumentMoniker": "back\\README.txt",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ISinglesPages.cs",
               "DocumentMoniker": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Data\\Interfaces\\ISinglesPages.cs",
               "RelativeDocumentMoniker": "back\\olegity\\Data\\Interfaces\\ISinglesPages.cs",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IAllSingles.cs",
               "DocumentMoniker": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Data\\Interfaces\\IAllSingles.cs",
               "RelativeDocumentMoniker": "back\\olegity\\Data\\Interfaces\\IAllSingles.cs",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Program.cs",
               "RelativeDocumentMoniker": "back\\olegity\\Program.cs",
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Single_Song.cs",
               "DocumentMoniker": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Data\\Models\\Single_Song.cs",
               "RelativeDocumentMoniker": "back\\olegity\\Data\\Models\\Single_Song.cs",
@@ -147,15 +147,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "SinglesController.cs",
               "DocumentMoniker": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Contollers\\SinglesController.cs",
               "RelativeDocumentMoniker": "back\\olegity\\Contollers\\SinglesController.cs",
               "ToolTip": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\Contollers\\SinglesController.cs",
               "RelativeToolTip": "back\\olegity\\Contollers\\SinglesController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBYAAAAJAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAswDkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T08:15:31.175Z"
+              "WhenOpened": "2024-05-19T08:15:31.175Z",
+              "EditorCaption": ""
             }
           ]
         }

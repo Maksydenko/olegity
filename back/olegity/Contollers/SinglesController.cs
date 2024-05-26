@@ -47,12 +47,18 @@ namespace olegity.Controllers
                 })
                 .ToList();
 
+            var maxPageID = _appDBContent.Single_Songs.Max(s => s.pageID);
+
             if (singles == null || !singles.Any())
             {
                 return NotFound("No singles found");
             }
 
-            return Ok(singles);
+            return Ok(new
+            {
+                MaxPageID = maxPageID,
+                Singles = singles
+            });
         }
     }
 }
