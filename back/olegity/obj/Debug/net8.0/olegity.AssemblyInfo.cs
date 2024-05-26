@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("olegity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80070eaf9caa1a9c3965243cc73a65610dfc851b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b411c683b10f25ffda7dd5685930bc5e5cb1c440")]
 [assembly: System.Reflection.AssemblyProductAttribute("olegity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("olegity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

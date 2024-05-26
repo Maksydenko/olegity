@@ -3,17 +3,13 @@
   "WorkspaceRootPath": "D:\\LSP\\back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.GenreAlbum.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\back\\olegity\\data\\models\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\models\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.TrackListAlbum.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.LinkAlbum.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.GenreAlbum.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.Album.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -26,59 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.GenreAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.GenreAlbum.sql",
-              "ToolTip": "dbo.GenreAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentIndex": 3,
+              "Title": "dbo.Album [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.Album.sql",
+              "ToolTip": "dbo.Album [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-26T10:29:31Z",
+              "WhenOpened": "2024-05-26T10:46:38.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.TrackListAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.TrackListAlbum.sql",
-              "ToolTip": "dbo.TrackListAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Title": "dbo.GenreAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.GenreAlbum.sql",
+              "ToolTip": "dbo.GenreAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-26T10:29:33.361Z",
+              "WhenOpened": "2024-05-26T10:46:39.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Album.cs",
-              "DocumentMoniker": "D:\\LSP\\back\\olegity\\Data\\Models\\Album.cs",
-              "RelativeDocumentMoniker": "olegity\\Data\\Models\\Album.cs",
-              "ToolTip": "D:\\LSP\\back\\olegity\\Data\\Models\\Album.cs",
-              "RelativeToolTip": "olegity\\Data\\Models\\Album.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAAC4AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T10:34:25.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "dbo.LinkAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.LinkAlbum.sql",
               "ToolTip": "dbo.LinkAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-26T10:29:34.839Z",
+              "WhenOpened": "2024-05-26T10:46:40.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.Album [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.Album.sql",
-              "ToolTip": "dbo.Album [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentIndex": 0,
+              "Title": "dbo.TrackListAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__LSP_BACK_OLEGITY_BIN_DEBUG_NET8.0_ALBUM.MDF/True/SqlTable/dbo.TrackListAlbum.sql",
+              "ToolTip": "dbo.TrackListAlbum [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-26T10:28:26.73Z",
+              "WhenOpened": "2024-05-26T10:46:41.679Z",
               "EditorCaption": ""
             }
           ]

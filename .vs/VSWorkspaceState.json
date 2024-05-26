@@ -6,11 +6,8 @@
     "\\back\\olegity\\Contollers",
     "\\back\\olegity\\Data",
     "\\back\\olegity\\Data\\Interfaces",
-    "\\back\\olegity\\Data\\Models",
-    "\\back\\olegity\\Views",
-    "\\back\\olegity\\Views\\Shared",
-    "\\back\\olegity\\Views\\Singles"
+    "\\back\\olegity\\Data\\Models"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\back\\olegity\\Data\\Interfaces\\ISinglesPages.cs",
   "PreviewInSolutionExplorer": false
 }
