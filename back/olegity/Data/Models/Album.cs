@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace olegity.Data.Models
 {
@@ -6,28 +7,45 @@ namespace olegity.Data.Models
     {
         public int ID { set; get; }
         public string slug { set; get; }
-
         public string title { set; get; }
-
         public string img { set; get; }
-
-        public string singer { set; get; }
-
-        public string genre { set; get; }
-
-        public string spotifyLink { set; get; }
-
-        public string appleMusicLink { set; get; }
-
-        public string youtubeLink { set; get; }
-
-        public string deezerLink { set; get; }
-
+        public string artist { set; get; }
         public string year { set; get; }
-
-        public string tracklist { set; get; }
-
         public int pageID { set; get; }
+        public ICollection<LinkAlbum> LinkAlbum { get; set; }
+        public ICollection<TrackListAlbum> TrackListAlbum { get; set; }
+        public ICollection<GenreAlbum> GenreAlbum { get; set; }
+    }
+    public class GenreAlbum
+    {
+        [JsonIgnore]
+        public int Id { get; set; }
+        public string translation { get; set; }
+        public string text { get; set; }
+        [JsonIgnore]
+        public int AlbumId { get; set; }
+        public Album Album { get; set; }
+    }
+    public class LinkAlbum
+    {
+        [JsonIgnore]
+        public int Id { get; set; }
+        public string Spotify { get; set; }
+        public string AppleMusic { get; set; }
+        public string YoutubeMusic { get; set; }
+        public string Deezer { get; set; }
+        [JsonIgnore]
+        public int AlbumId { get; set; }
+        public Album Album { get; set; }
+    }
 
+    public class TrackListAlbum
+    {
+        [JsonIgnore]
+        public int Id { get; set; }
+        public string title { get; set; }
+        [JsonIgnore]
+        public int AlbumId { get; set; }
+        public Album Album { get; set; }
     }
 }

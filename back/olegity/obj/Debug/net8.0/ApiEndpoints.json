@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "olegity.Contollers.EpController",
+    "ContainingType": "olegity.Controllers.EpController",
     "Method": "List",
     "RelativePath": "api/Ep/list/{pageID}",
     "HttpMethod": "GET",
