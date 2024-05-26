@@ -19,8 +19,18 @@ namespace olegity.Controllers
         [HttpGet("list/{pageID}")]
         public IActionResult List(int pageID)
         {
-            var epsWithLinksAndTracks = _epDBContent.Ep
-                .Where(e => e.pageID == pageID) // Фильтруем EP по заданному pageID
+            IQueryable<Ep> epsQuery;
+
+            if (pageID == 0)
+            {
+                epsQuery = _epDBContent.Ep;
+            }
+            else
+            {
+                epsQuery = _epDBContent.Ep.Where(e => e.pageID == pageID);
+            }
+
+            var epsWithLinksAndTracks = epsQuery
                 .Select(e => new Ep
                 {
                     ID = e.ID,
@@ -36,7 +46,7 @@ namespace olegity.Controllers
                 })
                 .ToList();
 
-            if (epsWithLinksAndTracks == null)
+            if (epsWithLinksAndTracks == null || !epsWithLinksAndTracks.Any())
             {
                 return NotFound("No EPs found");
             }

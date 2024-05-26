@@ -9,18 +9,28 @@ namespace olegity.Controllers
     [ApiController]
     public class AlbumController : ControllerBase
     {
-        private readonly AlbumsDBContent _albumsDBContent;
+        private readonly AlbumsDBContent _albumDBContent;
 
-        public AlbumController(AlbumsDBContent albumsDBContent)
+        public AlbumController(AlbumsDBContent albumDBContent)
         {
-            _albumsDBContent = albumsDBContent;
+            _albumDBContent = albumDBContent;
         }
 
         [HttpGet("list/{pageID}")]
         public IActionResult List(int pageID)
         {
-            var albumsWithLinksAndTracks = _albumsDBContent.Album
-                .Where(a => a.pageID == pageID) // Фильтруем альбомы по заданному pageID
+            IQueryable<Album> albumsQuery;
+
+            if (pageID == 0)
+            {
+                albumsQuery = _albumDBContent.Album;
+            }
+            else
+            {
+                albumsQuery = _albumDBContent.Album.Where(a => a.pageID == pageID);
+            }
+
+            var albumsWithTracks = albumsQuery
                 .Select(a => new Album
                 {
                     ID = a.ID,
@@ -30,18 +40,17 @@ namespace olegity.Controllers
                     artist = a.artist,
                     year = a.year,
                     pageID = a.pageID,
-                    LinkAlbum = _albumsDBContent.LinkAlbum.Where(l => l.AlbumId == a.ID).ToList(),
-                    TrackListAlbum = _albumsDBContent.TrackListAlbum.Where(t => t.AlbumId == a.ID).ToList(),
-                    GenreAlbum = _albumsDBContent.GenreAlbum.Where(l => l.AlbumId == a.ID).ToList()
+                    TrackListAlbum = _albumDBContent.TrackListAlbum.Where(t => t.AlbumId == a.ID).ToList(),
+                    GenreAlbum = _albumDBContent.GenreAlbum.Where(g => g.AlbumId == a.ID).ToList()
                 })
                 .ToList();
 
-            if (albumsWithLinksAndTracks == null)
+            if (albumsWithTracks == null || !albumsWithTracks.Any())
             {
                 return NotFound("No albums found");
             }
 
-            return Ok(albumsWithLinksAndTracks);
+            return Ok(albumsWithTracks);
         }
     }
 }

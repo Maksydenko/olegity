@@ -6,7 +6,9 @@
     "\\back\\olegity\\Contollers",
     "\\back\\olegity\\Data",
     "\\back\\olegity\\Data\\Interfaces",
-    "\\back\\olegity\\Data\\Models"
+    "\\back\\olegity\\Data\\Models",
+    "\\back\\olegity\\obj"
   ],
+  "SelectedNode": "\\back",
   "PreviewInSolutionExplorer": false
 }

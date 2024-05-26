@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\LSP\\back\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\back\\olegity\\contollers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\contollers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\back\\olegity\\contollers\\epcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\contollers\\epcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\back\\olegity\\contollers\\singlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\contollers\\singlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\back\\olegity\\data\\models\\single_song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\models\\single_song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|d:\\lsp\\back\\olegity\\data\\models\\page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51615336-9BB6-44F9-9335-DD3C7F47E51B}|olegity\\olegity.csproj|solutionrelative:olegity\\data\\models\\page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EpController.cs",
+              "DocumentMoniker": "D:\\LSP\\back\\olegity\\Contollers\\EpController.cs",
+              "RelativeDocumentMoniker": "olegity\\Contollers\\EpController.cs",
+              "ToolTip": "D:\\LSP\\back\\olegity\\Contollers\\EpController.cs",
+              "RelativeToolTip": "olegity\\Contollers\\EpController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T11:33:06.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SinglesController.cs",
+              "DocumentMoniker": "D:\\LSP\\back\\olegity\\Contollers\\SinglesController.cs",
+              "RelativeDocumentMoniker": "olegity\\Contollers\\SinglesController.cs",
+              "ToolTip": "D:\\LSP\\back\\olegity\\Contollers\\SinglesController.cs",
+              "RelativeToolTip": "olegity\\Contollers\\SinglesController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA2wDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T11:32:54.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlbumController.cs",
+              "DocumentMoniker": "D:\\LSP\\back\\olegity\\Contollers\\AlbumController.cs",
+              "RelativeDocumentMoniker": "olegity\\Contollers\\AlbumController.cs",
+              "ToolTip": "D:\\LSP\\back\\olegity\\Contollers\\AlbumController.cs",
+              "RelativeToolTip": "olegity\\Contollers\\AlbumController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T11:32:53.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Single_Song.cs",
+              "DocumentMoniker": "D:\\LSP\\back\\olegity\\Data\\Models\\Single_Song.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Models\\Single_Song.cs",
+              "ToolTip": "D:\\LSP\\back\\olegity\\Data\\Models\\Single_Song.cs",
+              "RelativeToolTip": "olegity\\Data\\Models\\Single_Song.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T11:17:54.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Page.cs",
+              "DocumentMoniker": "D:\\LSP\\back\\olegity\\Data\\Models\\Page.cs",
+              "RelativeDocumentMoniker": "olegity\\Data\\Models\\Page.cs",
+              "ToolTip": "D:\\LSP\\back\\olegity\\Data\\Models\\Page.cs",
+              "RelativeToolTip": "olegity\\Data\\Models\\Page.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T11:17:52.605Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
