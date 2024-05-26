@@ -22,6 +22,7 @@ namespace olegity.Data.Models
         public int Id { get; set; }
         public string translation { get; set; }
         public string text { get; set; }
+        [JsonIgnore]
         public int EpId { get; set; }
         public Ep Ep { get; set; }
     }
@@ -33,6 +34,7 @@ namespace olegity.Data.Models
         public string AppleMusic { get; set; }
         public string YoutubeMusic { get; set; }
         public string Deezer { get; set; }
+        [JsonIgnore]
         public int EpId { get; set; }
         public Ep Ep { get; set; }
     }
@@ -42,6 +44,7 @@ namespace olegity.Data.Models
         [JsonIgnore]
         public int Id { get; set; }
         public string title { get; set; }
+        [JsonIgnore]
         public int EpId { get; set; }
         public Ep Ep { get; set; }
     }
