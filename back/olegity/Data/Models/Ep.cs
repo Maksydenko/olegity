@@ -12,39 +12,33 @@ namespace olegity.Data.Models
         public string artist { set; get; }
         public string year { set; get; }
         public int pageID { set; get; }
-        public ICollection<LinkEp> LinkEp { get; set; }
-        public ICollection<TrackListEp> TrackListEp { get; set; }
-        public ICollection<GenreEp> GenreEp { get; set; }
+        public ICollection<LinkEp> Links { get; set; }
+        public ICollection<TrackListEp> TrackList { get; set; }
+        public ICollection<GenreEp> Genre { get; set; }
     }
     public class GenreEp
     {
-        [JsonIgnore]
         public int Id { get; set; }
         public string translation { get; set; }
         public string text { get; set; }
-        [JsonIgnore]
         public int EpId { get; set; }
         public Ep Ep { get; set; }
     }
     public class LinkEp
     {
-        [JsonIgnore]
         public int Id { get; set; }
         public string Spotify { get; set; }
         public string AppleMusic { get; set; }
         public string YoutubeMusic { get; set; }
         public string Deezer { get; set; }
-        [JsonIgnore]
         public int EpId { get; set; }
         public Ep Ep { get; set; }
     }
 
     public class TrackListEp
     {
-        [JsonIgnore]
         public int Id { get; set; }
         public string title { get; set; }
-        [JsonIgnore]
         public int EpId { get; set; }
         public Ep Ep { get; set; }
     }

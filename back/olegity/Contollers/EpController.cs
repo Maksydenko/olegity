@@ -40,9 +40,9 @@ namespace olegity.Controllers
                     artist = e.artist,
                     year = e.year,
                     pageID = e.pageID,
-                    LinkEp = _epDBContent.LinkEp.Where(l => l.EpId == e.ID).ToList(),
-                    TrackListEp = _epDBContent.TrackListEp.Where(t => t.EpId == e.ID).ToList(),
-                    GenreEp = _epDBContent.GenreEp.Where(g => g.EpId == e.ID).ToList()
+                    Links = _epDBContent.LinkEp.Where(l => l.EpId == e.ID).ToList(),
+                    TrackList = _epDBContent.TrackListEp.Where(t => t.EpId == e.ID).ToList(),
+                    Genre = _epDBContent.GenreEp.Where(g => g.EpId == e.ID).ToList()
                 })
                 .ToList();
 

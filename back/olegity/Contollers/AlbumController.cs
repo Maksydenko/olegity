@@ -40,8 +40,8 @@ namespace olegity.Controllers
                     artist = a.artist,
                     year = a.year,
                     pageID = a.pageID,
-                    TrackListAlbum = _albumDBContent.TrackListAlbum.Where(t => t.AlbumId == a.ID).ToList(),
-                    GenreAlbum = _albumDBContent.GenreAlbum.Where(g => g.AlbumId == a.ID).ToList()
+                    TrackList = _albumDBContent.TrackListAlbum.Where(t => t.AlbumId == a.ID).ToList(),
+                    Genre = _albumDBContent.GenreAlbum.Where(g => g.AlbumId == a.ID).ToList()
                 })
                 .ToList();
 

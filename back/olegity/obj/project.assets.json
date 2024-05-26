@@ -9815,11 +9815,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\olegity.csproj",
+      "projectUniqueName": "D:\\LSP\\back\\olegity\\olegity.csproj",
       "projectName": "olegity",
-      "projectPath": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\olegity.csproj",
+      "projectPath": "D:\\LSP\\back\\olegity\\olegity.csproj",
       "packagesPath": "C:\\Users\\kosen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\obj\\",
+      "outputPath": "D:\\LSP\\back\\olegity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kosen\\AppData\\Roaming\\NuGet\\NuGet.Config",

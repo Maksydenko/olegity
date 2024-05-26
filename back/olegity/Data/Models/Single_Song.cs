@@ -6,8 +6,6 @@ namespace olegity.Data.Models
     { 
         public int ID { set; get; }
 
-        public string slug { set; get; }
-
         public int year { set; get; }
 
         public string title { set; get; }

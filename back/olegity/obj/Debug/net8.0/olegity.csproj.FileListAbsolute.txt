@@ -296,6 +296,8 @@ C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\ole
 C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\olegity.AssemblyInfo.cs
 C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\olegity.csproj.CoreCompileInputs.cache
 C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\olegity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\olegity.RazorAssemblyInfo.cache
+C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\olegity.RazorAssemblyInfo.cs
 C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\olegity.sourcelink.json
 C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\kosen\source\repos\Maksydenko\olegity\back\olegity\obj\Debug\net8.0\staticwebassets.development.json
