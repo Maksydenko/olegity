@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "ContainingType": "olegity.Controllers.AlbumController",
+    "Method": "List",
+    "RelativePath": "api/Album/list/{pageID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "olegity.Controllers.EpController",
+    "Method": "List",
+    "RelativePath": "api/Ep/list/{pageID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "olegity.Controllers.SinglesController",
+    "Method": "List",
+    "RelativePath": "api/Singles/list/{pageID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

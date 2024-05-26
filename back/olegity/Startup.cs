@@ -27,6 +27,13 @@ namespace olegity
         {
             services.AddDbContext<AppDBContent>(options =>
                 options.UseSqlServer(_confstring.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<AlbumsDBContent>(options =>
+                options.UseSqlServer(_confstring.GetConnectionString("AlbumsDatabaseConnection")));
+
+            services.AddDbContext<EpDBContent>(options =>
+                options.UseSqlServer(_confstring.GetConnectionString("EpDatabaseConnection")));
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddMemoryCache();
             services.AddSession();
@@ -90,8 +97,14 @@ namespace olegity
 
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
+                var services = scope.ServiceProvider;
+
+                var content = services.GetRequiredService<AppDBContent>();
                 DBObjects.initial(content);
+
+                var albumsContent = services.GetRequiredService<AlbumsDBContent>();
+
+                var epContent = services.GetRequiredService<EpDBContent>();
             }
         }
     }

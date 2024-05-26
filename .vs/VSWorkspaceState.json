@@ -7,10 +7,8 @@
     "\\back\\olegity\\Data",
     "\\back\\olegity\\Data\\Interfaces",
     "\\back\\olegity\\Data\\Models",
-    "\\back\\olegity\\Views",
-    "\\back\\olegity\\Views\\Shared",
-    "\\back\\olegity\\Views\\Singles"
+    "\\back\\olegity\\obj"
   ],
-  "SelectedNode": "\\back\\olegity\\Contollers\\SinglesController.cs",
+  "SelectedNode": "\\back\\olegity\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

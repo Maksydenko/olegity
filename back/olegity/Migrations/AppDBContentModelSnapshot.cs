@@ -16,7 +16,7 @@ namespace olegity.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -46,11 +46,15 @@ namespace olegity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<string>("appleMusicLink")
+                    b.Property<string>("appleMusic")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("deezerLink")
+                    b.Property<string>("artist")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("deezer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -62,22 +66,21 @@ namespace olegity.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("pageID")
                         .HasColumnType("int");
 
-                    b.Property<string>("singer")
+                    b.Property<string>("spotify")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("spotifyLink")
+                    b.Property<string>("title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("youtubeLink")
+                    b.Property<int>("year")
+                        .HasColumnType("int");
+
+                    b.Property<string>("youtubeMusic")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
