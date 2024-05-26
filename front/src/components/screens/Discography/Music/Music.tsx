@@ -6,32 +6,37 @@ import Tabs from "@/components/base/Tabs/Tabs";
 import Albums from "./Albums/Albums";
 import Singles from "./Singles/Singles";
 
-import { albums } from "@/data/music/albums.data";
-import { ep } from "@/data/music/ep.data";
-import { singles } from "@/data/music/singles.data";
+import { MusicId } from "@/enums/musicId.enum";
+
+import { IAlbum, ISingle } from "@/interfaces/music.interface";
 
 interface MusicProps {
   className?: string;
+  albums: IAlbum[];
+  ep: IAlbum[];
+  singles: ISingle[];
 }
 
-const Music: FC<MusicProps> = ({ className }) => {
+const Music: FC<MusicProps> = ({ className, albums, ep, singles }) => {
   const { t } = useTranslation("common");
 
   const tabs = [
     {
-      id: "albums",
+      id: MusicId.Albums,
       title: t("albums"),
       content: <Albums className="music__albums" albums={albums} />,
     },
     {
-      id: "ep",
+      id: MusicId.EP,
       title: t("ep"),
       content: <Albums className="music__albums" albums={ep} />,
     },
     {
-      id: "singles",
+      id: MusicId.Singles,
       title: t("singles"),
-      content: <Singles className="music__singles" singles={singles} />,
+      content: (
+        <Singles className="music__singles" singles={singles?.allSingles} />
+      ),
     },
   ];
 

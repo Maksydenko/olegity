@@ -3,9 +3,11 @@ import clsx from "clsx";
 
 import Tracks from "./Tracks/Tracks";
 
+import { ITrack } from "@/interfaces/music.interface";
+
 interface TrackListProps {
   className?: string;
-  trackList: string[];
+  trackList: ITrack[];
   swiperParallax: number;
   swiperParallaxDuration: number;
 }

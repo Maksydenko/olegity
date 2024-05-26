@@ -8,20 +8,18 @@ import { IAlbum, ISingle } from "@/interfaces/music.interface";
 
 interface MusicCardProps {
   className?: string;
-  track: ISingle | IAlbum;
+  music: ISingle | IAlbum;
   swiperParallax?: number;
   swiperParallaxDuration?: number;
 }
 
 const MusicCard: FC<MusicCardProps> = ({
   className,
-  track,
+  music,
   swiperParallax,
   swiperParallaxDuration,
 }) => {
-  const {
-    img: { src, alt },
-  } = track;
+  const { title, img } = music;
 
   const swiperParallaxDurationAttr = swiperParallaxDuration && {
     "data-swiper-parallax-duration": swiperParallaxDuration,
@@ -35,9 +33,9 @@ const MusicCard: FC<MusicCardProps> = ({
       })}
       {...swiperParallaxDurationAttr}
     >
-      <Img className="music-card__img" src={src} alt={alt} />
+      <Img className="music-card__img" src={img} alt={title} />
       <MusicCardText
-        track={track}
+        music={music}
         swiperParallax={swiperParallax}
         {...swiperParallaxDurationAttr}
       />

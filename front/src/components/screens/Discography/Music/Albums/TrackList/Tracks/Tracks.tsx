@@ -2,10 +2,10 @@ import { FC } from "react";
 
 import Track from "./Track";
 
-import { IAlbum } from "@/interfaces/music.interface";
+import { ITrack } from "@/interfaces/music.interface";
 
 interface TracksProps {
-  trackList: IAlbum["trackList"];
+  trackList: ITrack[];
   swiperParallax: number;
   swiperParallaxDuration: number;
 }
@@ -15,11 +15,11 @@ const Tracks: FC<TracksProps> = ({
   swiperParallax,
   swiperParallaxDuration,
 }) => {
-  const tracks = trackList.map((track, index) => {
+  const tracks = trackList.map(({ title, id }, index) => {
     return (
       <Track
-        key={track}
-        track={track}
+        key={id}
+        track={title}
         swiperParallax={swiperParallax - index * 100}
         swiperParallaxDuration={swiperParallaxDuration}
       />

@@ -3,15 +3,17 @@ import { FC } from "react";
 import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
-import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
+import useAlbumsStore from "@/stores/useAlbums.store";
 
-import { albums } from "@/data/music/albums.data";
+import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
 import { Breakpoint } from "@/enums/breakpoint.enum";
 
 interface AlbumsMainSliderProps {}
 
 const AlbumsMainSlider: FC<AlbumsMainSliderProps> = () => {
+  const { albums } = useAlbumsStore();
+
   const isMobile = useBreakpointCheck(Breakpoint.Mobile);
   const isMobileSmall = useBreakpointCheck(Breakpoint.MobileSmall);
 
@@ -20,7 +22,7 @@ const AlbumsMainSlider: FC<AlbumsMainSliderProps> = () => {
 
     const slide = {
       id: title,
-      slide: <MusicCard className="albums-main__music-card" track={album} />,
+      slide: <MusicCard className="albums-main__music-card" music={album} />,
     };
 
     return slide;

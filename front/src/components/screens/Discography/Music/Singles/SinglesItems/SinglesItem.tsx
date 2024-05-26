@@ -10,12 +10,12 @@ interface SinglesItemProps {
 }
 
 const SinglesItem: FC<SinglesItemProps> = ({ single }) => {
-  const { links } = single;
+  // const [links] = single.links;
 
   return (
     <div className="singles__item">
-      <MusicCard className="singles__music-card" track={single} />
-      <ListenOn className="singles" links={links} />
+      <MusicCard className="singles__music-card" music={single} />
+      {/* <ListenOn className="singles" links={links} /> */}
     </div>
   );
 };

@@ -11,13 +11,14 @@ interface AlbumProps {
 }
 
 const Album: FC<AlbumProps> = ({ album }) => {
-  const { trackList, links } = album;
+  const { trackList } = album;
+  const [links] = album.links;
 
   return (
     <div className="albums__album">
       <MusicCard
         className="albums__music-card"
-        track={album}
+        music={album}
         swiperParallax={-300}
         swiperParallaxDuration={500}
       />

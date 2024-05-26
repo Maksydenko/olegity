@@ -1,10 +1,12 @@
 import { FC } from "react";
-import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
-import { ISingle } from "@/interfaces/music.interface";
+import { getTranslate } from "@/utils/getTranslate.util";
+
+import { IAlbum, ISingle } from "@/interfaces/music.interface";
 
 interface MusicCardTextProps {
-  track: ISingle;
+  music: IAlbum | ISingle;
   swiperParallax?: number;
   swiperParallaxDurationAttr?: {
     "data-swiper-parallax-duration": number;
@@ -12,11 +14,12 @@ interface MusicCardTextProps {
 }
 
 const MusicCardText: FC<MusicCardTextProps> = ({
-  track: { title, artist, genre, year },
+  music: { title, artist, genre, year },
   swiperParallax,
   swiperParallaxDurationAttr,
 }) => {
-  const { t } = useTranslation("common");
+  const { locale } = useRouter();
+  // const genreTranslate = getTranslate(genre, locale);
 
   return (
     <>
@@ -45,7 +48,7 @@ const MusicCardText: FC<MusicCardTextProps> = ({
         })}
         {...swiperParallaxDurationAttr}
       >
-        <span className="music-card__genre">{t(`genres.${genre}`)}</span>
+        <span className="music-card__genre">{"genreTranslate?.text"}</span>
         <span className="music-card__year">{year}</span>
       </div>
     </>

@@ -12,6 +12,13 @@ On this website you can read the biography of the LSP artist, find all links to 
 
 ## Launch
 
+### Back:
+
+```bash
+cd back/olegity
+dotnet run --project olegity.csproj
+```
+
 ### Front
 
 ```bash

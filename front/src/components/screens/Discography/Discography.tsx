@@ -5,15 +5,26 @@ import Layout from "@/components/layout/Layout";
 import Seo from "@/components/layout/Seo/Seo";
 import Music from "./Music/Music";
 
-interface DiscographyProps {}
+import { IAlbum, ISingle } from "@/interfaces/music.interface";
 
-const Discography: FC<DiscographyProps> = () => {
+interface DiscographyProps {
+  albums: IAlbum[];
+  ep: IAlbum[];
+  singles: ISingle[];
+}
+
+const Discography: FC<DiscographyProps> = ({ albums, ep, singles }) => {
   const { t } = useTranslation("common");
 
   return (
     <Layout className="discography-page">
       <Seo title={t("pages.discography")} />
-      <Music className="discography-page__music" />
+      <Music
+        className="discography-page__music"
+        albums={albums}
+        ep={ep}
+        singles={singles}
+      />
     </Layout>
   );
 };

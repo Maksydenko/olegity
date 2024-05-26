@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-import { IAlbum } from "@/interfaces/music.interface";
+import { ITrack } from "@/interfaces/music.interface";
 
 interface TrackProps {
-  track: IAlbum["trackList"][0];
+  track: ITrack["title"];
   swiperParallax?: number;
   swiperParallaxDuration?: number;
 }

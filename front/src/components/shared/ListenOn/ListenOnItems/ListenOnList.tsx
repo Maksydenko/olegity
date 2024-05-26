@@ -39,7 +39,6 @@ const ListenOnList: FC<ListenOnListProps> = ({
 
   const musicPlatformItems = musicPlatforms.map((musicPlatform, index) => {
     const { icon } = musicPlatform;
-
     return (
       <ListenOnItem
         key={icon}
