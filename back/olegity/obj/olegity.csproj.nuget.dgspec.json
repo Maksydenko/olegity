@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LSP\\back\\olegity\\olegity.csproj": {}
+    "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\olegity.csproj": {}
   },
   "projects": {
-    "D:\\LSP\\back\\olegity\\olegity.csproj": {
+    "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\olegity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LSP\\back\\olegity\\olegity.csproj",
+        "projectUniqueName": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\olegity.csproj",
         "projectName": "olegity",
-        "projectPath": "D:\\LSP\\back\\olegity\\olegity.csproj",
+        "projectPath": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\olegity.csproj",
         "packagesPath": "C:\\Users\\kosen\\.nuget\\packages\\",
-        "outputPath": "D:\\LSP\\back\\olegity\\obj\\",
+        "outputPath": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kosen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,13 +83,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
@@ -101,7 +101,7 @@
             },
             "NuGet.Frameworks": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[6.10.0, )"
             },
             "SQLite": {
               "target": "Package",

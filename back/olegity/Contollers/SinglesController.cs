@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using olegity.Data;
 using olegity.Data.Models;
-using System.Linq;
 
 namespace olegity.Controllers
 {
@@ -9,9 +8,9 @@ namespace olegity.Controllers
     [ApiController]
     public class SinglesController : ControllerBase
     {
-        private readonly AppDBContent _appDBContent;
+        private readonly SinglesDBContent _appDBContent;
 
-        public SinglesController(AppDBContent appDBContent)
+        public SinglesController(SinglesDBContent appDBContent)
         {
             _appDBContent = appDBContent;
         }
@@ -38,21 +37,16 @@ namespace olegity.Controllers
                     s.title,
                     s.img,
                     s.artist,
-                    s.genre,
                     s.spotify,
                     s.appleMusic,
                     s.youtubeMusic,
                     s.deezer,
-                    s.pageID
+                    s.pageID,
+                    Genre = _appDBContent.GenreList.Where(g => g.genreid == s.genreid).ToList()
                 })
                 .ToList();
 
             var maxPageID = _appDBContent.Single_Songs.Max(s => s.pageID);
-
-            if (singles == null || !singles.Any())
-            {
-                return NotFound("No singles found");
-            }
 
             return Ok(new
             {

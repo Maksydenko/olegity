@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using olegity.Data;
 using olegity.Data.Models;
-using System.Linq;
 
 namespace olegity.Controllers
 {
@@ -45,11 +44,6 @@ namespace olegity.Controllers
                     Genre = _epDBContent.GenreEp.Where(g => g.EpId == e.ID).ToList()
                 })
                 .ToList();
-
-            if (epsWithLinksAndTracks == null || !epsWithLinksAndTracks.Any())
-            {
-                return NotFound("No EPs found");
-            }
 
             return Ok(epsWithLinksAndTracks);
         }

@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
-
-namespace olegity.Data.Models
+﻿namespace olegity.Data.Models
 {
     public class Album
     {

@@ -1,19 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using olegity.Data;
-using olegity.Data.Interfaces;
-using olegity.Data.Repository;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System.Text.Json.Serialization;
 
 namespace olegity
 {
     public class Startup
     {
-        private IConfigurationRoot _confstring;
+        private readonly IConfigurationRoot _confstring;
 
         public Startup(IHostEnvironment hostEnv)
         {
@@ -25,7 +18,7 @@ namespace olegity
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDBContent>(options =>
+            services.AddDbContext<SinglesDBContent>(options =>
                 options.UseSqlServer(_confstring.GetConnectionString("DefaultConnection")));
 
             services.AddDbContext<AlbumsDBContent>(options =>
@@ -38,15 +31,12 @@ namespace olegity
             services.AddMemoryCache();
             services.AddSession();
 
-            services.AddTransient<IAllSingles, SingleRepository>();
-            services.AddTransient<ISinglesPages, PageRepository>();
-
             services.AddControllers()
                 .AddJsonOptions(options =>
                 {
                     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
                     options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-                    options.JsonSerializerOptions.WriteIndented = true; // Для форматирования JSON
+                    options.JsonSerializerOptions.WriteIndented = true;
                 });
 
             services.AddCors(options =>
@@ -62,15 +52,6 @@ namespace olegity
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -84,28 +65,19 @@ namespace olegity
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-
-                endpoints.MapControllerRoute(
-                    name: "singles",
-                    pattern: "Singles/List/{pageID}",
-                    defaults: new { controller = "Singles", action = "List" }
-                );
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            using (var scope = app.ApplicationServices.CreateScope())
-            {
-                var services = scope.ServiceProvider;
+            InitializeDatabases(app);
+        }
 
-                var content = services.GetRequiredService<AppDBContent>();
-                DBObjects.initial(content);
+        private static void InitializeDatabases(IApplicationBuilder app)
+        {
+            using var scope = app.ApplicationServices.CreateScope();
+            var services = scope.ServiceProvider;
 
-                var albumsContent = services.GetRequiredService<AlbumsDBContent>();
-
-                var epContent = services.GetRequiredService<EpDBContent>();
-            }
+            var singlesContent = services.GetRequiredService<SinglesDBContent>();
+            var albumsContent = services.GetRequiredService<AlbumsDBContent>();
+            var epContent = services.GetRequiredService<EpDBContent>();
         }
     }
 }

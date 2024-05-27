@@ -5,10 +5,9 @@
     "\\back\\olegity",
     "\\back\\olegity\\Contollers",
     "\\back\\olegity\\Data",
-    "\\back\\olegity\\Data\\Interfaces",
     "\\back\\olegity\\Data\\Models",
     "\\back\\olegity\\obj"
   ],
-  "SelectedNode": "\\back\\olegity\\Data\\Interfaces",
+  "SelectedNode": "\\back\\olegity\\Data\\Models\\Single_Song.cs",
   "PreviewInSolutionExplorer": false
 }

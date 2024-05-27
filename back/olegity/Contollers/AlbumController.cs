@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using olegity.Data;
 using olegity.Data.Models;
-using System.Linq;
 
 namespace olegity.Controllers
 {
@@ -45,11 +44,6 @@ namespace olegity.Controllers
                     Genre = _albumDBContent.GenreAlbum.Where(g => g.AlbumId == a.ID).ToList()
                 })
                 .ToList();
-
-            if (albumsWithTracks == null || !albumsWithTracks.Any())
-            {
-                return NotFound("No albums found");
-            }
 
             return Ok(albumsWithTracks);
         }

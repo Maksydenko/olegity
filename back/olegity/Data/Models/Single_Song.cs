@@ -3,7 +3,7 @@
 namespace olegity.Data.Models
 {
     public class Single_Song
-    { 
+    {
         public int ID { set; get; }
 
         public int year { set; get; }
@@ -13,8 +13,6 @@ namespace olegity.Data.Models
         public string img { set; get; }
 
         public string artist { set; get; }
-
-        public string genre { set; get; }
 
         public string spotify { set; get; }
 
@@ -26,9 +24,17 @@ namespace olegity.Data.Models
 
         public int pageID { set; get; }
 
-        [JsonIgnore]
-        public virtual Page Page { set; get; }
+        public int genreid { set; get; }
+
+        public ICollection<GenreList> Genre { get; set; }
     }
+    public class GenreList
+    {
+        public int Id { get; set; }
+        public string translation { get; set; }
+        public string text { get; set; }
+        public int genreid { get; set; }
 
 
+    }
 }
