@@ -27,6 +27,9 @@ namespace olegity
             services.AddDbContext<EpDBContent>(options =>
                 options.UseSqlServer(_confstring.GetConnectionString("EpDatabaseConnection")));
 
+            services.AddDbContext<AboutDBContent>(options =>
+                options.UseSqlServer(_confstring.GetConnectionString("AboutDatabaseConnection")));
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddMemoryCache();
             services.AddSession();

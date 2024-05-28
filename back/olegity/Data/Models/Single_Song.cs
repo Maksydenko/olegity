@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace olegity.Data.Models
+﻿namespace olegity.Data.Models
 {
     public class Single_Song
     {
@@ -24,15 +22,15 @@ namespace olegity.Data.Models
 
         public int pageID { set; get; }
 
-        public int genreid { set; get; }
+        public int genreID { set; get; }
 
-        public ICollection<GenreList> Genre { get; set; }
+        public ICollection<TranslationsSingle> TranslationsSingle { get; set; }
     }
-    public class GenreList
+    public class TranslationsSingle
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string translation { get; set; }
-        public string text { get; set; }
+        public string genre { get; set; }
         public int genreid { get; set; }
 
 

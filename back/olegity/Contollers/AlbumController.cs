@@ -39,9 +39,9 @@ namespace olegity.Controllers
                     artist = a.artist,
                     year = a.year,
                     pageID = a.pageID,
-                    Links = _albumDBContent.LinkAlbum.Where(l => l.AlbumId == a.ID).ToList(),
-                    TrackList = _albumDBContent.TrackListAlbum.Where(t => t.AlbumId == a.ID).ToList(),
-                    Genre = _albumDBContent.GenreAlbum.Where(g => g.AlbumId == a.ID).ToList()
+                    Links = _albumDBContent.LinkAlbum.Where(l => l.albumID == a.ID).ToList(),
+                    TrackList = _albumDBContent.TrackListAlbum.Where(t => t.albumID == a.ID).ToList(),
+                    Translations = _albumDBContent.TranslationsAlbum.Where(g => g.albumID == a.ID).ToList()
                 })
                 .ToList();
 

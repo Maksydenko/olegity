@@ -34,6 +34,6 @@ namespace olegity
                     config.AddEnvironmentVariables();
                 })
                 .UseStartup<Startup>()
-                .UseUrls($"http://localhost:{Environment.GetEnvironmentVariable("PORT") ?? "8000"}");
+                .UseUrls($"http://localhost:{Environment.GetEnvironmentVariable("BACK_PORT") ?? "8000"}");
     }
 }

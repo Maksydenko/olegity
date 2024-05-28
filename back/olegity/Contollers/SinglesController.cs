@@ -42,7 +42,7 @@ namespace olegity.Controllers
                     s.youtubeMusic,
                     s.deezer,
                     s.pageID,
-                    Genre = _appDBContent.GenreList.Where(g => g.genreid == s.genreid).ToList()
+                    Translations = _appDBContent.TranslationsSingle.Where(g => g.genreid == s.genreID).ToList()
                 })
                 .ToList();
 

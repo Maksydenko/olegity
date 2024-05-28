@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "olegity.Controllers.AboutController",
+    "Method": "List",
+    "RelativePath": "api/About/list/{pageID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "olegity.Controllers.AlbumController",
     "Method": "List",
     "RelativePath": "api/Album/list/{pageID}",
