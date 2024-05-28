@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.IO;
 
 namespace olegity
 {
@@ -14,8 +16,12 @@ namespace olegity
 
         public static IWebHostBuilder CreateHostBuilder(string[] args)
         {
-            string envFilePath = Path.Combine(Directory.GetCurrentDirectory(), "BACK_PORT.env.example");
-            DotNetEnv.Env.Load(envFilePath);
+            string envFilePath = Path.Combine(Directory.GetCurrentDirectory(), ".env");
+            if (File.Exists(envFilePath))
+            {
+                DotNetEnv.Env.Load(envFilePath);
+            }
+
             return CreateWebHostBuilder(args);
         }
 
@@ -28,6 +34,6 @@ namespace olegity
                     config.AddEnvironmentVariables();
                 })
                 .UseStartup<Startup>()
-                .UseUrls($"http://localhost:{Environment.GetEnvironmentVariable("PORT")}");
+                .UseUrls($"http://localhost:{Environment.GetEnvironmentVariable("BACK_PORT") ?? "8000"}");
     }
 }
