@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vGG73WtHdkiqMd9jkobX5FaYW7olRkRU4e9/VTKC/8E=",
+  "Hash": "CrNmdVYocPRMa0k80+9cvflpXP90yqVopNYfdvdjfis=",
   "Source": "olegity",
   "BasePath": "_content/olegity",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "olegity\\wwwroot",
       "Source": "olegity",
-      "ContentRoot": "C:\\Users\\kosen\\source\\repos\\Maksydenko\\olegity\\back\\olegity\\wwwroot\\",
+      "ContentRoot": "D:\\LSP\\back\\olegity\\wwwroot\\",
       "BasePath": "_content/olegity",
       "Pattern": "**"
     }
