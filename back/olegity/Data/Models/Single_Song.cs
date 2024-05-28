@@ -31,7 +31,7 @@
         public int ID { get; set; }
         public string translation { get; set; }
         public string genre { get; set; }
-        public int genreid { get; set; }
+        public int genreID { get; set; }
 
 
     }

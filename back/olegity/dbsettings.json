@@ -3,6 +3,7 @@
     "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Single.mdf;Trusted_Connection=True;MultipleActiveResultSets=true",
     "AlbumsDatabaseConnection": "Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Album.mdf;Trusted_Connection=True;MultipleActiveResultSets=true",
     "EpDatabaseConnection": "Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ep.mdf;Trusted_Connection=True;MultipleActiveResultSets=true",
-    "AboutDatabaseConnection": "Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\About.mdf;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "AboutDatabaseConnection": "Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\About.mdf;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "ConcertsDatabaseConnection": "Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Сoncerts.mdf;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }

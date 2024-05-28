@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "olegity.Controllers.ConcertsController",
+    "Method": "List",
+    "RelativePath": "api/Concerts/list/{pageID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "olegity.Controllers.EpController",
     "Method": "List",
     "RelativePath": "api/Ep/list/{pageID}",

@@ -45,4 +45,13 @@ namespace olegity.Data
         public DbSet<AboutSections> AboutSections { get; set; }
         public DbSet<TranslationsAbout> TranslationsAbout { get; set; }
     }
+
+    public class ConcertsDBContent : DbContext
+    {
+        public ConcertsDBContent(DbContextOptions<ConcertsDBContent> options) : base(options)
+        {
+        }
+
+        public DbSet<Сoncerts> Сoncerts { get; set; }
+    }
 }
