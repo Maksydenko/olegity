@@ -1,9 +1,7 @@
-﻿using System.Text.Json.Serialization;
-
-namespace olegity.Data.Models
+﻿namespace olegity.Data.Models
 {
     public class Single_Song
-    { 
+    {
         public int ID { set; get; }
 
         public int year { set; get; }
@@ -13,8 +11,6 @@ namespace olegity.Data.Models
         public string img { set; get; }
 
         public string artist { set; get; }
-
-        public string genre { set; get; }
 
         public string spotify { set; get; }
 
@@ -26,9 +22,17 @@ namespace olegity.Data.Models
 
         public int pageID { set; get; }
 
-        [JsonIgnore]
-        public virtual Page Page { set; get; }
+        public int genreID { set; get; }
+
+        public ICollection<TranslationsSingle> TranslationsSingle { get; set; }
     }
+    public class TranslationsSingle
+    {
+        public int ID { get; set; }
+        public string translation { get; set; }
+        public string genre { get; set; }
+        public int genreID { get; set; }
 
 
+    }
 }

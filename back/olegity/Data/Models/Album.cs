@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
-
-namespace olegity.Data.Models
+﻿namespace olegity.Data.Models
 {
     public class Album
     {
@@ -14,33 +11,33 @@ namespace olegity.Data.Models
         public int pageID { set; get; }
         public ICollection<LinkAlbum> Links { get; set; }
         public ICollection<TrackListAlbum> TrackList { get; set; }
-        public ICollection<GenreAlbum> Genre { get; set; }
+        public ICollection<TranslationsAlbum> Translations { get; set; }
     }
-    public class GenreAlbum
+    public class TranslationsAlbum
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string translation { get; set; }
-        public string text { get; set; }
-        public int AlbumId { get; set; }
+        public string genre { get; set; }
+        public int albumID { get; set; }
         public Album Album { get; set; }
     }
     public class LinkAlbum
     {
 
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Spotify { get; set; }
         public string AppleMusic { get; set; }
         public string YoutubeMusic { get; set; }
         public string Deezer { get; set; }
-        public int AlbumId { get; set; }
+        public int albumID { get; set; }
         public Album Album { get; set; }
     }
 
     public class TrackListAlbum
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string title { get; set; }
-        public int AlbumId { get; set; }
+        public int albumID { get; set; }
         public Album Album { get; set; }
     }
 }

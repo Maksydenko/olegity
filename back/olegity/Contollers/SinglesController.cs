@@ -1,54 +1,58 @@
-﻿using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Mvc;
-using olegity.Data.Interfaces;
+﻿using Microsoft.AspNetCore.Mvc;
+using olegity.Data;
 using olegity.Data.Models;
-using olegity.ViewPages;
-using System;
-using System.Linq;
 
 namespace olegity.Controllers
 {
-    [EnableCors("MyPolicy")]
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class SinglesController : ControllerBase
     {
-        private readonly IAllSingles _allSingles;
-        private readonly ISinglesPages _allPages;
+        private readonly SinglesDBContent _appDBContent;
 
-        public SinglesController(IAllSingles iAllSingles, ISinglesPages isinglesPages)
+        public SinglesController(SinglesDBContent appDBContent)
         {
-            _allSingles = iAllSingles;
-            _allPages = isinglesPages;
+            _appDBContent = appDBContent;
         }
 
         [HttpGet("list/{pageID}")]
         public IActionResult List(int pageID)
         {
-            if (pageID!=0) // Если id указано
+            IQueryable<Single_Song> singlesQuery;
+
+            if (pageID == 0)
             {
-                var singles = _allSingles.Singles.Where(s => s.pageID == pageID).ToList();
-                var response = new SingelsListViewPages
-                {
-                    AllSingles = singles,
-                    SinggPage = "Singles"
-                };
-                return Ok(response);
+                singlesQuery = _appDBContent.Single_Songs;
+            }
+            else
+            {
+                singlesQuery = _appDBContent.Single_Songs.Where(s => s.pageID == pageID);
             }
 
-            else // Если id не указано
-            {
-                var singles = _allSingles.Singles.ToList();
-                var response = new SingelsListViewPages
+            var singles = singlesQuery
+                .Select(s => new
                 {
+                    s.ID,
+                    s.year,
+                    s.title,
+                    s.img,
+                    s.artist,
+                    s.spotify,
+                    s.appleMusic,
+                    s.youtubeMusic,
+                    s.deezer,
+                    s.pageID,
+                    Translations = _appDBContent.TranslationsSingle.Where(g => g.genreID == s.genreID).ToList()
+                })
+                .ToList();
 
-                    AllSingles = singles,
-                    SinggPage = "Singles"
-                };
-                return Ok(response);
-            }
-            
+            var maxPageID = _appDBContent.Single_Songs.Max(s => s.pageID);
 
+            return Ok(new
+            {
+                MaxPageID = maxPageID,
+                Singles = singles
+            });
         }
     }
 }

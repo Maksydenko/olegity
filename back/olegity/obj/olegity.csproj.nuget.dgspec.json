@@ -83,13 +83,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
@@ -101,7 +101,7 @@
             },
             "NuGet.Frameworks": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[6.10.0, )"
             },
             "SQLite": {
               "target": "Package",
