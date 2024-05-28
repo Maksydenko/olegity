@@ -37,6 +37,7 @@ namespace olegity.Controllers
                     ID = a.ID,
                     pageID = a.pageID,
                     img = a.img,
+                    Video = _aboutDBContent.VideoAbout.Where(t => t.sectionID == a.ID).ToList(),
                     Translations = _aboutDBContent.TranslationsAbout.Where(t => t.sectionID == a.ID).ToList()
                 })
                 .ToList();

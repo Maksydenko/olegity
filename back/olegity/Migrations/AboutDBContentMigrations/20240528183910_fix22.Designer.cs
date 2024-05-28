@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using olegity.Data;
 
@@ -10,9 +11,11 @@ using olegity.Data;
 namespace olegity.Migrations.AboutDBContentMigrations
 {
     [DbContext(typeof(AboutDBContent))]
-    partial class AboutDBContentModelSnapshot : ModelSnapshot
+    [Migration("20240528183910_fix22")]
+    partial class fix22
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

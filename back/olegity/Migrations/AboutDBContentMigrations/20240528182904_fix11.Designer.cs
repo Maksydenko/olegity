@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using olegity.Data;
 
@@ -10,9 +11,11 @@ using olegity.Data;
 namespace olegity.Migrations.AboutDBContentMigrations
 {
     [DbContext(typeof(AboutDBContent))]
-    partial class AboutDBContentModelSnapshot : ModelSnapshot
+    [Migration("20240528182904_fix11")]
+    partial class fix11
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,16 +32,45 @@ namespace olegity.Migrations.AboutDBContentMigrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<string>("img")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("pageID")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
 
                     b.ToTable("AboutSections");
+                });
+
+            modelBuilder.Entity("olegity.Data.Models.VideoAbout", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("AboutSectionsID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("sectionID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("AboutSectionsID");
+
+                    b.ToTable("VideoAbout");
                 });
 
             modelBuilder.Entity("olegity.Data.Models.TranslationsAbout", b =>
@@ -76,31 +108,13 @@ namespace olegity.Migrations.AboutDBContentMigrations
 
             modelBuilder.Entity("olegity.Data.Models.VideoAbout", b =>
                 {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("olegity.Data.Models.AboutSections", "AboutSections")
+                        .WithMany("Video")
+                        .HasForeignKey("AboutSectionsID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("AboutSectionsID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("link")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("sectionID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("AboutSectionsID");
-
-                    b.ToTable("VideoAbout");
+                    b.Navigation("AboutSections");
                 });
 
             modelBuilder.Entity("olegity.Data.Models.TranslationsAbout", b =>
@@ -114,22 +128,11 @@ namespace olegity.Migrations.AboutDBContentMigrations
                     b.Navigation("AboutSections");
                 });
 
-            modelBuilder.Entity("olegity.Data.Models.VideoAbout", b =>
-                {
-                    b.HasOne("olegity.Data.Models.AboutSections", "AboutSections")
-                        .WithMany("Video")
-                        .HasForeignKey("AboutSectionsID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AboutSections");
-                });
-
             modelBuilder.Entity("olegity.Data.Models.AboutSections", b =>
                 {
-                    b.Navigation("Translations");
-
                     b.Navigation("Video");
+
+                    b.Navigation("Translations");
                 });
 #pragma warning restore 612, 618
         }
