@@ -5,8 +5,6 @@ import clsx from "clsx";
 import Btn from "@/components/shared/Btn/Btn";
 import VideosMainSlider from "./VideosMainSlider";
 
-import { musicVideos } from "@/data/videos/musicVideos.data";
-
 interface VideosMainProps {
   className?: string;
 }
@@ -17,7 +15,7 @@ const VideosMain: FC<VideosMainProps> = ({ className }) => {
   return (
     <section className={clsx(className, "main-videos")}>
       <h2 className="main-videos__title">{t("latest-videos")}</h2>
-      <VideosMainSlider video={musicVideos} />
+      <VideosMainSlider />
       <Btn className="main-videos__btn" path="/videos">
         {t("see-videos")}
       </Btn>

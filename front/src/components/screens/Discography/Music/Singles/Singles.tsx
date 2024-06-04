@@ -1,44 +1,28 @@
 import { FC } from "react";
-import { useRouter } from "next/router";
 import clsx from "clsx";
 
 import Pagination from "@/components/base/Pagination/Pagination";
 import SinglesList from "./SinglesItems/SinglesList";
 
-import { getSearchParam } from "@/utils/getSearchParam.util";
-
-import { ISingle } from "@/interfaces/music.interface";
+import { ISingles } from "@/interfaces/music.interface";
 
 interface SinglesProps {
   className?: string;
-  singles: ISingle[];
+  singles: ISingles;
 }
 
-const Singles: FC<SinglesProps> = ({ className, singles }) => {
-  const { length: singlesLength } = singles;
-
-  // Items per page
-  const ITEMS_PER_PAGE = 12;
-
-  // Query
-  const { asPath } = useRouter();
-  const queryPage = getSearchParam(asPath, "page");
-
-  // Pagination
-  const currentPage = queryPage ? +queryPage - 1 : 0;
-  const startOffset = (currentPage * ITEMS_PER_PAGE) % singlesLength;
-  const endOffset = startOffset + ITEMS_PER_PAGE;
-  const currentItems = singles.slice(startOffset, endOffset);
-  const pageCount = Math.ceil(singlesLength / ITEMS_PER_PAGE);
-
+const Singles: FC<SinglesProps> = ({
+  className,
+  singles: { singles, maxPageID },
+}) => {
   return (
     <div className={clsx(className, "singles")}>
       <div className="singles__container">
-        <SinglesList singles={currentItems} />
+        <SinglesList singles={singles} />
         <Pagination
           className="singles__pagination"
-          itemsPerTotal={currentItems}
-          pageCount={pageCount}
+          itemsPerTotal={singles}
+          pageCount={maxPageID}
         />
       </div>
     </div>

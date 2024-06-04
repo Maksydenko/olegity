@@ -69,7 +69,7 @@
 
     &_active {
       color: var(--mainColor);
-      cursor: not-allowed !important;
+      cursor: default !important;
       background: var(--mainBg);
     }
   }

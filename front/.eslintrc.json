@@ -1,20 +1,13 @@
 {
   "extends": ["next/core-web-vitals", "plugin:@next/next/recommended"],
   "plugins": ["simple-import-sort"],
-
   "rules": {
-    "@tanstack/query/exhaustive-deps": "error",
-    "@tanstack/query/no-rest-destructuring": "warn",
-    "@tanstack/query/stable-query-client": "error",
     "simple-import-sort/imports": [
       1,
       {
         "groups": [
-          // External packages including React, Next.js, and other packages.
           ["^react$", "^next", "^[a-z]", "^clsx$"],
-          // Packages starting with '@' (including type imports from these packages).
           ["^@"],
-          // Internal components, parent and relative imports.
           [
             "^@/components/",
             "^\\.\\.(?!/?$)",
@@ -27,7 +20,12 @@
           ["^@/contexts", "\\.context$"],
           ["^@/stores", "\\.store$"],
           ["^@/services", "\\.service$"],
-          ["^@/hooks"],
+          [
+            "^@/hooks",
+            "^\\.\\./use[A-Z]",
+            "^\\./use[A-Z].*(?=.*/)",
+            "^\\./use[A-Z]"
+          ],
           ["^@/utils", "\\.util$"],
           ["^@/constants", "\\.const$"],
           ["^@/configs", "\\.config$"],
@@ -35,9 +33,8 @@
           ["^@/enums", "\\.enum$"],
           ["^@/interfaces", "\\.interface$"],
           ["^@/types", "\\.type$"],
-          // External library style imports typically from 'dist' directories.
+          ["^@/assets"],
           ["^.*\\/dist\\/.*\\.s?css$"],
-          // Internal and local style imports.
           ["^.+\\.s?css$"]
         ]
       }

@@ -9,35 +9,45 @@ import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/Obj
 import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
-import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
+import { IAbout } from "@/interfaces/about.interface";
 
-import { Breakpoint } from "@/enums/breakpoint.enum";
-
-interface UkraineSupportProps {
+interface AboutSectionVideoProps {
   className?: string;
+  breakpoint: boolean;
+  title: IAbout["translations"][0]["title"];
+  texts: IAbout["translations"][0]["text"][];
+  img: IAbout["img"];
+  video: IAbout["video"];
 }
 
-const UkraineSupport: FC<UkraineSupportProps> = ({ className }) => {
-  const ukraineSupportRef = useRef<HTMLElement>(null);
-  const isTablet = useBreakpointCheck(Breakpoint.Tablet);
+const AboutSectionVideo: FC<AboutSectionVideoProps> = ({
+  className,
+  breakpoint,
+  title,
+  texts,
+  img,
+  video,
+}) => {
+  const { title: videoTitle, link: videoLink } = video[0];
+  const aboutBlockRef = useRef(null);
 
   useGSAP(
     () => {
       gsap.registerPlugin(ScrollTrigger);
 
-      gsap.from(".ukraine-support__text-block", {
+      gsap.from(".about-block__text-block", {
         scrollTrigger: {
-          trigger: ".ukraine-support__text-block",
+          trigger: ".about-block__text-block",
           scrub: false,
           markers: false,
           toggleActions: "play none none none",
         },
         duration: 0.8,
-        x: isTablet ? 100 : -100,
+        x: breakpoint ? 100 : -100,
       });
-      gsap.from(".ukraine-support__popup-video", {
+      gsap.from(".about-block__popup-video", {
         scrollTrigger: {
-          trigger: ".ukraine-support__popup-video",
+          trigger: ".about-block__popup-video",
           scrub: false,
           markers: false,
           toggleActions: "play none none none",
@@ -46,12 +56,12 @@ const UkraineSupport: FC<UkraineSupportProps> = ({ className }) => {
         x: 100,
       });
 
-      if (isTablet) {
+      if (breakpoint) {
         return;
       }
-      gsap.from(".ukraine-support__text-block", {
+      gsap.from(".about-block__text-block", {
         scrollTrigger: {
-          trigger: ".ukraine-support__text-block",
+          trigger: ".about-block__text-block",
           scrub: true,
           markers: false,
           toggleActions: "restart pause reverse pause",
@@ -59,9 +69,9 @@ const UkraineSupport: FC<UkraineSupportProps> = ({ className }) => {
         duration: 0.8,
         y: 50,
       });
-      gsap.from(".ukraine-support__popup-video", {
+      gsap.from(".about-block__popup-video", {
         scrollTrigger: {
-          trigger: ".ukraine-support__popup-video",
+          trigger: ".about-block__popup-video",
           scrub: true,
           markers: false,
           toggleActions: "restart pause reverse pause",
@@ -71,41 +81,37 @@ const UkraineSupport: FC<UkraineSupportProps> = ({ className }) => {
       });
     },
     {
-      dependencies: [isTablet],
-      scope: ukraineSupportRef,
+      dependencies: [breakpoint],
+      scope: aboutBlockRef,
     }
   );
 
-  const img = {
-    src: "/img/videos/music-videos/uragany-live.jpg",
-    alt: "Uragany (Live)",
-  };
-
   const object = (
     <PopupVideo
-      className="ukraine-support__popup-video"
+      className="about-block__popup-video"
       img={img}
-      video="https://www.youtube.com/embed/8CqwOVNB4-w?color=white"
-      title="ЛСП (LSP) — Ураганы (Hurricanes) [Live]"
+      video={videoLink}
+      title={videoTitle}
     />
   );
 
   return (
-    <section
-      className={clsx(className, "ukraine-support")}
-      ref={ukraineSupportRef}
+    <div
+      className={clsx(className, "about-block about-block_video")}
+      ref={aboutBlockRef}
     >
       <ObjectOutsideContainer
-        className="ukraine-support__object-outside-container object-outside-container_tablet"
+        className="about-block__object-outside-container object-outside-container_tablet"
         object={object}
       >
         <TextBlock
-          className="ukraine-support__text-block"
-          keyword="ukraine-support"
+          className="about-block__text-block"
+          title={title}
+          texts={texts}
         />
       </ObjectOutsideContainer>
-    </section>
+    </div>
   );
 };
 
-export default UkraineSupport;
+export default AboutSectionVideo;

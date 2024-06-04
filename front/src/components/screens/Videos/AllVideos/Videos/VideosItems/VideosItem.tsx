@@ -2,16 +2,18 @@ import { FC } from "react";
 
 import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
-import { IVideo } from "@/interfaces/video.interface";
+import { IMusicVideo } from "@/interfaces/musicVideo.interface";
 
 interface VideosItemProps {
-  video: IVideo;
+  video: IMusicVideo;
 }
 
-const VideosItem: FC<VideosItemProps> = ({ video: { title, url, img } }) => {
+const VideosItem: FC<VideosItemProps> = ({ video: { img, video } }) => {
+  const { title, link } = video[0];
+
   return (
     <div className="videos__item">
-      <PopupVideo className="videos__popup-video" img={img} video={url} />
+      <PopupVideo className="videos__popup-video" img={img} video={link} />
       <h4 className="videos__title">{title}</h4>
     </div>
   );

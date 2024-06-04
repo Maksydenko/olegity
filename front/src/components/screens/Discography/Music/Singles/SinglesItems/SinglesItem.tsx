@@ -3,19 +3,27 @@ import { FC } from "react";
 import ListenOn from "@/components/shared/ListenOn/ListenOn";
 import MusicCard from "@/components/shared/MusicCard/MusicCard";
 
-import { ISingle } from "@/interfaces/music.interface";
+import { IMusicPlatforms, ISingle } from "@/interfaces/music.interface";
 
 interface SinglesItemProps {
   single: ISingle;
 }
 
 const SinglesItem: FC<SinglesItemProps> = ({ single }) => {
-  // const [links] = single.links;
+  const { id, spotify, appleMusic, youtubeMusic, deezer } = single;
+
+  const links: IMusicPlatforms = {
+    id,
+    spotify,
+    appleMusic,
+    youtubeMusic,
+    deezer,
+  };
 
   return (
     <div className="singles__item">
       <MusicCard className="singles__music-card" music={single} />
-      {/* <ListenOn className="singles" links={links} /> */}
+      <ListenOn className="singles" links={links} />
     </div>
   );
 };

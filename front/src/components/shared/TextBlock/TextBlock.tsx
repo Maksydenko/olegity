@@ -11,25 +11,24 @@ import { ILinkWithoutIcon } from "@/interfaces/link.interface";
 
 interface TextBlockProps {
   className?: string;
-  keyword: string;
+  title?: string;
+  texts?: string[];
   link?: ILinkWithoutIcon;
 }
 
-const TextBlock: FC<TextBlockProps> = ({ className, keyword, link }) => {
+const TextBlock: FC<TextBlockProps> = ({ className, title, texts, link }) => {
   const { t } = useTranslation();
-
-  const translatedTitle = t(getTranslationValueByKey(keyword, "title"));
-  const translatedTexts: string[] = t(
-    getTranslationValueByKey(keyword, "text"),
-    {
-      returnObjects: true,
-    }
-  );
 
   return (
     <div className={clsx(className, "text-block")}>
-      <h2 className="text-block__title">{translatedTitle}</h2>
-      <TextBlockList texts={translatedTexts} />
+      {title && <h2 className="text-block__title">{title}</h2>}
+      {!!texts?.length && (
+        <div className="text-block__text">
+          {texts.map((text, index) => {
+            return <p key={index}>{text}</p>;
+          })}
+        </div>
+      )}
       {link && (
         <Btn className="text-block" path={link.value}>
           {t(link.label)}

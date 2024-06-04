@@ -3,24 +3,26 @@ import clsx from "clsx";
 
 import GalleryGrid from "./GalleryGrid";
 
-import { IImg } from "@/interfaces/img.interface";
+import useConcertsStore from "@/stores/useConcerts.store";
 
-interface GalleryGridsProps {
-  imgs: IImg[];
-}
+interface GalleryGridsProps {}
 
-const GalleryGrids: FC<GalleryGridsProps> = ({ imgs }) => {
-  const { length: imgsLength } = imgs;
+const GalleryGrids: FC<GalleryGridsProps> = () => {
+  const { concerts } = useConcertsStore();
+  const { length: concertsLength } = concerts;
 
   const imgGroups = [];
-  for (let i = 0; i < imgsLength; i += 4) {
-    imgGroups.push(imgs.slice(i, i + 4));
+  for (let i = 0; i < concertsLength; i += 4) {
+    imgGroups.push(concerts.slice(i, i + 4));
   }
 
   const imgGrids = imgGroups.map((imgGroup, index) => {
+    const [img] = imgGroup;
+    const { id } = img;
+
     return (
       <div
-        key={index}
+        key={id}
         className={clsx(
           "gallery__grid",
           index % 3 === 0
@@ -30,7 +32,7 @@ const GalleryGrids: FC<GalleryGridsProps> = ({ imgs }) => {
             : "gallery__grid_tall-end"
         )}
       >
-        <GalleryGrid key={index} groupImgs={imgGroup} />
+        <GalleryGrid imgGroup={imgGroup} />
       </div>
     );
   });

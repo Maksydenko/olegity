@@ -50,7 +50,7 @@
 
     &:checked {
       + .theme-switcher__label {
-        cursor: not-allowed;
+        cursor: default;
       }
     }
 

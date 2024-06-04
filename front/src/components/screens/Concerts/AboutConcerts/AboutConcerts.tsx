@@ -1,8 +1,10 @@
 import { FC } from "react";
+import { useTranslation } from "next-i18next";
 import clsx from "clsx";
 
 import Img from "@/components/base/Img/Img";
 import ObjectOutsideContainer from "@/components/base/ObjectOutsideContainer/ObjectOutsideContainer";
+import { getTranslationValueByKey } from "@/components/shared/TextBlock/getTranslationValueByKey.util";
 import TextBlock from "@/components/shared/TextBlock/TextBlock";
 
 interface AboutConcertsProps {
@@ -10,6 +12,18 @@ interface AboutConcertsProps {
 }
 
 const AboutConcerts: FC<AboutConcertsProps> = ({ className }) => {
+  const { t } = useTranslation();
+
+  const keyword = "about-main";
+
+  const translatedTitle = t(getTranslationValueByKey(keyword, "title"));
+  const translatedTexts: string[] = t(
+    getTranslationValueByKey(keyword, "text"),
+    {
+      returnObjects: true,
+    }
+  );
+
   const object = (
     <Img
       className="about-concerts__img"
@@ -26,7 +40,8 @@ const AboutConcerts: FC<AboutConcertsProps> = ({ className }) => {
       >
         <TextBlock
           className="about-concerts__text-block"
-          keyword="about-concerts"
+          title={translatedTitle}
+          texts={translatedTexts}
         />
       </ObjectOutsideContainer>
     </section>

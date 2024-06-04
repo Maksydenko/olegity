@@ -5,8 +5,7 @@ import clsx from "clsx";
 import Tabs from "@/components/base/Tabs/Tabs";
 import Videos from "./Videos/Videos";
 
-import { animatedVideos } from "@/data/videos/animatedVideos.data";
-import { musicVideos } from "@/data/videos/musicVideos.data";
+import useVideosStore from "@/stores/useVideos.store";
 
 interface AllVideosProps {
   className?: string;
@@ -14,6 +13,7 @@ interface AllVideosProps {
 
 const AllVideos: FC<AllVideosProps> = ({ className }) => {
   const { t } = useTranslation("common");
+  const { musicVideos, animatedVideos } = useVideosStore();
 
   const tabs = [
     {

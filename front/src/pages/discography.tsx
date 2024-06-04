@@ -4,17 +4,17 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Discography from "@/components/screens/Discography/Discography";
 
-import useAlbumsStore from "@/stores/useAlbums.store";
+import useMusicStore from "@/stores/useMusic.store";
 
 import { DiscographyService } from "@/services/discography.service";
 
 import { IGetStaticProps, IQuery } from "@/interfaces/getStaticProps.interface";
-import { IAlbum, ISingle } from "@/interfaces/music.interface";
+import { IAlbum, ISingles } from "@/interfaces/music.interface";
 
 interface DiscographyPageProps {
   albums: IAlbum[];
   ep: IAlbum[];
-  singles: ISingle[];
+  singles: ISingles;
 }
 
 const DiscographyPage: NextPage<DiscographyPageProps> = ({
@@ -22,13 +22,19 @@ const DiscographyPage: NextPage<DiscographyPageProps> = ({
   ep,
   singles,
 }) => {
-  const { setAlbums } = useAlbumsStore();
+  const { setAlbums, setEP, setSingles } = useMusicStore();
 
-  useEffect(() => {
-    setAlbums(albums);
-  }, []);
+  useEffect(
+    () => {
+      setAlbums(albums);
+      setEP(ep);
+      setSingles(singles);
+    },
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
+    []
+  );
 
-  return <Discography albums={albums} ep={ep} singles={singles} />;
+  return <Discography />;
 };
 
 export default DiscographyPage;
@@ -45,7 +51,7 @@ export const getServerSideProps = async ({
 
   const albums = await DiscographyService.getAlbums();
   const ep = await DiscographyService.getEP();
-  const singles = await DiscographyService.getSingles();
+  const singles = await DiscographyService.getSingles(+queryPage);
 
   return {
     props: {

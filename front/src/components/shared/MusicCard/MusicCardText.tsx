@@ -14,12 +14,14 @@ interface MusicCardTextProps {
 }
 
 const MusicCardText: FC<MusicCardTextProps> = ({
-  music: { title, artist, genre, year },
+  music: { title, artist, translations, year },
   swiperParallax,
   swiperParallaxDurationAttr,
 }) => {
   const { locale } = useRouter();
-  // const genreTranslate = getTranslate(genre, locale);
+
+  const currentTranslate = getTranslate(translations, locale);
+  const genreTranslate = currentTranslate?.genre;
 
   return (
     <>
@@ -48,7 +50,7 @@ const MusicCardText: FC<MusicCardTextProps> = ({
         })}
         {...swiperParallaxDurationAttr}
       >
-        <span className="music-card__genre">{"genreTranslate?.text"}</span>
+        <span className="music-card__genre">{genreTranslate}</span>
         <span className="music-card__year">{year}</span>
       </div>
     </>

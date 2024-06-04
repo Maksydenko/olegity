@@ -3,23 +3,24 @@ import clsx from "clsx";
 
 import AboutSection from "./AboutSection/AboutSection";
 
-import { aboutSections } from "./aboutSections.data";
+import useAboutStore from "@/stores/useAbout.store";
 
 interface AboutSectionsProps {
   className?: string;
 }
 
 const AboutSections: FC<AboutSectionsProps> = ({ className }) => {
-  const aboutSectionItems = aboutSections.map((section, index) => {
-    const { keyword, img } = section;
+  const { about } = useAboutStore();
+
+  const aboutSectionItems = about.map((aboutItem, index) => {
+    const { id } = aboutItem;
     const isEven = index % 2 !== 0;
 
     return (
       <AboutSection
+        key={id}
         className="about-sections__about-section"
-        key={keyword}
-        keyword={keyword}
-        img={img}
+        about={aboutItem}
         reverseAnimation={isEven}
       />
     );

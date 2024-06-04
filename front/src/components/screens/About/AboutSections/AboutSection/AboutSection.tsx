@@ -1,109 +1,73 @@
-import { FC, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { FC } from "react";
+import { useRouter } from "next/router";
 import clsx from "clsx";
 
-import { useGSAP } from "@gsap/react";
-
-import Img from "@/components/base/Img/Img";
-import TextBlock from "@/components/shared/TextBlock/TextBlock";
+import AboutSectionImg from "./AboutBlockImg/AboutBlockImg";
+import AboutSectionVideo from "./AboutBlockVideo/AboutBlockVideo";
 
 import { useBreakpointCheck } from "@/hooks/useBreakpointCheck";
 
+import { getTranslate } from "@/utils/getTranslate.util";
+
+import { lineBreak } from "@/constants/lineBreak.const";
+
 import { Breakpoint } from "@/enums/breakpoint.enum";
 
-import { IImg } from "@/interfaces/img.interface";
+import { IAbout } from "@/interfaces/about.interface";
 
 interface AboutSectionProps {
   className?: string;
-  keyword: string;
-  img: IImg;
+  about: IAbout;
   reverseAnimation?: boolean;
 }
 
 const AboutSection: FC<AboutSectionProps> = ({
   className,
-  keyword,
-  img: { src, alt },
+  about: { translations, img, video },
   reverseAnimation,
 }) => {
-  const aboutSectionRef = useRef(null);
+  const { locale } = useRouter();
   const isTablet = useBreakpointCheck(Breakpoint.Tablet);
 
-  useGSAP(
-    () => {
-      gsap.registerPlugin(ScrollTrigger);
+  const currentTranslate = getTranslate(translations, locale);
 
-      gsap.from(".about-section__text-block", {
-        scrollTrigger: {
-          trigger: ".about-section__text-block",
-          scrub: false,
-          markers: false,
-          toggleActions: "play none none none",
-        },
-        duration: 0.8,
-        x: isTablet
-          ? reverseAnimation
-            ? -100
-            : 100
-          : reverseAnimation
-          ? 100
-          : -100,
-      });
-      gsap.from(".about-section__img", {
-        scrollTrigger: {
-          trigger: ".about-section__img",
-          scrub: false,
-          markers: false,
-          toggleActions: "play none none none",
-        },
-        duration: 0.8,
-        x: reverseAnimation ? -100 : 100,
-      });
+  if (!currentTranslate) {
+    return null;
+  }
 
-      if (isTablet) {
-        return;
-      }
-      gsap.from(".about-section__text-block", {
-        scrollTrigger: {
-          trigger: ".about-section__text-block",
-          scrub: true,
-          markers: false,
-          toggleActions: "restart pause reverse pause",
-        },
-        duration: 0.8,
-        y: 50,
-      });
-      gsap.from(".about-section__img", {
-        scrollTrigger: {
-          trigger: ".about-section__img",
-          scrub: true,
-          markers: false,
-          toggleActions: "restart pause reverse pause",
-        },
-        duration: 0.8,
-        y: -50,
-      });
-    },
-    {
-      dependencies: [isTablet],
-      scope: aboutSectionRef,
-    }
-  );
+  const { title, text } = currentTranslate;
+  const texts = text.split(lineBreak);
+
+  const { length: videoLength } = video;
+  const hasVideo = !!videoLength;
 
   return (
     <section
       className={clsx(
         className,
         "about-section",
-        reverseAnimation && "about-section_even"
+        reverseAnimation && !hasVideo && "about-section_even"
       )}
-      ref={aboutSectionRef}
     >
-      <div className="about-section__container">
-        <TextBlock className="about-section__text-block" keyword={keyword} />
-        <Img className="about-section__img" src={src} alt={alt} />
-      </div>
+      {hasVideo ? (
+        <AboutSectionVideo
+          className="about-section__about-block"
+          breakpoint={isTablet}
+          title={title}
+          texts={texts}
+          img={img}
+          video={video}
+        />
+      ) : (
+        <AboutSectionImg
+          className="about-section__about-block"
+          breakpoint={isTablet}
+          reverseAnimation={reverseAnimation}
+          title={title}
+          texts={texts}
+          img={img}
+        />
+      )}
     </section>
   );
 };

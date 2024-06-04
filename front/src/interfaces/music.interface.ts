@@ -1,3 +1,5 @@
+import { ITranslation } from "./translation.interface";
+
 export interface IMusicPlatforms {
   id: number;
   spotify: string;
@@ -6,20 +8,25 @@ export interface IMusicPlatforms {
   deezer: string;
 }
 
-interface IGenre {
-  id: number;
-  translation: "en" | "uk";
-  text: string;
+interface IMusicTranslation extends ITranslation {
+  genre: string;
+  genreID: number;
 }
 
-export interface ISingle {
+interface IMusic {
   id: number;
   title: string;
   artist: string;
-  genre: IGenre[];
+  translations: IMusicTranslation[];
   year: string;
   img: string;
-  links: IMusicPlatforms[];
+}
+
+export interface ISingle extends IMusic, IMusicPlatforms {}
+
+export interface ISingles {
+  singles: ISingle[];
+  maxPageID: number;
 }
 
 export interface ITrack {
@@ -27,7 +34,8 @@ export interface ITrack {
   title: string;
 }
 
-export interface IAlbum extends ISingle {
+export interface IAlbum extends IMusic {
   slug: string;
+  links: IMusicPlatforms[];
   trackList: ITrack[];
 }

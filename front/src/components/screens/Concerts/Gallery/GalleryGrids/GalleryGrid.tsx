@@ -2,15 +2,15 @@ import { FC } from "react";
 
 import Img from "@/components/base/Img/Img";
 
-import { IImg } from "@/interfaces/img.interface";
+import { IConcert } from "@/interfaces/concert.interface";
 
 interface GalleryGridProps {
-  groupImgs: IImg[];
+  imgGroup: IConcert[];
 }
 
-const GalleryGrid: FC<GalleryGridProps> = ({ groupImgs }) => {
-  const imgGrid = groupImgs.map(({ src, alt }, index) => (
-    <Img key={index} className="gallery__img" src={src} alt={alt} />
+const GalleryGrid: FC<GalleryGridProps> = ({ imgGroup }) => {
+  const imgGrid = imgGroup.map(({ id, img }) => (
+    <Img key={id} className="gallery__img" src={img} alt="LSP" />
   ));
 
   return imgGrid;

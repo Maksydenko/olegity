@@ -38,12 +38,12 @@ const Pagination: FC<PaginationProps> = ({
     () => {
       const numberQueryPage = Number(queryPage);
 
-      if (!(numberQueryPage <= pageCount && numberQueryPage > 0)) {
+      if (numberQueryPage > pageCount || numberQueryPage <= 0) {
         const newPath = addSearchParam(asPath, "page");
         push(newPath);
       }
     },
-    /* eslint-disable-next-line  */
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
     [asPath, pageCount, queryPage]
   );
 
