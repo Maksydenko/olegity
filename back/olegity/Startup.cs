@@ -19,7 +19,7 @@ namespace olegity
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SinglesDBContent>(options =>
-                options.UseSqlServer(_confstring.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(_confstring.GetConnectionString("SingleConnection")));
 
             services.AddDbContext<AlbumsDBContent>(options =>
                 options.UseSqlServer(_confstring.GetConnectionString("AlbumsDatabaseConnection")));
@@ -32,6 +32,13 @@ namespace olegity
 
             services.AddDbContext<ConcertsDBContent>(options =>
                 options.UseSqlServer(_confstring.GetConnectionString("ConcertsDatabaseConnection")));
+
+            services.AddDbContext<ClipsDBContent>(options =>
+                options.UseSqlServer(_confstring.GetConnectionString("ClipsDatabaseConnection")));
+            
+            services.AddDbContext<AnimatedDBContent>(options =>
+                options.UseSqlServer(_confstring.GetConnectionString("AnimatedDatabaseConnection")));
+
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddMemoryCache();

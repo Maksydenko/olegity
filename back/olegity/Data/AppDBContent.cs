@@ -57,4 +57,30 @@ namespace olegity.Data
 
 
     }
+
+    public class ClipsDBContent : DbContext
+    {
+        public ClipsDBContent(DbContextOptions<ClipsDBContent> options) : base(options)
+        {
+        }
+
+        public DbSet<Clips> Clips { get; set; }
+
+        public DbSet<VideoClips> VideoClips { get; set; }
+
+    }
+
+    public class AnimatedDBContent : DbContext
+    {
+        public AnimatedDBContent(DbContextOptions<AnimatedDBContent> options) : base(options)
+        {
+        }
+
+        public DbSet<AnimatedClips> AnimatedClips { get; set; }
+
+        public DbSet<Animated> Animated { get; set; }
+
+    }
+
+    
 }

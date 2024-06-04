@@ -5,10 +5,8 @@
     {
         public int ID { set; get; }
         public int pageID { set; get; }
-
         public string img { get; set; }
         public ICollection<VideoAbout> Video { get; set; }
-
         public ICollection<TranslationsAbout> Translations { get; set; }
     }
     public class TranslationsAbout
