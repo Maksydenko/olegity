@@ -29,7 +29,11 @@ body {
   font-size: $fontSize;
   line-height: 1;
   color: var(--mainColor);
-  background: var(--mainBg);
+
+  &,
+  main {
+    background: var(--mainBg);
+  }
 }
 
 input,
