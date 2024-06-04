@@ -10,8 +10,6 @@ import useVideosStore from "@/stores/useVideos.store";
 import { DiscographyService } from "@/services/discography.service";
 import { VideosService } from "@/services/videos.service";
 
-import { musicVideos } from "@/data/videos/musicVideos.data";
-
 import { IGetStaticProps } from "@/interfaces/getStaticProps.interface";
 import { IAlbum } from "@/interfaces/music.interface";
 import { IMusicVideo } from "@/interfaces/musicVideo.interface";
