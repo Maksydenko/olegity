@@ -1,4 +1,4 @@
 export interface ITranslation {
-  id: number;
+  ID: number;
   translation: "en" | "uk";
 }

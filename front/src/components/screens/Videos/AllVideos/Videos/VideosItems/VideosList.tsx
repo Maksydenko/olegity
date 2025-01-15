@@ -10,9 +10,9 @@ interface VideosListProps {
 
 const VideosList: FC<VideosListProps> = ({ videos }) => {
   const videoItems = videos.map((video) => {
-    const { id } = video;
+    const { ID } = video;
 
-    return <VideosItem key={id} video={video} />;
+    return <VideosItem key={ID} video={video} />;
   });
 
   return <div className="videos__list">{videoItems}</div>;

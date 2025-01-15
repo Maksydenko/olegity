@@ -2,6 +2,8 @@
 
 .about-page {
   > main {
+    position: relative;
+    min-height: rem(300);
     padding: rem(30) 0;
     margin-top: rem(70);
 

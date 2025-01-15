@@ -23,7 +23,7 @@ interface AboutSectionProps {
 
 const AboutSection: FC<AboutSectionProps> = ({
   className,
-  about: { translations, img, video },
+  about: { translations, img, link },
   reverseAnimation,
 }) => {
   const { locale } = useRouter();
@@ -38,25 +38,22 @@ const AboutSection: FC<AboutSectionProps> = ({
   const { title, text } = currentTranslate;
   const texts = text.split(lineBreak);
 
-  const { length: videoLength } = video;
-  const hasVideo = !!videoLength;
-
   return (
     <section
       className={clsx(
         className,
         "about-section",
-        reverseAnimation && !hasVideo && "about-section_even"
+        reverseAnimation && !link && "about-section_even"
       )}
     >
-      {hasVideo ? (
+      {link ? (
         <AboutSectionVideo
           className="about-section__about-block"
           breakpoint={isTablet}
           title={title}
           texts={texts}
           img={img}
-          video={video}
+          video={link}
         />
       ) : (
         <AboutSectionImg

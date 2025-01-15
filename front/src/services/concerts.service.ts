@@ -1,10 +1,22 @@
-import axiosInstance from "./axiosInstance";
+import { QueryKey } from "@/enums/queryKey.enum";
+
+import { IConcert } from "@/interfaces/concert.interface";
+
+import { TypeSupabase } from "@/types/supabase.type";
 
 export const ConcertsService = {
-  getConcerts: async () => {
-    const response = await axiosInstance.get(`/concerts/list/0`);
-    const { data: result } = response;
+  getConcerts: async (supabase: TypeSupabase) => {
+    const { data: concertsData, error } = await supabase
+      .from(QueryKey.Concerts)
+      .select("*")
+      .order("ID", {
+        ascending: true,
+      });
 
-    return result;
+    if (error) {
+      return error;
+    }
+
+    return concertsData as IConcert[];
   },
 };

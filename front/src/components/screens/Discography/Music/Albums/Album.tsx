@@ -11,8 +11,7 @@ interface AlbumProps {
 }
 
 const Album: FC<AlbumProps> = ({ album }) => {
-  const { trackList } = album;
-  const [links] = album.links;
+  const { trackList, spotify, appleMusic, youtubeMusic, deezer } = album;
 
   return (
     <div className="albums__album">
@@ -30,7 +29,12 @@ const Album: FC<AlbumProps> = ({ album }) => {
       />
       <ListenOn
         className="albums__listen-on"
-        links={links}
+        links={{
+          spotify,
+          appleMusic,
+          youtubeMusic,
+          deezer,
+        }}
         swiperParallax={-800}
         swiperParallaxDuration={500}
       />

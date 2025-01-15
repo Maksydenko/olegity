@@ -1,36 +1,25 @@
-import { ITranslation } from "./translation.interface";
+import { IGenre } from "./genre.interface";
 
 export interface IMusicPlatforms {
-  id: number;
   spotify: string;
   appleMusic: string;
   youtubeMusic: string;
   deezer: string;
 }
 
-interface IMusicTranslation extends ITranslation {
-  genre: string;
-  genreID: number;
-}
-
-interface IMusic {
-  id: number;
+interface IMusic extends IMusicPlatforms {
+  ID: number;
   title: string;
   artist: string;
-  translations: IMusicTranslation[];
+  genre: IGenre[];
   year: string;
   img: string;
 }
 
-export interface ISingle extends IMusic, IMusicPlatforms {}
-
-export interface ISingles {
-  singles: ISingle[];
-  maxPageID: number;
-}
+export interface ISingle extends IMusic {}
 
 export interface ITrack {
-  id: number;
+  ID: number;
   title: string;
 }
 

@@ -3,19 +3,18 @@ import { FC } from "react";
 import SliderSwiper from "@/components/base/SliderSwiper/SliderSwiper";
 import PopupVideo from "@/components/shared/PopupVideo/PopupVideo";
 
-import useVideosStore from "@/stores/useVideos.store";
+import { IMusicVideo } from "@/interfaces/musicVideo.interface";
 
-interface VideosMainSliderProps {}
+interface VideosMainSliderProps {
+  musicVideos: IMusicVideo[];
+}
 
-const VideosMainSlider: FC<VideosMainSliderProps> = () => {
-  const { musicVideos } = useVideosStore();
+const VideosMainSlider: FC<VideosMainSliderProps> = ({ musicVideos }) => {
   const latestVideos = musicVideos.slice(0, 5);
 
-  const slides = latestVideos.map(({ id, img, video }) => {
-    const { title, link } = video[0];
-
+  const slides = latestVideos.map(({ ID, link, title, img }) => {
     const slide = {
-      id: id,
+      id: ID,
       slide: (
         <PopupVideo
           className="main-videos__popup-video"

@@ -3,12 +3,13 @@ import clsx from "clsx";
 
 import GalleryGrid from "./GalleryGrid";
 
-import useConcertsStore from "@/stores/useConcerts.store";
+import { IConcert } from "@/interfaces/concert.interface";
 
-interface GalleryGridsProps {}
+interface GalleryGridsProps {
+  concerts: IConcert[];
+}
 
-const GalleryGrids: FC<GalleryGridsProps> = () => {
-  const { concerts } = useConcertsStore();
+const GalleryGrids: FC<GalleryGridsProps> = ({ concerts }) => {
   const { length: concertsLength } = concerts;
 
   const imgGroups = [];

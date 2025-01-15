@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 
 import Layout from "@/components/layout/Layout";
 import Seo from "@/components/layout/Seo/Seo";
+import Loader from "@/components/shared/Loader/Loader";
 import AboutConcerts from "./AboutConcerts/AboutConcerts";
 import Gallery from "./Gallery/Gallery";
 

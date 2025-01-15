@@ -2,6 +2,8 @@
   // .videos__container
 
   &__container {
+    min-height: rem(300);
+
     @media (min-width: $desktop) {
       padding: 0;
     }

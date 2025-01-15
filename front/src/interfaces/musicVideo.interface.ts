@@ -1,12 +1,7 @@
-interface IVideo {
-  id: number;
-  title: string;
-  link: string;
-}
-
 export interface IMusicVideo {
-  id: number;
-  pageID: number;
+  ID: number;
+  link: string;
+  musicVideoID: number;
+  title: string;
   img: string;
-  video: IVideo[];
 }

@@ -38,12 +38,17 @@ const Pagination: FC<PaginationProps> = ({
     () => {
       const numberQueryPage = Number(queryPage);
 
-      if (numberQueryPage > pageCount || numberQueryPage <= 0) {
-        const newPath = addSearchParam(asPath, "page");
-        push(newPath);
+      if (
+        (numberQueryPage <= pageCount && numberQueryPage >= 0) ||
+        !pageCount
+      ) {
+        return;
       }
+
+      const newPath = addSearchParam(asPath, "page");
+      push(newPath);
     },
-    /* eslint-disable-next-line react-hooks/exhaustive-deps */
+    /* eslint-disable-next-line  */
     [asPath, pageCount, queryPage]
   );
 
@@ -51,11 +56,7 @@ const Pagination: FC<PaginationProps> = ({
     return null;
   }
 
-  // Handle page change
-  interface IHandlePageChange {
-    (page: number): string;
-  }
-  const handlePageChange: IHandlePageChange = (page) => {
+  const handlePageChange = (page: number) => {
     const newPath = addSearchParam(
       asPath,
       "page",

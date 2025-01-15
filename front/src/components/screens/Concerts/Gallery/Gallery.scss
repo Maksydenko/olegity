@@ -1,8 +1,5 @@
 .gallery {
-  // .gallery__container
-
-  &__container {
-  }
+  position: relative;
 
   // .gallery__title
 
@@ -14,6 +11,18 @@
     @media (max-width: $mobile) {
       font-size: rem(32);
     }
+  }
+
+  // .gallery__container
+
+  &__container {
+  }
+
+  // .gallery__loader
+
+  &__loader {
+    position: relative;
+    margin-top: 0;
   }
 
   // .gallery__grids

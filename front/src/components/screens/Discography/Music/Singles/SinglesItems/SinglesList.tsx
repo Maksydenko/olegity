@@ -10,9 +10,9 @@ interface SinglesProps {
 
 const SinglesList: FC<SinglesProps> = ({ singles }) => {
   const singleItems = singles.map((single) => {
-    const { id } = single;
+    const { ID } = single;
 
-    return <SinglesItem key={id} single={single} />;
+    return <SinglesItem key={ID} single={single} />;
   });
 
   return <div className="singles__list">{singleItems}</div>;

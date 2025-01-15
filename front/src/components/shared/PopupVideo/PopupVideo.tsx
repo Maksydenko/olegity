@@ -20,7 +20,7 @@ const PopupVideo: FC<PopupVideoProps> = ({ className, img, video, title }) => {
   return (
     <div className={clsx(className, "popup-video")}>
       {title && <h4 className="popup-video__title">{title}</h4>}
-      <Img className="popup-video__img" src={img} alt={title} />
+      {img && <Img className="popup-video__img" src={img} alt={title} />}
       <Popup className="popup-video__popup" button={button}>
         <Video className="popup-video__video" url={video} />
       </Popup>

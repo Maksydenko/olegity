@@ -24,6 +24,13 @@
     }
   }
 
+  // .albums-main__loader
+
+  &__loader {
+    position: relative;
+    margin-top: 0;
+  }
+
   // .albums-main__slider-swiper
 
   &__slider-swiper {

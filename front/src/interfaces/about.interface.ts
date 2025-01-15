@@ -1,22 +1,18 @@
 import { ITranslation } from "./translation.interface";
-
-interface IAboutTranslation extends ITranslation {
+export interface IAboutTranslation extends ITranslation {
   title: string;
   text: string;
   sectionID: number;
+  AboutSectionsID: number;
 }
 
-interface IVideo {
-  id: number;
-  sectionID: number;
-  title: string;
-  link: string;
-}
-
-export interface IAbout {
-  id: number;
+export interface IAboutSection {
+  ID: number;
   pageID: number;
   img: string;
+  link: string | null;
+}
+
+export interface IAbout extends IAboutSection {
   translations: IAboutTranslation[];
-  video: IVideo[] | [];
 }

@@ -8,9 +8,7 @@ interface VideosItemProps {
   video: IMusicVideo;
 }
 
-const VideosItem: FC<VideosItemProps> = ({ video: { img, video } }) => {
-  const { title, link } = video[0];
-
+const VideosItem: FC<VideosItemProps> = ({ video: { link, title, img } }) => {
   return (
     <div className="videos__item">
       <PopupVideo className="videos__popup-video" img={img} video={link} />

@@ -15,10 +15,10 @@ const Tracks: FC<TracksProps> = ({
   swiperParallax,
   swiperParallaxDuration,
 }) => {
-  const tracks = trackList.map(({ title, id }, index) => {
+  const tracks = trackList.map(({ title, ID }, index) => {
     return (
       <Track
-        key={id}
+        key={ID}
         track={title}
         swiperParallax={swiperParallax - index * 100}
         swiperParallaxDuration={swiperParallaxDuration}
