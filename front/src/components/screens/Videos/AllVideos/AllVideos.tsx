@@ -6,7 +6,6 @@ import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useQuery } from "@tanstack/react-query";
 
 import Tabs from "@/components/base/Tabs/Tabs";
-import Loader from "@/components/shared/Loader/Loader";
 import Videos from "./Videos/Videos";
 
 import { VideosService } from "@/services/videos.service";
