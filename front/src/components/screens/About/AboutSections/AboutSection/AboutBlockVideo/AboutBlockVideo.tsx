@@ -17,7 +17,7 @@ interface AboutSectionVideoProps {
   title: IAbout["translations"][0]["title"];
   texts: IAbout["translations"][0]["text"][];
   img: IAbout["img"];
-  video: IAbout["video"];
+  video: IAbout["link"];
 }
 
 const AboutSectionVideo: FC<AboutSectionVideoProps> = ({
@@ -28,7 +28,6 @@ const AboutSectionVideo: FC<AboutSectionVideoProps> = ({
   img,
   video,
 }) => {
-  const { title: videoTitle, link: videoLink } = video[0];
   const aboutBlockRef = useRef(null);
 
   useGSAP(
@@ -90,8 +89,8 @@ const AboutSectionVideo: FC<AboutSectionVideoProps> = ({
     <PopupVideo
       className="about-block__popup-video"
       img={img}
-      video={videoLink}
-      title={videoTitle}
+      video={video!}
+      title={title}
     />
   );
 
