@@ -10,10 +10,9 @@ interface SinglesItemProps {
 }
 
 const SinglesItem: FC<SinglesItemProps> = ({ single }) => {
-  const { id, spotify, appleMusic, youtubeMusic, deezer } = single;
+  const { spotify, appleMusic, youtubeMusic, deezer } = single;
 
   const links: IMusicPlatforms = {
-    id,
     spotify,
     appleMusic,
     youtubeMusic,
