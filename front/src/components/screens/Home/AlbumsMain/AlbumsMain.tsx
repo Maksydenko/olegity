@@ -23,23 +23,6 @@ const AlbumsMain: FC<AlbumsMainProps> = ({ className }) => {
   const { t } = useTranslation("common");
   const supabase = useSupabaseClient<IDatabase>();
 
-  const { data: testData } = useQuery({
-    /* eslint-disable-next-line @tanstack/query/exhaustive-deps */
-    queryKey: ["test"],
-    queryFn: async () => {
-      const { data: testData, error: testError } = await supabase
-        .from("test")
-        .select("*");
-
-      if (testError) {
-        return testError;
-      }
-
-      return testData;
-    },
-  });
-  console.log(testData);
-
   const { data: genresData } = useQuery({
     /* eslint-disable-next-line @tanstack/query/exhaustive-deps */
     queryKey: [QueryKey.Genres],
