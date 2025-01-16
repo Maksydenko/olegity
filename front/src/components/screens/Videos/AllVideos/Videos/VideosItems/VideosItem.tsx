@@ -11,7 +11,11 @@ interface VideosItemProps {
 const VideosItem: FC<VideosItemProps> = ({ video: { link, title, img } }) => {
   return (
     <div className="videos__item">
-      <PopupVideo className="videos__popup-video" img={img} video={link} />
+      <PopupVideo
+        className="videos__popup-video"
+        img={img.trim()}
+        video={link}
+      />
       <h4 className="videos__title">{title}</h4>
     </div>
   );
