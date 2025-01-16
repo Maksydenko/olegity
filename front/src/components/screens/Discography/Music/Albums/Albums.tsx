@@ -31,7 +31,6 @@ const Albums: FC<AlbumsProps> = ({ className, albums }) => {
           slides={slides}
           loop
           parallax
-          hash
         />
       </div>
     </div>
